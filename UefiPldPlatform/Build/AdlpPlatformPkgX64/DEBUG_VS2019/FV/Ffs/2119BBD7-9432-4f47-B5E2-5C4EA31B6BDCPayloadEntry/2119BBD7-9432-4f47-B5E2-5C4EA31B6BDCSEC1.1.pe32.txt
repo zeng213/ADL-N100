@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\2119BBD7-9432-4f47-B5E2-5C4EA31B6BDCPayloadEntry\2119BBD7-9432-4f47-B5E2-5C4EA31B6BDCSEC1.1.pe32 E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\IA32\UefiPlatformPkg\UefiPayloadEntry\UefiPayloadEntry\OUTPUT\PayloadEntry.efi

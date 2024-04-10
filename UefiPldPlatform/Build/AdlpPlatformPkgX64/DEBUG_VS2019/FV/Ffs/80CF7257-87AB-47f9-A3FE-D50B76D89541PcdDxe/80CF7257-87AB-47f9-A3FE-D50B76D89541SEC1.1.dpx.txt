@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\80CF7257-87AB-47f9-A3FE-D50B76D89541PcdDxe\80CF7257-87AB-47f9-A3FE-D50B76D89541SEC1.1.dpx E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\PCD\Dxe\Pcd\OUTPUT\PcdDxe.depex

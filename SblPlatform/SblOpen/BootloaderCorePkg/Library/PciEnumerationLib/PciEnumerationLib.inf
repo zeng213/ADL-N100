@@ -1,0 +1,59 @@
+## @file
+#
+#  Copyright (c) 2017 - 2020, Intel Corporation. All rights reserved.<BR>
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = PciEnumerationLib
+  FILE_GUID                      = 42204583-B618-4403-8625-C0A1813D9048
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = PciEnumerationLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF
+#
+
+[Sources]
+  InternalPciEnumerationLib.h
+  PciCommand.h
+  PciAri.h
+  PciIov.h
+  InternalPciEnumerationLib.c
+  PciCommand.c
+  PciAri.c
+  PciIov.c
+  PciEnumerationLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  IntelFsp2Pkg/IntelFsp2Pkg.dec
+  BootloaderCorePkg/BootloaderCorePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  DebugLib
+  PciExpressLib
+  SortLib
+  HobLib
+
+[Guids]
+  gFspNonVolatileStorageHobGuid
+  gLoaderPciRootBridgeInfoGuid
+
+[Pcd]
+  gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress  ## CONSUMES
+  gPlatformModuleTokenSpaceGuid.PcdPciResourceIoBase
+  gPlatformModuleTokenSpaceGuid.PcdPciResourceMem32Base
+  gPlatformModuleTokenSpaceGuid.PcdPciEnumPolicyInfo
+  gPlatformModuleTokenSpaceGuid.PcdPciResourceMem64Base
+  gPlatformModuleTokenSpaceGuid.PcdAriSupport
+  gPlatformModuleTokenSpaceGuid.PcdSrIovSupport
+  gPlatformModuleTokenSpaceGuid.PcdPciResAllocTableBase
+  gPlatformModuleTokenSpaceGuid.PcdPciEnumHookProc

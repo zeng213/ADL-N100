@@ -1,0 +1,24 @@
+## @file
+#  File to describe FSP repo information
+#
+#  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[UserExtensions.SBL."CloneRepo"]
+  REPO    = https://github.com/intel/FSP.git
+  COMMIT  = c80123384aa74ee0a0b011ad4e8a0afc533c8195
+
+[UserExtensions.SBL."CopyList"]
+  ApolloLakeFspBinPkg/FspBin/Fsp.fd     : Silicon/ApollolakePkg/FspBin/FspDbg.bin
+  ApolloLakeFspBinPkg/FspBin/Fsp.fd     : Silicon/ApollolakePkg/FspBin/FspRel.bin
+  ApolloLakeFspBinPkg/FspBin/Fsp.bsf    : Silicon/ApollolakePkg/FspBin/Fsp.bsf
+  ApolloLakeFspBinPkg/Include/FspUpd.h  : Silicon/ApollolakePkg/Include/FspUpd.h
+  ApolloLakeFspBinPkg/Include/FsptUpd.h : Silicon/ApollolakePkg/Include/FsptUpd.h
+  ApolloLakeFspBinPkg/Include/FspmUpd.h : Silicon/ApollolakePkg/Include/FspmUpd.h
+  ApolloLakeFspBinPkg/Include/FspsUpd.h : Silicon/ApollolakePkg/Include/FspsUpd.h
+  ApolloLakeFspBinPkg/Vbt/vbt.bin       : Platform/ApollolakeBoardPkg/VbtBin/Vbt.dat
+  ApolloLakeFspBinPkg/Vbt/Vbt.bsf       : Platform/ApollolakeBoardPkg/VbtBin/Vbt.bsf

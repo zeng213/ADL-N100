@@ -1,0 +1,173 @@
+
+
+/** @file
+
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DefinitionBlock (
+  "APPSD.aml",
+  "SSDT",
+  2,
+  "PmRef",
+  "ApPsd",
+  0x3000
+  )
+{
+  External (\PF00, IntObj)
+  External (\TCNT, FieldUnitObj)
+  External (\_SB.CFGD, FieldUnitObj)
+  External (\_SB.PR00.GPSD, MethodObj)
+  External (CM01)
+  External (CM02)
+  External (CM03)
+  External (CM04)
+  External (CM05)
+  External (CM06)
+  External (CM07)
+  External (CM08)
+  External (CM09)
+  External (CM10)
+  External (CM11)
+  External (CM12)
+  External (CM13)
+  External (CM14)
+  External (CM15)
+  External (CM16)
+  External (CM17)
+  External (CM18)
+  External (CM19)
+  External (CM20)
+  External (CM21)
+  External (CM22)
+  External (CM23)
+  External (CM24)
+  External (CM25)
+  External (CM26)
+  External (CM27)
+  External (CM28)
+  External (CM29)
+  External (CM30)
+  External (CM31)
+  External (CM32)
+  External (CM33)
+  External (CM34)
+  External (CM35)
+  External (CM36)
+  External (CM37)
+  External (CM38)
+  External (CM39)
+  External (CM40)
+  External (CM41)
+  External (CM42)
+  External (CM43)
+  External (CM44)
+  External (CM45)
+  External (CM46)
+  External (CM47)
+  External (CM48)
+  External (CM49)
+  External (CM50)
+  External (CM51)
+  External (CM52)
+  External (CM53)
+  External (CM54)
+  External (CM55)
+  External (CM56)
+  External (CM57)
+  External (CM58)
+  External (CM59)
+  External (CM60)
+  External (CM61)
+  External (CM62)
+  External (CM63)
+  //
+  // The _PSD object provides information to the OSPM related
+  // to P-State coordination between processors in a multi-processor
+  // configurations.
+  //
+  External(\_SB.PR01, DeviceObj) If (CondRefOf (\_SB.PR01)) { Scope(\_SB.PR01) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(1, CM01)) } } }
+  External(\_SB.PR02, DeviceObj) If (CondRefOf (\_SB.PR02)) { Scope(\_SB.PR02) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(2, CM02)) } } }
+  External(\_SB.PR03, DeviceObj) If (CondRefOf (\_SB.PR03)) { Scope(\_SB.PR03) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(3, CM03)) } } }
+  External(\_SB.PR04, DeviceObj) If (CondRefOf (\_SB.PR04)) { Scope(\_SB.PR04) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(4, CM04)) } } }
+  External(\_SB.PR05, DeviceObj) If (CondRefOf (\_SB.PR05)) { Scope(\_SB.PR05) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(5, CM05)) } } }
+  External(\_SB.PR06, DeviceObj) If (CondRefOf (\_SB.PR06)) { Scope(\_SB.PR06) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(6, CM06)) } } }
+  External(\_SB.PR07, DeviceObj) If (CondRefOf (\_SB.PR07)) { Scope(\_SB.PR07) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(7, CM07)) } } }
+  External(\_SB.PR08, DeviceObj) If (CondRefOf (\_SB.PR08)) { Scope(\_SB.PR08) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(8, CM08)) } } }
+  External(\_SB.PR09, DeviceObj) If (CondRefOf (\_SB.PR09)) { Scope(\_SB.PR09) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(9, CM09)) } } }
+  External(\_SB.PR10, DeviceObj) If (CondRefOf (\_SB.PR10)) { Scope(\_SB.PR10) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(10, CM10)) } } }
+  External(\_SB.PR11, DeviceObj) If (CondRefOf (\_SB.PR11)) { Scope(\_SB.PR11) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(11, CM11)) } } }
+  External(\_SB.PR12, DeviceObj) If (CondRefOf (\_SB.PR12)) { Scope(\_SB.PR12) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(12, CM12)) } } }
+  External(\_SB.PR13, DeviceObj) If (CondRefOf (\_SB.PR13)) { Scope(\_SB.PR13) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(13, CM13)) } } }
+  External(\_SB.PR14, DeviceObj) If (CondRefOf (\_SB.PR14)) { Scope(\_SB.PR14) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(14, CM14)) } } }
+  External(\_SB.PR15, DeviceObj) If (CondRefOf (\_SB.PR15)) { Scope(\_SB.PR15) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(15, CM15)) } } }
+  External(\_SB.PR16, DeviceObj) If (CondRefOf (\_SB.PR16)) { Scope(\_SB.PR16) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(16, CM16)) } } }
+  External(\_SB.PR17, DeviceObj) If (CondRefOf (\_SB.PR17)) { Scope(\_SB.PR17) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(17, CM17)) } } }
+  External(\_SB.PR18, DeviceObj) If (CondRefOf (\_SB.PR18)) { Scope(\_SB.PR18) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(18, CM18)) } } }
+  External(\_SB.PR19, DeviceObj) If (CondRefOf (\_SB.PR19)) { Scope(\_SB.PR19) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(19, CM19)) } } }
+  External(\_SB.PR20, DeviceObj) If (CondRefOf (\_SB.PR20)) { Scope(\_SB.PR20) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(20, CM20)) } } }
+  External(\_SB.PR21, DeviceObj) If (CondRefOf (\_SB.PR21)) { Scope(\_SB.PR21) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(21, CM21)) } } }
+  External(\_SB.PR22, DeviceObj) If (CondRefOf (\_SB.PR22)) { Scope(\_SB.PR22) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(22, CM22)) } } }
+  External(\_SB.PR23, DeviceObj) If (CondRefOf (\_SB.PR23)) { Scope(\_SB.PR23) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(23, CM23)) } } }
+
+  External(\_SB.PR24, DeviceObj) If (CondRefOf (\_SB.PR24)) { Scope(\_SB.PR24) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(24, CM24)) } } }
+  External(\_SB.PR25, DeviceObj) If (CondRefOf (\_SB.PR25)) { Scope(\_SB.PR25) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(25, CM25)) } } }
+  External(\_SB.PR26, DeviceObj) If (CondRefOf (\_SB.PR26)) { Scope(\_SB.PR26) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(26, CM26)) } } }
+  External(\_SB.PR27, DeviceObj) If (CondRefOf (\_SB.PR27)) { Scope(\_SB.PR27) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(27, CM27)) } } }
+  External(\_SB.PR28, DeviceObj) If (CondRefOf (\_SB.PR28)) { Scope(\_SB.PR28) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(28, CM28)) } } }
+  External(\_SB.PR29, DeviceObj) If (CondRefOf (\_SB.PR29)) { Scope(\_SB.PR29) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(29, CM29)) } } }
+  External(\_SB.PR30, DeviceObj) If (CondRefOf (\_SB.PR30)) { Scope(\_SB.PR30) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(30, CM30)) } } }
+  External(\_SB.PR31, DeviceObj) If (CondRefOf (\_SB.PR31)) { Scope(\_SB.PR31) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(31, CM31)) } } }
+  External(\_SB.PR32, DeviceObj) If (CondRefOf (\_SB.PR32)) { Scope(\_SB.PR32) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(32, CM32)) } } }
+  External(\_SB.PR33, DeviceObj) If (CondRefOf (\_SB.PR33)) { Scope(\_SB.PR33) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(33, CM33)) } } }
+  External(\_SB.PR34, DeviceObj) If (CondRefOf (\_SB.PR34)) { Scope(\_SB.PR34) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(34, CM34)) } } }
+  External(\_SB.PR35, DeviceObj) If (CondRefOf (\_SB.PR35)) { Scope(\_SB.PR35) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(35, CM35)) } } }
+  External(\_SB.PR36, DeviceObj) If (CondRefOf (\_SB.PR36)) { Scope(\_SB.PR36) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(36, CM36)) } } }
+  External(\_SB.PR37, DeviceObj) If (CondRefOf (\_SB.PR37)) { Scope(\_SB.PR37) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(37, CM37)) } } }
+  External(\_SB.PR38, DeviceObj) If (CondRefOf (\_SB.PR38)) { Scope(\_SB.PR38) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(38, CM38)) } } }
+  External(\_SB.PR39, DeviceObj) If (CondRefOf (\_SB.PR39)) { Scope(\_SB.PR39) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(39, CM39)) } } }
+  External(\_SB.PR40, DeviceObj) If (CondRefOf (\_SB.PR40)) { Scope(\_SB.PR40) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(40, CM40)) } } }
+  External(\_SB.PR41, DeviceObj) If (CondRefOf (\_SB.PR41)) { Scope(\_SB.PR41) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(41, CM41)) } } }
+  External(\_SB.PR42, DeviceObj) If (CondRefOf (\_SB.PR42)) { Scope(\_SB.PR42) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(42, CM42)) } } }
+  External(\_SB.PR43, DeviceObj) If (CondRefOf (\_SB.PR43)) { Scope(\_SB.PR43) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(43, CM43)) } } }
+  External(\_SB.PR44, DeviceObj) If (CondRefOf (\_SB.PR44)) { Scope(\_SB.PR44) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(44, CM44)) } } }
+  External(\_SB.PR45, DeviceObj) If (CondRefOf (\_SB.PR45)) { Scope(\_SB.PR45) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(45, CM45)) } } }
+  External(\_SB.PR46, DeviceObj) If (CondRefOf (\_SB.PR46)) { Scope(\_SB.PR46) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(46, CM46)) } } }
+  External(\_SB.PR47, DeviceObj) If (CondRefOf (\_SB.PR47)) { Scope(\_SB.PR47) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(47, CM47)) } } }
+  External(\_SB.PR48, DeviceObj) If (CondRefOf (\_SB.PR48)) { Scope(\_SB.PR48) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(48, CM48)) } } }
+  External(\_SB.PR49, DeviceObj) If (CondRefOf (\_SB.PR49)) { Scope(\_SB.PR49) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(49, CM49)) } } }
+  External(\_SB.PR50, DeviceObj) If (CondRefOf (\_SB.PR50)) { Scope(\_SB.PR50) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(50, CM50)) } } }
+  External(\_SB.PR51, DeviceObj) If (CondRefOf (\_SB.PR51)) { Scope(\_SB.PR51) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(51, CM51)) } } }
+  External(\_SB.PR52, DeviceObj) If (CondRefOf (\_SB.PR52)) { Scope(\_SB.PR52) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(52, CM52)) } } }
+  External(\_SB.PR53, DeviceObj) If (CondRefOf (\_SB.PR53)) { Scope(\_SB.PR53) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(53, CM53)) } } }
+  External(\_SB.PR54, DeviceObj) If (CondRefOf (\_SB.PR54)) { Scope(\_SB.PR54) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(54, CM54)) } } }
+  External(\_SB.PR55, DeviceObj) If (CondRefOf (\_SB.PR55)) { Scope(\_SB.PR55) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(55, CM55)) } } }
+  External(\_SB.PR56, DeviceObj) If (CondRefOf (\_SB.PR56)) { Scope(\_SB.PR56) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(56, CM56)) } } }
+  External(\_SB.PR57, DeviceObj) If (CondRefOf (\_SB.PR57)) { Scope(\_SB.PR57) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(57, CM57)) } } }
+  External(\_SB.PR58, DeviceObj) If (CondRefOf (\_SB.PR58)) { Scope(\_SB.PR58) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(58, CM58)) } } }
+  External(\_SB.PR59, DeviceObj) If (CondRefOf (\_SB.PR59)) { Scope(\_SB.PR59) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(59, CM59)) } } }
+  External(\_SB.PR60, DeviceObj) If (CondRefOf (\_SB.PR60)) { Scope(\_SB.PR60) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(60, CM60)) } } }
+  External(\_SB.PR61, DeviceObj) If (CondRefOf (\_SB.PR61)) { Scope(\_SB.PR61) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(61, CM61)) } } }
+  External(\_SB.PR62, DeviceObj) If (CondRefOf (\_SB.PR62)) { Scope(\_SB.PR62) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(62, CM62)) } } }
+  External(\_SB.PR63, DeviceObj) If (CondRefOf (\_SB.PR63)) { Scope(\_SB.PR63) { Method(_PSD,0) { Return(\_SB.PR00.GPSD(63, CM63)) } } }
+
+} // End of Definition Block
+
+

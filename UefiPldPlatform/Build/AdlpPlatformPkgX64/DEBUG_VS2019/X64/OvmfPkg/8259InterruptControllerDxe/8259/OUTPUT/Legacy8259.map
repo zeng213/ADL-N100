@@ -1,0 +1,212 @@
+ Legacy8259
+
+ Timestamp is 65f95293 (Tue Mar 19 16:53:39 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 0000235aH .text$mn                CODE
+ 0002:00000000 00000fd4H .rdata                  DATA
+ 0002:00000fd4 00000170H .rdata$voltmd           DATA
+ 0002:00001144 00000164H .rdata$zzzdbg           DATA
+ 0003:00000000 000000e0H .data                   DATA
+ 0003:000000e0 00000064H .bss                    DATA
+ 0004:00000000 00000138H .pdata                  DATA
+ 0005:00000000 000000e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       InternalMemSetMem          00000000000002c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000020       InternalMemCopyMem         00000000000002e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000060       InternalMemZeroMem         0000000000000320     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000374 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c8       ProcessLibraryConstructorList 0000000000000388 f   Legacy8259:AutoGen.obj
+ 0001:00000280       ProcessModuleEntryPointList 0000000000000540 f   Legacy8259:AutoGen.obj
+ 0001:00000330       Interrupt8259ReadMask      00000000000005f0 f   Legacy8259:8259.obj
+ 0001:00000388       Interrupt8259SetVectorBase 0000000000000648 f   Legacy8259:8259.obj
+ 0001:0000045c       Interrupt8259GetMask       000000000000071c f   Legacy8259:8259.obj
+ 0001:000004a4       Interrupt8259SetMask       0000000000000764 f   Legacy8259:8259.obj
+ 0001:000004ec       Interrupt8259SetMode       00000000000007ac f   Legacy8259:8259.obj
+ 0001:0000060c       Interrupt8259GetVector     00000000000008cc f   Legacy8259:8259.obj
+ 0001:00000638       Interrupt8259EnableIrq     00000000000008f8 f   Legacy8259:8259.obj
+ 0001:000006b0       Interrupt8259DisableIrq    0000000000000970 f   Legacy8259:8259.obj
+ 0001:0000071c       Interrupt8259GetInterruptLine 00000000000009dc f   Legacy8259:8259.obj
+ 0001:00000780       Interrupt8259EndOfInterrupt 0000000000000a40 f   Legacy8259:8259.obj
+ 0001:000007ac       DebugPrint                 0000000000000a6c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000007d0       DebugPrintMarker           0000000000000a90 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00000868       DebugAssert                0000000000000b28 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000008e8       GetHobList                 0000000000000ba8 f   DxeHobLib:HobLib.obj
+ 0001:00000a00       GetNextHob                 0000000000000cc0 f   DxeHobLib:HobLib.obj
+ 0001:00000a58       PlatformHookSerialPortInitialize 0000000000000d18 f   PlatformHookLib:PlatformHookLib.obj
+ 0001:00000b24       AsciiStrLen                0000000000000de4 f   BaseLib:String.obj
+ 0001:00000ba4       StrnLenS                   0000000000000e64 f   BaseLib:SafeString.obj
+ 0001:00000c04       CopyMem                    0000000000000ec4 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00000c98       CompareGuid                0000000000000f58 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000d90       AsciiSPrint                0000000000001050 f   BasePrintLib:PrintLib.obj
+ 0001:00000dbc       BasePrintLibFillBuffer     000000000000107c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000df0       BasePrintLibValueToString  00000000000010b0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000e64       BasePrintLibSPrintMarker   0000000000001124 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001e64       BasePrintLibSPrint         0000000000002124 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001e88       SerialPortReadRegister     0000000000002148 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00001ebc       SerialPortWriteRegister    000000000000217c f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00001ef8       SerialPortInitialize       00000000000021b8 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:000020bc       SerialPortWrite            000000000000237c f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:0000220c       GetGuidHobDataFromSbl      00000000000024cc f   SblParseLib:SblParseLib.obj
+ 0001:000022d8       MmioRead32                 0000000000002598 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00002310       PciExpressRead32           00000000000025d0 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00002360       GetPcdProtocol             0000000000002620 f   DxePcdLib:DxePcdLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000026e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000002708     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       ??_C@_0L@CKIDCFJK@Legacy8259@ 0000000000002720     Legacy8259:AutoGen.obj
+ 0002:00000050       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000002730     Legacy8259:AutoGen.obj
+ 0002:00000078       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 0000000000002758     Legacy8259:AutoGen.obj
+ 0002:00000090       ??_C@_0II@GIOBLLJB@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002770     Legacy8259:AutoGen.obj
+ 0002:00000118       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000027f8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000130       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002810     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000190       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000002870     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000001a8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002888     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000001c0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000028a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000001e0       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000028c0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000258       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002938     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000280       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002960     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002f8       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000029d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000310       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000029f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000330       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002a10     DxeHobLib:HobLib.obj
+ 0002:00000388       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a68     DxeHobLib:HobLib.obj
+ 0002:000003a8       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a88     DxeHobLib:HobLib.obj
+ 0002:000003c8       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000002aa8     DxeHobLib:HobLib.obj
+ 0002:000003e0       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002ac0     BaseLib:String.obj
+ 0002:00000430       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002b10     BaseLib:String.obj
+ 0002:00000448       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 0000000000002b28     BaseLib:String.obj
+ 0002:00000470       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000002b50     BaseLib:String.obj
+ 0002:000004b0       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002b90     BaseLib:Unaligned.obj
+ 0002:00000510       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002bf0     BaseLib:SafeString.obj
+ 0002:00000568       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000002c48     BaseLib:DivU64x32.obj
+ 0002:00000580       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002c60     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000005d0       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002cb0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000638       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002d18     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000680       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000002d60     BasePrintLib:PrintLibInternal.obj
+ 0002:000006e0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000002dc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000700       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000002de0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000748       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000002e28     BasePrintLib:PrintLibInternal.obj
+ 0002:00000770       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000002e50     BasePrintLib:PrintLibInternal.obj
+ 0002:000007c0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000002ea0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000850       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000002f30     BasePrintLib:PrintLibInternal.obj
+ 0002:000008d8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000002fb8     BasePrintLib:PrintLibInternal.obj
+ 0002:000008e8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000002fc8     BasePrintLib:PrintLibInternal.obj
+ 0002:000008f8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000002fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00000930       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003010     BasePrintLib:PrintLibInternal.obj
+ 0002:00000940       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003020     BasePrintLib:PrintLibInternal.obj
+ 0002:0000095c       ??_C@_04JIMNDDED@?$CF08X@  000000000000303c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000964       ??_C@_02PCIJFNDE@?$AN?6@   0000000000003044     BasePrintLib:PrintLibInternal.obj
+ 0002:00000968       ??_C@_01LIIJDEN@?$AN@      0000000000003048     BasePrintLib:PrintLibInternal.obj
+ 0002:00000970       mWarningString             0000000000003050     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a10       mErrorString               00000000000030f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000cd0       mHexStr                    00000000000033b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ce0       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000033c0     SblParseLib:SblParseLib.obj
+ 0002:00000d60       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 0000000000003440     SblParseLib:SblParseLib.obj
+ 0002:00000d78       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 0000000000003458     SblParseLib:SblParseLib.obj
+ 0002:00000d98       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003478     SblParseLib:SblParseLib.obj
+ 0002:00000db0       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000003490     BaseLib:DivU64x32Remainder.obj
+ 0002:00000e10       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000034f0     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00000e70       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000003550     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00000e88       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 0000000000003568     BasePciExpressLib:PciExpressLib.obj
+ 0002:00000eb0       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000003590     BasePciExpressLib:PciExpressLib.obj
+ 0002:00000f10       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000035f0     DxePcdLib:DxePcdLib.obj
+ 0002:00000f68       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003648     DxePcdLib:DxePcdLib.obj
+ 0002:00000fd4       __volatile_metadata        00000000000036b4     <linker-defined>
+ 0003:00000000       gEfiLegacy8259ProtocolGuid 00000000000039a0     Legacy8259:AutoGen.obj
+ 0003:00000010       gUefiSerialPortInfoGuid    00000000000039b0     Legacy8259:AutoGen.obj
+ 0003:00000020       gPcdProtocolGuid           00000000000039c0     Legacy8259:AutoGen.obj
+ 0003:00000030       _gPcd_BinaryPatch_PcdPciSerialParameters 00000000000039d0     Legacy8259:AutoGen.obj
+ 0003:00000050       gEfiPciIoProtocolGuid      00000000000039f0     Legacy8259:AutoGen.obj
+ 0003:00000060       _gPcd_BinaryPatch_PcdSerialLineControl 0000000000003a00     Legacy8259:AutoGen.obj
+ 0003:00000061       _gPcd_BinaryPatch_PcdSerialUseMmio 0000000000003a01     Legacy8259:AutoGen.obj
+ 0003:00000064       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 0000000000003a04     Legacy8259:AutoGen.obj
+ 0003:00000068       _gPcd_BinaryPatch_PcdDebugPropertyMask 0000000000003a08     Legacy8259:AutoGen.obj
+ 0003:00000070       gEfiHobListGuid            0000000000003a10     Legacy8259:AutoGen.obj
+ 0003:00000080       _gPcd_BinaryPatch_PcdSerialFifoControl 0000000000003a20     Legacy8259:AutoGen.obj
+ 0003:00000084       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 0000000000003a24     Legacy8259:AutoGen.obj
+ 0003:00000088       mProtectedModeMask         0000000000003a28     Legacy8259:8259.obj
+ 0003:0000008a       mMasterBase                0000000000003a2a     Legacy8259:8259.obj
+ 0003:00000090       mInterrupt8259             0000000000003a30     Legacy8259:8259.obj
+ 0003:000000d8       mMode                      0000000000003a78     Legacy8259:8259.obj
+ 0003:000000dc       mSlaveBase                 0000000000003a7c     Legacy8259:8259.obj
+ 0003:000000e0       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000003a80     Legacy8259:AutoGen.obj
+ 0003:000000e8       _gPcd_BinaryPatch_PcdSerialRegisterStride 0000000000003a88     Legacy8259:AutoGen.obj
+ 0003:000000ec       _gPcd_BinaryPatch_PcdSerialDetectCable 0000000000003a8c     Legacy8259:AutoGen.obj
+ 0003:000000ed       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 0000000000003a8d     Legacy8259:AutoGen.obj
+ 0003:000000f0       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 0000000000003a90     Legacy8259:AutoGen.obj
+ 0003:000000f8       _gPcd_BinaryPatch_PcdSerialClockRate 0000000000003a98     Legacy8259:AutoGen.obj
+ 0003:000000fc       _gPcd_BinaryPatch_PcdSerialBaudRate 0000000000003a9c     Legacy8259:AutoGen.obj
+ 0003:00000100       m8259Handle                0000000000003aa0     Legacy8259:8259.obj
+ 0003:00000108       mProtectedModeEdgeLevel    0000000000003aa8     Legacy8259:8259.obj
+ 0003:00000110       gRT                        0000000000003ab0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000118       gST                        0000000000003ab8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000120       gBS                        0000000000003ac0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000128       gImageHandle               0000000000003ac8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000130       mHobList                   0000000000003ad0     DxeHobLib:HobLib.obj
+ 0003:00000138       mPcd                       0000000000003ad8     DxePcdLib:DxePcdLib.obj
+ 0003:00000140       mLegacyModeEdgeLevel       0000000000003ae0     <common>
+ 0003:00000142       mLegacyModeMask            0000000000003ae2     <common>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000003a       InternalMemCopyMem.0       00000000000002fa     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000004a       @CopyBackward              000000000000030a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000053       @CopyBytes                 0000000000000313     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$GetPcdProtocol     0000000000003c40     DxePcdLib:DxePcdLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000003c40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000003c48     Legacy8259:AutoGen.obj
+ 0005:00000018       $unwind$MmioRead32         0000000000003c58     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000018       $unwind$StrnLenS           0000000000003c58     BaseLib:SafeString.obj
+ 0005:00000018       $unwind$PciExpressRead32   0000000000003c58     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000018       $unwind$GetNextHob         0000000000003c58     DxeHobLib:HobLib.obj
+ 0005:00000018       $unwind$Interrupt8259SetMode 0000000000003c58     Legacy8259:8259.obj
+ 0005:00000018       $unwind$ProcessModuleEntryPointList 0000000000003c58     Legacy8259:AutoGen.obj
+ 0005:00000020       $unwind$AsciiStrLen        0000000000003c60     BaseLib:String.obj
+ 0005:00000020       $unwind$CopyMem            0000000000003c60     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000020       $unwind$Interrupt8259SetVectorBase 0000000000003c60     Legacy8259:8259.obj
+ 0005:00000020       $unwind$GetGuidHobDataFromSbl 0000000000003c60     SblParseLib:SblParseLib.obj
+ 0005:0000002c       $unwind$Interrupt8259GetInterruptLine 0000000000003c6c     Legacy8259:8259.obj
+ 0005:00000034       $unwind$DebugPrint         0000000000003c74     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000003c       $unwind$DebugPrintMarker   0000000000003c7c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000050       $unwind$DebugAssert        0000000000003c90     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000058       $unwind$BasePrintLibValueToString 0000000000003c98     BasePrintLib:PrintLibInternal.obj
+ 0005:00000058       $unwind$GetHobList         0000000000003c98     DxeHobLib:HobLib.obj
+ 0005:00000068       $unwind$PlatformHookSerialPortInitialize 0000000000003ca8     PlatformHookLib:PlatformHookLib.obj
+ 0005:00000070       $unwind$CompareGuid        0000000000003cb0     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:0000008c       $unwind$AsciiSPrint        0000000000003ccc     BasePrintLib:PrintLib.obj
+ 0005:00000094       $unwind$BasePrintLibSPrintMarker 0000000000003cd4     BasePrintLib:PrintLibInternal.obj
+ 0005:000000b0       $unwind$BasePrintLibSPrint 0000000000003cf0     BasePrintLib:PrintLibInternal.obj
+ 0005:000000b8       $unwind$SerialPortInitialize 0000000000003cf8     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:000000d0       $unwind$SerialPortWrite    0000000000003d10     BaseSerialPortLib16550:BaseSerialPortLib16550.obj

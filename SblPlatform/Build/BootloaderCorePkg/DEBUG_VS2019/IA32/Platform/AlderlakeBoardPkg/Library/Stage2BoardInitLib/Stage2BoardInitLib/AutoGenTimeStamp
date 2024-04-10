@@ -1,0 +1,15 @@
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\Stage2BoardInitLib.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\LowPowerSupport.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\SioChip.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\InterruptInit.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\MiscInit.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\InterruptInit.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\AcpiPlatform.c
+e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\Stage2BoardInitLib\DEBUG\AutoGen.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\LowPowerSupport.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\Stage2BoardInitLib.inf
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\SmbiosInit.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\CpuInfoLib.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\GpioTableAdlTsn.h
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\Stage2BoardInitLib.c
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\SioChip.c

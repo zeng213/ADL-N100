@@ -1,0 +1,344 @@
+WARNING  : working dir was changed from MFIT base folder to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
+INFO     : Generate layout dictionary <xpath, container wrapper>
+INFO     : Layout dictionary generated successfully
+INFO     : Layout initialization completed successfully
+INFO     : 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\new.xml' generated successfully
+WARNING  : working dir was changed from MFIT base folder to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
+INFO     : Generate layout dictionary <xpath, container wrapper>
+INFO     : Layout dictionary generated successfully
+INFO     : Layout initialization completed successfully
+INFO     : Start decompose 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
+INFO     : Start decompose 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
+INFO     : Revision number of the currently loaded Intel(R) ME binary binary: 16.50.10.1351
+WARNING  : Ignoring reading key GlobalData:EnvironmentVariablesDataBucket:WorkingDir value from config xml
+WARNING  : Ignoring reading key GlobalData:EnvironmentVariablesDataBucket:DestDir value from config xml
+INFO     : 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\updated.xml' loaded successfully
+INFO     : Build 'Temp/Ifwi.bin' start...
+INFO     : Executing SigningContainer build
+INFO     : SigningContainer build completed successfully
+INFO     : Executing HarnessGlobalData build
+INFO     : HarnessGlobalData build completed successfully
+INFO     : Executing EcRegionPointer build
+INFO     : EcRegionPointer build completed successfully
+INFO     : Executing FLASH_VALID_SIGNATURE build
+INFO     : FLASH_VALID_SIGNATURE build completed successfully
+INFO     : Executing FLMAP0 build
+INFO     : FLMAP0 build completed successfully
+INFO     : Executing FLMAP1 build
+INFO     : FLMAP1 build completed successfully
+INFO     : Executing FLMAP2 build
+INFO     : FLMAP2 build completed successfully
+INFO     : Executing FLMAP3 build
+INFO     : FLMAP3 build completed successfully
+INFO     : Executing FLMAP4 build
+INFO     : FLMAP4 build completed successfully
+INFO     : Executing FDBAR build
+INFO     : FDBAR build completed successfully
+INFO     : Executing FLCOMP build
+INFO     : FLCOMP build completed successfully
+INFO     : Executing FLIL build
+INFO     : FLIL build completed successfully
+INFO     : Executing FCBA_RESERVED build
+INFO     : FCBA_RESERVED build completed successfully
+INFO     : Executing FCBA build
+INFO     : FCBA build completed successfully
+INFO     : Executing Regions build
+INFO     : Regions build completed successfully
+INFO     : Executing MasterAccessPermissions build
+INFO     : MasterAccessPermissions build completed successfully
+INFO     : Executing PchStraps build
+INFO     : PchStraps build completed successfully
+INFO     : Executing HashDescriptorManifestExt build
+INFO     : HashDescriptorManifestExt build completed successfully
+INFO     : Executing FdvManifest build
+INFO     : FdvManifest build completed successfully
+INFO     : Executing PmcStraps build
+INFO     : PmcStraps build completed successfully
+INFO     : Executing CpuStraps build
+INFO     : CpuStraps build completed successfully
+INFO     : Executing PmcAndCpu build
+INFO     : PmcAndCpu build completed successfully
+INFO     : Executing DbCStraps build
+INFO     : DbCStraps build completed successfully
+INFO     : Executing MipDesc build
+INFO     : MipDesc build completed successfully
+INFO     : Executing VsccTable build
+INFO     : VsccTable build completed successfully
+INFO     : Executing OEM build
+INFO     : OEM build completed successfully
+INFO     : Executing DescriptorRegion build
+INFO     : DescriptorRegion build completed successfully
+INFO     : Executing EcRegion build
+INFO     : EcRegion build completed successfully
+INFO     : Executing GbeRegion build
+INFO     : GbeRegion build completed successfully
+INFO     : Executing RomBypassVector build
+INFO     : RomBypassVector build completed successfully
+INFO     : Executing CSE_POINTERS build
+INFO     : CSE_POINTERS build completed successfully
+INFO     : Executing RomBypass build
+INFO     : RomBypass build completed successfully
+INFO     : Executing RBE build
+INFO     : RBE build completed successfully
+INFO     : Executing PMC build
+INFO     : Version number of the currently loaded PMCP binary: 160.50.00.1009
+INFO     : PMC build completed successfully
+INFO     : Executing FTPR build
+INFO     : FTPR build completed successfully
+INFO     : Executing IDLM build
+INFO     : IDLM build completed successfully
+INFO     : Executing OEM_KM build
+INFO     : Version number of the currently loaded OEMP binary: 0.0.00.0
+INFO     : OEM_KM build completed successfully
+INFO     : Executing IOM build
+INFO     : Version number of the currently loaded IOMP binary: 35.8.00.0
+INFO     : IOM build completed successfully
+INFO     : Executing NPHY build
+INFO     : Version number of the currently loaded NPHY binary: 14.14.508.4007
+INFO     : NPHY build completed successfully
+INFO     : Executing TBT build
+INFO     : TBT build completed successfully
+INFO     : Executing PCHC build
+INFO     : Version number of the currently loaded PCHC binary: 16.50.00.1013
+INFO     : PCHC build completed successfully
+INFO     : Executing BPDT1 build
+INFO     : BPDT1 build completed successfully
+INFO     : Executing PSVN build
+INFO     : PSVN build completed successfully
+INFO     : Executing RSTR build
+INFO     : RSTR build completed successfully
+INFO     : Executing IMDP build
+INFO     : IMDP build completed successfully
+INFO     : Executing HVMP build
+INFO     : HVMP build completed successfully
+INFO     : Executing IVBP build
+INFO     : IVBP build completed successfully
+INFO     : Executing MFS build
+INFO     : MFS build completed successfully
+INFO     : Executing UTOK build
+INFO     : UTOK build completed successfully
+INFO     : Executing FLOG build
+INFO     : FLOG build completed successfully
+INFO     : Executing ELOG build
+INFO     : ELOG build completed successfully
+INFO     : Executing EFS build
+INFO     : EFS build completed successfully
+INFO     : Executing AutoNvars build
+INFO     : AutoNvars build completed successfully
+INFO     : Executing HmrfpoNvar build
+INFO     : HmrfpoNvar build completed successfully
+INFO     : Executing Icc build
+INFO     : Icc build completed successfully
+INFO     : Executing ConfigRulesNvar build
+INFO     : ConfigRulesNvar build completed successfully
+INFO     : Executing PavpHdcpNvar build
+INFO     : PavpHdcpNvar build completed successfully
+INFO     : Executing ChipsetInit build
+INFO     : ChipsetInit build completed successfully
+INFO     : Executing EomNvar build
+INFO     : EomNvar build completed successfully
+INFO     : Executing TbtConfigDataNvar build
+INFO     : TbtConfigDataNvar build completed successfully
+INFO     : Executing CameraGpioNvar build
+INFO     : CameraGpioNvar build completed successfully
+INFO     : Executing FITC build
+INFO     : FITC build completed successfully
+INFO     : Executing CDMD build
+INFO     : CDMD build completed successfully
+INFO     : Executing UEP build
+INFO     : UEP build completed successfully
+INFO     : Executing FDCR build
+INFO     : FDCR build completed successfully
+INFO     : Executing DATA_PARTITION build
+INFO     : add_sub_partition PSVN. offset: 0x400. length: 0x200
+INFO     : add_sub_partition RSTR. offset: 0x600. length: 0x18
+INFO     : add_sub_partition IMDP. offset: 0x640. length: 0x40
+INFO     : add_sub_partition HVMP. offset: 0x680. length: 0xC
+INFO     : add_sub_partition IVBP. offset: 0x1000. length: 0x4000
+INFO     : add_sub_partition MFS. offset: 0x5000. length: 0x64000
+INFO     : add_sub_partition UTOK. offset: 0x69000. length: 0x2000
+INFO     : add_sub_partition FLOG. offset: 0x6B000. length: 0x2000
+INFO     : add_sub_partition ELOG. offset: 0x6D000. length: 0x1000
+INFO     : add_sub_partition EFS. offset: 0x6E000. length: 0x11000
+INFO     : add_sub_partition FITC. offset: 0x7F000. length: 0x8000
+INFO     : add_sub_partition CDMD. offset: 0x87000. length: 0x3000
+INFO     : add_sub_partition UEP. offset: 0x8A000. length: 0x2000
+WARNING  : Skipping FDCR. Missing...
+INFO     : DATA_PARTITION build completed successfully
+INFO     : Executing NFTP build
+INFO     : NFTP build completed successfully
+INFO     : Executing ISH build
+INFO     : Version number of the currently loaded ISHC binary: 5.4.02.4591
+INFO     : ISH build completed successfully
+INFO     : Executing IUNIT build
+INFO     : Version number of the currently loaded IUNP binary: 0.10.01.7051
+INFO     : IUNIT build completed successfully
+INFO     : Executing GBST build
+INFO     : GBST build completed successfully
+INFO     : Executing BPDT3 build
+INFO     : BPDT3 build completed successfully
+INFO     : Executing CseRegion build
+INFO     : CseRegion build completed successfully
+INFO     : Executing PdrRegion build
+INFO     : PdrRegion build completed successfully
+INFO     : Executing PaddingRegion build
+INFO     : PaddingRegion build completed successfully
+INFO     : Executing BiosRegion build
+INFO     : BiosRegion build completed successfully
+INFO     : Executing IfwiRoot build
+INFO     : IfwiRoot build completed successfully
+INFO     : Executing SigningContainer post build
+INFO     : SigningContainer post build completed successfully
+INFO     : Executing HarnessGlobalData post build
+INFO     : HarnessGlobalData post build completed successfully
+INFO     : Executing EcRegionPointer post build
+INFO     : EcRegionPointer post build completed successfully
+INFO     : Executing FLASH_VALID_SIGNATURE post build
+INFO     : FLASH_VALID_SIGNATURE post build completed successfully
+INFO     : Executing FLMAP0 post build
+INFO     : FLMAP0 post build completed successfully
+INFO     : Executing FLMAP1 post build
+INFO     : FLMAP1 post build completed successfully
+INFO     : Executing FLMAP2 post build
+INFO     : FLMAP2 post build completed successfully
+INFO     : Executing FLMAP3 post build
+INFO     : FLMAP3 post build completed successfully
+INFO     : Executing FLMAP4 post build
+INFO     : FLMAP4 post build completed successfully
+INFO     : Executing FDBAR post build
+INFO     : FDBAR post build completed successfully
+INFO     : Executing FLCOMP post build
+INFO     : FLCOMP post build completed successfully
+INFO     : Executing FLIL post build
+INFO     : FLIL post build completed successfully
+INFO     : Executing FCBA_RESERVED post build
+INFO     : FCBA_RESERVED post build completed successfully
+INFO     : Executing FCBA post build
+INFO     : FCBA post build completed successfully
+INFO     : Executing Regions post build
+INFO     : Regions post build completed successfully
+INFO     : Executing MasterAccessPermissions post build
+INFO     : MasterAccessPermissions post build completed successfully
+INFO     : Executing PchStraps post build
+INFO     : PchStraps post build completed successfully
+INFO     : Executing HashDescriptorManifestExt post build
+INFO     : HashDescriptorManifestExt post build completed successfully
+INFO     : Executing FdvManifest post build
+INFO     : FdvManifest post build completed successfully
+INFO     : Executing PmcStraps post build
+INFO     : PmcStraps post build completed successfully
+INFO     : Executing CpuStraps post build
+INFO     : CpuStraps post build completed successfully
+INFO     : Executing PmcAndCpu post build
+INFO     : PmcAndCpu post build completed successfully
+INFO     : Executing DbCStraps post build
+INFO     : DbCStraps post build completed successfully
+INFO     : Executing MipDesc post build
+INFO     : MipDesc post build completed successfully
+INFO     : Executing VsccTable post build
+INFO     : VsccTable post build completed successfully
+INFO     : Executing OEM post build
+INFO     : OEM post build completed successfully
+INFO     : Executing DescriptorRegion post build
+INFO     : DescriptorRegion post build completed successfully
+INFO     : Executing EcRegion post build
+INFO     : EcRegion post build completed successfully
+INFO     : Executing GbeRegion post build
+INFO     : GbeRegion post build completed successfully
+INFO     : Executing RomBypassVector post build
+INFO     : RomBypassVector post build completed successfully
+INFO     : Executing CSE_POINTERS post build
+INFO     : CSE_POINTERS post build completed successfully
+INFO     : Executing RomBypass post build
+INFO     : RomBypass post build completed successfully
+INFO     : Executing RBE post build
+INFO     : RBE post build completed successfully
+INFO     : Executing PMC post build
+INFO     : PMC post build completed successfully
+INFO     : Executing FTPR post build
+INFO     : FTPR post build completed successfully
+INFO     : Executing IDLM post build
+INFO     : IDLM post build completed successfully
+INFO     : Executing OEM_KM post build
+INFO     : OEM_KM post build completed successfully
+INFO     : Executing IOM post build
+INFO     : IOM post build completed successfully
+INFO     : Executing NPHY post build
+INFO     : NPHY post build completed successfully
+INFO     : Executing TBT post build
+INFO     : TBT post build completed successfully
+INFO     : Executing PCHC post build
+INFO     : PCHC post build completed successfully
+INFO     : Executing BPDT1 post build
+INFO     : BPDT1 post build completed successfully
+INFO     : Executing PSVN post build
+INFO     : PSVN post build completed successfully
+INFO     : Executing RSTR post build
+INFO     : RSTR post build completed successfully
+INFO     : Executing IMDP post build
+INFO     : IMDP post build completed successfully
+INFO     : Executing HVMP post build
+INFO     : HVMP post build completed successfully
+INFO     : Executing IVBP post build
+INFO     : IVBP post build completed successfully
+INFO     : Executing MFS post build
+INFO     : MFS post build completed successfully
+INFO     : Executing UTOK post build
+INFO     : UTOK post build completed successfully
+INFO     : Executing FLOG post build
+INFO     : FLOG post build completed successfully
+INFO     : Executing ELOG post build
+INFO     : ELOG post build completed successfully
+INFO     : Executing EFS post build
+INFO     : EFS post build completed successfully
+INFO     : Executing AutoNvars post build
+INFO     : AutoNvars post build completed successfully
+INFO     : Executing HmrfpoNvar post build
+INFO     : HmrfpoNvar post build completed successfully
+INFO     : Executing Icc post build
+INFO     : Icc post build completed successfully
+INFO     : Executing ConfigRulesNvar post build
+INFO     : ConfigRulesNvar post build completed successfully
+INFO     : Executing PavpHdcpNvar post build
+INFO     : PavpHdcpNvar post build completed successfully
+INFO     : Executing ChipsetInit post build
+INFO     : ChipsetInit post build completed successfully
+INFO     : Executing EomNvar post build
+INFO     : EomNvar post build completed successfully
+INFO     : Executing TbtConfigDataNvar post build
+INFO     : TbtConfigDataNvar post build completed successfully
+INFO     : Executing CameraGpioNvar post build
+INFO     : CameraGpioNvar post build completed successfully
+INFO     : Executing FITC post build
+INFO     : FITC post build completed successfully
+INFO     : Executing CDMD post build
+INFO     : CDMD post build completed successfully
+INFO     : Executing UEP post build
+INFO     : UEP post build completed successfully
+INFO     : Executing FDCR post build
+INFO     : FDCR post build completed successfully
+INFO     : Executing DATA_PARTITION post build
+INFO     : DATA_PARTITION post build completed successfully
+INFO     : Executing NFTP post build
+INFO     : NFTP post build completed successfully
+INFO     : Executing ISH post build
+INFO     : ISH post build completed successfully
+INFO     : Executing IUNIT post build
+INFO     : IUNIT post build completed successfully
+INFO     : Executing GBST post build
+INFO     : GBST post build completed successfully
+INFO     : Executing BPDT3 post build
+INFO     : BPDT3 post build completed successfully
+INFO     : Executing CseRegion post build
+INFO     : CseRegion post build completed successfully
+INFO     : Executing PdrRegion post build
+INFO     : PdrRegion post build completed successfully
+INFO     : Executing PaddingRegion post build
+INFO     : PaddingRegion post build completed successfully
+INFO     : Executing BiosRegion post build
+INFO     : BiosRegion post build completed successfully
+INFO     : Executing IfwiRoot post build
+INFO     : IfwiRoot post build completed successfully
+INFO     : Saving image map file: Temp/Ifwi.map
+INFO     : Saving image info file: Temp/Ifwi.txt
+INFO     : 'Temp/Ifwi.bin' image built successfully

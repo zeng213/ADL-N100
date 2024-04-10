@@ -1,0 +1,3731 @@
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\BootloaderCorePkg\\Library\\MpInitLib\\Common\\MpCommon.nasm"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\BootloaderCorePkg\\Library\\MpInitLib\\MpInitLib\\DEBUG\\AutoGen.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma pack()
+#line 23 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 50 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma warning ( disable : 4214 )
+
+
+
+
+#pragma warning ( disable : 4100 )
+
+
+
+
+
+#pragma warning ( disable : 4057 )
+
+
+
+
+#pragma warning ( disable : 4127 )
+
+
+
+
+#pragma warning ( disable : 4505 )
+
+
+
+
+#pragma warning ( disable : 4206 )
+
+
+
+
+
+
+
+
+
+
+
+#pragma warning ( disable : 4701 )
+
+
+
+
+
+#pragma warning ( disable : 4703 )
+
+#line 109 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 111 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+  typedef unsigned __int64    UINT64;
+  
+  
+  
+  typedef __int64             INT64;
+  
+  
+  
+  typedef unsigned __int32    UINT32;
+  
+  
+  
+  typedef __int32             INT32;
+  
+  
+  
+  typedef unsigned short      UINT16;
+  
+  
+  
+  
+  typedef unsigned short      CHAR16;
+  
+  
+  
+  typedef short               INT16;
+  
+  
+  
+  
+  typedef unsigned char       BOOLEAN;
+  
+  
+  
+  typedef unsigned char       UINT8;
+  
+  
+  
+  typedef char                CHAR8;
+  
+  
+  
+  typedef signed char         INT8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 213 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+typedef UINT32  UINTN;
+
+
+
+
+typedef INT32   INTN;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+#line 296 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+#line 304 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 320 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 322 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 23 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+#pragma warning ( disable : 4200 )
+#line 30 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 44 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+  
+  
+  
+  
+  
+  
+#line 51 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 72 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+  
+    
+    
+    
+    
+    
+  #line 80 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 81 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+#line 96 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+    
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+#line 110 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 111 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+  #line 134 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 135 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+  #line 160 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 161 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+  
+
+
+
+
+
+#line 174 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+    
+    
+    
+    
+    
+  #line 180 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 181 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+#line 207 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+  
+#line 217 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+typedef struct {
+  UINT32  Data1;
+  UINT16  Data2;
+  UINT16  Data3;
+  UINT8   Data4[8];
+} GUID;
+
+
+
+
+typedef struct {
+  UINT8 Addr[4];
+} IPv4_ADDRESS;
+
+
+
+
+typedef struct {
+  UINT8 Addr[16];
+} IPv6_ADDRESS;
+
+
+
+
+typedef UINT64 PHYSICAL_ADDRESS;
+
+
+
+
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+
+
+
+struct _LIST_ENTRY {
+  LIST_ENTRY  *ForwardLink;
+  LIST_ENTRY  *BackLink;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 613 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 625 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 670 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+typedef CHAR8 *VA_LIST;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 738 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+typedef UINTN  *BASE_LIST;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 787 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+#line 791 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+#line 807 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT8)    == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT8)   == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT16)   == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT16)  == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT32)   == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT32)  == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT64)   == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT64)  == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (CHAR8)   == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (CHAR16)  == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (L'A')    == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (L"A")    == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+
+
+
+
+
+
+
+
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint32EnumValue = 0xffffffff
+} __VERIFY_UINT32_ENUM_SIZE;
+
+static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (__VERIFY_UINT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef UINTN RETURN_STATUS;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  void * _ReturnAddress(void);
+  #pragma intrinsic(_ReturnAddress)
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1301 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1316 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+#line 17 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\BootloaderCorePkg\\Library\\MpInitLib\\MpInitLib\\DEBUG\\AutoGen.h"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Library/PcdLib.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINTN
+__cdecl
+LibPcdSetSku (
+   UINTN   SkuId
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+UINT8
+__cdecl
+LibPcdGet8 (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+UINT16
+__cdecl
+LibPcdGet16 (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+UINT32
+__cdecl
+LibPcdGet32 (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+UINT64
+__cdecl
+LibPcdGet64 (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+void *
+__cdecl
+LibPcdGetPtr (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+BOOLEAN
+__cdecl
+LibPcdGetBool (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+UINTN
+__cdecl
+LibPcdGetSize (
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINT8
+__cdecl
+LibPcdGetEx8 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINT16
+__cdecl
+LibPcdGetEx16 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINT32
+__cdecl
+LibPcdGetEx32 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINT64
+__cdecl
+LibPcdGetEx64 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void *
+__cdecl
+LibPcdGetExPtr (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BOOLEAN
+__cdecl
+LibPcdGetExBool (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINTN
+__cdecl
+LibPcdGetExSize (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSet8S (
+   UINTN          TokenNumber,
+   UINT8          Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSet16S (
+   UINTN          TokenNumber,
+   UINT16         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSet32S (
+   UINTN          TokenNumber,
+   UINT32         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSet64S (
+   UINTN          TokenNumber,
+   UINT64         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetPtrS (
+         UINTN    TokenNumber,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetBoolS (
+   UINTN          TokenNumber,
+   BOOLEAN        Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetEx8S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT8          Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetEx16S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT16         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetEx32S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT32         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetEx64S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT64         Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetExPtrS (
+   const GUID     *Guid,
+         UINTN    TokenNumber,
+      UINTN    *SizeOfBuffer,
+         void     *Buffer
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPcdSetExBoolS (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   BOOLEAN        Value
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef
+void
+(__cdecl *PCD_CALLBACK)(
+          const GUID        *CallBackGuid, 
+          UINTN             CallBackToken,
+       void              *TokenData,
+          UINTN             TokenDataSize
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void
+__cdecl
+LibPcdCallbackOnSet (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber,
+   PCD_CALLBACK             NotificationFunction
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void
+__cdecl
+LibPcdCancelCallback (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber,
+   PCD_CALLBACK             NotificationFunction
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UINTN
+__cdecl
+LibPcdGetNextToken (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GUID *
+__cdecl
+LibPcdGetNextTokenSpace (
+   const GUID  *TokenSpaceGuid
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void *
+__cdecl
+LibPatchPcdSetPtr (
+          void       *PatchVariable,
+          UINTN       MaximumDatumSize,
+       UINTN       *SizeOfBuffer,
+   const  void        *Buffer
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPatchPcdSetPtrS (
+        void     *PatchVariable,
+         UINTN    MaximumDatumSize,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void *
+__cdecl
+LibPatchPcdSetPtrAndSize (
+         void        *PatchVariable,
+         UINTN       *SizeOfPatchVariable,
+          UINTN       MaximumDatumSize,
+       UINTN       *SizeOfBuffer,
+   const  void        *Buffer
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RETURN_STATUS
+__cdecl
+LibPatchPcdSetPtrAndSizeS (
+        void     *PatchVariable,
+        UINTN    *SizeOfPatchVariable,
+         UINTN    MaximumDatumSize,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+typedef enum {
+  PCD_TYPE_8,
+  PCD_TYPE_16,
+  PCD_TYPE_32,
+  PCD_TYPE_64,
+  PCD_TYPE_BOOL,
+  PCD_TYPE_PTR
+} PCD_TYPE;
+
+typedef struct {
+  
+  
+  
+  
+  PCD_TYPE          PcdType;
+  
+  
+  
+  
+  UINTN             PcdSize;
+  
+  
+  
+  
+  
+  
+  CHAR8             *PcdName;
+} PCD_INFO;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void
+__cdecl
+LibPcdGetInfo (
+          UINTN           TokenNumber,
+         PCD_INFO        *PcdInfo
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void
+__cdecl
+LibPcdGetInfoEx (
+   const  GUID            *Guid,
+          UINTN           TokenNumber,
+         PCD_INFO        *PcdInfo
+  );
+
+
+
+
+
+
+
+
+UINTN
+__cdecl
+LibPcdGetSku (
+  void
+  );
+
+#line 1735 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Library/PcdLib.h"
+#line 18 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\BootloaderCorePkg\\Library\\MpInitLib\\MpInitLib\\DEBUG\\AutoGen.h"
+
+extern GUID  gEfiCallerIdGuid;
+extern GUID  gEdkiiDscPlatformGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+extern GUID gPlatformModuleTokenSpaceGuid;
+extern GUID gPlatformCommonLibTokenSpaceGuid;
+
+
+extern UINT64 _gPcd_SkuId_Array[];
+
+
+
+extern const UINT32 _gPcd_FixedAtBuild_PcdCpuMaxLogicalProcessorNumber;
+
+
+
+
+
+
+extern const UINT32 _gPcd_FixedAtBuild_PcdCpuSortMethod;
+
+
+
+
+
+
+extern volatile  UINT32  _gPcd_BinaryPatch_PcdSmramTsegBase;
+
+
+
+
+
+extern UINTN _gPcd_BinaryPatch_Size_PcdSmramTsegBase; 
+
+extern volatile  UINT32  _gPcd_BinaryPatch_PcdSmramTsegSize;
+
+
+
+
+
+extern UINTN _gPcd_BinaryPatch_Size_PcdSmramTsegSize; 
+
+extern volatile  UINT8  _gPcd_BinaryPatch_PcdSmmRebaseMode;
+
+
+
+
+
+extern UINTN _gPcd_BinaryPatch_Size_PcdSmmRebaseMode; 
+
+extern volatile  UINT32  _gPcd_BinaryPatch_PcdFuncCpuInitHook;
+
+
+
+
+
+extern UINTN _gPcd_BinaryPatch_Size_PcdFuncCpuInitHook; 
+
+extern const BOOLEAN _gPcd_FixedAtBuild_PcdCpuX2ApicEnabled;
+
+
+
+extern const UINT8 _gPcd_FixedAtBuild_PcdBuildSmmHobs;
+
+
+
+
+
+
+
+
+
+
+
+#line 96 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\BootloaderCorePkg\\Library\\MpInitLib\\MpInitLib\\DEBUG\\AutoGen.h"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\BootloaderCorePkg\\Library\\MpInitLib\\Common\\MpCommon.nasm"
+;------------------------------------------------------------------------------ ;
+; Copyright (c) 2015 - 2021, Intel Corporation. All rights reserved.<BR>
+; SPDX-License-Identifier: BSD-2-Clause-Patent
+;
+; Module Name:
+;
+;   MpCommon.nasm
+;
+; Abstract:
+;
+;   This is the  common funcitons for Multiple Processor support
+;
+;-------------------------------------------------------------------------------
+
+%include "Nasm.inc"
+%include "MpEqu.inc"
+
+global _RendezvousFunnelProcStart
+_RendezvousFunnelProcStart:
+RendezvousFunnelProc:
+; At this point CS = 0x(vv00) and ip= 0x0.
+BITS 16
+    mov            eax, cr2
+    or             eax, eax
+    ; For SMM rebase flow, CR2 will be pre-filled with SMBASE
+    ; The same stub code will be shared for SMM rebasing and start IPI.
+    jz             StartIpi
+
+
+    ; The ASM code needs to use same 0x3800 segment as start IPI.
+    ; At initial SMM entry the segment is 0x3000, so force a long jump.
+    jmp            0x3800:(StartIpi - RendezvousFunnelProc)
+
+StartIpi:
+    mov            ax,  cs
+    mov            ds,  ax
+    mov            es,  ax
+    mov            ss,  ax
+    xor            ax,  ax
+    mov            fs,  ax
+    mov            gs,  ax
+
+    mov            si, AP_DATA_STRUCT_FIELD (BufferStart)
+    mov            edx, [si]    ; EDX is keeping the start address of wakeup buffer
+
+    mov            si, AP_DATA_STRUCT_FIELD (Gdtr)
+o32 lgdt           [si]
+
+    mov            si, AP_DATA_STRUCT_FIELD (Idtr)
+o32 lidt           [si]
+
+    ; Switch to protected mode
+    mov            eax, cr0           ; Get control register 0
+    or             eax, 000000003h    ; Set PE bit (bit #0) & MP
+    mov            cr0, eax
+
+    ; Switch to 32-bit code in executable memory (>1MB)
+    db             66h, 67h, 0EAh     ; far jump
+    dd             0x38000 + ProtModeStart - RendezvousFunnelProc; 32-bit offset
+    dw             0x10               ; 16-bit selector
+
+BITS 32
+SmmRebase:
+    mov            edi, 0x3fefc      ; SMBASE revision
+    mov            cl,  [edi]
+    mov            edi, 0x3fef8
+    cmp            cl, 0x64
+    jnz            SmmEm64t
+    mov            edi, 0x3ff00      ; AMD64, required by QEMU
+    mov            ecx, [edi]
+    cmp            ecx, 0x30000      ; Should contain default SMBASE
+    jz             SmmEm64t
+    mov            edi, 0x3fef8      ; Fallback to support SIMICS QSP model
+SmmEm64t:
+    mov            [edi], eax        ; change to new  SMBASE
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (SmrrMask)]
+    cmp            eax, 0
+    jz             SkipSmrrProg
+
+    xchg           eax, ebx
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (SmrrBase)]
+    xor            edx, edx
+    mov            ecx, 0x1f2        ; MSR_IA32_SMRR_PHYSBASE
+    wrmsr
+    inc            ecx
+    xchg           eax, ebx
+    wrmsr
+
+SkipSmrrProg:
+    rsm
+    jmp            $
+
+ProtModeStart:                    ; protected mode entry point
+    ; Since CS and DS base is set to 0, we need to add the buffer start to use the offset
+
+    mov            esi, edx           ; EDX is keeping the start address of wakeup buffer
+
+    mov            ax, word [cs:esi + AP_DATA_STRUCT_FIELD (DSSelector)]
+    mov            ds, ax
+
+    mov            ax, word [cs:esi + AP_DATA_STRUCT_FIELD (ESSelector)]
+    mov            es, ax
+
+    mov            ax, word [cs:esi + AP_DATA_STRUCT_FIELD (FSSelector)]
+    mov            fs, ax
+
+    mov            ax, word [cs:esi + AP_DATA_STRUCT_FIELD (GSSelector)]
+    mov            gs, ax
+
+    mov            ax, word [cs:esi + AP_DATA_STRUCT_FIELD (SSSelector)]
+    mov            ss, ax
+
+    cli
+
+    mov            eax, cr2           ; CR2 will be set to the new SMBASE before SMI IPI is generated
+    or             eax, eax
+    jnz            SmmRebase
+
+    mov            eax, cr0           ; Enable cache
+    and            eax, 09fffffffh
+    mov            cr0, eax
+
+    mov            eax, cr4           ; ENABLE_SSE
+    or             eax, 00000600h
+    mov            cr4, eax
+
+CallApFunc:
+    ; Acquire Lock
+    mov            eax, SPIN_LOCK_RELEASED
+    mov            edx, SPIN_LOCK_ACQUIRED
+    lock cmpxchg   [esi + AP_DATA_STRUCT_FIELD (SpinLock)], edx
+    jnz            CallApFunc
+
+    ; Calculate stack
+    inc            dword [esi + AP_DATA_STRUCT_FIELD (ApCounter)]
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (ApCounter)]
+    mov            ebx, eax
+
+    ; Program AP stack for each thread
+    mov            ecx, [esi + AP_DATA_STRUCT_FIELD (ApStackSize)]
+    shl            eax, cl
+    add            eax, [esi + AP_DATA_STRUCT_FIELD (StackStart)]
+    lea            esp, [eax - 0x10]
+
+    ; Release Lock
+    mov            eax, SPIN_LOCK_RELEASED
+    mov            [esi + AP_DATA_STRUCT_FIELD (SpinLock)], eax
+
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (CpuArch)]
+    cmp            eax, 0
+    jnz            SwitchToLongMode
+
+    ; Call C Function
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (CProcedure)]
+    test           eax, eax
+    jz             GoToSleep
+
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (MpDataStruct)]
+    push           eax
+    push           ebx
+
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (CProcedure)]
+    call           eax
+    add            esp, 8
+
+    wbinvd
+
+GoToSleep:
+    cli
+    hlt
+    jmp            $-2
+
+
+SwitchToLongMode:
+    ; Prepare stack for RETF
+    xor            eax, eax
+    mov            ax, word [esi + AP_DATA_STRUCT_FIELD (CSSelector)]
+    push           eax
+    lea            eax, [LongModeStart - RendezvousFunnelProc]
+    add            eax, esi
+    push           eax
+
+    ; Enable PAE
+    mov            eax, cr4
+    bts            eax, 5
+    mov            cr4, eax
+
+    ; Load page table
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (Cr3)]
+    mov            cr3, eax                    ; Load CR3
+
+    ; Enable long mode
+    mov            ecx, 0c0000080h             ; EFER MSR number
+    rdmsr                                      ; Read EFER
+    bts            eax, 8                      ; Set LME=1
+    wrmsr                                      ; Write EFER
+
+    ; Enable paging
+    mov            eax, cr0                    ; Read CR0
+    bts            eax, 31                     ; Set PG=1
+    mov            cr0, eax                    ; Write CR0
+
+    ;
+    ; Change to long mode
+    ;
+    retf
+
+BITS 64
+LongModeStart:
+    ; Call C Function
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (CProcedure)]
+    test           eax, eax
+    jz             GoToSleep
+
+    mov            eax, [esi + AP_DATA_STRUCT_FIELD (CProcedure)]
+    mov            edx, [esi + AP_DATA_STRUCT_FIELD (MpDataStruct)]
+    mov            ecx, ebx
+    call           rax
+
+    wbinvd
+
+GoToSleep64:
+    cli
+    hlt
+    jmp            $-2
+
+
+
+BITS 16
+global _mDefaultSmiHandlerStart
+global _mDefaultSmiHandlerRet
+global _mDefaultSmiHandlerEnd
+_mDefaultSmiHandlerStart:
+    ; Enable valid bit in SMRR mask
+    mov            ecx, 01f3h
+    rdmsr
+    cmp            eax, 0
+    jz             _mDefaultSmiHandlerRet
+    bts            eax, 11
+    jc             _mDefaultSmiHandlerRet
+    wrmsr
+_mDefaultSmiHandlerRet:
+    rsm
+_mDefaultSmiHandlerEnd:
+    jmp            $
+
+align  16
+global _RendezvousFunnelProcEnd
+_RendezvousFunnelProcEnd:
+
+MpDataAreaStart:
+    buffer         times AP_DATA_STRUCT_FIELD(Terminator)   db  0
+MpDataAreaEnd:
+
+%if AP_DATA_STRUCT_OFFSET > 0x8000   ;AP_BUFFER_SIZE
+%error "MP waking up stub combined code & data size should be less than 32KB !"
+%endif
+

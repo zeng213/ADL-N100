@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\245CB4DA-8E15-4A1B-87E3-9878FFA07520Legacy8259\245CB4DA-8E15-4A1B-87E3-9878FFA07520SEC2.1.pe32 E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\OvmfPkg\8259InterruptControllerDxe\8259\OUTPUT\Legacy8259.efi

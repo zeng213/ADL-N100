@@ -1,0 +1,87 @@
+
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApCst.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApCst.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApHwp.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApHwp.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApIst.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApIst.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApPsd.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApPsd.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApTst.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\ApTst.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Cst.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Cst.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Hwp.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Hwp.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Ist.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Ist.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Psd.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Psd.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Tst.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\Cpu0Tst.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\CpuSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\CpuSsdt\CpuSsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Dptf\Dptf.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Dptf\Dptf.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Dsdt\Dsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Dsdt\Dsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Platform\CommonBoardPkg\AcpiTables\Tpm\TpmSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Platform\CommonBoardPkg\AcpiTables\Tpm\TpmSsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\SaSsdt\SaSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\SaSsdt\SaSsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\SaSsdt\Thermal.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\SaSsdt\Thermal.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\AdlNDdr5CrbRtd3.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\AdlNDdr5CrbRtd3.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\AdlNRvpRtd3.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\AdlNRvpRtd3.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\IgfxSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\IgfxSsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\SocCommonSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\SocCommonSsdt.asl.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\SocGpeSsdt.asl.trim.deps)
+!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN\OUTPUT\Ssdt\SocGpeSsdt.asl.trim.deps
+!ENDIF
+
+               

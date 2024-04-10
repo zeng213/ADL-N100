@@ -1,0 +1,59 @@
+## @file
+#
+#  Copyright (c) 2017 - 2023, Intel Corporation. All rights reserved.<BR>
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = TpmLib
+  FILE_GUID                      = FB56D5A8-ABD3-4BB6-81F7-B08F7CFB646C
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = TpmLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF
+#
+
+[Sources]
+  TpmEventLog.h
+  TpmLibInternal.h
+  TpmLib.c
+  Tpm2Ptp.c
+  Tpm2Tis.c
+  Tpm2Startup.c
+  Tpm2Integrity.c
+  Tpm2Hierarchy.c
+  Tpm2Capability.c
+  Tpm2Help.c
+  TpmEventLog.c
+  Tpm2CommandLib.h
+  Tpm2DeviceLib.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+
+[Pcd]
+  gPlatformCommonLibTokenSpaceGuid.PcdTpmBaseAddress            ## CONSUMES
+  gPlatformCommonLibTokenSpaceGuid.PcdTcgLogAreaMinLen          ## CONSUMES
+  gPlatformCommonLibTokenSpaceGuid.PcdTpmLibId                  ## CONSUMES
+  gPlatformCommonLibTokenSpaceGuid.PcdVerifiedBootEnabled       ## CONSUMES
+  gPlatformCommonLibTokenSpaceGuid.PcdMeasuredBootHashMask      ## CONSUMES
+
+[LibraryClasses]
+  BaseLib
+  DebugLib
+  CryptoLib
+  BootloaderCommonLib
+  BootloaderLib
+  ResetSystemLib
+  HobLib
+  HobBuildLib
+
+[Guids]
+ gTcgEvent2EntryHobGuid

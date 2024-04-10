@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCorePkg\Stage1A\Stage1A\DEBUG\AutoGen.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Stage1A\Stage1A.c

@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\IoLibMsc.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\IoHighLevel.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\IoLibMmioBuffer.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\IoLib.c

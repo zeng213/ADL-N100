@@ -1,0 +1,52 @@
+## @file
+# Platform Package
+#
+# This package provides platform specific modules.
+#
+# Copyright (c) 2014 - 2020, Intel Corporation. All rights reserved.<BR>
+# This program and the accompanying materials are licensed and made available under
+# the terms and conditions of the BSD License that accompanies this distribution.
+# The full text of the license may be found at
+# http://opensource.org/licenses/bsd-license.php.
+#
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = PlatformPkg
+  PACKAGE_GUID                   = 8F21D49B-D711-4cad-A377-08F7D9F8327B
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[LibraryClasses]
+
+[Guids]
+  #
+  ## Defines the token space for the Platform Package PCDs.
+  #
+  gUefiPlatformPkgTokenSpaceGuid          = {0xf3a87cb3, 0x9de7, 0x4029, {0x96, 0x78, 0x69, 0xd8, 0x94, 0x88, 0xc4, 0x9b}}
+
+
+[Ppis]
+
+[Protocols]
+
+  gHeciProtocolGuid               =  {0x3c7bc880, 0x41f8, 0x4869, {0xae, 0xfc, 0x87, 0x0a, 0x3e, 0xd2, 0x82, 0x99}}
+  gGopPolicyProtocolGuid          =  {0xec2e931b, 0x3281, 0x48a5, {0x81, 0x07, 0xdf, 0x8a, 0x8b, 0xed, 0x3c, 0x5d}}
+
+################################################################################
+#
+# PCD Declarations section - list of all PCDs Declared by this Package
+#                            Only this package should be providing the
+#                            declaration, other packages should not.
+#
+################################################################################
+[PcdsFixedAtBuild]
+
+[PcdsDynamic, PcdsDynamicEx]
+

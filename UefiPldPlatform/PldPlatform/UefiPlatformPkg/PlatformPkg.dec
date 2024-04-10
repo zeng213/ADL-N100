@@ -1,0 +1,54 @@
+## @file
+# Platform Package
+#
+# This package provides platform specific modules.
+#
+# Copyright (c) 2014 - 2019, Intel Corporation. All rights reserved.<BR>
+# This program and the accompanying materials are licensed and made available under
+# the terms and conditions of the BSD License that accompanies this distribution.
+# The full text of the license may be found at
+# http://opensource.org/licenses/bsd-license.php.
+#
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = PlatformPkg
+  PACKAGE_GUID                   = 8F21D49B-D711-4cad-A377-08F7D9F83223
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  UefiPlatformPkg/Override/EmbeddedPkg/Include
+  UefiPlatformPkg/Override/UefiPayloadPkg/Include
+
+[LibraryClasses]
+
+[Guids]
+  #
+  ## Defines the token space for the Platform Package PCDs.
+  #
+  gUefiPlatformPkgTokenSpaceGuid          = {0xd4a87cb3, 0x9de7, 0x4029, {0x96, 0x78, 0x69, 0xd8, 0x94, 0x88, 0xc4, 0x9b}}  
+
+
+[Ppis]
+
+[Protocols]
+
+
+################################################################################
+#
+# PCD Declarations section - list of all PCDs Declared by this Package
+#                            Only this package should be providing the
+#                            declaration, other packages should not.
+#
+################################################################################
+
+[PcdsDynamic, PcdsDynamicEx]
+
+[PcdsFixedAtBuild, PcdsPatchableInModule]
+  # Size of the region used by UEFI in permanent memory
+  gUefiPlatformPkgTokenSpaceGuid.PcdSystemMemoryUefiRegionSize|0x02000000|UINT32|0x00000017
+

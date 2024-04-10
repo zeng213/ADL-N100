@@ -1,0 +1,5752 @@
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\DEBUG\\AutoGen.h"
+/**
+  DO NOT EDIT
+  FILE auto-generated
+  Module name:
+    AutoGen.h
+  Abstract:       Auto-generated AutoGen.h for building module or library.
+**/
+
+
+
+
+
+
+
+
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+/** @file
+  Root include file for Mde Package Base type modules
+
+  This is the include file for any module of type base. Base modules only use
+  types defined via this include file and can be ported easily to any
+  environment. There are a set of base libraries in the Mde Package that can
+  be used to implement base modules.
+
+Copyright (c) 2006 - 2021, Intel Corporation. All rights reserved.<BR>
+Portions copyright (c) 2008 - 2009, Apple Inc. All rights reserved.<BR>
+SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+
+
+
+//
+// Include processor specific binding
+//
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+/** @file
+  Processor or Compiler specific defines and types for IA-32 architecture.
+
+Copyright (c) 2006 - 2018, Intel Corporation. All rights reserved.<BR>
+SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+
+
+///
+/// Define the processor type so other code can make processor based choices.
+///
+
+
+//
+// Make sure we are using the correct packing rules per EFI specification
+//
+
+#pragma pack()
+#line 23 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 50 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+//
+// Disable warning that make it impossible to compile at /W4
+// This only works for Microsoft* tools
+//
+
+//
+// Disabling bitfield type checking warnings.
+//
+#pragma warning ( disable : 4214 )
+
+//
+// Disabling the unreferenced formal parameter warnings.
+//
+#pragma warning ( disable : 4100 )
+
+//
+// Disable slightly different base types warning as CHAR8 * can not be set
+// to a constant string.
+//
+#pragma warning ( disable : 4057 )
+
+//
+// ASSERT(FALSE) or while (TRUE) are legal constructs so suppress this warning
+//
+#pragma warning ( disable : 4127 )
+
+//
+// This warning is caused by functions defined but not used. For precompiled header only.
+//
+#pragma warning ( disable : 4505 )
+
+//
+// This warning is caused by empty (after preprocessing) source file. For precompiled header only.
+//
+#pragma warning ( disable : 4206 )
+
+
+
+//
+// Disable these warnings for VS2013.
+//
+
+//
+// This warning is for potentially uninitialized local variable, and it may cause false
+// positive issues in VS2013 and VS2015 build
+//
+#pragma warning ( disable : 4701 )
+
+//
+// This warning is for potentially uninitialized local pointer variable, and it may cause
+// false positive issues in VS2013 and VS2015 build
+//
+#pragma warning ( disable : 4703 )
+
+#line 109 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 111 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+  //
+  // use Microsoft C compiler dependent integer width types
+  //
+
+  ///
+  /// 8-byte unsigned value.
+  ///
+  typedef unsigned __int64    UINT64;
+  ///
+  /// 8-byte signed value.
+  ///
+  typedef __int64             INT64;
+  ///
+  /// 4-byte unsigned value.
+  ///
+  typedef unsigned __int32    UINT32;
+  ///
+  /// 4-byte signed value.
+  ///
+  typedef __int32             INT32;
+  ///
+  /// 2-byte unsigned value.
+  ///
+  typedef unsigned short      UINT16;
+  ///
+  /// 2-byte Character.  Unless otherwise specified all strings are stored in the
+  /// UTF-16 encoding format as defined by Unicode 2.1 and ISO/IEC 10646 standards.
+  ///
+  typedef unsigned short      CHAR16;
+  ///
+  /// 2-byte signed value.
+  ///
+  typedef short               INT16;
+  ///
+  /// Logical Boolean.  1-byte value containing 0 for FALSE or a 1 for TRUE.  Other
+  /// values are undefined.
+  ///
+  typedef unsigned char       BOOLEAN;
+  ///
+  /// 1-byte unsigned value.
+  ///
+  typedef unsigned char       UINT8;
+  ///
+  /// 1-byte Character.
+  ///
+  typedef char                CHAR8;
+  ///
+  /// 1-byte signed value.
+  ///
+  typedef signed char         INT8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 213 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+///
+/// Unsigned value of native width.  (4 bytes on supported 32-bit processor instructions;
+/// 8 bytes on supported 64-bit processor instructions.)
+///
+typedef UINT32  UINTN;
+///
+/// Signed value of native width.  (4 bytes on supported 32-bit processor instructions;
+/// 8 bytes on supported 64-bit processor instructions.)
+///
+typedef INT32   INTN;
+
+//
+// Processor specific defines
+//
+
+///
+/// A value of native width with the highest bit set.
+///
+
+///
+/// A value of native width with the two highest bits set.
+///
+
+
+///
+/// Maximum legal IA-32 address.
+///
+
+
+///
+/// Maximum usable address at boot time
+///
+
+
+///
+/// Maximum legal IA-32 INTN and UINTN values.
+///
+
+
+
+///
+/// Minimum legal IA-32 INTN value.
+///
+
+
+///
+/// The stack alignment required for IA-32.
+///
+
+
+///
+/// Page allocation granularity for IA-32.
+///
+
+
+
+//
+// Modifier to ensure that all protocol member functions and EFI intrinsics
+// use the correct C calling convention. All protocol member functions and
+// EFI intrinsics are required to modify their member functions with EFIAPI.
+//
+
+
+
+
+
+  ///
+  /// Microsoft* compiler specific method for EFIAPI calling convention.
+  ///
+  
+
+
+
+
+
+
+
+
+
+
+
+#line 296 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+
+
+
+
+
+
+#line 304 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+/**
+  Return the pointer to the first instruction of a function given a function pointer.
+  On IA-32 CPU architectures, these two pointer values are the same,
+  so the implementation of this macro is very simple.
+
+  @param  FunctionPointer   A pointer to a function.
+
+  @return The pointer to the first instruction of a function given a function pointer.
+
+**/
+
+
+
+
+#line 320 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 322 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Ia32\\ProcessorBind.h"
+
+#line 23 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+//
+// Disable warning when last field of data structure is a zero sized array.
+//
+#pragma warning ( disable : 4200 )
+#line 30 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// The Microsoft* C compiler can removed references to unreferenced data items
+//  if the /OPT:REF linker option is used. We defined a macro as this is a
+//  a non standard extension
+//
+
+
+
+
+
+
+
+#line 44 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+  ///
+  /// Remove the global variable from the linked image if there are no references
+  ///  to it after all compiler and linker optimizations have been performed.
+  ///
+  ///
+  
+#line 51 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// Should be used in combination with NORETURN to avoid 'noreturn' returns
+// warnings.
+//
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 72 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+  
+    ///
+    /// Signal compilers and analyzers that this call is not reachable.  It is
+    /// up to the compiler to remove any code past that point.
+    ///
+    
+  #line 80 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 81 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// Signaling compilers and analyzers that a certain function cannot return may
+// remove all following code and thus lead to better optimization and less
+// false positives.
+//
+
+  
+
+
+
+
+
+
+#line 96 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+    ///
+    /// Signal compilers and analyzers that the function cannot return.
+    /// It is up to the compiler to remove any code past a call to functions
+    /// flagged with this attribute.
+    ///
+    
+  
+
+
+
+
+
+
+#line 110 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 111 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// Should be used in combination with ANALYZER_NORETURN to avoid 'noreturn'
+// returns warnings.
+//
+
+  
+
+
+
+
+
+
+
+
+
+  
+    ///
+    /// Signal the analyzer that this call is not reachable.
+    /// This excludes compilers.
+    ///
+    
+  #line 134 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 135 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// Static Analyzers may issue errors about potential NULL-dereferences when
+// dereferencing a pointer, that has been checked before, outside of a
+// NULL-check.  This may lead to false positives, such as when using ASSERT()
+// for verification.
+//
+
+  
+
+
+
+
+
+
+
+
+
+  
+    ///
+    /// Signal the analyzer that the function cannot return.
+    /// This excludes compilers.
+    ///
+    
+  #line 160 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 161 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+///
+/// Tell the code optimizer that the function will return twice.
+/// This prevents wrong optimizations which can cause bugs.
+///
+
+  
+
+
+
+
+
+#line 174 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+    ///
+    /// Tell the code optimizer that the function will return twice.
+    /// This prevents wrong optimizations which can cause bugs.
+    ///
+    
+  #line 180 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+#line 181 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// For symbol name in assembly code, an extra "_" is sometimes necessary
+//
+
+///
+/// Private worker functions for ASM_PFX()
+///
+
+
+
+///
+/// The __USER_LABEL_PREFIX__ macro predefined by GNUC represents the prefix
+/// on symbols in assembly language.
+///
+
+
+
+
+
+
+
+
+
+  
+#line 207 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+  
+#line 217 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+///
+/// 128 bit buffer containing a unique identifier value.
+/// Unless otherwise specified, aligned on a 64 bit boundary.
+///
+typedef struct {
+  UINT32  Data1;
+  UINT16  Data2;
+  UINT16  Data3;
+  UINT8   Data4[8];
+} GUID;
+
+///
+/// 4-byte buffer. An IPv4 internet protocol address.
+///
+typedef struct {
+  UINT8 Addr[4];
+} IPv4_ADDRESS;
+
+///
+/// 16-byte buffer. An IPv6 internet protocol address.
+///
+typedef struct {
+  UINT8 Addr[16];
+} IPv6_ADDRESS;
+
+//
+// 8-bytes unsigned value that represents a physical system address.
+//
+typedef UINT64 PHYSICAL_ADDRESS;
+
+///
+/// LIST_ENTRY structure definition.
+///
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+///
+/// _LIST_ENTRY structure definition.
+///
+struct _LIST_ENTRY {
+  LIST_ENTRY  *ForwardLink;
+  LIST_ENTRY  *BackLink;
+};
+
+//
+// Modifiers to abstract standard types to aid in debug of problems
+//
+
+///
+/// Datum is read-only.
+///
+
+
+///
+/// Datum is scoped to the current file or function.
+///
+
+
+///
+/// Undeclared type.
+///
+
+
+//
+// Modifiers for Data Types used to self document code.
+// This concept is borrowed for UEFI specification.
+//
+
+///
+/// Datum is passed to the function.
+///
+
+
+///
+/// Datum is returned from the function.
+///
+
+
+///
+/// Passing the datum to the function is optional, and a NULL
+/// is passed if the value is not supplied.
+///
+
+
+//
+//  UEFI specification claims 1 and 0. We are concerned about the
+//  compiler portability so we did it this way.
+//
+
+///
+/// Boolean true value.  UEFI Specification defines this value to be 1,
+/// but this form is more portable.
+///
+
+
+///
+/// Boolean false value.  UEFI Specification defines this value to be 0,
+/// but this form is more portable.
+///
+
+
+///
+/// NULL pointer (VOID *)
+///
+
+
+//
+// Null character
+//
+
+
+///
+/// Maximum values for common UEFI Data Types
+///
+
+
+
+
+
+
+
+
+
+///
+/// Minimum values for the signed UEFI Data Types
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  Support for variable argument lists in freestanding edk2 modules.
+//
+//  For modules that use the ISO C library interfaces for variable
+//  argument lists, refer to "StdLib/Include/stdarg.h".
+//
+//  VA_LIST  - typedef for argument list.
+//  VA_START (VA_LIST Marker, argument before the ...) - Init Marker for use.
+//  VA_END (VA_LIST Marker) - Clear Marker
+//  VA_ARG (VA_LIST Marker, var arg type) - Use Marker to get an argument from
+//    the ... list. You must know the type and pass it in this macro.  Type
+//    must be compatible with the type of the actual next argument (as promoted
+//    according to the default argument promotions.)
+//  VA_COPY (VA_LIST Dest, VA_LIST Start) - Initialize Dest as a copy of Start.
+//
+//  Example:
+//
+//  UINTN
+//  EFIAPI
+//  ExampleVarArg (
+//    IN UINTN  NumberOfArgs,
+//    ...
+//    )
+//  {
+//    VA_LIST Marker;
+//    UINTN   Index;
+//    UINTN   Result;
+//
+//    //
+//    // Initialize the Marker
+//    //
+//    VA_START (Marker, NumberOfArgs);
+//    for (Index = 0, Result = 0; Index < NumberOfArgs; Index++) {
+//      //
+//      // The ... list is a series of UINTN values, so sum them up.
+//      //
+//      Result += VA_ARG (Marker, UINTN);
+//    }
+//
+//    VA_END (Marker);
+//    return Result;
+//  }
+//
+//  Notes:
+//  - Functions that call VA_START() / VA_END() must have a variable
+//    argument list and must be declared EFIAPI.
+//  - Functions that call VA_COPY() / VA_END() must be declared EFIAPI.
+//  - Functions that only use VA_LIST and VA_ARG() need not be EFIAPI.
+//
+
+/**
+  Return the size of argument that has been aligned to sizeof (UINTN).
+
+  @param  n    The parameter size to be aligned.
+
+  @return The aligned size.
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 613 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 625 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 670 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+///
+/// Variable used to traverse the list of arguments. This type can vary by
+/// implementation and could be an array or structure.
+///
+typedef CHAR8 *VA_LIST;
+
+/**
+  Retrieves a pointer to the beginning of a variable argument list, based on
+  the name of the parameter that immediately precedes the variable argument list.
+
+  This function initializes Marker to point to the beginning of the variable
+  argument list that immediately follows Parameter.  The method for computing the
+  pointer to the next argument in the argument list is CPU-specific following the
+  EFIAPI ABI.
+
+  @param   Marker       The VA_LIST used to traverse the list of arguments.
+  @param   Parameter    The name of the parameter that immediately precedes
+                        the variable argument list.
+
+  @return  A pointer to the beginning of a variable argument list.
+
+**/
+
+
+/**
+  Returns an argument of a specified type from a variable argument list and updates
+  the pointer to the variable argument list to point to the next argument.
+
+  This function returns an argument of the type specified by TYPE from the beginning
+  of the variable argument list specified by Marker.  Marker is then updated to point
+  to the next argument in the variable argument list.  The method for computing the
+  pointer to the next argument in the argument list is CPU-specific following the EFIAPI ABI.
+
+  @param   Marker   VA_LIST used to traverse the list of arguments.
+  @param   TYPE     The type of argument to retrieve from the beginning
+                    of the variable argument list.
+
+  @return  An argument of the type specified by TYPE.
+
+**/
+
+
+/**
+  Terminates the use of a variable argument list.
+
+  This function initializes Marker so it can no longer be used with VA_ARG().
+  After this macro is used, the only way to access the variable argument list is
+  by using VA_START() again.
+
+  @param   Marker   VA_LIST used to traverse the list of arguments.
+
+**/
+
+
+/**
+  Initializes a VA_LIST as a copy of an existing VA_LIST.
+
+  This macro initializes Dest as a copy of Start, as if the VA_START macro had been applied to Dest
+  followed by the same sequence of uses of the VA_ARG macro as had previously been used to reach
+  the present state of Start.
+
+  @param   Dest   VA_LIST used to traverse the list of arguments.
+  @param   Start  VA_LIST used to traverse the list of arguments.
+
+**/
+
+
+#line 738 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+///
+/// Pointer to the start of a variable argument list stored in a memory buffer. Same as UINT8 *.
+///
+typedef UINTN  *BASE_LIST;
+
+/**
+  Returns the size of a data type in sizeof(UINTN) units rounded up to the nearest UINTN boundary.
+
+  @param  TYPE  The date type to determine the size of.
+
+  @return The size of TYPE in sizeof (UINTN) units rounded up to the nearest UINTN boundary.
+**/
+
+
+/**
+  Returns an argument of a specified type from a variable argument list and updates
+  the pointer to the variable argument list to point to the next argument.
+
+  This function returns an argument of the type specified by TYPE from the beginning
+  of the variable argument list specified by Marker.  Marker is then updated to point
+  to the next argument in the variable argument list.  The method for computing the
+  pointer to the next argument in the argument list is CPU specific following the EFIAPI ABI.
+
+  @param   Marker   The pointer to the beginning of a variable argument list.
+  @param   TYPE     The type of argument to retrieve from the beginning
+                    of the variable argument list.
+
+  @return  An argument of the type specified by TYPE.
+
+**/
+
+
+/**
+  The macro that returns the byte offset of a field in a data structure.
+
+  This function returns the offset, in bytes, of field specified by Field from the
+  beginning of the  data structure specified by TYPE. If TYPE does not contain Field,
+  the module will not compile.
+
+  @param   TYPE     The name of the data structure that contains the field specified by Field.
+  @param   Field    The name of the field in the data structure.
+
+  @return  Offset, in bytes, of field.
+
+**/
+
+
+#line 787 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+
+
+#line 791 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+/**
+  Portable definition for compile time assertions.
+  Equivalent to C11 static_assert macro from assert.h.
+
+  @param  Expression  Boolean expression.
+  @param  Message     Raised compiler diagnostic message when expression is false.
+
+**/
+
+
+
+  
+
+
+#line 807 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+//
+// Verify that ProcessorBind.h produced UEFI Data Types that are compliant with
+// Section 2.3.1 of the UEFI 2.3 Specification.
+//
+
+static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT8)    == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT8)   == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT16)   == 2, "sizeof (INT16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT16)  == 2, "sizeof (UINT16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT32)   == 4, "sizeof (INT32) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT32)  == 4, "sizeof (UINT32) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (INT64)   == 8, "sizeof (INT64) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (UINT64)  == 8, "sizeof (UINT64) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (CHAR8)   == 1, "sizeof (CHAR8) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (CHAR16)  == 2, "sizeof (CHAR16) does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (L'A')    == 2, "sizeof (L'A') does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (L"A")    == 4, "sizeof (L\"A\") does not meet UEFI Specification Data Type requirements");
+
+//
+// The following three enum types are used to verify that the compiler
+// configuration for enum types is compliant with Section 2.3.1 of the
+// UEFI 2.3 Specification. These enum types and enum values are not
+// intended to be used. A prefix of '__' is used avoid conflicts with
+// other types.
+//
+typedef enum {
+  __VerifyUint8EnumValue = 0xff
+} __VERIFY_UINT8_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint16EnumValue = 0xffff
+} __VERIFY_UINT16_ENUM_SIZE;
+
+typedef enum {
+  __VerifyUint32EnumValue = 0xffffffff
+} __VERIFY_UINT32_ENUM_SIZE;
+
+static_assert (sizeof (__VERIFY_UINT8_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (__VERIFY_UINT16_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+static_assert (sizeof (__VERIFY_UINT32_ENUM_SIZE) == 4, "Size of enum does not meet UEFI Specification Data Type requirements");
+
+/**
+  Macro that returns a pointer to the data structure that contains a specified field of
+  that data structure.  This is a lightweight method to hide information by placing a
+  public data structure inside a larger private data structure and using a pointer to
+  the public data structure to retrieve a pointer to the private data structure.
+
+  This function computes the offset, in bytes, of field specified by Field from the beginning
+  of the  data structure specified by TYPE.  This offset is subtracted from Record, and is
+  used to return a pointer to a data structure of the type specified by TYPE. If the data type
+  specified by TYPE does not contain the field specified by Field, then the module will not compile.
+
+  @param   Record   Pointer to the field specified by Field within a data structure of type TYPE.
+  @param   TYPE     The name of the data structure type to return.  This data structure must
+                    contain the field specified by Field.
+  @param   Field    The name of the field in the data structure specified by TYPE to which Record points.
+
+  @return  A pointer to the structure from one of it's elements.
+
+**/
+
+
+/**
+  Rounds a value up to the next boundary using a specified alignment.
+
+  This function rounds Value up to the next boundary using the specified Alignment.
+  This aligned value is returned.
+
+  @param   Value      The value to round up.
+  @param   Alignment  The alignment boundary used to return the aligned value.
+
+  @return  A value up to the next boundary.
+
+**/
+
+
+/**
+  Adjust a pointer by adding the minimum offset required for it to be aligned on
+  a specified alignment boundary.
+
+  This function rounds the pointer specified by Pointer to the next alignment boundary
+  specified by Alignment. The pointer to the aligned address is returned.
+
+  @param   Pointer    The pointer to round up.
+  @param   Alignment  The alignment boundary to use to return an aligned pointer.
+
+  @return  Pointer to the aligned address.
+
+**/
+
+
+/**
+  Rounds a value up to the next natural boundary for the current CPU.
+  This is 4-bytes for 32-bit CPUs and 8-bytes for 64-bit CPUs.
+
+  This function rounds the value specified by Value up to the next natural boundary for the
+  current CPU. This rounded value is returned.
+
+  @param   Value      The value to round up.
+
+  @return  Rounded value specified by Value.
+
+**/
+
+
+
+/**
+  Return the maximum of two operands.
+
+  This macro returns the maximum of two operand specified by a and b.
+  Both a and b must be the same numerical types, signed or unsigned.
+
+  @param   a        The first operand with any numerical type.
+  @param   b        The second operand. Can be any numerical type as long as is
+                    the same type as a.
+
+  @return  Maximum of two operands.
+
+**/
+
+
+
+/**
+  Return the minimum of two operands.
+
+  This macro returns the minimal of two operand specified by a and b.
+  Both a and b must be the same numerical types, signed or unsigned.
+
+  @param   a        The first operand with any numerical type.
+  @param   b        The second operand. It should be the same any numerical type with a.
+
+  @return  Minimum of two operands.
+
+**/
+
+
+
+/**
+  Return the absolute value of a signed operand.
+
+  This macro returns the absolute value of the signed operand specified by a.
+
+  @param   a        The signed operand.
+
+  @return  The absolute value of the signed operand.
+
+**/
+
+
+
+//
+// Status codes common to all execution phases
+//
+typedef UINTN RETURN_STATUS;
+
+/**
+  Produces a RETURN_STATUS code with the highest bit set.
+
+  @param  StatusCode    The status code value to convert into a warning code.
+                        StatusCode must be in the range 0x00000000..0x7FFFFFFF.
+
+  @return The value specified by StatusCode with the highest bit set.
+
+**/
+
+
+/**
+  Produces a RETURN_STATUS code with the highest bit clear.
+
+  @param  StatusCode    The status code value to convert into a warning code.
+                        StatusCode must be in the range 0x00000000..0x7FFFFFFF.
+
+  @return The value specified by StatusCode with the highest bit clear.
+
+**/
+
+
+/**
+  Returns TRUE if a specified RETURN_STATUS code is an error code.
+
+  This function returns TRUE if StatusCode has the high bit set.  Otherwise, FALSE is returned.
+
+  @param  StatusCode    The status code value to evaluate.
+
+  @retval TRUE          The high bit of StatusCode is set.
+  @retval FALSE         The high bit of StatusCode is clear.
+
+**/
+
+
+///
+/// The operation completed successfully.
+///
+
+
+///
+/// The image failed to load.
+///
+
+
+///
+/// The parameter was incorrect.
+///
+
+
+///
+/// The operation is not supported.
+///
+
+
+///
+/// The buffer was not the proper size for the request.
+///
+
+
+///
+/// The buffer was not large enough to hold the requested data.
+/// The required buffer size is returned in the appropriate
+/// parameter when this error occurs.
+///
+
+
+///
+/// There is no data pending upon return.
+///
+
+
+///
+/// The physical device reported an error while attempting the
+/// operation.
+///
+
+
+///
+/// The device can not be written to.
+///
+
+
+///
+/// The resource has run out.
+///
+
+
+///
+/// An inconsistency was detected on the file system causing the
+/// operation to fail.
+///
+
+
+///
+/// There is no more space on the file system.
+///
+
+
+///
+/// The device does not contain any medium to perform the
+/// operation.
+///
+
+
+///
+/// The medium in the device has changed since the last
+/// access.
+///
+
+
+///
+/// The item was not found.
+///
+
+
+///
+/// Access was denied.
+///
+
+
+///
+/// The server was not found or did not respond to the request.
+///
+
+
+///
+/// A mapping to the device does not exist.
+///
+
+
+///
+/// A timeout time expired.
+///
+
+
+///
+/// The protocol has not been started.
+///
+
+
+///
+/// The protocol has already been started.
+///
+
+
+///
+/// The operation was aborted.
+///
+
+
+///
+/// An ICMP error occurred during the network operation.
+///
+
+
+///
+/// A TFTP error occurred during the network operation.
+///
+
+
+///
+/// A protocol error occurred during the network operation.
+///
+
+
+///
+/// A function encountered an internal version that was
+/// incompatible with a version requested by the caller.
+///
+
+
+///
+/// The function was not performed due to a security violation.
+///
+
+
+///
+/// A CRC error was detected.
+///
+
+
+///
+/// The beginning or end of media was reached.
+///
+
+
+///
+/// The end of the file was reached.
+///
+
+
+///
+/// The language specified was invalid.
+///
+
+
+///
+/// The security status of the data is unknown or compromised
+/// and the data must be updated or replaced to restore a valid
+/// security status.
+///
+
+
+///
+/// A HTTP error occurred during the network operation.
+///
+
+
+///
+/// The string contained one or more characters that
+/// the device could not render and were skipped.
+///
+
+
+///
+/// The handle was closed, but the file was not deleted.
+///
+
+
+///
+/// The handle was closed, but the data to the file was not
+/// flushed properly.
+///
+
+
+///
+/// The resulting buffer was too small, and the data was
+/// truncated to the buffer size.
+///
+
+
+///
+/// The data has not been updated within the timeframe set by
+/// local policy for this type of data.
+///
+
+
+///
+/// The resulting buffer contains UEFI-compliant file system.
+///
+
+
+
+/**
+  Returns a 16-bit signature built from 2 ASCII characters.
+
+  This macro returns a 16-bit value built from the two ASCII characters specified
+  by A and B.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+
+  @return A 16-bit value built from the two ASCII characters specified by A and B.
+
+**/
+
+
+/**
+  Returns a 32-bit signature built from 4 ASCII characters.
+
+  This macro returns a 32-bit value built from the four ASCII characters specified
+  by A, B, C, and D.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+  @param  C    The third ASCII character.
+  @param  D    The fourth ASCII character.
+
+  @return A 32-bit value built from the two ASCII characters specified by A, B,
+          C and D.
+
+**/
+
+
+/**
+  Returns a 64-bit signature built from 8 ASCII characters.
+
+  This macro returns a 64-bit value built from the eight ASCII characters specified
+  by A, B, C, D, E, F, G,and H.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+  @param  C    The third ASCII character.
+  @param  D    The fourth ASCII character.
+  @param  E    The fifth ASCII character.
+  @param  F    The sixth ASCII character.
+  @param  G    The seventh ASCII character.
+  @param  H    The eighth ASCII character.
+
+  @return A 64-bit value built from the two ASCII characters specified by A, B,
+          C, D, E, F, G and H.
+
+**/
+
+
+
+
+  void * _ReturnAddress(void);
+  #pragma intrinsic(_ReturnAddress)
+  /**
+    Get the return address of the calling function.
+
+    Based on intrinsic function _ReturnAddress that provides the address of
+    the instruction in the calling function that will be executed after
+    control returns to the caller.
+
+    @param L    Return Level.
+
+    @return The return address of the calling function or 0 if L != 0.
+
+  **/
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1301 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+/**
+  Return the number of elements in an array.
+
+  @param  Array  An object of array type. Array is only used as an argument to
+                 the sizeof operator, therefore Array is never evaluated. The
+                 caller is responsible for ensuring that Array's type is not
+                 incomplete; that is, Array must have known constant size.
+
+  @return The number of elements in Array. The result has type UINTN.
+
+**/
+
+
+#line 1316 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Base.h"
+
+#line 17 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\DEBUG\\AutoGen.h"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Library/PcdLib.h"
+/** @file
+  Provides library services to get and set Platform Configuration Database entries.
+
+  PCD Library Class provides a PCD usage macro interface for all PCD types.
+  It should be included in any module that uses PCD. If a module uses dynamic/dynamicex
+  PCD, module should be linked to a PEIM/DXE library instance to access that PCD.
+  If a module uses PatchableInModule type PCD, it also needs the library instance to produce
+  LibPatchPcdSetPtr() interface. For FeatureFlag/Fixed PCD, the macro interface is
+  translated to a variable or macro that is auto-generated by build tool in
+  module's autogen.h/autogen.c.
+  The PcdGetXX(), PcdSetXX(), PcdToken(), and PcdGetNextTokenSpace() operations are
+  only available prior to ExitBootServices().  If access to PCD values are required
+  at runtime, then their values must be collected prior to ExitBootServices().
+  There are no restrictions on the use of FeaturePcd(), FixedPcdGetXX(),
+  PatchPcdGetXX(), and PatchPcdSetXX().
+
+Copyright (c) 2006 - 2018, Intel Corporation. All rights reserved.<BR>
+SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+
+
+
+/**
+  Retrieves a token number based on a token name.
+
+  Returns the token number associated with the PCD token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve the token number for.
+
+  @return  The token number associated with the PCD.
+
+**/
+
+
+
+/**
+  Retrieves a Boolean PCD feature flag based on a token name.
+
+  Returns the Boolean value for the PCD feature flag specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a feature flag PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  Boolean value for the PCD feature flag.
+
+**/
+
+
+
+/**
+  Retrieves an 8-bit fixed PCD token value based on a token name.
+
+  Returns the 8-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  8-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 16-bit fixed PCD token value based on a token name.
+
+  Returns the 16-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  16-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 32-bit fixed PCD token value based on a token name.
+
+  Returns the 32-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  32-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 64-bit fixed PCD token value based on a token name.
+
+  Returns the 64-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  64-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a Boolean fixed PCD token value based on a token name.
+
+  Returns the Boolean value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  The Boolean value for the token.
+
+**/
+
+
+
+/**
+  Retrieves a pointer to a fixed PCD token buffer based on a token name.
+
+  Returns a pointer to the buffer for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a fixed at build PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A pointer to the buffer.
+
+**/
+
+
+
+/**
+  Retrieves an 8-bit binary patchable PCD token value based on a token name.
+
+  Returns the 8-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  An 8-bit binary patchable PCD token value.
+
+**/
+
+
+/**
+  Retrieves a 16-bit binary patchable PCD token value based on a token name.
+
+  Returns the 16-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A 16-bit binary patchable PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a 32-bit binary patchable PCD token value based on a token name.
+
+  Returns the 32-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A 32-bit binary patchable PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a 64-bit binary patchable PCD token value based on a token name.
+
+  Returns the 64-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A 64-bit binary patchable PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a Boolean binary patchable PCD token value based on a token name.
+
+  Returns the Boolean value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  The Boolean value for the token.
+
+**/
+
+
+
+/**
+  Retrieves a pointer to a binary patchable PCD token buffer based on a token name.
+
+  Returns a pointer to the buffer for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A pointer to the buffer for the token.
+
+**/
+
+
+
+/**
+  Sets an 8-bit binary patchable PCD token value based on a token name.
+
+  Sets the 8-bit value for the token specified by TokenName. Value is returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the binary patchable PCD token to set the current value for.
+  @param   Value      The 8-bit value to set.
+
+  @return Return the Value that was set.
+
+**/
+
+
+
+/**
+  Sets a 16-bit binary patchable PCD token value based on a token name.
+
+  Sets the 16-bit value for the token specified by TokenName. Value is returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the binary patchable PCD token to set the current value for.
+  @param   Value      The 16-bit value to set.
+
+  @return Return the Value that was set.
+
+**/
+
+
+
+/**
+  Sets a 32-bit binary patchable PCD token value based on a token name.
+
+  Sets the 32-bit value for the token specified by TokenName. Value is returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the binary patchable PCD token to set the current value for.
+  @param   Value      The 32-bit value to set.
+
+  @return Return the Value that was set.
+
+**/
+
+
+
+/**
+  Sets a 64-bit binary patchable PCD token value based on a token name.
+
+  Sets the 64-bit value for the token specified by TokenName. Value is returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the binary patchable PCD token to set the current value for.
+  @param   Value      The 64-bit value to set.
+
+  @return Return the Value that was set.
+
+**/
+
+
+
+/**
+  Sets a Boolean binary patchable PCD token value based on a token name.
+
+  Sets the Boolean value for the token specified by TokenName. Value is returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  @param   TokenName  The name of the binary patchable PCD token to set the current value for.
+  @param   Value      The boolean value to set.
+
+  @return Return the Value that was set.
+
+**/
+
+
+
+/**
+  Sets a pointer to a binary patchable PCD token buffer based on a token name.
+
+  Sets the buffer for the token specified by TokenName.  Buffer is returned.
+  If SizeOfBuffer is greater than the maximum size supported by TokenName, then set SizeOfBuffer
+  to the maximum size supported by TokenName and return NULL to indicate that the set operation
+  was not actually performed.  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be
+  set to the maximum size supported by TokenName and NULL must be returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+  If TokenName is not a patchable in module PCD, then the module will not build.
+
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param   TokenName      The name of the binary patchable PCD token to set the current value for.
+  @param   SizeOfBuffer   A pointer to the size, in bytes, of Buffer.
+  @param   Buffer         Pointer to the value to set.
+
+  @return Return the pointer to the Buffer that was set.
+
+**/
+
+
+
+
+
+
+
+
+/**
+  Retrieves an 8-bit PCD token value based on a token name.
+
+  Returns the 8-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  8-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 16-bit PCD token value based on a token name.
+
+  Returns the 16-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  16-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 32-bit PCD token value based on a token name.
+
+  Returns the 32-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  32-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a 64-bit PCD token value based on a token name.
+
+  Returns the 64-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  64-bit value for the token specified by TokenName.
+
+**/
+
+
+
+/**
+  Retrieves a pointer to a PCD token buffer based on a token name.
+
+  Returns a pointer to the buffer for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A pointer to the buffer.
+
+**/
+
+
+
+/**
+  Retrieves a Boolean PCD token value based on a token name.
+
+  Returns the Boolean value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   TokenName  The name of the PCD token to retrieve a current value for.
+
+  @return  A Boolean PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves the size of a fixed PCD token based on a token name.
+
+  Returns the size of the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param[in]  TokenName  The name of the PCD token to retrieve a current value size for.
+
+  @return     Return the size
+
+**/
+
+
+
+/**
+  Retrieves the size of a binary patchable PCD token based on a token name.
+
+  Returns the size of the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param[in]  TokenName  The name of the PCD token to retrieve a current value size for.
+
+  @return     Return the size
+
+**/
+
+
+
+/**
+  Retrieves the size of the PCD token based on a token name.
+
+  Returns the size of the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param[in]   TokenName  The name of the PCD token to retrieve a current value size for.
+
+  @return      Return the size
+
+**/
+
+
+
+/**
+  Retrieve the size of a given PCD token.
+
+  Returns the size of the token specified by TokenNumber and Guid.
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid          Pointer to a 128-bit unique value that designates
+                            which namespace to retrieve a value from.
+  @param[in]  TokenNumber   The PCD token number to retrieve a current value size for.
+
+  @return     Return the size.
+
+**/
+
+
+/**
+  Sets a 8-bit PCD token value based on a token name.
+
+  Sets the 8-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param TokenName  The name of the PCD token to retrieve a current value for.
+  @param Value      The 8-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets a 16-bit PCD token value based on a token name.
+
+  Sets the 16-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param TokenName  The name of the PCD token to retrieve a current value for.
+  @param Value      The 16-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets a 32-bit PCD token value based on a token name.
+
+  Sets the 32-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param TokenName  The name of the PCD token to retrieve a current value for.
+  @param Value      The 32-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets a 64-bit PCD token value based on a token name.
+
+  Sets the 64-bit value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param TokenName  The name of the PCD token to retrieve a current value for.
+  @param Value      The 64-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets a pointer to a PCD token buffer based on a token name.
+
+  Sets the buffer for the token specified by TokenName.
+  If SizeOfBuffer is greater than the maximum size supported by TokenName,
+  then set SizeOfBuffer to the maximum size supported by TokenName and return
+  RETURN_INVALID_PARAMETER to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to the maximum size
+  supported by TokenName and RETURN_INVALID_PARAMETER must be returned.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param TokenName      The name of the PCD token to set the current value for.
+  @param SizeOfBuffer   A pointer to the size, in bytes, of Buffer.
+  @param Buffer         A pointer to the buffer to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+
+
+
+/**
+  Sets a boolean PCD token value based on a token name.
+
+  Sets the boolean value for the token specified by TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param TokenName  The name of the PCD token to retrieve a current value for.
+  @param Value      The boolean value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Retrieves a token number based on a GUID and a token name.
+
+  Returns the token number for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space, then the module will not build.
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  Return the token number.
+
+**/
+
+
+/**
+  Retrieves an 8-bit PCD token value based on a GUID and a token name.
+
+  Returns the 8-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  An 8-bit PCD token value.
+
+**/
+
+
+/**
+  Retrieves a 16-bit PCD token value based on a GUID and a token name.
+
+  Returns the 16-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  A 16-bit PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a 32-bit PCD token value based on a GUID and a token name.
+
+  Returns the 32-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  A 32-bit PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a 64-bit PCD token value based on a GUID and a token name.
+
+  Returns the 64-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  A 64-bit PCD token value.
+
+**/
+
+
+
+/**
+  Retrieves a pointer to a PCD token buffer based on a GUID and a token name.
+
+  Returns a pointer to the buffer for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  A pointer to a PCD token buffer.
+
+**/
+
+
+
+/**
+  Retrieves a Boolean PCD token value based on a GUID and a token name.
+
+  Returns the Boolean value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param   Guid        Pointer to a 128-bit unique value that designates
+                       which namespace to retrieve a value from.
+  @param   TokenName   The name of the PCD token to retrieve a current value for.
+
+  @return  A Boolean PCD token value.
+
+**/
+
+
+
+
+/**
+  Sets an 8-bit PCD token value based on a GUID and a token name.
+
+  Sets the 8-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param Guid       Pointer to a 128-bit unique value that designates
+                    which namespace to retrieve a value from.
+  @param TokenName  The name of the PCD token to set the current value for.
+  @param Value      The 8-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets an 16-bit PCD token value based on a GUID and a token name.
+
+  Sets the 16-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param Guid       Pointer to a 128-bit unique value that designates
+                    which namespace to retrieve a value from.
+  @param TokenName  The name of the PCD token to set the current value for.
+  @param Value      The 16-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets an 32-bit PCD token value based on a GUID and a token name.
+
+  Sets the 32-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param Guid       Pointer to a 128-bit unique value that designates
+                    which namespace to retrieve a value from.
+  @param TokenName  The name of the PCD token to set the current value for.
+  @param Value      The 32-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets an 64-bit PCD token value based on a GUID and a token name.
+
+  Sets the 64-bit value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param Guid       Pointer to a 128-bit unique value that designates
+                    which namespace to retrieve a value from.
+  @param TokenName  The name of the PCD token to set the current value for.
+  @param Value      The 64-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+/**
+  Sets a pointer to a PCD token buffer based on a GUID and a token name.
+
+  Sets the buffer for the token specified by Guid and TokenName.
+  If SizeOfBuffer is greater than the maximum size supported by Guid and TokenName,
+  then set SizeOfBuffer to the maximum size supported by Guid and TokenName and return
+  RETURN_INVALID_PARAMETER to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to the maximum size
+  supported by Guid and TokenName and RETURN_INVALID_PARAMETER must be returned.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param Guid           Pointer to a 128-bit unique value that designates
+                        which namespace to retrieve a value from.
+  @param TokenName      The name of the PCD token to set the current value for.
+  @param SizeOfBuffer   A pointer to the size, in bytes, of Buffer.
+  @param Buffer         Pointer to the buffer to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+
+
+/**
+  Sets an boolean PCD token value based on a GUID and a token name.
+
+  Sets the boolean value for the token specified by Guid and TokenName.
+  If TokenName is not a valid token in the token space specified by Guid,
+  then the module will not build.
+
+  If Guid is NULL, then ASSERT().
+
+  @param Guid       Pointer to a 128-bit unique value that designates
+                    which namespace to retrieve a value from.
+  @param TokenName  The name of the PCD token to set the current value for.
+  @param Value      The boolean value to set.
+
+  @return The status of the set operation.
+
+**/
+
+
+
+/**
+  This function provides a means by which SKU support can be established in the PCD infrastructure.
+
+  Sets the current SKU in the PCD database to the value specified by SkuId.  SkuId is returned.
+
+  @param  SkuId   The SKU value that will be used when the PCD service retrieves and sets values
+                  associated with a PCD token.
+
+  @return  Return the SKU ID that was set.
+
+**/
+UINTN
+__cdecl
+LibPcdSetSku (
+   UINTN   SkuId
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 8-bit value for the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the 8-bit value for the token specified by TokenNumber.
+
+**/
+UINT8
+__cdecl
+LibPcdGet8 (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 16-bit value for the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the 16-bit value for the token specified by TokenNumber.
+
+**/
+UINT16
+__cdecl
+LibPcdGet16 (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 32-bit value for the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the 32-bit value for the token specified by TokenNumber.
+
+**/
+UINT32
+__cdecl
+LibPcdGet32 (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 64-bit value for the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the 64-bit value for the token specified by TokenNumber.
+
+**/
+UINT64
+__cdecl
+LibPcdGet64 (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the pointer to the buffer of the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the pointer to the token specified by TokenNumber.
+
+**/
+void *
+__cdecl
+LibPcdGetPtr (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the Boolean value of the token specified by TokenNumber.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the Boolean value of the token specified by TokenNumber.
+
+**/
+BOOLEAN
+__cdecl
+LibPcdGetBool (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve the size of a given PCD token.
+
+  @param[in]  TokenNumber The PCD token number to retrieve a current value for.
+
+  @return Returns the size of the token specified by TokenNumber.
+
+**/
+UINTN
+__cdecl
+LibPcdGetSize (
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 8-bit value for the token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid         Pointer to a 128-bit unique value that designates
+                           which namespace to retrieve a value from.
+  @param[in]  TokenNumber  The PCD token number to retrieve a current value for.
+
+  @return Return the UINT8.
+
+**/
+UINT8
+__cdecl
+LibPcdGetEx8 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 16-bit value for the token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid         Pointer to a 128-bit unique value that designates
+                           which namespace to retrieve a value from.
+  @param[in]  TokenNumber  The PCD token number to retrieve a current value for.
+
+  @return Return the UINT16.
+
+**/
+UINT16
+__cdecl
+LibPcdGetEx16 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  Returns the 32-bit value for the token specified by TokenNumber and Guid.
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid         Pointer to a 128-bit unique value that designates
+                           which namespace to retrieve a value from.
+  @param[in]  TokenNumber  The PCD token number to retrieve a current value for.
+
+  @return Return the UINT32.
+
+**/
+UINT32
+__cdecl
+LibPcdGetEx32 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the 64-bit value for the token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid          Pointer to a 128-bit unique value that designates
+                            which namespace to retrieve a value from.
+  @param[in]  TokenNumber   The PCD token number to retrieve a current value for.
+
+  @return Return the UINT64.
+
+**/
+UINT64
+__cdecl
+LibPcdGetEx64 (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the pointer to the buffer of token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid          Pointer to a 128-bit unique value that designates
+                            which namespace to retrieve a value from.
+  @param[in]  TokenNumber   The PCD token number to retrieve a current value for.
+
+  @return Return the VOID* pointer.
+
+**/
+void *
+__cdecl
+LibPcdGetExPtr (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve a value for a given PCD token.
+
+  Returns the Boolean value of the token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid          Pointer to a 128-bit unique value that designates
+                            which namespace to retrieve a value from.
+  @param[in]  TokenNumber   The PCD token number to retrieve a current value for.
+
+  @return Return the BOOLEAN.
+
+**/
+BOOLEAN
+__cdecl
+LibPcdGetExBool (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to retrieve the size of a given PCD token.
+
+  Returns the size of the token specified by TokenNumber and Guid.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in]  Guid          Pointer to a 128-bit unique value that designates
+                            which namespace to retrieve a value from.
+  @param[in]  TokenNumber   The PCD token number to retrieve a current value for.
+
+  @return Return the size.
+
+**/
+UINTN
+__cdecl
+LibPcdGetExSize (
+   const GUID        *Guid,
+   UINTN             TokenNumber
+  );
+
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 8-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 8-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSet8S (
+   UINTN          TokenNumber,
+   UINT8          Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 16-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 16-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSet16S (
+   UINTN          TokenNumber,
+   UINT16         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 32-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 32-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSet32S (
+   UINTN          TokenNumber,
+   UINT32         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 64-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 64-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSet64S (
+   UINTN          TokenNumber,
+   UINT64         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets a buffer for the token specified by TokenNumber to the value specified
+  by Buffer and SizeOfBuffer. If SizeOfBuffer is greater than the maximum size
+  support by TokenNumber, then set SizeOfBuffer to the maximum size supported by
+  TokenNumber and return RETURN_INVALID_PARAMETER to indicate that the set operation
+  was not actually performed.
+
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to the
+  maximum size supported by TokenName and RETURN_INVALID_PARAMETER must be returned.
+
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[in]      TokenNumber   The PCD token number to set a current value for.
+  @param[in, out] SizeOfBuffer  The size, in bytes, of Buffer.
+  @param[in]      Buffer        A pointer to the buffer to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetPtrS (
+         UINTN    TokenNumber,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the boolean value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The boolean value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetBoolS (
+   UINTN          TokenNumber,
+   BOOLEAN        Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 8-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in] Guid           The pointer to a 128-bit unique value that
+                            designates which namespace to set a value from.
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 8-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetEx8S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT8          Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 16-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in] Guid           The pointer to a 128-bit unique value that
+                            designates which namespace to set a value from.
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 16-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetEx16S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT16         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 32-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in] Guid           The pointer to a 128-bit unique value that
+                            designates which namespace to set a value from.
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 32-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetEx32S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT32         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the 64-bit value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in] Guid           The pointer to a 128-bit unique value that
+                            designates which namespace to set a value from.
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The 64-bit value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetEx64S (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   UINT64         Value
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets a buffer for the token specified by TokenNumber to the value specified by
+  Buffer and SizeOfBuffer. If SizeOfBuffer is greater than the maximum size
+  support by TokenNumber, then set SizeOfBuffer to the maximum size supported by
+  TokenNumber and return RETURN_INVALID_PARAMETER to indicate that the set operation
+  was not actually performed.
+
+  If Guid is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[in]      Guid          Pointer to a 128-bit unique value that
+                                designates which namespace to set a value from.
+  @param[in]      TokenNumber   The PCD token number to set a current value for.
+  @param[in, out] SizeOfBuffer  The size, in bytes, of Buffer.
+  @param[in]      Buffer        A pointer to the buffer to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetExPtrS (
+   const GUID     *Guid,
+         UINTN    TokenNumber,
+      UINTN    *SizeOfBuffer,
+         void     *Buffer
+  );
+
+/**
+  This function provides a means by which to set a value for a given PCD token.
+
+  Sets the boolean value for the token specified by TokenNumber
+  to the value specified by Value.
+
+  If Guid is NULL, then ASSERT().
+
+  @param[in] Guid           The pointer to a 128-bit unique value that
+                            designates which namespace to set a value from.
+  @param[in] TokenNumber    The PCD token number to set a current value for.
+  @param[in] Value          The boolean value to set.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPcdSetExBoolS (
+   const GUID     *Guid,
+   UINTN          TokenNumber,
+   BOOLEAN        Value
+  );
+
+/**
+  This notification function serves two purposes.
+
+  Firstly, it notifies the module that did the registration that the value of this
+  PCD token has been set.
+  Secondly, it provides a mechanism for the module that did the registration to intercept
+  the set operation and override the value been set if necessary. After the invocation of
+  the callback function, TokenData will be used by PCD service PEIM or driver to modify th
+  internal data in PCD database.
+
+  @param[in]      CallBackGuid    The PCD token GUID being set.
+  @param[in]      CallBackToken   The PCD token number being set.
+  @param[in, out] TokenData       A pointer to the token data being set.
+  @param[in]      TokenDataSize   The size, in bytes, of the data being set.
+
+**/
+typedef
+void
+(__cdecl *PCD_CALLBACK)(
+          const GUID        *CallBackGuid, 
+          UINTN             CallBackToken,
+       void              *TokenData,
+          UINTN             TokenDataSize
+  );
+
+
+/**
+  Set up a notification function that is called when a specified token is set.
+
+  When the token specified by TokenNumber and Guid is set,
+  then notification function specified by NotificationFunction is called.
+  If Guid is NULL, then the default token space is used.
+  If NotificationFunction is NULL, then ASSERT().
+
+  @param[in]  Guid                  Pointer to a 128-bit unique value that designates which
+                                    namespace to set a value from.  If NULL, then the default
+                                    token space is used.
+  @param[in]  TokenNumber           The PCD token number to monitor.
+  @param[in]  NotificationFunction  The function to call when the token
+                                    specified by Guid and TokenNumber is set.
+
+**/
+void
+__cdecl
+LibPcdCallbackOnSet (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber,
+   PCD_CALLBACK             NotificationFunction
+  );
+
+
+/**
+  Disable a notification function that was established with LibPcdCallbackonSet().
+
+  Disable a notification function that was previously established with LibPcdCallbackOnSet().
+  If NotificationFunction is NULL, then ASSERT().
+  If LibPcdCallbackOnSet() was not previously called with Guid, TokenNumber,
+  and NotificationFunction, then ASSERT().
+
+  @param[in]  Guid                 Specify the GUID token space.
+  @param[in]  TokenNumber          Specify the token number.
+  @param[in]  NotificationFunction The callback function to be unregistered.
+
+**/
+void
+__cdecl
+LibPcdCancelCallback (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber,
+   PCD_CALLBACK             NotificationFunction
+  );
+
+
+/**
+  Retrieves the next token in a token space.
+
+  Retrieves the next PCD token number from the token space specified by Guid.
+  If Guid is NULL, then the default token space is used.  If TokenNumber is 0,
+  then the first token number is returned.  Otherwise, the token number that
+  follows TokenNumber in the token space is returned.  If TokenNumber is the last
+  token number in the token space, then 0 is returned.
+
+  If TokenNumber is not 0 and is not in the token space specified by Guid, then ASSERT().
+
+  @param[in]  Guid        Pointer to a 128-bit unique value that designates which namespace
+                          to set a value from.  If NULL, then the default token space is used.
+  @param[in]  TokenNumber The previous PCD token number.  If 0, then retrieves the first PCD
+                          token number.
+
+  @return The next valid token number.
+
+**/
+UINTN
+__cdecl
+LibPcdGetNextToken (
+   const GUID               *Guid,       
+   UINTN                    TokenNumber
+  );
+
+
+
+/**
+  Used to retrieve the list of available PCD token space GUIDs.
+
+  Returns the PCD token space GUID that follows TokenSpaceGuid in the list of token spaces
+  in the platform.
+  If TokenSpaceGuid is NULL, then a pointer to the first PCD token spaces returned.
+  If TokenSpaceGuid is the last PCD token space GUID in the list, then NULL is returned.
+
+  @param  TokenSpaceGuid  Pointer to the a PCD token space GUID
+
+  @return The next valid token namespace.
+
+**/
+GUID *
+__cdecl
+LibPcdGetNextTokenSpace (
+   const GUID  *TokenSpaceGuid
+  );
+
+
+/**
+  Sets a value of a patchable PCD entry that is type pointer.
+
+  Sets the PCD entry specified by PatchVariable to the value specified by Buffer
+  and SizeOfBuffer.  Buffer is returned.  If SizeOfBuffer is greater than
+  MaximumDatumSize, then set SizeOfBuffer to MaximumDatumSize and return
+  NULL to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to
+  MaximumDatumSize and NULL must be returned.
+
+  If PatchVariable is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[out] PatchVariable     A pointer to the global variable in a module that is
+                                the target of the set operation.
+  @param[in] MaximumDatumSize   The maximum size allowed for the PCD entry specified by PatchVariable.
+  @param[in, out] SizeOfBuffer  A pointer to the size, in bytes, of Buffer.
+  @param[in] Buffer             A pointer to the buffer to used to set the target variable.
+
+  @return Return the pointer to the Buffer that was set.
+
+**/
+void *
+__cdecl
+LibPatchPcdSetPtr (
+          void       *PatchVariable,
+          UINTN       MaximumDatumSize,
+       UINTN       *SizeOfBuffer,
+   const  void        *Buffer
+  );
+
+/**
+  Sets a value of a patchable PCD entry that is type pointer.
+
+  Sets the PCD entry specified by PatchVariable to the value specified
+  by Buffer and SizeOfBuffer. If SizeOfBuffer is greater than MaximumDatumSize,
+  then set SizeOfBuffer to MaximumDatumSize and return RETURN_INVALID_PARAMETER
+  to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to
+  MaximumDatumSize and RETURN_INVALID_PARAMETER must be returned.
+
+  If PatchVariable is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[out] PatchVariable     A pointer to the global variable in a module that is
+                                the target of the set operation.
+  @param[in] MaximumDatumSize   The maximum size allowed for the PCD entry specified by PatchVariable.
+  @param[in, out] SizeOfBuffer  A pointer to the size, in bytes, of Buffer.
+  @param[in] Buffer             A pointer to the buffer to used to set the target variable.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPatchPcdSetPtrS (
+        void     *PatchVariable,
+         UINTN    MaximumDatumSize,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+/**
+  Sets a value and size of a patchable PCD entry that is type pointer.
+
+  Sets the PCD entry specified by PatchVariable to the value specified by Buffer
+  and SizeOfBuffer. Buffer is returned.  If SizeOfBuffer is greater than
+  MaximumDatumSize, then set SizeOfBuffer to MaximumDatumSize and return
+  NULL to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to
+  MaximumDatumSize and NULL must be returned.
+
+  If PatchVariable is NULL, then ASSERT().
+  If SizeOfPatchVariable is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[out] PatchVariable     A pointer to the global variable in a module that is
+                                the target of the set operation.
+  @param[out] SizeOfPatchVariable A pointer to the size, in bytes, of PatchVariable.
+  @param[in] MaximumDatumSize   The maximum size allowed for the PCD entry specified by PatchVariable.
+  @param[in, out] SizeOfBuffer  A pointer to the size, in bytes, of Buffer.
+  @param[in] Buffer             A pointer to the buffer to used to set the target variable.
+
+  @return Return the pointer to the Buffer that was set.
+
+**/
+void *
+__cdecl
+LibPatchPcdSetPtrAndSize (
+         void        *PatchVariable,
+         UINTN       *SizeOfPatchVariable,
+          UINTN       MaximumDatumSize,
+       UINTN       *SizeOfBuffer,
+   const  void        *Buffer
+  );
+
+/**
+  Sets a value and size of a patchable PCD entry that is type pointer.
+
+  Sets the PCD entry specified by PatchVariable to the value specified
+  by Buffer and SizeOfBuffer. If SizeOfBuffer is greater than MaximumDatumSize,
+  then set SizeOfBuffer to MaximumDatumSize and return RETURN_INVALID_PARAMETER
+  to indicate that the set operation was not actually performed.
+  If SizeOfBuffer is set to MAX_ADDRESS, then SizeOfBuffer must be set to
+  MaximumDatumSize and RETURN_INVALID_PARAMETER must be returned.
+
+  If PatchVariable is NULL, then ASSERT().
+  If SizeOfPatchVariable is NULL, then ASSERT().
+  If SizeOfBuffer is NULL, then ASSERT().
+  If SizeOfBuffer > 0 and Buffer is NULL, then ASSERT().
+
+  @param[out] PatchVariable     A pointer to the global variable in a module that is
+                                the target of the set operation.
+  @param[out] SizeOfPatchVariable A pointer to the size, in bytes, of PatchVariable.
+  @param[in] MaximumDatumSize   The maximum size allowed for the PCD entry specified by PatchVariable.
+  @param[in, out] SizeOfBuffer  A pointer to the size, in bytes, of Buffer.
+  @param[in] Buffer             A pointer to the buffer to used to set the target variable.
+
+  @return The status of the set operation.
+
+**/
+RETURN_STATUS
+__cdecl
+LibPatchPcdSetPtrAndSizeS (
+        void     *PatchVariable,
+        UINTN    *SizeOfPatchVariable,
+         UINTN    MaximumDatumSize,
+      UINTN    *SizeOfBuffer,
+   const void     *Buffer
+  );
+
+typedef enum {
+  PCD_TYPE_8,
+  PCD_TYPE_16,
+  PCD_TYPE_32,
+  PCD_TYPE_64,
+  PCD_TYPE_BOOL,
+  PCD_TYPE_PTR
+} PCD_TYPE;
+
+typedef struct {
+  ///
+  /// The returned information associated with the requested TokenNumber. If
+  /// TokenNumber is 0, then PcdType is set to PCD_TYPE_8.
+  ///
+  PCD_TYPE          PcdType;
+  ///
+  /// The size of the data in bytes associated with the TokenNumber specified. If
+  /// TokenNumber is 0, then PcdSize is set 0.
+  ///
+  UINTN             PcdSize;
+  ///
+  /// The null-terminated ASCII string associated with a given token. If the
+  /// TokenNumber specified was 0, then this field corresponds to the null-terminated
+  /// ASCII string associated with the token's namespace Guid. If NULL, there is no
+  /// name associated with this request.
+  ///
+  CHAR8             *PcdName;
+} PCD_INFO;
+
+
+/**
+  Retrieve additional information associated with a PCD token.
+
+  This includes information such as the type of value the TokenNumber is associated with as well as possible
+  human readable name that is associated with the token.
+
+  If TokenNumber is not in the default token space specified, then ASSERT().
+
+  @param[in]    TokenNumber The PCD token number.
+  @param[out]   PcdInfo     The returned information associated with the requested TokenNumber.
+                            The caller is responsible for freeing the buffer that is allocated by callee for PcdInfo->PcdName.
+**/
+void
+__cdecl
+LibPcdGetInfo (
+          UINTN           TokenNumber,
+         PCD_INFO        *PcdInfo
+  );
+
+/**
+  Retrieve additional information associated with a PCD token.
+
+  This includes information such as the type of value the TokenNumber is associated with as well as possible
+  human readable name that is associated with the token.
+
+  If TokenNumber is not in the token space specified by Guid, then ASSERT().
+
+  @param[in]    Guid        The 128-bit unique value that designates the namespace from which to extract the value.
+  @param[in]    TokenNumber The PCD token number.
+  @param[out]   PcdInfo     The returned information associated with the requested TokenNumber.
+                            The caller is responsible for freeing the buffer that is allocated by callee for PcdInfo->PcdName.
+**/
+void
+__cdecl
+LibPcdGetInfoEx (
+   const  GUID            *Guid,
+          UINTN           TokenNumber,
+         PCD_INFO        *PcdInfo
+  );
+
+/**
+  Retrieve the currently set SKU Id.
+
+  @return   The currently set SKU Id. If the platform has not set at a SKU Id, then the
+            default SKU Id value of 0 is returned. If the platform has set a SKU Id, then the currently set SKU
+            Id is returned.
+**/
+UINTN
+__cdecl
+LibPcdGetSku (
+  void
+  );
+
+#line 1735 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\MdePkg\\Include\\Library/PcdLib.h"
+#line 18 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\DEBUG\\AutoGen.h"
+
+extern GUID  gEfiCallerIdGuid;
+extern GUID  gEdkiiDscPlatformGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+
+
+
+// Guids
+extern GUID gPlatformAlderLakeTokenSpaceGuid;
+
+// Definition of SkuId Array
+extern UINT64 _gPcd_SkuId_Array[];
+
+// Definition of PCDs used in this module
+
+
+
+
+
+extern const  BOOLEAN  _gPcd_FixedAtBuild_PcdAdlNSupport;
+
+//#define _PCD_SET_MODE_BOOL_PcdAdlNSupport  ASSERT(FALSE)  // It is not allowed to set value for a FIXED_AT_BUILD PCD
+
+
+
+
+
+
+#line 50 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\DEBUG\\AutoGen.h"
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+
+/** @file
+  ACPI RTD3 SSDT table for ADL N RVP
+
+  Copyright (c) 2020 - 2022, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include/AcpiDebug.h"
+/** @file
+  Header file for ACPI ADBG enable/disable.
+
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+
+
+
+
+// todo: add a PCD to control ACPI debug print
+  
+  
+#line 15 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include/AcpiDebug.h"
+#line 10 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+DefinitionBlock (
+    "Rtd3.aml",
+    "SSDT",
+    2,
+    "Rtd3",
+    "AdlN_Rvp",
+    0x1000
+    )
+{
+External(S0ID)
+//
+//WWAN Pins
+//
+External(WRTO)
+External(WBRS)
+External(PBRS)
+External(PRST)
+External(WPRP)
+External(WFCP)
+External(PFCP)
+External(WWKP)
+External(WWEN)
+
+External(TPDT)
+External(TPLT)
+//
+//Pcie Slot 1 Pins
+//
+External(PSPR)
+External(PPSP)
+External(PSPE)
+External(PPSR)
+External(PSWP)
+
+//
+// Pch ssd Pins
+//
+External(SSDP)
+External(SSDR)
+External(SDRP)
+External(SDPP)
+
+//
+// Touch panel Pins
+//
+External(GPDI)
+External(GPLI)
+External(GPLP)
+External(GPLR)
+External(PPDI)
+External(PPLI)
+External(PPLP)
+External(PPLR)
+External(TPLS)
+
+//
+//WLAN wake Pins
+//
+External(WLWK)
+
+
+//
+//sata
+//
+
+External(SATP)
+External(STPP)
+
+//
+//GbE
+//
+External(GBED)
+
+External(XDCE)
+
+/** @file
+  ACPI RTD3 SSDT table
+
+@copyright
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+
+External(\_SB.OSCO)
+External(\_SB.PC00,DeviceObj)
+External(\_SB.PC00.SAT0, DeviceObj)
+External(\_SB.PC00.SAT0.PRT0, DeviceObj)
+External(\_SB.PC00.SAT0.PRT1, DeviceObj)
+External(\_SB.PC00.SAT0.PRT2, DeviceObj)
+External(\_SB.PC00.SAT0.PRT3, DeviceObj)
+External(\_SB.PC00.SAT0.PRT4, DeviceObj)
+External(\_SB.PC00.SAT0.PRT5, DeviceObj)
+External(\_SB.PC00.SAT0.PRT6, DeviceObj)
+External(\_SB.PC00.SAT0.PRT7, DeviceObj)
+
+/** @file
+  ACPI Common Include File for PCIE RP ACPI Objects.
+
+@copyright
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+/** @file
+  This file contains definitions of PCIE RP MACRO.
+
+@copyright
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+
+
+
+
+//
+// Note:- Macro Value 0 and 1 are treated as Boolean variable by ASL compiler.
+// So avoiding using 0,1 as value in C Code. It will be helpful in avoiding
+// the confusion during Runtime AML Patching.
+//
+
+
+#line 20 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+
+
+#line 24 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for PCH PCIE RP Type.
+
+
+#line 29 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for CPU PCIE RP Type.
+
+
+#line 34 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for ITBT PCIE RP Type.
+
+
+#line 39 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+
+//
+// Note:- Macro Value 0 and 1 are treated as Boolean variable by ASL compiler.
+// So avoiding using 0,1 as value in C Code. It will be helpful in avoiding
+// the confusion during Runtime AML Patching.
+//
+
+
+#line 49 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+
+
+#line 53 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for Generic PCIE EP Type.
+
+
+#line 58 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for Discrete Thunderbolt EP Type.
+
+
+#line 63 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+// Defining MACRO Value for Invalid EP Type.
+
+
+#line 68 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+
+#line 70 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\PcieRpMacroDefinition.h"
+#line 115 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+
+//
+// MACRO Definations for Printing PCIE RP Info: Start
+// Note: These below MACRO will only work under PCIE RP Scope.
+//
+
+
+
+
+//
+// Note: These above MACRO will only work under PCIE RP Scope.
+// MACRO Definations for Printing PCIE RP Info: End
+//
+
+External (\_SB.PC00,DeviceObj)
+// External Variable for PCIE Rp Device Objects
+External (\_SB.PC00.RP01, DeviceObj)
+External (\_SB.PC00.RP02, DeviceObj)
+External (\_SB.PC00.RP03, DeviceObj)
+External (\_SB.PC00.RP04, DeviceObj)
+External (\_SB.PC00.RP05, DeviceObj)
+External (\_SB.PC00.RP06, DeviceObj)
+External (\_SB.PC00.RP07, DeviceObj)
+External (\_SB.PC00.RP08, DeviceObj)
+External (\_SB.PC00.RP09, DeviceObj)
+External (\_SB.PC00.RP10, DeviceObj)
+External (\_SB.PC00.RP11, DeviceObj)
+External (\_SB.PC00.RP12, DeviceObj)
+External (\_SB.PC00.RP13, DeviceObj)
+External (\_SB.PC00.RP14, DeviceObj)
+External (\_SB.PC00.RP15, DeviceObj)
+External (\_SB.PC00.RP16, DeviceObj)
+External (\_SB.PC00.RP17, DeviceObj)
+External (\_SB.PC00.RP18, DeviceObj)
+External (\_SB.PC00.RP19, DeviceObj)
+External (\_SB.PC00.RP20, DeviceObj)
+External (\_SB.PC00.RP21, DeviceObj)
+External (\_SB.PC00.RP22, DeviceObj)
+External (\_SB.PC00.RP23, DeviceObj)
+External (\_SB.PC00.RP24, DeviceObj)
+External (\_SB.PC00.RP25, DeviceObj)
+External (\_SB.PC00.RP26, DeviceObj)
+External (\_SB.PC00.RP27, DeviceObj)
+External (\_SB.PC00.RP28, DeviceObj)
+
+External (\_SB.PC00.PEG0, DeviceObj)
+External (\_SB.PC00.PEG1, DeviceObj)
+External (\_SB.PC00.PEG2, DeviceObj)
+
+// External Variable holding PCIE Rp Mapped under VMD status
+External (\_SB.PC00.RP01.PRMV, IntObj)
+External (\_SB.PC00.RP02.PRMV, IntObj)
+External (\_SB.PC00.RP03.PRMV, IntObj)
+External (\_SB.PC00.RP04.PRMV, IntObj)
+External (\_SB.PC00.RP05.PRMV, IntObj)
+External (\_SB.PC00.RP06.PRMV, IntObj)
+External (\_SB.PC00.RP07.PRMV, IntObj)
+External (\_SB.PC00.RP08.PRMV, IntObj)
+External (\_SB.PC00.RP09.PRMV, IntObj)
+External (\_SB.PC00.RP10.PRMV, IntObj)
+External (\_SB.PC00.RP11.PRMV, IntObj)
+External (\_SB.PC00.RP12.PRMV, IntObj)
+External (\_SB.PC00.RP13.PRMV, IntObj)
+External (\_SB.PC00.RP14.PRMV, IntObj)
+External (\_SB.PC00.RP15.PRMV, IntObj)
+External (\_SB.PC00.RP16.PRMV, IntObj)
+External (\_SB.PC00.RP17.PRMV, IntObj)
+External (\_SB.PC00.RP18.PRMV, IntObj)
+External (\_SB.PC00.RP19.PRMV, IntObj)
+External (\_SB.PC00.RP20.PRMV, IntObj)
+External (\_SB.PC00.RP21.PRMV, IntObj)
+External (\_SB.PC00.RP22.PRMV, IntObj)
+External (\_SB.PC00.RP23.PRMV, IntObj)
+External (\_SB.PC00.RP24.PRMV, IntObj)
+External (\_SB.PC00.RP25.PRMV, IntObj)
+External (\_SB.PC00.RP26.PRMV, IntObj)
+External (\_SB.PC00.RP27.PRMV, IntObj)
+External (\_SB.PC00.RP28.PRMV, IntObj)
+
+External (\_SB.PC00.PEG0.PRMV, IntObj)
+External (\_SB.PC00.PEG1.PRMV, IntObj)
+External (\_SB.PC00.PEG2.PRMV, IntObj)
+
+
+// External Variable holding PCIE Rp Index Number
+External (\_SB.PC00.RP01.SLOT, IntObj)
+External (\_SB.PC00.RP02.SLOT, IntObj)
+External (\_SB.PC00.RP03.SLOT, IntObj)
+External (\_SB.PC00.RP04.SLOT, IntObj)
+External (\_SB.PC00.RP05.SLOT, IntObj)
+External (\_SB.PC00.RP06.SLOT, IntObj)
+External (\_SB.PC00.RP07.SLOT, IntObj)
+External (\_SB.PC00.RP08.SLOT, IntObj)
+External (\_SB.PC00.RP09.SLOT, IntObj)
+External (\_SB.PC00.RP10.SLOT, IntObj)
+External (\_SB.PC00.RP11.SLOT, IntObj)
+External (\_SB.PC00.RP12.SLOT, IntObj)
+External (\_SB.PC00.RP13.SLOT, IntObj)
+External (\_SB.PC00.RP14.SLOT, IntObj)
+External (\_SB.PC00.RP15.SLOT, IntObj)
+External (\_SB.PC00.RP16.SLOT, IntObj)
+External (\_SB.PC00.RP17.SLOT, IntObj)
+External (\_SB.PC00.RP18.SLOT, IntObj)
+External (\_SB.PC00.RP19.SLOT, IntObj)
+External (\_SB.PC00.RP20.SLOT, IntObj)
+External (\_SB.PC00.RP21.SLOT, IntObj)
+External (\_SB.PC00.RP22.SLOT, IntObj)
+External (\_SB.PC00.RP23.SLOT, IntObj)
+External (\_SB.PC00.RP24.SLOT, IntObj)
+External (\_SB.PC00.RP25.SLOT, IntObj)
+External (\_SB.PC00.RP26.SLOT, IntObj)
+External (\_SB.PC00.RP27.SLOT, IntObj)
+External (\_SB.PC00.RP28.SLOT, IntObj)
+
+External (\_SB.PC00.PEG0.SLOT, IntObj)
+External (\_SB.PC00.PEG1.SLOT, IntObj)
+External (\_SB.PC00.PEG2.SLOT, IntObj)
+
+// External Variable holding PCIE Rp Type Information
+External (\_SB.PC00.RP01.PRTP, IntObj)
+External (\_SB.PC00.RP02.PRTP, IntObj)
+External (\_SB.PC00.RP03.PRTP, IntObj)
+External (\_SB.PC00.RP04.PRTP, IntObj)
+External (\_SB.PC00.RP05.PRTP, IntObj)
+External (\_SB.PC00.RP06.PRTP, IntObj)
+External (\_SB.PC00.RP07.PRTP, IntObj)
+External (\_SB.PC00.RP08.PRTP, IntObj)
+External (\_SB.PC00.RP09.PRTP, IntObj)
+External (\_SB.PC00.RP10.PRTP, IntObj)
+External (\_SB.PC00.RP11.PRTP, IntObj)
+External (\_SB.PC00.RP12.PRTP, IntObj)
+External (\_SB.PC00.RP13.PRTP, IntObj)
+External (\_SB.PC00.RP14.PRTP, IntObj)
+External (\_SB.PC00.RP15.PRTP, IntObj)
+External (\_SB.PC00.RP16.PRTP, IntObj)
+External (\_SB.PC00.RP17.PRTP, IntObj)
+External (\_SB.PC00.RP18.PRTP, IntObj)
+External (\_SB.PC00.RP19.PRTP, IntObj)
+External (\_SB.PC00.RP20.PRTP, IntObj)
+External (\_SB.PC00.RP21.PRTP, IntObj)
+External (\_SB.PC00.RP22.PRTP, IntObj)
+External (\_SB.PC00.RP23.PRTP, IntObj)
+External (\_SB.PC00.RP24.PRTP, IntObj)
+External (\_SB.PC00.RP25.PRTP, IntObj)
+External (\_SB.PC00.RP26.PRTP, IntObj)
+External (\_SB.PC00.RP27.PRTP, IntObj)
+External (\_SB.PC00.RP28.PRTP, IntObj)
+
+External (\_SB.PC00.PEG0.PRTP, IntObj)
+External (\_SB.PC00.PEG1.PRTP, IntObj)
+External (\_SB.PC00.PEG2.PRTP, IntObj)
+
+// External Variable holding PCIE Rp RTD3 Cold Capability
+External (\_SB.PC00.RP01.RD3C, IntObj)
+External (\_SB.PC00.RP02.RD3C, IntObj)
+External (\_SB.PC00.RP03.RD3C, IntObj)
+External (\_SB.PC00.RP04.RD3C, IntObj)
+External (\_SB.PC00.RP05.RD3C, IntObj)
+External (\_SB.PC00.RP06.RD3C, IntObj)
+External (\_SB.PC00.RP07.RD3C, IntObj)
+External (\_SB.PC00.RP08.RD3C, IntObj)
+External (\_SB.PC00.RP09.RD3C, IntObj)
+External (\_SB.PC00.RP10.RD3C, IntObj)
+External (\_SB.PC00.RP11.RD3C, IntObj)
+External (\_SB.PC00.RP12.RD3C, IntObj)
+External (\_SB.PC00.RP13.RD3C, IntObj)
+External (\_SB.PC00.RP14.RD3C, IntObj)
+External (\_SB.PC00.RP15.RD3C, IntObj)
+External (\_SB.PC00.RP16.RD3C, IntObj)
+External (\_SB.PC00.RP17.RD3C, IntObj)
+External (\_SB.PC00.RP18.RD3C, IntObj)
+External (\_SB.PC00.RP19.RD3C, IntObj)
+External (\_SB.PC00.RP20.RD3C, IntObj)
+External (\_SB.PC00.RP21.RD3C, IntObj)
+External (\_SB.PC00.RP22.RD3C, IntObj)
+External (\_SB.PC00.RP23.RD3C, IntObj)
+External (\_SB.PC00.RP24.RD3C, IntObj)
+External (\_SB.PC00.RP25.RD3C, IntObj)
+External (\_SB.PC00.RP26.RD3C, IntObj)
+External (\_SB.PC00.RP27.RD3C, IntObj)
+External (\_SB.PC00.RP28.RD3C, IntObj)
+
+External (\_SB.PC00.PEG0.RD3C, IntObj)
+External (\_SB.PC00.PEG1.RD3C, IntObj)
+External (\_SB.PC00.PEG2.RD3C, IntObj)
+
+
+External(\_SB.PC00.RP01.VDID)
+External(\_SB.PC00.RP02.VDID)
+External(\_SB.PC00.RP03.VDID)
+External(\_SB.PC00.RP04.VDID)
+External(\_SB.PC00.RP05.VDID)
+External(\_SB.PC00.RP06.VDID)
+External(\_SB.PC00.RP07.VDID)
+External(\_SB.PC00.RP08.VDID)
+External(\_SB.PC00.RP09.VDID)
+External(\_SB.PC00.RP10.VDID)
+External(\_SB.PC00.RP11.VDID)
+External(\_SB.PC00.RP12.VDID)
+External(\_SB.PC00.RP13.VDID)
+External(\_SB.PC00.RP14.VDID)
+External(\_SB.PC00.RP15.VDID)
+External(\_SB.PC00.RP16.VDID)
+External(\_SB.PC00.RP17.VDID)
+External(\_SB.PC00.RP18.VDID)
+External(\_SB.PC00.RP19.VDID)
+External(\_SB.PC00.RP20.VDID)
+External(\_SB.PC00.RP21.VDID)
+External(\_SB.PC00.RP22.VDID)
+External(\_SB.PC00.RP23.VDID)
+External(\_SB.PC00.RP24.VDID)
+External(\_SB.PC00.RP25.VDID)
+External(\_SB.PC00.RP26.VDID)
+External(\_SB.PC00.RP27.VDID)
+External(\_SB.PC00.RP28.VDID)
+
+External(\_SB.PC00.PEG0.VDID)
+External(\_SB.PC00.PEG1.VDID)
+External(\_SB.PC00.PEG2.VDID)
+
+External(\_SB.PC00.RP01.L23D, MethodObj)
+External(\_SB.PC00.RP02.L23D, MethodObj)
+External(\_SB.PC00.RP03.L23D, MethodObj)
+External(\_SB.PC00.RP04.L23D, MethodObj)
+External(\_SB.PC00.RP05.L23D, MethodObj)
+External(\_SB.PC00.RP06.L23D, MethodObj)
+External(\_SB.PC00.RP07.L23D, MethodObj)
+External(\_SB.PC00.RP08.L23D, MethodObj)
+External(\_SB.PC00.RP09.L23D, MethodObj)
+External(\_SB.PC00.RP10.L23D, MethodObj)
+External(\_SB.PC00.RP11.L23D, MethodObj)
+External(\_SB.PC00.RP12.L23D, MethodObj)
+External(\_SB.PC00.RP13.L23D, MethodObj)
+External(\_SB.PC00.RP14.L23D, MethodObj)
+External(\_SB.PC00.RP15.L23D, MethodObj)
+External(\_SB.PC00.RP16.L23D, MethodObj)
+External(\_SB.PC00.RP17.L23D, MethodObj)
+External(\_SB.PC00.RP18.L23D, MethodObj)
+External(\_SB.PC00.RP19.L23D, MethodObj)
+External(\_SB.PC00.RP20.L23D, MethodObj)
+External(\_SB.PC00.RP21.L23D, MethodObj)
+External(\_SB.PC00.RP22.L23D, MethodObj)
+External(\_SB.PC00.RP23.L23D, MethodObj)
+External(\_SB.PC00.RP24.L23D, MethodObj)
+External(\_SB.PC00.RP25.L23D, MethodObj)
+External(\_SB.PC00.RP26.L23D, MethodObj)
+External(\_SB.PC00.RP27.L23D, MethodObj)
+External(\_SB.PC00.RP28.L23D, MethodObj)
+External(\_SB.PC00.PEG0.L23D, MethodObj)
+External(\_SB.PC00.PEG1.L23D, MethodObj)
+External(\_SB.PC00.PEG2.L23D, MethodObj)
+
+External(\_SB.PC00.RP01.DL23, MethodObj)
+External(\_SB.PC00.RP02.DL23, MethodObj)
+External(\_SB.PC00.RP03.DL23, MethodObj)
+External(\_SB.PC00.RP04.DL23, MethodObj)
+External(\_SB.PC00.RP05.DL23, MethodObj)
+External(\_SB.PC00.RP06.DL23, MethodObj)
+External(\_SB.PC00.RP07.DL23, MethodObj)
+External(\_SB.PC00.RP08.DL23, MethodObj)
+External(\_SB.PC00.RP09.DL23, MethodObj)
+External(\_SB.PC00.RP10.DL23, MethodObj)
+External(\_SB.PC00.RP11.DL23, MethodObj)
+External(\_SB.PC00.RP12.DL23, MethodObj)
+External(\_SB.PC00.RP13.DL23, MethodObj)
+External(\_SB.PC00.RP14.DL23, MethodObj)
+External(\_SB.PC00.RP15.DL23, MethodObj)
+External(\_SB.PC00.RP16.DL23, MethodObj)
+External(\_SB.PC00.RP17.DL23, MethodObj)
+External(\_SB.PC00.RP18.DL23, MethodObj)
+External(\_SB.PC00.RP19.DL23, MethodObj)
+External(\_SB.PC00.RP20.DL23, MethodObj)
+External(\_SB.PC00.RP21.DL23, MethodObj)
+External(\_SB.PC00.RP22.DL23, MethodObj)
+External(\_SB.PC00.RP23.DL23, MethodObj)
+External(\_SB.PC00.RP24.DL23, MethodObj)
+External(\_SB.PC00.RP25.DL23, MethodObj)
+External(\_SB.PC00.RP26.DL23, MethodObj)
+External(\_SB.PC00.RP27.DL23, MethodObj)
+External(\_SB.PC00.RP28.DL23, MethodObj)
+External(\_SB.PC00.PEG0.DL23, MethodObj)
+External(\_SB.PC00.PEG1.DL23, MethodObj)
+External(\_SB.PC00.PEG2.DL23, MethodObj)
+
+External(\_SB.PC00.XHCI, DeviceObj)
+External(\_SB.PC00.XDCI, DeviceObj)
+External(GBES)
+If (LNotEqual(GBES,0)) {
+  External(\_SB.PC00.GLAN, DeviceObj)
+}
+External(\_SB.PC00.XHCI.MEMB)
+External(\_SB.PC00.XDCI.D0I3)
+External(\_SB.PC00.XDCI.XDCB)
+External(\GBEP)
+External(\_SB.PC00.XHCI.RHUB, DeviceObj)
+External(\_SB.PC00.XHCI.RHUB.SS01, DeviceObj)
+External(\_SB.PC00.XHCI.RHUB.SS02, DeviceObj)
+External(\_SB.PC00.XHCI.RHUB.HS01, DeviceObj) //xHCI HSP port 1
+External(\_SB.PC00.XHCI.RHUB.HS02, DeviceObj) //xHCI HSP port 2
+
+External(PEP0)
+External(XHPR)
+External(RCG0, IntObj)     // RTD3 Config Setting0(BIT0:Reserved, BIT1:Reserved, Bit3: BT, BIT6:Card Reader, BIT7:WWAN, BIT8:WSB SIP FAB1 Card reader)
+External(RCG1, IntObj)     // RTD3 Config Setting1(BIT0:Sata Port0, BIT1:Sata Port1, BIT2:Sata Port2, BIT3:Sata Port3)
+External(\GPRW, MethodObj)
+External(P8XH, MethodObj)
+
+//
+// Externs common to ULT0RTD3.asl and FFRDRTD3.asl and exclude for BRRTD3.asl
+//
+
+// GPIO methods
+External(\_SB.SPMV, MethodObj)
+External(\_SB.SGRA, MethodObj)
+External(\_SB.SGWP, MethodObj)
+External(\_SB.GGIV, MethodObj)
+External(\_SB.GGOV, MethodObj)
+External(\_SB.SGOV, MethodObj)
+External(\_SB.SGII, MethodObj)
+External(\_SB.CAGS, MethodObj)
+External(\_SB.ISME, MethodObj)
+
+
+// RTD3 devices and variables
+External(\_SB.PC00.LPCB.H_EC.ECMD, MethodObj) // EC Command method
+
+External(\UAMS)
+External(SDS0,FieldUnitObj)
+External(SDS1,FieldUnitObj)
+External(AUDD,FieldUnitObj)
+External(SHSB,FieldUnitObj)
+External(VRRD,FieldUnitObj)
+External(IC0D,FieldUnitObj)
+External(IC1D,FieldUnitObj)
+
+External (DGBA, FieldUnitObj)
+External (DGOP, FieldUnitObj)
+
+External(SPCO,MethodObj)
+External(SPCX,MethodObj)
+
+External(\_SB.CSD0, MethodObj)
+External(\_SB.CSD3, MethodObj)
+External(DVID)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 536 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+/**@file
+ VER4 GPIO ASL header
+
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+**/
+
+//
+// Definition for GPIO groups and pads
+//
+
+
+
+#line 1 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\GpioPinsVer4S.h"
+/** @file
+  GPIO pins for ADL-PCH-S,
+
+  Copyright (c) 2021, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+
+///
+/// Unique ID used in GpioPad defines
+///
+
+
+///
+/// ADL S GPIO Groups
+/// Use below for functions from PCH GPIO Lib which
+/// require GpioGroup as argument
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
+/// ADL S GPIO pins
+/// Use below for functions from PCH GPIO Lib which
+/// require GpioPad as argument. Encoding used here
+/// has all information required by library functions
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 170 "e:\\code\\adl_n100_code\\sblplatform\\SblOpen\\Silicon\\AlderlakePkg\\Include\\GpioPinsVer4S.h"
+#line 550 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+
+
+//
+// ADL-PCH-S
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 587 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+#line 589 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+/** @file
+
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+
+**/
+
+
+//
+// Definition for MSPDRTREQ bits, which are used for ASL code to
+// trigger requests for ModPHY SPD gating.
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 631 "e:\\code\\adl_n100_code\\sblplatform\\Build\\BootloaderCorePkg\\DEBUG_VS2019\\IA32\\Platform\\AlderlakeBoardPkg\\AcpiTables\\AcpiTablesN\\OUTPUT\\Ssdt\\AdlNRvpRtd3.i"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// GPIO states mapping
+//
+
+
+
+
+External(\_SB.PC00.RP04.PXSX, DeviceObj)
+External(\_SB.PC00.RP04.LASX)
+External(\_SB.PC00.RP09.PXSX,DeviceObj)
+External(\_SB.PC00.RP04.PXSX.WIST,MethodObj)
+External(\_SB.PC00.XHCI.RHUB.HS08, DeviceObj)
+External(\_SB.GBTR, MethodObj)
+External(\_SB.BTRK, MethodObj)
+
+
+External(\_SB.PC00.I2C0, DeviceObj) //I2C0 Controller
+External(\_SB.PC00.I2C0.TPD0, DeviceObj) // Touch pad
+External(\_SB.PC00.I2C0.TPD0._STA, MethodObj)
+External(\_SB.PC00.I2C0.TPL1, DeviceObj) // Touch panel 2
+External(\_SB.PC00.I2C0.TPL1._STA, MethodObj)
+
+External(\_SB.PC00.HDAS, DeviceObj)
+External(\_SB.PC00.HDAS.VDID)
+
+External(\_SB.PC00.SAT0.PRT0.PRES, MethodObj)
+
+//Board configuration
+
+//PCIe P3 -M.2 KEY E WWAN7360 -SRC CLK-NA(REWORK)
+//PCIe P4 -M.2 KEY B WLAN Wifi-BT -SRC CLK-2
+//PCIe P4 -M.2 KEY B WWAN7360 -SRC CLK-1(REWORK)
+//PCIe P7 -x4 PCIe DT Slot (1Pair -x1 cem slot -sd card/TSN AIC) -SRC CLK-3
+//PCIe P9:P12 -PCIe X4 ssd -SRC CLK-0(LAN REVERSAL)
+//PCIe P9 -RJ45 LAN PORT/UFS(0)- SRC CLK-4 (REWORK)
+//PCIe P10 -UFS(1)- SRC CLK-4-(REWORK)
+//PCIe P11 -Sata Direct(SATA P0) SRC CLK-4 -(REWORK)
+
+// PCIe root ports - START
+  /// PCIE RTD3 - PCIe M.2 CONNECTOR WWAN
+    ///
+    If (LAnd(LNotEqual(WWEN,0),LNotEqual(WRTO,0)) ) {
+      Scope(\_SB.PC00.RP04) {
+        Name(BRST, Package() {0, 0})
+        Store(WBRS, Index(BRST, 0))
+        Store(PBRS, Index(BRST, 1))
+        Name(RSTG, Package() {0, 0})
+        Store(PRST, Index(RSTG, 0))
+        Store(WPRP, Index(RSTG, 1))
+        Name(PWRG, Package() {0, 0})
+        Store(WFCP, Index(PWRG, 0))
+        Store(PFCP, Index(PWRG, 1))
+        Name(WAKG, 0)
+        Store(WWKP, WAKG)
+        Name(SCLK, 1)
+
+      }
+    }
+    ///
+    /// PCIE RTD3 - PCIE SLOT 1 - X1 CONNECTOR
+    ///
+    Scope(\_SB.PC00.RP07) {
+      Name(RSTG, Package() {0, 0})
+      Store(PSPR, Index(RSTG, 0))
+      Store(PPSR, Index(RSTG, 1))
+      Name(PWRG, Package() {0, 0})
+      Store(PSPE, Index(PWRG, 0))
+      Store(PPSP, Index(PWRG, 1))
+      Name(WAKG, 0)
+      Name(SCLK, 3)
+      Name(WAKP, 0)             // must be defined due to compiler bug, will be removed when fixed https://bugs.acpica.org/show_bug.cgi?id=1432
+      Store(PSWP,WAKG)
+      /**@file
+        PCIe Root Port Generic PCIE Device Rtd3 file.
+      
+        Copyright (c) 2021 - 2022, Intel Corporation. All rights reserved.<BR>
+        SPDX-License-Identifier: BSD-2-Clause-Patent
+      **/
+      
+      /// @details
+      /// Code in this file uses following variables:
+      /// SCLK: ICC Clock number - optional
+      /// WAKG: WAKE GPIO pad - optional
+      /// Below objects should be defined according to the format described in PinDriverLib.asl
+      /// RSTG: reset pin definition - mandatory
+      /// PWRG: power GPIO pad - optional
+      /// WAKP: Flag to indicate that power gating must not be performed if WAKE is enabled - optional
+      /** @defgroup pcie_scope PCIe Root Port Scope **/
+      
+        //
+        // AcpiPinDriverLib imports(from DSDT in platform)
+        //
+        External (\PIN.STA, MethodObj)
+        External (\PIN.ON, MethodObj)
+        External (\PIN.OFF, MethodObj)
+        //
+        // GpioLib imports(DSDT)
+        //
+        External (\_SB.SHPO, MethodObj)
+      
+        //
+        // HSIO lib imports
+        //
+        External (\_SB.PSD0, MethodObj)
+        External (\_SB.PSD3, MethodObj)
+        External (DVES, MethodObj)
+        External (DHDW, MethodObj)
+        External (EHDW, MethodObj)
+        External (D3HT, FieldUnitObj) // CPU PCIE RP Power State
+        External (PCPB, IntObj) // PCIe core power veto bitmask, default 0 - allow for core power removal
+        External (HBSL, FieldUnitObj)
+        External (HBCL, FieldUnitObj)
+        External (HBPL, FieldUnitObj)
+        External (TMCS, IntObj)
+      
+        // WAKE enable on PCIe device.
+        Name (WKEN, 0)
+      
+        // Last OFF Timestamp (WOFF): The time stamp of the last power resource _OFF method evaluation
+        Name (WOFF, 0)
+      
+        Name (LNRD, 0) // Delay before PERST# assertion in us
+      
+        //
+        // The deepest D-state supported by this device in the S0 system sleeping state where the device can wake itself,
+        // "4" represents D3cold.
+        //
+        Method (_S0W, 0x0, NotSerialized)
+        {
+      
+          If (CondRefOf (RD3C)) {
+            If (LEqual (RD3C, 0x01)) {
+              Return (0x4)
+            }
+          }
+      
+          Return (0x3)
+        }
+      
+        //
+        // Device Sleep Wake - sets the sleep and wake transition states for a device.
+        // ACPI Specification Defined Method. Called by OSPM.
+        //
+        Method (_DSW, 3, NotSerialized)
+        {
+          /// This method is used to enable/disable wake from PCIe (WKEN)
+      
+          If (Arg1)
+          { /// If entering Sx, enable Sx WAKE
+            Store (1, WKEN)
+          } Else {  /// If Staying in S0
+            If (LAnd(Arg0, Arg2)) ///- Check if Exiting D0 and arming for wake
+            { ///- Set PME
+              Store (1, WKEN)
+            } Else { ///- Disable runtime PME, either because staying in D0 or disabling wake
+              Store (0, WKEN)
+            }
+          }
+        /** @defgroup pcie_dsw PCIE _DSW **/
+        } // End _DSW
+      
+        Method (PPS0, 0, Serialized) { // Platform specific PCIe root port _PS0 Hook Function.
+        }
+      
+        Method (PPS3, 0, Serialized) { // Platform specific PCIe root port _PS3 Hook Function.
+        }
+      
+        //
+        // PCIe slot power resource definition
+        //
+        PowerResource (PXP, 0, 0) {
+      
+          Method (_STA, 0) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return (0)
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return (0)
+            }
+      
+            //
+            // Return PCIE RP Power Resource Status.
+            //
+            Return (PSTA ())
+          }
+      
+          Method (_ON) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return ()
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return ()
+            }
+      
+            //
+            // Turn on slot power
+            //
+            PON ()
+      
+            //
+            // Trigger L2/L3 ready exit flow in rootport - transition link to Detect
+            //
+            L23D ()
+          }
+      
+          Method (_OFF) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return ()
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return ()
+            }
+      
+            //
+            // Trigger L2/L3 ready entry flow in rootport
+            //
+            DL23 ()
+      
+            //
+            // Turn off slot power
+            //
+            POFF ()
+          }
+        } // End PowerResource
+      
+        //
+        // Get Permission for Power Removal.
+        // Check whether or not to Disable Power Package GPIO During Device Power OFF(D3 Cold Transition).
+        // Input: VOID
+        //
+        // @return 1 if it is Safe to Remove/Disable Power. 0 Not allow for Power Removal.
+        //
+        Method (GPPR, 0) {
+      
+          // If WAKP has not been defined we can safely disable power.
+          // If WAKP is defined this slot does not supply device with auxilary power and we have to keep primary power
+          // to allow for WAKE. If WAKP is not equal to 0 and WKEN has been enabled do not disable the power.
+          If (CondRefOf (WAKP)) {
+            If (LAnd (LNotEqual (WAKP, 0), LEqual (WKEN, 0))) {
+              Return (0)
+            }
+          }
+      
+          //
+          // If PCPB has not been defined we can safely disable power.
+          // If PCPB is defined and non Zero we have to keep primary power.
+          //
+          If (CondRefOf (PCPB)) {
+            If (LNotEqual (PCPB, 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // If DVES Method has not been defined we can safely disable power.
+          // If DVES Method is defined and return Zero value we have to keep primary power.
+          //
+          If (CondRefOf (DVES)) {
+            If (LEqual (DVES (), 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // Now Safe To Remove/Disable Power.
+          //
+          Return (1)
+        }
+      
+        //
+        // Get PCIe RP Power Resource Support.
+        // If D3 Cold is supported by PCIE RP or Not.
+        // Input: VOID
+        //
+        // @return 1 PCIE RP Power Resource Supported. 0 PCIE RP Power Resource Not Supported.
+        //
+        Method (GPRS, 0) {
+      
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x04))) {
+      
+            //
+            // Check for Hybrid Connection Status for PCIE RP and for single CPU M.2 with x2 MUX
+            //
+            If (CondRefOf (HBCL)) {
+              If (LOr(LNotEqual(HBCL, 0xFF), LLessEqual(HBCL, 0x2))) {
+                If (LEqual (HBCL, SLOT)) {
+                  Return (0)
+                }
+              }
+            }
+          }
+      
+          //
+          // Check for Hybrid Connection Status for PCIE RP and for single CPU M.2 with x2 MUX
+          //
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            If (CondRefOf (HBSL)) {
+              Divide ( Subtract (SLOT, 1), 4, , Local0) // Get PCIE RP Controller Number ( (SLOT-1)/4)
+              // Check if Hybrid Connection Status BIT Corresponding to Controller Number is SET or NOT.
+              If ( And (HBSL, ShiftLeft (0x00000001, Local0))) {
+                Return (0)
+              }
+            }
+      
+            If (LAnd(CondRefOf (HBCL), CondRefOf (HBPL))) {
+              If (LOr(LNotEqual(HBCL, 0xFF), LLessEqual(HBCL, 0x2))) {
+                If (LEqual (HBPL, Subtract(SLOT, 1))) {
+                  Return (0)
+                }
+              }
+            }
+      
+          }
+      
+          //
+          // Check if D3 Cold is supported for PCIE RP.
+          //
+          If (CondRefOf (RD3C)) {
+            If (LNotEqual (RD3C, 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // Check if PCIE RP is Mapped under VMD. D3 Cold flow will be taken care by VMD and it's Child ACPI Devices.
+          //
+          If (CondRefOf (PRMV)) {
+            If (LEqual (PRMV, 1)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // D3 Cold is supported for PCIE RP
+          //
+          Return (1)
+        }
+      
+        //
+        // Returns the status of PCIe slot core power.
+        //
+        Method (PSTA, 0) {
+      
+          //
+          // RESET# assertion is mandatory for PCIe RTD3
+          // So if RESET# is asserted the whole slot is off
+          //
+          If (\PIN.STA (RSTG)) {
+            Return (0)
+          } Else {
+            Return (1)
+          }
+        }
+      
+        // Turn on power to PCIe Slot
+        // Since this method is also used by the remapped devices to turn on power to the slot
+        // this method should not make any access to the PCie config space.
+        Method (PON) {
+      
+          // Disable WAKE
+          If (CondRefOf (WAKG)) {
+            \_SB.SHPO (WAKG, 1) // set gpio ownership to driver(0=ACPI mode, 1=GPIO mode)
+            \_SB.CAGS (WAKG) // Clear GPIO Status if set.
+          }
+          If (CondRefOf (DHDW)) { // DG support HPD as D3 Wake GPIO and DHDW exists
+            DHDW () // Disable Discrete Graphics HPD SCI implementated As D3 Wake GPIO
+          }
+      
+          // Restore power to the modPHY (Only for PCH PCIE RP)
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            \_SB.PSD0 (SLOT)
+          }
+      
+          // Turn ON Power for PCIe Slot
+          If (CondRefOf (PWRG)) {
+            // Delay by 10 ms if required using WOFF
+            If (CondRefOf (WOFF)) {
+              If (LNotEqual (WOFF, Zero)) {
+                Divide (Subtract (Timer (), WOFF), 10000, , Local0) // Store Elapsed time in ms, ignore remainder
+                If (LLess (Local0, 200)) {                           // If Elapsed time is less than 20ms
+                  Sleep (Subtract (200, Local0))                     // Sleep for the remaining time
+                }
+                Store (0, WOFF)
+              }
+            }
+            \PIN.ON (PWRG)
+            Sleep (PEP0)
+          }
+      
+          //
+          // On RTD3 Exit, BIOS will instruct the PMC to Enable source clocks.
+          // This is done through sending a PMC IPC command if IPC Command is supported.
+          //
+          If (CondRefOf (SCLK)) {
+            If(CondRefOf(TMCS)) {
+              SPCX(SCLK, 1, TMCS)
+            } Else {
+              SPCO(SCLK, 1)
+            }
+          }
+      
+          // De-Assert Reset Pin
+          \PIN.OFF (RSTG)
+        }
+      
+        // Turn off power to PCIe Slot
+        // Since this method is also used by the remapped devices to turn off power to the slot
+        // this method should not make any access to the PCIe config space.
+        Method (POFF) {
+      
+          // Assert Reset Pin after the delay passed from the bus driver
+          Divide (LNRD, 1000, , Local1)
+          Sleep (Local1)
+      
+          // Reset pin is mandatory for correct PCIe RTD3 flow
+          \PIN.ON (RSTG)
+      
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            // Enable modPHY power gating
+            // This must be done after the device has been put in reset
+            \_SB.PSD3 (SLOT)
+          }
+      
+          //
+          // On RTD3 entry, BIOS will instruct the PMC to disable source clocks.
+          // This is done through sending a PMC IPC command if IPC Command is supported.
+          //
+          If (CondRefOf (SCLK)) {
+            If(CondRefOf(TMCS)) {
+              SPCX(SCLK, 0, TMCS)
+            } Else {
+              SPCO(SCLK, 0)
+            }
+          }
+      
+          // Power OFF for Slot
+          If (CondRefOf (PWRG)) {
+            If ( LEqual ( GPPR(), 1)) { // we can safely disable power.
+              \PIN.OFF (PWRG)
+            }
+            // Store current timestamp in WOFF
+            If (CondRefOf (WOFF)) {
+              Store (Timer (), WOFF)
+            }
+          }
+      
+          // enable WAKE
+          If (CondRefOf (WAKG)) {
+            If (LAnd (LNotEqual (WAKG, 0), WKEN)) {
+              \_SB.SHPO (WAKG, 0)
+            }
+          }
+          If (CondRefOf (EHDW)) { // DG support HPD as D3 Wake GPIO and DHDW exists
+            EHDW () // Enable Discrete Graphics HPD SCI implementated As D3 Wake GPIO
+          }
+        }
+      
+        Method (_PR0) {
+          Return (Package (){PXP})
+        }
+      
+        Method (_PR3) {
+          Return (Package (){PXP})
+        }
+      
+        //
+        // Update PERST# assertion delay.
+        // This function will be called from reference code during PCIe _DSM function index 11 evaluation.
+        // Arg0 - New delay value in microseconds. Max is 10ms
+        //
+        // @return Last sucessfully negotiated value in us. 0 if no such value exists.
+        //
+        Method (UPRD, 1, Serialized) {
+          If (LLessEqual (Arg0, 10000)) {
+            // If the value does not exceed the limit
+            // Update last negotiated value and calculate the value in ms.
+            Store (Arg0, LNRD)
+          }
+          Return (LNRD)
+        }
+      
+
+    }
+
+    ///
+    /// PCIe RP09 RTD3 - PCH M.2 SSD RTD3
+    ///
+    Scope(\_SB.PC00.RP09) {
+      Name(RSTG, Package() {0, 0})
+      Store(SSDR, Index(RSTG, 0))
+      Store(SDRP, Index(RSTG, 1))
+      Name(PWRG, Package() {0, 0})
+      Store(SSDP, Index(PWRG, 0))
+      Store(SDPP, Index(PWRG, 1))
+      Name(WAKG, 0)              // must be defined due to compiler bug, will be removed when fixed https://bugs.acpica.org/show_bug.cgi?id=1432
+      Name(WAKP, 0)              // must be defined due to compiler bug, will be removed when fixed https://bugs.acpica.org/show_bug.cgi?id=1432
+      Name(SCLK, 0)
+      /**@file
+        PCIe Root Port Generic PCIE Device Rtd3 file.
+      
+        Copyright (c) 2021 - 2022, Intel Corporation. All rights reserved.<BR>
+        SPDX-License-Identifier: BSD-2-Clause-Patent
+      **/
+      
+      /// @details
+      /// Code in this file uses following variables:
+      /// SCLK: ICC Clock number - optional
+      /// WAKG: WAKE GPIO pad - optional
+      /// Below objects should be defined according to the format described in PinDriverLib.asl
+      /// RSTG: reset pin definition - mandatory
+      /// PWRG: power GPIO pad - optional
+      /// WAKP: Flag to indicate that power gating must not be performed if WAKE is enabled - optional
+      /** @defgroup pcie_scope PCIe Root Port Scope **/
+      
+        //
+        // AcpiPinDriverLib imports(from DSDT in platform)
+        //
+        External (\PIN.STA, MethodObj)
+        External (\PIN.ON, MethodObj)
+        External (\PIN.OFF, MethodObj)
+        //
+        // GpioLib imports(DSDT)
+        //
+        External (\_SB.SHPO, MethodObj)
+      
+        //
+        // HSIO lib imports
+        //
+        External (\_SB.PSD0, MethodObj)
+        External (\_SB.PSD3, MethodObj)
+        External (DVES, MethodObj)
+        External (DHDW, MethodObj)
+        External (EHDW, MethodObj)
+        External (D3HT, FieldUnitObj) // CPU PCIE RP Power State
+        External (PCPB, IntObj) // PCIe core power veto bitmask, default 0 - allow for core power removal
+        External (HBSL, FieldUnitObj)
+        External (HBCL, FieldUnitObj)
+        External (HBPL, FieldUnitObj)
+        External (TMCS, IntObj)
+      
+        // WAKE enable on PCIe device.
+        Name (WKEN, 0)
+      
+        // Last OFF Timestamp (WOFF): The time stamp of the last power resource _OFF method evaluation
+        Name (WOFF, 0)
+      
+        Name (LNRD, 0) // Delay before PERST# assertion in us
+      
+        //
+        // The deepest D-state supported by this device in the S0 system sleeping state where the device can wake itself,
+        // "4" represents D3cold.
+        //
+        Method (_S0W, 0x0, NotSerialized)
+        {
+      
+          If (CondRefOf (RD3C)) {
+            If (LEqual (RD3C, 0x01)) {
+              Return (0x4)
+            }
+          }
+      
+          Return (0x3)
+        }
+      
+        //
+        // Device Sleep Wake - sets the sleep and wake transition states for a device.
+        // ACPI Specification Defined Method. Called by OSPM.
+        //
+        Method (_DSW, 3, NotSerialized)
+        {
+          /// This method is used to enable/disable wake from PCIe (WKEN)
+      
+          If (Arg1)
+          { /// If entering Sx, enable Sx WAKE
+            Store (1, WKEN)
+          } Else {  /// If Staying in S0
+            If (LAnd(Arg0, Arg2)) ///- Check if Exiting D0 and arming for wake
+            { ///- Set PME
+              Store (1, WKEN)
+            } Else { ///- Disable runtime PME, either because staying in D0 or disabling wake
+              Store (0, WKEN)
+            }
+          }
+        /** @defgroup pcie_dsw PCIE _DSW **/
+        } // End _DSW
+      
+        Method (PPS0, 0, Serialized) { // Platform specific PCIe root port _PS0 Hook Function.
+        }
+      
+        Method (PPS3, 0, Serialized) { // Platform specific PCIe root port _PS3 Hook Function.
+        }
+      
+        //
+        // PCIe slot power resource definition
+        //
+        PowerResource (PXP, 0, 0) {
+      
+          Method (_STA, 0) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return (0)
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return (0)
+            }
+      
+            //
+            // Return PCIE RP Power Resource Status.
+            //
+            Return (PSTA ())
+          }
+      
+          Method (_ON) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return ()
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return ()
+            }
+      
+            //
+            // Turn on slot power
+            //
+            PON ()
+      
+            //
+            // Trigger L2/L3 ready exit flow in rootport - transition link to Detect
+            //
+            L23D ()
+          }
+      
+          Method (_OFF) {
+      
+            //
+            // Check if PCIE RP is available or Not by Checking Vendor and Device ID.
+            //
+            If (LEqual (VDID, 0xFFFFFFFF)) {
+              Return ()
+            }
+      
+            //
+            // Check if PCIE RP Power Resource is supported or Not.
+            //
+            If (LEqual (GPRS (), 0)) {
+              Return ()
+            }
+      
+            //
+            // Trigger L2/L3 ready entry flow in rootport
+            //
+            DL23 ()
+      
+            //
+            // Turn off slot power
+            //
+            POFF ()
+          }
+        } // End PowerResource
+      
+        //
+        // Get Permission for Power Removal.
+        // Check whether or not to Disable Power Package GPIO During Device Power OFF(D3 Cold Transition).
+        // Input: VOID
+        //
+        // @return 1 if it is Safe to Remove/Disable Power. 0 Not allow for Power Removal.
+        //
+        Method (GPPR, 0) {
+      
+          // If WAKP has not been defined we can safely disable power.
+          // If WAKP is defined this slot does not supply device with auxilary power and we have to keep primary power
+          // to allow for WAKE. If WAKP is not equal to 0 and WKEN has been enabled do not disable the power.
+          If (CondRefOf (WAKP)) {
+            If (LAnd (LNotEqual (WAKP, 0), LEqual (WKEN, 0))) {
+              Return (0)
+            }
+          }
+      
+          //
+          // If PCPB has not been defined we can safely disable power.
+          // If PCPB is defined and non Zero we have to keep primary power.
+          //
+          If (CondRefOf (PCPB)) {
+            If (LNotEqual (PCPB, 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // If DVES Method has not been defined we can safely disable power.
+          // If DVES Method is defined and return Zero value we have to keep primary power.
+          //
+          If (CondRefOf (DVES)) {
+            If (LEqual (DVES (), 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // Now Safe To Remove/Disable Power.
+          //
+          Return (1)
+        }
+      
+        //
+        // Get PCIe RP Power Resource Support.
+        // If D3 Cold is supported by PCIE RP or Not.
+        // Input: VOID
+        //
+        // @return 1 PCIE RP Power Resource Supported. 0 PCIE RP Power Resource Not Supported.
+        //
+        Method (GPRS, 0) {
+      
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x04))) {
+      
+            //
+            // Check for Hybrid Connection Status for PCIE RP and for single CPU M.2 with x2 MUX
+            //
+            If (CondRefOf (HBCL)) {
+              If (LOr(LNotEqual(HBCL, 0xFF), LLessEqual(HBCL, 0x2))) {
+                If (LEqual (HBCL, SLOT)) {
+                  Return (0)
+                }
+              }
+            }
+          }
+      
+          //
+          // Check for Hybrid Connection Status for PCIE RP and for single CPU M.2 with x2 MUX
+          //
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            If (CondRefOf (HBSL)) {
+              Divide ( Subtract (SLOT, 1), 4, , Local0) // Get PCIE RP Controller Number ( (SLOT-1)/4)
+              // Check if Hybrid Connection Status BIT Corresponding to Controller Number is SET or NOT.
+              If ( And (HBSL, ShiftLeft (0x00000001, Local0))) {
+                Return (0)
+              }
+            }
+      
+            If (LAnd(CondRefOf (HBCL), CondRefOf (HBPL))) {
+              If (LOr(LNotEqual(HBCL, 0xFF), LLessEqual(HBCL, 0x2))) {
+                If (LEqual (HBPL, Subtract(SLOT, 1))) {
+                  Return (0)
+                }
+              }
+            }
+      
+          }
+      
+          //
+          // Check if D3 Cold is supported for PCIE RP.
+          //
+          If (CondRefOf (RD3C)) {
+            If (LNotEqual (RD3C, 0)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // Check if PCIE RP is Mapped under VMD. D3 Cold flow will be taken care by VMD and it's Child ACPI Devices.
+          //
+          If (CondRefOf (PRMV)) {
+            If (LEqual (PRMV, 1)) {
+              Return (0)
+            }
+          }
+      
+          //
+          // D3 Cold is supported for PCIE RP
+          //
+          Return (1)
+        }
+      
+        //
+        // Returns the status of PCIe slot core power.
+        //
+        Method (PSTA, 0) {
+      
+          //
+          // RESET# assertion is mandatory for PCIe RTD3
+          // So if RESET# is asserted the whole slot is off
+          //
+          If (\PIN.STA (RSTG)) {
+            Return (0)
+          } Else {
+            Return (1)
+          }
+        }
+      
+        // Turn on power to PCIe Slot
+        // Since this method is also used by the remapped devices to turn on power to the slot
+        // this method should not make any access to the PCie config space.
+        Method (PON) {
+      
+          // Disable WAKE
+          If (CondRefOf (WAKG)) {
+            \_SB.SHPO (WAKG, 1) // set gpio ownership to driver(0=ACPI mode, 1=GPIO mode)
+            \_SB.CAGS (WAKG) // Clear GPIO Status if set.
+          }
+          If (CondRefOf (DHDW)) { // DG support HPD as D3 Wake GPIO and DHDW exists
+            DHDW () // Disable Discrete Graphics HPD SCI implementated As D3 Wake GPIO
+          }
+      
+          // Restore power to the modPHY (Only for PCH PCIE RP)
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            \_SB.PSD0 (SLOT)
+          }
+      
+          // Turn ON Power for PCIe Slot
+          If (CondRefOf (PWRG)) {
+            // Delay by 10 ms if required using WOFF
+            If (CondRefOf (WOFF)) {
+              If (LNotEqual (WOFF, Zero)) {
+                Divide (Subtract (Timer (), WOFF), 10000, , Local0) // Store Elapsed time in ms, ignore remainder
+                If (LLess (Local0, 200)) {                           // If Elapsed time is less than 20ms
+                  Sleep (Subtract (200, Local0))                     // Sleep for the remaining time
+                }
+                Store (0, WOFF)
+              }
+            }
+            \PIN.ON (PWRG)
+            Sleep (PEP0)
+          }
+      
+          //
+          // On RTD3 Exit, BIOS will instruct the PMC to Enable source clocks.
+          // This is done through sending a PMC IPC command if IPC Command is supported.
+          //
+          If (CondRefOf (SCLK)) {
+            If(CondRefOf(TMCS)) {
+              SPCX(SCLK, 1, TMCS)
+            } Else {
+              SPCO(SCLK, 1)
+            }
+          }
+      
+          // De-Assert Reset Pin
+          \PIN.OFF (RSTG)
+        }
+      
+        // Turn off power to PCIe Slot
+        // Since this method is also used by the remapped devices to turn off power to the slot
+        // this method should not make any access to the PCIe config space.
+        Method (POFF) {
+      
+          // Assert Reset Pin after the delay passed from the bus driver
+          Divide (LNRD, 1000, , Local1)
+          Sleep (Local1)
+      
+          // Reset pin is mandatory for correct PCIe RTD3 flow
+          \PIN.ON (RSTG)
+      
+          If (LAnd (CondRefOf (PRTP), LEqual (PRTP, 0x02))) {
+            // Enable modPHY power gating
+            // This must be done after the device has been put in reset
+            \_SB.PSD3 (SLOT)
+          }
+      
+          //
+          // On RTD3 entry, BIOS will instruct the PMC to disable source clocks.
+          // This is done through sending a PMC IPC command if IPC Command is supported.
+          //
+          If (CondRefOf (SCLK)) {
+            If(CondRefOf(TMCS)) {
+              SPCX(SCLK, 0, TMCS)
+            } Else {
+              SPCO(SCLK, 0)
+            }
+          }
+      
+          // Power OFF for Slot
+          If (CondRefOf (PWRG)) {
+            If ( LEqual ( GPPR(), 1)) { // we can safely disable power.
+              \PIN.OFF (PWRG)
+            }
+            // Store current timestamp in WOFF
+            If (CondRefOf (WOFF)) {
+              Store (Timer (), WOFF)
+            }
+          }
+      
+          // enable WAKE
+          If (CondRefOf (WAKG)) {
+            If (LAnd (LNotEqual (WAKG, 0), WKEN)) {
+              \_SB.SHPO (WAKG, 0)
+            }
+          }
+          If (CondRefOf (EHDW)) { // DG support HPD as D3 Wake GPIO and DHDW exists
+            EHDW () // Enable Discrete Graphics HPD SCI implementated As D3 Wake GPIO
+          }
+        }
+      
+        Method (_PR0) {
+          Return (Package (){PXP})
+        }
+      
+        Method (_PR3) {
+          Return (Package (){PXP})
+        }
+      
+        //
+        // Update PERST# assertion delay.
+        // This function will be called from reference code during PCIe _DSM function index 11 evaluation.
+        // Arg0 - New delay value in microseconds. Max is 10ms
+        //
+        // @return Last sucessfully negotiated value in us. 0 if no such value exists.
+        //
+        Method (UPRD, 1, Serialized) {
+          If (LLessEqual (Arg0, 10000)) {
+            // If the value does not exceed the limit
+            // Update last negotiated value and calculate the value in ms.
+            Store (Arg0, LNRD)
+          }
+          Return (LNRD)
+        }
+      
+
+      Scope(\_SB.PC00.RP09.PXSX) {
+        /**@file
+          ACPI RTD3 Hook SSDT Library for Generic Pcie Rp with End Point as M.2 SSD/Storage Device.
+        
+          Copyright (c) 2021 - 2022, Intel Corporation. All rights reserved.<BR>
+          SPDX-License-Identifier: BSD-2-Clause-Patent
+        **/
+        
+        //
+        // This code should be included in the scope of the PCIe root port that is connected to the M.2 slot
+        //
+          External (PAHC, MethodObj) // Checks if the connected device is AHCI drive
+          External (PNVM, MethodObj) // Checks if the connected device is NVME drive
+        
+          //
+          // The deepest D-state supported by this device in the S0 system sleeping state where the device can wake itself,
+          // "4" represents D3cold.
+          //
+          Method (_S0W, 0x0, NotSerialized)
+          {
+        
+            If (CondRefOf (^^RD3C)) {
+              If (LEqual (^^RD3C, 0x01)) {
+                Return (0x4)
+              }
+            }
+        
+            Return (0x3)
+          }
+        
+          //
+          // PCIe D3Cold support hacks ACPI specification in order to work around bug in Windows PCIe driver.
+          // For storage we want to return power resources from root port's _PR0 so that we won't get unexpected D3Cold entry.
+          //
+          Method (_PR0, Zero, NotSerialized, 0, PkgObj){
+            Return (^^_PR0 ())
+          }
+          Method (_PR3, Zero, NotSerialized, 0, PkgObj){
+            Return (^^_PR0 ())
+          }
+        
+          Method (_PS0, 0, Serialized){
+          }
+        
+          Method (_PS3, 0, Serialized){
+          }
+        
+          Device (MINI){
+            Method (_STA, 0, Serialized){
+              If (CondRefOf (PAHC)) {
+                If (PAHC ()){
+                  Return (0x0F)
+                }
+              }
+              Return (0)
+            }
+        
+            //
+            // Declare MINI device as a SATA drive connected to the port 0 of the SATA controller
+            //
+            Name (_ADR, 0x0000FFFF)
+            Name (_S0W, 0x04)
+        
+            Method (_PS0, 0, Serialized){
+            }
+        
+            Method (_PS3, 0, Serialized){
+            }
+        
+            //
+            // PCIe D3Cold support hacks ACPI specification in order to work around bug in Windows PCIe driver.
+            // For storage we want to return power resources from root port's _PR0 so that we won't get unexpected D3Cold entry.
+            //
+            Method (_PR0, Zero, NotSerialized, 0, PkgObj){
+              Return (^^^_PR0 ())
+            }
+            Method (_PR3, Zero, NotSerialized, 0, PkgObj){
+              Return (^^^_PR0 ())
+            }
+        
+          }
+
+      }
+    }
+
+// PCIe root ports - END
+
+//
+// SATA - START
+//
+  Scope(\_SB.PC00.SAT0) {
+    Scope(PRT0) {
+      If (PRES ()) {
+        Name(PWRG, Package() {0, 0})
+        Store(SATP, Index(PWRG, 0))
+        Store(STPP, Index(PWRG, 1))
+      }
+    }
+
+  }
+
+
+//
+// USB - START
+//
+
+//
+// XDCI - start
+//
+  If(LEqual(XDCE,1)) {
+    Scope(\_SB)
+    {
+      //
+      // Dummy power resource for USB D3 cold support
+      //
+      PowerResource(USBC, 0, 0)
+      {
+        Method(_STA) { Return (0xF) }
+        Method(_ON) {}
+        Method(_OFF) {}
+      }
+    }
+
+    Scope(\_SB.PC00.XDCI)
+    {
+      OperationRegion (GENR, SystemMemory, Add(And(XDCB, 0xFFFFFFFFFFFFFF00), 0x10F81C), 0x4)  //AON MMIO - 10F81C: APBFC_U3PMU_CFG5
+      Field (GENR, WordAcc, NoLock, Preserve)
+      {
+            ,   2,
+        CPME,   1,    //bit2 core_pme_en
+        U3EN,   1,    //bit3 u3_pme_en
+        U2EN,   1     //bit4 u2_pme_en
+      }
+
+      Method (_PS3, 0, NotSerialized)
+      {
+        Store (One, CPME)
+        Store (One, U2EN)
+        Store (One, U3EN)
+
+        \_SB.CSD3(23)
+      }
+      Method (_PS0, 0, NotSerialized)
+      {
+        Store (Zero, CPME)
+        Store (Zero, U2EN)
+        Store (Zero, U3EN)
+
+        If(LEqual(DVID,0xFFFF)) {
+          Return()
+        }
+
+        \_SB.CSD0(23)
+      }
+
+      Method (_RMV, 0, NotSerialized)  // _RMV: Removal Status
+      {
+        Return (Zero)
+      }
+
+      Method (_PR3, 0, NotSerialized)  // _PR3: Power Resources for D3hot
+      {
+        Return (Package (0x01)
+        {
+          USBC // return dummy package
+        })
+      }
+    } // Scope(\_SB.PC00.XDCI)
+  } // XDCE
+//
+// XDCI - end
+//
+
+//
+// USB - END
+//
+
+If (LNotEqual(GBES,0)) {
+  Scope(\_SB.PC00.GLAN)
+  {
+    Method (_PS3, 0, NotSerialized)
+    {
+      \_SB.CSD3(21)
+    }
+    Method (_PS0, 0, NotSerialized)
+    {
+      If(LNot(GBED)){  // If GBE_FDIS_PMC == 0
+        \_SB.CSD0(21)
+      }
+    }
+  } // Scope(\_SB.PC00.GLAN)
+}
+
+//
+// Human Interface Devices Start
+//
+
+//
+
+//
+// PCH I2C0 - TouchPad Power control
+//
+    Scope(\_SB.PC00.I2C0){
+
+      Method(PS0X,0,Serialized)
+      {
+      }
+      /// PS3X Method, called by PS3 method in PchSerialIo.asl
+      Method(PS3X,0,Serialized)
+      {
+      }
+      /// \ref i2c0_pr_pxtc
+      ///@defgroup i2c0_scope  I2C1 Scope
+      If (LNotEqual(TPDT,0)) {
+      PowerResource(PXTC, 0, 0){
+        Method(_STA){
+          Return(PSTA(0))
+        }
+
+        Method(_ON){
+          PON(0)
+        }
+
+        Method(_OFF){
+          POFF(0)
+        }
+      } // End PXTC
+      }
+      /// \ref i2c0_pr_ptpl
+      ///@defgroup i2c0_scope
+      If (LNotEqual(TPLT,0)) {
+      PowerResource(PTPL, 0, 0){
+        Method(_STA){
+          Return(PSTA(1))
+        }
+
+        Method(_ON){
+          PON(1)
+        }
+
+        Method(_OFF){
+          POFF(1)
+          }
+        }
+      }
+      /// Variable:
+      Name(ONTM, 0) ///ONTM: 0 - Not in Speculative ON ; Non-Zero - elapsed time in Nanosecs after Physical ON
+      Method(PSTA, 1, Serialized){
+        If (Arg0 == 0) {
+          Return(0x01)
+        }
+        If (Arg0 == 1) {
+          If(LEqual(\_SB.GGOV(GPLP), 1)) {
+            Return(0x01)
+          } Else {
+            Return(0x00)
+          }
+        }
+        Return(0x00)
+      }
+      // Timing of Power and Reset for I2C Touch Panel
+      //  _____________________________________________________________________________________________________
+      // | minimum required time |  Reset de-assert from Power On (ms)   |     Power Off from Reset assert (ms)|
+      // |_______________________|_______________________________________|_____________________________________|
+      // | current setting       |                2                      |                3                    |
+      // |_______________________|_______________________________________|_____________________________________|
+      // * no maximum time limitation.
+      Method(PON, 1, Serialized) /// _ON Method \n Turn on
+      {
+        If (Arg0 == 0) {
+          // enable int line
+          \_SB.SGRA(GPDI, PPDI)
+        }
+        ElseIf (Arg0 == 1) {
+        // drive pwr high
+        \_SB.SGOV(GPLP, PPLP)
+        Sleep(2)                  // time for Reset de-assert from Power On
+          // De-Assert GPIO RST
+        \_SB.SGOV(GPLR, PPLR)
+          // update ONTM
+          Store(Timer(), ONTM)
+          // enable int line
+        \_SB.SGRA(GPLI, PPLI)
+        }
+      }
+
+      Method(POFF, 1, Serialized)  /// _OFF method \n Turn off
+      {
+        If (Arg0 == 0) {
+          // disable int line
+          Xor(PPDI, 1, Local0)
+          \_SB.SGRA(GPDI, Local0)
+        }
+        ElseIf (Arg0 == 1) {
+          // disable int line
+        Xor(PPLI, 1, Local0)
+        \_SB.SGRA(GPLI, Local0)
+        // Assert GPIO RST
+        Xor(PPLR, 1, Local0)
+        \_SB.SGOV(GPLR, Local0)
+        Sleep(3)                   // time for Power Off from Reset assert
+        // drive pwr low
+        Xor(PPLP, 1, Local0)
+        \_SB.SGOV(GPLP, Local0)
+          // update ONTM
+          Store(Zero , ONTM)  ///- Clear ONTM
+        }
+      }
+
+      If (LNotEqual(TPDT,0)) {
+      Scope(TPD0){
+        Name (TD_P, Package(){\_SB.PC00.I2C0.PXTC})               // TD_P - Touch Device Power Package
+
+        Alias(IC0D, TD_D)                                         // TD_D - Touch Device power on delay
+        Alias(\_SB.PC00.I2C0.ONTM, TD_C)                     // TD_C - Touch Device I2C controller power on timestamp
+
+
+        Method(_PS0) { PS0X() }
+        Method(_PS3) { PS3X() }
+      }// End Of Scope(TPD0)
+     }
+
+      If (LNotEqual(TPLT,0)) {
+        Scope(TPL1){
+          Name (TD_P, Package(){\_SB.PC00.I2C0.PTPL})               // TD_P - Touch Device Power Package
+
+          Alias(IC1D, TD_D)                                         // TD_D - Touch Device power on delay
+          Alias(\_SB.PC00.I2C0.ONTM, TD_C)                          // TD_C - Touch Device I2C controller power on timestamp
+
+
+          Method(_PS0) { PS0X() }
+          Method(_PS3) { PS3X() }
+        }// End Of Scope(TPL1)
+      }
+    } //  Scope(\_SB.PC00.I2C0)
+
+//
+    //Power Resource for Audio Codec
+    Scope(\_SB.PC00)
+    {
+      PowerResource(PAUD, 0, 0) {
+        /// Namespace variable used:
+        Name(PSTA, One) /// PSTA: Physical Power Status of Codec 0 - OFF; 1-ON
+        Name(ONTM, Zero) /// ONTM: 0 - Not in Speculative ON ; Non-Zero - elapsed time in Nanosecs after Physical ON
+
+        Name(_STA, One) /// _STA: PowerResource Logical Status 0 - OFF; 1-ON
+
+        ///@defgroup pr_paud Power Resource for onboard Audio CODEC
+
+        Method(_ON, 0){     /// _ON method \n
+          Store(One, _STA)        ///- Set Logocal power state
+          PUAM() ///- Call PUAM() to tansition Physical state to match current logical state
+                    ///@addtogroup pr_paud
+        } // End _ON
+
+        Method(_OFF, 0){    /// _OFF method \n
+          Store(Zero, _STA)    ///- Set the current power state
+          PUAM() ///- Call PUAM() to tansition Physical state to match current logical state
+        ///@addtogroup pr_paud
+        } // End _OFF
+
+        ///  PUAM - Power Resource User Absent Mode for onboard Audio CODEC
+        ///  Arguments:
+        ///
+        ///  Uses:
+        ///      _STA - Variable updated by Power Resource _ON/_OFF methods \n
+        ///      \\UAMS - Variable updated by GUAM method to show User absent present \n
+        ///      ONTM - Local variable to store ON time during Speculative ON \n
+        /// ______________________________
+        // |  Inputs      |   Outputs    |
+        // ______________________________
+        // | _STA | \UAMS | GPIO | ONTM |
+        // ______________________________
+        // |   1  |   0   | ON   |   !0 |
+        // |   1  |   !0  | ON   |   !0 |
+        // |   0  |   0   | ON   |   !0 |
+        // |   0  |   !0  | OFF  |   0  |
+        // ______________________________
+                    /**
+                    <table>
+                    <tr> <th colspan="2"> Inputs <th colspan="2"> Output
+                    <tr> <th>_STA <th> \\UAMS <th> GPIO <th>ONTM
+                    <tr> <td>1 <td>0 <td>ON <td>!0
+                    <tr> <td>1 <td>!0<td>ON <td>!0
+                    <tr> <td>0 <td>0 <td>ON <td>!0
+                    <tr> <td>0 <td>!0<td>OFF<td> 0
+                    </table>
+                    **/
+        ///@addtogroup pr_paud_puam
+        Method(PUAM, 0, Serialized)
+        {
+                // power rail = NOT there for ICL U
+                // Note:- Audio Power enable need not be implemented by default and need rework if we need power control.
+          If (LAnd(LEqual(^_STA, Zero), LNotEqual(\UAMS, Zero))) { ///New state = OFF Check if (_STA ==0 && \UAMS != 0) \n
+          } Else { /// New state = ON (_STA=1) or (_STA=0 and \UAMS=0)
+            /// Turn power on \n
+            If(LNotEqual(^PSTA, One)) { ///- Skip below if Power Resource is already in ON
+              Store(One, ^PSTA)  ///- >> Set PSTA to 1
+              Store(Timer(), ^ONTM) ///- >> Start the timer for this PR
+            }
+          }
+        ///@defgroup pr_paud_puam Power Resource User Absent Mode for onboard Audio CODEC
+        } //PUAM
+      } //PAUD
+    } //Scope(\_SB.PC00)
+
+//
+// Check HDAS (HD-Audio) controller present
+//
+    If(LNotEqual(\_SB.PC00.HDAS.VDID, 0xFFFFFFFF)) {
+      Scope(\_SB.PC00.HDAS) {
+        Method(PS0X,0,Serialized)     /// Platform D0 Method for HD-A Controller
+        {
+          If(LEqual(\_SB.PC00.PAUD.ONTM, Zero)){    ///- Check if ONTM=0
+            Return()
+          }
+
+          ///
+          ///- Make sure "D0 delay" (AUDD) delay is elapsed before returning _PS0
+          ///- Local0: Elapse time since the _ON method
+          ///- VRRD: VR Rampup Delay
+          ///- AUDD: Time required for device to be ready after power on
+          ///- Local1 = AUDD + VRRD: Need to incorporate VRRD since the _ON method no longer has VR Rampup Delay
+          ///- So only need sleep for (Local1 - Local0), the amount of time remaining since the _ON method
+          ///
+          Divide(Subtract(Timer(), \_SB.PC00.PAUD.ONTM), 10000, , Local0) ///- Store Elapsed time in ms, ignore remainder
+          Add(AUDD, VRRD, Local1) ///- Incorporate VR Rampup Delay
+          If(LLess(Local0, Local1)) { ///- Do not sleep if already past the delay requirement audio
+            ///- Delay for device init
+            Sleep(Subtract(Local1, Local0)) ///- Sleep (AUDD + VRRD - time elapsed)
+          }
+        }
+
+        ///Associate _PR0 with \ref pr_paud
+        Name(_PR0, Package(){\_SB.PC00.PAUD})
+      ///@defgroup hdef_scope       Intel High Definition Audio Scope
+      }
+    }// If(LNotEqual(\_SB.PC00.HDAS.VDID, 0xFFFFFFFF))
+//GPE Event handling - Start
+  Scope(\_GPE) {
+    //
+    // Alternate _L6F(), to handle 2-tier RTD3 GPE events here
+    //
+    Method(AL6F) {
+      // WLAN wake event
+      If (\_SB.ISME(WLWK))
+      {
+        \_SB.SHPO(WLWK, 1) // set gpio ownership to driver(0=ACPI mode, 1=GPIO mode)
+        Notify(\_SB.PC00.RP04, 0x02)      // device wake
+        \_SB.CAGS(WLWK)    // WIFI_WAKE_N
+      }
+
+      //Wwan wake event
+      If (\_SB.ISME(WWKP))
+      {
+        \_SB.SHPO(WWKP, 1) // set gpio ownership to driver(0=ACPI mode, 1=GPIO mode)
+        Notify(\_SB.PC00.RP04, 0x02)     // device wake
+        \_SB.CAGS(WWKP)    // WWAN_WAKE_N
+      }
+
+      //Pcie x1 DT slot wake event
+      If (\_SB.ISME(PSWP))
+      {
+        \_SB.SHPO(PSWP, 1) // set gpio ownership to driver(0=ACPI mode, 1=GPIO mode)
+        Notify(\_SB.PC00.RP07, 0x02)      // device wake
+        \_SB.CAGS(PSWP)
+      }
+    }
+  } //Scope(\_GPE)
+//GPE Event handling - End
+} // End SSDT

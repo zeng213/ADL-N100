@@ -1,0 +1,8 @@
+INFO     : 
+================================================================
+Intel (R) Modular Flash Image Tool. Version: 16.50.10.1387
+Copyright (c) 2022, Intel Corporation. All rights reserved.
+================================================================
+Command Line: ./Fit/mfit.exe -l Intel(R) AlderLake N Chipset - Consumer - SPI --loadconfig E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\updated.xml --build Temp/Ifwi.bin --workingdir E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp --destdir E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp 
+
+WARNING  : WorkingDir was changed from MFIT base folder to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp. next messages will be logged in a file at E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp

@@ -1,0 +1,14 @@
+## @file
+#  Platform Configuration Delta File.
+#
+#  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+#
+# Delta configuration values for reserved platform ID 0x0000
+#
+
+PLATFORMID_CFG_DATA.PlatformId           | 0x0000
+

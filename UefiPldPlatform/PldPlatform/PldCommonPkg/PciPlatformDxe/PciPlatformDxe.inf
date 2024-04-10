@@ -1,0 +1,47 @@
+#/*++
+#
+# Copyright (c)  2003  - 2021, Intel Corporation. All rights reserved
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#  Module Name:
+#
+#    PciPlatformDxe.inf
+#
+#  Abstract:
+#
+#    Component description file for PciPlatformDxe module.
+#
+--*/
+
+[defines]
+  INF_VERSION          = 0x00010005
+  BASE_NAME            = PciPlatformDxe
+  FILE_GUID            = E2441B64-7EF4-41fe-B3A3-8CAA7F8D3017
+  MODULE_TYPE          = UEFI_DRIVER
+  VERSION_STRING       = 1.0
+  ENTRY_POINT          = PciPlatformDriverEntry
+
+[sources.common]
+  PciPlatformDxe.c
+  PciPlatformDxe.h
+
+[Guids]
+
+[Protocols]
+  gEfiPciPlatformProtocolGuid
+  gEfiPciRootBridgeIoProtocolGuid
+  gEfiPciIoProtocolGuid
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  BaseLib
+  BaseMemoryLib
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  DxeServicesTableLib

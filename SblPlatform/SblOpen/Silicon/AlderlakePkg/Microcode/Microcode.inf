@@ -1,0 +1,17 @@
+## @file
+#
+#  Copyright (c) 2020 - 2023, Intel Corporation. All rights reserved.<BR>
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[Defines]
+  INF_VERSION          = 0x00010005
+  BASE_NAME            = Microcode
+  FILE_GUID            = 40762366-24D3-4A6E-9F43-5AC5085D34EB
+  MODULE_TYPE          = USER_DEFINED
+  VERSION_STRING       = 1.0
+
+[Sources]
+  m_11_b06e0_00000012.mcb

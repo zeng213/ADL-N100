@@ -1,0 +1,1 @@
+e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\IA32\EmbeddedPkg\Library\PrePiExtractGuidedSectionLib\PrePiExtractGuidedSectionLib\Makefile

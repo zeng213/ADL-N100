@@ -1,0 +1,59 @@
+## @file
+# SMM Access 2 Protocol Dxe Driver
+#
+# This module produces the SMM Access 2 Protocol.
+# This module to be used within Coreboot Payload.
+#
+#  Copyright (c) 2014, Intel Corporation. All rights reserved.<BR>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php.
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = SmmAccessDxe
+  FILE_GUID                      = 47579CF5-1E4F-4b41-99BB-A5C334846D3B
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = SmmAccessDriverEntryPoint
+  
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  SmmAccessDxe.c
+  SmmAccessDxe.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  PldCommonPkg/PldCommonPkg.dec
+  UefiPayloadPkg/UefiPayloadPkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  DebugLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  UefiBootServicesTableLib
+  HobLib
+
+[Guids]
+  gSmmInformationGuid
+
+[Protocols]
+  gEfiSmmAccess2ProtocolGuid                    ## PRODUCES
+  gEfiSmmControl2ProtocolGuid                   ## CONSUMES
+
+[Depex]
+  gEfiSmmControl2ProtocolGuid

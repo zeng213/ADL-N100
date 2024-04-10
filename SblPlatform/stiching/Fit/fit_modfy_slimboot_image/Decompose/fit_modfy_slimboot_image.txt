@@ -1,0 +1,15 @@
+MFIT Version     	16.50.10.1387
+MFIT Core Version	1.1.0
+Image Layout     	Intel(R) AlderLake N Chipset - Consumer - SPI
+
+Versions:
+
+Important!       	Versions shown below are applicable to image build time. In case of FW update for IUP, its version may not be reliable.
+ME               	16.50.10.1351
+PMCP             	160.50.0.1009
+OEMP             	0.0.0.0
+IOMP             	35.8.0.0
+NPHY             	14.14.508.4007
+PCHC             	16.50.0.1013
+ISHC             	5.4.2.4591
+IUNP             	0.10.1.7051

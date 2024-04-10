@@ -1,0 +1,35 @@
+### @file
+# Boot Media Library.
+#
+# Determines what type of device system firmware is booting from
+#
+# Copyright (c) 2018 - 2019, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+###
+
+[Defines]
+  INF_VERSION          = 0x00010005
+  BASE_NAME            = BootMediaLib
+  FILE_GUID            = 3FE46D74-1028-4172-8641-DC0D1AA5CDF2
+  MODULE_TYPE          = PEIM
+  VERSION_STRING       = 1.0
+  LIBRARY_CLASS        = BootMediaLib
+
+[Sources]
+  BootMediaLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  Silicon/CoffeelakePkg/CoffeelakePkg.dec
+
+[LibraryClasses]
+  BaseLib
+  DebugLib
+  IoLib
+
+[Pcd]
+  gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress
+

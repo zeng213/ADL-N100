@@ -1,0 +1,40 @@
+## @file
+#    EXT23 driver only used in Pei Phase.
+#
+#  Copyright (c) 2006 - 2016, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Ext23Lib
+  FILE_GUID                      = 6EFFB56E-5C3F-4472-2148-DC0BCA408C7E
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = Ext23Lib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  Ext2Fs.h
+  Ext2FsDiNode.h
+  LibsaFsStand.h
+  Ext2FsDir.h
+  ExtLib.c
+  Ext2Fs.c
+  Ext2FsLs.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+
+[LibraryClasses]
+  BaseMemoryLib
+  MemoryAllocationLib
+  MediaAccessLib

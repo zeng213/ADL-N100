@@ -1,0 +1,551 @@
+ SdMmcPciHcDxe
+
+ Timestamp is 65f9528a (Tue Mar 19 16:53:30 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 00008feeH .text$mn                CODE
+ 0002:00000000 00002fe4H .rdata                  DATA
+ 0002:00002fe4 00000474H .rdata$voltmd           DATA
+ 0002:00003458 00000170H .rdata$zzzdbg           DATA
+ 0003:00000000 000003a0H .data                   DATA
+ 0003:000003a0 00000058H .bss                    DATA
+ 0004:00000000 000004d4H .pdata                  DATA
+ 0005:00000000 000004d8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000374 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000d0       ProcessLibraryConstructorList 0000000000000390 f   SdMmcPciHcDxe:AutoGen.obj
+ 0001:00000288       ProcessModuleEntryPointList 0000000000000548 f   SdMmcPciHcDxe:AutoGen.obj
+ 0001:00000394       ProcessAsyncTaskList       0000000000000654 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:00000558       SdMmcPciHcEnumerateDevice  0000000000000818 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:0000077c       SdMmcPciHcDriverBindingSupported 0000000000000a3c f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:0000089c       SdMmcPciHcDriverBindingStart 0000000000000b5c f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:00001004       SdMmcPciHcDriverBindingStop 00000000000012c4 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:0000125c       SdMmcPassThruExecSyncTrb   000000000000151c f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:000013b4       SdMmcPassThruPassThru      0000000000001674 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:000014f8       SdMmcPassThruGetNextSlot   00000000000017b8 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:000015b0       SdMmcPassThruBuildDevicePath 0000000000001870 f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:0000169c       SdMmcPassThruGetSlotNumber 000000000000195c f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:0000177c       SdMmcPassThruResetDevice   0000000000001a3c f   SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0001:000018f4       DumpCapabilityReg          0000000000001bb4 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00001df8       SdMmcHcRwMmio              00000000000020b8 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00001e94       SdMmcHcOrMmio              0000000000002154 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00001f30       SdMmcHcAndMmio             00000000000021f0 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00001fcc       SdMmcHcCheckMmioSet        000000000000228c f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00002018       SdMmcHcWaitMmioSet         00000000000022d8 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000020c0       SdMmcHcReset               0000000000002380 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000022a0       SdMmcHcCardDetect          0000000000002560 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00002368       SdMmcHcStopClock           0000000000002628 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000023cc       SdMmcHcClockSupply         000000000000268c f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000026e8       SdMmcHcSetBusWidth         00000000000029a8 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000027e8       SdMmcHcInitV4Enhancements  0000000000002aa8 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000028c4       SdMmcHcInitPowerVoltage    0000000000002b84 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000029d8       SdMmcHcInitHost            0000000000002c98 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00002b3c       SdMmcHcUhsSignaling        0000000000002dfc f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00002c74       BuildAdmaDescTable         0000000000002f34 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:0000315c       SdMmcPrintPacket           000000000000341c f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:0000330c       SdMmcPrintTrb              00000000000035cc f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00003658       SdMmcCreateTrb             0000000000003918 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00003954       SdMmcFreeTrb               0000000000003c14 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000039e4       SdMmcCheckTrbEnv           0000000000003ca4 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00003a34       SdMmcExecTrb               0000000000003cf4 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00003ea0       SdMmcCheckAndRecoverErrors 0000000000004160 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00004000       SdMmcCheckCommandComplete  00000000000042c0 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000040dc       SdMmcTransferDataWithPio   000000000000439c f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00004250       SdMmcCheckDataTransfer     0000000000004510 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:00004380       SdMmcCheckTrbResult        0000000000004640 f   SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0001:000044fc       EmmcSetRca                 00000000000047bc f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:000045a8       EmmcSelect                 0000000000004868 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004654       EmmcGetExtCsd              0000000000004914 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004708       EmmcSwitch                 00000000000049c8 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:000047c8       EmmcTuningClkForHs200      0000000000004a88 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:000049b4       EmmcCheckSwitchStatus      0000000000004c74 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004ac0       EmmcSwitchBusWidth         0000000000004d80 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004ba4       EmmcSwitchBusTiming        0000000000004e64 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004d98       EmmcSwitchToHS200          0000000000005058 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004e4c       EmmcSwitchToHS400          000000000000510c f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00004f64       EmmcGetTargetBusMode       0000000000005224 f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:0000515c       EmmcSetBusMode             000000000000541c f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:0000547c       EmmcIdentification         000000000000573c f   SdMmcPciHcDxe:EmmcDevice.obj
+ 0001:00005780       SdCardVoltageCheck         0000000000005a40 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005834       SdCardSendOpCond           0000000000005af4 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005948       SdCardSetRca               0000000000005c08 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:000059fc       SdCardSwitch               0000000000005cbc f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005b58       SdCardSendStatus           0000000000005e18 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005c1c       SdCardTuningClock          0000000000005edc f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005dd4       SdCardSwitchBusWidth       0000000000006094 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00005f98       SdGetTargetBusMode         0000000000006258 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00006168       SdCardSetBusMode           0000000000006428 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00006464       SdCardIdentification       0000000000006724 f   SdMmcPciHcDxe:SdDevice.obj
+ 0001:00006b40       SdMmcPciHcComponentNameGetDriverName 0000000000006e00 f   SdMmcPciHcDxe:ComponentName.obj
+ 0001:00006b74       SdMmcPciHcComponentNameGetControllerName 0000000000006e34 f   SdMmcPciHcDxe:ComponentName.obj
+ 0001:00006c6c       InternalBaseLibIsListValid 0000000000006f2c f   BaseLib:LinkedList.obj
+ 0001:00006d18       InsertTailList             0000000000006fd8 f   BaseLib:LinkedList.obj
+ 0001:00006d74       GetFirstNode               0000000000007034 f   BaseLib:LinkedList.obj
+ 0001:00006db4       GetNextNode                0000000000007074 f   BaseLib:LinkedList.obj
+ 0001:00006df4       IsNull                     00000000000070b4 f   BaseLib:LinkedList.obj
+ 0001:00006e40       RemoveEntryList            0000000000007100 f   BaseLib:LinkedList.obj
+ 0001:00006ebc       DivU64x32                  000000000000717c f   BaseLib:DivU64x32.obj
+ 0001:00006f04       RShiftU64                  00000000000071c4 f   BaseLib:RShiftU64.obj
+ 0001:00006f50       CopyMem                    0000000000007210 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00006ff8       ZeroMem                    00000000000072b8 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0000707c       DebugPrint                 000000000000733c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000070a0       DebugPrintMarker           0000000000007360 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00007138       DebugAssert                00000000000073f8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000071b8       InternalAllocatePool       0000000000007478 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000071e8       InternalAllocateCopyPool   00000000000074a8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007274       FreePool                   0000000000007534 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000072d0       DevicePathNodeLength       0000000000007590 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00007334       CompareIso639LanguageCode  00000000000075f4 f   UefiLib:UefiLib.obj
+ 0001:000073b0       IsLanguageSupported        0000000000007670 f   UefiLib:UefiLib.obj
+ 0001:00007438       LookupUnicodeString2       00000000000076f8 f   UefiLib:UefiLib.obj
+ 0001:00007520       GetHobList                 00000000000077e0 f   DxeHobLib:HobLib.obj
+ 0001:00007638       GetNextHob                 00000000000078f8 f   DxeHobLib:HobLib.obj
+ 0001:00007690       PlatformHookSerialPortInitialize 0000000000007950 f   PlatformHookLib:PlatformHookLib.obj
+ 0001:00007764       AsciiStrLen                0000000000007a24 f   BaseLib:String.obj
+ 0001:000077e4       AsciiStrnCmp               0000000000007aa4 f   BaseLib:String.obj
+ 0001:000078cc       StrnLenS                   0000000000007b8c f   BaseLib:SafeString.obj
+ 0001:0000792c       CompareGuid                0000000000007bec f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00007a24       AsciiSPrint                0000000000007ce4 f   BasePrintLib:PrintLib.obj
+ 0001:00007a50       BasePrintLibFillBuffer     0000000000007d10 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007a84       BasePrintLibValueToString  0000000000007d44 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007af8       BasePrintLibSPrintMarker   0000000000007db8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008af8       BasePrintLibSPrint         0000000000008db8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008b1c       SerialPortReadRegister     0000000000008ddc f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008b50       SerialPortWriteRegister    0000000000008e10 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008b8c       SerialPortInitialize       0000000000008e4c f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008d50       SerialPortWrite            0000000000009010 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008ea0       GetGuidHobDataFromSbl      0000000000009160 f   SblParseLib:SblParseLib.obj
+ 0001:00008f6c       MmioRead32                 000000000000922c f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00008fa4       PciExpressRead32           0000000000009264 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00008ff4       GetPcdProtocol             00000000000092b4 f   DxePcdLib:DxePcdLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000009380     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 00000000000093a8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       ??_C@_0O@ONKHAJAA@SdMmcPciHcDxe@ 00000000000093c0     SdMmcPciHcDxe:AutoGen.obj
+ 0002:00000050       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 00000000000093d0     SdMmcPciHcDxe:AutoGen.obj
+ 0002:00000078       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 00000000000093f8     SdMmcPciHcDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0JB@GCEFLJGM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009410     SdMmcPciHcDxe:AutoGen.obj
+ 0002:00000130       ??_C@_0GC@ENHHMELG@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000094b0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000198       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000009518     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000001b0       ??_C@_0DF@CPCJKDNC@ProcessAsyncTaskList?$CI?$CJ?3?5Signal?5@ 0000000000009530     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000001e8       ??_C@_0DB@FDNIFGLB@ProcessAsyncTaskList?$CI?$CJ?3?5Signal?5@ 0000000000009568     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000220       ??_C@_0EF@GPGKPC@SdMmcPciHcEnumerateDevice?3?5devi@ 00000000000095a0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000270       ??_C@_0EC@KBPPOIGN@SdMmcPciHcEnumerateDevice?3?5devi@ 00000000000095f0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000002b8       ??_C@_0CF@IIKEIMBP@SdMmcPciHcDriverBindingStart?3?5S@ 0000000000009638     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000002e0       ??_C@_0BN@LHBJFOPD@SdMmcPciHcDriverBindingStart@ 0000000000009660     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000300       ??_C@_0CE@DOLOLCLA@?$CFa?3?5found?5SD?1MMC?5override?5proto@ 0000000000009680     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000328       ??_C@_0CI@DOMGFGK@?$CFa?3?5Failed?5to?5override?5capabili@ 00000000000096a8     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000350       ??_C@_0DI@GFAOFODH@?$CFa?3?5Failed?5to?5get?5operating?5par@ 00000000000096d0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000388       ??_C@_0CG@BOKCOHIM@Slot?$FL?$CFd?$FN?5Base?5Clock?5Frequency?3?5@ 0000000000009708     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000003b0       ??_C@_0DF@PKCFACEO@SdMmcPciHcDxe?5doesn?8t?5support?5t@ 0000000000009730     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000003e8       ??_C@_0DG@JBCFNPDM@SdMmcHcCardDetect?3?5No?5device?5at@ 0000000000009768     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000420       ??_C@_0EA@BCDFPPJK@SdMmcPciHcDriverBindingStart?3?5f@ 00000000000097a0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000460       ??_C@_0CM@KJAKMHCF@SdMmcPciHcDriverBindingStart?3?5?$CF@ 00000000000097e0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:00000490       ??_C@_0CE@HJBPCJPK@SdMmcPciHcDriverBindingStop?3?5St@ 0000000000009810     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000004b8       ??_C@_0CK@HFCHCDJP@SdMmcPciHcDriverBindingStop?3?5En@ 0000000000009838     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0002:000004e8       ??_C@_0CF@BELKGKH@?5?$DN?$DN?5Slot?5?$FL?$CFd?$FN?5Capability?5is?50x?$CF@ 0000000000009868     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000510       ??_C@_03BMJMONAH@MHz@      0000000000009890     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000514       ??_C@_03DJPHLCNL@KHz@      0000000000009894     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000518       ??_C@_0BL@JNIAEICH@?5?5?5Timeout?5Clk?5Freq?5?5?$CFd?$CFa?6@ 0000000000009898     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000538       ??_C@_0BM@IGBPIDFK@?5?5?5Base?5Clk?5Freq?5?5?5?5?5?$CFdMHz?6@ 00000000000098b8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000558       ??_C@_0BO@HIANFEFD@?5?5?5Max?5Blk?5Len?5?5?5?5?5?5?5?$CFdbytes?6@ 00000000000098d8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000578       ??_C@_04HCDDPBNL@TRUE@     00000000000098f8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000580       ??_C@_05MAJJAKPI@FALSE@    0000000000009900     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000588       ??_C@_0BJ@JAMDOHJA@?5?5?58?9bit?5Support?5?5?5?5?5?$CFa?6@ 0000000000009908     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000005a8       ??_C@_0BJ@PBDIDLIK@?5?5?5ADMA2?5Support?5?5?5?5?5?$CFa?6@ 0000000000009928     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000005c8       ??_C@_0BJ@JHNMJBHP@?5?5?5HighSpeed?5Support?5?$CFa?6@ 0000000000009948     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000005e8       ??_C@_0BJ@EEGFMFLJ@?5?5?5SDMA?5Support?5?5?5?5?5?5?$CFa?6@ 0000000000009968     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000608       ??_C@_0BJ@FCCPBOAK@?5?5?5Suspend?1Resume?5?5?5?5?$CFa?6@ 0000000000009988     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000628       ??_C@_0BJ@PLOGGIIF@?5?5?5Voltage?53?43?5?5?5?5?5?5?5?$CFa?6@ 00000000000099a8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000648       ??_C@_0BJ@IMHILKHF@?5?5?5Voltage?53?40?5?5?5?5?5?5?5?$CFa?6@ 00000000000099c8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000668       ??_C@_0BJ@GLBKAICG@?5?5?5Voltage?51?48?5?5?5?5?5?5?5?$CFa?6@ 00000000000099e8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000688       ??_C@_0BJ@FFJKFAJA@?5?5?5V4?564?9bit?5Sys?5Bus?5?$CFa?6@ 0000000000009a08     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000006a8       ??_C@_0BJ@DMHNNGMI@?5?5?5V3?564?9bit?5Sys?5Bus?5?$CFa?6@ 0000000000009a28     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000006c8       ??_C@_0BJ@IIOPMGF@?5?5?5Async?5Interrupt?5?5?5?$CFa?6@ 0000000000009a48     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000006e8       ??_C@_0BG@BGNHMKHD@?5?5?5SlotType?5?5?5?5?5?5?5?5?5?5@ 0000000000009a68     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000700       ??_C@_0P@BAIOEBLF@Removable?5Slot@ 0000000000009a80     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000710       ??_C@_03PKKNDGHC@?$CFa?6@  0000000000009a90     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000718       ??_C@_0O@HICNBHJL@Embedded?5Slot@ 0000000000009a98     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000728       ??_C@_0BA@GDNKKNAA@Shared?5Bus?5Slot@ 0000000000009aa8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000738       ??_C@_08NKCLJDKG@Reserved@ 0000000000009ab8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000748       ??_C@_0BJ@JPMILMIO@?5?5?5SDR50?5?5Support?5?5?5?5?$CFa?6@ 0000000000009ac8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000768       ??_C@_0BJ@BCPJAPNO@?5?5?5SDR104?5Support?5?5?5?5?$CFa?6@ 0000000000009ae8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000788       ??_C@_0BJ@FDOGMIIP@?5?5?5DDR50?5?5Support?5?5?5?5?$CFa?6@ 0000000000009b08     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000007a8       ??_C@_0BJ@HNJLBBMI@?5?5?5Driver?5Type?5A?5?5?5?5?5?$CFa?6@ 0000000000009b28     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000007c8       ??_C@_0BJ@HJGOMBPF@?5?5?5Driver?5Type?5C?5?5?5?5?5?$CFa?6@ 0000000000009b48     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000007e8       ??_C@_0BJ@JLLCNKIM@?5?5?5Driver?5Type?5D?5?5?5?5?5?$CFa?6@ 0000000000009b68     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000808       ??_C@_0BJ@GNPLFPBE@?5?5?5Driver?5Type?54?5?5?5?5?5?$CFa?6@ 0000000000009b88     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000828       ??_C@_0BP@DPDNFAHH@?5?5?5Retuning?5TimerCnt?5Disabled?6@ 0000000000009ba8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000848       ??_C@_0CA@NIEMOGCD@?5?5?5Retuning?5TimerCnt?5?$CFdseconds?6@ 0000000000009bc8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000868       ??_C@_0BJ@OJANJLGH@?5?5?5SDR50?5Tuning?5?5?5?5?5?5?$CFa?6@ 0000000000009be8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000888       ??_C@_0BO@MNLCKCHJ@?5?5?5Retuning?5Mode?5?5?5?5?5Mode?5?$CFd?6@ 0000000000009c08     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000008a8       ??_C@_0BN@EEFHFMEH@?5?5?5Clock?5Multiplier?5?5M?5?$DN?5?$CFd?6@ 0000000000009c28     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000008c8       ??_C@_0BJ@HCPAONE@?5?5?5HS?5400?5?5?5?5?5?5?5?5?5?5?5?5?$CFa?6@ 0000000000009c48     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000008e8       ??_C@_0BL@CAMBEILL@?$CI?$CKFirstBar?5?$CL?5?$CKSlotNum?$CJ?5?$DM?56@ 0000000000009c68     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000910       ??_C@_0GA@KPDAFBHD@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009c90     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000970       ??_C@_0N@BPMDLHFG@SdMmcHcReset@ 0000000000009cf0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000980       ??_C@_0DE@BCLBNFGM@?$CFa?3?5SD?1MMC?5pre?5reset?5notifier?5c@ 0000000000009d00     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000009b8       ??_C@_0DA@JOCGKPAG@SdMmcHcReset?3?5write?5SW?5Reset?5fo@ 0000000000009d38     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000009e8       ??_C@_0CC@IMLENHHB@SdMmcHcReset?3?5reset?5done?5with?5?$CF@ 0000000000009d68     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000a10       ??_C@_0DD@GFAMMGHI@SdMmcHcReset?3?5SdMmcHcEnableInte@ 0000000000009d90     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000a48       ??_C@_0DF@OLJDCFM@?$CFa?3?5SD?1MMC?5post?5reset?5notifier?5@ 0000000000009dc8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000a80       ??_C@_0CO@HLGMGMDM@BaseClkFreq?5?$CFdMHz?5Divisor?5?$CFd?5Cl@ 0000000000009e00     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ab0       ??_C@_0BB@KKKABECN@Divisor?5?$DM?$DN?50x3FF@ 0000000000009e30     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ac8       ??_C@_0BA@EANHKHFK@Divisor?5?$DM?$DN?50x80@ 0000000000009e48     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ad8       ??_C@_0DD@IPOEJFJL@Unknown?5SD?5Host?5Controller?5Spec@ 0000000000009e58     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000b10       ??_C@_0ED@MOPPJJEP@Set?5SDCLK?5Frequency?5Select?5and?5@ 0000000000009e90     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000b58       ??_C@_0BD@GIFOOBMG@SdMmcHcClockSupply@ 0000000000009ed8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000b70       ??_C@_0EB@LAEIJHKP@?$CFa?3?5SD?1MMC?5switch?5clock?5freq?5po@ 0000000000009ef0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000bb8       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000009f38     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000bd0       ??_C@_0CG@KFOBOKBA@Enabled?5V4?564?5bit?5system?5bus?5su@ 0000000000009f50     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000bf8       ??_C@_0CM@KEOAMFAC@Enabled?5V4?526?5bit?5data?5length?5A@ 0000000000009f78     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000c28       ??_C@_0BA@KDHDPDAF@SdMmcHcInitHost@ 0000000000009fa8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000c38       ??_C@_0DD@JBMBAOJH@?$CFa?3?5SD?1MMC?5pre?5init?5notifier?5ca@ 0000000000009fb8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000c70       ??_C@_0DE@PFEHFMMG@?$CFa?3?5SD?1MMC?5post?5init?5notifier?5c@ 0000000000009ff0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ca8       ??_C@_0BE@IKKNABAH@SdMmcHcUhsSignaling@ 000000000000a028     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000cc0       ??_C@_0DI@IMNFJKGL@?$CFa?3?5SD?1MMC?5uhs?5signaling?5notifi@ 000000000000a040     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000d00       ??_C@_0EO@NFBGJCKG@The?5buffer?5?$FL0x?$CFx?$FN?5to?5construct?5@ 000000000000a080     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000d50       ??_C@_0EO@DFNPICMB@The?5buffer?5?$FL0x?$CFx?$FN?5to?5construct?5@ 000000000000a0d0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000da0       ??_C@_0CO@PDFMKAIH@Printing?5EFI_SD_MMC_PASS_THRU_C@ 000000000000a120     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000dd0       ??_C@_0CB@JAGFACEA@Command?5index?3?5?$CFd?0?5argument?3?5?$CFX@ 000000000000a150     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000df8       ??_C@_0CF@HFNCGMLN@Command?5type?3?5?$CFd?0?5response?5type@ 000000000000a178     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000e20       ??_C@_0CF@FPBHALJF@Response?50?3?5?$CFX?0?51?3?5?$CFX?0?52?3?5?$CFX?0?53@ 000000000000a1a0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000e48       ??_C@_0O@HKGGJPAK@Timeout?3?5?$CFld?6@ 000000000000a1c8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000e58       ??_C@_0BC@NHAEAMFH@InDataBuffer?3?5?$CFp?6@ 000000000000a1d8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000e70       ??_C@_0BD@COOBKLJF@OutDataBuffer?3?5?$CFp?6@ 000000000000a1f0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000e88       ??_C@_0BG@FPCADJIM@InTransferLength?3?5?$CFd?6@ 000000000000a208     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ea0       ??_C@_0BH@LIDLBJPF@OutTransferLength?3?5?$CFd?6@ 000000000000a220     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000eb8       ??_C@_0BH@JFOJJDPE@TransactionStatus?3?5?$CFr?6@ 000000000000a238     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ed0       ??_C@_0BI@OJAIINOJ@Printing?5SD_MMC_HC_TRB?6@ 000000000000a250     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ee8       ??_C@_09KDBAEBOI@Slot?3?5?$CFd?6@ 000000000000a268     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000ef8       ??_C@_0P@OJMDLDAE@BlockSize?3?5?$CFd?6@ 000000000000a278     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f08       ??_C@_09JIDFKJJG@Data?3?5?$CFp?6@ 000000000000a288     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f18       ??_C@_0N@HDEPJKNJ@DataLen?3?5?$CFd?6@ 000000000000a298     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f28       ??_C@_09JCCFBCHB@Read?3?5?$CFd?6@ 000000000000a2a8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f38       ??_C@_0O@BFLMKBFC@DataPhy?3?5?$CFlX?6@ 000000000000a2b8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f48       ??_C@_0N@MMLAGMFP@DataMap?3?5?$CFp?6@ 000000000000a2c8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f58       ??_C@_09DPDJEHFK@Mode?3?5?$CFd?6@ 000000000000a2d8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f68       ??_C@_0BE@OAEGDGNK@AdmaLengthMode?3?5?$CFd?6@ 000000000000a2e8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f80       ??_C@_0L@FOFAFICC@Event?3?5?$CFp?6@ 000000000000a300     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000f90       ??_C@_0N@MCBMPFB@Started?3?5?$CFd?6@ 000000000000a310     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000fa0       ??_C@_0BF@DJFIFONP@CommandComplete?3?5?$CFd?6@ 000000000000a320     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000fb8       ??_C@_0N@GGFNNIKI@Retries?3?5?$CFd?6@ 000000000000a338     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000fc8       ??_C@_0BO@CKIBFFGO@PioModeTransferCompleted?3?5?$CFd?6@ 000000000000a348     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00000fe8       ??_C@_0BD@CNGCADCE@PioBlockIndex?3?5?$CFd?6@ 000000000000a368     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001000       ??_C@_0BA@OEBFGOOC@Adma32Desc?3?5?$CFp?6@ 000000000000a380     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001010       ??_C@_0BC@LEPEPKEO@Adma64V3Desc?3?5?$CFp?6@ 000000000000a390     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001028       ??_C@_0BC@JNMPOPMN@Adma64V4Desc?3?5?$CFp?6@ 000000000000a3a8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001040       ??_C@_0N@JMIHFCBC@AdmaMap?3?5?$CFp?6@ 000000000000a3c0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001050       ??_C@_0P@GEOLDPNH@AdmaPages?3?5?$CFX?6@ 000000000000a3d0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001060       ??_C@_0BJ@IDELMLBA@Error?5reported?5by?5SDHCI?6@ 000000000000a3e0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001080       ??_C@_0BH@FCNOKCL@Interrupt?5status?5?$DN?5?$CFX?6@ 000000000000a400     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:00001098       ??_C@_0BN@BJHHIGPF@Error?5interrupt?5status?5?$DN?5?$CFX?6@ 000000000000a418     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000010b8       ??_C@_0BE@LENKKADL@TRB?5failed?5with?5?$CFr?6@ 000000000000a438     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000010d0       ??_C@_0N@LFCBABFD@TRB?5success?6@ 000000000000a450     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0002:000010e0       ??_C@_0DI@BLJBPBGI@EmmcTuningClkForHs200?3?5Send?5tun@ 000000000000a460     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001120       ??_C@_0FA@PHBNOMLP@EmmcTuningClkForHs200?3?5Send?5tun@ 000000000000a4a0     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001170       ??_C@_0DC@DLHJFDMJ@EmmcCheckSwitchStatus?3?5Send?5sta@ 000000000000a4f0     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000011b0       ??_C@_0EK@HBLDJGJK@EmmcCheckSwitchStatus?3?5The?5swit@ 000000000000a530     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001200       ??_C@_0DK@OGPMDMMN@EmmcSwitchBusWidth?3?5Switch?5to?5b@ 000000000000a580     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001240       ??_C@_0FP@ECMMBJGH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000a5c0     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000012a0       ??_C@_0DA@IKMHKMDH@EmmcSwitchBusTiming?3?5Unsupporte@ 000000000000a620     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000012d0       ??_C@_0DM@OLKHDHOL@EmmcSwitchBusTiming?3?5Switch?5to?5@ 000000000000a650     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001310       ??_C@_0CG@LKEGAEDF@EmmcSetBusMode?3?5GetCsd?5fails?5wi@ 000000000000a690     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001338       ??_C@_0CG@LAKHBIIB@EmmcSetBusMode?3?5Select?5fails?5wi@ 000000000000a6b8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001360       ??_C@_0CA@PGDAGEDI@Private?9?$DOBaseClkFreq?$FLSlot?$FN?5?$CB?$DN?50@ 000000000000a6e0     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001380       ??_C@_0CJ@JICEAPAM@EmmcSetBusMode?3?5GetExtCsd?5fails@ 000000000000a700     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000013b0       ??_C@_0GB@PFACKAOO@EmmcSetBusMode?3?5Target?5bus?5mode@ 000000000000a730     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001414       ??_C@_05FGOBNPND@HS400@    000000000000a794     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:0000141c       ??_C@_05HDIKIAAP@HS200@    000000000000a79c     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001428       ??_C@_09DDBCHGMN@HighSpeed@ 000000000000a7a8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001438       ??_C@_0CB@MOMCFJJK@EmmcSetBusMode?3?5Switch?5to?5?$CFa?5?$CFr@ 000000000000a7b8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001460       ??_C@_0DC@BHPJCNOG@EmmcIdentification?3?5Executing?5C@ 000000000000a7e0     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001498       ??_C@_0DC@JAFPOGKF@EmmcIdentification?3?5Executing?5C@ 000000000000a818     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000014d0       ??_C@_0DJ@CEPCJIBI@EmmcIdentification?3?5Executing?5C@ 000000000000a850     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001510       ??_C@_0DC@MDMFLNCB@EmmcIdentification?3?5Executing?5C@ 000000000000a890     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001548       ??_C@_0DC@EEGDHGGC@EmmcIdentification?3?5Executing?5C@ 000000000000a8c8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:00001580       ??_C@_0EA@COECNFGJ@EmmcIdentification?3?5Found?5a?5EMM@ 000000000000a900     SdMmcPciHcDxe:EmmcDevice.obj
+ 0002:000015c0       ??_C@_0DG@JCAPIDMJ@SdCardSendTuningBlk?3?5Send?5tunin@ 000000000000a940     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001600       ??_C@_0EM@GCDAHMNP@SdCardTuningClock?3?5Send?5tuning?5@ 000000000000a980     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001650       ??_C@_0DM@PGJAHIOC@SdCardSwitchBusWidth?3?5Switch?5to@ 000000000000a9d0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001690       ??_C@_0DB@PHEPMCIA@SdCardSwitchBusWidth?3?5Send?5stat@ 000000000000aa10     SdMmcPciHcDxe:SdDevice.obj
+ 0002:000016d0       ??_C@_0EJ@DHBCDEND@SdCardSwitchBusWidth?3?5The?5switc@ 000000000000aa50     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001720       ??_C@_0FN@DKDKOLMD@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000aaa0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001780       ??_C@_0HA@IPCMPHGE@SdCardSetBusMode?3?5Target?5bus?5mo@ 000000000000ab00     SdMmcPciHcDxe:SdDevice.obj
+ 0002:000017f0       ??_C@_0DE@GOOJKPPC@SdCardIdentification?3?5Executing@ 000000000000ab70     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001828       ??_C@_0DE@IIPJOAGM@SdCardIdentification?3?5Executing@ 000000000000aba8     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001860       ??_C@_0EI@JFDLBHAM@SdCardIdentification?3?5Found?5SDI@ 000000000000abe0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:000018b0       ??_C@_0EA@FDCKFELA@SdCardIdentification?3?5Executing@ 000000000000ac30     SdMmcPciHcDxe:SdDevice.obj
+ 0002:000018f0       ??_C@_0EO@LDMEDNKO@SdCardIdentification?3?5SdCardSen@ 000000000000ac70     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001940       ??_C@_0DN@FDKNNPNN@SdCardIdentification?3?5SdCardSen@ 000000000000acc0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001980       ??_C@_0ED@BBKPJOBG@SdCardIdentification?3?5Executing@ 000000000000ad00     SdMmcPciHcDxe:SdDevice.obj
+ 0002:000019d0       ??_C@_0EE@EHEEOCB@SdCardIdentification?3?5SwitchVol@ 000000000000ad50     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001a20       ??_C@_0EB@PJBPNAPH@SdCardIdentification?3?5SwitchVol@ 000000000000ada0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001a70       ??_C@_0FG@CFEJFKGE@SdCardIdentification?3?5SwitchVol@ 000000000000adf0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001ac8       ??_C@_0DN@DPDLKLDF@SdCardIdentification?3?5Switch?5to@ 000000000000ae48     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001b10       ??_C@_0EA@JCNLGAPL@SdCardIdentification?3?5Executing@ 000000000000ae90     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001b50       ??_C@_0DM@GHOLHNLA@SdCardIdentification?3?5Executing@ 000000000000aed0     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001b90       ??_C@_0DG@IJDHNJKG@SdCardIdentification?3?5Found?5a?5S@ 000000000000af10     SdMmcPciHcDxe:SdDevice.obj
+ 0002:00001bc8       ??_C@_03LKLGDMJI@eng@      000000000000af48     SdMmcPciHcDxe:ComponentName.obj
+ 0002:00001bcc       ??_C@_02LFNMGJAP@en@       000000000000af4c     SdMmcPciHcDxe:ComponentName.obj
+ 0002:00001bd0       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000af50     SdMmcPciHcDxe:ComponentName.obj
+ 0002:00001be0       ??_C@_1EI@GBCFIEAF@?$AAE?$AAd?$AAk?$AAi?$AAi?$AA?5?$AAS?$AAd?$AA?1?$AAM?$AAm?$AAc?$AA?5?$AAH?$AAo@ 000000000000af60     SdMmcPciHcDxe:ComponentName.obj
+ 0002:00001c28       ??_C@_1DK@GLJEMANB@?$AAE?$AAd?$AAk?$AAi?$AAi?$AA?5?$AAS?$AAd?$AA?1?$AAM?$AAm?$AAc?$AA?5?$AAH?$AAo@ 000000000000afa8     SdMmcPciHcDxe:ComponentName.obj
+ 0002:00001c68       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000afe8     BaseLib:LinkedList.obj
+ 0002:00001c80       ??_C@_0FD@FFBHKELN@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b000     BaseLib:LinkedList.obj
+ 0002:00001cd8       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000b058     BaseLib:LinkedList.obj
+ 0002:00001d00       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b080     BaseLib:LinkedList.obj
+ 0002:00001d20       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b0a0     BaseLib:LinkedList.obj
+ 0002:00001d40       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 000000000000b0c0     BaseLib:LinkedList.obj
+ 0002:00001d68       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 000000000000b0e8     BaseLib:LinkedList.obj
+ 0002:00001d90       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 000000000000b110     BaseLib:LinkedList.obj
+ 0002:00001da8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000b128     BaseLib:DivU64x32.obj
+ 0002:00001dc0       ??_C@_0FC@NPCEMC@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b140     BaseLib:DivU64x32.obj
+ 0002:00001e18       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 000000000000b198     BaseLib:LShiftU64.obj
+ 0002:00001e30       ??_C@_0FC@JPMJLNCA@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b1b0     BaseLib:RShiftU64.obj
+ 0002:00001e90       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000b210     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001ee0       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b260     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001f48       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000b2c8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001f88       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b308     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001fa0       ??_C@_0GD@BACINENJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b320     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00002008       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000b388     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00002040       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b3c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00002060       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b3e0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000020c0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 000000000000b440     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000020e0       ??_C@_0GM@CBJAAOLO@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b460     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00002150       ??_C@_0DP@CGKEPFGH@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 000000000000b4d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00002190       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b510     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000021b0       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b530     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00002228       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b5a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002250       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b5d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000022c8       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b648     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000022e0       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b660     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000022f8       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b678     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00002310       ??_C@_0GG@DADIGNFF@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b690     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00002380       ??_C@_0FI@IEGIMHDN@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b700     UefiLib:UefiDriverModel.obj
+ 0002:000023e0       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b760     DxeHobLib:HobLib.obj
+ 0002:00002438       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b7b8     DxeHobLib:HobLib.obj
+ 0002:00002458       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b7d8     DxeHobLib:HobLib.obj
+ 0002:00002480       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b800     BaseLib:String.obj
+ 0002:000024d0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b850     BaseLib:String.obj
+ 0002:000024e8       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 000000000000b868     BaseLib:String.obj
+ 0002:00002510       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 000000000000b890     BaseLib:String.obj
+ 0002:00002550       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000b8d0     BaseLib:String.obj
+ 0002:00002588       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 000000000000b908     BaseLib:String.obj
+ 0002:000025a8       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 000000000000b928     BaseLib:String.obj
+ 0002:000025d0       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b950     BaseLib:Unaligned.obj
+ 0002:00002630       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000b9b0     BaseLib:SafeString.obj
+ 0002:00002690       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000ba10     BasePrintLib:PrintLibInternal.obj
+ 0002:000026f0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000ba70     BasePrintLib:PrintLibInternal.obj
+ 0002:00002710       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000ba90     BasePrintLib:PrintLibInternal.obj
+ 0002:00002758       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000bad8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002780       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000bb00     BasePrintLib:PrintLibInternal.obj
+ 0002:000027d0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000bb50     BasePrintLib:PrintLibInternal.obj
+ 0002:00002860       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000bbe0     BasePrintLib:PrintLibInternal.obj
+ 0002:000028e8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000bc68     BasePrintLib:PrintLibInternal.obj
+ 0002:000028f8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000bc78     BasePrintLib:PrintLibInternal.obj
+ 0002:00002908       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000bc88     BasePrintLib:PrintLibInternal.obj
+ 0002:00002940       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000bcc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002950       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000bcd0     BasePrintLib:PrintLibInternal.obj
+ 0002:0000296c       ??_C@_04JIMNDDED@?$CF08X@  000000000000bcec     BasePrintLib:PrintLibInternal.obj
+ 0002:00002974       ??_C@_02PCIJFNDE@?$AN?6@   000000000000bcf4     BasePrintLib:PrintLibInternal.obj
+ 0002:00002978       ??_C@_01LIIJDEN@?$AN@      000000000000bcf8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002980       mWarningString             000000000000bd00     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a20       mErrorString               000000000000bda0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ce0       mHexStr                    000000000000c060     BasePrintLib:PrintLibInternal.obj
+ 0002:00002cf0       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000c070     SblParseLib:SblParseLib.obj
+ 0002:00002d70       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 000000000000c0f0     SblParseLib:SblParseLib.obj
+ 0002:00002d88       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 000000000000c108     SblParseLib:SblParseLib.obj
+ 0002:00002da8       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c128     SblParseLib:SblParseLib.obj
+ 0002:00002dc0       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000c140     BaseLib:DivU64x32Remainder.obj
+ 0002:00002e20       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000c1a0     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00002e80       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000c200     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00002e98       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 000000000000c218     BasePciExpressLib:PciExpressLib.obj
+ 0002:00002ec0       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000c240     BasePciExpressLib:PciExpressLib.obj
+ 0002:00002f20       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000c2a0     DxePcdLib:DxePcdLib.obj
+ 0002:00002f78       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c2f8     DxePcdLib:DxePcdLib.obj
+ 0002:00002fe4       __volatile_metadata        000000000000c364     <linker-defined>
+ 0003:00000000       gUefiSerialPortInfoGuid    000000000000c960     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000010       gEfiComponentName2ProtocolGuid 000000000000c970     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000020       gEfiSdMmcPassThruProtocolGuid 000000000000c980     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000030       gPcdProtocolGuid           000000000000c990     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000040       _gPcd_BinaryPatch_PcdPciSerialParameters 000000000000c9a0     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathProtocolGuid 000000000000c9c0     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000070       gEfiPciIoProtocolGuid      000000000000c9d0     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000080       _gPcd_BinaryPatch_PcdSerialLineControl 000000000000c9e0     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000081       _gPcd_BinaryPatch_PcdSerialUseMmio 000000000000c9e1     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000084       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 000000000000c9e4     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000088       _gPcd_BinaryPatch_PcdDebugPropertyMask 000000000000c9e8     SdMmcPciHcDxe:AutoGen.obj
+ 0003:00000090       gEfiHobListGuid            000000000000c9f0     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000a0       gEfiDriverBindingProtocolGuid 000000000000ca00     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000b0       gEfiComponentNameProtocolGuid 000000000000ca10     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000c0       _gPcd_BinaryPatch_PcdSerialFifoControl 000000000000ca20     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000c8       gEdkiiSdMmcOverrideProtocolGuid 000000000000ca28     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000d8       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 000000000000ca38     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000000e0       gSdMmcPciHcDriverBinding   000000000000ca40     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0003:00000110       mSdDpTemplate              000000000000ca70     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0003:00000118       mEmmcDpTemplate            000000000000ca78     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0003:00000120       gSdMmcPciHcTemplate        000000000000ca80     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0003:00000310       mCardTypeDetectRoutineTable 000000000000cc70     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0003:00000328       gSdMmcPciHcComponentName   000000000000cc88     SdMmcPciHcDxe:ComponentName.obj
+ 0003:00000340       gSdMmcPciHcComponentName2  000000000000cca0     SdMmcPciHcDxe:ComponentName.obj
+ 0003:00000360       mSdMmcPciHcDriverNameTable 000000000000ccc0     SdMmcPciHcDxe:ComponentName.obj
+ 0003:00000380       mSdMmcPciHcControllerNameTable 000000000000cce0     SdMmcPciHcDxe:ComponentName.obj
+ 0003:000003a0       _gPcd_BinaryPatch_PcdSerialRegisterBase 000000000000cd00     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003a8       _gPcd_BinaryPatch_PcdSerialRegisterStride 000000000000cd08     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003ac       _gPcd_BinaryPatch_PcdSerialDetectCable 000000000000cd0c     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003ad       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 000000000000cd0d     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003b0       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 000000000000cd10     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003b8       _gPcd_BinaryPatch_PcdSerialClockRate 000000000000cd18     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003bc       _gPcd_BinaryPatch_PcdSerialBaudRate 000000000000cd1c     SdMmcPciHcDxe:AutoGen.obj
+ 0003:000003c0       gRT                        000000000000cd20     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000003c8       gST                        000000000000cd28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003d0       gBS                        000000000000cd30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003d8       gImageHandle               000000000000cd38     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003e0       mHobList                   000000000000cd40     DxeHobLib:HobLib.obj
+ 0003:000003e8       mPcd                       000000000000cd48     DxePcdLib:DxePcdLib.obj
+ 0003:000003f0       mOverride                  000000000000cd50     <common>
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$MmioRead32         000000000000d240     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000000       $unwind$GetFirstNode       000000000000d240     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        000000000000d240     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    000000000000d240     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           000000000000d240     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PciExpressRead32   000000000000d240     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$GetNextHob         000000000000d240     DxeHobLib:HobLib.obj
+ 0005:00000000       $unwind$DevicePathNodeLength 000000000000d240     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000000d240     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 000000000000d248     SdMmcPciHcDxe:AutoGen.obj
+ 0005:00000018       $unwind$ProcessModuleEntryPointList 000000000000d258     SdMmcPciHcDxe:AutoGen.obj
+ 0005:00000024       $unwind$ProcessAsyncTaskList 000000000000d264     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000024       $unwind$SdMmcPassThruPassThru 000000000000d264     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000024       $unwind$SdMmcPassThruResetDevice 000000000000d264     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000038       $unwind$SdMmcPciHcEnumerateDevice 000000000000d278     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000054       $unwind$SdMmcPciHcDriverBindingSupported 000000000000d294     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000060       $unwind$SdMmcPciHcDriverBindingStart 000000000000d2a0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000078       $unwind$SdMmcPciHcDriverBindingStop 000000000000d2b8     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:00000090       $unwind$SdMmcPassThruExecSyncTrb 000000000000d2d0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:000000a4       $unwind$SdMmcPassThruGetNextSlot 000000000000d2e4     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:000000a4       $unwind$SdMmcFreeTrb       000000000000d2e4     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000a4       $unwind$DivU64x32          000000000000d2e4     BaseLib:DivU64x32.obj
+ 0005:000000a4       $unwind$InsertTailList     000000000000d2e4     BaseLib:LinkedList.obj
+ 0005:000000a4       $unwind$InternalBaseLibIsListValid 000000000000d2e4     BaseLib:LinkedList.obj
+ 0005:000000a4       $unwind$IsNull             000000000000d2e4     BaseLib:LinkedList.obj
+ 0005:000000a4       $unwind$RShiftU64          000000000000d2e4     BaseLib:RShiftU64.obj
+ 0005:000000a4       $unwind$AsciiStrLen        000000000000d2e4     BaseLib:String.obj
+ 0005:000000a4       $unwind$ZeroMem            000000000000d2e4     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:000000a4       $unwind$CompareIso639LanguageCode 000000000000d2e4     UefiLib:UefiLib.obj
+ 0005:000000a4       $unwind$InternalAllocateCopyPool 000000000000d2e4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000a4       $unwind$GetGuidHobDataFromSbl 000000000000d2e4     SblParseLib:SblParseLib.obj
+ 0005:000000b0       $unwind$SdMmcPassThruBuildDevicePath 000000000000d2f0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:000000b0       $unwind$SdMmcPassThruGetSlotNumber 000000000000d2f0     SdMmcPciHcDxe:SdMmcPciHcDxe.obj
+ 0005:000000b0       $unwind$AsciiStrnCmp       000000000000d2f0     BaseLib:String.obj
+ 0005:000000b0       $unwind$CopyMem            000000000000d2f0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000b0       $unwind$BasePrintLibValueToString 000000000000d2f0     BasePrintLib:PrintLibInternal.obj
+ 0005:000000b0       $unwind$GetHobList         000000000000d2f0     DxeHobLib:HobLib.obj
+ 0005:000000b0       $unwind$IsLanguageSupported 000000000000d2f0     UefiLib:UefiLib.obj
+ 0005:000000c0       $unwind$DumpCapabilityReg  000000000000d300     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000c0       $unwind$SerialPortInitialize 000000000000d300     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:000000c0       $unwind$LookupUnicodeString2 000000000000d300     UefiLib:UefiLib.obj
+ 0005:000000d8       $unwind$SdMmcHcRwMmio      000000000000d318     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000d8       $unwind$SdMmcHcSetBusWidth 000000000000d318     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000e4       $unwind$SdMmcHcAndMmio     000000000000d324     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000e4       $unwind$SdMmcHcOrMmio      000000000000d324     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000000f8       $unwind$SdMmcHcCheckMmioSet 000000000000d338     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000100       $unwind$SdMmcHcWaitMmioSet 000000000000d340     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:0000011c       $unwind$SdMmcHcReset       000000000000d35c     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000130       $unwind$SdMmcHcCardDetect  000000000000d370     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000140       $unwind$SdMmcHcStopClock   000000000000d380     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:0000014c       $unwind$SdMmcHcClockSupply 000000000000d38c     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000164       $unwind$SdMmcHcInitV4Enhancements 000000000000d3a4     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000170       $unwind$SdMmcHcInitPowerVoltage 000000000000d3b0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000184       $unwind$SdMmcHcInitHost    000000000000d3c4     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000198       $unwind$SdMmcHcUhsSignaling 000000000000d3d8     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000001ac       $unwind$BuildAdmaDescTable 000000000000d3ec     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000001c4       $unwind$SdMmcPrintPacket   000000000000d404     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000001d4       $unwind$SdMmcPrintTrb      000000000000d414     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:000001e8       $unwind$SdMmcCreateTrb     000000000000d428     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000200       $unwind$SdMmcPciHcComponentNameGetDriverName 000000000000d440     SdMmcPciHcDxe:ComponentName.obj
+ 0005:00000200       $unwind$SdMmcCheckTrbEnv   000000000000d440     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000208       $unwind$SdMmcExecTrb       000000000000d448     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000220       $unwind$SdMmcCheckAndRecoverErrors 000000000000d460     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000234       $unwind$SdMmcCheckCommandComplete 000000000000d474     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000248       $unwind$SdMmcTransferDataWithPio 000000000000d488     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000260       $unwind$SdMmcCheckDataTransfer 000000000000d4a0     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000274       $unwind$SdMmcCheckTrbResult 000000000000d4b4     SdMmcPciHcDxe:SdMmcPciHci.obj
+ 0005:00000284       $unwind$EmmcCheckSwitchStatus 000000000000d4c4     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000284       $unwind$EmmcGetExtCsd      000000000000d4c4     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000284       $unwind$EmmcSelect         000000000000d4c4     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000284       $unwind$EmmcSetRca         000000000000d4c4     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000284       $unwind$EmmcSwitch         000000000000d4c4     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000284       $unwind$SdCardSendOpCond   000000000000d4c4     SdMmcPciHcDxe:SdDevice.obj
+ 0005:00000284       $unwind$SdCardSetRca       000000000000d4c4     SdMmcPciHcDxe:SdDevice.obj
+ 0005:00000298       $unwind$EmmcTuningClkForHs200 000000000000d4d8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:000002b8       $unwind$EmmcSwitchBusWidth 000000000000d4f8     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:000002d0       $unwind$EmmcSwitchBusTiming 000000000000d510     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:000002ec       $unwind$EmmcSwitchToHS200  000000000000d52c     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000304       $unwind$EmmcSwitchToHS400  000000000000d544     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:0000031c       $unwind$EmmcGetTargetBusMode 000000000000d55c     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000338       $unwind$EmmcSetBusMode     000000000000d578     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000358       $unwind$EmmcIdentification 000000000000d598     SdMmcPciHcDxe:EmmcDevice.obj
+ 0005:00000374       $unwind$SdCardVoltageCheck 000000000000d5b4     SdMmcPciHcDxe:SdDevice.obj
+ 0005:00000384       $unwind$SdCardSwitch       000000000000d5c4     SdMmcPciHcDxe:SdDevice.obj
+ 0005:0000039c       $unwind$SdCardSendStatus   000000000000d5dc     SdMmcPciHcDxe:SdDevice.obj
+ 0005:000003b4       $unwind$SdCardTuningClock  000000000000d5f4     SdMmcPciHcDxe:SdDevice.obj
+ 0005:000003d0       $unwind$SdCardSwitchBusWidth 000000000000d610     SdMmcPciHcDxe:SdDevice.obj
+ 0005:000003e8       $unwind$SdGetTargetBusMode 000000000000d628     SdMmcPciHcDxe:SdDevice.obj
+ 0005:000003f8       $unwind$SdCardSetBusMode   000000000000d638     SdMmcPciHcDxe:SdDevice.obj
+ 0005:00000414       $unwind$SdCardIdentification 000000000000d654     SdMmcPciHcDxe:SdDevice.obj
+ 0005:00000430       $unwind$SdMmcPciHcComponentNameGetControllerName 000000000000d670     SdMmcPciHcDxe:ComponentName.obj
+ 0005:00000444       $unwind$DebugPrint         000000000000d684     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000044c       $unwind$DebugPrintMarker   000000000000d68c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000460       $unwind$DebugAssert        000000000000d6a0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000468       $unwind$GetPcdProtocol     000000000000d6a8     DxePcdLib:DxePcdLib.obj
+ 0005:00000468       $unwind$FreePool           000000000000d6a8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000468       $unwind$InternalAllocatePool 000000000000d6a8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000470       $unwind$PlatformHookSerialPortInitialize 000000000000d6b0     PlatformHookLib:PlatformHookLib.obj
+ 0005:00000478       $unwind$CompareGuid        000000000000d6b8     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000494       $unwind$AsciiSPrint        000000000000d6d4     BasePrintLib:PrintLib.obj
+ 0005:0000049c       $unwind$BasePrintLibSPrintMarker 000000000000d6dc     BasePrintLib:PrintLibInternal.obj
+ 0005:000004b8       $unwind$BasePrintLibSPrint 000000000000d6f8     BasePrintLib:PrintLibInternal.obj
+ 0005:000004c0       $unwind$SerialPortWrite    000000000000d700     BaseSerialPortLib16550:BaseSerialPortLib16550.obj

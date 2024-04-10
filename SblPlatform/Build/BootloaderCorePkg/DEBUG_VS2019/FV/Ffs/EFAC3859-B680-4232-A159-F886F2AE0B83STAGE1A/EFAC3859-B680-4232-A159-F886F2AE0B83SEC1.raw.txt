@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Ffs\EFAC3859-B680-4232-A159-F886F2AE0B83STAGE1A\EFAC3859-B680-4232-A159-F886F2AE0B83SEC1.raw e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCorePkg\PcdData\PcdData\OUTPUT\PEIPcdDataBase.raw

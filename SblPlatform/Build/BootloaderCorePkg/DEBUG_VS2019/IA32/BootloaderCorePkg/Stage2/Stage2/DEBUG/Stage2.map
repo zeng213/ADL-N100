@@ -1,0 +1,1518 @@
+ Stage2
+
+ Timestamp is 65fce370 (Fri Mar 22 09:48:32 2024)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001897H .text                   CODE
+ 0001:00001897 0001c442H .text$mn                CODE
+ 0002:00000000 0000786cH .rdata                  DATA
+ 0002:0000786c 00000584H .rdata$voltmd           DATA
+ 0002:00007df0 00000134H .rdata$zzzdbg           DATA
+ 0003:00000000 000016e0H .data                   DATA
+ 0003:000016e0 0000443cH .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___hybrid_code_map_count   00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points 00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_count     00000000     <absolute>
+ 0000:00000000       ___x64_code_ranges_to_entry_points_count 00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata 00000000     <absolute>
+ 0000:00000000       ___hybrid_code_map         00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table  00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
+ 0000:00000000       ___arm64x_extra_rfe_table_size 00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat_copy 00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___guard_check_icall_a64n_fptr 00000000     <absolute>
+ 0000:00000000       ___arm64x_redirection_metadata_count 00000000     <absolute>
+ 0000:00000000       ___arm64x_native_entrypoint 00000000     <absolute>
+ 0000:00000000       ___hybrid_auxiliary_iat    00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___guard_eh_cont_table     00000000     <absolute>
+ 0000:00000000       ___guard_flags             00000000     <absolute>
+ 0000:00000000       ___enclave_config          00000000     <absolute>
+ 0000:00000000       ___AbsoluteZero            00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0001:00000000       __ModuleEntryPoint         00000260     ModuleEntryLib:SecEntry.obj
+ 0001:00000010       _InternalMemCopyMem        00000270     BaseMemoryLibSse2:CopyMem.obj
+ 0001:00000080       _InternalMemZeroMem        000002e0     BaseMemoryLibSse2:ZeroMem.obj
+ 0001:000000d0       _InternalMemSetMem         00000330     BaseMemoryLibSse2:SetMem.obj
+ 0001:00000140       _InternalMemCompareMem     000003a0     BaseMemoryLibSse2:CompareMem.obj
+ 0001:00000160       _InternalMemSetMem64       000003c0     BaseMemoryLibSse2:SetMem64.obj
+ 0001:000001c0       _InternalMemSetMem32       00000420     BaseMemoryLibSse2:SetMem32.obj
+ 0001:00000220       _RendezvousFunnelProcStart 00000480     MpInitLib:MpCommon.obj
+ 0001:000003cf       _mDefaultSmiHandlerStart   0000062f     MpInitLib:MpCommon.obj
+ 0001:000003e6       _mDefaultSmiHandlerRet     00000646     MpInitLib:MpCommon.obj
+ 0001:000003e8       _mDefaultSmiHandlerEnd     00000648     MpInitLib:MpCommon.obj
+ 0001:000003f0       _RendezvousFunnelProcEnd   00000650     MpInitLib:MpCommon.obj
+ 0001:00000610       _AsmGetBspSelectors        00000870     MpInitLib:MpFuncs.obj
+ 0001:00000640       _AsmCliHlt                 000008a0     MpInitLib:MpFuncs.obj
+ 0001:00000650       _AsmExecute64BitCode       000008b0     ThunkLib:Thunk32To64.obj
+ 0001:00000700       _WakeUpBuffer              00000960     AcpiInitLib:S3Wake.obj
+ 0001:00000704       _WakeUp                    00000964     AcpiInitLib:S3Wake.obj
+ 0001:00000742       _WakeUpSize                000009a2     AcpiInitLib:S3Wake.obj
+ 0001:00000750       _JumpToKernel              000009b0     LinuxLib:JumpToKernel.obj
+ 0001:00000759       _JumpToKernel64            000009b9     LinuxLib:JumpToKernel.obj
+ 0001:00000760       _InternalMemIsZeroBuffer   000009c0     BaseMemoryLibSse2:IsZeroBuffer.obj
+ 0001:000007c0       _InternalX86RdRand16       00000a20     BaseLib:RdRand.obj
+ 0001:000007d5       _InternalX86RdRand32       00000a35     BaseLib:RdRand.obj
+ 0001:000007e9       _InternalX86RdRand64       00000a49     BaseLib:RdRand.obj
+ 0001:00000810       _AsmFlushCacheRange        00000a70     ExtraBaseLib:CpuSupport.obj
+ 0001:00000837       _AsmEnableAvx              00000a97     ExtraBaseLib:CpuSupport.obj
+ 0001:000008f0       _CommonInterruptEntry      00000b50     CpuExceptionLib:ExceptionHandler.obj
+ 0001:000008fc       _AsmGetTemplateAddressMap  00000b5c     CpuExceptionLib:ExceptionHandler.obj
+ 0001:00000920       _InternalMathDivRemU64x64  00000b80     BaseLib:DivU64x64Remainder.obj
+ 0001:000009a0       _InternalX86EnablePaging64 00000c00     BaseLib:EnablePaging64.obj
+ 0001:00000a20       _UpdateSHA512W7            00000c80     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00001540       _UpdateSHA256Ni            000017a0     IppCryptoLib:pcpsha256nias.obj
+ 0001:00001897       _LoadComponentCallback     00001af7 f   Stage2:Stage2.obj
+ 0001:000018fd       _PreparePayload            00001b5d f   Stage2:Stage2.obj
+ 0001:00001a14       _NormalBootPath            00001c74 f   Stage2:Stage2.obj
+ 0001:00001d00       _S3ResumePath              00001f60 f   Stage2:Stage2.obj
+ 0001:00001d87       _SecStartup                00001fe7 f   Stage2:Stage2.obj
+ 0001:000022d3       _CompareMemoryMap          00002533 f   Stage2:Stage2Hob.obj
+ 0001:000022f2       _SplitMemroyMap            00002552 f   Stage2:Stage2Hob.obj
+ 0001:00002479       _SortMemroyMap             000026d9 f   Stage2:Stage2Hob.obj
+ 0001:000025a8       _MemResHobCallback         00002808 f   Stage2:Stage2Hob.obj
+ 0001:00002608       _BuildBaseInfoHob          00002868 f   Stage2:Stage2Hob.obj
+ 0001:0000285b       _BuildUpldMemroyHobs       00002abb f   Stage2:Stage2Hob.obj
+ 0001:00002924       _BuildUpldPciRootBridgeHob 00002b84 f   Stage2:Stage2Hob.obj
+ 0001:00002b30       _BuildUniversalPayloadHob  00002d90 f   Stage2:Stage2Hob.obj
+ 0001:00002c34       _UpdateGraphicsHob         00002e94 f   Stage2:Stage2Hob.obj
+ 0001:00002c72       _BuildSmmVariableHobs      00002ed2 f   Stage2:Stage2Hob.obj
+ 0001:00002fd1       _BuildExtraInfoHob         00003231 f   Stage2:Stage2Hob.obj
+ 0001:000033db       _BoardNotifyPhase          0000363b f   Stage2:Stage2Support.obj
+ 0001:0000348c       _DisplaySplash             000036ec f   Stage2:Stage2Support.obj
+ 0001:000034e1       _PrintStackHeapInfo        00003741 f   Stage2:Stage2Support.obj
+ 0001:00003593       _CpuHalt                   000037f3 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000035e5       _DumpHex                   00003845 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000036cf       _GetLibraryData            0000392f f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:00003712       _SetLibraryData            00003972 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:00003758       _RegisterService           000039b8 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000037ad       _GetServiceBySignature     00003a0d f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000037ed       _GetComponentInfoByPartition 00003a4d f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:0000389a       _GetComponentInfo          00003afa f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000038c6       _GetComponentHash          00003b26 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:00003952       _GetGuidHobData            00003bb2 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:0000399d       _GetDeviceAddr             00003bfd f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:000039ee       _SetDeviceAddr             00003c4e f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:00003a60       _MatchHashInStore          00003cc0 f   BootloaderCommonLib:BootloaderCommonLib.obj
+ 0001:00003aec       _CopyMem                   00003d4c f   BaseMemoryLibSse2:CopyMemWrapper.obj
+ 0001:00003b4d       _ZeroMem                   00003dad f   BaseMemoryLibSse2:ZeroMemWrapper.obj
+ 0001:00003b9a       _SetMem                    00003dfa f   BaseMemoryLibSse2:SetMemWrapper.obj
+ 0001:00003bd3       _CompareMem                00003e33 f   BaseMemoryLibSse2:CompareMemWrapper.obj
+ 0001:00003c62       _SerialPortReadRegister    00003ec2 f   SerialPortLib:SerialPortLib.obj
+ 0001:00003c92       _SerialPortWriteRegister   00003ef2 f   SerialPortLib:SerialPortLib.obj
+ 0001:00003cbd       _DebugPrint                00003f1d f   BaseFspDebugLibSerialPort:DebugLib.obj
+ 0001:00003d55       _DebugAssert               00003fb5 f   BaseFspDebugLibSerialPort:DebugLib.obj
+ 0001:00003d82       _IoWrite8                  00003fe2 f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00003d8f       _IoRead16                  00003fef f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00003db8       _IoWrite16                 00004018 f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00003de6       _IoRead32                  00004046 f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00003e0b       _IoWrite32                 0000406b f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00003e36       _MmioRead16                00004096 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00003e5b       _MmioWrite16               000040bb f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00003e85       _MmioRead32                000040e5 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00003ea6       _MmioWrite32               00004106 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00003ecd       _GetBmpDisplayPos          0000412d f   GraphicsLib:BmpFormat.obj
+ 0001:00003fe3       _DisplayBmpToFrameBuffer   00004243 f   GraphicsLib:BmpFormat.obj
+ 0001:0000424c       _GetNextHob                000044ac f   HobLib:HobLib.obj
+ 0001:00004293       _GetNextGuidHob            000044f3 f   HobLib:HobLib.obj
+ 0001:000042bf       _GetFirstGuidHob           0000451f f   HobLib:HobLib.obj
+ 0001:000042e1       _InternalUpdateMemPoolTop  00004541 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004335       _InternalUpdateMemPoolBottom 00004595 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004389       _AllocatePool              000045e9 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000043b6       _AllocateZeroPool          00004616 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000043ce       _AllocatePages             0000462e f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004409       _AllocateTemporaryMemory   00004669 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004437       _FreeTemporaryMemory       00004697 f   MemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004467       _GetBootMode               000046c7 f   BootloaderCoreLib:BootloaderCoreLib.obj
+ 0001:00004484       _GetAdjustedPcdBase        000046e4 f   BootloaderCoreLib:BootloaderCoreLib.obj
+ 0001:000044bc       _GetPayloadId              0000471c f   BootloaderCoreLib:BootloaderCoreLib.obj
+ 0001:000044d9       _GetMemoryInfo             00004739 f   BootloaderCoreLib:BootloaderCoreLib.obj
+ 0001:00004505       _GetFspHobListPtr          00004765 f   BootloaderCoreLib:BootloaderArch.obj
+ 0001:00004528       _GetPlatformId             00004788 f   BootloaderLib:BootloaderLib.obj
+ 0001:00004546       _GetContainerListPtr       000047a6 f   BootloaderLib:BootloaderLib.obj
+ 0001:00004566       _GetFeatureCfg             000047c6 f   BootloaderLib:BootloaderLib.obj
+ 0001:00004586       _CpuDeadLoop               000047e6 f   BaseLib:CpuDeadLoop.obj
+ 0001:0000459a       _StrSize                   000047fa f   BaseLib:String.obj
+ 0001:000045fc       _StrCmp                    0000485c f   BaseLib:String.obj
+ 0001:0000466a       _InternalAsciiIsHexaDecimalDigitCharacter 000048ca f   BaseLib:String.obj
+ 0001:0000468b       _AsciiStrLen               000048eb f   BaseLib:String.obj
+ 0001:000046d6       _AsciiStrCmp               00004936 f   BaseLib:String.obj
+ 0001:00004747       _AsciiCharToUpper          000049a7 f   BaseLib:String.obj
+ 0001:00004756       _InternalAsciiHexCharToUintn 000049b6 f   BaseLib:String.obj
+ 0001:00004771       _AsciiStrnCmp              000049d1 f   BaseLib:String.obj
+ 0001:000047e7       _AsciiStrStr               00004a47 f   BaseLib:String.obj
+ 0001:00004868       _InternalSafeStringIsOverlap 00004ac8 f   BaseLib:SafeString.obj
+ 0001:0000488e       _StrnLenS                  00004aee f   BaseLib:SafeString.obj
+ 0001:000048d1       _AsciiStrnLenS             00004b31 f   BaseLib:SafeString.obj
+ 0001:000048f8       _AsciiStrCpyS              00004b58 f   BaseLib:SafeString.obj
+ 0001:000049b9       _AsciiStrHexToUint64S      00004c19 f   BaseLib:SafeString.obj
+ 0001:00004b1f       _DivU64x32                 00004d7f f   BaseLib:DivU64x32.obj
+ 0001:00004b4f       _SwapBytes32               00004daf f   BaseLib:SwapBytes32.obj
+ 0001:00004b68       _LShiftU64                 00004dc8 f   BaseLib:LShiftU64.obj
+ 0001:00004ba0       _GetSpiInstance            00004e00 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:00004be9       _SpiConstructor            00004e49 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:00004dc8       _SpiFlashRead              00005028 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:00004de3       _SpiFlashWrite             00005043 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:00004dff       _SpiFlashErase             0000505f f   SpiFlashLib:SpiFlashLib.obj
+ 0001:00005332       _SpiGetRegionAddress       00005592 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:000054bc       _UnregisterContainer       0000571c f   ContainerLib:ContainerLib.obj
+ 0001:00005520       _GetHashAlg                00005780 f   ContainerLib:ContainerLib.obj
+ 0001:000055cb       _GetContainerKeyUsageBySig 0000582b f   ContainerLib:ContainerLib.obj
+ 0001:0000560e       _AutheticateContainerInternal 0000586e f   ContainerLib:ContainerLib.obj
+ 0001:000056f9       _RegisterContainer         00005959 f   ContainerLib:ContainerLib.obj
+ 0001:00005755       _LocateComponentEntry      000059b5 f   ContainerLib:ContainerLib.obj
+ 0001:000057f6       _LoadComponentWithCallback 00005a56 f   ContainerLib:ContainerLib.obj
+ 0001:00005b01       _ResetSystem               00005d61 f   ResetSystemLib:ResetSystemLib.obj
+ 0001:00005b62       _PeiCreateHob              00005dc2 f   HobBuildLib:HobBuildLib.obj
+ 0001:00005c63       _InternalPeiCreateHob      00005ec3 f   HobBuildLib:HobBuildLib.obj
+ 0001:00005ca0       _BuildHobHandoffInfoTable  00005f00 f   HobBuildLib:HobBuildLib.obj
+ 0001:00005d28       _BuildGuidHob              00005f88 f   HobBuildLib:HobBuildLib.obj
+ 0001:00005d86       _BuildMemoryAllocationHob  00005fe6 f   HobBuildLib:HobBuildLib.obj
+ 0001:00005e01       _GetCryptoHashAlg          00006061 f   TpmLib:TpmLib.obj
+ 0001:00005e23       _GetTpmHashAlg             00006083 f   TpmLib:TpmLib.obj
+ 0001:00005e49       _TpmLibGetPrivateData      000060a9 f   TpmLib:TpmLib.obj
+ 0001:00005ea2       _TpmLibGetActivePcrBanks   00006102 f   TpmLib:TpmLib.obj
+ 0001:00005ed2       _IsTpmEnabled              00006132 f   TpmLib:TpmLib.obj
+ 0001:00005ee9       _UpdateTpm2AcpiTable       00006149 f   TpmLib:TpmLib.obj
+ 0001:00005f55       _TpmHashAndExtendPcrEventLog 000061b5 f   TpmLib:TpmLib.obj
+ 0001:000060ea       _TpmExtendPcrAndLogEvent   0000634a f   TpmLib:TpmLib.obj
+ 0001:000061b7       _ExtendStageHash           00006417 f   TpmLib:TpmLib.obj
+ 0001:00006297       _GetCompressedTCGEventSize 000064f7 f   TpmLib:TpmEventLog.obj
+ 0001:000062fa       _CreateTpmEventLogHob      0000655a f   TpmLib:TpmEventLog.obj
+ 0001:000063f2       _AddEventTCGLog            00006652 f   TpmLib:TpmEventLog.obj
+ 0001:000064d4       _TpmLogEvent               00006734 f   TpmLib:TpmEventLog.obj
+ 0001:00006591       _Tpm2PcrExtend             000067f1 f   TpmLib:Tpm2Integrity.obj
+ 0001:00006725       _PtpCrbWaitRegisterBits    00006985 f   TpmLib:Tpm2Ptp.obj
+ 0001:0000676d       _PtpCrbTpmCommand          000069cd f   TpmLib:Tpm2Ptp.obj
+ 0001:00006ae5       _Tpm2GetPtpInterface       00006d45 f   TpmLib:Tpm2Ptp.obj
+ 0001:00006b58       _Tpm2SubmitCommand         00006db8 f   TpmLib:Tpm2Ptp.obj
+ 0001:00006ba3       _UpdateAcpiInterfaceInfo   00006e03 f   TpmLib:Tpm2Ptp.obj
+ 0001:00006c01       _GetHashSizeFromAlgo       00006e61 f   TpmLib:Tpm2Help.obj
+ 0001:00006c1f       _CopyAuthSessionCommand    00006e7f f   TpmLib:Tpm2Help.obj
+ 0001:00006c8b       _CopyDigestListToBuffer    00006eeb f   TpmLib:Tpm2Help.obj
+ 0001:00006d42       _TisPcWaitRegisterBits     00006fa2 f   TpmLib:Tpm2Tis.obj
+ 0001:00006d81       _TisPcReadBurstCount       00006fe1 f   TpmLib:Tpm2Tis.obj
+ 0001:00006dda       _Tpm2TisTpmCommand         0000703a f   TpmLib:Tpm2Tis.obj
+ 0001:00007124       _LocalApicBaseAddressMsrSupported 00007384 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00007157       _GetLocalApicBaseAddress   000073b7 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000719f       _ReadLocalApicReg          000073ff f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000071cb       _SendIpi                   0000742b f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000072b3       _GetApicMode               00007513 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000072f9       _GetInitialApicId          00007559 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00007366       _GetApicId                 000075c6 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00007399       _PerformQuickSort          000075f9 f   SortLib:SortLib.obj
+ 0001:000074cf       _GetPhysicalAddressBits    0000772f f   PagingLib:PagingLib.obj
+ 0001:0000750d       _Create4GbPageTables       0000776d f   PagingLib:PagingLib.obj
+ 0001:000075a1       _SetCpuMtrrsTask           00007801 f   MpInitLib:MpInitLib.obj
+ 0001:00007684       _SmmRebase                 000078e4 f   MpInitLib:MpInitLib.obj
+ 0001:00007749       _CpuInit                   000079a9 f   MpInitLib:MpInitLib.obj
+ 0001:000077f6       _ApFunc                    00007a56 f   MpInitLib:MpInitLib.obj
+ 0001:00007897       _MpInit                    00007af7 f   MpInitLib:MpInitLib.obj
+ 0001:00007ca7       _MpRunTask                 00007f07 f   MpInitLib:MpInitLib.obj
+ 0001:00007cff       _IsTePe32Image             00007f5f f   LitePeCoffLib:LitePeCoffLib.obj
+ 0001:00007d39       _PeCoffLoaderGetEntryPoint 00007f99 f   LitePeCoffLib:LitePeCoffLib.obj
+ 0001:00007d95       _PeCoffRelocateImage       00007ff5 f   LitePeCoffLib:LitePeCoffLib.obj
+ 0001:00007fe9       _PeCoffGetPreferredBase    00008249 f   LitePeCoffLib:LitePeCoffLib.obj
+ 0001:00008051       _PeCoffLoaderGetMachine    000082b1 f   LitePeCoffLib:LitePeCoffLib.obj
+ 0001:000080ab       _IsElfFormat               0000830b f   ElfLib:ElfLib.obj
+ 0001:00008121       _CalculateElfFileSize      00008381 f   ElfLib:ElfLib.obj
+ 0001:000081a1       _GetElfSegmentInfo         00008401 f   ElfLib:ElfLib.obj
+ 0001:00008248       _ParseElfImage             000084a8 f   ElfLib:ElfLib.obj
+ 0001:0000841d       _GetElfSectionName         0000867d f   ElfLib:ElfLib.obj
+ 0001:0000847d       _GetElfSectionPos          000086dd f   ElfLib:ElfLib.obj
+ 0001:000084e2       _GetElf64SectionByIndex    00008742 f   ElfLib:Elf64Lib.obj
+ 0001:000084fa       _RelocateElf64Sections     0000875a f   ElfLib:Elf64Lib.obj
+ 0001:0000869b       _LoadElf64Image            000088fb f   ElfLib:Elf64Lib.obj
+ 0001:0000876a       _GetElf32SectionByIndex    000089ca f   ElfLib:Elf32Lib.obj
+ 0001:00008782       _RelocateElf32Sections     000089e2 f   ElfLib:Elf32Lib.obj
+ 0001:000088dc       _LoadElf32Image            00008b3c f   ElfLib:Elf32Lib.obj
+ 0001:000089aa       _TraverseMemoryResourceHob 00008c0a f   FspSupportLib:FspSupportLib.obj
+ 0001:000089ee       _SocUpdateAcpiGnvs         00008c4e f   Stage2SocInitLib:Stage2SocInitLib.obj
+ 0001:00008ac6       _PatchCpuSsdtTable         00008d26 f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:00008b5b       _CalculateRelativePower    00008dbb f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:00008c26       _AcpiPatchPss              00008e86 f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:00008d6d       _UpdLpiStat                00008fcd f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:00008da3       _PlatformUpdateAcpiTable   00009003 f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:00009274       _UpdateCpuNvs              000094d4 f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:0000950b       _PlatformUpdateAcpiGnvs    0000976b f   Stage2BoardInitLib:AcpiPlatform.obj
+ 0001:0000a1b8       _PlatformPciEnumHookProc   0000a418 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a22b       _BuildOsConfigDataHob      0000a48b f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a2c0       _UpdateCsmeBootPerfHob     0000a520 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a3a5       _ProgramSecuritySetting    0000a605 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a422       _ClearSmi                  0000a682 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a4c2       _PlatformCpuInit           0000a722 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a555       _IgdOpRegionPlatformInit   0000a7b5 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a594       _FixUpFlashMapEntry        0000a7f4 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000a613       _BoardInit                 0000a873 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000ab05       _SaveNvsData               0000ad65 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000ac97       _UpdateSerialPortInfo      0000aef7 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000acf1       _UpdateLoaderPlatformInfo  0000af51 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000ad90       _UpdateSmmInfo             0000aff0 f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000ae4e       _PlatformUpdateHobInfo     0000b0ae f   Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0001:0000af48       _GetCpuSkuInfo             0000b1a8 f   Stage2BoardInitLib:CpuInfoLib.obj
+ 0001:0000b0d8       _GetCpuSku                 0000b338 f   Stage2BoardInitLib:CpuInfoLib.obj
+ 0001:0000b10e       _DetectCoreType            0000b36e f   Stage2BoardInitLib:CpuInfoLib.obj
+ 0001:0000b12d       _GetCpuName                0000b38d f   Stage2BoardInitLib:CpuInfoLib.obj
+ 0001:0000b183       _SerialIoHigherFunctionsEnabled 0000b3e3 f   Stage2BoardInitLib:LowPowerSupport.obj
+ 0001:0000b1bf       _GetLowPowerS0IdleConstraint 0000b41f f   Stage2BoardInitLib:LowPowerSupport.obj
+ 0001:0000b805       _UpdatePayloadId           0000ba65 f   Stage2BoardInitLib:MiscInit.obj
+ 0001:0000b959       _InitializeSmbiosInfo      0000bbb9 f   Stage2BoardInitLib:SmbiosInit.obj
+ 0001:0000bbb6       _SetHwMonRegister          0000be16 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bc37       _DeviceSearch              0000be97 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bc88       _WriteRegister             0000bee8 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bca2       _EnterConfigMode           0000bf02 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bd27       _ExitConfigMode            0000bf87 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bd3f       _DeviceSetResources        0000bf9f f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000be7d       _DeviceEnable              0000c0dd f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bed5       _DeviceGetList             0000c135 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000bf43       _SioInit                   0000c1a3 f   Stage2BoardInitLib:SioChip.obj
+ 0001:0000c164       _PciParseBar               0000c3c4 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c43f       _CreatePciIoDevice         0000c69f f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c4dd       _GatherDeviceInfo          0000c73d f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c5c8       _GatherPpbInfo             0000c828 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c706       _PciScanBus                0000c966 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c935       _ProgramBar                0000cb95 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000c9e8       _ProgramPpbApperture       0000cc48 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000cb4a       _ProgramResource           0000cdaa f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000cc54       _CalculateResource         0000ceb4 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000ce20       _EnablePciDevice           0000d080 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000ce71       _PciProgramResources       0000d0d1 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000d090       _PciScanRootBridges        0000d2f0 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000d1a7       _FillPciRootBridgeInfo     0000d407 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000d22c       _BuildPciRootBridgeInfoHob 0000d48c f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000d2c2       _PciEnumeration            0000d522 f   PciEnumerationLib:PciEnumerationLib.obj
+ 0001:0000d41e       _BarExisted                0000d67e f   PciEnumerationLib:InternalPciEnumerationLib.obj
+ 0001:0000d4a5       _UpdateAcpiGnvs            0000d705 f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000d4cd       _FindAcpiTableBySignature  0000d72d f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000d504       _AcpiTableUpdate           0000d764 f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000d78e       _UpdateMadt                0000d9ee f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000d863       _UpdateFwst                0000dac3 f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000d8f0       _AcpiInit                  0000db50 f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000dd00       _FindAcpiWakeVectorAndJump 0000df60 f   AcpiInitLib:AcpiInitLib.obj
+ 0001:0000dd7b       _UpdateFpdtBootTable       0000dfdb f   AcpiInitLib:AcpiFpdt.obj
+ 0001:0000dddc       _GetFpdtTable              0000e03c f   AcpiInitLib:AcpiFpdt.obj
+ 0001:0000de75       _UpdateFpdtS3Table         0000e0d5 f   AcpiInitLib:AcpiFpdt.obj
+ 0001:0000df6b       _UpdateFpdtSblTable        0000e1cb f   AcpiInitLib:AcpiFpdt.obj
+ 0001:0000e161       _UpdateFpdt                0000e3c1 f   AcpiInitLib:AcpiFpdt.obj
+ 0001:0000e1f9       _UpdateBgrt                0000e459 f   AcpiInitLib:AcpiBgrt.obj
+ 0001:0000e332       _AddMeasurePoint           0000e592 f   LoaderPerformanceLib:LoaderPerformanceAddLib.obj
+ 0001:0000e380       _CallFspSiliconInit        0000e5e0 f   FspsApiLib:FspSiliconInit.obj
+ 0001:0000e442       _FspMultiPhaseSiliconInitHandler 0000e6a2 f   FspsApiLib:FspSiliconInit.obj
+ 0001:0000e50f       _CallFspMultiPhaseSiliconInit 0000e76f f   FspsApiLib:FspSiliconInit.obj
+ 0001:0000e5a2       _FspResetHandler           0000e802 f   FspsApiLib:FspMisc.obj
+ 0001:0000e5fa       _FspVariableHandler        0000e85a f   FspsApiLib:FspVariableServices.obj
+ 0001:0000e7d5       _CallFspNotifyPhase        0000ea35 f   FspsApiLib:FspNotifyPhase.obj
+ 0001:0000e89e       _LoadFvImage               0000eafe f   LiteFvLib:FvLib.obj
+ 0001:0000e99e       _CheckSmbiosOverflow       0000ebfe f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000e9e7       _FindSmbiosType            0000ec47 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000ea35       _FinalizeSmbios            0000ec95 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000eab2       _GetSmbiosString           0000ed12 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000eb73       _CopySmbiosString          0000edd3 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000eba0       _AddSmbiosString           0000ee00 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000ec59       _AddSmbiosType             0000eeb9 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000ed79       _InitSmbiosStringPtr       0000efd9 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000ee26       _BuildProcessorInfo        0000f086 f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000f06f       _SmbiosInit                0000f2cf f   SmbiosInitLib:SmbiosInitLib.obj
+ 0001:0000f126       _LoadElfPayload            0000f386 f   UniversalPayloadLib:UniversalPayloadLib.obj
+ 0001:0000f304       _PciExpressRead8           0000f564 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f340       _PciExpressWrite8          0000f5a0 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f384       _PciExpressRead16          0000f5e4 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f3cb       _PciExpressWrite16         0000f62b f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f419       _PciExpressOr16            0000f679 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f475       _PciExpressAnd16           0000f6d5 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f4d1       _PciExpressRead32          0000f731 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f516       _PciExpressWrite32         0000f776 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000f562       _GpioIsDswGroup            0000f7c2 f   GpioSiLib:GpioSiLib.obj
+ 0001:0000f578       _GpioGetGroupInfoTable     0000f7d8 f   GpioSiLib:GpioSiLib.obj
+ 0001:0000f5d3       _GpioGetThisChipsetId      0000f833 f   GpioSiLib:GpioSiLib.obj
+ 0001:0000f608       _GetPchPcrAddress          0000f868 f   GpioSiLib:GpioSiLib.obj
+ 0001:0000f64f       _PchSeries                 0000f8af f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f69b       _IsPchS                    0000f8fb f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f6a8       _IsPchH                    0000f908 f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f6c3       _IsPchLp                   0000f923 f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f6f0       _GetPchMaxPciePortNum      0000f950 f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f714       _GetPchUsb2MaxPhysicalPortNum 0000f974 f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f738       _GetPchPcieRpDevFun        0000f998 f   PchInfoLib:PchInfoLibAdl.obj
+ 0001:0000f7c9       _GetSerialPortStrideSize   0000fa29 f   PlatformHookLib:PlatformHookLib.obj
+ 0001:0000f7ed       _GetSerialPortBase         0000fa4d f   PlatformHookLib:PlatformHookLib.obj
+ 0001:0000f8b0       _AsciiSPrint               0000fb10 f   BasePrintLib:PrintLib.obj
+ 0001:0000f8ce       _BasePrintLibFillBuffer    0000fb2e f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000f902       _BasePrintLibValueToString 0000fb62 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000f965       _BasePrintLibSPrintMarker  0000fbc5 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000105bb       _BasePrintLibSPrint        0001081b f   BasePrintLib:PrintLibInternal.obj
+ 0001:000105da       _LibPcdGet32               0001083a f   PcdLib:PcdLib.obj
+ 0001:000105ff       _PeiPcdGetSize             0001085f f   PcdLib:Pcd.obj
+ 0001:0001065f       _GetPtrTypeSize            000108bf f   PcdLib:Pcd.obj
+ 0001:000106b5       _SetPtrTypeSize            00010915 f   PcdLib:Pcd.obj
+ 0001:00010712       _SetValueWorker            00010972 f   PcdLib:Service.obj
+ 0001:0001072b       _SetWorker                 0001098b f   PcdLib:Service.obj
+ 0001:00010852       _GetWorker                 00010ab2 f   PcdLib:Service.obj
+ 0001:00010901       _GetSizeTableIndex         00010b61 f   PcdLib:Service.obj
+ 0001:00010922       _CopyGuid                  00010b82 f   BaseMemoryLibSse2:MemLibGuid.obj
+ 0001:000109af       _CompareGuid               00010c0f f   BaseMemoryLibSse2:MemLibGuid.obj
+ 0001:00010a61       _DebugLogBufferWrite       00010cc1 f   DebugLogBufferLib:DebugLogBufferLib.obj
+ 0001:00010afd       _MmioAndThenOr32           00010d5d f   BaseIoLibIntrinsic:IoHighLevel.obj
+ 0001:00010b19       _AsmCpuid                  00010d79 f   BaseLib:CpuId.obj
+ 0001:00010b4e       _AsmCpuidEx                00010dae f   BaseLib:CpuIdEx.obj
+ 0001:00010b8c       _HighBitSet32              00010dec f   BaseLib:HighBitSet32.obj
+ 0001:00010ba3       _GetPowerOfTwo32           00010e03 f   BaseLib:GetPowerOfTwo32.obj
+ 0001:00010bb9       _MultU64x64                00010e19 f   BaseLib:MultU64x64.obj
+ 0001:00010bd2       _LowBitSet32               00010e32 f   BaseLib:LowBitSet32.obj
+ 0001:00010bea       _InternalBaseLibIsListValid 00010e4a f   BaseLib:LinkedList.obj
+ 0001:00010c4e       _InsertTailList            00010eae f   BaseLib:LinkedList.obj
+ 0001:00010c86       _CalculateSum8             00010ee6 f   BaseLib:CheckSum.obj
+ 0001:00010cd2       _InternalMathMultU64x64    00010f32 f   BaseLib:MultU64x64.obj
+ 0001:00010cf1       _InternalMathDivRemU64x32  00010f51 f   BaseLib:DivU64x32Remainder.obj
+ 0001:00010d0e       _PciSegmentRead8           00010f6e f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010d3c       _PciSegmentRead16          00010f9c f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010d6c       _PciSegmentWrite16         00010fcc f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010d9f       _PciSegmentRead32          00010fff f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010dcf       _PciSegmentWrite32         0001102f f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010e02       _PciSegmentOr32            00011062 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010e28       _PciSegmentAnd32           00011088 f   BasePciSegmentLibPci:PciSegmentLib.obj
+ 0001:00010e4f       _SerialIoI2cDevNumber      000110af f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00010eab       _SerialIoI2cFuncNumber     0001110b f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00010f13       _SerialIoSpiDevNumber      00011173 f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00010fa2       _SerialIoSpiFuncNumber     00011202 f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:0001103d       _SerialIoUartDevNumber     0001129d f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00011095       _SerialIoUartFuncNumber    000112f5 f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:000110f1       _PchPcieRpDevNumber        00011351 f   PchPciBdfLib:PchPciBdfLib.obj
+ 0001:0001115d       _GpioIsPadHostOwned        000113bd f   GpioLib:GpioLib.obj
+ 0001:0001119c       _GpioIsPadValid            000113fc f   GpioLib:GpioLib.obj
+ 0001:0001127f       _GpioReadPadCfgReg         000114df f   GpioLib:GpioLib.obj
+ 0001:000114d5       _GpioPadRstCfgFromResetConfig 00011735 f   GpioLib:GpioLib.obj
+ 0001:0001156f       _GpioPadCfgRegValueFromGpioConfig 000117cf f   GpioLib:GpioLib.obj
+ 0001:00011693       _GpioGetPadOwnership       000118f3 f   GpioLib:GpioLib.obj
+ 0001:000116fd       _GpioGetPadCfgLockForGroupDw 0001195d f   GpioLib:GpioLib.obj
+ 0001:00011727       _GpioUnlockPadCfgForGroupDw 00011987 f   GpioLib:GpioLib.obj
+ 0001:00011756       _GpioUnlockPadCfgTxForGroupDw 000119b6 f   GpioLib:GpioLib.obj
+ 0001:00011785       _GpioGetGroupDwToGpeDwX    000119e5 f   GpioLib:GpioLib.obj
+ 0001:000120e0       _ConfigureGpio             00012340 f   GpioLib:GpioInit.obj
+ 0001:000123a8       _GpioIsCorrectPadForThisChipset 00012608 f   GpioLib:GpioHelpersLib.obj
+ 0001:000123dc       _GpioGetPadPerGroup        0001263c f   GpioLib:GpioHelpersLib.obj
+ 0001:00012404       _GpioGetHighestGroup       00012664 f   GpioLib:GpioHelpersLib.obj
+ 0001:00012421       _InternalAcpiDelay         00012681 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:0001246e       _MicroSecondDelay          000126ce f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:000124b3       _DisableBiosWriteProtect   00012713 f   PchSpiLib:PchSpiLib.obj
+ 0001:000124f0       _GetHashToExtend           00012750 f   SecureBootLib:SecureBootHash.obj
+ 0001:00012586       _CalculateHash             000127e6 f   SecureBootLib:SecureBootHash.obj
+ 0001:000125de       _DoHashVerify              0001283e f   SecureBootLib:SecureBootHash.obj
+ 0001:0001274a       _DoRsaVerify               000129aa f   SecureBootLib:SecureBootRsa.obj
+ 0001:0001294a       _Decompress                00012baa f   DecompressLib:DecompressLib.obj
+ 0001:000129c0       _HeciGetMeMode             00012c20 f   HeciLib:HeciLib.obj
+ 0001:00012a4d       _HeciGetFwVersionMsg       00012cad f   HeciLib:HeciLib.obj
+ 0001:00012c5a       _HeciGetFwCapsSkuMsg       00012eba f   HeciLib:HeciLib.obj
+ 0001:00012e6d       _HeciGetEarlyBootPerfData  000130cd f   HeciLib:HeciLib.obj
+ 0001:00012f6d       _HeciGetManufactureMode    000131cd f   HeciLib:HeciLib.obj
+ 0001:000130c6       _HeciPacketRead            00013326 f   HeciLib:HeciCore.obj
+ 0001:00013354       _HeciInitialize            000135b4 f   HeciLib:HeciCore.obj
+ 0001:00013416       _HeciReceive               00013676 f   HeciLib:HeciCore.obj
+ 0001:00013526       _HeciServiceReceive        00013786 f   HeciLib:HeciCore.obj
+ 0001:0001353f       _HeciSend                  0001379f f   HeciLib:HeciCore.obj
+ 0001:0001366c       _HeciServiceSend           000138cc f   HeciLib:HeciCore.obj
+ 0001:00013689       _HeciSendwAck              000138e9 f   HeciLib:HeciCore.obj
+ 0001:000136e2       _HeciResetInterface        00013942 f   HeciLib:HeciCore.obj
+ 0001:000137f3       _HeciServiceResetInterface 00013a53 f   HeciLib:HeciCore.obj
+ 0001:000137fd       _FindConfigHdrByPidMaskTag 00013a5d f   ConfigDataLib:ConfigDataLib.obj
+ 0001:000138df       _FindConfigHdrByTag        00013b3f f   ConfigDataLib:ConfigDataLib.obj
+ 0001:000138ff       _FindConfigDataByTag       00013b5f f   ConfigDataLib:ConfigDataLib.obj
+ 0001:00013915       _HeciSetMeasuredBootState  00013b75 f   HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0001:00013988       _HeciGetErLog              00013be8 f   HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0001:00013a85       _HeciGetHerHashData        00013ce5 f   HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0001:00013b47       _HeciSetFipsMode           00013da7 f   HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0001:00013bbb       _GetCpuMtrrs               00013e1b f   MtrrLib:MtrrSync.obj
+ 0001:00013c4e       _SetCpuMtrrs               00013eae f   MtrrLib:MtrrSync.obj
+ 0001:00013d49       _AcquireSpinLockOrFail     00013fa9 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:00013eab       _TriggerPayloadSwSmi       0001410b f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:00013f09       _AppendS3Info              00014169 f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:00013f89       _FindS3Info                000141e9 f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:00014021       _RestoreS3RegInfo          00014281 f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:000140ad       _PerformInsertionSortList  0001430d f   SortLib:InsertionSort.obj
+ 0001:00014107       _LoadPageTableForLongMode  00014367 f   PagingLib:Paging32To64.obj
+ 0001:00014182       _StoreRpConfig             000143e2 f   PciePm:PciePm.obj
+ 0001:00014283       _GetCpuPcieRpDevFun        000144e3 f   PciePm:PciePm.obj
+ 0001:0001430b       _CpuPciePmConfig           0001456b f   PciePm:PciePm.obj
+ 0001:00014387       _PchPciePmConfig           000145e7 f   PciePm:PciePm.obj
+ 0001:0001441f       _GetMaxCpuPciePortNum      0001467f f   FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0001:00014436       _UpdateFspConfig           00014696 f   FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0001:0001591d       _PushHsPhyFirmware         00015b7d f   CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0001:00015980       _PeiHeciGetFwPayload       00015be0 f   CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0001:00015ad6       _HsPhyLoadAndInit          00015d36 f   CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0001:00015c9f       _MeasureHer                00015eff f   MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0001:00015dc5       _HeciGetHerData            00016025 f   MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0001:00015e10       _ExtendCsmeMeasurementToTpmPcr 00016070 f   MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0001:00015f4f       _MeMeasuredBootInit        000161af f   MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0001:00016014       _GetMeBiosPayloadHobData   00016274 f   PsdLib:PsdLib.obj
+ 0001:00016045       _GetSecFwVersion           000162a5 f   PsdLib:PsdLib.obj
+ 0001:000160ea       _GetSecCapability          0001634a f   PsdLib:PsdLib.obj
+ 0001:00016164       _UpdateAcpiPsdTable        000163c4 f   PsdLib:PsdLib.obj
+ 0001:00016301       _GetFunDisableBit          00016561 f   VtdLib:VTdLib.obj
+ 0001:00016332       _UpdateDrhd                00016592 f   VtdLib:VTdLib.obj
+ 0001:000163f0       _UpdateDrhd2               00016650 f   VtdLib:VTdLib.obj
+ 0001:000164db       _UpdateRmrr                0001673b f   VtdLib:VTdLib.obj
+ 0001:000165d1       _ReadVtdBaseAddress        00016831 f   VtdLib:VTdLib.obj
+ 0001:00016615       _DmarTableUpdate           00016875 f   VtdLib:VTdLib.obj
+ 0001:0001689a       _UpdateDmarAcpi            00016afa f   VtdLib:VTdLib.obj
+ 0001:00016900       _IgdOpRegionInit           00016b60 f   IgdOpRegionLib:IgdOpRegionLib.obj
+ 0001:00016c0e       _UpdateBdatAcpiTable       00016e6e f   BdatLib:BdatLib.obj
+ 0001:00016f9e       _FillBootOptionListFromCfgData 000171fe f   BoardSupportLib:BoardSupportLib.obj
+ 0001:000171bf       _AcpiPatchPssTable         0001741f f   BoardSupportLib:BoardSupportLib.obj
+ 0001:0001740f       _LocateVbtByImageId        0001766f f   BoardSupportLib:BoardSupportLib.obj
+ 0001:0001746f       _GetVbtAddress             000176cf f   BoardSupportLib:BoardSupportLib.obj
+ 0001:000174a8       _SetFrameBufferWriteCombining 00017708 f   BoardSupportLib:BoardGraphicsCache.obj
+ 0001:0001781c       _GetVariableInstance       00017a7c f   LiteVariableLib:LiteVariableLib.obj
+ 0001:0001785a       _EraseVariableStore        00017aba f   LiteVariableLib:LiteVariableLib.obj
+ 0001:000178ca       _WriteVariableStore        00017b2a f   LiteVariableLib:LiteVariableLib.obj
+ 0001:0001793a       _GetActiveVaraibelStoreBase 00017b9a f   LiteVariableLib:LiteVariableLib.obj
+ 0001:000179a2       _InitializeVariableStore   00017c02 f   LiteVariableLib:LiteVariableLib.obj
+ 0001:00017aa6       _InternalGetVariable       00017d06 f   LiteVariableLib:LiteVariableLib.obj
+ 0001:00017bbf       _GetVariable               00017e1f f   LiteVariableLib:LiteVariableLib.obj
+ 0001:00017bdb       _GetNextVariableName       00017e3b f   LiteVariableLib:LiteVariableLib.obj
+ 0001:00017ce4       _Reclaim                   00017f44 f   LiteVariableLib:LiteVariableLib.obj
+ 0001:00017e77       _SetVariable               000180d7 f   LiteVariableLib:LiteVariableLib.obj
+ 0001:0001821d       _QueryVariableInfo         0001847d f   LiteVariableLib:LiteVariableLib.obj
+ 0001:000182d6       _VariableConstructor       00018536 f   LiteVariableLib:LiteVariableLib.obj
+ 0001:0001836b       _GetTimeStampFrequency     000185cb f   TimeStampLib:TimeStampLib.obj
+ 0001:0001838a       _CommonExceptionHandler    000185ea f   CpuExceptionLib:CpuExceptionHandler.obj
+ 0001:000184b6       _PchPcrRead32              00018716 f   PchPcrLib:PchPcrLib.obj
+ 0001:000184ef       _PchSbiExecutionEx         0001874f f   PchSbiAccessLib:PchSbiAccessLib.obj
+ 0001:000186ee       _VerifyRsaPkcs1Signature   0001894e f   IppCryptoLib:rsa_verify.obj
+ 0001:0001889d       _VerifyRsaPssSignature     00018afd f   IppCryptoLib:rsa_verify.obj
+ 0001:00018a18       _ippsHashInit_rmf@8        00018c78 f   IppCryptoLib:pcphashca_rmf.obj
+ 0001:00018a4f       _ippsHashUpdate_rmf@12     00018caf f   IppCryptoLib:pcphashca_rmf.obj
+ 0001:00018b88       _cpFinalize_rmf            00018de8 f   IppCryptoLib:pcphashca_rmf.obj
+ 0001:00018c20       _ippsHashFinal_rmf@8       00018e80 f   IppCryptoLib:pcphashca_rmf.obj
+ 0001:00018c92       _ippsHashMessage_rmf@16    00018ef2 f   IppCryptoLib:pcphashca_rmf.obj
+ 0001:00018ee2       _sha256_hashInit           00019142 f   IppCryptoLib:pcpsha256ca.obj
+ 0001:00018f1e       _sha256_hashUpdate         0001917e f   IppCryptoLib:pcpsha256ca.obj
+ 0001:00018f38       _sha256_hashOctString      00019198 f   IppCryptoLib:pcpsha256ca.obj
+ 0001:00018f99       _sha256_msgRep             000191f9 f   IppCryptoLib:pcpsha256ca.obj
+ 0001:00018fcc       _ippsRSA_InitPublicKey@16  0001922c f   IppCryptoLib:pcpngrsakeypublic.obj
+ 0001:0001903b       _ippsRSA_SetPublicKey@12   0001929b f   IppCryptoLib:pcpngrsakeypublic.obj
+ 0001:000190ff       _ippsBigNumInit@8          0001935f f   IppCryptoLib:pcpbnca.obj
+ 0001:000192d8       _ippsRSAVerify_PSS_rmf@28  00019538 f   IppCryptoLib:pcpngrsapss_rmf.obj
+ 0001:00019539       _ippsSetOctString_BN@12    00019799 f   IppCryptoLib:pcpbnsetca.obj
+ 0001:00019580       _ippsGetOctString_BN@12    000197e0 f   IppCryptoLib:pcpbnsetca.obj
+ 0001:000195ec       _ippsRSA_GetBufferSizePublicKey@8 0001984c f   IppCryptoLib:pcpngrsaencodec.obj
+ 0001:00019624       _gsRSApub_cipher           00019884 f   IppCryptoLib:pcpngrsaencodec.obj
+ 0001:00019675       _cpNLZ_BNU32               000198d5 f   IppCryptoLib:pcpbnu32misc.obj
+ 0001:00019675       _cpNLZ_BNU                 000198d5 f   IppCryptoLib:pcpbnumisc.obj
+ 0001:000196bc       _cpFromOctStr_BNU          0001991c f   IppCryptoLib:pcpbnumisc.obj
+ 0001:00019743       _cpToOctStr_BNU            000199a3 f   IppCryptoLib:pcpbnumisc.obj
+ 0001:00019bf9       _gsMontFactor              00019e59 f   IppCryptoLib:gsmodstuff.obj
+ 0001:00019c7d       _gsModEngineInit           00019edd f   IppCryptoLib:gsmodstuff.obj
+ 0001:00019de0       _gsMontExpBin_BNU          0001a040 f   IppCryptoLib:pcpngrsamontstuff.obj
+ 0001:00019fa9       _gsPubBuffer_gpr           0001a209 f   IppCryptoLib:pcpngrsamontstuff.obj
+ 0001:00019fee       _cpAdd_BNU32               0001a24e f   IppCryptoLib:pcpbnu32arith.obj
+ 0001:0001a04e       _cpDiv_BNU32               0001a2ae f   IppCryptoLib:pcpbnu32arith.obj
+ 0001:0001a431       _cpSub_BNU                 0001a691 f   IppCryptoLib:pcpbnuarith.obj
+ 0001:0001a475       _ippsMGF1_rmf@20           0001a6d5 f   IppCryptoLib:pcpmgf1ca_rmf.obj
+ 0001:0001a55a       _SzAlloc                   0001a7ba f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001a593       _SzFree                    0001a7f3 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001a596       _GetDecodedSizeOfBuf       0001a7f6 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001a5df       _LzmaUefiDecompressGetInfo 0001a83f f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001a627       _LzmaUefiDecompress        0001a887 f   LzmaDecompressLib:LzmaDecompress.obj
+ 0001:0001b83d       _LzmaDec_DecodeToDic       0001ba9d f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001bb8f       _LzmaProps_Decode          0001bdef f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001bc44       _LzmaDecode                0001bea4 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001bd40       _LZ4_decompress_generic    0001bfa0 f   Lz4CompressLib:Lz4.obj
+ 0001:0001bfea       _MeGetHeciMmPciAddress     0001c24a f   MeChipsetLib:MeChipsetLib.obj
+ 0001:0001c0aa       _TpoToUs                   0001c30a f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c40b       _FindNextPcieChild         0001c66b f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c434       _GetOverrideL1ssCapsOffset 0001c694 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d498       _IsLtrCapable              0001d6f8 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d4cf       _CombineLtr                0001d72f f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d690       _GetOverrideLtr            0001d8f0 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d77e       _RecursiveLtrOverrideCheck 0001d9de f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d80c       _RootportDownstreamPmConfiguration 0001da6c f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d99b       _PcieBaseFindCapId         0001dbfb f   BasePcieHelperLib:BasePcieHelperLib.obj
+ 0001:0001da49       _PcieBaseFindExtendedCapId 0001dca9 f   BasePcieHelperLib:BasePcieHelperLib.obj
+ 0001:0001dab7       _IsDevicePresent           0001dd17 f   BasePcieHelperLib:BasePcieHelperLib.obj
+ 0001:0001dad4       _ConfigureRpLtrOverride    0001dd34 f   PcieClientRpLib:PcieClientRpLib.obj
+ 0001:0001dc32       _L1ssProprietaryConfiguration 0001de92 f   PcieClientRpLib:PcieClientRpLib.obj
+ 0002:00000000       ??_C@_0BI@KCMFJFBC@Loading?5Payload?5ID?5?$CF4a?6@ 0001df40     Stage2:Stage2.obj
+ 0002:00000018       ??_C@_0BN@EOHFMJLA@Loading?5payload?5error?5?9?5?$CFr?5?$CB@ 0001df58     Stage2:Stage2.obj
+ 0002:00000038       ??_C@_0CB@MFICPCFM@Load?5Payload?5ID?50x?$CF08X?5?$EA?50x?$CF08X@ 0001df78     Stage2:Stage2.obj
+ 0002:0000005c       ??_C@_0BJ@NBNBGBPO@Failed?5to?5load?5payload?5?$CB@ 0001df9c     Stage2:Stage2.obj
+ 0002:00000078       ??_C@_0BF@PEEPFOO@PE32?5Format?5Payload?6@ 0001dfb8     Stage2:Stage2.obj
+ 0002:00000090       ??_C@_0BD@JPBIOFME@FV?5Format?5Payload?6@ 0001dfd0     Stage2:Stage2.obj
+ 0002:000000a4       ??_C@_0BE@HABIAED@ELF?5Format?5Payload?6@ 0001dfe4     Stage2:Stage2.obj
+ 0002:000000b8       ??_C@_0BM@IODDKKAJ@Universal?5Payload?5?$CFa?5v?$CF08X?6@ 0001dff8     Stage2:Stage2.obj
+ 0002:000000d4       ??_C@_0BL@BBEBFFAM@Assume?5RAW?5Format?5Payload?6@ 0001e014     Stage2:Stage2.obj
+ 0002:000000f0       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0001e030     Stage2:Stage2.obj
+ 0002:00000114       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0001e054     Stage2:Stage2.obj
+ 0002:00000128       ??_C@_0EM@HDJEGNC@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e068     Stage2:Stage2.obj
+ 0002:00000174       ??_C@_0O@IBADKOCE@HOB?5?$EA?50x?$CF08X?6@ 0001e0b4     Stage2:Stage2.obj
+ 0002:00000184       ??_C@_0BH@HIMIKHEF@Payload?5entry?3?50x?$CF08X?6@ 0001e0c4     Stage2:Stage2.obj
+ 0002:0000019c       ??_C@_0BE@JPEEPGKA@Switch?5to?5x64?5mode?6@ 0001e0dc     Stage2:Stage2.obj
+ 0002:000001b0       ??_C@_0BC@KBEGPCJL@Jump?5to?5payload?6?6@ 0001e0f0     Stage2:Stage2.obj
+ 0002:000001c4       ??_C@_0BK@FGFNGFBP@LdrGlobal?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001e104     Stage2:Stage2.obj
+ 0002:000001e0       ??_C@_0DL@DABMCAOC@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5Intel?5Slim?5Bootl@ 0001e120     Stage2:Stage2.obj
+ 0002:0000021c       ??_C@_0CN@BOHBOHJM@Save?5MRC?5Training?5Data?5?$CI0x?$CFp?50x@ 0001e15c     Stage2:Stage2.obj
+ 0002:0000024c       ??_C@_0O@KIDDEJOI@Silicon?5Init?6@ 0001e18c     Stage2:Stage2.obj
+ 0002:0000025c       ??_C@_0DN@MKAPLPOI@FspMultiPhaseSiliconInitHandler@ 0001e19c     Stage2:Stage2.obj
+ 0002:0000029c       ??_C@_0BJ@NFANDANE@SMBIOS?5init?5Status?5?$DN?5?$CFr?6@ 0001e1dc     Stage2:Stage2.obj
+ 0002:000002b8       ??_C@_09CEIHHMPN@PCI?5Enum?6@ 0001e1f8     Stage2:Stage2.obj
+ 0002:000002c4       ??_C@_0L@JMGCJHLE@ACPI?5Init?6@ 0001e204     Stage2:Stage2.obj
+ 0002:000002d0       ??_C@_0O@KOEICAAM@ACPI?5Ret?3?5?$CFr?6@ 0001e210     Stage2:Stage2.obj
+ 0002:000002e0       ??_C@_0N@IEBNPPCB@ACPI?5error?5?$CB@ 0001e220     Stage2:Stage2.obj
+ 0002:000002f0       ??_C@_0N@OGEJGPEJ@Enable?5SMRR?6@ 0001e230     Stage2:Stage2.obj
+ 0002:00000300       ??_C@_0O@PPBEDOKB@Boot?5failed?5?$CB@ 0001e240     Stage2:Stage2.obj
+ 0002:00000310       ??_C@_06EBNCFAIB@Stage2@   0001e250     Stage2:AutoGen.obj
+ 0002:00000318       __gPcd_FixedAtBuild_PcdPciEnumPolicyInfo 0001e258     Stage2:AutoGen.obj
+ 0002:00000320       ??_C@_0BM@BBFAFFH@MEM?3?5?$CF016lX?5?$CF016lX?5?$CF02X?5?$CFd?6@ 0001e260     Stage2:Stage2Hob.obj
+ 0002:0000033c       ??_C@_0CI@BKLNDB@Found?5a?5gap?5in?5memory?5map?3?5?$CF08X@ 0001e27c     Stage2:Stage2Hob.obj
+ 0002:00000364       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0001e2a4     Stage2:Stage2Hob.obj
+ 0002:00000378       ??_C@_0EP@IBFKOMJC@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e2b8     Stage2:Stage2Hob.obj
+ 0002:000003c8       ??_C@_0CG@MMEEAFH@Graphics?5Info?3?5?$CFd?5x?5?$CFd?5x?532?5?$EA?50@ 0001e308     Stage2:Stage2Hob.obj
+ 0002:000003f0       ??_C@_0CK@KJNBDGNN@Graphics?5PixelFormat?5NOT?5expect@ 0001e330     Stage2:Stage2Hob.obj
+ 0002:0000041c       ??_C@_0CA@HFLDOOJC@Failed?5to?5get?5GFX?5HOB?5from?5FSP?6@ 0001e35c     Stage2:Stage2Hob.obj
+ 0002:0000043c       ??_C@_0CG@DNGHDLBC@Use?5existing?5GFX?5HOB?5from?5bootl@ 0001e37c     Stage2:Stage2Hob.obj
+ 0002:00000464       ??_C@_0BF@KPBGJHLG@Memory?5map?5failure?5?$CB@ 0001e3a4     Stage2:Stage2Hob.obj
+ 0002:00000480       ??_C@_0FD@KKAAAHFO@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e3c0     Stage2:Stage2Support.obj
+ 0002:000004d4       ??_C@_0BO@FIAJBOG@SplashLogoBmp?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001e414     Stage2:Stage2Support.obj
+ 0002:000004f8       ??_C@_0EA@COPKKBKP@Stage2?5stack?3?50x?$CFX?5?$CIstack?5used?5@ 0001e438     Stage2:Stage2Support.obj
+ 0002:00000538       ??_C@_0DJ@BNKIKACA@Stage2?5heap?3?50x?$CFX?5?$CI0x?$CFX?5used?0?50@ 0001e478     Stage2:Stage2Support.obj
+ 0002:00000580       _mPlatformService          0001e4c0     Stage2:Stage2Support.obj
+ 0002:00000594       ??_C@_02MMHFNHAO@1A@       0001e4d4     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:00000598       ??_C@_02OHFIIEMN@1B@       0001e4d8     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:0000059c       ??_C@_01FDFGLJHB@2@        0001e4dc     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005a0       ??_C@_07LNDPGEHH@PAYLOAD@  0001e4e0     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005a8       ??_C@_03PDGGBOGK@?6?$CFa@  0001e4e8     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005ac       ??_C@_0BL@CHILNFL@?6STAGE_?$CFa?3?5System?5halted?$CB?6@ 0001e4ec     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005c8       ??_C@_0L@DDOEDGCK@Error?3?5?$CFr?6@ 0001e508     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005d3       ??_C@_00CNPNBAHC@@         0001e513     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005d4       ??_C@_0BF@NFHDKNLM@?$CF?$CKa?$CF08X?3?5?$CF?948a?5?$CK?$CFa?$CK?6@ 0001e514     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000005ec       ??_C@_0BI@HPGLHCLM@?$CKStackBot?5?$DN?$DN?50x5AA55AA5@ 0001e52c     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:00000608       ??_C@_0HA@GJLAOMFH@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e548     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:00000678       ??_C@_0EC@IMBHNBN@Update?5device?5table?3?5type?5?$CI0x?$CFx@ 0001e5b8     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000006bc       _mStage                    0001e5fc     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000006d0       _mHexStr                   0001e610     BasePrintLib:PrintLibInternal.obj
+ 0002:000006d0       _mHex                      0001e610     BootloaderCommonLib:BootloaderCommonLib.obj
+ 0002:000006e0       ??_C@_0DI@PHOMHDKH@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFF?5?9?5?$CI@ 0001e620     BaseMemoryLibSse2:CopyMemWrapper.obj
+ 0002:00000718       ??_C@_0FM@PIBGLOMG@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e658     BaseMemoryLibSse2:CopyMemWrapper.obj
+ 0002:00000774       ??_C@_0DD@DCDOHCDJ@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFF?5?9?5?$CI@ 0001e6b4     BaseMemoryLibSse2:CopyMemWrapper.obj
+ 0002:000007a8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001e6e8     BaseMemoryLibSse2:ZeroMemWrapper.obj
+ 0002:000007c0       ??_C@_0FM@EMLENPAB@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e700     BaseMemoryLibSse2:ZeroMemWrapper.obj
+ 0002:0000081c       ??_C@_0CL@OBMFBPED@Length?5?$DM?$DN?5?$CI0xFFFFFFFF?5?9?5?$CIUINTN?$CJ@ 0001e75c     BaseMemoryLibSse2:ZeroMemWrapper.obj
+ 0002:00000848       ??_C@_0CN@BPIPMCPJ@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFF?5?9?5?$CI@ 0001e788     BaseMemoryLibSse2:SetMemWrapper.obj
+ 0002:00000878       ??_C@_0FL@JKIEHNLB@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e7b8     BaseMemoryLibSse2:SetMemWrapper.obj
+ 0002:000008d4       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0001e814     BaseMemoryLibSse2:CompareMemWrapper.obj
+ 0002:000008f8       ??_C@_0FP@JDLIDDJP@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e838     BaseMemoryLibSse2:CompareMemWrapper.obj
+ 0002:00000958       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001e898     BaseMemoryLibSse2:CompareMemWrapper.obj
+ 0002:00000978       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001e8b8     BaseFspDebugLibSerialPort:DebugLib.obj
+ 0002:00000990       ??_C@_0GE@BMPLJCGA@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e8d0     BaseFspDebugLibSerialPort:DebugLib.obj
+ 0002:000009f4       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0001e934     BaseFspDebugLibSerialPort:DebugLib.obj
+ 0002:00000a0c       ??_C@_0BA@DAGHIEBA@?$CIPort?5?$CG?51?$CJ?5?$DN?$DN?50@ 0001e94c     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0002:00000a20       ??_C@_0FH@FANHDACN@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e960     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0002:00000a78       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 0001e9b8     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0002:00000a88       ??_C@_0FE@CJHFEMMF@e?3?2code?2adl_n100_code?2sblplatfo@ 0001e9c8     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00000adc       ??_C@_0BD@KOOFJLFH@?$CIAddress?5?$CG?51?$CJ?5?$DN?$DN?50@ 0001ea1c     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00000af0       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0001ea30     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00000b04       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001ea44     HobLib:HobLib.obj
+ 0002:00000b20       ??_C@_0FG@GAIMKBOD@e?3?2code?2adl_n100_code?2sblplatfo@ 0001ea60     HobLib:HobLib.obj
+ 0002:00000b78       ??_C@_0CE@FIHEFCOH@Top?5?$DO?$DN?5LdrGlobal?9?$DOMemPoolCurrBo@ 0001eab8     MemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000ba0       ??_C@_0GO@BEKJMKLG@e?3?2code?2adl_n100_code?2sblplatfo@ 0001eae0     MemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000c10       ??_C@_0CE@CIPPKGCA@LdrGlobal?9?$DOMemPoolCurrTop?5?$DO?$DN?5Bo@ 0001eb50     MemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000c34       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001eb74     BaseLib:String.obj
+ 0002:00000c50       ??_C@_0EK@OOMECBBP@e?3?2code?2adl_n100_code?2sblplatfo@ 0001eb90     BaseLib:String.obj
+ 0002:00000c9c       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 0001ebdc     BaseLib:String.obj
+ 0002:00000cc0       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0001ec00     BaseLib:String.obj
+ 0002:00000cfc       ??_C@_0BL@JAAMOCAJ@StrSize?5?$CIFirstString?$CJ?5?$CB?$DN?50@ 0001ec3c     BaseLib:String.obj
+ 0002:00000d18       ??_C@_0BM@DALBOILC@StrSize?5?$CISecondString?$CJ?5?$CB?$DN?50@ 0001ec58     BaseLib:String.obj
+ 0002:00000d34       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0001ec74     BaseLib:String.obj
+ 0002:00000d6c       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0001ecac     BaseLib:String.obj
+ 0002:00000d88       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0001ecc8     BaseLib:String.obj
+ 0002:00000da4       ??_C@_0BL@OFIBAIAL@AsciiStrSize?5?$CIString?$CJ?5?$CB?$DN?50@ 0001ece4     BaseLib:String.obj
+ 0002:00000dc0       ??_C@_0CB@NAIDGIOA@AsciiStrSize?5?$CISearchString?$CJ?5?$CB?$DN?5@ 0001ed00     BaseLib:String.obj
+ 0002:00000de4       ??_C@_0BF@KGOGCKLE@Idtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001ed24     BaseLib:X86ReadIdtr.obj
+ 0002:00000e00       ??_C@_0EP@IGCMHBMM@e?3?2code?2adl_n100_code?2sblplatfo@ 0001ed40     BaseLib:X86ReadIdtr.obj
+ 0002:00000e50       ??_C@_0EO@NNCNJPPA@e?3?2code?2adl_n100_code?2sblplatfo@ 0001ed90     BaseLib:SafeString.obj
+ 0002:00000ea0       ??_C@_0BO@ECNIOIHG@?$CIDestination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0001ede0     BaseLib:SafeString.obj
+ 0002:00000ec0       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 0001ee00     BaseLib:SafeString.obj
+ 0002:00000f00       ??_C@_0BJ@EAEEJIP@?$CISource?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0001ee40     BaseLib:SafeString.obj
+ 0002:00000f1c       ??_C@_0BG@EEGIIOKH@?$CIDestMax?5?$DO?5SourceLen?$CJ@ 0001ee5c     BaseLib:SafeString.obj
+ 0002:00000f34       ??_C@_0BJ@MBBOBCLN@?$CIString?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0001ee74     BaseLib:SafeString.obj
+ 0002:00000f50       ??_C@_0BH@JPMEDPAI@?$CIData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0001ee90     BaseLib:SafeString.obj
+ 0002:00000f68       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0001eea8     BaseLib:SafeString.obj
+ 0002:00000f84       ??_C@_0N@OMPODJLB@AsciiStrCpyS@ 0001eec4     BaseLib:SafeString.obj
+ 0002:00000f98       ??_C@_0FL@CDANCHFO@InternalSafeStringNoAsciiStrOve@ 0001eed8     BaseLib:SafeString.obj
+ 0002:00000ff8       ??_C@_0ID@JMCCGBLD@?$CIAsciiStrnLenS?5?$CIString?0?5?$CI_gPcd_@ 0001ef38     BaseLib:SafeString.obj
+ 0002:0000107c       ??_C@_0BF@GMBBPDJL@AsciiStrHexToUint64S@ 0001efbc     BaseLib:SafeString.obj
+ 0002:00001094       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0001efd4     BaseLib:DivU64x32.obj
+ 0002:000010a8       ??_C@_0EN@ILPLLFDG@e?3?2code?2adl_n100_code?2sblplatfo@ 0001efe8     BaseLib:DivU64x32.obj
+ 0002:000010f8       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 0001f038     BaseLib:LShiftU64.obj
+ 0002:00001108       ??_C@_0EN@PBMEBCDG@e?3?2code?2adl_n100_code?2sblplatfo@ 0001f048     BaseLib:LShiftU64.obj
+ 0002:00001158       ??_C@_0BM@JGBPFJGC@SpiInstance?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001f098     SpiFlashLib:SpiFlashLib.obj
+ 0002:00001178       ??_C@_0GB@DKLMPGFJ@e?3?2code?2adl_n100_code?2sblplatfo@ 0001f0b8     SpiFlashLib:SpiFlashLib.obj
+ 0002:000011dc       ??_C@_0BE@MIIPFABC@SpiInstance?5?$DN?5?$CF08X?6@ 0001f11c     SpiFlashLib:SpiFlashLib.obj
+ 0002:000011f0       ??_C@_0DG@BALENFCB@Failed?5to?5get?5SPI?5device?5info?5f@ 0001f130     SpiFlashLib:SpiFlashLib.obj
+ 0002:00001228       ??_C@_0BG@JKIENMBC@PchSpiBase?5at?50x?$CF08X?6@ 0001f168     SpiFlashLib:SpiFlashLib.obj
+ 0002:00001240       ??_C@_0BF@HHOEAIKH@ScSpiBar0?5at?50x?$CF08X?6@ 0001f180     SpiFlashLib:SpiFlashLib.obj
+ 0002:00001258       ??_C@_0FB@MCOCPGHE@ERROR?5?3?5SPI?5Flash?5descriptor?5in@ 0001f198     SpiFlashLib:SpiFlashLib.obj
+ 0002:000012ac       ??_C@_0DB@OBGMDECH@?5?5?5?5?5Erase?5and?5erase?5size?5must?5@ 0001f1ec     SpiFlashLib:SpiFlashLib.obj
+ 0002:000012e0       _mSpiFlashService          0001f220     SpiFlashLib:SpiFlashLib.obj
+ 0002:000012fc       ??_C@_0BL@HMHNCNAK@Registering?5container?5?$CF4a?6@ 0001f23c     ContainerLib:ContainerLib.obj
+ 0002:00001318       ??_C@_0CI@EDLPJPCP@Registering?5container?5failed?5du@ 0001f258     ContainerLib:ContainerLib.obj
+ 0002:00001340       ??_C@_0BL@HPFNLMPO@Loading?5Component?5?$CF4a?3?$CF4a?6@ 0001f280     ContainerLib:ContainerLib.obj
+ 0002:0000135c       ??_C@_0CE@BKBDKADE@PeiCreateHob?5fail?3?5Length?5?9?50x?$CF@ 0001f29c     HobBuildLib:HobBuildLib.obj
+ 0002:00001380       ??_C@_0BN@MAOGDIDL@?5?5FreeMemoryTop?5?5?5?5?9?50x?$CF08x?6@ 0001f2c0     HobBuildLib:HobBuildLib.obj
+ 0002:000013a0       ??_C@_0BN@PAGJMFCL@?5?5FreeMemoryBottom?5?9?50x?$CF08x?6@ 0001f2e0     HobBuildLib:HobBuildLib.obj
+ 0002:000013c0       ??_C@_0BE@PICCCCHF@Hob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001f300     HobBuildLib:HobBuildLib.obj
+ 0002:000013d8       ??_C@_0FO@DPBOGMJK@e?3?2code?2adl_n100_code?2sblplatfo@ 0001f318     HobBuildLib:HobBuildLib.obj
+ 0002:00001438       ??_C@_0BF@PEDOPNMP@Guid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001f378     HobBuildLib:HobBuildLib.obj
+ 0002:00001450       ??_C@_0DE@JLBHCAID@DataLength?5?$DM?$DN?5?$CI0xFFF8?5?9?5sizeof?5@ 0001f390     HobBuildLib:HobBuildLib.obj
+ 0002:00001488       ??_C@_0EO@IHLJIHKG@?$CI?$CIBaseAddress?5?$CG?5?$CI0x00001000?5?9?51@ 0001f3c8     HobBuildLib:HobBuildLib.obj
+ 0002:000014d8       ??_C@_0CA@GIIMDFCL@TPM?5Lib?5Private?5Data?5not?5found?6@ 0001f418     TpmLib:TpmLib.obj
+ 0002:000014f8       ??_C@_0DG@GHOLKDB@PCR?5?$CI?$CFu?$CJ?5extended?5successfully?5@ 0001f438     TpmLib:TpmLib.obj
+ 0002:00001530       ??_C@_0CL@DJHFFBAC@PCR?5?$CI?$CFu?$CJ?5extend?5FAIL?5with?5error@ 0001f470     TpmLib:TpmLib.obj
+ 0002:0000155c       ??_C@_0BJ@PBBDL@LinuxLoaderPkg?3?5OS?5Image@ 0001f49c     TpmLib:TpmLib.obj
+ 0002:00001578       ??_C@_0CE@BOKPJOLJ@Stage2?5TPM?5PCR?$CI0?$CJ?5extend?5failed@ 0001f4b8     TpmLib:TpmLib.obj
+ 0002:0000159c       ??_C@_0DF@OAJJJKLG@Unable?5to?5get?5log?5area?5for?5TCG?5@ 0001f4dc     TpmLib:TpmEventLog.obj
+ 0002:000015d4       ??_C@_0CM@PIJCFIEB@Adding?5event?5in?5TCG?5event?5log?5a@ 0001f514     TpmLib:TpmEventLog.obj
+ 0002:00001600       ??_C@_0BE@HHMMGGDG@HASH?5Extended?5?$CFllx?6@ 0001f540     TpmLib:TpmEventLog.obj
+ 0002:00001614       ??_C@_0DK@MBGODLDK@Insufficient?5space?5?3?5Event?5not?5@ 0001f554     TpmLib:TpmEventLog.obj
+ 0002:00001650       ??_C@_0BM@MHPCHHCG@Unknown?5hash?5algorithm?5?$CFd?$AN?6@ 0001f590     TpmLib:Tpm2Integrity.obj
+ 0002:0000166c       ??_C@_0DJ@LNLDEGHP@Tpm2PcrExtend?3?5Failed?5ExecuteCo@ 0001f5ac     TpmLib:Tpm2Integrity.obj
+ 0002:000016a8       ??_C@_0CN@LMKGIIJM@Tpm2PcrExtend?3?5Response?5size?5to@ 0001f5e8     TpmLib:Tpm2Integrity.obj
+ 0002:000016d8       ??_C@_0CN@NCCLKBKF@Tpm2PcrExtend?3?5Response?5Code?5er@ 0001f618     TpmLib:Tpm2Integrity.obj
+ 0002:00001708       ??_C@_0BJ@CJMMLOKP@PtpCrbTpmCommand?5Send?5?9?5@ 0001f648     TpmLib:Tpm2Ptp.obj
+ 0002:00001724       ??_C@_05CNDJFPDP@?$CF02x?5@ 0001f664     TpmLib:Tpm2Ptp.obj
+ 0002:0000172c       ??_C@_07ENEOHAFF@?4?4?4?4?4?4?5@ 0001f66c     TpmLib:Tpm2Ptp.obj
+ 0002:00001734       ??_C@_01EEMJAFIK@?6@       0001f674     TpmLib:Tpm2Ptp.obj
+ 0002:00001738       ??_C@_0CC@MDBPJIHJ@PtpCrbTpmCommand?5ReceiveHeader?5@ 0001f678     TpmLib:Tpm2Ptp.obj
+ 0002:0000175c       ??_C@_0BN@ODJHGIAI@TPM2?3?5TPM_ST_RSP?5error?5?9?5?$CFx?6@ 0001f69c     TpmLib:Tpm2Ptp.obj
+ 0002:0000177c       ??_C@_0BM@OEDBGOFI@PtpCrbTpmCommand?5Receive?5?9?5@ 0001f6bc     TpmLib:Tpm2Ptp.obj
+ 0002:00001798       ??_C@_0EE@DHPAEMCB@WARNING?3?5TPM2?5Event?5log?5has?5Has@ 0001f6d8     TpmLib:Tpm2Help.obj
+ 0002:000017dc       ??_C@_0BK@DEFHLCN@Tpm2TisTpmCommand?5Send?5?9?5@ 0001f71c     TpmLib:Tpm2Tis.obj
+ 0002:000017f8       ??_C@_0CA@EFLHBKC@Tpm2?5is?5not?5ready?5for?5command?$CB?6@ 0001f738     TpmLib:Tpm2Tis.obj
+ 0002:00001818       ??_C@_0CB@IMPHHLJO@Tpm2?5The?5send?5buffer?5too?5small?$CB@ 0001f758     TpmLib:Tpm2Tis.obj
+ 0002:0000183c       ??_C@_0CI@BOLJHFLK@Wait?5for?5Tpm2?5response?5data?5tim@ 0001f77c     TpmLib:Tpm2Tis.obj
+ 0002:00001864       ??_C@_0CD@CEDHAJC@Tpm2TisTpmCommand?5ReceiveHeader@ 0001f7a4     TpmLib:Tpm2Tis.obj
+ 0002:00001888       ??_C@_0BN@CEGJLJBD@Tpm2TisTpmCommand?5Receive?5?9?5@ 0001f7c8     TpmLib:Tpm2Tis.obj
+ 0002:000018a8       ??_C@_0GO@JJNAEHEB@e?3?2code?2adl_n100_code?2sblplatfo@ 0001f7e8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00001918       ??_C@_0P@PMDMEMJF@ApicId?5?$DM?$DN?50xff@ 0001f858     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00001928       ??_C@_0BJ@MBLFAKBO@ApicBaseMsr?4Bits?4EN?5?$CB?$DN?50@ 0001f868     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0002:00001948       ??_C@_0GA@DALFDOAE@?$CIBufferToSort?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5@ 0001f888     SortLib:SortLib.obj
+ 0002:000019a8       ??_C@_0FI@KJMCDJHC@e?3?2code?2adl_n100_code?2sblplatfo@ 0001f8e8     SortLib:SortLib.obj
+ 0002:00001a00       ??_C@_0BI@CAPIHIPE@CPU?5SMM?5rebase?5failed?$CB?6@ 0001f940     MpInitLib:MpInitLib.obj
+ 0002:00001a18       ??_C@_09GHJEKJNN@?5?$CIWakeup?$CJ@ 0001f958     MpInitLib:MpInitLib.obj
+ 0002:00001a24       ??_C@_0L@FIKFPOGC@MP?5Init?$CFa?6@ 0001f964     MpInitLib:MpInitLib.obj
+ 0002:00001a30       ??_C@_0BL@EOGKHCIA@Invalid?5SMRR?5base?5or?5size?6@ 0001f970     MpInitLib:MpInitLib.obj
+ 0002:00001a4c       ??_C@_0CB@LKCEIHPD@SMRR?5Base?3?50x?$CF08x?5?5Mask?3?50x?$CF08x@ 0001f98c     MpInitLib:MpInitLib.obj
+ 0002:00001a70       ??_C@_0P@MGKDDOAG@MP?5Init?5?$CIRun?$CJ?6@ 0001f9b0     MpInitLib:MpInitLib.obj
+ 0002:00001a80       ??_C@_0BJ@EEAHJGAN@Detected?5?$CFd?5CPU?5threads?6@ 0001f9c0     MpInitLib:MpInitLib.obj
+ 0002:00001a9c       ??_C@_0CH@DDKCCBEG@MPINIT?5timeout?5with?5?$CFd?5APs?5comp@ 0001f9dc     MpInitLib:MpInitLib.obj
+ 0002:00001ac4       ??_C@_0DA@JHBGBBHC@PcdCpuMaxLogicalProcessorNumber@ 0001fa04     MpInitLib:MpInitLib.obj
+ 0002:00001af4       ??_C@_0BG@NHOPEAKK@?5CPU?5?$CF2d?5APIC?5ID?3?5?$CFd?6@ 0001fa34     MpInitLib:MpInitLib.obj
+ 0002:00001b0c       ??_C@_0BM@JENGOFLC@SMM?5rebase?5done?5on?5?$CFd?5CPUs?6@ 0001fa4c     MpInitLib:MpInitLib.obj
+ 0002:00001b28       ??_C@_0BA@FOMAHJLE@MP?5Init?5?$CIDone?$CJ?6@ 0001fa68     MpInitLib:MpInitLib.obj
+ 0002:00001b38       ??_C@_0CH@KIJMLAAK@?5CPU?5?$CF2d?5is?5not?5ready?5yet?$CB?5Stat@ 0001fa78     MpInitLib:MpInitLib.obj
+ 0002:00001b60       ??_C@_0BC@BFDCLBGP@LoopCount?5?$DN?5?$CF04x?6@ 0001faa0     LitePeCoffLib:LitePeCoffLib.obj
+ 0002:00001b74       ??_C@_0CK@MJPKOLAA@?$CFd?3?5PageRva?3?5?$CF08x?5Offset?3?5?$CF04x?5@ 0001fab4     LitePeCoffLib:LitePeCoffLib.obj
+ 0002:00001ba0       ??_C@_0BI@NCAAOOAL@Unknown?5RELOC?5type?3?5?$CFd?6@ 0001fae0     LitePeCoffLib:LitePeCoffLib.obj
+ 0002:00001bb8       ??_C@_0BK@JGOKANPF@ImageBase?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001faf8     ElfLib:ElfLib.obj
+ 0002:00001bd8       ??_C@_0FG@OKJIMCHP@e?3?2code?2adl_n100_code?2sblplatfo@ 0001fb18     ElfLib:ElfLib.obj
+ 0002:00001c30       ??_C@_0BC@PHBHAECB@ElfCt?9?$DOPhNum?5?$DM?550@ 0001fb70     ElfLib:ElfLib.obj
+ 0002:00001c44       ??_C@_0BG@GPKNCEHJ@ElfCt?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0001fb84     ElfLib:ElfLib.obj
+ 0002:00001c5c       ??_C@_0BI@HDMDIHGC@Elf64Hdr?9?$DOe_shnum?5?$DM?5100@ 0001fb9c     ElfLib:Elf64Lib.obj
+ 0002:00001c78       ??_C@_0FI@LBJFPNOG@e?3?2code?2adl_n100_code?2sblplatfo@ 0001fbb8     ElfLib:Elf64Lib.obj
+ 0002:00001cd0       ??_C@_0BN@EPMKHHGK@Rel64Shdr?9?$DOsh_size?5?$DM?50x10000@ 0001fc10     ElfLib:Elf64Lib.obj
+ 0002:00001cf0       ??_C@_0CC@FAHKEPA@Unsupported?5relocation?5type?5?$CF02@ 0001fc30     ElfLib:Elf64Lib.obj
+ 0002:00001d14       ??_C@_0BH@KHKDBPPG@Elf64Hdr?9?$DOe_phnum?5?$DM?550@ 0001fc54     ElfLib:Elf64Lib.obj
+ 0002:00001d2c       ??_C@_0BI@HKMDJNJC@Elf32Hdr?9?$DOe_shnum?5?$DM?5100@ 0001fc6c     ElfLib:Elf32Lib.obj
+ 0002:00001d48       ??_C@_0FI@JKKFMGLI@e?3?2code?2adl_n100_code?2sblplatfo@ 0001fc88     ElfLib:Elf32Lib.obj
+ 0002:00001da0       ??_C@_0BB@GKOBDCBD@Relocate?5SEC?5?$CFd?6@ 0001fce0     ElfLib:Elf32Lib.obj
+ 0002:00001db4       ??_C@_0BN@OJJICLIF@Rel32Shdr?9?$DOsh_size?5?$DM?50x10000@ 0001fcf4     ElfLib:Elf32Lib.obj
+ 0002:00001dd4       ??_C@_0BH@BBPFMEPK@Elf32Hdr?9?$DOe_phnum?5?$DM?550@ 0001fd14     ElfLib:Elf32Lib.obj
+ 0002:00001dec       ??_C@_0BB@FLBHIBHN@Initialize?5VT?9d?6@ 0001fd2c     Stage2SocInitLib:Stage2SocInitLib.obj
+ 0002:00001e00       ??_C@_0EA@DHACDAAP@McD0BaseAddress?50x?$CFx?5McD2BaseAd@ 0001fd40     Stage2SocInitLib:Stage2SocInitLib.obj
+ 0002:00001e40       ??_C@_0CA@DKFGMJDP@VTd?5disabled?5or?5no?5capability?$CB?6@ 0001fd80     Stage2SocInitLib:Stage2SocInitLib.obj
+ 0002:00001e60       ??_C@_0N@JHKKFPKB@VTd?5enabled?6@ 0001fda0     Stage2SocInitLib:Stage2SocInitLib.obj
+ 0002:00001e70       ??_C@_0EC@OKGKNOCI@?$CK?$CIUINT32?5?$CK?$CJ?5?$CICurrPtr?5?$CL?51?5?$CL?5size@ 0001fdb0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001eb8       ??_C@_0GP@LFOLGAPF@e?3?2code?2adl_n100_code?2sblplatfo@ 0001fdf8     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001f28       ??_C@_0FE@NNCECFHD@?$CK?$CIUINT16?5?$CK?$CJ?5?$CICurrPtr?5?$CL?51?5?$CL?5size@ 0001fe68     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001f7c       ??_C@_0CF@FEHMGHKJ@CPU?5PNVS?5Base?5Old?$DN0x?$CF08X?5New?$DN0x@ 0001febc     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001fa4       ??_C@_0CF@DBADAAJJ@CPU?5PNVS?5Size?5Old?$DN0x?$CF04X?5New?$DN0x@ 0001fee4     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001fcc       ??_C@_0BH@ICBMIGLB@CurrRatio?5?$DM?$DN?5BaseRatio@ 0001ff0c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00001fe4       ??_C@_0CF@IACDHEBL@Failed?5to?5find?5LPSS?1TPSS?5in?5Cpu@ 0001ff24     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:0000200c       ??_C@_0BK@LMMNNLAM@Patching?5LPSS?5in?5Cpu0Ist?6@ 0001ff4c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002028       ??_C@_0BK@ENIMANOP@Patching?5TPSS?5in?5Cpu0Ist?6@ 0001ff68     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002044       ??_C@_0BM@BDMFCCOO@PNVS?5Old?$DN0x?$CF08X?5New?$DN0x?$CF08X?6@ 0001ff84     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002060       ??_C@_0BM@KJIJGKJP@PNVL?5Old?$DN0x?$CF08X?5New?$DN0x?$CF08X?6@ 0001ffa0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:0000207c       ??_C@_0CB@CCKIJJFF@SANV?5Base?5Old?$DN0x?$CF08X?5New?$DN0x?$CF08X@ 0001ffbc     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000020a0       ??_C@_0CB@EHNHPOGF@SANV?5Size?5Old?$DN0x?$CF04X?5New?$DN0x?$CF04X@ 0001ffe0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000020c4       ??_C@_0BP@BHCNHIEA@NHLT?5Base?50x?$CF08X?0?5Size?50x?$CF08X?6@ 00020004     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000020e4       ??_C@_0CM@EGEOHGAA@Updated?5CPUSSDT?5Table?5in?5AcpiTa@ 00020024     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002110       ??_C@_0CM@KEDBIEPF@Updated?5CPU0IST?5Table?5in?5AcpiTa@ 00020050     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:0000213c       ??_C@_0BB@OHAGEIBM@Find?5RTCT?5table?6@ 0002007c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002150       ??_C@_0BF@DCACNOJA@Find?5DptfTabl?5table?6@ 00020090     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002168       ??_C@_0CE@DNIJKEIC@Found?5DptfTabl?5table?5succcessfu@ 000200a8     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:0000218c       ??_C@_0CJ@FIGAJJLN@Updated?5BDAT?5Table?5in?5AcpiTable@ 000200cc     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000021b8       ??_C@_0CJ@FIEAOCIE@Updated?5FADT?5Table?5entries?5in?5A@ 000200f8     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000021e4       ??_C@_0DE@FOIMFLOO@Enable?5S0ix?5?1?5Low?5Power?5S0?5Idle@ 00020124     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002218       ??_C@_04CEOGKFEO@Rtd3@     00020158     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002220       ??_C@_0BK@HEKBFFDA@Board?5SsdtRtd3?5Table?3?5?$CFx?6@ 00020160     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:0000223c       ??_C@_0CL@OKPDANEI@Updated?5Psd?5Table?5in?5AcpiTable?5@ 0002017c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002268       ??_C@_0CM@BGBOPMDM@Updated?5BERT?5Table?5in?5AcpiTable@ 000201a8     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002294       ??_C@_0BM@FIKMDBIE@Invalid?5Cpu?5Nvs?5pointer?$CB?$CB?$CB?6@ 000201d4     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000022b0       ??_C@_0BM@LLEACHDB@CPU?5Data?5HOB?5not?5available?6@ 000201f0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000022cc       ??_C@_0BI@NOGIOEFB@PpmFlags?5CFGD?5?$DN?50x?$CF08X?6@ 0002020c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000022e4       ??_C@_0BF@KGFDOLAB@Update?5Cpu?5Nvs?5Done?6@ 00020224     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000022fc       ??_C@_0BI@DEPKFOFA@RpAddress?$FL?$CFd?$FN?5?$DN?50x?$CF08X?6@ 0002023c     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002314       ??_C@_0CM@CHFDEPJN@GEI?5?$FL0x?$CFX?50x?$CFX?50x?$CFX?$FN?0?5GED?5?$FL0x?$CFX@ 00020254     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002340       ??_C@_0CA@PHPEEDDB@SiCfgData?9?$DOEcAvailable?5?5?$DN?50x?$CFX?6@ 00020280     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002360       ??_C@_0DC@FHEPFIJG@Updating?5Fans?5and?5sensors?5devic@ 000202a0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002394       ??_C@_0BC@DKHHOHDP@Num?5CPUs?5?5?$DN?50x?$CFX?6@ 000202d4     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000023a8       ??_C@_0DK@OFMOFGDL@Could?5not?5find?5PlatformNvs?5sett@ 000202e8     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:000023f0       _mPchSSerialIoI2CMode      00020330     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002470       _mPchSSerialIoUartMode     000203b0     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002520       _mPchSSerialIoSPIMode      00020460     Stage2BoardInitLib:AcpiPlatform.obj
+ 0002:00002590       ??_C@_0CK@NCMCNIGE@Found?5NVME?5controller?5at?5B?$CF02X?$HM@ 000204d0     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000025c0       ??_C@_0HF@EBMMIHMJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00020500     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002638       ??_C@_0DN@FBMOKKJL@Obtaining?5CSME?5Boot?5performance@ 00020578     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002678       ??_C@_0CD@JJDJLFLD@Found?5CSME?5Boot?5performance?5dat@ 000205b8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:0000269c       ??_C@_0BC@NILMPEGB@VBT?5not?5found?5?$CFr?6@ 000205dc     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000026b0       ??_C@_0BK@NMEBEOLA@FixUpFlashMapEntry?5Start?6@ 000205f0     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000026cc       ??_C@_0BO@KLGOHMA@Couldn?8t?5find?5Memory?5Map?5HOB?6@ 0002060c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000026ec       ??_C@_0BE@HPJJCHHF@Map?5Entry?5Count?5?$CFd?6@ 0002062c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002700       ??_C@_0BI@DCGCDPFO@Map?5index?5?$CFd?5base?50x?$CFX?6@ 00020640     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002718       ??_C@_0DG@JFGDAHHK@TSN?5GPIO?3?5No?5ADL?9P?5GPIO?5table?5a@ 00020658     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002750       ??_C@_0CF@FOLBIBEO@TSN?5GPIO?3?5Unrecognized?5BoardId?5@ 00020690     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002778       ??_C@_0BH@NPKBOKMJ@HsPhyInit?5failure?0?5?$CFr?6@ 000206b8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002790       ??_C@_0CE@KOBPGCCC@FspGfxHob?9?$DOFrameBufferBase?5?$DN?50x@ 000206d0     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000027b4       ??_C@_0BM@OODFLFOP@FspGfxHob?5is?5not?5available?6@ 000206f4     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000027d0       ??_C@_0CA@POEFIEKP@S0ix?5enabled?4?5Skipping?5SioInit?6@ 00020710     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000027f0       ??_C@_08BBPBDHJ@SioInit?6@ 00020730     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000027fc       ??_C@_0BN@FNDBDKAJ@Set?5HeciSetFipsMode?5to?50x?$CFx?6@ 0002073c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:0000281c       ??_C@_0BE@LFGPKGOI@Enabled?5FIPS?5mode?4?6@ 0002075c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002830       ??_C@_0CF@GPNOCDJJ@Failed?5to?5set?5GFX?5framebuffer?5a@ 00020770     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002858       ??_C@_0CP@KMBHNJFC@Error?5fixing?5up?5Flash?5Map?5Memor@ 00020798     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002888       ??_C@_0BN@FPCLHDEB@HeciInitLib?5init?5Status?3?5?$CFr?6@ 000207c8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000028a8       ??_C@_0BJ@CDFENAD@No?5MRC?5component?5found?$CB?6@ 000207e8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000028c4       ??_C@_0CC@LDPMLAHJ@MRC?5component?5size?5is?5too?5small@ 00020804     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000028e8       ??_C@_0CD@CIHMBKOC@Same?5MRC?5data?4?5No?5need?5to?5updat@ 00020828     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:0000290c       ??_C@_0BM@OCKAGLHG@Failed?5to?5get?5BIOS?5region?$CB?6@ 0002084c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002928       ??_C@_0DJ@FBMBJOAH@Invalid?5BIOS?5region?$CB?5BaseAddres@ 00020868     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002968       ??_C@_0EM@DBFNIPAP@Invalid?5BIOS?5region?5size?$CB?5Addre@ 000208a8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000029b4       ??_C@_0BO@GOPJPIBJ@Failed?5to?5erase?5BIOS?5region?$CB?6@ 000208f4     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000029d4       ??_C@_0BL@MJACAGKI@Failed?5to?5write?5MRC?5data?$CB?6@ 00020914     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:000029f0       ??_C@_0CF@NAEOCOCM@Successfully?5wrote?5MRC?5data?5?$EA?50@ 00020930     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002a18       ??_C@_0BH@KFDILKAB@SaveNvsData?5Done?5?9?5?$CFr?6@ 00020958     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002a30       ??_C@_0DE@GNJOEPFD@SerialPortInfo?5Type?$DN?$CFd?5BaseAddr@ 00020970     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002a64       ??_C@_0O@CKKEAFDP@Updating?5FB?5?6@ 000209a4     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002a74       ??_C@_0CC@INGPHCLL@GfxDeviceInfo?5Frame?5Buffer?5?$DN0x?$CF@ 000209b4     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002a98       ??_C@_0CD@DIKAFHLG@Stage2?3?5HwState?50x?$CFx?5TpmType?50x@ 000209d8     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002abc       ??_C@_0CO@GBJOIPCA@Stage2?3?5SmmRamBase?5?$DN?50x?$CFx?0?5SmmR@ 000209fc     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002aec       ??_C@_0BI@EALHFLIG@HobInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00020a2c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0002:00002b04       ??_C@_0DI@MIJPIHEE@Unsupported?5CPU?5SKU?0?5Device?5ID?3@ 00020a44     Stage2BoardInitLib:CpuInfoLib.obj
+ 0002:00002b3c       ??_C@_0L@CLLDBHMM@RaptorLake@ 00020a7c     Stage2BoardInitLib:CpuInfoLib.obj
+ 0002:00002b48       ??_C@_09FOAOHGGD@AlderLake@ 00020a88     Stage2BoardInitLib:CpuInfoLib.obj
+ 0002:00002b54       ??_C@_07NBCGADJA@Unknown@  00020a94     Stage2BoardInitLib:CpuInfoLib.obj
+ 0002:00002b5c       ??_C@_0BN@ILEFIHFF@Failed?5to?5find?5PEP?5CFGDATA?5?6@ 00020a9c     Stage2BoardInitLib:LowPowerSupport.obj
+ 0002:00002b80       ??_C@_0EE@NPDCFHLD@ACPI?5NVS?0?5LowPowerS0IdleConstra@ 00020ac0     Stage2BoardInitLib:LowPowerSupport.obj
+ 0002:00002bc4       ??_C@_0CA@MJKMOHFK@Unknown?5PCH?5in?5UpdatePayloadId?6@ 00020b04     Stage2BoardInitLib:MiscInit.obj
+ 0002:00002be4       ??_C@_0CO@GBPEHFOD@Set?5PayloadId?5to?50x?$CF08X?5based?5o@ 00020b24     Stage2BoardInitLib:MiscInit.obj
+ 0002:00002c14       ??_C@_0BC@ECMAKMHG@Intel?5Corporation@ 00020b54     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c28       ??_C@_06KHINEKIJ@?9dirty@  00020b68     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c30       ??_C@_0CM@OPDNCAH@?$CFa?4?$CF02d?4?$CF02d?4?$CF02d?4?$CF02d?4?$CF02d?4?$CF03@ 00020b70     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c5c       ??_C@_03ECNOPI@?$CFa?$AA@  00020b9c     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c60       ??_C@_0M@IDEGCFHD@Mar?522?52024@ 00020ba0     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c6c       ??_C@_0M@EKDMILMB@?$CFa?5?$CICPU?3?$CFa?$CJ@ 00020bac     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c78       ??_C@_03MDAFIFFL@0?40@     00020bb8     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c7c       ??_C@_0BF@FBFKDMLN@System?5Serial?5Number@ 00020bbc     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002c94       ??_C@_0BC@GKKGJODO@System?5SKU?5Number@ 00020bd4     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002ca8       ??_C@_0N@GOEFNCJC@?$CFa?5?$CIID?3?$CF02X?$CJ@ 00020be8     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002cb8       ??_C@_01HIHLOKLC@1@        00020bf8     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002cbc       ??_C@_0BH@FMPNDJFA@No?5Board?5Serial?5Number@ 00020bfc     Stage2BoardInitLib:SmbiosInit.obj
+ 0002:00002cd4       ??_C@_0BN@DJKJOPBH@?$FLHW?$FN?5Ori?5value?3?5?$CFx?5Mask?3?5?$CFx?6@ 00020c14     Stage2BoardInitLib:SioChip.obj
+ 0002:00002cf4       ??_C@_0CC@LEBNBOGJ@?$FLHW?$FN?5Write?5value?5?$CFx?5to?5offset?5?$CF@ 00020c34     Stage2BoardInitLib:SioChip.obj
+ 0002:00002d18       ??_C@_0GK@MELMIGEG@e?3?2code?2adl_n100_code?2sblplatfo@ 00020c58     Stage2BoardInitLib:SioChip.obj
+ 0002:00002d84       ??_C@_0BF@PLEACNDP@Test?5SIO?5Connection?6@ 00020cc4     Stage2BoardInitLib:SioChip.obj
+ 0002:00002d9c       ??_C@_0BM@JMJICGKE@EnterConfigMode?5?9?5chip1?5?$CFx?6@ 00020cdc     Stage2BoardInitLib:SioChip.obj
+ 0002:00002db8       ??_C@_0BM@BKAMFEAK@EnterConfigMode?5?9?5chip2?5?$CFx?6@ 00020cf8     Stage2BoardInitLib:SioChip.obj
+ 0002:00002dd4       ??_C@_0CH@HCAPKMD@ResourcePtr2?4SmallHeader?9?$DOByte?5@ 00020d14     Stage2BoardInitLib:SioChip.obj
+ 0002:00002dfc       ??_C@_0CB@LKEMBDN@SIO?5device?5enable?5?9?5Device?5?3?5?$CFx@ 00020d3c     Stage2BoardInitLib:SioChip.obj
+ 0002:00002e20       ??_C@_0BN@PLNJPEMO@LocalDevices?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00020d60     Stage2BoardInitLib:SioChip.obj
+ 0002:00002e40       ??_C@_0BB@LABIKABE@SioInit?5?9?5Entry?6@ 00020d80     Stage2BoardInitLib:SioChip.obj
+ 0002:00002e54       ??_C@_0BI@HFMAEANG@SioInit?5?9?5Enable?54E?54F?6@ 00020d94     Stage2BoardInitLib:SioChip.obj
+ 0002:00002e6c       ??_C@_0CB@JPPDLGIE@SioInit?5?9?5LpcIoDecodeRanges?3?5?$CFx@ 00020dac     Stage2BoardInitLib:SioChip.obj
+ 0002:00002e90       ??_C@_0CG@MINJCNMH@SioInit?5?9?5Return?5CHIPID2?3Not?5IT@ 00020dd0     Stage2BoardInitLib:SioChip.obj
+ 0002:00002eb8       ??_C@_0CG@NJKEEHLO@SioInit?5?9?5Return?5CHIPID1?3Not?5IT@ 00020df8     Stage2BoardInitLib:SioChip.obj
+ 0002:00002ee0       ??_C@_0P@CCAFEDIC@SioInit?5Entry?6@ 00020e20     Stage2BoardInitLib:SioChip.obj
+ 0002:00002ef0       ??_C@_0CA@EEHEIOC@SioDriverEntryPoint?5?9?5chip1?5?$CFx?6@ 00020e30     Stage2BoardInitLib:SioChip.obj
+ 0002:00002f10       ??_C@_0CA@ICNDDKEM@SioDriverEntryPoint?5?9?5chip2?5?$CFx?6@ 00020e50     Stage2BoardInitLib:SioChip.obj
+ 0002:00002f30       ??_C@_0BN@OEAFGAAI@SioDriverEntryPoint?5Error?5?$CB?6@ 00020e70     Stage2BoardInitLib:SioChip.obj
+ 0002:00002f50       ??_C@_0BH@MDANIBCC@SIO?5It8659fHwMonStart?6@ 00020e90     Stage2BoardInitLib:SioChip.obj
+ 0002:00002f68       ??_C@_0GK@KEECCDAG@e?3?2code?2adl_n100_code?2sblplatfo@ 00020ea8     PciEnumerationLib:PciEnumerationLib.obj
+ 0002:00002fd4       ??_C@_0L@PKHHCODA@BarIdx?5?$DM?52@ 00020f14     PciEnumerationLib:PciEnumerationLib.obj
+ 0002:00002fe0       ??_C@_0CI@MJCNHGAB@ResBase?$FLIndex?$FN?5?$DM?$DN?5?$CIResLimit?$FLInd@ 00020f20     PciEnumerationLib:PciEnumerationLib.obj
+ 0002:00003008       ??_C@_0BE@DIKOJCIL@RootBridgeCount?5?$DO?50@ 00020f48     PciEnumerationLib:PciEnumerationLib.obj
+ 0002:0000301c       ??_C@_0BF@IKNIEHOE@ACPI?5Table?50x?$CF08X?5?9?5@ 00020f5c     AcpiInitLib:AcpiInitLib.obj
+ 0002:00003034       ??_C@_09PDNFOPDD@Replaced?6@ 00020f74     AcpiInitLib:AcpiInitLib.obj
+ 0002:00003040       ??_C@_09PPFPJPA@Appended?6@ 00020f80     AcpiInitLib:AcpiInitLib.obj
+ 0002:0000304c       ??_C@_0BJ@PGEPMPHJ@Acpi?5update?5failed?5?9?5?$CFr?6@ 00020f8c     AcpiInitLib:AcpiInitLib.obj
+ 0002:00003068       ??_C@_0CE@IBCKAGAO@Could?5not?5get?5reserved?5region?5b@ 00020fa8     AcpiInitLib:AcpiInitLib.obj
+ 0002:0000308c       ??_C@_0CB@LNLJIBE@Publish?5ACPI?5table?3?5?$CFa?5?$EA?50x?$CF08X@ 00020fcc     AcpiInitLib:AcpiInitLib.obj
+ 0002:000030b0       ??_C@_0DF@NIBJILIL@XsdtIndex?5?$DM?5_gPcd_FixedAtBuild_@ 00020ff0     AcpiInitLib:AcpiInitLib.obj
+ 0002:000030e8       ??_C@_0FO@FFDCFLBN@e?3?2code?2adl_n100_code?2sblplatfo@ 00021028     AcpiInitLib:AcpiInitLib.obj
+ 0002:00003148       ??_C@_0BI@BPOEOAIK@Not?5adding?5ACPI?5table?5?6@ 00021088     AcpiInitLib:AcpiInitLib.obj
+ 0002:00003160       ??_C@_0BM@NEEENG@Jump?5to?5Wake?5vector?5?$DN?50x?$CFx?6@ 000210a0     AcpiInitLib:AcpiInitLib.obj
+ 0002:0000317c       _XsdtTmp                   000210bc     AcpiInitLib:AcpiInitLib.obj
+ 0002:000031a0       _RsdpTmp                   000210e0     AcpiInitLib:AcpiInitLib.obj
+ 0002:000031c4       ??_C@_0CF@PBOCGPIF@FPDT?3?5ResetEnd?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$DN@ 00021104     AcpiInitLib:AcpiFpdt.obj
+ 0002:000031ec       ??_C@_0CF@CAPGPFOI@FPDT?3?5OsLoaderLoadImageStart?5?5?$DN@ 0002112c     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003214       ??_C@_0CF@DMLHEHFK@FPDT?3?5OsLoaderStartImageStart?5?$DN@ 00021154     AcpiInitLib:AcpiFpdt.obj
+ 0002:0000323c       ??_C@_0CF@JMLAMGEP@FPDT?3?5ExitBootServicesEntry?5?5?5?$DN@ 0002117c     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003264       ??_C@_0CF@BNCFDBHA@FPDT?3?5ExitBootServicesExit?5?5?5?5?$DN@ 000211a4     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003290       ??_C@_0HK@BBABOLEI@?$CIS3PerfTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG@ 000211d0     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003310       ??_C@_0FL@CGPGMDAK@e?3?2code?2adl_n100_code?2sblplatfo@ 00021250     AcpiInitLib:AcpiFpdt.obj
+ 0002:0000336c       ??_C@_0CF@LIKHNKLP@FPDT?3?5S3Resume?9?$DOAverageResume?5?$DN@ 000212ac     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003394       ??_C@_0CE@ECLOHCJD@FPDT?3?5S3Resume?9?$DOResumeCount?5?5?5?$DN@ 000212d4     AcpiInitLib:AcpiFpdt.obj
+ 0002:000033b8       ??_C@_0CF@PLFDKOOL@FPDT?3?5S3Resume?9?$DOFullResume?5?5?5?5?$DN@ 000212f8     AcpiInitLib:AcpiFpdt.obj
+ 0002:000033e0       ??_C@_0HM@EODIGPOP@?$CISblPerfTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5@ 00021320     AcpiInitLib:AcpiFpdt.obj
+ 0002:00003460       ??_C@_0EE@MKKLKAIN@Updated?5SBL?5Performance?5Table?3?5@ 000213a0     AcpiInitLib:AcpiFpdt.obj
+ 0002:000034a4       ??_C@_0P@HKCLMLDO@TABLE?5is?5NULL?6@ 000213e4     AcpiInitLib:AcpiFpdt.obj
+ 0002:000034b4       _mBootGraphicsResourceTableTemplate 000213f4     AcpiInitLib:AcpiBgrt.obj
+ 0002:000034f0       ??_C@_0EO@OJFNPJIA@FspHeader?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8F?8?$CJ@ 00021430     FspsApiLib:FspSiliconInit.obj
+ 0002:00003540       ??_C@_0FP@FFBICNAK@e?3?2code?2adl_n100_code?2sblplatfo@ 00021480     FspsApiLib:FspSiliconInit.obj
+ 0002:000035a0       ??_C@_0DG@IOGIOOIG@FspHeader?9?$DOImageBase?5?$DN?$DN?5_gPcd_B@ 000214e0     FspsApiLib:FspSiliconInit.obj
+ 0002:000035d8       ??_C@_0CK@GAAHMGBH@FspHeader?9?$DOFspSiliconInitEntryO@ 00021518     FspsApiLib:FspSiliconInit.obj
+ 0002:00003604       ??_C@_0BK@FEOHIHFP@Call?5FspSiliconInit?5?4?4?4?5?6@ 00021544     FspsApiLib:FspSiliconInit.obj
+ 0002:00003620       ??_C@_03OEMNCLFL@?$CFr?6@  00021560     FspsApiLib:FspSiliconInit.obj
+ 0002:00003624       ??_C@_0CB@DDHHOHMG@FspHeader?9?$DOImageBase?5?$DN?$DN?5FspsBas@ 00021564     FspsApiLib:FspSiliconInit.obj
+ 0002:00003648       ??_C@_0CD@BAFDIOOM@Call?5FspMultiPhaseSiliconInit?5?4@ 00021588     FspsApiLib:FspSiliconInit.obj
+ 0002:0000366c       ??_C@_0BL@IPMDEOPD@FSP?5Requested?5Reboot?5?4?4?4?6?6@ 000215ac     FspsApiLib:FspMisc.obj
+ 0002:00003688       ??_C@_0DF@OJFFGHJM@FspVariableHandler?3?5Got?5FSP_STA@ 000215c8     FspsApiLib:FspVariableServices.obj
+ 0002:000036c0       ??_C@_0GE@KCPEGFCJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00021600     FspsApiLib:FspVariableServices.obj
+ 0002:00003724       ??_C@_0CA@MKFFHOFJ@FspVarReqParams?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00021664     FspsApiLib:FspVariableServices.obj
+ 0002:00003744       ??_C@_0BJ@MJJAPFMA@FSP?5Variable?5Request?5?$CFd?6@ 00021684     FspsApiLib:FspVariableServices.obj
+ 0002:00003760       ??_C@_0BC@KOIMNLOM@?7VariableName?5?$CFs?6@ 000216a0     FspsApiLib:FspVariableServices.obj
+ 0002:00003774       ??_C@_0BC@NOOCKOHM@?7VariableGuid?5?$CFg?6@ 000216b4     FspsApiLib:FspVariableServices.obj
+ 0002:00003788       ??_C@_0BA@GKDBNCPK@?7DataSize?50x?$CFX?6@ 000216c8     FspsApiLib:FspVariableServices.obj
+ 0002:00003798       ??_C@_0BA@GIPGKPIK@?7Data?5ptr?50x?$CFX?6@ 000216d8     FspsApiLib:FspVariableServices.obj
+ 0002:000037a8       ??_C@_0BH@KMPHMBGH@?$CBEFI_ERROR?5?$CIFspStatus?$CJ@ 000216e8     FspsApiLib:FspVariableServices.obj
+ 0002:000037c0       ??_C@_0FP@NNHMKLDG@e?3?2code?2adl_n100_code?2sblplatfo@ 00021700     FspsApiLib:FspNotifyPhase.obj
+ 0002:00003820       ??_C@_0BP@CBEFJCID@Call?5FspNotifyPhase?$CI?$CF02X?$CJ?5?4?4?4?5@ 00021760     FspsApiLib:FspNotifyPhase.obj
+ 0002:00003840       ??_C@_0M@IPBNJNIL@Core?$CITM?$CJ?5i9@ 00021780     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:0000384c       ??_C@_0M@BBJOLAAF@Core?$CITM?$CJ?5i7@ 0002178c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003858       ??_C@_0M@CDKINCIH@Core?$CITM?$CJ?5i5@ 00021798     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003864       ??_C@_0M@HFPCHFAB@Core?$CITM?$CJ?5i3@ 000217a4     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003870       ??_C@_0M@HCPLNNNN@Core?$CITM?$CJ?5m3@ 000217b0     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:0000387c       ??_C@_0M@CEKBHKFL@Core?$CITM?$CJ?5m5@ 000217bc     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003888       ??_C@_0M@BGJHBINJ@Core?$CITM?$CJ?5m7@ 000217c8     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003894       ??_C@_0L@NGOOBNHC@Core?$CITM?$CJ?5M@ 000217d4     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038a0       ??_C@_0L@NCIFNAD@Pentium?$CIR?$CJ@ 000217e0     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038ac       ??_C@_0L@CEOPHFOD@Celeron?$CIR?$CJ@ 000217ec     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038b8       ??_C@_08LIELDOLP@Atom?$CITM?$CJ@ 000217f8     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038c4       ??_C@_07FEMIDNOA@Xeon?$CIR?$CJ@ 00021804     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038cc       ??_C@_0BB@DDNMAEHO@XXXX?4XXX?4XXX?4XXX@ 0002180c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038e0       ??_C@_0P@LGLJHAOO@Intel?5Platform@ 00021820     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000038f0       ??_C@_0CK@NEKIEKOB@SmbiosStringsPtr?5Memory?5allocat@ 00021830     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:0000391c       ??_C@_0DB@OKOHGKKJ@?$CBEFI_ERROR?5?$CI?$CI?$CIRETURN_STATUS?$CJ?$CI0x@ 0002185c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003950       ??_C@_0GC@KJOPNCGC@e?3?2code?2adl_n100_code?2sblplatfo@ 00021890     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000039b4       ??_C@_0CF@LIJDMGOG@SmbiosStringsPtr?5Not?5Sufficient@ 000218f4     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000039dc       ??_C@_0BP@FDLCGCGM@CPU?5Brand?5String?5Not?5Supported@ 0002191c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:000039fc       ??_C@_07NMEOCCFJ@Socket0@  0002193c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003a04       ??_C@_05CDGBNGHP@Intel@    00021944     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003a0c       ??_C@_0CH@OEOEFEEJ@Memory?5not?5allocated?5for?5SMBIOS@ 0002194c     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003a38       _mDefaultSmbiosStrings     00021978     SmbiosInitLib:SmbiosInitLib.obj
+ 0002:00003ab0       ??_C@_0BE@IFIBONBD@Context?4ShNum?5?$DM?5100@ 000219f0     UniversalPayloadLib:UniversalPayloadLib.obj
+ 0002:00003ac8       ??_C@_0HA@PMJBOGNJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00021a08     UniversalPayloadLib:UniversalPayloadLib.obj
+ 0002:00003b38       ??_C@_0L@EENAFFBN@?4upld_info@ 00021a78     UniversalPayloadLib:UniversalPayloadLib.obj
+ 0002:00003b44       ??_C@_06GKAFDMJG@?4upld?4@ 00021a84     UniversalPayloadLib:UniversalPayloadLib.obj
+ 0002:00003b4c       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 00021a8c     BasePciExpressLib:PciExpressLib.obj
+ 0002:00003b70       ??_C@_0FL@CFLIFKMB@e?3?2code?2adl_n100_code?2sblplatfo@ 00021ab0     BasePciExpressLib:PciExpressLib.obj
+ 0002:00003bd0       ??_C@_0FN@PBOLPGFC@e?3?2code?2adl_n100_code?2sblplatfo@ 00021b10     GpioSiLib:GpioSiLib.obj
+ 0002:00003c30       ??_C@_0GC@GBJMKIOG@e?3?2code?2adl_n100_code?2sblplatfo@ 00021b70     PchInfoLib:PchInfoLibAdl.obj
+ 0002:00003c94       ??_C@_0CH@GGJALGBL@GetPchPcieRpDevFun?5invalid?5RpNu@ 00021bd4     PchInfoLib:PchInfoLibAdl.obj
+ 0002:00003cbc       _mPchPcieControllerInfo    00021bfc     PchInfoLib:PchInfoLibAdl.obj
+ 0002:00003cd4       _mUartMmPciOffset          00021c14     PlatformHookLib:PlatformHookLib.obj
+ 0002:00003cf0       ??_C@_0FJ@JGEPBHLN@e?3?2code?2adl_n100_code?2sblplatfo@ 00021c30     BasePrintLib:PrintLibInternal.obj
+ 0002:00003d50       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00021c90     BasePrintLib:PrintLibInternal.obj
+ 0002:00003d94       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00021cd4     BasePrintLib:PrintLibInternal.obj
+ 0002:00003db0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00021cf0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003df8       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00021d38     BasePrintLib:PrintLibInternal.obj
+ 0002:00003e88       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 00021dc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f0c       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00021e4c     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f1c       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00021e5c     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f28       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00021e68     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f5c       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 00021e9c     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f68       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 00021ea8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f84       ??_C@_04JIMNDDED@?$CF08X@  00021ec4     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f8c       ??_C@_02PCIJFNDE@?$AN?6@   00021ecc     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f90       ??_C@_01LIIJDEN@?$AN@      00021ed0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003f98       _mWarningString            00021ed8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004030       _mErrorString              00021f70     BasePrintLib:PrintLibInternal.obj
+ 0002:000042e8       ??_C@_0CI@BMBNMDKB@TokenNumber?5?$CL?51?5?$DM?5?$CILocalTokenCo@ 00022228     PcdLib:Pcd.obj
+ 0002:00004310       ??_C@_0FD@BFHFPLHO@e?3?2code?2adl_n100_code?2sblplatfo@ 00022250     PcdLib:Pcd.obj
+ 0002:00004368       ??_C@_0HA@NINFNLNG@?$CILocalTokenNumber?5?$CG?5?$CI?$CI0x0U?5?$DM?$DM?52@ 000222a8     PcdLib:Pcd.obj
+ 0002:000043d8       ??_C@_0FH@DANFAFHH@e?3?2code?2adl_n100_code?2sblplatfo@ 00022318     PcdLib:Service.obj
+ 0002:00004430       ??_C@_0DP@BOGBALDF@?$CIGetSize?5?$DN?$DN?5PeiPcdGetSize?5?$CIToke@ 00022370     PcdLib:Service.obj
+ 0002:00004470       ??_C@_0EN@GABMHEON@e?3?2code?2adl_n100_code?2sblplatfo@ 000223b0     BaseLib:Unaligned.obj
+ 0002:000044c0       ??_C@_0BF@HFCJCGAE@Gdtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00022400     BaseLib:X86ReadGdtr.obj
+ 0002:000044d8       ??_C@_0EP@NGBDAKJB@e?3?2code?2adl_n100_code?2sblplatfo@ 00022418     BaseLib:X86ReadGdtr.obj
+ 0002:00004528       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00022468     BaseLib:LinkedList.obj
+ 0002:00004540       ??_C@_0EO@OPEMLGCJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00022480     BaseLib:LinkedList.obj
+ 0002:00004590       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000224d0     BaseLib:LinkedList.obj
+ 0002:000045b4       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000224f4     BaseLib:LinkedList.obj
+ 0002:000045d4       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00022514     BaseLib:LinkedList.obj
+ 0002:000045f0       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 00022530     BaseLib:LinkedList.obj
+ 0002:00004618       ??_C@_0EM@FFPKNGKC@e?3?2code?2adl_n100_code?2sblplatfo@ 00022558     BaseLib:CheckSum.obj
+ 0002:00004664       ??_C@_0CO@MIFOIBMA@Length?5?$DM?$DN?5?$CI0xFFFFFFFF?5?9?5?$CI?$CIUINTN@ 000225a4     BaseLib:CheckSum.obj
+ 0002:00004698       ??_C@_0FG@BMGIPFHC@e?3?2code?2adl_n100_code?2sblplatfo@ 000225d8     BaseLib:DivU64x32Remainder.obj
+ 0002:000046f0       ??_C@_0DB@KLAMONNG@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 00022630     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00004728       ??_C@_0FO@GFPNAAJP@e?3?2code?2adl_n100_code?2sblplatfo@ 00022668     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:00004788       ??_C@_0DB@EEMOIGOI@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 000226c8     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:000047bc       ??_C@_0DB@EADLFGNF@?$CI?$CIAddress?$CJ?5?$CG?5?$CI0xfffffffff000000@ 000226fc     BasePciSegmentLibPci:PciSegmentLib.obj
+ 0002:000047f0       ??_C@_0GH@JFDMAFKL@e?3?2code?2adl_n100_code?2sblplatfo@ 00022730     PchPciBdfLib:PchPciBdfLib.obj
+ 0002:00004858       ??_C@_0DM@OCKLIJPN@GPIO?5ERROR?3?5Gpio?5pad?5not?5owned?5@ 00022798     GpioLib:GpioLib.obj
+ 0002:00004894       ??_C@_0DO@DMKHNGOK@GPIO?5ERROR?3?5Incorrect?5GpioPad?5?$CI@ 000227d4     GpioLib:GpioLib.obj
+ 0002:000048d8       ??_C@_0ED@HMIHIHJJ@GPIO?5ERROR?3?5Pin?5number?5?$CI?$CFd?$CJ?5exc@ 00022818     GpioLib:GpioLib.obj
+ 0002:00004920       ??_C@_0FJ@FPGCKJOB@e?3?2code?2adl_n100_code?2sblplatfo@ 00022860     GpioLib:GpioLib.obj
+ 0002:00004980       ??_C@_0FF@NONPAPPL@GPIO?5ERROR?3?5Group?5argument?5?$CI?$CFd?$CJ@ 000228c0     GpioLib:GpioLib.obj
+ 0002:000049d8       ??_C@_0EK@CMEEIJDH@GPIO?5ERROR?3?5Only?5GPD?5group?5pads@ 00022918     GpioLib:GpioLib.obj
+ 0002:00004a24       ??_C@_0DB@PGNLPLBE@GPIO?5ERROR?3?5Group?5?$CFd?5has?5no?5pad@ 00022964     GpioLib:GpioLib.obj
+ 0002:00004a58       ??_C@_0FK@HNJNFHHI@e?3?2code?2adl_n100_code?2sblplatfo@ 00022998     GpioLib:GpioInit.obj
+ 0002:00004ab8       ??_C@_0EB@KCDIFNFN@GPIO?5ERROR?3?5Pin?5number?5?$CI?$CFd?$CJ?5exc@ 000229f8     GpioLib:GpioInit.obj
+ 0002:00004b00       ??_C@_0EB@CNNHIGCH@GPIO?5ERROR?3?5Accessing?5pad?5not?5o@ 00022a40     GpioLib:GpioInit.obj
+ 0002:00004b48       ??_C@_0FC@HODHCELM@?$CK?$CK?5Please?5make?5sure?5the?5GPIO?5us@ 00022a88     GpioLib:GpioInit.obj
+ 0002:00004ba0       ??_C@_0EL@GJBABCI@?$CK?$CK?5All?5the?5GPIO?5occupied?5by?5CSM@ 00022ae0     GpioLib:GpioInit.obj
+ 0002:00004bf0       ??_C@_0EC@KKMLPINE@GPIO?5ERROR?3?5Gpio?5pad?5for?5SCI?5is@ 00022b30     GpioLib:GpioInit.obj
+ 0002:00004c34       ??_C@_0DB@ELHMEJMP@?$CBEFI_ERROR?5?$CI?$CI?$CIRETURN_STATUS?$CJ?$CI0x@ 00022b74     GpioLib:GpioInit.obj
+ 0002:00004c68       ??_C@_0DB@GOKLKICH@GPIO?5ERROR?3?5Group?5?$CFd?5has?5no?5pad@ 00022ba8     GpioLib:GpioInit.obj
+ 0002:00004c9c       ??_C@_0CI@OCNOJLLN@GPIO?5PAD?3?50x?$CF08X?5?5?5DATA?3?50x?$CF08X@ 00022bdc     GpioLib:GpioInit.obj
+ 0002:00004cc4       ??_C@_0CI@KKCJMEFG@Provide?5either?5Tag?5or?5Gpio?5Tabl@ 00022c04     GpioLib:GpioInit.obj
+ 0002:00004cec       ??_C@_0BI@OEFNJECD@GpioInit?$CI0x?$CFp?3?$CFd?$CJ?5Done?6@ 00022c2c     GpioLib:GpioInit.obj
+ 0002:00004d04       ??_C@_0DA@POEOOOGF@Cannot?5find?5base?5GPIO?5table?5for@ 00022c44     GpioLib:GpioInit.obj
+ 0002:00004d34       ??_C@_0BN@HIFCIJKL@Inconsistent?5GPIO?5item?5size?6@ 00022c74     GpioLib:GpioInit.obj
+ 0002:00004d54       ??_C@_0CG@BIDNFCHK@Cannot?5allocate?5buffer?5for?5Gpio@ 00022c94     GpioLib:GpioInit.obj
+ 0002:00004d80       ??_C@_0FG@BAMFMPIB@Calculate?5Hash?5for?5component?5Ty@ 00022cc0     SecureBootLib:SecureBootHash.obj
+ 0002:00004dd8       ??_C@_0BP@EOOKPMDB@Hash?5Calculation?5is?5invalid?$CB?$CB?6@ 00022d18     SecureBootLib:SecureBootHash.obj
+ 0002:00004df8       ??_C@_0DP@OOKNIEJJ@HASH?5verification?5for?5usage?5?$CI0x@ 00022d38     SecureBootLib:SecureBootHash.obj
+ 0002:00004e38       ??_C@_0BL@GLBKBLFI@First?5?$CFd?5Bytes?5Input?5Data?6@ 00022d78     SecureBootLib:SecureBootHash.obj
+ 0002:00004e54       ??_C@_0BK@OPNABAMO@Last?5?$CFd?5Bytes?5Input?5Data?6@ 00022d94     SecureBootLib:SecureBootHash.obj
+ 0002:00004e70       ??_C@_0O@NABEPPGI@Image?5Digest?6@ 00022db0     SecureBootLib:SecureBootHash.obj
+ 0002:00004e80       ??_C@_0BC@PFLFHEBO@HashStore?5Digest?6@ 00022dc0     SecureBootLib:SecureBootHash.obj
+ 0002:00004e94       ??_C@_0DF@FHBJJPBK@SignType?5?$CI0x?$CFx?$CJ?5SignSize?5?$CI0x?$CFx?$CJ@ 00022dd4     SecureBootLib:SecureBootRsa.obj
+ 0002:00004ecc       ??_C@_0CJ@MJKMHBCN@RSA?5verification?5for?5usage?5?$CI0x?$CF@ 00022e0c     SecureBootLib:SecureBootRsa.obj
+ 0002:00004ef8       ??_C@_0L@FMDAGKAH@Signature?6@ 00022e38     SecureBootLib:SecureBootRsa.obj
+ 0002:00004f04       ??_C@_0M@KICDAGDC@Public?5Key?6@ 00022e44     SecureBootLib:SecureBootRsa.obj
+ 0002:00004f10       ??_C@_0DA@JEGNDIAD@?$FLHECI?$FN?5HeciGetFwVersionMsg?5fail@ 00022e50     HeciLib:HeciLib.obj
+ 0002:00004f40       ??_C@_0DA@IKFKCIBC@?$FLHECI?$FN?5HeciGetFwVersionMsg?5fail@ 00022e80     HeciLib:HeciLib.obj
+ 0002:00004f70       ??_C@_0DA@FHDLMOF@?$FLHECI?$FN?5HeciGetFwCapsSkuMsg?5fail@ 00022eb0     HeciLib:HeciLib.obj
+ 0002:00004fa0       ??_C@_0DA@BLEEKMPE@?$FLHECI?$FN?5HeciGetFwCapsSkuMsg?5fail@ 00022ee0     HeciLib:HeciLib.obj
+ 0002:00004fd0       ??_C@_0CL@NCICPOFP@CSME?5PERF?5Data?3?5Could?5not?5alloc@ 00022f10     HeciLib:HeciLib.obj
+ 0002:00004ffc       ??_C@_0CP@IECIFJHC@Heci?5Get?5Csme?5Perf?5Data?5failed?5@ 00022f3c     HeciLib:HeciLib.obj
+ 0002:0000502c       ??_C@_0CA@GILDKPOG@Heci?5Get?5Csme?5Perf?5Data?5failed?6@ 00022f6c     HeciLib:HeciLib.obj
+ 0002:0000504c       ??_C@_0CJ@JOAEIJKI@Heci?5Get?5Csme?5Perf?5Data?5Msg?5suc@ 00022f8c     HeciLib:HeciLib.obj
+ 0002:00005078       ??_C@_0BO@JELCFENE@HECI1?5MeFirmwareStatus?5?$DN?5?$CFx?5?6@ 00022fb8     HeciLib:HeciLib.obj
+ 0002:00005098       ??_C@_0FC@PAJFLLD@CheckAndFixHeciForAccess?5?$CI?$CJ?5?9?5M@ 00022fd8     HeciLib:HeciCore.obj
+ 0002:000050f0       ??_C@_0EK@CGHJLMC@HECI?5Interface?5ERROR?3?5Timeout?5d@ 00023030     HeciLib:HeciCore.obj
+ 0002:00005140       ??_C@_0FK@IBHBFIOF@HeciPacketWrite?3?5EFI_TIMEOUT?5du@ 00023080     HeciLib:HeciCore.obj
+ 0002:0000519c       ??_C@_0BL@PEOFFEKE@HeciInitialize?5?$CI?$CJ?5?9?5Start?6@ 000230dc     HeciLib:HeciCore.obj
+ 0002:000051b8       ??_C@_0DC@ENJMAAJD@InitializeHeci?5?$CI?$CJ?5?9?5H_RDY?5is?5al@ 000230f8     HeciLib:HeciCore.obj
+ 0002:000051ec       ??_C@_0CA@JMFHBLCO@InitializeHeci?5?$CI?$CJ?5?9?5?5Set?5H_RDY?6@ 0002312c     HeciLib:HeciCore.obj
+ 0002:0000520c       ??_C@_0BL@HHFEMIAE@?$FLHECI?$CFd?$FN?5Got?5msg?5?$CFr?3?5?$CF08X?6@ 0002314c     HeciLib:HeciCore.obj
+ 0002:00005228       ??_C@_0N@CKELMLLI@ME?5Mode?3?5?$CFX?6@ 00023168     HeciLib:HeciCore.obj
+ 0002:00005238       ??_C@_0BI@PCPONEOM@Failed?5to?5Get?5ME?5Mode?$CB?6@ 00023178     HeciLib:HeciCore.obj
+ 0002:00005250       ??_C@_0DK@LOLMBBFB@?$FLHECI?$CFd?$FN?5HeciSendwAck?5failed?5on@ 00023190     HeciLib:HeciCore.obj
+ 0002:0000528c       ??_C@_0DC@MJAJGKP@?$FLHECI?$CFd?$FN?5HeciSendwAck?5failed?5on@ 000231cc     HeciLib:HeciCore.obj
+ 0002:000052c0       ??_C@_0BO@LICAOHCC@?$FLHECI?$CFd?$FN?5Resetting?5interface?6@ 00023200     HeciLib:HeciCore.obj
+ 0002:000052e0       ??_C@_0DF@HFJNNIPC@?$FLHECI?$CFd?$FN?5?9?5Step1?5Enable?5Host?5Re@ 00023220     HeciLib:HeciCore.obj
+ 0002:00005318       ??_C@_0DJ@HKBBNFHB@?$FLHECI?$CFd?$FN?5?9?5Step2?5Wait?5for?5reset@ 00023258     HeciLib:HeciCore.obj
+ 0002:00005354       ??_C@_0DJ@KMAJBFOA@?$FLHECI?$CFd?$FN?5?9?5Step3?5?5Wait?5for?5ME?5r@ 00023294     HeciLib:HeciCore.obj
+ 0002:00005390       ??_C@_06LAPOKDF@INTEL?5@   000232d0     TccLib:TccLib.obj
+ 0002:00005398       ??_C@_0DL@DJMCJKOI@HeciSetMeasuredBootState?3?5Messa@ 000232d8     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:000053d4       ??_C@_0CP@EPBNMGHA@HeciGetErLog?5Error?3?5Could?5not?5a@ 00023314     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:00005404       ??_C@_0CJ@DGCOPGKP@HeciGetHerDataSha384?3?5Invalid?5p@ 00023344     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:00005430       ??_C@_0CL@DMHELHBD@MMIO?5Bar?5for?5HECI?5device?5isn?8t?5@ 00023370     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:00005460       ??_C@_0FO@FGAGFENG@HeciGetHerDataFromMmio?5Error?3?5H@ 000233a0     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:000054c0       ??_C@_0DC@IBPNJHIO@HeciSetFipsMode?3?5Message?5failed@ 00023400     HeciDxeMeExtLib:HeciMeExtLib.obj
+ 0002:00005500       _mMtrrLibFixedMtrrTable    00023440     MtrrLib:MtrrSync.obj
+ 0002:00005584       ??_C@_0BJ@FKJAAJLB@SpinLock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000234c4     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:000055a0       ??_C@_0GF@NNMGONGA@e?3?2code?2adl_n100_code?2sblplatfo@ 000234e0     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:00005608       ??_C@_0DF@GPAOIIHK@LockValue?5?$DN?$DN?5?$CI?$CIUINTN?$CJ?52?$CJ?5?$HM?$HM?5Loc@ 00023548     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:00005640       ??_C@_0BG@GJANEBOB@Value?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00023580     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0002:00005658       ??_C@_0BL@MEBFOGIB@TriggerPayloadSwSmi?3?50x?$CFx?6@ 00023598     S3SaveRestoreLib:S3SaveRestore.obj
+ 0002:00005674       ??_C@_0BN@CAIPJKBO@TriggerPayloadSwSmi?5?9?3?50x?$CFx?6@ 000235b4     S3SaveRestoreLib:S3SaveRestore.obj
+ 0002:00005694       ??_C@_0CB@FACBPBDF@Invalid?5Communication?5area?5size@ 000235d4     S3SaveRestoreLib:S3SaveRestore.obj
+ 0002:000056b8       ??_C@_0BP@FHGJNKIB@FindS3Info?3?5not?5found?5ID?30x?$CFx?6@ 000235f8     S3SaveRestoreLib:S3SaveRestore.obj
+ 0002:000056d8       ??_C@_0CJ@KLPHMNPG@Value?5after?5restore?5reg?5?$EA?50x?$CF08@ 00023618     S3SaveRestoreLib:S3SaveRestore.obj
+ 0002:00005708       ??_C@_0FL@KIAIPDMO@?$CIListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI@ 00023648     SortLib:InsertionSort.obj
+ 0002:00005768       ??_C@_0FO@HNGCPLNH@e?3?2code?2adl_n100_code?2sblplatfo@ 000236a8     SortLib:InsertionSort.obj
+ 0002:000057c8       ??_C@_0BL@HGDHIEJE@PageTables?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00023708     PagingLib:Paging32To64.obj
+ 0002:000057e8       ??_C@_0FP@MOGGMMI@e?3?2code?2adl_n100_code?2sblplatfo@ 00023728     PagingLib:Paging32To64.obj
+ 0002:00005848       ??_C@_0BB@LKCKPMMO@PageTables?50x?$CFX?6@ 00023788     PagingLib:Paging32To64.obj
+ 0002:00005860       _gGdtEntries               000237a0     PagingLib:Paging32To64.obj
+ 0002:000058a8       _gGdt                      000237e8     PagingLib:Paging32To64.obj
+ 0002:000058b0       ??_C@_0CH@ELEGFGFH@GetCpuPcieRpDevFun?5invalid?5RpNu@ 000237f0     PciePm:PciePm.obj
+ 0002:000058d8       ??_C@_0FH@GCGCCNPI@e?3?2code?2adl_n100_code?2sblplatfo@ 00023818     PciePm:PciePm.obj
+ 0002:00005930       ??_C@_0BD@PHEJAELH@Pch?9S?5is?5detected?6@ 00023870     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005944       ??_C@_0BD@OGDEGOMO@Pch?9P?5is?5detected?6@ 00023884     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005958       ??_C@_0BD@EPCFOJPE@Pch?9N?5is?5detected?6@ 00023898     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:0000596c       ??_C@_0BC@ECJMMJPL@Unsupported?5PCH?4?6@ 000238ac     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005980       ??_C@_02FDGHKGEB@be@       000238c0     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005984       ??_C@_06BLBILCMH@NOT?5BE@  000238c4     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:0000598c       ??_C@_0CD@HLJEHFHG@BIOS?5SPI?5region?5will?5?$CFa?5protect@ 000238cc     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:000059b0       ??_C@_0BG@NLEKJIGH@Frame?5Buffer?5Enabled?6@ 000238f0     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:000059c8       ??_C@_0BH@GANIPOJL@Frame?5Buffer?5Disabled?6@ 00023908     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:000059e0       ??_C@_0CB@DFNFELJE@Failed?5to?5find?5Silicon?5Cfg?5Data@ 00023920     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005a04       ??_C@_0CA@FGLPGDJA@TSN?5MAC?5subregion?5completed?5?$CFr?6@ 00023944     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005a24       ??_C@_0CB@EJEJNCOB@TSN?5MAC?5subregion?5not?5found?$CB?5?$CFr@ 00023964     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005a48       ??_C@_0BO@BGPKLIAD@Stage?52?5S0ix?5config?5applied?4?6@ 00023988     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005a68       ??_C@_0CL@HNPHLBPA@Firmware?5update?5mode?0?5unlock?5Bi@ 000239a8     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005a94       ??_C@_0BJ@IMCLGKPF@Missing?5power?5Cfg?5Data?$CB?6@ 000239d4     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005ab0       ??_C@_0BN@NKJDNDPK@FusaConfigPostMem?5Status?5?$CFr?6@ 000239f0     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0002:00005ad0       ??_C@_0CC@HIMDIBM@HSPHY?3?5Could?5not?5allocate?5Memor@ 00023a10     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005af4       ??_C@_0CA@LNMHIECN@Heci?5Get?5IP?5Load?5Msg?5Failed?5?$CFr?6@ 00023a34     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005b14       ??_C@_0BN@CDFGPLEM@Heci?5Get?5IP?5Load?5Msg?5Failed?6@ 00023a54     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005b34       ??_C@_0DA@IEIJBKJB@Heci?5Ip?5Load?5Request?5Msg?5succes@ 00023a74     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005b64       ??_C@_0BI@KGDGFDJE@?5?5PayloadSize?5?$DN?50x?$CF08x?6@ 00023aa4     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005b7c       ??_C@_0CP@KECIOABF@?5?5Hash?5Type?5used?5for?5Signing?5Pa@ 00023abc     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005bac       ??_C@_0DA@JAFDBHHD@CurrBottom?5allocation?5in?5HsPhy?5@ 00023aec     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005bdc       ??_C@_0CN@OLGHPEOC@Buffer?5allocation?5for?5HsPhy?5fir@ 00023b1c     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005c0c       ??_C@_0DB@CBIPMLFH@Could?5not?5allocate?5Memory?5for?5H@ 00023b4c     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005c40       ??_C@_0CO@NFNJOCHL@Failed?5to?5set?5BME?0?5MSE?5on?5Heci1@ 00023b80     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005c70       ??_C@_0BP@CIEEDMBM@PeiHeciGetFwPayload?5failed?5?$CFr?6@ 00023bb0     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005c90       ??_C@_0CG@EDECKLMI@HashAlg?5?$CFd?5not?5supported?0?5try?5S@ 00023bd0     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005cb8       ??_C@_0BI@JKPFCPH@DoHashVerify?5Failed?5?$CFr?6@ 00023bf8     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005cd0       ??_C@_0BF@JECKANJ@Push?5HsPhy?5firmware?6@ 00023c10     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005ce8       ??_C@_0DA@IFDNDGJN@Failed?5to?5clear?5BME?0?5MSE?5on?5Hec@ 00023c28     CpuPcieHsPhyInitLib:CpuPcieHsPhyInitLib.obj
+ 0002:00005d18       ??_C@_0BL@ICCHIGAE@Failed?5to?5get?5ER?5Log?5data?6@ 00023c58     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005d34       ??_C@_0DF@FHOBDHJB@Event?5Log?5is?5exceeding?5the?5Maxi@ 00023c74     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005d70       ??_C@_0HB@FCNOLOLJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00023cb0     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005de4       ??_C@_0CD@HBMFABMH@HeciGetHerData?3?5Invalid?5paramet@ 00023d24     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005e08       ??_C@_0DF@KEILAMAP@HeciGetHerData?3?5Failed?5to?5get?5C@ 00023d48     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005e40       ??_C@_0CC@IOLAOIC@CSME?5Extend?5Measurement?5is?5vali@ 00023d80     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005e64       ??_C@_0CG@OIAGAGPA@CSME?5Extend?5Measurement?5is?5not?5@ 00023da4     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005e8c       ??_C@_0DG@OJHBAPAA@CSME?5Extend?5Measurement?5Capabil@ 00023dcc     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005ec4       ??_C@_0DM@BEBNIJAH@Extending?5ME?5Measurement?5to?5TPM@ 00023e04     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005f00       ??_C@_0BO@NHMONBE@CSME?5MeasuredBoot?5state?3?5?$CFx?5?6@ 00023e40     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005f20       ??_C@_0CK@OAMKLOFB@ExtendCsmeMeasurementToTpmPcr?5s@ 00023e60     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005f4c       ??_C@_0CM@DMGFPJNN@Send?5CSME?5command?5to?5Disable?5Me@ 00023e8c     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005f78       ??_C@_0DI@PIBLJGGL@CSME?5failed?5for?5HeciSetMeasured@ 00023eb8     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005fb0       ??_C@_0BJ@NLDMPCPK@Could?5not?5find?5Mbp?5hob?4?6@ 00023ef0     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00005fe0       ??_C@_0CB@ILNDBAHO@EomState?5is?5not?5a?5valid?5pointer@ 00023f20     PsdLib:PsdLib.obj
+ 0002:00006004       ??_C@_0CL@FKMGLHPP@HeciGetManufactureMode?5Failed?5S@ 00023f44     PsdLib:PsdLib.obj
+ 0002:00006030       ??_C@_0CD@IFGGBNJM@SecVersion?5is?5not?5a?5valid?5point@ 00023f70     PsdLib:PsdLib.obj
+ 0002:00006054       ??_C@_0CI@KECAHKOM@No?5MBP?5HOB?5available?0?5calling?5H@ 00023f94     PsdLib:PsdLib.obj
+ 0002:0000607c       ??_C@_0CI@GHHOMKPK@HeciGetFwVersionMsg?5Failed?5Stat@ 00023fbc     PsdLib:PsdLib.obj
+ 0002:000060a4       ??_C@_0CG@DJGOKBB@SecCapability?5is?5not?5a?5valid?5po@ 00023fe4     PsdLib:PsdLib.obj
+ 0002:000060cc       ??_C@_0CI@BNJGLLLE@HeciGetFwCapsSkuMsg?5Failed?5Stat@ 0002400c     PsdLib:PsdLib.obj
+ 0002:000060f4       ??_C@_0BK@KMJGOFL@UpdateAcpiPsdTable?5start?6@ 00024034     PsdLib:PsdLib.obj
+ 0002:00006110       ??_C@_0BO@KHDEJAK@Table?5is?5not?5a?5valid?5pointer?6@ 00024050     PsdLib:PsdLib.obj
+ 0002:00006130       ??_C@_0BJ@GKCAPJLN@?5GetEomState?5failed?5?$DN?$CFx?6@ 00024070     PsdLib:PsdLib.obj
+ 0002:0000614c       ??_C@_0BO@NMGBMNNE@?5GetSecCapability?5failed?5?$DN?$CFx?6@ 0002408c     PsdLib:PsdLib.obj
+ 0002:0000616c       ??_C@_0BN@EJHBMKEJ@?5GetSecFwVersion?5failed?5?$DN?$CFx?6@ 000240ac     PsdLib:PsdLib.obj
+ 0002:0000618c       ??_C@_0BB@EMIILGHP@INTEL?5?5?5?5?5?5?5?5?5?5?5@ 000240cc     PsdLib:PsdLib.obj
+ 0002:000061a0       ??_C@_0BL@IPJNNPFM@GetPlatformDataPtr?5Failed?6@ 000240e0     PsdLib:PsdLib.obj
+ 0002:000061bc       ??_C@_0BK@DKPPGEGB@UpdateAcpiPsdTable?$CI?$CJ?5end?6@ 000240fc     PsdLib:PsdLib.obj
+ 0002:000061d8       ??_C@_0DF@NKIMNGKJ@Rmrr?9?$DORmrrHeader?4ReservedMemory@ 00024118     VtdLib:VTdLib.obj
+ 0002:00006210       ??_C@_0CI@GILHPELE@McD0BaseAddress?50x?$CF08X?0?5IgdMode@ 00024150     VtdLib:VTdLib.obj
+ 0002:00006238       ??_C@_0DF@BLJMFLAE@GttMode?50x?$CF04X?0?5GttMmAdr?5?50x?$CF08@ 00024178     VtdLib:VTdLib.obj
+ 0002:00006270       ??_C@_0BP@MINBNCMH@RMRR?5Base?5?5address?5IGD?5?$CF016lX?6@ 000241b0     VtdLib:VTdLib.obj
+ 0002:00006290       ??_C@_0BP@KMILLIJN@RMRR?5Limit?5address?5IGD?5?$CF016lX?6@ 000241d0     VtdLib:VTdLib.obj
+ 0002:000062b0       ??_C@_0BJ@IIPPLHPE@VTD?5base?5address?51?5?$DN?5?$CFx?6@ 000241f0     VtdLib:VTdLib.obj
+ 0002:000062cc       ??_C@_0BJ@GHALABH@VTD?5base?5address?52?5?$DN?5?$CFx?6@ 0002420c     VtdLib:VTdLib.obj
+ 0002:000062e8       ??_C@_0BJ@MKNKLAIJ@VTD?5base?5address?53?5?$DN?5?$CFx?6@ 00024228     VtdLib:VTdLib.obj
+ 0002:00006304       ??_C@_0BI@DJBIGIOD@Update?5Dmar?5ACPI?5Table?6@ 00024244     VtdLib:VTdLib.obj
+ 0002:0000631c       ??_C@_0CH@EPOCHEDM@Vtd?5Disabled?0?5skip?5DMAR?5Table?5i@ 0002425c     VtdLib:VTdLib.obj
+ 0002:00006350       _mDevEnMap                 00024290     VtdLib:VTdLib.obj
+ 0002:00006360       ??_C@_0BD@GICDFHDF@VbtAddress?5?$DN0x?$CFx?5?6@ 000242a0     IgdOpRegionLib:IgdOpRegionLib.obj
+ 0002:00006374       ??_C@_0BI@BFDJBKFA@Extended?5VBT?5supported?6@ 000242b4     IgdOpRegionLib:IgdOpRegionLib.obj
+ 0002:0000638c       ??_C@_0BB@PFAEHJKN@IntelGraphicsMem@ 000242cc     IgdOpRegionLib:IgdOpRegionLib.obj
+ 0002:000063a0       ??_C@_0BD@MHKGMCIE@IgdOpRegion?5ended?6@ 000242e0     IgdOpRegionLib:IgdOpRegionLib.obj
+ 0002:000063b4       ??_C@_0BI@NKGGMELC@Creating?5BDAT?5Table?4?4?4?6@ 000242f4     BdatLib:BdatLib.obj
+ 0002:000063cc       ??_C@_0DF@BKACADFK@No?5BDAT?5data?5exists?0?5exiting?5wi@ 0002430c     BdatLib:BdatLib.obj
+ 0002:00006404       ??_C@_0BH@CMMKMOGC@Found?5Schema?5List?5HOB?6@ 00024344     BdatLib:BdatLib.obj
+ 0002:0000641c       ??_C@_0CJ@CGFPCBFN@BdatSchemaListHob?9?$DOSchemaHobCou@ 0002435c     BdatLib:BdatLib.obj
+ 0002:00006448       ??_C@_0FJ@JHHNNLPC@e?3?2code?2adl_n100_code?2sblplatfo@ 00024388     BdatLib:BdatLib.obj
+ 0002:000064a4       ??_C@_0BA@HOADJBFE@Checking?5GUID?3?5@ 000243e4     BdatLib:BdatLib.obj
+ 0002:000064b4       ??_C@_03PMGGPEJJ@?$CFd?6@  000243f4     BdatLib:BdatLib.obj
+ 0002:000064b8       ??_C@_0L@HNNDBOPA@GUID?5?$DN?5?$CFg?6@ 000243f8     BdatLib:BdatLib.obj
+ 0002:000064c4       ??_C@_0BI@OMJEHLLO@Schema?5HOB?5pointer?3?5?$CFx?6@ 00024404     BdatLib:BdatLib.obj
+ 0002:000064dc       ??_C@_0BB@BOJAGJOF@HOB?5Length?5?$DN?5?$CFd?6@ 0002441c     BdatLib:BdatLib.obj
+ 0002:000064f0       ??_C@_0CN@OPNLKKH@BDAT?5Schema?5List?5HOB?5is?5corrupt@ 00024430     BdatLib:BdatLib.obj
+ 0002:00006520       ??_C@_0DK@JDACHEAM@BdatSchemaListHob?9?$DOSchemaHobCou@ 00024460     BdatLib:BdatLib.obj
+ 0002:0000655c       ??_C@_0BB@HAEOBDEM@BufferSize?5?$DN?5?$CFd?6@ 0002449c     BdatLib:BdatLib.obj
+ 0002:00006570       ??_C@_0P@PCLNBNG@Buffer?5?$DN?50x?$CFX?6@ 000244b0     BdatLib:BdatLib.obj
+ 0002:00006580       ??_C@_0BC@IDMDEPMA@NextBlock?5?$DN?50x?$CFX?6@ 000244c0     BdatLib:BdatLib.obj
+ 0002:00006594       ??_C@_0P@BFKOBPLG@DataSize?5?$DN?5?$CFd?6@ 000244d4     BdatLib:BdatLib.obj
+ 0002:000065a4       ??_C@_0BD@IDEEGPED@SchemaData?5?$DN?50x?$CFX?6@ 000244e4     BdatLib:BdatLib.obj
+ 0002:000065b8       ??_C@_0BD@LJGNDEGA@In?5RMT?5ACPI?5table?6@ 000244f8     BdatLib:BdatLib.obj
+ 0002:000065cc       ??_C@_0CK@OOLOLFNG@Created?5?$CFd?5OS?5boot?5options?5?$CICur@ 0002450c     BoardSupportLib:BoardSupportLib.obj
+ 0002:000065f8       ??_C@_0IO@JDCIFIAB@PssTable?50x?$CFp?0?5TurboBusRatio?5?$CFd@ 00024538     BoardSupportLib:BoardSupportLib.obj
+ 0002:00006688       ??_C@_0DK@FDLHDCLG@PssPackage?50x?$CFp?0?5MaxNumberOfSta@ 000245c8     BoardSupportLib:BoardSupportLib.obj
+ 0002:000066c4       ??_C@_0CL@KPLOGLHO@NewPackageLength?50x?$CFX?0?5PackageL@ 00024604     BoardSupportLib:BoardSupportLib.obj
+ 0002:000066f0       ??_C@_0DK@HHFKNIAP@PssPackage?$FL?$CF02d?$FN?3?5CoreFrequency@ 00024630     BoardSupportLib:BoardSupportLib.obj
+ 0002:0000672c       ??_C@_0M@MMGEKGJ@Cannot?5find@ 0002466c     BoardSupportLib:BoardSupportLib.obj
+ 0002:00006738       ??_C@_06HJGPBJLE@Select@   00024678     BoardSupportLib:BoardSupportLib.obj
+ 0002:00006740       ??_C@_0BH@GGJLBIHE@?$CFa?5VBT?5ImageId?50x?$CF08X?6@ 00024680     BoardSupportLib:BoardSupportLib.obj
+ 0002:00006758       ??_C@_0DD@EBJBEBPH@Setting?5Graphic?5VBT?5address?5fai@ 00024698     BoardSupportLib:BoardSupportLib.obj
+ 0002:0000678c       ??_C@_0CE@IDBLHICC@Failed?5to?5find?5GFX?5device?5info?5@ 000246cc     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:000067b0       ??_C@_0CC@ILOCCEHG@Invalid?5GFX?5device?5PCI?5bar?5inde@ 000246f0     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:000067d4       ??_C@_0DG@MGJLDHBG@Failed?5to?5find?5GFX?5device?5from?5@ 00024714     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:0000680c       ??_C@_0BN@EFMJIJBE@GFX?5device?5VID?1DID?5mismatch?6@ 0002474c     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:0000682c       ??_C@_0BK@DGNLAAPB@GFX?5bar?5index?5is?5invalid?6@ 0002476c     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006848       ??_C@_0CM@OLOAHFLD@GFX?5BAR?5old?5value?50x?$CF08x?0?5new?5v@ 00024788     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006874       ??_C@_0CC@JFILIMAJ@GFX?5BAR?5size?5is?5greater?5than?54G@ 000247b4     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006898       ??_C@_0CJ@INNHOHL@GFX?5framebuffer?5BAR?5size?50x?$CF08x@ 000247d8     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:000068c4       ??_C@_0BN@GHPIHJME@Failed?5to?5find?5GFX?5info?5HOB?6@ 00024804     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:000068e4       ??_C@_0CD@HBNLMMFI@Use?5framebuffer?50x?$CFllx?0?5size?50x@ 00024824     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006908       ??_C@_0CL@JGJHPGPK@Framebuffer?5base?5and?5size?5are?5n@ 00024848     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006934       ??_C@_0CK@NGDFKOCF@Failed?5to?5find?5free?5MTRR?5to?5set@ 00024874     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006960       ??_C@_0CP@NIKHMNI@GFX?5framebuffer?5WC?5is?5enabled?5?$EA@ 000248a0     BoardSupportLib:BoardGraphicsCache.obj
+ 0002:00006990       ??_C@_0BJ@IAPBALDE@?5?5SPI?5ERASE?3?5?$CF08X?5?5?$CF08X?6@ 000248d0     LiteVariableLib:LiteVariableLib.obj
+ 0002:000069ac       ??_C@_0BJ@PMOOIBCE@?5?5SPI?5WRITE?3?5?$CF08X?5?5?$CF08X?6@ 000248ec     LiteVariableLib:LiteVariableLib.obj
+ 0002:000069c8       ??_C@_0HJ@LLDGICLF@?$CIVarStoreHdrPtr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00024908     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006a48       ??_C@_0GI@PBODLLCK@e?3?2code?2adl_n100_code?2sblplatfo@ 00024988     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006ab0       ??_C@_0BN@FMODBJA@Reclaiming?5variable?5storage?6@ 000249f0     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006ad0       ??_C@_0BM@KMKJHLCD@VarInstance?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00024a10     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006aec       ??_C@_0BO@DHEECDBA@Variable?5region?3?50x?$CF08X?30x?$CFX?6@ 00024a2c     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006b0c       ??_C@_0CC@PAEBLGB@Variable?5service?5init?5failed?5?$CFr@ 00024a4c     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006b30       _mVariableService          00024a70     LiteVariableLib:LiteVariableLib.obj
+ 0002:00006b44       ??_C@_0CG@CAAIBII@Exception?5?$CD?$CFd?5from?50x?$CF04X?30x?$CF08@ 00024a84     CpuExceptionLib:CpuExceptionHandler.obj
+ 0002:00006b6c       ??_C@_0CO@LKIODJPB@PCR?5offset?5error?4?5Invalid?5Offse@ 00024aac     PchPcrLib:PchPcrLib.obj
+ 0002:00006b9c       ??_C@_0CA@BAMCIHNL@PchIsPcrOffsetValid?5?$CIOffset?0?54?$CJ@ 00024adc     PchPcrLib:PchPcrLib.obj
+ 0002:00006bc0       ??_C@_0FN@LKHGOAJH@e?3?2code?2adl_n100_code?2sblplatfo@ 00024b00     PchPcrLib:PchPcrLib.obj
+ 0002:00006c20       ??_C@_0GJ@EADHDDFJ@e?3?2code?2adl_n100_code?2sblplatfo@ 00024b60     PchSbiAccessLib:PchSbiAccessLib.obj
+ 0002:000070f0       ??_C@_0GP@PDCBMJND@e?3?2code?2adl_n100_code?2sblplatfo@ 00025030     LzmaDecompressLib:LzmaDecompress.obj
+ 0002:00007160       ??_C@_0BG@GMOOJNAG@SourceSize?5?$DO?$DN?5?$CI5?5?$CL?58?$CJ@ 000250a0     LzmaDecompressLib:LzmaDecompress.obj
+ 0002:00007178       ??_C@_0CC@HJOLPFE@?$FLHeciInfo?$FN?5Invalid?5HECI?$CFd?5devic@ 000250b8     MeChipsetLib:MeChipsetLib.obj
+ 0002:000071a0       ??_C@_0GD@FCCAGBOC@e?3?2code?2adl_n100_code?2sblplatfo@ 000250e0     MeChipsetLib:MeChipsetLib.obj
+ 0002:00007244       ??_C@_0BH@NIKIAGCF@TpoScale?5?$DM?5TpoScaleMax@ 00025184     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007260       ??_C@_0HL@HDGKHGAA@e?3?2code?2adl_n100_code?2sblplatfo@ 000251a0     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000072dc       ??_C@_0BM@NPFOCGMP@HasChildBus?$CF02?3?$CF02?3?$CF02?3?5no?6@ 0002521c     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000072f8       ??_C@_0BP@GHNJHCGL@HasChildBus?$CF02x?3?$CF02x?3?$CF02x?3?5no?6@ 00025238     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007318       ??_C@_0CE@CBOPBPDL@HasChildBus?$CF02x?3?$CF02x?3?$CF02x?3?5yes?0@ 00025258     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:0000733c       ??_C@_0CG@BNGEOJDM@IsPcieDevice?5?$CF02x?3?$CF02x?3?$CF02x?5?9?5l@ 0002527c     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007364       ??_C@_0CD@CCAKHLJF@IsPcieDevice?5?$CF02x?3?$CF02x?3?$CF02x?5?9?5y@ 000252a4     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007388       ??_C@_0DD@GMKIAJKJ@GetAspmCaps?5?$CF02x?3?$CF02x?3?$CF02x?5L0s?$CF@ 000252c8     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000073bc       ??_C@_0DB@DHPICEBP@GetAspmCaps?5?$CF02x?3?$CF02x?3?$CF02x?5L0s?$CF@ 000252fc     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000073f0       ??_C@_0FC@KHLIGCCC@GetOverrideAspm?5?$CF02x?3?$CF02x?3?$CF02x?0@ 00025330     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007448       ??_C@_0FC@BEIFBFCO@GetOverrideAspm?5?$CF02x?3?$CF02x?3?$CF02x?0@ 00025388     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:0000749c       ??_C@_0BJ@BMHOBPGE@CombineAspm?5?$CFx?3?$CFx?5?9?$DO?5?$CFx?6@ 000253dc     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000074b8       ??_C@_0CB@MOBEDOJE@SetAspm?5on?5?$CF02x?3?$CF02x?3?$CF02x?5to?5?$CFd@ 000253f8     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000074dc       ??_C@_0CD@BEHBHAAI@Enabling?5dynamic?5link?5throttlin@ 0002541c     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007500       ??_C@_0CP@OFDPOPAH@RecursiveBusAssignmentP?5?$CFx?3?$CFx?3?$CF@ 00025440     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007530       ??_C@_0CP@ODBOBCJM@RecursiveBusAssignmentE?5?$CFx?3?$CFx?3?$CF@ 00025470     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007560       ??_C@_0CP@GKJOBBCF@RecursiveBusAssignmentL?5?$CFx?3?$CFx?3?$CF@ 000254a0     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007590       ??_C@_0CF@CKFIPPF@RecursiveAspmConfiguration?5?$CFx?3?$CF@ 000254d0     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000075b8       ??_C@_0CF@JKEDMGGE@RecursiveL1ssConfiguration?5?$CFx?3?$CF@ 000254f8     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000075e0       ??_C@_0CE@MIIFGOKL@RecursiveCpmConfiguration?5?$CFx?3?$CFx@ 00025520     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007604       ??_C@_0CE@EIAKCAAI@RecursiveLtrConfiguration?5?$CFx?3?$CFx@ 00025544     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007628       ??_C@_0BP@FBKPPJLH@Not?5LtrCapable?5?$CF02x?3?$CF02x?3?$CF02x?6@ 00025568     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007648       ??_C@_0CP@IEHNAMBA@CombineLtr?3?5A?$CIV?$CFd?5S?$CFd?5E?$CFd?5?3?5V?$CFd@ 00025588     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007678       ??_C@_0CP@FAIFHDME@?5?5?5?5?5?5?5?5?5?5?3?5B?$CIV?$CFd?5S?$CFd?5E?$CFd?5?3?5V?$CFd@ 000255b8     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000076a8       ??_C@_0CP@BPHPDHIP@?5?5?5?5?5?5?5?5?5?5?3?5R?$CIV?$CFd?5S?$CFd?5E?$CFd?5?3?5V?$CFd@ 000255e8     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000076d8       ??_C@_0CE@LJIACODH@RecursiveLtrOverrideCheck?5?$CFx?3?$CFx@ 00025618     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:000076fc       ??_C@_0CJ@IBFDDAIF@RootportDownstreamPmConfigurati@ 0002563c     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00007728       ??_C@_0BO@FAIFPMJG@ConfigureRpLtrOverride?5?$CFx?3?$CFx?6@ 00025668     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:0000776c       ??_C@_0BE@NOJNGFM@?$CI?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ?$CJ@ 000256ac     BasePcieHelperLib:BasePcieHelperLib.obj
+ 0002:00007780       ??_C@_0GN@OFKEKOLH@e?3?2code?2adl_n100_code?2sblplatfo@ 000256c0     BasePcieHelperLib:BasePcieHelperLib.obj
+ 0002:000077f0       ??_C@_0CI@IKOPGKHC@ConfigureRpLtrOverride?5?$CFx?5Val?5?$CF@ 00025730     PcieClientRpLib:PcieClientRpLib.obj
+ 0002:0000786c       ___volatile_metadata       000257ac     <linker-defined>
+ 0003:00000000       __gPcd_BinaryPatch_PcdAcpiGnvsAddress 00025e80     Stage2:AutoGen.obj
+ 0003:00000004       _gUniversalPayloadExtraDataGuid 00025e84     Stage2:AutoGen.obj
+ 0003:00000014       __gPcd_BinaryPatch_PcdSplashLogoAddress 00025e94     Stage2:AutoGen.obj
+ 0003:00000018       __gPcd_BinaryPatch_PcdFSPSBase 00025e98     Stage2:AutoGen.obj
+ 0003:0000001c       __gPcd_BinaryPatch_PcdSmmRebaseMode 00025e9c     Stage2:AutoGen.obj
+ 0003:00000020       __gPcd_BinaryPatch_PcdGraphicsVbtAddress 00025ea0     Stage2:AutoGen.obj
+ 0003:00000024       __gPcd_BinaryPatch_PcdAcpiTablesAddress 00025ea4     Stage2:AutoGen.obj
+ 0003:00000028       _gFspNonVolatileStorageHobGuid 00025ea8     Stage2:AutoGen.obj
+ 0003:00000038       __gPcd_BinaryPatch_PcdAcpiTablesRsdp 00025eb8     Stage2:AutoGen.obj
+ 0003:0000003c       _gEfiGraphicsDeviceInfoHobGuid 00025ebc     Stage2:AutoGen.obj
+ 0003:0000004c       _gSecureBootInfoGuid       00025ecc     Stage2:AutoGen.obj
+ 0003:0000005c       _gLoaderSystemTableInfoGuid 00025edc     Stage2:AutoGen.obj
+ 0003:0000006c       _gPayloadKeyHashGuid       00025eec     Stage2:AutoGen.obj
+ 0003:0000007c       _gUniversalPayloadSerialPortInfoGuid 00025efc     Stage2:AutoGen.obj
+ 0003:0000008c       _gBootLoaderServiceGuid    00025f0c     Stage2:AutoGen.obj
+ 0003:0000009c       _gBootLoaderVersionGuid    00025f1c     Stage2:AutoGen.obj
+ 0003:000000ac       _gOsBootOptionGuid         00025f2c     Stage2:AutoGen.obj
+ 0003:000000bc       _gPldSmmRegisterInfoGuid   00025f3c     Stage2:AutoGen.obj
+ 0003:000000cc       _gNvVariableInfoGuid       00025f4c     Stage2:AutoGen.obj
+ 0003:000000dc       _gLoaderMemoryMapInfoGuid  00025f5c     Stage2:AutoGen.obj
+ 0003:000000ec       _gMeBiosPayloadHobGuid     00025f6c     Stage2:AutoGen.obj
+ 0003:00000100       __gPcd_BinaryPatch_PcdPciExpressBaseAddress 00025f80     Stage2:AutoGen.obj
+ 0003:00000108       __gPcd_BinaryPatch_PcdAcpiPmTimerBase 00025f88     Stage2:AutoGen.obj
+ 0003:0000010c       _gFspNonVolatileStorageHob2Guid 00025f8c     Stage2:AutoGen.obj
+ 0003:0000011c       _gLoaderLibraryDataGuid    00025f9c     Stage2:AutoGen.obj
+ 0003:0000012c       _gUniversalPayloadPciRootBridgeInfoGuid 00025fac     Stage2:AutoGen.obj
+ 0003:0000013c       _gCpuInitDataHobGuid       00025fbc     Stage2:AutoGen.obj
+ 0003:0000014c       _gOsConfigDataGuid         00025fcc     Stage2:AutoGen.obj
+ 0003:0000015c       _gLoaderPciRootBridgeInfoGuid 00025fdc     Stage2:AutoGen.obj
+ 0003:0000016c       __gPcd_BinaryPatch_PcdSmbiosStringsCnt 00025fec     Stage2:AutoGen.obj
+ 0003:00000170       _gSmmInformationGuid       00025ff0     Stage2:AutoGen.obj
+ 0003:00000180       _gLoaderFspInfoGuid        00026000     Stage2:AutoGen.obj
+ 0003:00000190       _gEfiGraphicsInfoHobGuid   00026010     Stage2:AutoGen.obj
+ 0003:000001a0       __gPcd_BinaryPatch_PcdSmramTsegBase 00026020     Stage2:AutoGen.obj
+ 0003:000001a4       _gCsmeFWUDriverImageFileGuid 00026024     Stage2:AutoGen.obj
+ 0003:000001b4       _gTpmEventLogInfoGuid      00026034     Stage2:AutoGen.obj
+ 0003:000001c4       _gUniversalPayloadAcpiTableGuid 00026044     Stage2:AutoGen.obj
+ 0003:000001d4       __gPcd_BinaryPatch_PcdPciResourceIoBase 00026054     Stage2:AutoGen.obj
+ 0003:000001d8       _gFlashMapInfoGuid         00026058     Stage2:AutoGen.obj
+ 0003:000001e8       _gLoaderPlatformDataGuid   00026068     Stage2:AutoGen.obj
+ 0003:000001f8       _gSpiFlashInfoGuid         00026078     Stage2:AutoGen.obj
+ 0003:00000208       _gLoaderPerformanceInfoGuid 00026088     Stage2:AutoGen.obj
+ 0003:00000218       _gCsmePerformanceInfoGuid  00026098     Stage2:AutoGen.obj
+ 0003:00000228       _gPldS3CommunicationGuid   000260a8     Stage2:AutoGen.obj
+ 0003:00000238       _gDeviceTableHobGuid       000260b8     Stage2:AutoGen.obj
+ 0003:00000248       _gSchemaListGuid           000260c8     Stage2:AutoGen.obj
+ 0003:00000258       __gPcd_BinaryPatch_PcdPciResourceMem32Base 000260d8     Stage2:AutoGen.obj
+ 0003:0000025c       _gLoaderMpCpuTaskInfoGuid  000260dc     Stage2:AutoGen.obj
+ 0003:0000026c       _gEfiSmmSmramMemoryGuid    000260ec     Stage2:AutoGen.obj
+ 0003:0000027c       _gLoaderPlatformInfoGuid   000260fc     Stage2:AutoGen.obj
+ 0003:0000028c       __gPcd_BinaryPatch_PcdIgdOpRegionAddress 0002610c     Stage2:AutoGen.obj
+ 0003:00000290       _gUniversalPayloadSmbiosTableGuid 00026110     Stage2:AutoGen.obj
+ 0003:000002a0       _gTcgEvent2EntryHobGuid    00026120     Stage2:AutoGen.obj
+ 0003:000002b0       _gLoaderSerialPortInfoGuid 00026130     Stage2:AutoGen.obj
+ 0003:000002c0       __gPcd_BinaryPatch_PcdPayloadReservedMemSize 00026140     Stage2:AutoGen.obj
+ 0003:000002c4       _gSeedListInfoHobGuid      00026144     Stage2:AutoGen.obj
+ 0003:00000310       _mAdlSTsnDeviceGpioTable   00026190     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:000003a0       _mAdlNTsnDeviceGpioTable   00026220     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:000003e8       _mGpioTablePostMemAdlNLpddr5Rvp 00026268     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:00000510       _mHwMointorReg             00026390     Stage2BoardInitLib:SioChip.obj
+ 0003:00000598       _mCom1Resources            00026418     Stage2BoardInitLib:SioChip.obj
+ 0003:000005b0       _mDeviceInfo               00026430     Stage2BoardInitLib:SioChip.obj
+ 0003:000005ec       _mIoWrite8                 0002646c     Stage2BoardInitLib:SioChip.obj
+ 0003:000005f0       _mHwMonResources           00026470     Stage2BoardInitLib:SioChip.obj
+ 0003:00000600       _mGenericRegisters         00026480     Stage2BoardInitLib:SioChip.obj
+ 0003:0000063c       _mCom2Resources            000264bc     Stage2BoardInitLib:SioChip.obj
+ 0003:00000674       _mSblPerfTableTemplate     000264f4     AcpiInitLib:AcpiFpdt.obj
+ 0003:0000069c       _mS3PerformanceTableTemplate 0002651c     AcpiInitLib:AcpiFpdt.obj
+ 0003:000006bc       _mBootPerformanceTableTemplate 0002653c     AcpiInitLib:AcpiFpdt.obj
+ 0003:00000700       _mProcessorFamilyField     00026580     SmbiosInitLib:SmbiosInitLib.obj
+ 0003:00000760       _mMemArrayMappedAddr       000265e0     SmbiosInitLib:SmbiosTemplate.obj
+ 0003:00000780       _mDefaultChasisInfo        00026600     SmbiosInitLib:SmbiosTemplate.obj
+ 0003:00000798       _mBiosInfo                 00026618     SmbiosInitLib:SmbiosTemplate.obj
+ 0003:000007b4       _mBaseBoardInfo            00026634     SmbiosInitLib:SmbiosTemplate.obj
+ 0003:000007c8       _mSystemInfo               00026648     SmbiosInitLib:SmbiosTemplate.obj
+ 0003:000007e8       _mPchLpGpioGroupToGpeMapping 00026668     GpioSiLib:GpioSiLib.obj
+ 0003:00000848       _mPchNGpioGroupToGpeMapping 000266c8     GpioSiLib:GpioSiLib.obj
+ 0003:000008b0       _mPchNGpioGroupInfo        00026730     GpioSiLib:GpioSiLib.obj
+ 0003:00000ac0       _mAdlPchSGpioGroupInfo     00026940     GpioSiLib:GpioSiLib.obj
+ 0003:00000d10       _mPchLpGpioGroupInfo       00026b90     GpioSiLib:GpioSiLib.obj
+ 0003:00000f20       _mAdlPchSGpioGroupToGpeMapping 00026da0     GpioSiLib:GpioSiLib.obj
+ 0003:00000f90       _mPcieDeviceTable          00026e10     PciePm:PciePm.obj
+ 0003:00001350       _mPchPDevIntConfig         000271d0     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0003:00001428       _mPchSDevIntConfig         000272a8     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0003:00001528       _mPchNDevIntConfig         000273a8     FspsUpdUpdateLib:FspsUpdUpdateLib.obj
+ 0003:000016e0       __gPcd_BinaryPatch_PcdSmbiosTablesBase 00027560     Stage2:AutoGen.obj
+ 0003:000016e4       __gPcd_BinaryPatch_PcdFuncCpuInitHook 00027564     Stage2:AutoGen.obj
+ 0003:000016e8       __gPcd_BinaryPatch_PcdFspsUpdPtr 00027568     Stage2:AutoGen.obj
+ 0003:000016f0       __gPcd_BinaryPatch_PcdPciResourceMem64Base 00027570     Stage2:AutoGen.obj
+ 0003:000016f8       _gZeroGuid                 00027578     Stage2:AutoGen.obj
+ 0003:00001708       __gPcd_BinaryPatch_PcdPciEnumHookProc 00027588     Stage2:AutoGen.obj
+ 0003:0000170c       __gPcd_BinaryPatch_PcdPciResAllocTableBase 0002758c     Stage2:AutoGen.obj
+ 0003:00001710       __gPcd_BinaryPatch_PcdSmramTsegSize 00027590     Stage2:AutoGen.obj
+ 0003:00001714       __gPcd_BinaryPatch_PcdSmbiosStringsPtr 00027594     Stage2:AutoGen.obj
+ 0003:00001718       __gPcd_BinaryPatch_PcdAcpiTableTemplatePtr 00027598     Stage2:AutoGen.obj
+ 0003:00001724       _mGpioUnlockData           000275a4     GpioLib:GpioHelpersLib.obj
+ 0003:00001728       _mGpioUnlockDataRecords    000275a8     GpioLib:GpioHelpersLib.obj
+ 0003:00001d68       _mIgdOpRegion              00027be8     <common>
+ 0003:00001d6c       _mInterruptRemappingSupport 00027bec     <common>
+ 0003:00001d80       _mCpuPcieRootPortConfig    00027c00     <common>
+ 0003:00002540       _mPcieRootPortConfig       000283c0     <common>
+ 0003:00005b10       _mPageTablesX64            0002b990     <common>
+ 0003:00005b14       _mPoolPtr                  0002b994     <common>
+ 0003:00005b18       _mBigCoreCount             0002b998     <common>
+ 0003:00005b19       _mModuleId                 0002b999     <common>
+ 0003:00005b1a       _mSmallCoreCount           0002b99a     <common>
+ 0003:00005b1b       _mFspPhaseMask             0002b99b     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000002a       _InternalMemCopyMem.0      0000028a     BaseMemoryLibSse2:CopyMem.obj
+ 0001:0000003c       _InternalMemCopyMem.1      0000029c     BaseMemoryLibSse2:CopyMem.obj
+ 0001:0000004e       _InternalMemCopyMem.2      000002ae     BaseMemoryLibSse2:CopyMem.obj
+ 0001:0000006b       @CopyBackward              000002cb     BaseMemoryLibSse2:CopyMem.obj
+ 0001:00000072       @CopyBytes                 000002d2     BaseMemoryLibSse2:CopyMem.obj
+ 0001:0000009d       _InternalMemZeroMem.0      000002fd     BaseMemoryLibSse2:ZeroMem.obj
+ 0001:000000ab       _InternalMemZeroMem.1      0000030b     BaseMemoryLibSse2:ZeroMem.obj
+ 0001:000000c6       @ZeroBytes                 00000326     BaseMemoryLibSse2:ZeroMem.obj
+ 0001:000000ef       _InternalMemSetMem.0       0000034f     BaseMemoryLibSse2:SetMem.obj
+ 0001:0000010f       _InternalMemSetMem.1       0000036f     BaseMemoryLibSse2:SetMem.obj
+ 0001:00000132       @SetBytes                  00000392     BaseMemoryLibSse2:SetMem.obj
+ 0001:0000017c       _InternalMemSetMem64.0     000003dc     BaseMemoryLibSse2:SetMem64.obj
+ 0001:0000018a       _InternalMemSetMem64.1     000003ea     BaseMemoryLibSse2:SetMem64.obj
+ 0001:000001a5       @SetQwords                 00000405     BaseMemoryLibSse2:SetMem64.obj
+ 0001:000001ab       @SetQwords.2               0000040b     BaseMemoryLibSse2:SetMem64.obj
+ 0001:000001b4       @SetQwords.3               00000414     BaseMemoryLibSse2:SetMem64.obj
+ 0001:000001e2       _InternalMemSetMem32.0     00000442     BaseMemoryLibSse2:SetMem32.obj
+ 0001:000001f5       _InternalMemSetMem32.1     00000455     BaseMemoryLibSse2:SetMem32.obj
+ 0001:00000210       @SetDwords                 00000470     BaseMemoryLibSse2:SetMem32.obj
+ 0001:00000220       RendezvousFunnelProc       00000480     MpInitLib:MpCommon.obj
+ 0001:0000022d       StartIpi                   0000048d     MpInitLib:MpCommon.obj
+ 0001:00000262       SmmRebase                  000004c2     MpInitLib:MpCommon.obj
+ 0001:00000287       SmmEm64t                   000004e7     MpInitLib:MpCommon.obj
+ 0001:000002a8       SkipSmrrProg               00000508     MpInitLib:MpCommon.obj
+ 0001:000002ac       ProtModeStart              0000050c     MpInitLib:MpCommon.obj
+ 0001:00000302       CallApFunc                 00000562     MpInitLib:MpCommon.obj
+ 0001:0000036a       GoToSleep                  000005ca     MpInitLib:MpCommon.obj
+ 0001:0000036e       SwitchToLongMode           000005ce     MpInitLib:MpCommon.obj
+ 0001:000003ac       LongModeStart              0000060c     MpInitLib:MpCommon.obj
+ 0001:000003cb       GoToSleep64                0000062b     MpInitLib:MpCommon.obj
+ 0001:000003f0       MpDataAreaStart            00000650     MpInitLib:MpCommon.obj
+ 0001:000003f0       buffer                     00000650     MpInitLib:MpCommon.obj
+ 0001:00000610       MpDataAreaEnd              00000870     MpInitLib:MpCommon.obj
+ 0001:00000689       LongModeStart              000008e9     ThunkLib:Thunk32To64.obj
+ 0001:000006bd       Compatible                 0000091d     ThunkLib:Thunk32To64.obj
+ 0001:00000726       jmp_retf                   00000986     AcpiInitLib:S3Wake.obj
+ 0001:0000073e       os_jmp_addr                0000099e     AcpiInitLib:S3Wake.obj
+ 0001:0000077f       @Is16BytesZero             000009df     BaseMemoryLibSse2:IsZeroBuffer.obj
+ 0001:00000789       @Is16BytesZero.0           000009e9     BaseMemoryLibSse2:IsZeroBuffer.obj
+ 0001:000007a1       @IsBytesZero               00000a01     BaseMemoryLibSse2:IsZeroBuffer.obj
+ 0001:000007b0       @ReturnFalse               00000a10     BaseMemoryLibSse2:IsZeroBuffer.obj
+ 0001:000007c8       rn16_ok                    00000a28     BaseLib:RdRand.obj
+ 0001:000007dd       rn32_ok                    00000a3d     BaseLib:RdRand.obj
+ 0001:00000802       rn64_ret                   00000a62     BaseLib:RdRand.obj
+ 0001:0000082d       FlushNext                  00000a8d     ExtraBaseLib:CpuSupport.obj
+ 0001:00000835       FlushExit                  00000a95     ExtraBaseLib:CpuSupport.obj
+ 0001:00000865       NoAvxSupport               00000ac5     ExtraBaseLib:CpuSupport.obj
+ 0001:00000870       AsmIdtVectorBegin          00000ad0     CpuExceptionLib:ExceptionHandler.obj
+ 0001:000008f0       AsmIdtVectorEnd            00000b50     CpuExceptionLib:ExceptionHandler.obj
+ 0001:00000936       _InternalMathDivRemU64x64.0 00000b96     BaseLib:DivU64x64Remainder.obj
+ 0001:0000093b       _@DivRemU64x64             00000b9b     BaseLib:DivU64x64Remainder.obj
+ 0001:0000094e       _@DivRemU64x64.1           00000bae     BaseLib:DivU64x64Remainder.obj
+ 0001:0000097b       @TooLarge                  00000bdb     BaseLib:DivU64x64Remainder.obj
+ 0001:00000986       @Correct                   00000be6     BaseLib:DivU64x64Remainder.obj
+ 0001:00000991       @Return                    00000bf1     BaseLib:DivU64x64Remainder.obj
+ 0001:000009c7       _InternalX86EnablePaging64.0 00000c27     BaseLib:EnablePaging64.obj
+ 0001:00000a00       SWP_BYTE                   00000c60     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00000a00       pByteSwp                   00000c60     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00000ab2       sha512_block_loop          00000d12     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00000ae0       loop1                      00000d40     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00000b00       loop2                      00000d60     IppCryptoLib:pcpsha512w7as.obj
+ 0001:00000c00       loop3                      00000e60     IppCryptoLib:pcpsha512w7as.obj
+ 0001:000015a6       _UpdateSHA256Ni.loop0      00001806     IppCryptoLib:pcpsha256nias.obj
+ 0001:0000188f       _UpdateSHA256Ni.done_hash  00001aef     IppCryptoLib:pcpsha256nias.obj
+ 0001:00004e19       _SendSpiCmd                00005079 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:000052d8       _WaitForSpiCycleComplete   00005538 f   SpiFlashLib:SpiFlashLib.obj
+ 0001:000053c3       _GetContainerBySignature   00005623 f   ContainerLib:ContainerLib.obj
+ 0001:000053e9       _GetContainerHeaderSize    00005649 f   ContainerLib:ContainerLib.obj
+ 0001:0000542f       _RegisterContainerInternal 0000568f f   ContainerLib:ContainerLib.obj
+ 0001:00005546       _AuthenticateComponent     000057a6 f   ContainerLib:ContainerLib.obj
+ 0001:000075b9       _CompareCpuApicId          00007819 f   MpInitLib:MpInitLib.obj
+ 0001:000075c9       _SortSysCpu                00007829 f   MpInitLib:MpInitLib.obj
+ 0001:0000b910       _AddSmbiosTypeString       0000bb70 f   Stage2BoardInitLib:SmbiosInit.obj
+ 0001:0000e86e       _GetFirstFfsFileInFv       0000eace f   LiteFvLib:FvLib.obj
+ 0001:00010e97       $LN90                      000110f7     PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00010ea3       $LN89                      00011103     PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00010ef3       $LN89                      00011153     PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00011131       $LN264                     00011391     PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00011141       $LN263                     000113a1     PchPciBdfLib:PchPciBdfLib.obj
+ 0001:00011207       _GpioIsGroupAndDwNumValid  00011467 f   GpioLib:GpioLib.obj
+ 0001:000112bc       _GpioReadReg               0001151c f   GpioLib:GpioLib.obj
+ 0001:00011380       $LN21                      000115e0     GpioLib:GpioLib.obj
+ 0001:000113a0       _GpioWriteLockReg          00011600 f   GpioLib:GpioLib.obj
+ 0001:000118b8       _GpioDwRegValueFromGpioConfig 00011b18 f   GpioLib:GpioInit.obj
+ 0001:000119c9       _GpioUnlockPadsForAGroup   00011c29 f   GpioLib:GpioInit.obj
+ 0001:00011ac8       _GpioConfigurePch          00011d28 f   GpioLib:GpioInit.obj
+ 0001:00011f5a       _GpioClearAllGpioInterrupts 000121ba f   GpioLib:GpioInit.obj
+ 0001:00012079       _FillGpioTable             000122d9 f   GpioLib:GpioInit.obj
+ 0001:000122f0       _GpioUnlockDataIndex       00012550 f   GpioLib:GpioHelpersLib.obj
+ 0001:00012326       _GpioCreateUnlockData      00012586 f   GpioLib:GpioHelpersLib.obj
+ 0001:00012386       _GpioGetUnlockData         000125e6 f   GpioLib:GpioHelpersLib.obj
+ 0001:00012fc9       _GetFilledSlots            00013229 f   HeciLib:HeciCore.obj
+ 0001:00012fe8       _CheckAndFixHeciForAccess  00013248 f   HeciLib:HeciCore.obj
+ 0001:00013080       _IsMeReady                 000132e0 f   HeciLib:HeciCore.obj
+ 0001:00013288       _HeciPacketWrite           000134e8 f   HeciLib:HeciCore.obj
+ 0001:00013db0       _RegRead                   00014010 f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:00013e2e       _RegWrite                  0001408e f   S3SaveRestoreLib:S3SaveRestore.obj
+ 0001:000170f6       _PatchPssEntry             00017356 f   BoardSupportLib:BoardSupportLib.obj
+ 0001:000183df       _UpdateExceptionHandler2   0001863f f   CpuExceptionLib:CpuExceptionHandler.obj
+ 0001:0001848b       _PchIsPcrOffsetValid       000186eb f   PchPcrLib:PchPcrLib.obj
+ 0001:00018d00       _hashInit                  00018f60 f   IppCryptoLib:pcpsha512ca.obj
+ 0001:00018d65       _sha512_384_hashInit       00018fc5 f   IppCryptoLib:pcpsha512ca.obj
+ 0001:00018d73       _sha512_hashUpdate         00018fd3 f   IppCryptoLib:pcpsha512ca.obj
+ 0001:00018d8d       _sha512_384_hashOctString  00018fed f   IppCryptoLib:pcpsha512ca.obj
+ 0001:00018e61       _sha512_msgRep             000190c1 f   IppCryptoLib:pcpsha512ca.obj
+ 0001:00019152       _EMSA_PKCSv15              000193b2 f   IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0001:000191b9       _VerifySing                00019419 f   IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0001:000195a9       _cpFix_BNU                 00019809 f   IppCryptoLib:pcpbnu32arith.obj
+ 0001:000195a9       _cpFix_BNU                 00019809 f   IppCryptoLib:pcpbnumisc.obj
+ 0001:000195a9       _cpFix_BNU                 00019809 f   IppCryptoLib:pcpngrsaencodec.obj
+ 0001:00019821       _gs_mont_mul               00019a81 f   IppCryptoLib:gsmodmethod.obj
+ 0001:00019b66       _gs_mont_sqr               00019dc6 f   IppCryptoLib:gsmodmethod.obj
+ 0001:00019b7f       _gs_mont_encode            00019ddf f   IppCryptoLib:gsmodmethod.obj
+ 0001:00019b98       _gs_mont_decode            00019df8 f   IppCryptoLib:gsmodmethod.obj
+ 0001:00019d80       _cpEqu_BNU_CHUNK           00019fe0 f   IppCryptoLib:pcpngrsamontstuff.obj
+ 0001:00019da6       _gsMontExp_WinSize         0001a006 f   IppCryptoLib:pcpngrsamontstuff.obj
+ 0001:00019fba       _gsPrvBuffer_gpr           0001a21a f   IppCryptoLib:pcpngrsamontstuff.obj
+ 0001:0001a68a       @LzmaDec_DecodeReal_3@12   0001a8ea f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b190       @LzmaDec_WriteRem@8        0001b3f0 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b20e       @LzmaDec_DecodeReal2@12    0001b46e f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001b28b       _LzmaDec_TryDummy          0001b4eb f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001bbe8       _LzmaDec_AllocateProbs2    0001be48 f   LzmaDecompressLib:LzmaDec.obj
+ 0001:0001c04e       _SbdfToBase                0001c2ae f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c0d2       _GetDeviceType             0001c332 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c121       _HasChildBus               0001c381 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c1fb       _SetLtrLimit               0001c45b f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c278       _IsPcieDevice              0001c4d8 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c304       _FindNextLegalSbdf         0001c564 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c4c7       _OverrideL1ssCaps          0001c727 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c5ca       _GetL1ssCaps               0001c82a f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c680       _CombineL1ss               0001c8e0 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c750       _SetL1ss                   0001c9b0 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c894       _PatchL1AcceptableLatency  0001caf4 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001c8d4       _GetAspmCaps               0001cb34 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001ca79       _GetOverrideAspm           0001ccd9 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001cbe9       _CombineAspm               0001ce49 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001cceb       _IsL1Allowed               0001cf4b f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001cd0b       _SetAspm                   0001cf6b f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001cdb5       _DynamicLinkThrottlingEnable 0001d015 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001ce22       _RecursiveBusAssignment    0001d082 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d0a5       _RecursiveAspmConfiguration 0001d305 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d1d4       _RecursiveL1ssConfiguration 0001d434 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d2a9       _RecursiveCpmConfiguration 0001d509 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0001:0001d3b9       _RecursiveLtrConfiguration 0001d619 f   PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:00005fcc       ?Signature@?1??MeasureHer@@9@9 00023f0c     MeExtMeasurementLib:MeExtMeasurementLib.obj
+ 0002:00006c90       _sha512_384_iv             00024bd0     IppCryptoLib:pcpsha512ca.obj
+ 0002:00006cd0       _sha512_cnt                00024c10     IppCryptoLib:pcpsha512ca.obj
+ 0002:00006f50       _sha256_cnt                00024e90     IppCryptoLib:pcpsha256ca.obj
+ 0002:00007050       _SHA224_fixPS              00024f90     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:00007064       _MD5_fixPS                 00024fa4     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:00007078       _SHA512_fixPS              00024fb8     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:0000708c       _SHA256_fixPS              00024fcc     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:000070a0       _SHA512_256_fixPS          00024fe0     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:000070b4       _SHA384_fixPS              00024ff4     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:000070c8       _SHA512_224_fixPS          00025008     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:000070dc       _SHA1_fixPS                0002501c     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0002:00007210       _mHeciService              00025150     MeChipsetLib:MeChipsetLib.obj
+ 0002:00007748       ?TpoScaleMultiplier@?1??TpoToUs@@9@9 00025688     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0002:0000774c       ?ScaleEncoding@?1??CombineLtr@@9@9 0002568c     PciExpressHelpersLib:PciExpressHelpersLibrary.obj
+ 0003:000002e0       _mHashInfo                 00026160     TpmLib:Tpm2Help.obj
+ 0003:00000308       _mSmmBaseInfo              00026188     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:000004fc       _mS3SaveReg                0002637c     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:00000648       _mDefaultResRange          000264c8     PciEnumerationLib:PciEnumerationLib.obj
+ 0003:00000670       _mAcpiTblTmpl              000264f0     AcpiInitLib:AcpiInitLib.obj
+ 0003:00000f89       ?PchSeries@?1??0@@9@9      00026e09     PchInfoLib:PchInfoLibAdl.obj
+ 0003:00001600       ?method@?1??ippsHashMethod_SHA384@@9@9 00027480     IppCryptoLib:pcpsha512ca.obj
+ 0003:00001620       ?method@?1??ippsHashMethod_SHA256@@9@9 000274a0     IppCryptoLib:pcpsha256ca.obj
+ 0003:00001640       _pksc15_salt               000274c0     IppCryptoLib:pcpngrsassapkcsv15ca_rmf.obj
+ 0003:00001690       ?m@?1??gsModArithRSA@@9@9  00027510     IppCryptoLib:gsmodmethod.obj
+ 0003:000016bc       ?m@?1??gsMethod_RSA_gpr_public@@9@9 0002753c     IppCryptoLib:pcpngrsamontstuff.obj
+ 0003:0000171c       _mMpInitPhase              0002759c     MpInitLib:MpInitLib.obj
+ 0003:00001720       ?Instance@?1??PlatformPciEnumHookProc@@9@9 000275a0     Stage2BoardInitLib:Stage2BoardInitLib.obj
+ 0003:0000172c       ?Triggered@?1??UpdateDmarAcpi@@9@9 000275ac     VtdLib:VTdLib.obj
+ 0003:00001730       _mStubCodeSize             000275b0     MpInitLib:MpInitLib.obj
+ 0003:00001734       _mBackupBuffer             000275b4     MpInitLib:MpInitLib.obj
+ 0003:00001738       _mMpDataStruct             000275b8     MpInitLib:MpInitLib.obj
+ 0003:00001744       _mSmmBaseInfo              000275c4     MpInitLib:MpInitLib.obj
+ 0003:00001748       _mResAllocTablePtr         000275c8     PciEnumerationLib:PciEnumerationLib.obj
+ 0003:00001750       _mSysCpuInfo               000275d0     MpInitLib:MpInitLib.obj
+ 0003:000017c0       _mSysCpuTask               00027640     MpInitLib:MpInitLib.obj
+ 0003:00001ad0       _mMtrrTable                00027950     MpInitLib:MpInitLib.obj
+ 0003:00001d30       _mFbConsole                00027bb0     GraphicsLib:GraphicsLib.obj

@@ -1,0 +1,331 @@
+## @file
+# CPU SMM driver.
+#
+# This SMM driver performs SMM initialization, deploy SMM Entry Vector,
+# provides CPU specific services in SMM.
+#
+# Copyright (c) 2009 - 2019, Intel Corporation. All rights reserved.<BR>
+# Copyright (c) 2017, AMD Incorporated. All rights reserved.<BR>
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = PiSmmCpuDxeSmm
+  FILE_GUID                  = A3FF0EF5-0C28-42f5-B544-8C7DE1E80014
+  MODULE_TYPE                = DXE_SMM_DRIVER
+  VERSION_STRING             = 1.0
+  PI_SPECIFICATION_VERSION   = 0x0001000A
+  ENTRY_POINT                = PiCpuSmmEntry
+  MODULE_UNI_FILE            = PiSmmCpuDxeSmm.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  UefiCpuPkg/UefiCpuPkg.dec
+  UefiPayloadPkg/UefiPayloadPkg.dec
+
+[Binaries.X64]
+  PE32|PiSmmCpuDxeSmm.efi
+  SMM_DEPEX|PiSmmCpuDxeSmm.depex
+  DISPOSABLE|PiSmmCpuDxeSmm.pdb
+
+[PatchPcd.X64]
+  ## SOMETIMES_CONSUMES
+  ## SOMETIMES_CONSUMES
+  gUefiCpuPkgTokenSpaceGuid.PcdCpuMaxLogicalProcessorNumber|0x00000040|0x13DE4
+
+  ## PRODUCES
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio|0x01|0x13DE8
+
+  ## PRODUCES
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase|0x0000000000000000|0x140A0
+
+  ## PRODUCES
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialBaudRate|0x00000000|0x140BC
+
+  ## PRODUCES
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterStride|0x00000000|0x140A8
+
+  ## PRODUCES
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate|0x00000000|0x140B8
+
+  ## PRODUCES
+  gEfiMdePkgTokenSpaceGuid.PcdUartDefaultBaudRate|0x0000000000000000|0x140B0
+
+  ## PRODUCES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdPciSerialParameters|{0xff,0xff, 0x00,0x00, 0x0,0x20,0x1c,0x00, 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0, 0x00,    0x01, 0x0,0x0, 0x0,0x0, 0x0,0x0, 0xff,0xff}|0x13D80
+
+  ## CONSUMES
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x8000004f|0x13DEC
+
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl|0x00|0x140AD
+
+  ## SOMETIMES_CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialDetectCable|0x00|0x140AC
+
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialLineControl|0x03|0x13DE0
+
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialFifoControl|0x07|0x13E38
+
+  ## CONSUMES
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize|0x00000010|0x13E80
+
+  ## CONSUMES
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPropertyMask|0x2f|0x13E00
+
+
+[Protocols.X64]
+  ## CONSUMES
+  ## CONSUMES
+  gEfiSmmAccess2ProtocolGuid
+
+  ## CONSUMES
+  gEfiMpServiceProtocolGuid
+
+  ## PRODUCES
+  gEfiSmmConfigurationProtocolGuid
+
+  ## PRODUCES
+  gEfiSmmCpuProtocolGuid
+
+  ## NOTIFY
+  gEfiSmmReadyToLockProtocolGuid
+
+  ## PRODUCES
+  gEfiSmmCpuServiceProtocolGuid
+
+  ## PRODUCES
+  gEdkiiSmmMemoryAttributeProtocolGuid
+
+  ## PRODUCES
+  gEfiMmMpProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  gEfiSmmBase2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## UNDEFINED
+  gEfiDebugPortProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES ## HOB # it is used for S3 boot.
+  gEfiAcpiVariableGuid
+
+  ## CONSUMES ## SystemTable
+  gEdkiiPiSmmMemoryAttributesTableGuid
+
+  ## CONSUMES ## SystemTable
+  gEfiMemoryAttributesTableGuid
+
+  gUefiSystemTableInfoGuid
+
+  gUefiSerialPortInfoGuid
+
+  gLoaderMemoryMapInfoGuid
+
+  gEfiGraphicsInfoHobGuid
+
+  gEfiGraphicsDeviceInfoHobGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVTUTF8Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100PlusGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPcAnsiGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiUartDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiSasDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi20TableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi10TableGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiHobListGuid
+
+  gUefiAcpiBoardInfoGuid
+
+  ## CONSUMES  ## SystemTable
+  gEfiDxeServicesTableGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
+#  UefiPlatformPkg/Override/UefiPayloadPkg/Library/SblParseLib/SblParseLib.inf
+#  MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
+#  UefiPayloadPkg/Library/PlatformHookLib/PlatformHookLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdeModulePkg/Library/BaseSerialPortLib16550/BaseSerialPortLib16550.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/SmmServicesTableLib/SmmServicesTableLib.inf
+#  MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+#  MdePkg/Library/SmmMemoryAllocationLib/SmmMemoryAllocationLib.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdePkg/Library/DxeHobLib/DxeHobLib.inf
+#  UefiCpuPkg/Library/BaseUefiCpuLib/BaseUefiCpuLib.inf
+#  UefiPayloadPkg/Library/AcpiTimerLib/AcpiTimerLib.inf
+#  MdePkg/Library/BaseCpuLib/BaseCpuLib.inf
+#  UefiCpuPkg/Library/VmgExitLibNull/VmgExitLibNull.inf
+#  MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+#  UefiCpuPkg/Library/BaseXApicX2ApicLib/BaseXApicX2ApicLib.inf
+#  MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  UefiCpuPkg/Library/MtrrLib/MtrrLib.inf
+#  MdeModulePkg/Library/DebugAgentLibNull/DebugAgentLibNull.inf
+#  UefiCpuPkg/Library/SmmCpuPlatformHookLibNull/SmmCpuPlatformHookLibNull.inf
+#  UefiCpuPkg/Library/CpuExceptionHandlerLib/SmmCpuExceptionHandlerLib.inf
+#  MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
+#  MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
+#  AdlpPlatformPkg/Override/UefiCpuPkg/Library/SmmCpuFeaturesLib/SmmCpuFeaturesLib.inf
+
+[Depex.X64]
+#  (gEfiMpServiceProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiSmmBase2ProtocolGuid) AND (gEfiSmmAccess2ProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+[UserExtensions.TianoCore."ExtraFiles"]
+PiSmmCpuDxeSmmExtra.uni
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:DEBUG_VS2019_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_NASM_FLAGS = -Ox -f win64 -g
+##   MSFT:DEBUG_VS2019_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2019_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2019_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2019_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:DEBUG_VS2019_X64_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2019_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2019_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
+##   MSFT:DEBUG_VS2019_X64_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2019_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2019_X64_DEPS_FLAGS = /showIncludes
+##   MSFT:DEBUG_VS2019_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2019_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2019_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2019_X64_DLINK2_FLAGS = /WHOLEARCHIVE
+##   MSFT:DEBUG_VS2019_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4281 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG /ALIGN:4096
+##   MSFT:DEBUG_VS2019_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2019_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2019_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2019_X64_CC_FLAGS = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw /D SLIMBOOTLOADER_ENABLE

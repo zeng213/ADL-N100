@@ -1,0 +1,4 @@
+gCommandLineDefines: {'PLATFORM_ARCH': 'X64', 'BOOTLOADER': 'SBL', 'USERPHYSICALPRESENCE': 'FALSE', 'ARCH': 'IA32 X64'}
+BuildOptionPcd: []
+Active Platform: e:\code\adl_n100_code\uefipldplatform\PldPlatform\AdlpPlatformPkg\PlatformPkg.dsc
+Flash Image Definition: e:\code\adl_n100_code\uefipldplatform\PldPlatform\AdlpPlatformPkg\PlatformPkg.fdf

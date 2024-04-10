@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\AA292DE7-E11E-42E6-846B-5813A5A8D982BlSwSmiHandler\AA292DE7-E11E-42E6-846B-5813A5A8D982SEC2.1.pe32 E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\PldCommonPkg\BlSwSmiHandler\BlSwSmiHandler\OUTPUT\BlSwSmiHandler.efi

@@ -1,0 +1,61 @@
+## @file
+#  SMM Hooks Dxe Smm Driver
+#
+#  This module populates the communication area
+#  to pass info to payload, and registers a root
+#  SMI handler to clear APMC status.
+#
+#  Copyright (c) 2014, Intel Corporation. All rights reserved.<BR>
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution.  The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php.
+#
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = BlHooksSmm
+  FILE_GUID                      = B6851D00-72F6-4FB7-88AD-8E93501DD2DE
+  MODULE_TYPE                    = DXE_SMM_DRIVER
+  VERSION_STRING                 = 1.0
+  PI_SPECIFICATION_VERSION       = 0x0001000A
+  ENTRY_POINT                    = BlHooksSmmEntryPoint
+  
+[Sources]
+  BlHooksSmm.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  PldCommonPkg/PldCommonPkg.dec
+  UefiPayloadPkg/UefiPayloadPkg.dec
+
+[LibraryClasses]
+  PcdLib
+  MemoryAllocationLib
+  IoLib
+  BaseMemoryLib
+  DebugLib
+  BaseLib
+  UefiLib
+  SmmServicesTableLib  
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  HobLib
+  DxeServicesLib
+
+[Guids]
+  gLoaderFspInfoGuid
+  gSmmInformationGuid
+
+[Protocols]
+  gEfiMpServiceProtocolGuid
+
+[Pcd]
+
+[Depex]
+  TRUE

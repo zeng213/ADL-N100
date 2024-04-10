@@ -1,0 +1,378 @@
+ UsbMassStorageDxe
+
+ Timestamp is 65f952ab (Tue Mar 19 16:54:03 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b4H .text                   CODE
+ 0001:000000b4 0000535aH .text$mn                CODE
+ 0002:00000000 00001eb4H .rdata                  DATA
+ 0002:00001eb4 000002d0H .rdata$voltmd           DATA
+ 0002:00002184 0000017cH .rdata$zzzdbg           DATA
+ 0003:00000000 00000230H .data                   DATA
+ 0003:00000230 00000050H .bss                    DATA
+ 0004:00000000 00000360H .pdata                  DATA
+ 0005:00000000 00000318H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000060       InternalMemZeroMem         0000000000000320     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000b4       _ModuleEntryPoint          0000000000000374 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000d0       ProcessLibraryConstructorList 0000000000000390 f   UsbMassStorageDxe:AutoGen.obj
+ 0001:00000288       ProcessModuleEntryPointList 0000000000000548 f   UsbMassStorageDxe:AutoGen.obj
+ 0001:00000394       UsbMassReset               0000000000000654 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000424       UsbMassReadBlocks          00000000000006e4 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:000005b4       UsbMassWriteBlocks         0000000000000874 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000744       UsbMassFlushBlocks         0000000000000a04 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000748       UsbMassInitMedia           0000000000000a08 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:000008b0       UsbMassInitMultiLun        0000000000000b70 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000bf8       UsbMassInitNonLun          0000000000000eb8 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000dec       USBMassDriverBindingSupported 00000000000010ac f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:00000ec4       USBMassDriverBindingStart  0000000000001184 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:000011a4       USBMassDriverBindingStop   0000000000001464 f   UsbMassStorageDxe:UsbMassImpl.obj
+ 0001:0000154c       UsbCbiInit                 000000000000180c f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:000016b8       UsbCbiSendCommand          0000000000001978 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001760       UsbCbiDataTransfer         0000000000001a20 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001878       UsbCbiGetStatus            0000000000001b38 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001904       UsbCbiExecCommand          0000000000001bc4 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001a60       UsbCbiResetDevice          0000000000001d20 f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001afc       UsbBotCleanUp              0000000000001dbc f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001afc       UsbCbiCleanUp              0000000000001dbc f   UsbMassStorageDxe:UsbMassCbi.obj
+ 0001:00001b0c       UsbDiskInfoInquiry         0000000000001dcc f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001ba4       UsbDiskInfoIdentify        0000000000001e64 f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001ba4       UsbDiskInfoSenseData       0000000000001e64 f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001bb0       UsbMassStorageGetControllerName 0000000000001e70 f   UsbMassStorageDxe:ComponentName.obj
+ 0001:00001bb0       UsbDiskInfoWhichIde        0000000000001e70 f   UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0001:00001bbc       UsbMassStorageGetDriverName 0000000000001e7c f   UsbMassStorageDxe:ComponentName.obj
+ 0001:00001cb0       UsbBotInit                 0000000000001f70 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001df8       UsbBotDataTransfer         00000000000020b8 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001f18       UsbBotGetStatus            00000000000021d8 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00001fec       UsbBotExecCommand          00000000000022ac f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:0000218c       UsbBotResetDevice          000000000000244c f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:00002250       UsbBotGetMaxLun            0000000000002510 f   UsbMassStorageDxe:UsbMassBot.obj
+ 0001:000022d0       UsbBootRequestSense        0000000000002590 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:000024cc       UsbBootExecCmdWithRetry    000000000000278c f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:000026ac       UsbBootReadCapacity16      000000000000296c f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:000027ec       UsbBootReadCapacity        0000000000002aac f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:000028e0       UsbBootDetectMedia         0000000000002ba0 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002b3c       UsbBootReadWriteBlocks     0000000000002dfc f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002cc8       UsbBootReadWriteBlocks16   0000000000002f88 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002e84       UsbClearEndpointStall      0000000000003144 f   UsbMassStorageDxe:UsbMassBoot.obj
+ 0001:00002ed0       CopyMem                    0000000000003190 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002f78       SetMem                     0000000000003238 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00002fc4       ZeroMem                    0000000000003284 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00003048       DebugPrint                 0000000000003308 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000306c       DebugPrintMarker           000000000000332c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00003104       DebugAssert                00000000000033c4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00003184       InternalAllocatePool       0000000000003444 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000031b4       AllocateZeroPool           0000000000003474 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000031dc       InternalAllocateCopyPool   000000000000349c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00003268       FreePool                   0000000000003528 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000032c4       IsDevicePathValid          0000000000003584 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:0000338c       DevicePathNodeLength       000000000000364c f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000033f0       NextDevicePathNode         00000000000036b0 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00003434       IsDevicePathEnd            00000000000036f4 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000034e0       SetDevicePathNodeLength    00000000000037a0 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00003550       GetDevicePathSize          0000000000003810 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000035b0       AppendDevicePath           0000000000003870 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00003688       AppendDevicePathNode       0000000000003948 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00003788       CompareIso639LanguageCode  0000000000003a48 f   UefiLib:UefiLib.obj
+ 0001:00003804       IsLanguageSupported        0000000000003ac4 f   UefiLib:UefiLib.obj
+ 0001:0000388c       GetHobList                 0000000000003b4c f   DxeHobLib:HobLib.obj
+ 0001:000039a4       GetNextHob                 0000000000003c64 f   DxeHobLib:HobLib.obj
+ 0001:000039fc       PlatformHookSerialPortInitialize 0000000000003cbc f   PlatformHookLib:PlatformHookLib.obj
+ 0001:00003ad0       CompareGuid                0000000000003d90 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00003bc8       AsciiStrLen                0000000000003e88 f   BaseLib:String.obj
+ 0001:00003c48       AsciiStrnCmp               0000000000003f08 f   BaseLib:String.obj
+ 0001:00003d30       StrnLenS                   0000000000003ff0 f   BaseLib:SafeString.obj
+ 0001:00003d90       SerialPortReadRegister     0000000000004050 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00003dc4       SerialPortWriteRegister    0000000000004084 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00003e00       SerialPortInitialize       00000000000040c0 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00003fc4       SerialPortWrite            0000000000004284 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00004114       AsciiSPrint                00000000000043d4 f   BasePrintLib:PrintLib.obj
+ 0001:00004140       BasePrintLibFillBuffer     0000000000004400 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004174       BasePrintLibValueToString  0000000000004434 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000041e8       BasePrintLibSPrintMarker   00000000000044a8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000051e8       BasePrintLibSPrint         00000000000054a8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000520c       GetGuidHobDataFromSbl      00000000000054cc f   SblParseLib:SblParseLib.obj
+ 0001:000052d8       MmioRead32                 0000000000005598 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00005310       PciExpressRead32           00000000000055d0 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00005360       GetPcdProtocol             0000000000005620 f   DxePcdLib:DxePcdLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 00000000000056e0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000005708     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       ??_C@_0BC@FOJPMLOP@UsbMassStorageDxe@ 0000000000005720     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000058       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000005738     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000080       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 0000000000005760     UsbMassStorageDxe:AutoGen.obj
+ 0002:000000a0       ??_C@_0JJ@CNDHDBNO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000005780     UsbMassStorageDxe:AutoGen.obj
+ 0002:00000140       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000005820     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000160       ??_C@_0GE@FNGONBOL@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000005840     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000001c8       ??_C@_0DE@NBMONNGG@UsbMassReadBlocks?3?5UsbBootReadB@ 00000000000058a8     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000200       ??_C@_0DG@GICHMCOP@UsbMassWriteBlocks?3?5UsbBootWrit@ 00000000000058e0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000238       ??_C@_0CJ@BNHFPCDG@UsbMassInitMedia?3?5UsbBootGetPar@ 0000000000005918     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000268       ??_C@_0L@DIFIICPJ@MaxLun?5?$DO?50@ 0000000000005948     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000278       ??_C@_0DL@HKKMMFOD@UsbMassInitMultiLun?3?5Start?5to?5i@ 0000000000005958     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000002b8       ??_C@_0BI@HFJBGALM@UsbMass?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005998     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000002d0       ??_C@_0CM@MGHPEPJN@UsbMassInitMultiLun?3?5UsbMassIni@ 00000000000059b0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000300       ??_C@_0EF@DHNLKLLE@UsbMassInitMultiLun?3?5failed?5to?5@ 00000000000059e0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000348       ??_C@_0DN@NDHKNMBD@UsbMassInitMultiLun?3?5InstallMul@ 0000000000005a28     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000388       ??_C@_0DG@PFCIKIIO@UsbMassInitMultiLun?3?5OpenUsbIoP@ 0000000000005a68     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000003c0       ??_C@_0DN@HALBAPL@UsbMassInitMultiLun?3?5Success?5to@ 0000000000005aa0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000400       ??_C@_0DF@BLBCAFPF@UsbMassInitNonLun?3?5OpenUsbIoPro@ 0000000000005ae0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000438       ??_C@_0CK@CMFOKOLF@UsbMassInitNonLun?3?5UsbMassInitM@ 0000000000005b18     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000468       ??_C@_0DG@KCJEHGJN@USBMassDriverBindingStart?3?5UsbM@ 0000000000005b48     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000004a0       ??_C@_0DD@JNBLBEBE@USBMassDriverBindingStart?3?5UsbM@ 0000000000005b80     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000004e0       ??_C@_0EC@IPHGBDDL@USBMassDriverBindingStart?3?5Open@ 0000000000005bc0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000528       ??_C@_0DN@NIPPNLKD@USBMassDriverBindingStart?3?5Open@ 0000000000005c08     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000570       ??_C@_0EE@BGMPFHPO@USBMassDriverBindingStart?3?5UsbM@ 0000000000005c50     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000005b8       ??_C@_0CH@DNHIGOAP@Success?5to?5stop?5multi?9lun?5root?5@ 0000000000005c98     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000005e0       ??_C@_0CL@BFAKFEDI@Success?5to?5stop?5non?9multi?9lun?5r@ 0000000000005cc0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000610       ??_C@_0EA@FCEGPKCL@Fail?5to?5stop?5No?4?$CFd?5multi?9lun?5ch@ 0000000000005cf0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:00000650       ??_C@_0FE@MBLAIOFC@Fail?5to?5stop?5No?4?$CFd?5multi?9lun?5ch@ 0000000000005d30     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000006a8       ??_C@_0DD@PHJMPALO@Success?5to?5stop?5all?5?$CFd?5multi?9lu@ 0000000000005d88     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000006e0       mUsbMassTransport          0000000000005dc0     UsbMassStorageDxe:UsbMassImpl.obj
+ 0002:000006f8       ??_C@_0BH@LHPNAOPP@UsbCbi?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005dd8     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:00000710       ??_C@_0GD@OKGCBNFM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000005df0     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:00000778       ??_C@_0CL@DJAPBABE@UsbCbiExecCommand?3?5UsbCbiSendCo@ 0000000000005e58     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:000007a8       ??_C@_0CM@MIIDJLIF@UsbCbiExecCommand?3?5UsbCbiDataTr@ 0000000000005e88     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:000007d8       ??_C@_0CJ@IFBOBKLL@UsbCbiExecCommand?3?5UsbCbiGetSta@ 0000000000005eb8     UsbMassStorageDxe:UsbMassCbi.obj
+ 0002:00000810       ??_C@_0GI@GJBNHNHM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000005ef0     UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0002:00000878       ??_C@_03LKLGDMJI@eng@      0000000000005f58     UsbMassStorageDxe:ComponentName.obj
+ 0002:0000087c       ??_C@_02LFNMGJAP@en@       0000000000005f5c     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000880       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000005f60     UsbMassStorageDxe:ComponentName.obj
+ 0002:00000888       ??_C@_1DA@EPHOEJAM@?$AAU?$AAs?$AAb?$AA?5?$AAM?$AAa?$AAs?$AAs?$AA?5?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg@ 0000000000005f68     UsbMassStorageDxe:ComponentName.obj
+ 0002:000008b8       ??_C@_0BH@DILJDGHF@UsbBot?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005f98     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:000008d0       ??_C@_0GD@HLNNIFAK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000005fb0     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:00000938       ??_C@_0BP@PPLBEAAN@?$CICmdLen?5?$DO?50?$CJ?5?$CG?$CG?5?$CICmdLen?5?$DM?$DN?516?$CJ@ 0000000000006018     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:00000958       ??_C@_0BK@EJHBICEP@UsbBotDataTransfer?3?5?$CI?$CFr?$CJ?6@ 0000000000006038     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:00000978       ??_C@_0CC@NGFHIDAD@UsbBotDataTransfer?3?5DataIn?5Stal@ 0000000000006058     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:000009a0       ??_C@_0CL@PJEFNBMA@UsbBotExecCommand?3?5UsbBotSendCo@ 0000000000006080     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:000009d0       ??_C@_0CJ@CHPECBCL@UsbBotExecCommand?3?5UsbBotGetSta@ 00000000000060b0     UsbMassStorageDxe:UsbMassBot.obj
+ 0002:00000a00       ??_C@_0CK@MFLGMEDP@UsbBootRequestSense?3?5?$CI?$CFr?$CJ?5CmdRe@ 00000000000060e0     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000a30       ??_C@_0ED@FIBALEDD@UsbBootRequestSense?3?5?$CI?$CFr?$CJ?5with?5@ 0000000000006110     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000a78       ??_C@_0CF@HJOODCPK@UsbBootExecCmd?3?5?$CFr?5to?5Exec?50x?$CFx@ 0000000000006158     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000aa0       ??_C@_0DD@GODOPCGP@UsbBootExecCmd?3?5?$CFr?5to?5Exec?50x?$CFx@ 0000000000006180     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000ad8       ??_C@_0CH@EAKPOAJL@UsbBootGetParams?3?5UsbBootInquir@ 00000000000061b8     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000b00       ??_C@_0DM@GKNHHEIL@UsbBootGetParams?3?5Found?5an?5unsu@ 00000000000061e0     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000b40       ??_C@_0CN@EPBMLKKC@UsbBootDetectMedia?3?5UsbBootIsUn@ 0000000000006220     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000b70       ??_C@_0CO@NFFJHNA@UsbBootDetectMedia?3?5UsbBootRead@ 0000000000006250     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000ba0       ??_C@_0BJ@CLDGILHH@EfiGetCurrentTpl?5?$CI?$CJ?5?$DN?$DN?58@ 0000000000006280     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000bc0       ??_C@_0GE@GFLMFLDJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000062a0     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000c28       ??_C@_1M@GNJKCMMA@?$AAW?$AAr?$AAi?$AAt?$AAe@ 0000000000006308     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000c38       ??_C@_19EOHDNDII@?$AAR?$AAe?$AAa?$AAd@ 0000000000006318     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000c48       ??_C@_0CK@INPEJJEI@UsbBoot?$CFsBlocks?3?5LBA?5?$CI0x?$CFlx?$CJ?0?5B@ 0000000000006328     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000c78       ??_C@_0CM@CDOPCPJO@UsbBoot?$CFsBlocks16?3?5LBA?5?$CI0x?$CFlx?$CJ?0@ 0000000000006358     UsbMassStorageDxe:UsbMassBoot.obj
+ 0002:00000cb0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000006390     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000d00       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000063e0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000d68       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000006448     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000da8       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000006488     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000de0       ??_C@_0GC@LFOFKBAK@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000064c0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00000e48       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006528     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000e60       ??_C@_0GD@BACINENJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006540     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000ec8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000065a8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000f00       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000065e0     BaseLib:Unaligned.obj
+ 0002:00000f58       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006638     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000f70       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006650     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000fd0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000066b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000ff0       ??_C@_0GM@CBJAAOLO@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000066d0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001060       ??_C@_0DP@CGKEPFGH@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000006740     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000010a0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006780     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000010c0       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000067a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001138       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006818     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00001150       ??_C@_0GG@DADIGNFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006830     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000011b8       mUefiDevicePathLibEndDevicePath 0000000000006898     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000011c0       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000068a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000011e0       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000068c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001258       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006938     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001270       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006950     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001290       ??_C@_0FI@IEGIMHDN@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006970     UefiLib:UefiDriverModel.obj
+ 0002:000012f0       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000069d0     DxeHobLib:HobLib.obj
+ 0002:00001348       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006a28     DxeHobLib:HobLib.obj
+ 0002:00001368       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006a48     DxeHobLib:HobLib.obj
+ 0002:00001388       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000006a68     DxeHobLib:HobLib.obj
+ 0002:000013a0       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006a80     BaseLib:String.obj
+ 0002:000013f0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000006ad0     BaseLib:String.obj
+ 0002:00001408       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 0000000000006ae8     BaseLib:String.obj
+ 0002:00001430       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000006b10     BaseLib:String.obj
+ 0002:00001470       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000006b50     BaseLib:String.obj
+ 0002:000014a8       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000006b88     BaseLib:String.obj
+ 0002:000014c8       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000006ba8     BaseLib:String.obj
+ 0002:000014f0       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006bd0     BaseLib:SafeString.obj
+ 0002:00001548       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000006c28     BaseLib:DivU64x32.obj
+ 0002:00001560       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000006c40     BasePrintLib:PrintLibInternal.obj
+ 0002:000015c0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006ca0     BasePrintLib:PrintLibInternal.obj
+ 0002:000015e0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006cc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001628       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000006d08     BasePrintLib:PrintLibInternal.obj
+ 0002:00001650       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000006d30     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000006d80     BasePrintLib:PrintLibInternal.obj
+ 0002:00001730       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000006e10     BasePrintLib:PrintLibInternal.obj
+ 0002:000017b8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000006e98     BasePrintLib:PrintLibInternal.obj
+ 0002:000017c8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000006ea8     BasePrintLib:PrintLibInternal.obj
+ 0002:000017d8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000006eb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001810       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000006ef0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001820       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000006f00     BasePrintLib:PrintLibInternal.obj
+ 0002:0000183c       ??_C@_04JIMNDDED@?$CF08X@  0000000000006f1c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001844       ??_C@_02PCIJFNDE@?$AN?6@   0000000000006f24     BasePrintLib:PrintLibInternal.obj
+ 0002:00001848       ??_C@_01LIIJDEN@?$AN@      0000000000006f28     BasePrintLib:PrintLibInternal.obj
+ 0002:00001850       mWarningString             0000000000006f30     BasePrintLib:PrintLibInternal.obj
+ 0002:000018f0       mErrorString               0000000000006fd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001bb0       mHexStr                    0000000000007290     BasePrintLib:PrintLibInternal.obj
+ 0002:00001bc0       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000072a0     SblParseLib:SblParseLib.obj
+ 0002:00001c40       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 0000000000007320     SblParseLib:SblParseLib.obj
+ 0002:00001c58       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 0000000000007338     SblParseLib:SblParseLib.obj
+ 0002:00001c78       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007358     SblParseLib:SblParseLib.obj
+ 0002:00001c90       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007370     BaseLib:DivU64x32Remainder.obj
+ 0002:00001cf0       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000073d0     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00001d50       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000007430     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00001d68       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 0000000000007448     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001d90       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007470     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001df0       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000074d0     DxePcdLib:DxePcdLib.obj
+ 0002:00001e48       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007528     DxePcdLib:DxePcdLib.obj
+ 0002:00001eb4       __volatile_metadata        0000000000007594     <linker-defined>
+ 0003:00000000       gEfiDiskInfoProtocolGuid   00000000000079e0     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000010       gUefiSerialPortInfoGuid    00000000000079f0     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000020       gEfiComponentName2ProtocolGuid 0000000000007a00     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000030       gPcdProtocolGuid           0000000000007a10     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000040       _gPcd_BinaryPatch_PcdPciSerialParameters 0000000000007a20     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000060       gEfiDevicePathProtocolGuid 0000000000007a40     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000070       _gPcd_BinaryPatch_PcdSerialLineControl 0000000000007a50     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000078       gEfiUsbIoProtocolGuid      0000000000007a58     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000088       _gPcd_BinaryPatch_PcdSerialUseMmio 0000000000007a68     UsbMassStorageDxe:AutoGen.obj
+ 0003:0000008c       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 0000000000007a6c     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000090       _gPcd_BinaryPatch_PcdDebugPropertyMask 0000000000007a70     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000098       gEfiHobListGuid            0000000000007a78     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000a8       gEfiDriverBindingProtocolGuid 0000000000007a88     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000b8       gEfiComponentNameProtocolGuid 0000000000007a98     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000c8       _gPcd_BinaryPatch_PcdSerialFifoControl 0000000000007aa8     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000d0       gEfiBlockIoProtocolGuid    0000000000007ab0     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000e0       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 0000000000007ac0     UsbMassStorageDxe:AutoGen.obj
+ 0003:000000e8       gUSBMassDriverBinding      0000000000007ac8     UsbMassStorageDxe:UsbMassImpl.obj
+ 0003:00000118       mUsbCbi0Transport          0000000000007af8     UsbMassStorageDxe:UsbMassCbi.obj
+ 0003:00000148       mUsbCbi1Transport          0000000000007b28     UsbMassStorageDxe:UsbMassCbi.obj
+ 0003:00000178       gUsbDiskInfoProtocolTemplate 0000000000007b58     UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0003:000001a8       gUsbMassStorageComponentName2 0000000000007b88     UsbMassStorageDxe:ComponentName.obj
+ 0003:000001c0       gUsbMassStorageComponentName 0000000000007ba0     UsbMassStorageDxe:ComponentName.obj
+ 0003:000001e0       mUsbMassStorageDriverNameTable 0000000000007bc0     UsbMassStorageDxe:ComponentName.obj
+ 0003:00000200       mUsbBotTransport           0000000000007be0     UsbMassStorageDxe:UsbMassBot.obj
+ 0003:00000230       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000007c10     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000238       _gPcd_BinaryPatch_PcdSerialRegisterStride 0000000000007c18     UsbMassStorageDxe:AutoGen.obj
+ 0003:0000023c       _gPcd_BinaryPatch_PcdSerialDetectCable 0000000000007c1c     UsbMassStorageDxe:AutoGen.obj
+ 0003:0000023d       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 0000000000007c1d     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000240       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 0000000000007c20     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000248       _gPcd_BinaryPatch_PcdSerialClockRate 0000000000007c28     UsbMassStorageDxe:AutoGen.obj
+ 0003:0000024c       _gPcd_BinaryPatch_PcdSerialBaudRate 0000000000007c2c     UsbMassStorageDxe:AutoGen.obj
+ 0003:00000250       gRT                        0000000000007c30     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000258       gST                        0000000000007c38     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000260       gBS                        0000000000007c40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000268       gImageHandle               0000000000007c48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000270       mHobList                   0000000000007c50     DxeHobLib:HobLib.obj
+ 0003:00000278       mPcd                       0000000000007c58     DxePcdLib:DxePcdLib.obj
+
+ entry point at        0001:000000b4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$MmioRead32         0000000000007fc0     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000007fc0     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$SetMem             0000000000007fc0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:00000000       $unwind$PciExpressRead32   0000000000007fc0     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$GetNextHob         0000000000007fc0     DxeHobLib:HobLib.obj
+ 0005:00000000       $unwind$DevicePathNodeLength 0000000000007fc0     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$NextDevicePathNode 0000000000007fc0     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$SetDevicePathNodeLength 0000000000007fc0     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000007fc0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$AllocateZeroPool   0000000000007fc0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000007fc8     UsbMassStorageDxe:AutoGen.obj
+ 0005:00000018       $unwind$ProcessModuleEntryPointList 0000000000007fd8     UsbMassStorageDxe:AutoGen.obj
+ 0005:00000024       $unwind$UsbMassReset       0000000000007fe4     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:00000024       $unwind$AsciiStrnCmp       0000000000007fe4     BaseLib:String.obj
+ 0005:00000024       $unwind$CopyMem            0000000000007fe4     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000024       $unwind$BasePrintLibValueToString 0000000000007fe4     BasePrintLib:PrintLibInternal.obj
+ 0005:00000024       $unwind$GetHobList         0000000000007fe4     DxeHobLib:HobLib.obj
+ 0005:00000024       $unwind$GetDevicePathSize  0000000000007fe4     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:00000024       $unwind$IsLanguageSupported 0000000000007fe4     UefiLib:UefiLib.obj
+ 0005:00000034       $unwind$UsbMassReadBlocks  0000000000007ff4     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:00000034       $unwind$UsbMassWriteBlocks 0000000000007ff4     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:00000050       $unwind$UsbMassInitMedia   0000000000008010     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:00000064       $unwind$UsbMassInitMultiLun 0000000000008024     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:00000078       $unwind$UsbMassInitNonLun  0000000000008038     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:0000008c       $unwind$USBMassDriverBindingSupported 000000000000804c     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:000000a0       $unwind$USBMassDriverBindingStart 0000000000008060     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:000000b8       $unwind$USBMassDriverBindingStop 0000000000008078     UsbMassStorageDxe:UsbMassImpl.obj
+ 0005:000000d0       $unwind$UsbCbiInit         0000000000008090     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:000000e4       $unwind$UsbCbiSendCommand  00000000000080a4     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:000000f8       $unwind$UsbCbiDataTransfer 00000000000080b8     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:00000114       $unwind$UsbCbiGetStatus    00000000000080d4     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:00000128       $unwind$UsbCbiExecCommand  00000000000080e8     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:00000140       $unwind$UsbCbiResetDevice  0000000000008100     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:0000014c       $unwind$UsbBotCleanUp      000000000000810c     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:0000014c       $unwind$UsbCbiCleanUp      000000000000810c     UsbMassStorageDxe:UsbMassCbi.obj
+ 0005:0000014c       $unwind$GetPcdProtocol     000000000000810c     DxePcdLib:DxePcdLib.obj
+ 0005:0000014c       $unwind$FreePool           000000000000810c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000014c       $unwind$InternalAllocatePool 000000000000810c     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000154       $unwind$UsbDiskInfoInquiry 0000000000008114     UsbMassStorageDxe:UsbMassDiskInfo.obj
+ 0005:00000154       $unwind$IsDevicePathValid  0000000000008114     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000168       $unwind$UsbMassStorageGetDriverName 0000000000008128     UsbMassStorageDxe:ComponentName.obj
+ 0005:00000168       $unwind$AppendDevicePath   0000000000008128     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:00000180       $unwind$UsbBotInit         0000000000008140     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:00000194       $unwind$UsbBotDataTransfer 0000000000008154     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:000001a4       $unwind$UsbBotGetStatus    0000000000008164     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:000001b8       $unwind$UsbBotExecCommand  0000000000008178     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:000001d0       $unwind$UsbBotResetDevice  0000000000008190     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:000001e0       $unwind$UsbBotGetMaxLun    00000000000081a0     UsbMassStorageDxe:UsbMassBot.obj
+ 0005:000001ec       $unwind$UsbBootRequestSense 00000000000081ac     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000200       $unwind$UsbBootExecCmdWithRetry 00000000000081c0     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:0000021c       $unwind$UsbBootReadCapacity16 00000000000081dc     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000228       $unwind$UsbBootReadCapacity 00000000000081e8     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000230       $unwind$UsbBootDetectMedia 00000000000081f0     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000248       $unwind$UsbBootReadWriteBlocks 0000000000008208     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000248       $unwind$UsbBootReadWriteBlocks16 0000000000008208     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000260       $unwind$UsbClearEndpointStall 0000000000008220     UsbMassStorageDxe:UsbMassBoot.obj
+ 0005:00000268       $unwind$AsciiStrLen        0000000000008228     BaseLib:String.obj
+ 0005:00000268       $unwind$ZeroMem            0000000000008228     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000268       $unwind$IsDevicePathEnd    0000000000008228     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000268       $unwind$CompareIso639LanguageCode 0000000000008228     UefiLib:UefiLib.obj
+ 0005:00000268       $unwind$InternalAllocateCopyPool 0000000000008228     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000268       $unwind$GetGuidHobDataFromSbl 0000000000008228     SblParseLib:SblParseLib.obj
+ 0005:00000274       $unwind$DebugPrint         0000000000008234     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000027c       $unwind$DebugPrintMarker   000000000000823c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000290       $unwind$DebugAssert        0000000000008250     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000298       $unwind$SerialPortInitialize 0000000000008258     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:00000298       $unwind$AppendDevicePathNode 0000000000008258     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:000002b0       $unwind$PlatformHookSerialPortInitialize 0000000000008270     PlatformHookLib:PlatformHookLib.obj
+ 0005:000002b8       $unwind$CompareGuid        0000000000008278     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000002d4       $unwind$SerialPortWrite    0000000000008294     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:000002ec       $unwind$AsciiSPrint        00000000000082ac     BasePrintLib:PrintLib.obj
+ 0005:000002f4       $unwind$BasePrintLibSPrintMarker 00000000000082b4     BasePrintLib:PrintLibInternal.obj
+ 0005:00000310       $unwind$BasePrintLibSPrint 00000000000082d0     BasePrintLib:PrintLibInternal.obj

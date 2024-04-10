@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\XhciLib\XhcPeim.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\XhciLib\UsbHcMem.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\XhciLib\XhciSched.c

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\0253F9FA-129A-4A8D-B12E-7DC2B6376302dpDynamicCommand\0253F9FA-129A-4A8D-B12E-7DC2B6376302SEC2.1.pe32 E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\ShellPkg\DynamicCommand\DpDynamicCommand\DpDynamicCommand\OUTPUT\dpDynamicCommand.efi

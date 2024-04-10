@@ -1,0 +1,158 @@
+## @file
+#
+#  Copyright (c) 2016 - 2023, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Stage2
+  FILE_GUID                      = 1BB388F8-77D8-4c00-98A7-38F45931B2A4
+  MODULE_TYPE                    = PEIM
+  VERSION_STRING                 = 1.0
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+# VALID_ARCHITECTURES = IA32 X64 IPF EBC
+#
+
+[Sources]
+  Stage2.h
+  Stage2.c
+  Stage2Hob.c
+  Stage2Support.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderCorePkg/BootloaderCorePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+  IntelFsp2Pkg/IntelFsp2Pkg.dec
+  Silicon/CommonSocPkg/CommonSocPkg.dec
+
+[LibraryClasses]
+  FspSupportLib
+  PagingLib
+  BaseLib
+  ModuleEntryLib
+  DecompressLib
+  BootloaderLib
+  BootloaderCoreLib
+  SocInitLib
+  BoardInitLib
+  PciEnumerationLib
+  AcpiInitLib
+  LitePeCoffLib
+  LoaderPerformanceLib
+  MemoryAllocationLib
+  HobLib
+  HobBuildLib
+  MpInitLib
+  SecureBootLib
+  FspApiLib
+  FspSupportLib
+  LoaderLib
+  GraphicsLib
+  CpuExceptionLib
+  TpmLib
+  ResetSystemLib
+  ConfigDataLib
+  DebugAgentLib
+  LiteFvLib
+  ElfLib
+  ContainerLib
+  SmbiosInitLib
+  LinuxLib
+  SortLib
+  StageLib
+  ThunkLib
+  LocalApicLib
+  UniversalPayloadLib
+  TcoTimerLib
+  WatchDogTimerLib
+
+[Guids]
+  gFspReservedMemoryResourceHobGuid
+  gLoaderSerialPortInfoGuid
+  gLoaderPlatformDeviceInfoGuid
+  gLoaderSystemTableInfoGuid
+  gLoaderPerformanceInfoGuid
+  gLoaderLibraryDataGuid
+  gLoaderMemoryMapInfoGuid
+  gLoaderFspInfoGuid
+  gEfiGraphicsInfoHobGuid
+  gEfiGraphicsDeviceInfoHobGuid
+  gPayloadKeyHashGuid
+  gOsBootOptionGuid
+  gBootLoaderServiceGuid
+  gBootLoaderVersionGuid
+  gFlashMapInfoGuid
+  gLoaderPlatformInfoGuid
+  gSeedListInfoHobGuid
+  gLoaderPlatformDataGuid
+  gDeviceTableHobGuid
+  gSmmInformationGuid
+  gLoaderMpCpuTaskInfoGuid
+  gUniversalPayloadPciRootBridgeInfoGuid
+  gUniversalPayloadAcpiTableGuid
+  gUniversalPayloadSmbiosTableGuid
+  gUniversalPayloadSerialPortInfoGuid
+  gUniversalPayloadExtraDataGuid
+  gPldSmmRegisterInfoGuid
+  gEfiSmmSmramMemoryGuid
+  gSpiFlashInfoGuid
+  gNvVariableInfoGuid
+  gPldS3CommunicationGuid
+  gTpmEventLogInfoGuid
+  gSecureBootInfoGuid
+
+[Pcd]
+  gPlatformCommonLibTokenSpaceGuid.PcdMaxLibraryDataEntry
+  gPlatformCommonLibTokenSpaceGuid.PcdVerifiedBootEnabled
+  gPlatformModuleTokenSpaceGuid.PcdStage2FdBase
+  gPlatformModuleTokenSpaceGuid.PcdAcpiTablesAddress
+  gPlatformModuleTokenSpaceGuid.PcdPayloadLoadHigh
+  gPlatformModuleTokenSpaceGuid.PcdPayloadExeBase
+  gPlatformModuleTokenSpaceGuid.PcdPayloadLoadBase
+  gPlatformModuleTokenSpaceGuid.PcdFwuPayloadLoadBase
+  gPlatformModuleTokenSpaceGuid.PcdLoaderHobStackSize
+  gPlatformModuleTokenSpaceGuid.PcdPayloadReservedMemSize
+  gPlatformModuleTokenSpaceGuid.PcdLoaderAcpiNvsSize
+  gPlatformModuleTokenSpaceGuid.PcdLoaderAcpiReclaimSize
+  gPlatformModuleTokenSpaceGuid.PcdMemoryMapEntryNumber
+  gPlatformModuleTokenSpaceGuid.PcdAcpiGnvsAddress
+  gPlatformModuleTokenSpaceGuid.PcdGraphicsVbtAddress
+  gPlatformModuleTokenSpaceGuid.PcdPsdBiosEnabled
+  gPlatformModuleTokenSpaceGuid.PcdAcpiEnabled
+  gPlatformModuleTokenSpaceGuid.PcdSmpEnabled
+  gPlatformModuleTokenSpaceGuid.PcdPciEnumEnabled
+  gPlatformModuleTokenSpaceGuid.PcdFSPSBase
+  gPlatformModuleTokenSpaceGuid.PcdFlashBaseAddress
+  gPlatformModuleTokenSpaceGuid.PcdFlashSize
+  gPlatformModuleTokenSpaceGuid.PcdSplashEnabled
+  gPlatformModuleTokenSpaceGuid.PcdSplashLogoAddress
+  gPlatformModuleTokenSpaceGuid.PcdOsBootOptionNumber
+  gPlatformModuleTokenSpaceGuid.PcdServiceNumber
+  gPlatformModuleTokenSpaceGuid.PcdFlashBaseAddress
+  gPlatformModuleTokenSpaceGuid.PcdFlashSize
+  gPlatformCommonLibTokenSpaceGuid.PcdMeasuredBootEnabled
+  gPlatformModuleTokenSpaceGuid.PcdSeedListBufferSize
+  gPlatformCommonLibTokenSpaceGuid.PcdSeedListEnabled
+  gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress
+  gPlatformModuleTokenSpaceGuid.PcdSmbiosTablesBase
+  gPlatformModuleTokenSpaceGuid.PcdSmbiosTablesSize
+  gPlatformModuleTokenSpaceGuid.PcdSmbiosEnabled
+  gPlatformModuleTokenSpaceGuid.PcdLinuxPayloadEnabled
+  gPlatformCommonLibTokenSpaceGuid.PcdMeasuredBootHashMask
+  gPlatformModuleTokenSpaceGuid.PcdSmmRebaseMode
+  gPlatformModuleTokenSpaceGuid.PcdAcpiTablesRsdp
+  gPlatformCommonLibTokenSpaceGuid.PcdBuildSmmHobs
+  gPlatformCommonLibTokenSpaceGuid.PcdBootPerformanceMask
+  gPlatformModuleTokenSpaceGuid.PcdSblResiliencyEnabled
+  gPlatformModuleTokenSpaceGuid.PcdEnableFwuNotify
+
+[Depex]
+  TRUE

@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PartitionLib\PartitionLib.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PartitionLib\SpiPartition.c

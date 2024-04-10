@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_SMM_DEPEX -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\A4EC8ADB-B7A8-47d1-8E52-EC820D0ACF6FFvbSmm\A4EC8ADB-B7A8-47d1-8E52-EC820D0ACF6FSEC1.1.dpx E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\PldCommonPkg\FvbRuntimeDxe\FvbSmm\OUTPUT\FvbSmm.depex

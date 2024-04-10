@@ -1,0 +1,33 @@
+#  SBL gpiodump application
+#
+#  Copyright (c) 2022, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+
+[Defines]
+  INF_VERSION                = 0x00010005
+  BASE_NAME                  = Gpiodump
+  FILE_GUID                  = 75867c94-2023-494c-915a-b46598aa05f0
+  MODULE_TYPE                = UEFI_APPLICATION
+  ENTRY_POINT                = GpiodumpEntryPoint
+  UEFI_SPECIFICATION_VERSION = 0x0002001E
+
+[Sources]
+  ShellGpioApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  SortLib
+  ShellLib
+  MemoryAllocationLib
+  ShellCommandLib
+  IoLib
+  DebugLib
+  BaseMemoryLib
+

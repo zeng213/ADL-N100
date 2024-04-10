@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\HeciLib\HeciCore.c e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\HeciLib\HeciLib.c

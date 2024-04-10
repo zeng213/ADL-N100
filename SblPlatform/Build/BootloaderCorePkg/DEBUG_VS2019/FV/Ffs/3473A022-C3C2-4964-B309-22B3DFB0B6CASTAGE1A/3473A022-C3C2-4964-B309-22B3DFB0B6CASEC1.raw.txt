@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Ffs\3473A022-C3C2-4964-B309-22B3DFB0B6CASTAGE1A\3473A022-C3C2-4964-B309-22B3DFB0B6CASEC1.raw e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\VerInfo.bin

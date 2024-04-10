@@ -1,0 +1,11 @@
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressBlockIo.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressDiskInfo.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpress.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressHci.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressLib.inf
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressHci.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressDiskInfo.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressPassthru.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressBlockIo.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpress.h
+e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressLib\DEBUG\AutoGen.h

@@ -1,0 +1,674 @@
+ Tcg2Dxe
+
+ Timestamp is 65f952cd (Tue Mar 19 16:54:37 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000114H .text                   CODE
+ 0001:00000114 0000c8bbH .text$mn                CODE
+ 0002:00000000 000035e4H .rdata                  DATA
+ 0002:000035e4 00000658H .rdata$voltmd           DATA
+ 0002:00003c3c 00000158H .rdata$zzzdbg           DATA
+ 0003:00000000 00000540H .data                   DATA
+ 0003:00000540 000001c8H .bss                    DATA
+ 0004:00000000 0000060cH .pdata                  DATA
+ 0005:00000000 000004f0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemSetMem          0000000000000320     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       InternalMemIsZeroBuffer    0000000000000380     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:000000f0       InternalMemCompareMem      00000000000003b0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000110       CpuPause                   00000000000003d0     BaseLib:CpuPause.obj
+ 0001:00000114       _ModuleEntryPoint          00000000000003d4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000130       ProcessLibraryConstructorList 00000000000003f0 f   Tcg2Dxe:AutoGen.obj
+ 0001:000007bc       InternalDumpData           0000000000000a7c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000810       InternalDumpHex            0000000000000ad0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000928       Tcg2GetCapability          0000000000000be8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000a60       DumpEvent                  0000000000000d20 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000b5c       DumpTcgEfiSpecIdEventStruct 0000000000000e1c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000db4       DumpEvent2                 0000000000001074 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000f74       GetPcrEvent2Size           0000000000001234 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001000       DumpEventLog               00000000000012c0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000011fc       GetTpm2AcpiTable           00000000000014bc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000013a0       SetTpmAcpiTableInfo        0000000000001660 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000146c       Tcg2GetEventLog            000000000000172c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001638       TcgCommLogEvent            00000000000018f8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001750       TcgDxeLogEvent             0000000000001a10 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000193c       TcgDxeLogHashEvent         0000000000001bfc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001b4c       TcgDxeHashLogExtendEvent   0000000000001e0c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001c74       Tcg2HashLogExtendEvent     0000000000001f34 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001e0c       Tcg2SubmitCommand          00000000000020cc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001f04       Tcg2GetActivePCRBanks      00000000000021c4 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001f20       Tcg2SetActivePCRBanks      00000000000021e0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001fe0       Tcg2GetResultOfSetActivePcrBanks 00000000000022a0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002020       GetTpmLogLastEvent         00000000000022e0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002110       TpmDisabledInBootloader    00000000000023d0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000022a4       SetupEventLog              0000000000002564 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000254c       TcgMeasureAction           000000000000280c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000258c       MeasureSeparatorEvent      000000000000284c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000025ec       MeasureVariable            00000000000028ac f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002750       ReadAndMeasureVariable     0000000000002a10 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000027e8       MeasureAllBootVariables    0000000000002aa8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000028ec       MeasureAllSecureVariables  0000000000002bac f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000029d0       MeasureSecureBootPolicy    0000000000002c90 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002aac       OnReadyToBoot              0000000000002d6c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002bf0       OnExitBootServices         0000000000002eb0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002c6c       OnExitBootServicesFailed   0000000000002f2c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002cb0       ShutdownTpmOnReset         0000000000002f70 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002d80       OnResetNotificationInstall 0000000000003040 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002e34       DriverEntry                00000000000030f4 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000033d8       Tcg2DxeImageRead           0000000000003698 f   Tcg2Dxe:MeasureBootPeCoff.obj
+ 0001:000034d8       MeasurePeImageAndExtend    0000000000003798 f   Tcg2Dxe:MeasureBootPeCoff.obj
+ 0001:00003880       GetPcdProtocol             0000000000003b40 f   DxePcdLib:DxePcdLib.obj
+ 0001:00003930       CopyMem                    0000000000003bf0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000039d8       ZeroMem                    0000000000003c98 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00003a5c       CompareGuid                0000000000003d1c f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00003b54       SetMem                     0000000000003e14 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00003bc8       StrLen                     0000000000003e88 f   BaseLib:String.obj
+ 0001:00003c7c       AsciiStrLen                0000000000003f3c f   BaseLib:String.obj
+ 0001:00003cfc       StrnLenS                   0000000000003fbc f   BaseLib:SafeString.obj
+ 0001:00003d5c       UnicodeVSPrint             000000000000401c f   BasePrintLib:PrintLib.obj
+ 0001:00003e04       UnicodeSPrint              00000000000040c4 f   BasePrintLib:PrintLib.obj
+ 0001:00003e24       AsciiSPrint                00000000000040e4 f   BasePrintLib:PrintLib.obj
+ 0001:00003e50       BasePrintLibFillBuffer     0000000000004110 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003e84       BasePrintLibValueToString  0000000000004144 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003ef8       BasePrintLibSPrintMarker   00000000000041b8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004ef8       BasePrintLibSPrint         00000000000051b8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004f1c       DebugPrint                 00000000000051dc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004f40       DebugPrintMarker           0000000000005200 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004fd8       DebugAssert                0000000000005298 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00005058       PlatformHookSerialPortInitialize 0000000000005318 f   PlatformHookLib:PlatformHookLib.obj
+ 0001:0000512c       InternalAllocatePool       00000000000053ec f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000515c       AllocateZeroPool           000000000000541c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005184       FreePool                   0000000000005444 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000051e0       EfiCreateProtocolNotifyEvent 00000000000054a0 f   UefiLib:UefiLib.obj
+ 0001:00005354       GetVariable2               0000000000005614 f   UefiLib:UefiLib.obj
+ 0001:00005488       EfiCreateEventReadyToBootEx 0000000000005748 f   UefiLib:UefiNotTiano.obj
+ 0001:00005548       GetHobList                 0000000000005808 f   DxeHobLib:HobLib.obj
+ 0001:00005660       GetNextHob                 0000000000005920 f   DxeHobLib:HobLib.obj
+ 0001:000056b8       GetFirstGuidHob            0000000000005978 f   DxeHobLib:HobLib.obj
+ 0001:00005704       AcpiTimerLibConstructor    00000000000059c4 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00005754       InternalAcpiDelay          0000000000005a14 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:000057cc       Tpm2GetCapability          0000000000005a8c f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:0000590c       Tpm2GetCapabilityFirmwareVersion 0000000000005bcc f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:000059bc       Tpm2GetCapabilityMaxCommandResponseSize 0000000000005c7c f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00005a6c       Tpm2GetCapabilitySupportedAndActivePcrs 0000000000005d2c f   Tpm2CommandLib:Tpm2Capability.obj
+ 0001:00005de8       GetHashSizeFromAlgo        00000000000060a8 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00005e10       CopyAuthSessionCommand     00000000000060d0 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00005eb8       CopyDigestListToBuffer     0000000000006178 f   Tpm2CommandLib:Tpm2Help.obj
+ 0001:00005fe4       CheckSupportedHashMaskMismatch 00000000000062a4 f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0001:00006040       HashStart                  0000000000006300 f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0001:00006120       HashUpdate                 00000000000063e0 f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0001:000061c0       HashCompleteAndExtend      0000000000006480 f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0001:000062bc       RegisterHashInterfaceLib   000000000000657c f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0001:0000642c       Tpm2GetHashMaskFromAlgo    00000000000066ec f   HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterCommon.obj
+ 0001:000064a0       InternalReportStatusCode   0000000000006760 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00006544       Tcg2PhysicalPresenceLibReturnOperationResponseToOsFunction 0000000000006804 f   DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0001:000065f0       Tcg2PhysicalPresenceLibSubmitRequestToPreOSFunction 00000000000068b0 f   DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0001:00006748       PeCoffLoaderGetPeHeader    0000000000006a08 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00006c44       PeCoffLoaderGetImageInfo   0000000000006f04 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00006fb4       PtpCrbWaitRegisterBits     0000000000007274 f   Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0001:00007038       PtpCrbTpmCommand           00000000000072f8 f   Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0001:000074d4       DumpPtpInfo                0000000000007794 f   Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0001:00007780       DTpm2SubmitCommand         0000000000007a40 f   Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0001:0000780c       DTpm2RequestUseTpm         0000000000007acc f   Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0001:0000789c       TisPcWaitRegisterBits      0000000000007b5c f   Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0001:0000791c       TisPcReadBurstCount        0000000000007bdc f   Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0001:000079ac       Tpm2TisTpmCommand          0000000000007c6c f   Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0001:00007e64       Sha1HashInit               0000000000008124 f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00007eec       Sha1HashUpdate             00000000000081ac f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00007f0c       Sha1HashFinal              00000000000081cc f   HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0001:00007f64       Sha256HashInit             0000000000008224 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:00007fc4       Sha256HashUpdate           0000000000008284 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:00007fe4       Sha256HashFinal            00000000000082a4 f   HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0001:0000803c       Sha384HashInit             00000000000082fc f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:0000809c       Sha384HashUpdate           000000000000835c f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:000080bc       Sha384HashFinal            000000000000837c f   HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0001:00008114       Sm3HashInit                00000000000083d4 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:00008158       Sm3HashUpdate              0000000000008418 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:00008178       Sm3HashFinal               0000000000008438 f   HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0001:000081d0       IsZeroBuffer               0000000000008490 f   BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0001:00008250       IoRead32                   0000000000008510 f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:00008290       MmioRead16                 0000000000008550 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:000082cc       MmioRead32                 000000000000858c f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00008304       MmioWrite32                00000000000085c4 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000834c       SerialPortReadRegister     000000000000860c f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008380       SerialPortWriteRegister    0000000000008640 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:000083bc       SerialPortInitialize       000000000000867c f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00008580       SerialPortWrite            0000000000008840 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:000086d0       GetGuidHobDataFromSbl      0000000000008990 f   SblParseLib:SblParseLib.obj
+ 0001:0000879c       Tpm2PcrExtend              0000000000008a5c f   Tpm2CommandLib:Tpm2Integrity.obj
+ 0001:00008a38       PciExpressRead32           0000000000008cf8 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00008a88       SHA1_Update                0000000000008d48 f   OpensslLib:sha1dgst.obj
+ 0001:00008b9c       SHA1_Final                 0000000000008e5c f   OpensslLib:sha1dgst.obj
+ 0001:00008fbc       SHA256_Init                000000000000927c f   OpensslLib:sha256.obj
+ 0001:0000901c       SHA256_Update              00000000000092dc f   OpensslLib:sha256.obj
+ 0001:00009130       SHA256_Final               00000000000093f0 f   OpensslLib:sha256.obj
+ 0001:00009608       SHA384_Init                00000000000098c8 f   OpensslLib:sha512.obj
+ 0001:00009698       SHA512_Final               0000000000009958 f   OpensslLib:sha512.obj
+ 0001:000099d8       SHA512_Update              0000000000009c98 f   OpensslLib:sha512.obj
+ 0001:00009f44       sm3_update                 000000000000a204 f   OpensslLib:sm3.obj
+ 0001:0000a058       sm3_final                  000000000000a318 f   OpensslLib:sm3.obj
+ 0001:0000a288       sm3_init                   000000000000a548 f   OpensslLib:sm3.obj
+ 0001:0000a2e0       sm3_block_data_order       000000000000a5a0 f   OpensslLib:sm3.obj
+ 0001:0000c9b8       memset                     000000000000cc78 f   BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000cca0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 000000000000ccc8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       ??_C@_07GJOBDGLG@Tcg2Dxe@  000000000000cce0     Tcg2Dxe:AutoGen.obj
+ 0002:00000048       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 000000000000cce8     Tcg2Dxe:AutoGen.obj
+ 0002:00000070       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 000000000000cd10     Tcg2Dxe:AutoGen.obj
+ 0002:00000090       ??_C@_0IB@JBFCHJPK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000cd30     Tcg2Dxe:AutoGen.obj
+ 0002:00000118       ??_C@_1BG@JEGAFCNI@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt@ 000000000000cdb8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000130       ??_C@_15OKGIJJH@?$AAP?$AAK@ 000000000000cdd0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000138       ??_C@_17PNKKLKMO@?$AAK?$AAE?$AAK@ 000000000000cdd8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000140       ??_C@_15EMHHCMJI@?$AAd?$AAb@ 000000000000cde0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000148       ??_C@_17CFMLKIPF@?$AAd?$AAb?$AAx@ 000000000000cde8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000150       ??_C@_04NOJCDH@?$CF02x@    000000000000cdf0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000158       ??_C@_06LNDOODMG@?$CF04x?3?5@ 000000000000cdf8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000160       ??_C@_01EEMJAFIK@?6@       000000000000ce00     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000168       ??_C@_0BH@GKGHJNLB@Tcg2GetCapability?5?4?4?4?6@ 000000000000ce08     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000180       ??_C@_0N@PHFJPGN@Size?5?9?50x?$CFx?6@ 000000000000ce20     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000190       ??_C@_0BJ@IFDPBKFC@?51?41?5?9?50x?$CFx?0?51?40?5?9?50x?$CFx?6@ 000000000000ce30     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000001b0       ??_C@_0CF@IHINOLNB@TreeGetCapability?5?$CICompatible?$CJ?5@ 000000000000ce50     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000001d8       ??_C@_0BI@PCKEHOCL@Tcg2GetCapability?5?9?5?$CFr?6@ 000000000000ce78     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000001f0       ??_C@_09HGGJNHKA@?5?5Event?3?6@ 000000000000ce90     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000200       ??_C@_0BE@GDCLMHLN@?5?5?5?5PCRIndex?5?5?9?5?$CFd?6@ 000000000000cea0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000218       ??_C@_0BI@LDBCJMHJ@?5?5?5?5EventType?5?9?50x?$CF08x?6@ 000000000000ceb8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000230       ??_C@_0BB@CBAEMNFD@?5?5?5?5Digest?5?5?5?5?9?5@ 000000000000ced0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000244       ??_C@_05CNDJFPDP@?$CF02x?5@ 000000000000cee4     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000250       ??_C@_0BI@HEPOMJCJ@?5?5?5?5EventSize?5?9?50x?$CF08x?6@ 000000000000cef0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000268       ??_C@_0BN@KNJKMGDE@?5?5TCG_EfiSpecIDEventStruct?3?6@ 000000000000cf08     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000288       ??_C@_0BL@JCNHPFMP@?5?5?5?5signature?5?5?5?5?5?5?5?5?5?5?9?5?8@ 000000000000cf28     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000002a4       ??_C@_02HAOIJKIC@?$CFc@    000000000000cf44     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000002a8       ??_C@_02MHFDJOAC@?8?6@     000000000000cf48     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000002b0       ??_C@_0CB@FJFPEMOC@?5?5?5?5platformClass?5?5?5?5?5?5?9?50x?$CF08x@ 000000000000cf50     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000002d8       ??_C@_0CC@PBNPBDGP@?5?5?5?5specVersion?5?5?5?5?5?5?5?5?9?5?$CFd?4?$CFd?$CF@ 000000000000cf78     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000300       ??_C@_0CB@MCPHDBNF@?5?5?5?5uintnSize?5?5?5?5?5?5?5?5?5?5?9?50x?$CF02x@ 000000000000cfa0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000328       ??_C@_0CB@IHPCDNEN@?5?5?5?5NumberOfAlgorithms?5?9?50x?$CF08x@ 000000000000cfc8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000350       ??_C@_0BA@HGLHFGJJ@?5?5?5?5digest?$CI?$CFd?$CJ?6@ 000000000000cff0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000360       ??_C@_0CB@MOOKOAFN@?5?5?5?5?5?5algorithmId?5?5?5?5?5?5?9?50x?$CF04x@ 000000000000d000     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000388       ??_C@_0CB@GKBDIKHC@?5?5?5?5?5?5digestSize?5?5?5?5?5?5?5?9?50x?$CF04x@ 000000000000d028     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000003b0       ??_C@_0CB@LKINMKGG@?5?5?5?5VendorInfoSize?5?5?5?5?5?9?50x?$CF02x@ 000000000000d050     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000003d8       ??_C@_0BK@NOONBLKN@?5?5?5?5VendorInfo?5?5?5?5?5?5?5?5?5?9?5@ 000000000000d078     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000003f8       ??_C@_0BJ@BANMFCOA@?5?5?5?5DigestCount?3?50x?$CF08x?6@ 000000000000d098     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000418       ??_C@_0BJ@JKFGHDLA@?5?5?5?5?5?5HashAlgo?5?3?50x?$CF04x?6@ 000000000000d0b8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000438       ??_C@_0BD@ODBBOAIH@?5?5?5?5?5?5Digest?$CI?$CFd?$CJ?3?5@ 000000000000d0d8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000450       ??_C@_0BI@IIDGFHJB@EventLogFormat?3?5?$CI0x?$CFx?$CJ?6@ 000000000000d0f0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000468       ??_C@_0BN@IPKGKPLI@FinalEventsTable?3?5NOT?5FOUND?6@ 000000000000d108     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000488       ??_C@_0BN@CJBIAJNC@FinalEventsTable?3?5?5?5?5?$CI0x?$CFx?$CJ?6@ 000000000000d128     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000004a8       ??_C@_0BN@BJEOKCIG@?5?5Version?3?5?5?5?5?5?5?5?5?5?5?5?$CI0x?$CFx?$CJ?6@ 000000000000d148     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000004c8       ??_C@_0BN@IHLNJOFJ@?5?5NumberOfEvents?3?5?5?5?5?$CI0x?$CFx?$CJ?6@ 000000000000d168     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000004e8       ??_C@_0CG@CADOKAGM@?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus?$CJ@ 000000000000d188     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000510       ??_C@_0FF@FHEFGPNK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000d1b0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000568       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 000000000000d208     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000580       ??_C@_0DM@EFBAMHNC@Rsdp?5?$DN?50x?$CFx?0?5Rsdt?9?50x?$CFp?0?5NumEnt@ 000000000000d220     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005c0       ??_C@_0BH@PCNHKNCC@Found?5Tpm2?5ACPI?5Table?6@ 000000000000d260     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005d8       ??_C@_0BL@CCLLPAIB@Tpm2?5ACPI?5Table?5not?5found?6@ 000000000000d278     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005f8       ??_C@_0CO@HBOHAGJM@New?5TPM?5ACPI?5table?5info?3?5Laml?50@ 000000000000d298     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000628       ??_C@_0DD@BGALAPFN@Existing?5TPM?5ACPI?5table?5info?3?5L@ 000000000000d2c8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000660       ??_C@_0BM@MHFKDEDP@Tcg2GetEventLog?5?4?4?4?5?$CI0x?$CFx?$CJ?6@ 000000000000d300     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000680       ??_C@_0CJ@MEGFJLIL@Tcg2GetEventLog?5?$CIEventLogLocati@ 000000000000d320     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000006b0       ??_C@_0CK@OFFFJKBL@Tcg2GetEventLog?5?$CIEventLogLastEn@ 000000000000d350     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000006e0       ??_C@_0CK@LEHGMAHP@Tcg2GetEventLog?5?$CIEventLogTrunca@ 000000000000d380     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000710       ??_C@_0BG@NKLLMDE@Tcg2GetEventLog?5?9?5?$CFr?6@ 000000000000d3b0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000728       ??_C@_0BF@DJHOFLOP@?5?5MaxSize?5?5?5?5?9?50x?$CFx?6@ 000000000000d3c8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000740       ??_C@_0BF@CEKJAOCD@?5?5NewLogSize?5?9?50x?$CFx?6@ 000000000000d3e0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000758       ??_C@_0BF@CGGCGDJG@?5?5LogSize?5?5?5?5?9?50x?$CFx?6@ 000000000000d3f8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000770       ??_C@_0BG@IMNOFJBG@TcgCommLogEvent?5?9?5?$CFr?6@ 000000000000d410     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000788       ??_C@_0CJ@MAAIOFOB@FinalEventsTable?9?$DONumberOfEvent@ 000000000000d428     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000007b8       ??_C@_0P@JCHDJMEO@?5?5Size?5?9?50x?$CFx?6@ 000000000000d458     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000007c8       ??_C@_0BN@JNENDBAL@SupportedEventLogs?5?9?50x?$CF08x?6@ 000000000000d468     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000007e8       ??_C@_0BG@CLOCNKGL@?5?5LogFormat?5?9?50x?$CF08x?6@ 000000000000d488     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000800       ??_C@_0CN@JOMBCIAA@TcgDxeHashLogExtendEvent?5?9?5?$CFr?4?5@ 000000000000d4a0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000830       ??_C@_0BM@EFPBPDOJ@Tcg2HashLogExtendEvent?5?4?4?4?6@ 000000000000d4d0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000850       ??_C@_0CM@NOFPPOMJ@MeasurePeImageAndExtend?5?9?5?$CFr?4?5D@ 000000000000d4f0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000880       ??_C@_0BN@JHDLDBID@Tcg2HashLogExtendEvent?5?9?5?$CFr?6@ 000000000000d520     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000008a0       ??_C@_0BH@KNCPICGH@Tcg2SubmitCommand?5?4?4?4?6@ 000000000000d540     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000008b8       ??_C@_0BI@JNNDEBNF@Tcg2SubmitCommand?5?9?5?$CFr?6@ 000000000000d558     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000008d0       ??_C@_0CC@CJHJADHK@Tcg2SetActivePCRBanks?5?4?4?4?5?$CI0x?$CFx@ 000000000000d570     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000008f8       ??_C@_0BM@KNBBIHFA@Tcg2SetActivePCRBanks?5?9?5?$CFr?6@ 000000000000d598     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000918       ??_C@_0CC@NOKMAKJA@Invalid?5Tcg2Lasa?5and?5Tcg2Laml?5?$CB@ 000000000000d5b8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000940       ??_C@_0DA@DIJDHCAM@Check?5the?5tpm?5information?5from?5@ 000000000000d5e0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000970       ??_C@_0CN@HLIGADFO@ERROR?5when?5try?5to?5find?5FSP?5info@ 000000000000d610     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000009a0       ??_C@_0CN@FCKHOOCK@Measure?5boot?5is?5not?5enabled?5in?5@ 000000000000d640     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000009d0       ??_C@_0BO@KNMMKIBB@TPM?5Acpi?5table?5not?5present?4?5?6@ 000000000000d670     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000009f0       ??_C@_0DG@HHJFDPJL@No?5log?5found?5in?5the?5log?5event?0?5@ 000000000000d690     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000a28       ??_C@_0CO@LEDFEJHI@Tcg2Dxe?3?5Tcg2Lasa?50x?$CFx?5Tcg2Lasa@ 000000000000d6c8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000a58       ??_C@_0P@OGBKOGCL@SetupEventLog?6@ 000000000000d6f8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000a68       ??_C@_0DF@ENDDBILF@Copying?5event?5logs?5in?5TPM2?40?5fo@ 000000000000d708     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000aa0       ??_C@_0CA@EJDNNODI@MeasureSeparatorEvent?5Pcr?5?9?5?$CFx?6@ 000000000000d740     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000ac0       ??_C@_0DF@KPIIBNEC@Tcg2Dxe?3?5MeasureVariable?5?$CIPcr?5?9@ 000000000000d760     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000af8       ??_C@_0CF@EJGGIPIO@VariableName?5?9?5?$CFs?0?5VendorGuid?5?9@ 000000000000d798     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b20       ??_C@_0BI@LDPNOAEI@VarData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000d7c0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b38       ??_C@_1BC@HAMKBGJJ@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAx@ 000000000000d7d8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b50       ??_C@_17GPBNBHEN@?$AAd?$AAb?$AAt@ 000000000000d7f0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b58       ??_C@_0CP@NIENIDEM@Skip?5measuring?5variable?5?$CFs?5sinc@ 000000000000d7f8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b88       ??_C@_0BA@NJNPPLLD@UEFI?5Debug?5Mode@ 000000000000d828     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000b98       ??_C@_0CG@DCOCGAOE@MeasureLaunchOfFirmwareDebugger@ 000000000000d838     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000bc0       ??_C@_0CA@LNNIMJLH@MeasureAllSecureVariables?5?9?5?$CFr?6@ 000000000000d860     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000be0       ??_C@_0BM@MPDIGEME@MeasureSeparatorEvent?5?9?5?$CFr?6@ 000000000000d880     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000c00       ??_C@_0CF@GHALIKAF@Boot?5Variables?5not?5Measured?4?5Er@ 000000000000d8a0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000c30       ??_C@_0CJ@GCINOJAE@Calling?5EFI?5Application?5from?5Bo@ 000000000000d8d0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000c60       ??_C@_0BJ@JONKPKAH@?$CFa?5not?5Measured?4?5Error?$CB?6@ 000000000000d900     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000c80       ??_C@_0CG@OCHMBNOO@Separator?5Event?5not?5Measured?4?5E@ 000000000000d920     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000cb0       ??_C@_0DA@JBCCHLLJ@Returning?5from?5EFI?5Application?5@ 000000000000d950     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000ce0       ??_C@_0CM@FBKFBIKL@TPM2?5Tcg2Dxe?5Measure?5Data?5when?5@ 000000000000d980     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000d10       ??_C@_0BO@PJFLILCK@Exit?5Boot?5Services?5Invocation@ 000000000000d9b0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000d30       ??_C@_0CJ@POFGDDBB@Exit?5Boot?5Services?5Returned?5wit@ 000000000000d9d0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000d60       ??_C@_0CJ@DHBEIIEL@Exit?5Boot?5Services?5Returned?5wit@ 000000000000da00     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000d90       ??_C@_0BO@FCOCCOBI@Tpm2Shutdown?5?$CISU_CLEAR?$CJ?5?9?5?$CFr?6@ 000000000000da30     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000db0       ??_C@_0DD@HIPJDCNI@TCG2?3?5Hook?5system?5reset?5to?5prop@ 000000000000da50     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000de8       ??_C@_0BM@OPEDFPCD@No?5TPM2?5instance?5required?$CB?6@ 000000000000da88     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000e08       ??_C@_0CA@GHOEPGML@TPM?5is?5disabled?5in?5bootloader?4?6@ 000000000000daa8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000e28       ??_C@_0N@EKMKLFBJ@TPM2?5error?$CB?6@ 000000000000dac8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000e38       ??_C@_0BE@HPIAFEDM@TPM2?5not?5detected?$CB?6@ 000000000000dad8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000e50       ??_C@_0CD@GCFHIFEI@Tcg2?4ProtocolVersion?5?5?9?5?$CF02x?4?$CF0@ 000000000000daf0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000e78       ??_C@_0CD@MCJPJCBM@Tcg2?4StructureVersion?5?9?5?$CF02x?4?$CF0@ 000000000000db18     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000ea0       ??_C@_0CG@ENKAHDBF@Tpm2GetCapabilityManufactureID?5@ 000000000000db40     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000ec8       ??_C@_0CH@POOJEAJC@Tpm2GetCapabilityManufactureID?5@ 000000000000db68     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000ef0       ??_C@_0CI@CMPKNPL@Tpm2GetCapabilityFirmwareVersio@ 000000000000db90     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000f18       ??_C@_0CO@BGMJNGMO@Tpm2GetCapabilityFirmwareVersio@ 000000000000dbb8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000f48       ??_C@_0CP@MEOGGLIN@Tpm2GetCapabilityMaxCommandResp@ 000000000000dbe8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000f78       ??_C@_0DG@PLEGCMPO@Tpm2GetCapabilityMaxCommandResp@ 000000000000dc18     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000fb0       ??_C@_0CC@EHKCAJIP@Tcg2?4SupportedEventLogs?5?9?50x?$CF08@ 000000000000dc50     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000fd8       ??_C@_0CD@EOPIGCEJ@Tcg2?4HashAlgorithmBitmap?5?9?50x?$CF0@ 000000000000dc78     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00001000       ??_C@_0CF@DIICKCEP@Tcg2?4NumberOfPCRBanks?5?5?5?5?5?5?9?50x@ 000000000000dca0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00001028       ??_C@_0CF@BBELNCPA@Tcg2?4ActivePcrBanks?5?5?5?5?5?5?5?5?9?50x@ 000000000000dcc8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00001050       ??_C@_0BC@LIIDMBIA@InstallTcg2?5?9?5?$CFr?6@ 000000000000dcf0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00001068       ??_C@_0DO@JFLGAENA@Tcg2Dxe?3?5PeImage?5invalid?4?5Canno@ 000000000000dd08     Tcg2Dxe:MeasureBootPeCoff.obj
+ 0002:000010b0       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000dd50     DxePcdLib:DxePcdLib.obj
+ 0002:00001108       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000dda8     DxePcdLib:DxePcdLib.obj
+ 0002:00001120       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ddc0     DxePcdLib:DxePcdLib.obj
+ 0002:00001140       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000dde0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001190       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000de30     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000011f8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000de98     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001240       ??_C@_0GD@BACINENJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000dee0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000012a8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000df48     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000012e0       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000df80     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001320       ??_C@_0GC@LFOFKBAK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000dfc0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001390       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e030     BaseLib:String.obj
+ 0002:000013e0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e080     BaseLib:String.obj
+ 0002:000013f8       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 000000000000e098     BaseLib:String.obj
+ 0002:00001420       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000e0c0     BaseLib:String.obj
+ 0002:00001460       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000e100     BaseLib:String.obj
+ 0002:000014a0       ??_C@_0FB@MPNDMIPI@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e140     BaseLib:CheckSum.obj
+ 0002:000014f8       ??_C@_0DJ@LNOAKMHM@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000e198     BaseLib:CheckSum.obj
+ 0002:00001540       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e1e0     BaseLib:Unaligned.obj
+ 0002:000015a0       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e240     BaseLib:SafeString.obj
+ 0002:000015f8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000e298     BaseLib:DivU64x32.obj
+ 0002:00001608       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 000000000000e2a8     BasePrintLib:PrintLib.obj
+ 0002:00001630       ??_C@_0FG@KHGEGNOH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e2d0     BasePrintLib:PrintLib.obj
+ 0002:00001688       ??_C@_0CH@KJLBGOBB@?$CI?$CI?$CIUINTN?$CJ?5?$CIFormatString?$CJ?$CJ?5?$CG?50x0@ 000000000000e328     BasePrintLib:PrintLib.obj
+ 0002:000016b0       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e350     BasePrintLib:PrintLibInternal.obj
+ 0002:00001710       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000e3b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001730       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000e3d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001778       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000e418     BasePrintLib:PrintLibInternal.obj
+ 0002:000017a0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000e440     BasePrintLib:PrintLibInternal.obj
+ 0002:000017f0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000e490     BasePrintLib:PrintLibInternal.obj
+ 0002:00001880       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000e520     BasePrintLib:PrintLibInternal.obj
+ 0002:00001908       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000e5a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001918       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000e5b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001928       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000e5c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001960       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000e600     BasePrintLib:PrintLibInternal.obj
+ 0002:00001970       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000e610     BasePrintLib:PrintLibInternal.obj
+ 0002:0000198c       ??_C@_04JIMNDDED@?$CF08X@  000000000000e62c     BasePrintLib:PrintLibInternal.obj
+ 0002:00001994       ??_C@_02PCIJFNDE@?$AN?6@   000000000000e634     BasePrintLib:PrintLibInternal.obj
+ 0002:00001998       ??_C@_01LIIJDEN@?$AN@      000000000000e638     BasePrintLib:PrintLibInternal.obj
+ 0002:000019a0       mWarningString             000000000000e640     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a40       mErrorString               000000000000e6e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d00       mHexStr                    000000000000e9a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d10       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e9b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001d30       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000e9d0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001d90       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 000000000000ea30     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001db0       ??_C@_0GM@CBJAAOLO@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000ea50     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001e20       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eac0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001e40       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000eae0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001eb8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eb58     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001ee0       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000eb80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001f58       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ebf8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001f70       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ec10     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001f90       ??_C@_0FA@CCBFNMAA@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000ec30     UefiLib:UefiLib.obj
+ 0002:00001fe0       ??_C@_0BN@HHGHCLME@ProtocolGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ec80     UefiLib:UefiLib.obj
+ 0002:00002000       ??_C@_0BP@DEIEJICI@NotifyFunction?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000eca0     UefiLib:UefiLib.obj
+ 0002:00002020       ??_C@_0BN@OMCJCPAI@Registration?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ecc0     UefiLib:UefiLib.obj
+ 0002:00002040       ??_C@_0EG@GOBFPEEP@Name?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Guid?5?$CB?$DN@ 000000000000ece0     UefiLib:UefiLib.obj
+ 0002:00002088       ??_C@_0BH@FMEOEIBC@?$CKValue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ed28     UefiLib:UefiLib.obj
+ 0002:000020a0       ??_C@_0FF@DIHJKAPJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000ed40     UefiLib:UefiNotTiano.obj
+ 0002:000020f8       ??_C@_0CB@LNNMJOKK@ReadyToBootEvent?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 000000000000ed98     UefiLib:UefiNotTiano.obj
+ 0002:00002120       ??_C@_0CH@LOBIJKLE@EFI1?41?5can?8t?5support?5ReadyToBoo@ 000000000000edc0     UefiLib:UefiNotTiano.obj
+ 0002:00002150       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000edf0     DxeHobLib:HobLib.obj
+ 0002:000021a8       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ee48     DxeHobLib:HobLib.obj
+ 0002:000021c8       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ee68     DxeHobLib:HobLib.obj
+ 0002:000021e8       ??_C@_0BI@EDOKPJOP@GuidHob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ee88     AcpiTimerLib:AcpiTimerLib.obj
+ 0002:00002200       ??_C@_0GC@KBKBDNKG@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000eea0     AcpiTimerLib:AcpiTimerLib.obj
+ 0002:00002270       ??_C@_0EH@COKFIGCH@WARNING?3?5Tpm2RegisterTpm2Device@ 000000000000ef10     Tpm2DeviceLibRouterDxe:Tpm2DeviceLibRouterDxe.obj
+ 0002:000022c0       ??_C@_0GM@EIOPFHHP@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000ef60     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00002330       ??_C@_0DB@KOKONOLJ@Tpm2GetCapability?3?5Response?5Cod@ 000000000000efd0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002368       ??_C@_0CO@ILJMKKED@Tpm2GetCapabilityPcrs?5?9?5Pcrs?9?$DOc@ 000000000000f008     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002398       ??_C@_0CP@CPHIDBJG@Tpm2GetCapabilityPcrs?5?9?5sizeofS@ 000000000000f038     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:000023c8       ??_C@_0DJ@KDPBCIB@GetSupportedAndActivePcrs?5?9?5Tpm@ 000000000000f068     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002408       ??_C@_0CK@KNJMCFEO@GetSupportedAndActivePcrs?5?9?5Cou@ 000000000000f0a8     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002438       ??_C@_0DE@MHAKPNCH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f0d8     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002470       ??_C@_0DD@DFEMILPG@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f110     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:000024a8       ??_C@_0DG@DAFMMDHA@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f148     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:000024e0       ??_C@_0DF@BCFIBGC@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f180     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002518       ??_C@_0DG@GEENMOH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f1b8     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002550       ??_C@_0DF@BKHAOAMI@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f1f0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002588       ??_C@_0DG@JGCODIFJ@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f228     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:000025c0       ??_C@_0DF@MPIJMPMH@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f260     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:000025f8       ??_C@_0DH@FCPDMLJN@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f298     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002630       ??_C@_0DG@HDDALDDO@GetSupportedAndActivePcrs?5?9?5HAS@ 000000000000f2d0     Tpm2CommandLib:Tpm2Capability.obj
+ 0002:00002670       ??_C@_0EE@DHPAEMCB@WARNING?3?5TPM2?5Event?5log?5has?5Has@ 000000000000f310     Tpm2CommandLib:Tpm2Help.obj
+ 0002:000026b8       ??_C@_0CM@OHCLJEPP@Tpm2Shutdown?3?5Response?5Code?5err@ 000000000000f358     Tpm2CommandLib:Tpm2Startup.obj
+ 0002:000026f0       ??_C@_0FA@MGLDGNCK@WARNING?3?5There?5is?5mismatch?5of?5s@ 000000000000f390     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0002:00002740       ??_C@_0DH@FNLEDOGL@that?5are?5linking?5different?5Hash@ 000000000000f3e0     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0002:00002778       ??_C@_0BI@BPNPNPDM@HashCtx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f418     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0002:00002790       ??_C@_0HI@LNIIKAAA@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000f430     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0002:00002808       ??_C@_0CJ@GBLBBLEC@Hash?5Interface?5?$CI?$CFg?$CJ?5has?5been?5re@ 000000000000f4a8     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0002:00002838       ??_C@_1CK@CDNPNDOC@?$AAT?$AAc?$AAg?$AA2?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAP?$AAr?$AAe@ 000000000000f4d8     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00002868       ??_C@_1DE@FLEKIBFK@?$AAT?$AAc?$AAg?$AA2?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAP?$AAr?$AAe@ 000000000000f508     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:000028a0       ??_C@_0CM@NFDPGEGC@?$FLTPM2?$FN?5ReturnOperationResponseT@ 000000000000f540     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:000028d0       ??_C@_0CN@EMNDJEOO@?$FLTPM2?$FN?5Get?5PP?5variable?5failure?$CB@ 000000000000f570     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00002900       ??_C@_0DH@GNNJFNBH@?$FLTPM2?$FN?5SubmitRequestToPreOSFunc@ 000000000000f5a0     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00002938       ??_C@_0CN@KCNBJKMI@?$FLTPM2?$FN?5Set?5PP?5variable?5failure?$CB@ 000000000000f5d8     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0002:00002968       ??_C@_0BJ@CJMMLOKP@PtpCrbTpmCommand?5Send?5?9?5@ 000000000000f608     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002988       ??_C@_07ENEOHAFF@?4?4?4?4?4?4?5@ 000000000000f628     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002990       ??_C@_0CC@MDBPJIHJ@PtpCrbTpmCommand?5ReceiveHeader?5@ 000000000000f630     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:000029b8       ??_C@_0BN@ODJHGIAI@TPM2?3?5TPM_ST_RSP?5error?5?9?5?$CFx?6@ 000000000000f658     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:000029d8       ??_C@_0BM@OEDBGOFI@PtpCrbTpmCommand?5Receive?5?9?5@ 000000000000f678     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:000029f8       ??_C@_0BG@BFFPIIFN@InterfaceId?5?9?50x?$CF08x?6@ 000000000000f698     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002a10       ??_C@_0BN@OLAJPNAB@?5?5InterfaceType?5?5?5?5?9?50x?$CF02x?6@ 000000000000f6b0     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002a30       ??_C@_0BN@CBOMCBLB@?5?5InterfaceVersion?5?9?50x?$CF02x?6@ 000000000000f6d0     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002a50       ??_C@_0BL@NIMCCIAE@?5?5CapFIFO?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx?6@ 000000000000f6f0     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002a70       ??_C@_0BL@OALNKBBG@?5?5CapCRB?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx?6@ 000000000000f710     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002a90       ??_C@_0BO@JONAPKA@InterfaceCapability?5?9?50x?$CF08x?6@ 000000000000f730     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002ab0       ??_C@_0BL@IKIALMLK@?5?5InterfaceVersion?5?9?50x?$CFx?6@ 000000000000f750     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002ad0       ??_C@_0BD@CMOFOFOD@StatusEx?5?9?50x?$CF02x?6@ 000000000000f770     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002ae8       ??_C@_0BE@IHAINBAP@?5?5TpmFamily?5?9?50x?$CFx?6@ 000000000000f788     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002b00       ??_C@_0BD@FAOBCNNA@PtpInterface?5?9?5?$CFx?6@ 000000000000f7a0     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002b18       ??_C@_0O@DFHAMLGN@VID?5?9?50x?$CF04x?6@ 000000000000f7b8     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002b28       ??_C@_0O@LCKMDDKM@DID?5?9?50x?$CF04x?6@ 000000000000f7c8     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002b38       ??_C@_0O@JLHBLKK@RID?5?9?50x?$CF02x?6@ 000000000000f7d8     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0002:00002b48       ??_C@_0BK@DEFHLCN@Tpm2TisTpmCommand?5Send?5?9?5@ 000000000000f7e8     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002b68       ??_C@_0CA@EFLHBKC@Tpm2?5is?5not?5ready?5for?5command?$CB?6@ 000000000000f808     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002b88       ??_C@_0CB@IMPHHLJO@Tpm2?5The?5send?5buffer?5too?5small?$CB@ 000000000000f828     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002bb0       ??_C@_0EG@FDBJOBLO@Wait?5for?5Tpm2?5response?5data?5tim@ 000000000000f850     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002bf8       ??_C@_0CD@CEDHAJC@Tpm2TisTpmCommand?5ReceiveHeader@ 000000000000f898     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002c20       ??_C@_0BN@CEGJLJBD@Tpm2TisTpmCommand?5Receive?5?9?5@ 000000000000f8c0     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0002:00002c40       ??_C@_0BI@PDOHMKFB@Sha1Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f8e0     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0002:00002c60       ??_C@_0GN@KJCHLBLH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000f900     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0002:00002cd0       ??_C@_0BK@KDPDBHFH@Sha256Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f970     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0002:00002cf0       ??_C@_0HB@GNGMFNO@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000f990     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0002:00002d68       ??_C@_0BK@COIOCNDO@Sha384Ctx?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fa08     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0002:00002d90       ??_C@_0HB@EGKDAKLN@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fa30     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0002:00002e08       ??_C@_0CI@MNELLLEK@?$CB?$CIBuffer?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Len@ 000000000000faa8     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0002:00002e30       ??_C@_0GI@GLPJALCI@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fad0     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0002:00002ea0       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fb40     BaseLib:DivU64x32Remainder.obj
+ 0002:00002f00       ??_C@_0FM@GDLDJIBH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fba0     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0002:00002f60       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000fc00     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0002:00002f70       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fc10     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00002fd0       ??_C@_0BD@KOOFJLFH@?$CIAddress?5?$CG?51?$CJ?5?$DN?$DN?50@ 000000000000fc70     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00002fe8       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 000000000000fc88     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00003000       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fca0     SblParseLib:SblParseLib.obj
+ 0002:00003080       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 000000000000fd20     SblParseLib:SblParseLib.obj
+ 0002:00003098       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 000000000000fd38     SblParseLib:SblParseLib.obj
+ 0002:000030b8       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fd58     SblParseLib:SblParseLib.obj
+ 0002:000030d0       ??_C@_0BM@MHPCHHCG@Unknown?5hash?5algorithm?5?$CFd?$AN?6@ 000000000000fd70     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:000030f0       ??_C@_0DJ@LNLDEGHP@Tpm2PcrExtend?3?5Failed?5ExecuteCo@ 000000000000fd90     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00003130       ??_C@_0CN@LMKGIIJM@Tpm2PcrExtend?3?5Response?5size?5to@ 000000000000fdd0     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00003160       ??_C@_0CN@NCCLKBKF@Tpm2PcrExtend?3?5Response?5Code?5er@ 000000000000fe00     Tpm2CommandLib:Tpm2Integrity.obj
+ 0002:00003190       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 000000000000fe30     BasePciExpressLib:PciExpressLib.obj
+ 0002:000031b0       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 000000000000fe50     BasePciExpressLib:PciExpressLib.obj
+ 0002:000035e4       __volatile_metadata        0000000000010284     <linker-defined>
+ 0003:00000000       _fltused                   0000000000010a40     BaseIntrinsicLib:MemoryIntrinsics.obj
+ 0003:00000008       gEfiGlobalVariableGuid     0000000000010a48     Tcg2Dxe:AutoGen.obj
+ 0003:00000018       gEfiStatusCodeRuntimeProtocolGuid 0000000000010a58     Tcg2Dxe:AutoGen.obj
+ 0003:00000028       gTpmErrorHobGuid           0000000000010a68     Tcg2Dxe:AutoGen.obj
+ 0003:00000038       gEventExitBootServicesFailedGuid 0000000000010a78     Tcg2Dxe:AutoGen.obj
+ 0003:00000048       gEfiEventReadyToBootGuid   0000000000010a88     Tcg2Dxe:AutoGen.obj
+ 0003:00000058       gUefiSerialPortInfoGuid    0000000000010a98     Tcg2Dxe:AutoGen.obj
+ 0003:00000068       gTcgEventEntryHobGuid      0000000000010aa8     Tcg2Dxe:AutoGen.obj
+ 0003:00000078       gEfiImageSecurityDatabaseGuid 0000000000010ab8     Tcg2Dxe:AutoGen.obj
+ 0003:00000088       gEfiVariableWriteArchProtocolGuid 0000000000010ac8     Tcg2Dxe:AutoGen.obj
+ 0003:00000098       gPcdProtocolGuid           0000000000010ad8     Tcg2Dxe:AutoGen.obj
+ 0003:000000a8       _gPcd_BinaryPatch_PcdPciSerialParameters 0000000000010ae8     Tcg2Dxe:AutoGen.obj
+ 0003:000000c2       _gPcd_BinaryPatch_PcdReportStatusCodePropertyMask 0000000000010b02     Tcg2Dxe:AutoGen.obj
+ 0003:000000c8       gEfiTcg2FinalEventsTableGuid 0000000000010b08     Tcg2Dxe:AutoGen.obj
+ 0003:000000d8       gUefiAcpiBoardInfoGuid     0000000000010b18     Tcg2Dxe:AutoGen.obj
+ 0003:000000e8       gLoaderFspInfoGuid         0000000000010b28     Tcg2Dxe:AutoGen.obj
+ 0003:000000f8       _gPcd_BinaryPatch_PcdSerialLineControl 0000000000010b38     Tcg2Dxe:AutoGen.obj
+ 0003:00000100       gEfiTpmDeviceInstanceTpm12Guid 0000000000010b40     Tcg2Dxe:AutoGen.obj
+ 0003:00000110       gEfiHiiConfigRoutingProtocolGuid 0000000000010b50     Tcg2Dxe:AutoGen.obj
+ 0003:00000120       gEfiResetNotificationProtocolGuid 0000000000010b60     Tcg2Dxe:AutoGen.obj
+ 0003:00000130       gEfiAcpiTableGuid          0000000000010b70     Tcg2Dxe:AutoGen.obj
+ 0003:00000140       gEfiTcg2PhysicalPresenceGuid 0000000000010b80     Tcg2Dxe:AutoGen.obj
+ 0003:00000150       gEfiHiiImageProtocolGuid   0000000000010b90     Tcg2Dxe:AutoGen.obj
+ 0003:00000160       _gPcd_BinaryPatch_PcdSerialUseMmio 0000000000010ba0     Tcg2Dxe:AutoGen.obj
+ 0003:00000168       gEfiHiiDatabaseProtocolGuid 0000000000010ba8     Tcg2Dxe:AutoGen.obj
+ 0003:00000178       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 0000000000010bb8     Tcg2Dxe:AutoGen.obj
+ 0003:00000180       gEfiHiiStringProtocolGuid  0000000000010bc0     Tcg2Dxe:AutoGen.obj
+ 0003:00000190       gEfiTcg2ProtocolGuid       0000000000010bd0     Tcg2Dxe:AutoGen.obj
+ 0003:000001a0       _gPcd_BinaryPatch_PcdDebugPropertyMask 0000000000010be0     Tcg2Dxe:AutoGen.obj
+ 0003:000001a8       gEfiHobListGuid            0000000000010be8     Tcg2Dxe:AutoGen.obj
+ 0003:000001b8       gEfiEventExitBootServicesGuid 0000000000010bf8     Tcg2Dxe:AutoGen.obj
+ 0003:000001c8       _gPcd_BinaryPatch_PcdSerialFifoControl 0000000000010c08     Tcg2Dxe:AutoGen.obj
+ 0003:000001d0       gEfiCallerIdGuid           0000000000010c10     Tcg2Dxe:AutoGen.obj
+ 0003:000001e0       gTcgEvent2EntryHobGuid     0000000000010c20     Tcg2Dxe:AutoGen.obj
+ 0003:000001f0       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 0000000000010c30     Tcg2Dxe:AutoGen.obj
+ 0003:000001f8       gEfiHiiFontProtocolGuid    0000000000010c38     Tcg2Dxe:AutoGen.obj
+ 0003:00000210       mBootVarName               0000000000010c50     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000230       mTcgDxeData                0000000000010c70     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000330       mVariableType              0000000000010d70     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000380       mTcg2Protocol              0000000000010dc0     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:000003c0       mTcg2EventInfo             0000000000010e00     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000410       mTpm2HashMask              0000000000010e50     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterCommon.obj
+ 0003:00000478       mDTpm2InternalTpm2Device   0000000000010eb8     Tpm2InstanceLibDTpm:Tpm2InstanceLibDTpm.obj
+ 0003:00000498       mSha1InternalHashInstance  0000000000010ed8     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0003:000004c0       mSha256InternalHashInstance 0000000000010f00     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0003:000004e8       mSha384InternalHashInstance 0000000000010f28     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0003:00000510       mSm3InternalHashInstance   0000000000010f50     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0003:00000540       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000010f80     Tcg2Dxe:AutoGen.obj
+ 0003:00000548       gEfiTpmDeviceInstanceNoneGuid 0000000000010f88     Tcg2Dxe:AutoGen.obj
+ 0003:00000558       _gPcd_BinaryPatch_PcdSerialRegisterStride 0000000000010f98     Tcg2Dxe:AutoGen.obj
+ 0003:0000055c       _gPcd_BinaryPatch_PcdSerialDetectCable 0000000000010f9c     Tcg2Dxe:AutoGen.obj
+ 0003:0000055d       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 0000000000010f9d     Tcg2Dxe:AutoGen.obj
+ 0003:00000560       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 0000000000010fa0     Tcg2Dxe:AutoGen.obj
+ 0003:00000568       _gPcd_BinaryPatch_PcdSerialClockRate 0000000000010fa8     Tcg2Dxe:AutoGen.obj
+ 0003:0000056c       _gPcd_BinaryPatch_PcdSerialBaudRate 0000000000010fac     Tcg2Dxe:AutoGen.obj
+ 0003:00000570       mTpmLasaInfo               0000000000010fb0     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000580       mBootAttempts              0000000000010fc0     Tcg2Dxe:Tcg2Dxe.obj
+ 0003:00000588       mTcg2DxeImageSize          0000000000010fc8     Tcg2Dxe:MeasureBootPeCoff.obj
+ 0003:00000590       mPcd                       0000000000010fd0     DxePcdLib:DxePcdLib.obj
+ 0003:00000598       gRT                        0000000000010fd8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000005a0       gST                        0000000000010fe0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005a8       gBS                        0000000000010fe8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005b0       gImageHandle               0000000000010ff0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000005b8       mHobList                   0000000000010ff8     DxeHobLib:HobLib.obj
+ 0003:000005c0       mPmTimerReg                0000000000011000     AcpiTimerLib:AcpiTimerLib.obj
+ 0003:000005c8       gHiiString                 0000000000011008     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000005d0       gHiiFont                   0000000000011010     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000005d8       gHiiConfigRouting          0000000000011018     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000005e0       gHiiImage                  0000000000011020     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000005e8       gHiiDatabase               0000000000011028     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:000005f0       mSupportedHashMaskLast     0000000000011030     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0003:000005f4       mSupportedHashMaskCurrent  0000000000011034     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0003:000005f8       mHashInterfaceCount        0000000000011038     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0003:00000600       mHashInterface             0000000000011040     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0003:000006c8       mReportStatusCodeLibStatusCodeProtocol 0000000000011108     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:000006e0       mInternalTpm2DeviceInterface 0000000000011120     <common>
+ 0003:00000700       mImageHandle               0000000000011140     <common>
+
+ entry point at        0001:00000114
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000000e5       @ReturnFalse               00000000000003a5     BaseMemoryLibRepStr:IsZeroBuffer.obj
+ 0001:00008ce8       sha1_block_data_order      0000000000008fa8 f   OpensslLib:sha1dgst.obj
+ 0001:000092f0       sha256_block_data_order    00000000000095b0 f   OpensslLib:sha256.obj
+ 0001:00009adc       sha512_block_data_order    0000000000009d9c f   OpensslLib:sha512.obj
+ 0002:00003210       K256                       000000000000feb0     OpensslLib:sha256.obj
+ 0002:00003310       K512                       000000000000ffb0     OpensslLib:sha512.obj
+ 0003:000003e0       mHashInfo                  0000000000010e20     Tpm2CommandLib:Tpm2Help.obj
+ 0003:00000538       memset_func                0000000000010f78     OpensslLib:mem_clr.obj
+ 0005:00000000       $unwind$SHA256_Init        0000000000011780     OpensslLib:sha256.obj
+ 0005:00000000       $unwind$sm3_init           0000000000011780     OpensslLib:sm3.obj
+ 0005:00000000       $unwind$MmioRead16         0000000000011780     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000000       $unwind$MmioRead32         0000000000011780     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000000       $unwind$IoRead32           0000000000011780     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000011780     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PciExpressRead32   0000000000011780     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$GetNextHob         0000000000011780     DxeHobLib:HobLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000011780     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$AllocateZeroPool   0000000000011780     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$OnExitBootServices 0000000000011780     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000000       $unwind$OnResetNotificationInstall 0000000000011780     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000000       $unwind$AcpiTimerLibConstructor 0000000000011780     AcpiTimerLib:AcpiTimerLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000011788     Tcg2Dxe:AutoGen.obj
+ 0005:00000024       $unwind$InternalDumpData   00000000000117a4     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000024       $unwind$Tcg2SubmitCommand  00000000000117a4     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000034       $unwind$CompareGuid        00000000000117b4     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000034       $unwind$InternalDumpHex    00000000000117b4     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000050       $unwind$DumpEvent          00000000000117d0     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000050       $unwind$Tcg2GetCapability  00000000000117d0     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000060       $unwind$DumpTcgEfiSpecIdEventStruct 00000000000117e0     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000078       $unwind$DumpEvent2         00000000000117f8     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:0000008c       $unwind$GetPcrEvent2Size   000000000001180c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:0000009c       $unwind$DumpEventLog       000000000001181c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000000b0       $unwind$GetTpm2AcpiTable   0000000000011830     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000000c8       $unwind$SetTpmAcpiTableInfo 0000000000011848     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000000dc       $unwind$Tcg2GetEventLog    000000000001185c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000000f4       $unwind$SHA1_Final         0000000000011874     OpensslLib:sha1dgst.obj
+ 0005:000000f4       $unwind$SHA256_Final       0000000000011874     OpensslLib:sha256.obj
+ 0005:000000f4       $unwind$TcgCommLogEvent    0000000000011874     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000000f4       $unwind$HashStart          0000000000011874     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0005:000000f4       $unwind$HashUpdate         0000000000011874     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0005:0000010c       $unwind$TcgDxeLogEvent     000000000001188c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000128       $unwind$TcgDxeLogHashEvent 00000000000118a8     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000148       $unwind$TcgDxeHashLogExtendEvent 00000000000118c8     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000164       $unwind$Tcg2HashLogExtendEvent 00000000000118e4     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:0000017c       $unwind$MmioWrite32        00000000000118fc     BaseIoLibIntrinsic:IoLib.obj
+ 0005:0000017c       $unwind$AsciiStrLen        00000000000118fc     BaseLib:String.obj
+ 0005:0000017c       $unwind$IsZeroBuffer       00000000000118fc     BaseMemoryLibRepStr:IsZeroBufferWrapper.obj
+ 0005:0000017c       $unwind$ZeroMem            00000000000118fc     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:0000017c       $unwind$GetFirstGuidHob    00000000000118fc     DxeHobLib:HobLib.obj
+ 0005:0000017c       $unwind$Tcg2SetActivePCRBanks 00000000000118fc     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:0000017c       $unwind$Sha1HashInit       00000000000118fc     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:0000017c       $unwind$Sha256HashInit     00000000000118fc     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:0000017c       $unwind$Sha384HashInit     00000000000118fc     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:0000017c       $unwind$Sm3HashInit        00000000000118fc     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:0000017c       $unwind$CopyAuthSessionCommand 00000000000118fc     Tpm2CommandLib:Tpm2Help.obj
+ 0005:0000017c       $unwind$GetGuidHobDataFromSbl 00000000000118fc     SblParseLib:SblParseLib.obj
+ 0005:00000188       $unwind$GetPcdProtocol     0000000000011908     DxePcdLib:DxePcdLib.obj
+ 0005:00000188       $unwind$FreePool           0000000000011908     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000188       $unwind$InternalAllocatePool 0000000000011908     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000188       $unwind$OnExitBootServicesFailed 0000000000011908     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000188       $unwind$Tcg2GetResultOfSetActivePcrBanks 0000000000011908     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000188       $unwind$Sha1HashUpdate     0000000000011908     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:00000188       $unwind$Sha256HashUpdate   0000000000011908     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:00000188       $unwind$Sha384HashUpdate   0000000000011908     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:00000188       $unwind$Sm3HashUpdate      0000000000011908     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:00000188       $unwind$CheckSupportedHashMaskMismatch 0000000000011908     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0005:00000188       $unwind$DTpm2RequestUseTpm 0000000000011908     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0005:00000190       $unwind$GetTpmLogLastEvent 0000000000011910     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001a0       $unwind$TpmDisabledInBootloader 0000000000011920     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001b0       $unwind$SetupEventLog      0000000000011930     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001c4       $unwind$MeasureSecureBootPolicy 0000000000011944     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001c4       $unwind$MeasureSeparatorEvent 0000000000011944     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001c4       $unwind$ShutdownTpmOnReset 0000000000011944     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001c4       $unwind$TcgMeasureAction   0000000000011944     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001cc       $unwind$MeasureVariable    000000000001194c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001e4       $unwind$ReadAndMeasureVariable 0000000000011964     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:000001fc       $unwind$MeasureAllBootVariables 000000000001197c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:0000020c       $unwind$MeasureAllSecureVariables 000000000001198c     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000218       $unwind$OnReadyToBoot      0000000000011998     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000224       $unwind$DriverEntry        00000000000119a4     Tcg2Dxe:Tcg2Dxe.obj
+ 0005:00000238       $unwind$StrLen             00000000000119b8     BaseLib:String.obj
+ 0005:00000238       $unwind$CopyMem            00000000000119b8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000238       $unwind$SetMem             00000000000119b8     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:00000238       $unwind$BasePrintLibValueToString 00000000000119b8     BasePrintLib:PrintLibInternal.obj
+ 0005:00000238       $unwind$GetHobList         00000000000119b8     DxeHobLib:HobLib.obj
+ 0005:00000238       $unwind$Tcg2DxeImageRead   00000000000119b8     Tcg2Dxe:MeasureBootPeCoff.obj
+ 0005:00000238       $unwind$InternalAcpiDelay  00000000000119b8     AcpiTimerLib:AcpiTimerLib.obj
+ 0005:00000248       $unwind$MeasurePeImageAndExtend 00000000000119c8     Tcg2Dxe:MeasureBootPeCoff.obj
+ 0005:00000260       $unwind$UnicodeVSPrint     00000000000119e0     BasePrintLib:PrintLib.obj
+ 0005:00000260       $unwind$DTpm2SubmitCommand 00000000000119e0     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0005:00000274       $unwind$UnicodeSPrint      00000000000119f4     BasePrintLib:PrintLib.obj
+ 0005:0000027c       $unwind$AsciiSPrint        00000000000119fc     BasePrintLib:PrintLib.obj
+ 0005:00000284       $unwind$BasePrintLibSPrintMarker 0000000000011a04     BasePrintLib:PrintLibInternal.obj
+ 0005:000002a0       $unwind$BasePrintLibSPrint 0000000000011a20     BasePrintLib:PrintLibInternal.obj
+ 0005:000002a8       $unwind$DebugPrint         0000000000011a28     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002b0       $unwind$DebugPrintMarker   0000000000011a30     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002c4       $unwind$DebugAssert        0000000000011a44     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000002cc       $unwind$PlatformHookSerialPortInitialize 0000000000011a4c     PlatformHookLib:PlatformHookLib.obj
+ 0005:000002d4       $unwind$EfiCreateProtocolNotifyEvent 0000000000011a54     UefiLib:UefiLib.obj
+ 0005:000002e4       $unwind$GetVariable2       0000000000011a64     UefiLib:UefiLib.obj
+ 0005:000002f8       $unwind$InternalReportStatusCode 0000000000011a78     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:000002f8       $unwind$EfiCreateEventReadyToBootEx 0000000000011a78     UefiLib:UefiNotTiano.obj
+ 0005:00000300       $unwind$Tpm2GetCapability  0000000000011a80     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:00000310       $unwind$Tpm2GetCapabilityFirmwareVersion 0000000000011a90     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:00000310       $unwind$Tpm2GetCapabilityMaxCommandResponseSize 0000000000011a90     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:00000320       $unwind$Tpm2GetCapabilitySupportedAndActivePcrs 0000000000011aa0     Tpm2CommandLib:Tpm2Capability.obj
+ 0005:0000033c       $unwind$CopyDigestListToBuffer 0000000000011abc     Tpm2CommandLib:Tpm2Help.obj
+ 0005:00000358       $unwind$HashCompleteAndExtend 0000000000011ad8     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0005:00000374       $unwind$SHA1_Update        0000000000011af4     OpensslLib:sha1dgst.obj
+ 0005:00000374       $unwind$SHA256_Update      0000000000011af4     OpensslLib:sha256.obj
+ 0005:00000374       $unwind$SHA512_Update      0000000000011af4     OpensslLib:sha512.obj
+ 0005:00000374       $unwind$sm3_final          0000000000011af4     OpensslLib:sm3.obj
+ 0005:00000374       $unwind$sm3_update         0000000000011af4     OpensslLib:sm3.obj
+ 0005:00000374       $unwind$SerialPortInitialize 0000000000011af4     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:00000374       $unwind$Tpm2GetHashMaskFromAlgo 0000000000011af4     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterCommon.obj
+ 0005:00000374       $unwind$RegisterHashInterfaceLib 0000000000011af4     HashLibBaseCryptoRouterDxe:HashLibBaseCryptoRouterDxe.obj
+ 0005:00000374       $unwind$PtpCrbWaitRegisterBits 0000000000011af4     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0005:00000374       $unwind$TisPcWaitRegisterBits 0000000000011af4     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0005:0000038c       $unwind$Tcg2PhysicalPresenceLibReturnOperationResponseToOsFunction 0000000000011b0c     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0005:0000038c       $unwind$Sha1HashFinal      0000000000011b0c     HashInstanceLibSha1:HashInstanceLibSha1.obj
+ 0005:0000038c       $unwind$Sha256HashFinal    0000000000011b0c     HashInstanceLibSha256:HashInstanceLibSha256.obj
+ 0005:0000038c       $unwind$Sm3HashFinal       0000000000011b0c     HashInstanceLibSm3:HashInstanceLibSm3.obj
+ 0005:00000398       $unwind$Tcg2PhysicalPresenceLibSubmitRequestToPreOSFunction 0000000000011b18     DxeTcg2PhysicalPresenceLib:DxeTcg2PhysicalPresenceLib.obj
+ 0005:000003a8       $unwind$PeCoffLoaderGetPeHeader 0000000000011b28     BasePeCoffLib:BasePeCoff.obj
+ 0005:000003c4       $unwind$PeCoffLoaderGetImageInfo 0000000000011b44     BasePeCoffLib:BasePeCoff.obj
+ 0005:000003e4       $unwind$PtpCrbTpmCommand   0000000000011b64     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0005:00000400       $unwind$SHA512_Final       0000000000011b80     OpensslLib:sha512.obj
+ 0005:00000400       $unwind$DumpPtpInfo        0000000000011b80     Tpm2InstanceLibDTpm:Tpm2Ptp.obj
+ 0005:0000041c       $unwind$TisPcReadBurstCount 0000000000011b9c     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0005:00000430       $unwind$Tpm2TisTpmCommand  0000000000011bb0     Tpm2InstanceLibDTpm:Tpm2Tis.obj
+ 0005:0000044c       $unwind$Sha384HashFinal    0000000000011bcc     HashInstanceLibSha384:HashInstanceLibSha384.obj
+ 0005:00000458       $unwind$SerialPortWrite    0000000000011bd8     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:00000470       $unwind$Tpm2PcrExtend      0000000000011bf0     Tpm2CommandLib:Tpm2Integrity.obj
+ 0005:0000048c       $unwind$sha1_block_data_order 0000000000011c0c     OpensslLib:sha1dgst.obj
+ 0005:000004a8       $unwind$sha256_block_data_order 0000000000011c28     OpensslLib:sha256.obj
+ 0005:000004c0       $unwind$sha512_block_data_order 0000000000011c40     OpensslLib:sha512.obj
+ 0005:000004d8       $unwind$sm3_block_data_order 0000000000011c58     OpensslLib:sm3.obj

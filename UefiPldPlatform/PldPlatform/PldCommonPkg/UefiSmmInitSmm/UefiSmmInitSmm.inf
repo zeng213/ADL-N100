@@ -1,0 +1,67 @@
+## @file
+#  Uefi smm initialization module for coreboot payload.
+#
+#  This SMM driver load smm core, register uefi smm entrypoint into coreboot context. 
+#
+#  Copyright (c) 2014, Intel Corporation. All rights reserved.<BR>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php.
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = UefiSmmInitSmm
+  FILE_GUID                      = B05A4D40-BDBC-499c-9898-4C7B8C645B1B
+  MODULE_TYPE                    = DXE_SMM_DRIVER
+  VERSION_STRING                 = 1.0
+  PI_SPECIFICATION_VERSION       = 0x0001000A  
+  ENTRY_POINT                    = UefiSmmInitEntry
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  UefiSmmInitSmm.c
+  UefiSmmInitSmm.h
+  
+[Sources.Ia32]
+  Ia32/UefiSmiEntry.asm
+  
+[Sources.X64]
+  X64/UefiSmiEntry.asm
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  UefiCpuPkg/UefiCpuPkg.dec
+  PldCommonPkg/PldCommonPkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiRuntimeServicesTableLib
+  PcdLib
+  DebugLib
+  BaseLib
+  BaseMemoryLib
+  SmmServicesTableLib
+  MemoryAllocationLib
+  DxeServicesTableLib
+
+[Protocols]
+  gEfiSmmAccess2ProtocolGuid               ## CONSUMES
+  gEfiSmmConfigurationProtocolGuid         ## PRODUCES
+
+[Pcd]
+  gPldCommonPkgTokenSpaceGuid.PcdCpuSmmStackSize
+
+[Depex]
+  gEfiSmmAccess2ProtocolGuid

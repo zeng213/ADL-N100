@@ -1,0 +1,34 @@
+## @file
+#  Debug Print Error Level library instance based on PcdDebugPrintErrorLevel.
+#  It retrieves the current error level from PcdDebugPrintErrorLevel.
+#
+#  Copyright (c) 2011 - 2017, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = DebugPrintErrorLevelLib
+  FILE_GUID                      = 9146FCB7-3BBF-4652-9974-9AD9DEB5F63C
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = DebugPrintErrorLevelLib
+
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  DebugPrintErrorLevelLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+
+
+[Pcd]
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel
+

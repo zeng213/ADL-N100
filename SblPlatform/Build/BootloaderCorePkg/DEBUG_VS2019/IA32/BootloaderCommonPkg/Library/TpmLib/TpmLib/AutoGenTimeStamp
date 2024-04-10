@@ -1,0 +1,15 @@
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmEventLog.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2DeviceLib.h
+e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCommonPkg\Library\TpmLib\TpmLib\DEBUG\AutoGen.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLibInternal.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Integrity.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Tis.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Hierarchy.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.inf
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Capability.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Startup.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Help.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2Ptp.c
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmEventLog.h
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\Tpm2CommandLib.h

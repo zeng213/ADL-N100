@@ -1,0 +1,42 @@
+## @file
+# Description file for the USB I/O library.
+#
+# Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = UsbInitLib
+  FILE_GUID                      = 80727474-DA9C-4749-A90C-26FC98B1FADD
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = UsbInitLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF
+#
+
+[Sources.common]
+  UsbInitLibInternal.h
+  UsbInitLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+
+[LibraryClasses]
+  MemoryAllocationLib
+  UsbHostCtrlLib
+  UsbBusLib
+  UsbBlockIoLib
+
+[Pcd]
+  gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress
+
+

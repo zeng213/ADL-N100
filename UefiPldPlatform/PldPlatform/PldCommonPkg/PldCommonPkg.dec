@@ -1,0 +1,102 @@
+## @file
+# UEFI Payload Platform Common Package
+#
+# Copyright (c) 2019 - 2023, Intel Corporation. All rights reserved.<BR>
+# This program and the accompanying materials are licensed and made available under
+# the terms and conditions of the BSD License that accompanies this distribution.
+# The full text of the license may be found at
+# http://opensource.org/licenses/bsd-license.php.
+#
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = PldCommonPkg
+  PACKAGE_GUID                   = E126BAE9-9AE5-412D-821D-489F306414DF
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[Guids]
+  #
+  ## Defines the token space for the platform common Package.
+  #
+  gPldCommonPkgTokenSpaceGuid           = { 0x533fa6ae, 0x1c2, 0x43f5, { 0x9b, 0x8d, 0x4, 0x2e, 0x87, 0x31, 0x22, 0xca } }
+  gLoaderPerformanceInfoGuid             = { 0x868204be, 0x23d0, 0x4ff9, { 0xac, 0x34, 0xb9, 0x95, 0xac, 0x04, 0xb1, 0xb9 } }
+  #
+  # Gop Temp
+  #
+  gBmpImageGuid                           = { 0x878AC2CC, 0x5343, 0x46F2, { 0xB5, 0x63, 0x51, 0xF8, 0x9D, 0xAF, 0x56, 0xBA } }
+  gPeiDefaultVbtGuid                      = { 0xE08CA6D5, 0x8D02, 0x43ae, { 0xAB, 0xB1, 0x95, 0x2C, 0xC7, 0x87, 0xC9, 0x33 }}
+  gLoaderFspInfoGuid                      = { 0xbd42bc23, 0x1efe, 0x4b2b, { 0xa5, 0x8e, 0x08, 0x8b, 0x5b, 0xa2, 0xf5, 0xb0 } }
+  gSmmInformationGuid                     = { 0x2d939d66, 0xceec, 0x4244, {0x94, 0x97, 0x6e, 0x1c, 0x6f, 0x92, 0x54, 0x2c}}
+  gSpiFlashVariableInfoGuid               = { 0x2d4aac1b, 0x91a5, 0x4cd5, { 0x9b, 0x5c, 0xb4, 0x0f, 0x5d, 0x28, 0x51, 0xa1 } }
+  gTpmEventLogInfoGuid                    = { 0xcdaffea5, 0x5e2, 0x4c2f,  {0x8b, 0xa7, 0xad, 0xbc, 0x8d, 0xfd, 0x5a, 0x9e}}
+  gLoaderPlatformInfoGuid                 = { 0x7b6bad42, 0xd3ab, 0x4947, { 0xa2, 0x6e, 0xd6, 0xf9, 0xa9, 0xac, 0x4a, 0x2a } }
+  gDeviceTableHobGuid                     = { 0xd21fc32c, 0x7fd2, 0x435b, { 0xb8, 0xef, 0xc0, 0x42, 0x66, 0xa8, 0xf4, 0xf5 } }
+  gFlashMapInfoGuid                       = { 0xaf7f452c, 0x5b00, 0x4598, { 0xb4, 0x8c, 0xbf, 0x57, 0xa2, 0x08, 0x71, 0xa1 } }
+  gTpmDeviceInstanceTpm20PttPtpGuid       =  { 0x93d66f66, 0x55da, 0x4f03, { 0x9b, 0x5f, 0x32, 0xcf, 0x9e, 0x54, 0x3b, 0x3a }}
+  gLoaderPciRootBridgeInfoGuid            = { 0xb7f3d111, 0xb98d, 0x422f, { 0x84, 0x31, 0xa7, 0xd8, 0x29, 0xec, 0x00, 0x87 } }
+  gSecureBootInfoGuid                     = { 0xd970f847, 0x07dd, 0x4b24, { 0x9e, 0x1e, 0xae, 0x6c, 0x80, 0x9b, 0x1d, 0x38 } }
+
+[Ppis]
+
+[Protocols]
+  #
+  # Gop Temp
+  #
+  gPlatformGOPPolicyGuid                  = { 0xec2e931b, 0x3281, 0x48a5, { 0x81, 0x07, 0xdf, 0x8a, 0x8b, 0xed, 0x3c, 0x5d } }
+  gEfiSdHostIoProtocolGuid                = { 0xb63f8ec7, 0xa9c9, 0x4472, {0xa4, 0xc0, 0x4d, 0x8b, 0xf3, 0x65, 0xcc, 0x51}}
+  gEfiEmmcCardInfoProtocolGuid            = { 0x1ebe5ab9, 0x2129, 0x49e7, {0x84, 0xd7, 0xee, 0xb9, 0xfc, 0xe5, 0xde, 0xdd}}
+  gEfiEmmcBootPartitionProtocolGuid       = { 0xea7d60a6, 0x1050, 0x45e4, {0xbe, 0xdf, 0xbf, 0x17, 0x72, 0x90, 0xd4, 0xb2}}
+  gEfiSpiProtocolGuid                     = { 0xf8b84ae6, 0x8465, 0x4f95, {0x9f, 0xb, 0xea, 0xaa, 0x37, 0xc6, 0x15,  0x5a}}
+
+################################################################################
+#
+# PCD Declarations section - list of all PCDs Declared by this Package
+#                            Only this package should be providing the
+#                            declaration, other packages should not.
+#
+################################################################################
+[PcdsFixedAtBuild, PcdsPatchableInModule]
+  ## Specifies stack size in bytes for each processor in SMM.
+  # @Prompt Processor stack size in SMM.
+  gPldCommonPkgTokenSpaceGuid.PcdCpuSmmStackSize|0x2000|UINT32|0x10000002
+
+  ## FFS filename to find the default variable initial data file.
+  # @Prompt FFS Name of variable initial data file
+  gPldCommonPkgTokenSpaceGuid.PcdNvsDataFile |{ 0x1a, 0xf1, 0xb1, 0xae, 0x42, 0xcc, 0xcf, 0x4e, 0xac, 0x60, 0xdb, 0xab, 0xf6, 0xca, 0x69, 0xe6 }|VOID*|0x00000003
+
+  ## FFS filename to find the default variable initial data file for secureboot.
+  # @Prompt FFS Name of variable initial data file
+  gPldCommonPkgTokenSpaceGuid.PcdNvsDataFileSecureBoot |{ 0x7c, 0xd2, 0x0e, 0x9f, 0x9b, 0x1a, 0x11, 0x4f, 0x88, 0x6a, 0xd2, 0x9b, 0x63, 0xae, 0xaf, 0xac }|VOID*|0x00000004
+
+[PcdsFixedAtBuild, PcdsPatchableInModule,PcdsDynamic,PcdsDynamicEx]
+  ## The PCD is used to specify whether or not send HierarchyChangeAuth command for Platform Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2HierarchyChangeAuthPlatform|TRUE|BOOLEAN|0x00010020
+
+  ## The PCD is used to specify send HierarchyControl command to enable or disable Platform Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2HierarchyControlPlatform|FALSE|BOOLEAN|0x00010024
+
+  ## The PCD is used to specify send HierarchyControl command to enable or disable Endorsement Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2HierarchyControlEndorsement|TRUE|BOOLEAN|0x00010025
+
+  ## The PCD is used to specify send HierarchyControl command to enable or disable Storage Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2HierarchyControlOwner|TRUE|BOOLEAN|0x00010026
+
+  ## The PCD is used to specify if TrEEPlatform module support TXT provision.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2TxtProvisionSupport|FALSE|BOOLEAN|0x00010027
+
+  ## The PCD is used to specify whether or not send ChangeEPS command to reprovision Endorsement Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2ChangeEps|FALSE|BOOLEAN|0x00010021
+
+  ## The PCD is used to specify whether or not send ChangePPS command to reprovision Platform Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2ChangePps|FALSE|BOOLEAN|0x00010022
+
+  ## The PCD is used to specify whether or not send Clear command to reprovision Storage Hierarchy.
+  gPldCommonPkgTokenSpaceGuid.PcdTpm2Clear|FALSE|BOOLEAN|0x00010023
+  

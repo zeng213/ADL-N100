@@ -1,0 +1,2187 @@
+Platform Summary
+Platform Name:        BootloaderCorePkg
+Platform DSC Path:    e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\BootloaderCorePkg.dsc
+Architectures:        IA32
+Tool Chain:           VS2019
+Target:               DEBUG
+SKUID:                DEFAULT
+DefaultStore:         STANDARD
+Output Path:          e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg
+Build Environment:    Windows-10-10.0.19045-SP0
+Build Duration:       00:01:04
+AutoGen Duration:     00:00:04
+Make Duration:        00:00:57
+GenFds Duration:      00:00:02
+Report Content:       PCD, FLASH, LIBRARY
+>======================================================================================================================<
+PCDs not used by modules or in conditional directives
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+========================================================================================================================
+
+gPlatformCommonLibTokenSpaceGuid
+    PcdFspNoEop                          :   FLAG  (BOOLEAN) = 0
+    PcdSpiIasImageRegionType             :  FIXED   (UINT32) = 0x0 (0)
+
+gPlatformModuleTokenSpaceGuid
+    PcdDeviceTreeBase                    :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdEnableDts                         :   FLAG  (BOOLEAN) = 0
+ *P PcdFSPMSize                          :  FIXED   (UINT32) = 0x000C0000 (786432)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPSSize                          :  FIXED   (UINT32) = 0x0005F000 (389120)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPTUpdSize                       :  FIXED   (UINT32) = 0x000000F0 (240)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdLoadImageUseFsp                   :   FLAG  (BOOLEAN) = 0
+ *P PcdStage1AFdSize                     :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1BFvSize                     :  FIXED   (UINT32) = 0x00140000 (1310720)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2FvSize                      :  FIXED   (UINT32) = 0x00191000 (1642496)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdVariableRegionBase                :  FIXED   (UINT32) = 0xFF577000 (4283920384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+<======================================================================================================================>
+
+>======================================================================================================================<
+Platform Configuration Database Report
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+  *M  - Module scoped PCD override
+========================================================================================================================
+
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *P PcdDebugPrintErrorLevel              :  PATCH   (UINT32) = 0x8000004F (2147483727)
+                                                 DEC DEFAULT = 0x80000000 (2147483648)
+ *P PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *P PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+ *P PcdPlatformBootTimeOut               :    DYN   (UINT16) = 0x2 (2)
+                                                 DEC DEFAULT = 0xffff (65535)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdSpinLockTimeout                   :  FIXED   (UINT32) = 0x989680 (10000000)
+    PcdUsbTransferTimeoutValue           :  FIXED   (UINT32) = 0xBB8 (3000)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+
+gPayloadTokenSpaceGuid
+ *P PcdCsmeUpdateEnabled                 :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdFwUpdStatusBase                   :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdGlobalDataAddress                 :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdGrubBootCfgEnabled                :   FLAG  (BOOLEAN) = 0
+ *P PcdPayloadHeapSize                   :  PATCH   (UINT32) = 0x04000000 (67108864)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPayloadHobList                    :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdPayloadModuleEnabled              :   FLAG  (BOOLEAN) = 0
+ *P PcdPayloadStackSize                  :  PATCH   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdRtcmRsvdSize                      :  FIXED   (UINT32) = 0x000FF000 (1044480)
+                                                 DEC DEFAULT = 0x00000000 (0)
+
+gPlatformAlderLakeTokenSpaceGuid
+ *P PcdAdlLpSupport                      :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *P PcdAdlNSupport                       :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+
+gPlatformCommonLibTokenSpaceGuid
+ *P PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+    PcdBuildSmmHobs                      :  FIXED    (UINT8) = 0x03 (3)
+ *P PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+    PcdConsoleInDeviceMask               :  FIXED   (UINT32) = 0x1 (1)
+    PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x1 (1)
+ *M     FirmwareUpdate.inf                                   = 0x3 (3)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+    PcdCpuInitIpiDelayInMicroSeconds     :  FIXED   (UINT32) = 0x64 (100)
+    PcdCpuLocalApicBaseAddress           :  FIXED   (UINT32) = 0xFEE00000 (4276092928)
+    PcdCpuX2ApicEnabled                  :   FLAG  (BOOLEAN) = 0
+ *P PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x3 (3)
+ *P PcdDebugPortNumber                   :  FIXED    (UINT8) = 0x0 (0)
+                                                 DEC DEFAULT = 0x02 (2)
+    PcdDmaBufferAlignment                :  FIXED   (UINT32) = 0x00100000 (1048576)
+    PcdDmaBufferSize                     :  FIXED   (UINT32) = 0x00400000 (4194304)
+    PcdDmaProtectionEnabled              :   FLAG  (BOOLEAN) = 0
+    PcdEmmcBlockDeviceLibId              :  FIXED    (UINT8) = 0x3 (3)
+    PcdEmmcHs400SupportEnabled           :   FLAG  (BOOLEAN) = 1
+    PcdEmmcMaxRwBlockNumber              :  PATCH   (UINT16) = 0xFFFF (65535)
+    PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 0
+ *M     Stage1A.inf                                          = 1
+    PcdFrameBufferMaxConsoleHeight       :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdFrameBufferMaxConsoleWidth        :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+ *P PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+ *P PcdLowestSupportedFwVer              :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+ *P PcdMeasuredBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdMeasuredBootHashMask              :    DYN   (UINT32) = 0x00000002 (2)
+    PcdMinDecompression                  :   FLAG  (BOOLEAN) = 0
+ *M     Stage1A.inf                                          = 1
+    PcdMiniShellEnabled                  :   FLAG  (BOOLEAN) = 0
+    PcdMmcTuningLba                      :  FIXED   (UINT32) = 0x00000040 (64)
+    PcdMmcTuningLibId                    :  FIXED    (UINT8) = 0x6 (6)
+ *P PcdMultiUsbBootDeviceEnabled         :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdPcdLibId                          :  FIXED    (UINT8) = 0x0 (0)
+    PcdSeedListEnabled                   :  FIXED  (BOOLEAN) = 0
+ *P PcdSerialBaudRate                    :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C200 (115200)
+ *P PcdSerialClockRate                   :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C2000 (1843200)
+ *P PcdSerialRegisterBase                :  PATCH   (UINT64) = 0x0 (0)
+                                                 DEC DEFAULT = 0x03F8 (1016)
+ *P PcdSerialRegisterStride              :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1 (1)
+    PcdSerialUseMmio                     :  PATCH  (BOOLEAN) = 0
+    PcdSourceDebugEnabled                :   FLAG  (BOOLEAN) = 0
+    PcdSpiFlashLibId                     :  FIXED    (UINT8) = 0x2 (2)
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSupportedFileSystemMask           :  FIXED   (UINT32) = 0x00000003 (3)
+    PcdSupportedMediaTypeMask            :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdTccEnabled                        :  FIXED  (BOOLEAN) = 0
+    PcdTcgLogAreaMinLen                  :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdTpmBaseAddress                    :  FIXED   (UINT64) = 0xFED40000 (4275306496)
+    PcdTpmLibId                          :  FIXED    (UINT8) = 0x4 (4)
+    PcdUfsPciHostControllerMmioBase      :  FIXED   (UINT32) = 0xd0000000 (3489660928)
+    PcdUsbCmdTimeout                     :  FIXED   (UINT16) = 0x00001000 (4096)
+    PcdUsbKeyboardPollingTimeout         :  FIXED   (UINT32) = 0x1 (1)
+    PcdVariableLibId                     :  FIXED    (UINT8) = 0x1 (1)
+ *P PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+
+gPlatformModuleTokenSpaceGuid
+    PcdAcpiEnabled                       :   FLAG  (BOOLEAN) = 1
+    PcdAcpiGnvsAddress                   :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdAcpiProcessorIdBase               :  FIXED   (UINT32) = 0x1 (1)
+    PcdAcpiTableTemplatePtr              :  PATCH   (UINT32) = 0x0 (0)
+    PcdAcpiTablesAddress                 :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *P PcdAcpiTablesMaxEntry                :  FIXED   (UINT32) = 0x28 (40)
+                                                 DEC DEFAULT = 0x20 (32)
+ *P PcdAcpiTablesRsdp                    :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdAriSupport                        :   FLAG  (BOOLEAN) = 0
+    PcdBootFailureThreshold              :  FIXED    (UINT8) = 0x3 (3)
+ *P PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdCfgDataIntBase                    :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *P PcdCfgDataLoadSource                 :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000002 (2)
+ *P PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdCfgDatabaseSize                   :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdCpuMaxLogicalProcessorNumber      :  FIXED   (UINT32) = 0x00000018 (24)
+                                                 DEC DEFAULT = 0x10 (16)
+    PcdCpuSortMethod                     :  FIXED   (UINT32) = 0x0 (0)
+    PcdEarlyLogBufferSize                :  FIXED   (UINT32) = 0x00000400 (1024)
+    PcdEnableFwuNotify                   :   FLAG  (BOOLEAN) = 0
+ *P PcdEnablePciePm                      :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdEnableSetup                       :   FLAG  (BOOLEAN) = 0
+ *P PcdFSPMBase                          :  FIXED   (UINT32) = 0xFFE40000 (4293132288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPMStackTop                      :  FIXED   (UINT32) = 0xFEF7FF00 (4277665536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPMUpdSize                       :  FIXED   (UINT32) = 0x00000B60 (2912)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPSBase                          :  PATCH   (UINT32) = 0x01191000 (18419712)
+                                                 DEC DEFAULT = 0xFF000000 (4278190080)
+ *P PcdFSPSUpdSize                       :  FIXED   (UINT32) = 0x00001140 (4416)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPTBase                          :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFSPTSize                          :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFastBootEnabled                   :  FIXED  (BOOLEAN) = 0
+    PcdFileDataBase                      :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *P PcdFlashBaseAddress                  :  FIXED   (UINT32) = 0xFF300000 (4281335808)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFlashSize                         :  FIXED   (UINT32) = 0x00D00000 (13631488)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdFramebufferInitEnabled            :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdFspResetStatus                    :    DYN   (UINT32) = 0x0 (0)
+    PcdFspsUpdPtr                        :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdFuncCpuInitHook                   :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdFusaSupport                       :  FIXED  (BOOLEAN) = 0
+ *P PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFwuPayloadLoadBase                :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdGraphicsVbtAddress                :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdHashStoreBase                     :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *P PcdHashStoreSize                     :  FIXED   (UINT32) = 0x00000400 (1024)
+                                                 DEC DEFAULT = 0x00000200 (512)
+    PcdIdenticalTopSwapsBuilt            :  FIXED  (BOOLEAN) = 0
+    PcdIgdOpRegionAddress                :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdIntelGfxEnabled                   :   FLAG  (BOOLEAN) = 1
+    PcdLegacyEfSegmentEnabled            :   FLAG  (BOOLEAN) = 1
+    PcdLinuxPayloadEnabled               :   FLAG  (BOOLEAN) = 0
+    PcdLoaderAcpiNvsSize                 :  FIXED   (UINT32) = 0x00008000 (32768)
+ *P PcdLoaderAcpiReclaimSize             :  FIXED   (UINT32) = 0x00090000 (589824)
+                                                 DEC DEFAULT = 0x00068000 (425984)
+    PcdLoaderHobStackSize                :  FIXED   (UINT32) = 0x00040000 (262144)
+ *P PcdLoaderReservedMemSize             :  FIXED   (UINT32) = 0x00500000 (5242880)
+                                                 DEC DEFAULT = 0x0038C000 (3719168)
+    PcdLogBufferSize                     :  FIXED   (UINT32) = 0x00008000 (32768)
+    PcdMaxServiceNumber                  :  FIXED   (UINT32) = 0x8 (8)
+ *P PcdMemoryMapEntryNumber              :  FIXED   (UINT32) = 0x00000020 (32)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdOsBootOptionNumber                :  FIXED   (UINT32) = 0x00000008 (8)
+ *P PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdPayloadExeBase                    :  FIXED   (UINT32) = 0x00800000 (8388608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPayloadLoadBase                   :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdPayloadLoadHigh                   :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *P PcdPayloadReservedMemSize            :  PATCH   (UINT32) = 0x00500000 (5242880)
+                                                 DEC DEFAULT = 0x00004000 (16384)
+ *P PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPciEnumEnabled                    :   FLAG  (BOOLEAN) = 1
+    PcdPciEnumHookProc                   :  PATCH   (UINT32) = 0x00000000 (0)
+ *P PcdPciEnumPolicyInfo                 :  FIXED    (VOID*) = {0x0f,0x00,0x00,0x00,0x00,0x01,0x00}
+                                                 DEC DEFAULT = {0x00}
+ *P PcdPciMmcfgBase                      :  FIXED   (UINT32) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPciResAllocTableBase              :  PATCH   (UINT32) = 0x00000000 (0)
+ *P PcdPciResourceIoBase                 :  PATCH   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdPciResourceMem32Base              :  PATCH   (UINT32) = 0x80000000 (2147483648)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPciResourceMem64Base              :  PATCH   (UINT64) = 0x0 (0)
+ *P PcdPsdBiosEnabled                    :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *P PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdS3DebugEnabled                    :   FLAG  (BOOLEAN) = 0
+    PcdSblResiliencyEnabled              :  FIXED  (BOOLEAN) = 0
+    PcdSeedListBufferSize                :  FIXED   (UINT32) = 0x00000400 (1024)
+    PcdServiceNumber                     :  FIXED   (UINT32) = 0x00000004 (4)
+ *P PcdSmbiosEnabled                     :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *P PcdSmbiosStringsCnt                  :  PATCH   (UINT16) = 0x40 (64)
+                                                 DEC DEFAULT = 0x0000 (0)
+    PcdSmbiosStringsPtr                  :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdSmbiosTablesBase                  :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdSmbiosTablesSize                  :  FIXED   (UINT16) = 0x1000 (4096)
+ *P PcdSmmRebaseMode                     :  PATCH    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdSmpEnabled                        :   FLAG  (BOOLEAN) = 1
+    PcdSmramTsegBase                     :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdSmramTsegSize                     :  PATCH   (UINT32) = 0x00000000 (0)
+ *P PcdSplashEnabled                     :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdSplashLogoAddress                 :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdSrIovSupport                      :   FLAG  (BOOLEAN) = 0
+ *P PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1AFdBase                     :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1AFvSize                     :  FIXED   (UINT32) = 0x0000B000 (45056)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1ALoadBase                   :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1AXip                        :   FLAG  (BOOLEAN) = 1
+ *P PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1BFdBase                     :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1BFdSize                     :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1BLoadBase                   :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1BXip                        :   FLAG  (BOOLEAN) = 1
+ *P PcdStage1DataSize                    :  FIXED   (UINT32) = 0x00014000 (81920)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1StackBaseOffset             :  FIXED   (UINT32) = 0x0 (0)
+ *P PcdStage1StackSize                   :  FIXED   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2FdBase                      :  FIXED   (UINT32) = 0x01000000 (16777216)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2FdSize                      :  FIXED   (UINT32) = 0x001F0000 (2031616)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2LoadBase                    :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdStage2LoadHigh                    :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *P PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdTcoTimeout                        :  FIXED   (UINT16) = 0x32 (50)
+ *P PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdUcodeSlotSize                     :  FIXED   (UINT32) = 0x0003B000 (241664)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *P PcdVariableRegionSize                :  FIXED   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdVerInfoBase                       :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdVerifiedBootStage1B               :  FIXED  (BOOLEAN) = 0
+ *P PcdVtdEnabled                        :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+<======================================================================================================================>
+
+>======================================================================================================================<
+Firmware Device (FD)
+FD Name:            STAGE1A
+Base Address:       0xFFFE5000
+Size:               0x1B000 (108K)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+FD Region
+Type:               FILE
+Base Address:       0x0
+Size:               0x10000 (64K)
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Fd Region
+Type:               FV
+Base Address:       0x10000
+Size:               0xB000 (44K)
+Fv Name:            STAGE1A (62.3% Full)
+Occupied Size:      0x6DA0 (27K)
+Free Size:          0x4260 (17K)
+Offset     Module
+------------------------------------------------------------------------------------------------------------------------
+0x00000048 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\VerInfo.bin
+0x00000088 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\FlashMap.bin
+0x00000248 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\FitTable.bin
+0x000003A8 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\HashStore.bin
+0x000004F0 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCorePkg\PcdData
+\PcdData\OUTPUT\PEIPcdDataBase.raw
+0x000005B8 Stage1A (e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Stage1A\Stage1A.inf)
+0x0000AF10 1BA0062E-C779-4582-8566-336AE8F78F09
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Firmware Device (FD)
+FD Name:            STAGE1B
+Base Address:       0xFFD00000
+Size:               0x200000 (2048K)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+Fd Region
+Type:               FV
+Base Address:       0x0
+Size:               0x140000 (1280K)
+Fv Name:            STAGE1B (7.7% Full)
+Occupied Size:      0x18980 (98K)
+Free Size:          0x127680 (1182K)
+Offset     Module
+------------------------------------------------------------------------------------------------------------------------
+0x00000048 Stage1B (e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Stage1B\Stage1B.inf)
+0x00016C20 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\CfgDataInt.bin
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+FD Region
+Type:               FILE
+Base Address:       0x140000
+Size:               0xC0000 (768K)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Firmware Device (FD)
+FD Name:            STAGE2
+Base Address:       0x01000000
+Size:               0x1F0000 (1984K)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+Fd Region
+Type:               FV
+Base Address:       0x0
+Size:               0x191000 (1604K)
+Fv Name:            STAGE2 (37.0% Full)
+Occupied Size:      0x943F8 (593K)
+Free Size:          0xFCC08 (1011K)
+Offset     Module
+------------------------------------------------------------------------------------------------------------------------
+0x00000048 Stage2 (e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Stage2\Stage2.inf)
+0x0002C5C0 AcpiTables (e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN.inf)
+0x00086F10 e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Vbt.bin
+0x00089140 e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Logo\Logo.bmp
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+FD Region
+Type:               FILE
+Base Address:       0x191000
+Size:               0x5F000 (380K)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Firmware Device (FD)
+FD Name:            OSLOADER
+Base Address:       0x00800000
+Size:               0x57000 (348K)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+Fd Region
+Type:               FV
+Base Address:       0x0
+Size:               0x57000 (348K)
+Fv Name:            OSLOADER (82.9% Full)
+Occupied Size:      0x48260 (289K)
+Free Size:          0xEDA0 (59K)
+Offset     Module
+------------------------------------------------------------------------------------------------------------------------
+0x00000048 OsLoader (e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\OsLoader\OsLoader.inf)
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          PcdData
+Module Arch:          IA32
+Module INF Path:      BootloaderCorePkg\PcdData\PcdData.inf
+File GUID:            932AD5C3-768D-4f48-B2FE-83FF0C64F7B3
+Size:                 0x3C0 (0.94K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    3341ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>======================================================================================================================<
+PCDs not used by modules or in conditional directives
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+========================================================================================================================
+>======================================================================================================================<
+Platform Configuration Database Report
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+  *M  - Module scoped PCD override
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ModuleEntryLib\ModuleEntryLib.inf
+{ModuleEntryLib:  Time = 450ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Stage1A
+Module Arch:          IA32
+Module INF Path:      BootloaderCorePkg\Stage1A\Stage1A.inf
+File GUID:            A0FC7906-3519-4605-BACD-50B7C4392F84
+Size:                 0x6860 (26.09K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    6509ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *M PcdDebugPrintErrorLevel              :  PATCH   (UINT32) = 0x8000004F (2147483727)
+                                                 DEC DEFAULT = 0x80000000 (2147483648)
+ *M PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *M PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+gPlatformAlderLakeTokenSpaceGuid
+ *M PcdAdlLpSupport                      :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformCommonLibTokenSpaceGuid
+ *M PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+ *M PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+    PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x1 (1)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+    PcdCpuInitIpiDelayInMicroSeconds     :  FIXED   (UINT32) = 0x64 (100)
+    PcdCpuLocalApicBaseAddress           :  FIXED   (UINT32) = 0xFEE00000 (4276092928)
+ *M PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x3 (3)
+ *M PcdDebugPortNumber                   :  FIXED    (UINT8) = 0x0 (0)
+                                                 DEC DEFAULT = 0x02 (2)
+ *M PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdMinDecompression                  :   FLAG  (BOOLEAN) = 1
+                                                 DSC DEFAULT = 0
+                                                 DEC DEFAULT = 0
+    PcdPcdLibId                          :  FIXED    (UINT8) = 0x0 (0)
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+ *M PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformModuleTokenSpaceGuid
+ *M PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDatabaseSize                   :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdEarlyLogBufferSize                :  FIXED   (UINT32) = 0x00000400 (1024)
+ *M PcdFSPTBase                          :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFSPTSize                          :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFileDataBase                      :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *M PcdFlashBaseAddress                  :  FIXED   (UINT32) = 0xFF300000 (4281335808)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFlashSize                         :  FIXED   (UINT32) = 0x00D00000 (13631488)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdHashStoreBase                     :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *M PcdHashStoreSize                     :  FIXED   (UINT32) = 0x00000400 (1024)
+                                                 DEC DEFAULT = 0x00000200 (512)
+    PcdIdenticalTopSwapsBuilt            :  FIXED  (BOOLEAN) = 0
+    PcdMaxServiceNumber                  :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPciMmcfgBase                      :  FIXED   (UINT32) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1AFdBase                     :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1AFvSize                     :  FIXED   (UINT32) = 0x0000B000 (45056)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ALoadBase                   :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1AXip                        :   FLAG  (BOOLEAN) = 1
+ *M PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdBase                     :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdSize                     :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BLoadBase                   :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1BXip                        :   FLAG  (BOOLEAN) = 1
+ *M PcdStage1DataSize                    :  FIXED   (UINT32) = 0x00014000 (81920)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1StackBaseOffset             :  FIXED   (UINT32) = 0x0 (0)
+ *M PcdStage1StackSize                   :  FIXED   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdVerInfoBase                       :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdVerifiedBootStage1B               :  FIXED  (BOOLEAN) = 0
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+{RegisterFilterLib:  Time = 531ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciExpressLib\BasePciExpressLib.inf
+{PciExpressLib:  Time = 619ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\GpioSiLib\GpioSiLib.inf
+{GpioSiLib:  Time = 575ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchPcrLib\PchPcrLib.inf
+{PchPcrLib:  Time = 680ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PchInfoLib\PchInfoLib.inf
+{PchInfoLib:  Time = 703ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciLibPciExpress\BasePciLibPciExpress.inf
+{PciLib:  Time = 602ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PlatformHookLib\PlatformHookLib.inf
+{PlatformHookLib:  Time = 615ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\GraphicsLib\GraphicsLib.inf
+{GraphicsLib:  Time = 3682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderCoreLib\BootloaderCoreLib.inf
+{BootloaderLib:  Time = 3175ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugPrintErrorLevelLib\DebugPrintErrorLevelLib.inf
+{DebugPrintErrorLevelLib:  Time = 634ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+{PrintLib:  Time = 697ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleOutLib\ConsoleOutLib.inf
+{ConsoleOutLib:  Time = 601ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugLogBufferLib\DebugLogBufferLib.inf
+{DebugLogBufferLib:  Time = 582ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugPortLib\DebugPortLibNull.inf
+{DebugPortLib:  Time = 621ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SerialPortLib\SerialPortLib.inf
+{SerialPortLib:  Time = 682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\HobLib\HobLib.inf
+{HobLib:  Time = 571ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderLib\BootloaderLib.inf
+{BootloaderLib:  Time = 687ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseMemoryLibRepStr\BaseMemoryLibRepStr.inf
+{BaseMemoryLib:  Time = 28824ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PcdLib\PcdLib.inf
+{PcdLib:  Time = 3876ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderCommonLib\BootloaderCommonLib.inf
+{BootloaderCommonLib:  Time = 482ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderDebugLib\BootloaderDebugLib.inf
+{DebugLib:  Time = 650ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\MemoryAllocationLib\MemoryAllocationLib.inf
+{MemoryAllocationLib:  Time = 812ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseLib\BaseLib.inf
+{BaseLib:  Time = 24095ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic.inf
+{IoLib:  Time = 5137ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSbiAccessLib\PchSbiAccessLib.inf
+{PchSbiAccessLib:  Time = 754ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AcpiTimerLib\AcpiTimerLib.inf
+{TimerLib:  Time = 813ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TcoTimerLib\TcoTimerLib.inf
+{TcoTimerLib:  Time = 336ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConfigDataLib\ConfigDataLib.inf
+{ConfigDataLib:  Time = 874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\GpioLib\GpioLib.inf
+{GpioLib:  Time = 2591ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\LoaderLib\LoaderLib.inf
+{LoaderLib:  Time = 230ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\Stage1ASocInitLib\Stage1ASocInitLib.inf
+{SocInitLib:  Time = 736ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LzmaCustomDecompressLib
+\LzmaCustomDecompressLib.inf
+{LzmaDecompressLib:  Time = 4273ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Lz4CompressLib\Lz4CompressLib.inf
+{Lz4CompressLib:  Time = 4460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseRngLib\BaseRngLib.inf
+{RngLib:  C = BaseRngLibConstructor Time = 2707ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IppCryptoLib\IppCryptoLib.inf
+{CryptoLib:  Time = 13807ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TimeStampLib\TimeStampLib.inf
+{TimeStampLib:  Time = 408ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugAgentLib\DebugAgentLibNull.inf
+{DebugAgentLib:  Time = 512ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BaseXApicX2ApicLib\BaseXApicX2ApicLib.inf
+{LocalApicLib:  Time = 651ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.inf
+{PagingLib:  Time = 2425ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage1ABoardInitLib\Stage1ABoardInitLib.inf
+{BoardInitLib:  Time = 922ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DecompressLib\DecompressLib.inf
+{DecompressLib:  Time = 911ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SecureBootLib\SecureBootLib.inf
+{SecureBootLib:  Time = 2635ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LoaderPerformanceLib\LoaderPerformanceLib.inf
+{LoaderPerformanceLib:  Time = 354ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LitePeCoffLib\LitePeCoffLib.inf
+{LitePeCoffLib:  Time = 250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FsptApiLib.inf
+{FspApiLib:  Time = 947ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\CpuExceptionLib\CpuExceptionLib.inf
+{CpuExceptionLib:  Time = 206ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ExtraBaseLib\ExtraBaseLib.inf
+{ExtraBaseLib:  Time = 852ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\StageLib\StageLib.inf
+{StageLib:  Time = 335ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TopSwapLib\TopSwapLib.inf
+{TopSwapLib:  Time = 462ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Stage1B
+Module Arch:          IA32
+Module INF Path:      BootloaderCorePkg\Stage1B\Stage1B.inf
+File GUID:            A68576FB-074E-4490-A82A-7C56121ECC56
+Size:                 0x16D40 (91.31K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    4849ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *M PcdDebugPrintErrorLevel              :  PATCH   (UINT32) = 0x8000004F (2147483727)
+                                                 DEC DEFAULT = 0x80000000 (2147483648)
+ *M PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *M PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+gPlatformAlderLakeTokenSpaceGuid
+ *M PcdAdlLpSupport                      :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformCommonLibTokenSpaceGuid
+ *M PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+ *M PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+    PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x1 (1)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+    PcdCpuInitIpiDelayInMicroSeconds     :  FIXED   (UINT32) = 0x64 (100)
+    PcdCpuLocalApicBaseAddress           :  FIXED   (UINT32) = 0xFEE00000 (4276092928)
+ *M PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x3 (3)
+    PcdDmaBufferAlignment                :  FIXED   (UINT32) = 0x00100000 (1048576)
+    PcdDmaBufferSize                     :  FIXED   (UINT32) = 0x00400000 (4194304)
+    PcdDmaProtectionEnabled              :   FLAG  (BOOLEAN) = 0
+    PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 0
+ *M PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdMeasuredBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdMeasuredBootHashMask              :    DYN   (UINT32) = 0x00000002 (2)
+    PcdMinDecompression                  :   FLAG  (BOOLEAN) = 0
+    PcdSpiFlashLibId                     :  FIXED    (UINT8) = 0x2 (2)
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdTccEnabled                        :  FIXED  (BOOLEAN) = 0
+    PcdTcgLogAreaMinLen                  :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdTpmBaseAddress                    :  FIXED   (UINT64) = 0xFED40000 (4275306496)
+    PcdTpmLibId                          :  FIXED    (UINT8) = 0x4 (4)
+    PcdVariableLibId                     :  FIXED    (UINT8) = 0x1 (1)
+ *M PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformModuleTokenSpaceGuid
+    PcdAcpiEnabled                       :   FLAG  (BOOLEAN) = 1
+    PcdBootFailureThreshold              :  FIXED    (UINT8) = 0x3 (3)
+ *M PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdCfgDataIntBase                    :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *M PcdCfgDataLoadSource                 :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000002 (2)
+ *M PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDatabaseSize                   :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdEarlyLogBufferSize                :  FIXED   (UINT32) = 0x00000400 (1024)
+    PcdEnableSetup                       :   FLAG  (BOOLEAN) = 0
+ *M PcdFSPMBase                          :  FIXED   (UINT32) = 0xFFE40000 (4293132288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFSPMStackTop                      :  FIXED   (UINT32) = 0xFEF7FF00 (4277665536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFSPMUpdSize                       :  FIXED   (UINT32) = 0x00000B60 (2912)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFSPSBase                          :  PATCH   (UINT32) = 0x01191000 (18419712)
+                                                 DEC DEFAULT = 0xFF000000 (4278190080)
+ *M PcdFSPTBase                          :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFastBootEnabled                   :  FIXED  (BOOLEAN) = 0
+ *M PcdFlashBaseAddress                  :  FIXED   (UINT32) = 0xFF300000 (4281335808)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFlashSize                         :  FIXED   (UINT32) = 0x00D00000 (13631488)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFspResetStatus                    :    DYN   (UINT32) = 0x0 (0)
+    PcdFusaSupport                       :  FIXED  (BOOLEAN) = 0
+ *M PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdGraphicsVbtAddress                :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdLoaderAcpiNvsSize                 :  FIXED   (UINT32) = 0x00008000 (32768)
+ *M PcdLoaderAcpiReclaimSize             :  FIXED   (UINT32) = 0x00090000 (589824)
+                                                 DEC DEFAULT = 0x00068000 (425984)
+    PcdLoaderHobStackSize                :  FIXED   (UINT32) = 0x00040000 (262144)
+ *M PcdLoaderReservedMemSize             :  FIXED   (UINT32) = 0x00500000 (5242880)
+                                                 DEC DEFAULT = 0x0038C000 (3719168)
+    PcdLogBufferSize                     :  FIXED   (UINT32) = 0x00008000 (32768)
+ *M PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdOsBootOptionNumber                :  FIXED   (UINT32) = 0x00000008 (8)
+ *M PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadExeBase                    :  FIXED   (UINT32) = 0x00800000 (8388608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadReservedMemSize            :  PATCH   (UINT32) = 0x00500000 (5242880)
+                                                 DEC DEFAULT = 0x00004000 (16384)
+ *M PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdS3DebugEnabled                    :   FLAG  (BOOLEAN) = 0
+    PcdSblResiliencyEnabled              :  FIXED  (BOOLEAN) = 0
+ *M PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdBase                     :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdSize                     :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BLoadBase                   :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1BXip                        :   FLAG  (BOOLEAN) = 1
+ *M PcdStage1DataSize                    :  FIXED   (UINT32) = 0x00014000 (81920)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1StackBaseOffset             :  FIXED   (UINT32) = 0x0 (0)
+ *M PcdStage1StackSize                   :  FIXED   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2FdBase                      :  FIXED   (UINT32) = 0x01000000 (16777216)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2FdSize                      :  FIXED   (UINT32) = 0x001F0000 (2031616)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2LoadBase                    :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2LoadHigh                    :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdTcoTimeout                        :  FIXED   (UINT16) = 0x32 (50)
+ *M PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdVtdEnabled                        :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+{RegisterFilterLib:  Time = 531ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\HobLib\HobLib.inf
+{HobLib:  Time = 571ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciExpressLib\BasePciExpressLib.inf
+{PciExpressLib:  Time = 619ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\GpioSiLib\GpioSiLib.inf
+{GpioSiLib:  Time = 575ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchPcrLib\PchPcrLib.inf
+{PchPcrLib:  Time = 680ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PchInfoLib\PchInfoLib.inf
+{PchInfoLib:  Time = 703ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciLibPciExpress\BasePciLibPciExpress.inf
+{PciLib:  Time = 602ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PlatformHookLib\PlatformHookLib.inf
+{PlatformHookLib:  Time = 615ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderLib\BootloaderLib.inf
+{BootloaderLib:  Time = 687ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\GraphicsLib\GraphicsLib.inf
+{GraphicsLib:  Time = 3682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugPrintErrorLevelLib\DebugPrintErrorLevelLib.inf
+{DebugPrintErrorLevelLib:  Time = 634ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+{PrintLib:  Time = 697ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleOutLib\ConsoleOutLib.inf
+{ConsoleOutLib:  Time = 601ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugLogBufferLib\DebugLogBufferLib.inf
+{DebugLogBufferLib:  Time = 582ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugPortLib\DebugPortLibNull.inf
+{DebugPortLib:  Time = 621ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SerialPortLib\SerialPortLib.inf
+{SerialPortLib:  Time = 682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseMemoryLibRepStr\BaseMemoryLibRepStr.inf
+{BaseMemoryLib:  Time = 28824ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PcdLib\PcdLib.inf
+{PcdLib:  Time = 3876ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderDebugLib\BootloaderDebugLib.inf
+{DebugLib:  Time = 650ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderCommonLib\BootloaderCommonLib.inf
+{BootloaderCommonLib:  Time = 482ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\MemoryAllocationLib\MemoryAllocationLib.inf
+{MemoryAllocationLib:  Time = 812ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderCoreLib\BootloaderCoreLib.inf
+{BootloaderLib:  Time = 3175ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic.inf
+{IoLib:  Time = 5137ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseLib\BaseLib.inf
+{BaseLib:  Time = 24095ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseRngLib\BaseRngLib.inf
+{RngLib:  C = BaseRngLibConstructor Time = 2707ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IppCryptoLib\IppCryptoLib.inf
+{CryptoLib:  Time = 13807ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LzmaCustomDecompressLib
+\LzmaCustomDecompressLib.inf
+{LzmaDecompressLib:  Time = 4273ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Lz4CompressLib\Lz4CompressLib.inf
+{Lz4CompressLib:  Time = 4460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSpiLib\PchSpiLib.inf
+{PchSpiLib:  Time = 825ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AcpiTimerLib\AcpiTimerLib.inf
+{TimerLib:  Time = 813ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SecureBootLib\SecureBootLib.inf
+{SecureBootLib:  Time = 2635ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DecompressLib\DecompressLib.inf
+{DecompressLib:  Time = 911ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\SpiFlashLib\SpiFlashLib.inf
+{SpiFlashLib:  C = SpiConstructor Time = 1093ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ContainerLib\ContainerLib.inf
+{ContainerLib:  Time = 829ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\HobBuildLib\HobBuildLib.inf
+{HobBuildLib:  Time = 996ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\ResetSystemLib\ResetSystemLib.inf
+{ResetSystemLib:  Time = 1009ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\FusaConfigLibNull\FusaConfigLibNull.inf
+{FusaConfigLib:  Time = 943ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TccLib\TccLib.inf
+{TccLib:  Time = 984ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\WatchDogTimerLib\WatchDogTimerLib.inf
+{WatchDogTimerLib:  Time = 1002ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConfigDataLib\ConfigDataLib.inf
+{ConfigDataLib:  Time = 874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\MeChipsetLib\MeChipsetLib.inf
+{MeChipsetLib:  Time = 991ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.inf
+{TpmLib:  Time = 10073ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSbiAccessLib\PchSbiAccessLib.inf
+{PchSbiAccessLib:  Time = 754ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ExtraBaseLib\ExtraBaseLib.inf
+{ExtraBaseLib:  Time = 852ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.inf
+{PagingLib:  Time = 2425ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\CrashLogLibNull\CrashLogLibNull.inf
+{CrashLogLib:  Time = 435ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\SmbusLib\SmbusLib.inf
+{SmbusLib:  Time = 473ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\FspmUpdUpdateLib\FspmUpdUpdateLib.inf
+{FspmUpdUpdateLib:  Time = 463ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\HeciLib\HeciLib.inf
+{HeciLib:  Time = 2874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\BootGuardLibCBnT\BootGuardLibCBnT.inf
+{BootGuardLib:  Time = 3496ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciCf8Lib\BasePciCf8Lib.inf
+{PciCf8Lib:  Time = 434ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\GpioLib\GpioLib.inf
+{GpioLib:  Time = 2591ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\BoardSupportLib\BoardSupportLib.inf
+{BoardSupportLib:  Time = 384ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteVariableLib\LiteVariableLib.inf
+{VariableLib:  Time = 292ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TopSwapLib\TopSwapLib.inf
+{TopSwapLib:  Time = 462ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TimeStampLib\TimeStampLib.inf
+{TimeStampLib:  Time = 408ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ThunkLib\ThunkLib.inf
+{ThunkLib:  Time = 316ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugAgentLib\DebugAgentLibNull.inf
+{DebugAgentLib:  Time = 512ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Crc32Lib\Crc32Lib.inf
+{Crc32Lib:  Time = 979ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BaseXApicX2ApicLib\BaseXApicX2ApicLib.inf
+{LocalApicLib:  Time = 651ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TcoTimerLib\TcoTimerLib.inf
+{TcoTimerLib:  Time = 336ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ModuleEntryLib\ModuleEntryLib.inf
+{ModuleEntryLib:  Time = 450ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\Stage1BSocInitLib\Stage1BSocInitLib.inf
+{SocInitLib:  Time = 595ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage1BBoardInitLib\Stage1BBoardInitLib.inf
+{BoardInitLib:  Time = 8909ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\LoaderLib\LoaderLib.inf
+{LoaderLib:  Time = 230ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspSupportLib\FspSupportLib.inf
+{FspSupportLib:  Time = 209ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LoaderPerformanceLib\LoaderPerformanceLib.inf
+{LoaderPerformanceLib:  Time = 354ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspmApiLib.inf
+{FspApiLib:  Time = 9483ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LitePeCoffLib\LitePeCoffLib.inf
+{LitePeCoffLib:  Time = 250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugDataLib\DebugDataLib.inf
+{DebugDataLib:  Time = 842ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\CpuExceptionLib\CpuExceptionLib.inf
+{CpuExceptionLib:  Time = 206ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\StageLib\StageLib.inf
+{StageLib:  Time = 335ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FirmwareResiliencyLib\FirmwareResiliencyLib.inf
+{FirmwareResiliencyLib:  Time = 626ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Stage2
+Module Arch:          IA32
+Module INF Path:      BootloaderCorePkg\Stage2\Stage2.inf
+File GUID:            1BB388F8-77D8-4c00-98A7-38F45931B2A4
+Size:                 0x2C6E0 (177.72K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    6079ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *M PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *M PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdSpinLockTimeout                   :  FIXED   (UINT32) = 0x989680 (10000000)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+gPlatformAlderLakeTokenSpaceGuid
+ *M PcdAdlLpSupport                      :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdAdlNSupport                       :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformCommonLibTokenSpaceGuid
+ *M PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+    PcdBuildSmmHobs                      :  FIXED    (UINT8) = 0x03 (3)
+ *M PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+    PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x1 (1)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+    PcdCpuInitIpiDelayInMicroSeconds     :  FIXED   (UINT32) = 0x64 (100)
+    PcdCpuLocalApicBaseAddress           :  FIXED   (UINT32) = 0xFEE00000 (4276092928)
+    PcdCpuX2ApicEnabled                  :   FLAG  (BOOLEAN) = 0
+ *M PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x3 (3)
+    PcdDmaBufferSize                     :  FIXED   (UINT32) = 0x00400000 (4194304)
+    PcdDmaProtectionEnabled              :   FLAG  (BOOLEAN) = 0
+    PcdEmmcBlockDeviceLibId              :  FIXED    (UINT8) = 0x3 (3)
+    PcdEmmcHs400SupportEnabled           :   FLAG  (BOOLEAN) = 1
+    PcdEmmcMaxRwBlockNumber              :  PATCH   (UINT16) = 0xFFFF (65535)
+    PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 0
+ *M PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+ *M PcdLowestSupportedFwVer              :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdMeasuredBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdMeasuredBootHashMask              :    DYN   (UINT32) = 0x00000002 (2)
+    PcdMinDecompression                  :   FLAG  (BOOLEAN) = 0
+    PcdSeedListEnabled                   :  FIXED  (BOOLEAN) = 0
+ *M PcdSerialBaudRate                    :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C200 (115200)
+ *M PcdSerialClockRate                   :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C2000 (1843200)
+ *M PcdSerialRegisterBase                :  PATCH   (UINT64) = 0x0 (0)
+                                                 DEC DEFAULT = 0x03F8 (1016)
+ *M PcdSerialRegisterStride              :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1 (1)
+    PcdSerialUseMmio                     :  PATCH  (BOOLEAN) = 0
+    PcdSpiFlashLibId                     :  FIXED    (UINT8) = 0x2 (2)
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdTccEnabled                        :  FIXED  (BOOLEAN) = 0
+    PcdTcgLogAreaMinLen                  :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdTpmBaseAddress                    :  FIXED   (UINT64) = 0xFED40000 (4275306496)
+    PcdTpmLibId                          :  FIXED    (UINT8) = 0x4 (4)
+    PcdVariableLibId                     :  FIXED    (UINT8) = 0x1 (1)
+ *M PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformModuleTokenSpaceGuid
+    PcdAcpiEnabled                       :   FLAG  (BOOLEAN) = 1
+    PcdAcpiGnvsAddress                   :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdAcpiProcessorIdBase               :  FIXED   (UINT32) = 0x1 (1)
+    PcdAcpiTableTemplatePtr              :  PATCH   (UINT32) = 0x0 (0)
+    PcdAcpiTablesAddress                 :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+ *M PcdAcpiTablesMaxEntry                :  FIXED   (UINT32) = 0x28 (40)
+                                                 DEC DEFAULT = 0x20 (32)
+ *M PcdAcpiTablesRsdp                    :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdAriSupport                        :   FLAG  (BOOLEAN) = 0
+ *M PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDataLoadSource                 :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000002 (2)
+ *M PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDatabaseSize                   :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCpuMaxLogicalProcessorNumber      :  FIXED   (UINT32) = 0x00000018 (24)
+                                                 DEC DEFAULT = 0x10 (16)
+    PcdCpuSortMethod                     :  FIXED   (UINT32) = 0x0 (0)
+    PcdEnableFwuNotify                   :   FLAG  (BOOLEAN) = 0
+ *M PcdEnablePciePm                      :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdFSPSBase                          :  PATCH   (UINT32) = 0x01191000 (18419712)
+                                                 DEC DEFAULT = 0xFF000000 (4278190080)
+ *M PcdFSPSUpdSize                       :  FIXED   (UINT32) = 0x00001140 (4416)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFastBootEnabled                   :  FIXED  (BOOLEAN) = 0
+ *M PcdFlashBaseAddress                  :  FIXED   (UINT32) = 0xFF300000 (4281335808)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFlashSize                         :  FIXED   (UINT32) = 0x00D00000 (13631488)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFramebufferInitEnabled            :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdFspResetStatus                    :    DYN   (UINT32) = 0x0 (0)
+    PcdFspsUpdPtr                        :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdFuncCpuInitHook                   :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFwuPayloadLoadBase                :  FIXED   (UINT32) = 0x0 (0)
+ *M PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdGraphicsVbtAddress                :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdIgdOpRegionAddress                :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdIntelGfxEnabled                   :   FLAG  (BOOLEAN) = 1
+    PcdLegacyEfSegmentEnabled            :   FLAG  (BOOLEAN) = 1
+    PcdLinuxPayloadEnabled               :   FLAG  (BOOLEAN) = 0
+    PcdLoaderAcpiNvsSize                 :  FIXED   (UINT32) = 0x00008000 (32768)
+ *M PcdLoaderAcpiReclaimSize             :  FIXED   (UINT32) = 0x00090000 (589824)
+                                                 DEC DEFAULT = 0x00068000 (425984)
+    PcdLoaderHobStackSize                :  FIXED   (UINT32) = 0x00040000 (262144)
+ *M PcdMemoryMapEntryNumber              :  FIXED   (UINT32) = 0x00000020 (32)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdOsBootOptionNumber                :  FIXED   (UINT32) = 0x00000008 (8)
+ *M PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadExeBase                    :  FIXED   (UINT32) = 0x00800000 (8388608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPayloadLoadBase                   :  FIXED   (UINT32) = 0x0 (0)
+ *M PcdPayloadLoadHigh                   :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdPayloadReservedMemSize            :  PATCH   (UINT32) = 0x00500000 (5242880)
+                                                 DEC DEFAULT = 0x00004000 (16384)
+ *M PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPciEnumEnabled                    :   FLAG  (BOOLEAN) = 1
+    PcdPciEnumHookProc                   :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdPciEnumPolicyInfo                 :  FIXED    (VOID*) = {0x0f,0x00,0x00,0x00,0x00,0x01,0x00}
+                                                 DEC DEFAULT = {0x00}
+    PcdPciResAllocTableBase              :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdPciResourceIoBase                 :  PATCH   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPciResourceMem32Base              :  PATCH   (UINT32) = 0x80000000 (2147483648)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPciResourceMem64Base              :  PATCH   (UINT64) = 0x0 (0)
+ *M PcdPsdBiosEnabled                    :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdS3DebugEnabled                    :   FLAG  (BOOLEAN) = 0
+    PcdSblResiliencyEnabled              :  FIXED  (BOOLEAN) = 0
+    PcdSeedListBufferSize                :  FIXED   (UINT32) = 0x00000400 (1024)
+    PcdServiceNumber                     :  FIXED   (UINT32) = 0x00000004 (4)
+ *M PcdSmbiosEnabled                     :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+ *M PcdSmbiosStringsCnt                  :  PATCH   (UINT16) = 0x40 (64)
+                                                 DEC DEFAULT = 0x0000 (0)
+    PcdSmbiosStringsPtr                  :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdSmbiosTablesBase                  :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdSmbiosTablesSize                  :  FIXED   (UINT16) = 0x1000 (4096)
+ *M PcdSmmRebaseMode                     :  PATCH    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdSmpEnabled                        :   FLAG  (BOOLEAN) = 1
+    PcdSmramTsegBase                     :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdSmramTsegSize                     :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdSplashEnabled                     :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdSplashLogoAddress                 :  PATCH   (UINT32) = 0xFF000000 (4278190080)
+    PcdSrIovSupport                      :   FLAG  (BOOLEAN) = 0
+ *M PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdBase                     :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BFdSize                     :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdStage1BXip                        :   FLAG  (BOOLEAN) = 1
+ *M PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2FdBase                      :  FIXED   (UINT32) = 0x01000000 (16777216)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdVariableRegionSize                :  FIXED   (UINT32) = 0x00002000 (8192)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdVtdEnabled                        :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+{RegisterFilterLib:  Time = 531ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciExpressLib\BasePciExpressLib.inf
+{PciExpressLib:  Time = 619ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\GpioSiLib\GpioSiLib.inf
+{GpioSiLib:  Time = 575ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchPcrLib\PchPcrLib.inf
+{PchPcrLib:  Time = 680ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PchInfoLib\PchInfoLib.inf
+{PchInfoLib:  Time = 703ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciLibPciExpress\BasePciLibPciExpress.inf
+{PciLib:  Time = 602ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PlatformHookLib\PlatformHookLib.inf
+{PlatformHookLib:  Time = 615ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderCommonLib\BootloaderCommonLib.inf
+{BootloaderCommonLib:  Time = 482ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugPrintErrorLevelLib\DebugPrintErrorLevelLib.inf
+{DebugPrintErrorLevelLib:  Time = 634ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+{PrintLib:  Time = 697ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PcdLib\PcdLib.inf
+{PcdLib:  Time = 3876ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseMemoryLibSse2\BaseMemoryLibSse2.inf
+{BaseMemoryLib:  Time = 19097ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleOutLib\ConsoleOutLib.inf
+{ConsoleOutLib:  Time = 601ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugLogBufferLib\DebugLogBufferLib.inf
+{DebugLogBufferLib:  Time = 582ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugPortLib\DebugPortLibNull.inf
+{DebugPortLib:  Time = 621ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SerialPortLib\SerialPortLib.inf
+{SerialPortLib:  Time = 682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderDebugLib\BootloaderDebugLib.inf
+{DebugLib:  Time = 650ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic.inf
+{IoLib:  Time = 5137ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\GraphicsLib\GraphicsLib.inf
+{GraphicsLib:  Time = 3682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\HobLib\HobLib.inf
+{HobLib:  Time = 571ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\MemoryAllocationLib\MemoryAllocationLib.inf
+{MemoryAllocationLib:  Time = 812ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderCoreLib\BootloaderCoreLib.inf
+{BootloaderLib:  Time = 3175ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderLib\BootloaderLib.inf
+{BootloaderLib:  Time = 687ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseLib\BaseLib.inf
+{BaseLib:  Time = 24095ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciSegmentLibPci\BasePciSegmentLibPci.inf
+{PciSegmentLib:  Time = 831ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSbiAccessLib\PchSbiAccessLib.inf
+{PchSbiAccessLib:  Time = 754ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseRngLib\BaseRngLib.inf
+{RngLib:  C = BaseRngLibConstructor Time = 2707ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IppCryptoLib\IppCryptoLib.inf
+{CryptoLib:  Time = 13807ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LzmaCustomDecompressLib
+\LzmaCustomDecompressLib.inf
+{LzmaDecompressLib:  Time = 4273ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Lz4CompressLib\Lz4CompressLib.inf
+{Lz4CompressLib:  Time = 4460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\BasePcieHelperLib\BasePcieHelperLib.inf
+{BasePcieHelperLib:  Time = 708ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\BasePchPciBdfLib\BasePchPciBdfLib.inf
+{PchPciBdfLib:  Time = 679ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\GpioLib\GpioLib.inf
+{GpioLib:  Time = 2591ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AcpiTimerLib\AcpiTimerLib.inf
+{TimerLib:  Time = 813ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSpiLib\PchSpiLib.inf
+{PchSpiLib:  Time = 825ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SecureBootLib\SecureBootLib.inf
+{SecureBootLib:  Time = 2635ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DecompressLib\DecompressLib.inf
+{DecompressLib:  Time = 911ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\MeChipsetLib\MeChipsetLib.inf
+{MeChipsetLib:  Time = 991ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PcieClientRpLib\PcieClientRpLib.inf
+{PcieRpLib:  Time = 900ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\SpiFlashLib\SpiFlashLib.inf
+{SpiFlashLib:  C = SpiConstructor Time = 1093ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ContainerLib\ContainerLib.inf
+{ContainerLib:  Time = 829ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\ResetSystemLib\ResetSystemLib.inf
+{ResetSystemLib:  Time = 1009ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\HobBuildLib\HobBuildLib.inf
+{HobBuildLib:  Time = 996ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\HeciLib\HeciLib.inf
+{HeciLib:  Time = 2874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Crc32Lib\Crc32Lib.inf
+{Crc32Lib:  Time = 979ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PciExpressHelpersLibrary
+\PciExpressHelpersLibrary.inf
+{PciExpressHelpersLib:  Time = 888ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\FusaConfigLibNull\FusaConfigLibNull.inf
+{FusaConfigLib:  Time = 943ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TccLib\TccLib.inf
+{TccLib:  Time = 984ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\WatchDogTimerLib\WatchDogTimerLib.inf
+{WatchDogTimerLib:  Time = 1002ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConfigDataLib\ConfigDataLib.inf
+{ConfigDataLib:  Time = 874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.inf
+{TpmLib:  Time = 10073ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\HeciMeExtLib\HeciMeExtLib.inf
+{HeciDxeMeExtLib:  Time = 884ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugDataLib\DebugDataLib.inf
+{DebugDataLib:  Time = 842ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IoMmuLib\IoMmuLib.inf
+{IoMmuLib:  Time = 704ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ExtraBaseLib\ExtraBaseLib.inf
+{ExtraBaseLib:  Time = 852ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MtrrLib\MtrrLib.inf
+{MtrrLib:  Time = 2605ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseSynchronizationLib\BaseSynchronizationLib.inf
+{SynchronizationLib:  Time = 3460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\S3SaveRestoreLib\S3SaveRestoreLib.inf
+{S3SaveRestoreLib:  Time = 702ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BaseXApicX2ApicLib\BaseXApicX2ApicLib.inf
+{LocalApicLib:  Time = 651ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SortLib\SortLib.inf
+{SortLib:  Time = 2405ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.inf
+{PagingLib:  Time = 2425ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugAgentLib\DebugAgentLibNull.inf
+{DebugAgentLib:  Time = 512ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\CrashLogLibNull\CrashLogLibNull.inf
+{CrashLogLib:  Time = 435ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PciePm\PciePm.inf
+{PciePm:  Time = 513ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\FspsUpdUpdateLib\FspsUpdUpdateLib.inf
+{FspsUpdUpdateLib:  Time = 539ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\CpuPcieHsPhyInitLib\CpuPcieHsPhyInitLib.inf
+{CpuPcieHsPhyInitLib:  Time = 551ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\MeExtMeasurementLib\MeExtMeasurementLib.inf
+{MeExtMeasurementLib:  Time = 294ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PsdLib\PsdLib.inf
+{PsdLib:  Time = 490ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\VTdLib\VTdLib.inf
+{VtdLib:  Time = 367ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\IgdOpRegionLib\IgdOpRegionLib.inf
+{IgdOpRegionLib:  Time = 451ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\BdatLib\BdatLib.inf
+{BdatLib:  Time = 399ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\BoardSupportLib\BoardSupportLib.inf
+{BoardSupportLib:  Time = 384ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootOptionLib\BootOptionLib.inf
+{BootOptionLib:  Time = 381ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MmcAccessLib\MmcAccessLib.inf
+{MmcAccessLib:  Time = 4556ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteVariableLib\LiteVariableLib.inf
+{VariableLib:  Time = 292ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TimeStampLib\TimeStampLib.inf
+{TimeStampLib:  Time = 408ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\MpInitLib\MpInitLib.inf
+{MpInitLib:  Time = 8924ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ThunkLib\ThunkLib.inf
+{ThunkLib:  Time = 316ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LitePeCoffLib\LitePeCoffLib.inf
+{LitePeCoffLib:  Time = 250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ElfLib\ElfLib.inf
+{ElfLib:  Time = 3738ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspSupportLib\FspSupportLib.inf
+{FspSupportLib:  Time = 209ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ModuleEntryLib\ModuleEntryLib.inf
+{ModuleEntryLib:  Time = 450ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\Stage2SocInitLib\Stage2SocInitLib.inf
+{SocInitLib:  Time = 209ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage2BoardInitLib\Stage2BoardInitLib.inf
+{BoardInitLib:  Time = 18639ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\PciEnumerationLib\PciEnumerationLib.inf
+{PciEnumerationLib:  Time = 5071ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\AcpiInitLib\AcpiInitLib.inf
+{AcpiInitLib:  Time = 10865ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LoaderPerformanceLib\LoaderPerformanceLib.inf
+{LoaderPerformanceLib:  Time = 354ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspsApiLib.inf
+{FspApiLib:  Time = 6843ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\LoaderLib\LoaderLib.inf
+{LoaderLib:  Time = 230ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\CpuExceptionLib\CpuExceptionLib.inf
+{CpuExceptionLib:  Time = 206ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteFvLib\LiteFvLib.inf
+{LiteFvLib:  Time = 339ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\SmbiosInitLib\SmbiosInitLib.inf
+{SmbiosInitLib:  Time = 3522ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LinuxLib\LinuxLib.inf
+{LinuxLib:  Time = 299ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\StageLib\StageLib.inf
+{StageLib:  Time = 335ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UniversalPayloadLib\UniversalPayloadLib.inf
+{UniversalPayloadLib:  Time = 416ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TcoTimerLib\TcoTimerLib.inf
+{TcoTimerLib:  Time = 336ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          OsLoader
+Module Arch:          IA32
+Module INF Path:      PayloadPkg\OsLoader\OsLoader.inf
+File GUID:            A257AA67-53F3-491B-8CFF-E9A4E2E2A514
+Size:                 0x48380 (288.88K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    8707ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *M PcdDebugPrintErrorLevel              :  PATCH   (UINT32) = 0x8000004F (2147483727)
+                                                 DEC DEFAULT = 0x80000000 (2147483648)
+ *M PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *M PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+ *M PcdPlatformBootTimeOut               :    DYN   (UINT16) = 0x2 (2)
+                                                 DEC DEFAULT = 0xffff (65535)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdSpinLockTimeout                   :  FIXED   (UINT32) = 0x989680 (10000000)
+    PcdUsbTransferTimeoutValue           :  FIXED   (UINT32) = 0xBB8 (3000)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+gPayloadTokenSpaceGuid
+    PcdGlobalDataAddress                 :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdGrubBootCfgEnabled                :   FLAG  (BOOLEAN) = 0
+ *M PcdPayloadHeapSize                   :  PATCH   (UINT32) = 0x04000000 (67108864)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPayloadHobList                    :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdPayloadModuleEnabled              :   FLAG  (BOOLEAN) = 0
+ *M PcdPayloadStackSize                  :  PATCH   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdRtcmRsvdSize                      :  FIXED   (UINT32) = 0x000FF000 (1044480)
+                                                 DEC DEFAULT = 0x00000000 (0)
+gPlatformAlderLakeTokenSpaceGuid
+ *M PcdAdlLpSupport                      :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformCommonLibTokenSpaceGuid
+ *M PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+ *M PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+    PcdConsoleInDeviceMask               :  FIXED   (UINT32) = 0x1 (1)
+    PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x1 (1)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+    PcdCpuInitIpiDelayInMicroSeconds     :  FIXED   (UINT32) = 0x64 (100)
+    PcdCpuLocalApicBaseAddress           :  FIXED   (UINT32) = 0xFEE00000 (4276092928)
+ *M PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x00000003 (3)
+    PcdDmaBufferAlignment                :  FIXED   (UINT32) = 0x00100000 (1048576)
+    PcdDmaBufferSize                     :  FIXED   (UINT32) = 0x00400000 (4194304)
+    PcdDmaProtectionEnabled              :   FLAG  (BOOLEAN) = 0
+    PcdEmmcBlockDeviceLibId              :  FIXED    (UINT8) = 0x3 (3)
+    PcdEmmcHs400SupportEnabled           :   FLAG  (BOOLEAN) = 1
+    PcdEmmcMaxRwBlockNumber              :  PATCH   (UINT16) = 0xFFFF (65535)
+    PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 0
+    PcdFrameBufferMaxConsoleHeight       :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdFrameBufferMaxConsoleWidth        :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+ *M PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdMeasuredBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdMeasuredBootHashMask              :    DYN   (UINT32) = 0x00000002 (2)
+    PcdMinDecompression                  :   FLAG  (BOOLEAN) = 0
+    PcdMiniShellEnabled                  :   FLAG  (BOOLEAN) = 0
+    PcdMmcTuningLba                      :  FIXED   (UINT32) = 0x00000040 (64)
+    PcdMmcTuningLibId                    :  FIXED    (UINT8) = 0x6 (6)
+ *M PcdMultiUsbBootDeviceEnabled         :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdPcdLibId                          :  FIXED    (UINT8) = 0x0 (0)
+    PcdSeedListEnabled                   :  FIXED  (BOOLEAN) = 0
+ *M PcdSerialBaudRate                    :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C200 (115200)
+ *M PcdSerialClockRate                   :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C2000 (1843200)
+ *M PcdSerialRegisterBase                :  PATCH   (UINT64) = 0x0 (0)
+                                                 DEC DEFAULT = 0x03F8 (1016)
+ *M PcdSerialRegisterStride              :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1 (1)
+    PcdSerialUseMmio                     :  PATCH  (BOOLEAN) = 0
+    PcdSourceDebugEnabled                :   FLAG  (BOOLEAN) = 0
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSupportedFileSystemMask           :  FIXED   (UINT32) = 0x00000003 (3)
+    PcdSupportedMediaTypeMask            :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdTcgLogAreaMinLen                  :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdTpmBaseAddress                    :  FIXED   (UINT64) = 0xFED40000 (4275306496)
+    PcdTpmLibId                          :  FIXED    (UINT8) = 0x4 (4)
+    PcdUfsPciHostControllerMmioBase      :  FIXED   (UINT32) = 0xd0000000 (3489660928)
+    PcdUsbCmdTimeout                     :  FIXED   (UINT16) = 0x00001000 (4096)
+    PcdUsbKeyboardPollingTimeout         :  FIXED   (UINT32) = 0x1 (1)
+    PcdVariableLibId                     :  FIXED    (UINT8) = 0x1 (1)
+ *M PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformModuleTokenSpaceGuid
+ *M PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFspResetStatus                    :    DYN   (UINT32) = 0x0 (0)
+ *M PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugLogBufferLib\DebugLogBufferLib.inf
+{DebugLogBufferLib:  Time = 582ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugPortLib\DebugPortLibNull.inf
+{DebugPortLib:  Time = 621ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SerialPortLib\SerialPortLib.inf
+{SerialPortLib:  Time = 682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\GraphicsLib\GraphicsLib.inf
+{GraphicsLib:  Time = 3682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleOutLib\ConsoleOutLib.inf
+{ConsoleOutLib:  Time = 601ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderCoreLib\BootloaderCoreLib.inf
+{BootloaderLib:  Time = 3175ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\HobLib\HobLib.inf
+{HobLib:  Time = 571ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchPcrLib\PchPcrLib.inf
+{PchPcrLib:  Time = 680ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciExpressLib\BasePciExpressLib.inf
+{PciExpressLib:  Time = 619ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciLibPciExpress\BasePciLibPciExpress.inf
+{PciLib:  Time = 602ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\GpioSiLib\GpioSiLib.inf
+{GpioSiLib:  Time = 575ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\PchInfoLib\PchInfoLib.inf
+{PchInfoLib:  Time = 703ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TimeStampLib\TimeStampLib.inf
+{TimeStampLib:  Time = 408ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IoMmuLib\IoMmuLib.inf
+{IoMmuLib:  Time = 704ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbBlockIoLib\UsbBlockIoLib.inf
+{UsbBlockIoLib:  Time = 9006ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbBusLib\UsbBusLib.inf
+{XhciLib:  Time = 7146ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\XhciLib\XhciLib.inf
+{UsbHostCtrlLib:  Time = 5917ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+{RegisterFilterLib:  Time = 531ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic.inf
+{IoLib:  Time = 5137ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AcpiTimerLib\AcpiTimerLib.inf
+{TimerLib:  Time = 813ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PcdLib\PcdLib.inf
+{PcdLib:  Time = 3876ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbInitLib\UsbInitLib.inf
+{UsbInitLib:  Time = 1201ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugPrintErrorLevelLib\DebugPrintErrorLevelLib.inf
+{DebugPrintErrorLevelLib:  Time = 634ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderCommonLib\BootloaderCommonLib.inf
+{BootloaderCommonLib:  Time = 482ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadLib\PayloadLib.inf
+{BootloaderLib:  Time = 1198ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+{PrintLib:  Time = 697ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseMemoryLibSse2\BaseMemoryLibSse2.inf
+{BaseMemoryLib:  Time = 19097ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FullMemoryAllocationLib
+\FullMemoryAllocationLib.inf
+{MemoryAllocationLib:  Time = 5208ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderDebugLib\BootloaderDebugLib.inf
+{DebugLib:  Time = 650ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseLib\BaseLib.inf
+{BaseLib:  Time = 24095ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PlatformHookLib\PlatformHookLib.inf
+{PlatformHookLib:  C = PlatformHookSerialPortInitialize Time = 1264ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ExtraBaseLib\ExtraBaseLib.inf
+{ExtraBaseLib:  Time = 852ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteVariableLib\LiteVariableLib.inf
+{VariableLib:  Time = 292ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MmcTuningLib\MmcTuningLib.inf
+{MmcTuningLib:  Time = 1171ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AhciLib\AhciLib.inf
+{AhciLib:  Time = 7161ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UfsBlockIoLib\UfsBlockIoLib.inf
+{UfsBlockIoLib:  Time = 8647ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SpiBlockIoLib\SpiBlockIoLib.inf
+{SpiBlockIoLib:  Time = 1136ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MemoryDeviceBlockIoLib\MemoryDeviceBlockIoLib.inf
+{MemoryDeviceBlockIoLib:  Time = 1138ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressLib.inf
+{NvmExpressLib:  Time = 12152ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MmcAccessLib\MmcAccessLib.inf
+{MmcAccessLib:  Time = 4556ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\PchSbiAccessLib\PchSbiAccessLib.inf
+{PchSbiAccessLib:  Time = 754ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MediaAccessLib\MediaAccessLib.inf
+{MediaAccessLib:  Time = 1160ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LoaderPerformanceLib\LoaderPerformanceLib.inf
+{LoaderPerformanceLib:  Time = 354ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbKbLib\UsbKbLib.inf
+{UsbKbLib:  Time = 1049ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\GpioLib\GpioLib.inf
+{GpioLib:  Time = 2591ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Crc32Lib\Crc32Lib.inf
+{Crc32Lib:  Time = 979ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Ext23Lib\Ext23Lib.inf
+{Ext23Lib:  Time = 3447ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FatLib\FatLib.inf
+{FatLib:  Time = 3196ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseRngLib\BaseRngLib.inf
+{RngLib:  C = BaseRngLibConstructor Time = 2707ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IppCryptoLib\IppCryptoLib.inf
+{CryptoLib:  Time = 13807ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.inf
+{PagingLib:  Time = 2425ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugAgentLib\DebugAgentLibNull.inf
+{DebugAgentLib:  Time = 512ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LzmaCustomDecompressLib
+\LzmaCustomDecompressLib.inf
+{LzmaDecompressLib:  Time = 4273ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Lz4CompressLib\Lz4CompressLib.inf
+{Lz4CompressLib:  Time = 4460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadSupportLib\PayloadSupportLib.inf
+{PayloadSupportLib:  Time = 1228ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ModuleEntryLib\ModuleEntryLib.inf
+{ModuleEntryLib:  Time = 450ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MtrrLib\MtrrLib.inf
+{MtrrLib:  Time = 2605ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SortLib\SortLib.inf
+{SortLib:  Time = 2405ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleInLib\ConsoleInLib.inf
+{ConsoleInLib:  Time = 1023ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\ResetSystemLib\ResetSystemLib.inf
+{ResetSystemLib:  Time = 1009ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\ShellExtensionLib\ShellExtensionLib.inf
+{ShellExtensionLib:  Time = 4379ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootOptionLib\BootOptionLib.inf
+{BootOptionLib:  Time = 381ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PartitionLib\PartitionLib.inf
+{PartitionLib:  Time = 1250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FileSystemLib\FileSystemLib.inf
+{FileSystemLib:  Time = 1191ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SecureBootLib\SecureBootLib.inf
+{SecureBootLib:  Time = 2635ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ThunkLib\ThunkLib.inf
+{ThunkLib:  Time = 316ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ElfLib\ElfLib.inf
+{ElfLib:  Time = 3738ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\HobBuildLib\HobBuildLib.inf
+{HobBuildLib:  Time = 996ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LitePeCoffLib\LitePeCoffLib.inf
+{LitePeCoffLib:  Time = 250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DecompressLib\DecompressLib.inf
+{DecompressLib:  Time = 911ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadEntryLib\PayloadEntryLib.inf
+{PayloadEntryLib:  Time = 1172ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ShellLib\ShellLib.inf
+{ShellLib:  Time = 22517ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IasImageLib\IasImageLib.inf
+{IasImageLib:  Time = 909ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MultibootLib\MultibootLib.inf
+{MultibootLib:  Time = 8596ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.inf
+{TpmLib:  Time = 10073ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SeedListInfoLib\SeedListInfoLib.inf
+{SeedListInfoLib:  Time = 857ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\RpmbLib\RpmbLib.inf
+{RpmbLib:  Time = 791ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConfigDataLib\ConfigDataLib.inf
+{ConfigDataLib:  Time = 874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\AbSupportLib\AbSupportLib.inf
+{AbSupportLib:  Time = 759ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\SblParameterLib\SblParameterLib.inf
+{SblParameterLib:  Time = 584ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\TrustyBootLib\TrustyBootLib.inf
+{TrustyBootLib:  Time = 415ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UniversalPayloadLib\UniversalPayloadLib.inf
+{UniversalPayloadLib:  Time = 416ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteFvLib\LiteFvLib.inf
+{LiteFvLib:  Time = 339ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LinuxLib\LinuxLib.inf
+{LinuxLib:  Time = 299ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ContainerLib\ContainerLib.inf
+{ContainerLib:  Time = 829ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\StringSupportLib\StringSupportLib.inf
+{StringSupportLib:  Time = 1144ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BaseXApicX2ApicLib\BaseXApicX2ApicLib.inf
+{LocalApicLib:  Time = 651ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseSynchronizationLib\BaseSynchronizationLib.inf
+{SynchronizationLib:  Time = 3460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\MpServiceLib\MpServiceLib.inf
+{MpServiceLib:  Time = 245ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          FirmwareUpdate
+Module Arch:          IA32
+Module INF Path:      PayloadPkg\FirmwareUpdate\FirmwareUpdate.inf
+File GUID:            E2E57F60-4C17-461e-92A2-E428DBB12D06
+Size:                 0x34640 (209.56K)
+Build Time Stamp:     1970-01-01 00:00:00
+Module Build Time:    6441ms
+Driver Type:          0x6 (PEIM)
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gEfiMdePkgTokenSpaceGuid
+    PcdControlFlowEnforcementPropertyMask   :  FIXED   (UINT32) = 0x0 (0)
+    PcdDebugClearMemoryValue             :  FIXED    (UINT8) = 0xAF (175)
+ *M PcdDebugPropertyMask                 :  FIXED    (UINT8) = 0x27 (39)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdFixedDebugPrintErrorLevel         :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdMaximumAsciiStringLength          :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumLinkedListLength           :  FIXED   (UINT32) = 0xF4240 (1000000)
+    PcdMaximumUnicodeStringLength        :  FIXED   (UINT32) = 0xF4240 (1000000)
+ *M PcdPciExpressBaseAddress             :  PATCH   (UINT64) = 0xC0000000 (3221225472)
+                                                 DEC DEFAULT = 0xE0000000 (3758096384)
+    PcdPciExpressBaseSize                :  FIXED   (UINT64) = 0x10000000 (268435456)
+    PcdSpeculationBarrierType            :  FIXED    (UINT8) = 0x01 (1)
+    PcdUsbTransferTimeoutValue           :  FIXED   (UINT32) = 0xBB8 (3000)
+    PcdVerifyNodeInList                  :   FLAG  (BOOLEAN) = 0
+gPayloadTokenSpaceGuid
+ *M PcdCsmeUpdateEnabled                 :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdFwUpdStatusBase                   :  PATCH   (UINT32) = 0x00000000 (0)
+    PcdGlobalDataAddress                 :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdPayloadHeapSize                   :  PATCH   (UINT32) = 0x04000000 (67108864)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdPayloadHobList                    :  PATCH   (UINT32) = 0x00000000 (0)
+ *M PcdPayloadStackSize                  :  PATCH   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+gPlatformCommonLibTokenSpaceGuid
+ *M PcdAcpiPmTimerBase                   :  PATCH   (UINT16) = 0x00001808 (6152)
+                                                 DEC DEFAULT = 0x0408 (1032)
+    PcdBootPerformanceMask               :  FIXED   (UINT32) = 0x1 (1)
+ *M PcdCompSignHashAlg                   :  FIXED    (UINT8) = 0x00000002 (2)
+                                                 DEC DEFAULT = 0x01 (1)
+    PcdCompSignSchemeSupportedMask       :  FIXED    (UINT8) = 0x03 (3)
+ *M PcdConsoleOutDeviceMask              :  FIXED   (UINT32) = 0x3 (3)
+                                                 DSC DEFAULT = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000001 (1)
+    PcdContainerMaxNumber                :  FIXED   (UINT32) = 0x8 (8)
+ *M PcdCryptoShaOptMask                  :  FIXED   (UINT32) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x0 (0)
+    PcdDebugOutputDeviceMask             :  FIXED   (UINT32) = 0x00000003 (3)
+    PcdDmaBufferAlignment                :  FIXED   (UINT32) = 0x00100000 (1048576)
+    PcdDmaBufferSize                     :  FIXED   (UINT32) = 0x00400000 (4194304)
+    PcdDmaProtectionEnabled              :   FLAG  (BOOLEAN) = 0
+    PcdEmmcBlockDeviceLibId              :  FIXED    (UINT8) = 0x3 (3)
+    PcdEmmcHs400SupportEnabled           :   FLAG  (BOOLEAN) = 1
+    PcdEmmcMaxRwBlockNumber              :  PATCH   (UINT16) = 0xFFFF (65535)
+    PcdForceToInitSerialPort             :   FLAG  (BOOLEAN) = 0
+    PcdFrameBufferMaxConsoleHeight       :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdFrameBufferMaxConsoleWidth        :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+ *M PcdIppHashLibSupportedMask           :  FIXED   (UINT16) = 0x00000006 (6)
+                                                 DEC DEFAULT = 0x02 (2)
+ *M PcdLowestSupportedFwVer              :  FIXED   (UINT32) = 0x1 (1)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdMaxLibraryDataEntry               :  FIXED   (UINT32) = 0x8 (8)
+    PcdMeasuredBootHashMask              :    DYN   (UINT32) = 0x00000002 (2)
+    PcdMinDecompression                  :   FLAG  (BOOLEAN) = 0
+    PcdMmcTuningLba                      :  FIXED   (UINT32) = 0x00000040 (64)
+    PcdMmcTuningLibId                    :  FIXED    (UINT8) = 0x6 (6)
+ *M PcdMultiUsbBootDeviceEnabled         :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+    PcdPcdLibId                          :  FIXED    (UINT8) = 0x0 (0)
+ *M PcdSerialBaudRate                    :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C200 (115200)
+ *M PcdSerialClockRate                   :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1C2000 (1843200)
+ *M PcdSerialRegisterBase                :  PATCH   (UINT64) = 0x0 (0)
+                                                 DEC DEFAULT = 0x03F8 (1016)
+ *M PcdSerialRegisterStride              :  PATCH   (UINT32) = 0x0 (0)
+                                                 DEC DEFAULT = 0x1 (1)
+    PcdSerialUseMmio                     :  PATCH  (BOOLEAN) = 0
+    PcdSpiIasImage1RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage1RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionBase            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSpiIasImage2RegionSize            :  FIXED   (UINT32) = 0x0 (0)
+    PcdSupportedFileSystemMask           :  FIXED   (UINT32) = 0x00000003 (3)
+    PcdSupportedMediaTypeMask            :  FIXED   (UINT32) = 0xFFFFFFFF (4294967295)
+    PcdTcgLogAreaMinLen                  :  FIXED   (UINT32) = 0x10000 (65536)
+    PcdTpmBaseAddress                    :  FIXED   (UINT64) = 0xFED40000 (4275306496)
+    PcdTpmLibId                          :  FIXED    (UINT8) = 0x4 (4)
+    PcdUfsPciHostControllerMmioBase      :  FIXED   (UINT32) = 0xd0000000 (3489660928)
+    PcdUsbCmdTimeout                     :  FIXED   (UINT16) = 0x00001000 (4096)
+    PcdVariableLibId                     :  FIXED    (UINT8) = 0x1 (1)
+ *M PcdVerifiedBootEnabled               :   FLAG  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+gPlatformModuleTokenSpaceGuid
+    PcdBootFailureThreshold              :  FIXED    (UINT8) = 0x3 (3)
+ *M PcdCfgDataBase                       :  FIXED   (UINT32) = 0xFFCFB000 (4291801088)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdCfgDataSize                       :  FIXED   (UINT32) = 0x00004000 (16384)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFlashBaseAddress                  :  FIXED   (UINT32) = 0xFF300000 (4281335808)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdFspResetStatus                    :    DYN   (UINT32) = 0x0 (0)
+ *M PcdFwuPayloadBase                    :  FIXED   (UINT32) = 0xFFCDB000 (4291670016)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdFwuPayloadSize                    :  FIXED   (UINT32) = 0x00020000 (131072)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataBase                       :  FIXED   (UINT32) = 0xFF579000 (4283928576)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdMrcDataSize                       :  FIXED   (UINT32) = 0x00010000 (65536)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadBase                       :  FIXED   (UINT32) = 0xFF72A000 (4285702144)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdPayloadSize                       :  FIXED   (UINT32) = 0x00030000 (196608)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdRedundantRegionSize               :  FIXED   (UINT32) = 0x003D3000 (4009984)
+                                                 DEC DEFAULT = 0x00000000 (0)
+    PcdSblResiliencyEnabled              :  FIXED  (BOOLEAN) = 0
+ *M PcdStage1ABase                       :  FIXED   (UINT32) = 0xFFFE5000 (4294856704)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1ASize                       :  FIXED   (UINT32) = 0x0001B000 (110592)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BBase                       :  FIXED   (UINT32) = 0xFFD00000 (4291821568)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage1BSize                       :  FIXED   (UINT32) = 0x00200000 (2097152)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Base                        :  FIXED   (UINT32) = 0xFFC19000 (4290875392)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdStage2Size                        :  FIXED   (UINT32) = 0x000C2000 (794624)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdTopSwapRegionSize                 :  FIXED   (UINT32) = 0x00080000 (524288)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeBase                         :  FIXED   (UINT32) = 0xFFB2D000 (4289908736)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSize                         :  FIXED   (UINT32) = 0x000EC000 (966656)
+                                                 DEC DEFAULT = 0x00000000 (0)
+ *M PcdUcodeSlotSize                     :  FIXED   (UINT32) = 0x0003B000 (241664)
+                                                 DEC DEFAULT = 0x00000000 (0)
+<---------------------------------------------------------------------------------------------------------------------->
+>----------------------------------------------------------------------------------------------------------------------<
+Library
+------------------------------------------------------------------------------------------------------------------------
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbBusLib\UsbBusLib.inf
+{XhciLib:  Time = 7146ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\XhciLib\XhciLib.inf
+{UsbHostCtrlLib:  Time = 5917ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbInitLib\UsbInitLib.inf
+{UsbInitLib:  Time = 1201ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IoMmuLib\IoMmuLib.inf
+{IoMmuLib:  Time = 704ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UsbBlockIoLib\UsbBlockIoLib.inf
+{UsbBlockIoLib:  Time = 9006ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\GraphicsLib\GraphicsLib.inf
+{GraphicsLib:  Time = 3682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConsoleOutLib\ConsoleOutLib.inf
+{ConsoleOutLib:  Time = 601ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugPortLib\DebugPortLibNull.inf
+{DebugPortLib:  Time = 621ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\BootloaderCoreLib\BootloaderCoreLib.inf
+{BootloaderLib:  Time = 3175ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\DebugPrintErrorLevelLib\DebugPrintErrorLevelLib.inf
+{DebugPrintErrorLevelLib:  Time = 634ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugLogBufferLib\DebugLogBufferLib.inf
+{DebugLogBufferLib:  Time = 582ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SerialPortLib\SerialPortLib.inf
+{SerialPortLib:  Time = 682ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TimeStampLib\TimeStampLib.inf
+{TimeStampLib:  Time = 408ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\HobLib\HobLib.inf
+{HobLib:  Time = 571ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadLib\PayloadLib.inf
+{BootloaderLib:  Time = 1198ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderCommonLib\BootloaderCommonLib.inf
+{BootloaderCommonLib:  Time = 482ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PcdLib\PcdLib.inf
+{PcdLib:  Time = 3876ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\RegisterFilterLibNull\RegisterFilterLibNull.inf
+{RegisterFilterLib:  Time = 531ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic.inf
+{IoLib:  Time = 5137ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AcpiTimerLib\AcpiTimerLib.inf
+{TimerLib:  Time = 813ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseMemoryLibSse2\BaseMemoryLibSse2.inf
+{BaseMemoryLib:  Time = 19097ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseLib\BaseLib.inf
+{BaseLib:  Time = 24095ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FullMemoryAllocationLib
+\FullMemoryAllocationLib.inf
+{MemoryAllocationLib:  Time = 5208ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\BasePrintLib.inf
+{PrintLib:  Time = 697ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootloaderDebugLib\BootloaderDebugLib.inf
+{DebugLib:  Time = 650ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PlatformHookLib\PlatformHookLib.inf
+{PlatformHookLib:  C = PlatformHookSerialPortInitialize Time = 1264ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ExtraBaseLib\ExtraBaseLib.inf
+{ExtraBaseLib:  Time = 852ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciExpressLib\BasePciExpressLib.inf
+{PciExpressLib:  Time = 619ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteVariableLib\LiteVariableLib.inf
+{VariableLib:  Time = 292ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePciLibPciExpress\BasePciLibPciExpress.inf
+{PciLib:  Time = 602ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MmcTuningLib\MmcTuningLib.inf
+{MmcTuningLib:  Time = 1171ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\AhciLib\AhciLib.inf
+{AhciLib:  Time = 7161ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\UfsBlockIoLib\UfsBlockIoLib.inf
+{UfsBlockIoLib:  Time = 8647ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SpiBlockIoLib\SpiBlockIoLib.inf
+{SpiBlockIoLib:  Time = 1136ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MemoryDeviceBlockIoLib\MemoryDeviceBlockIoLib.inf
+{MemoryDeviceBlockIoLib:  Time = 1138ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\NvmExpressLib\NvmExpressLib.inf
+{NvmExpressLib:  Time = 12152ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MmcAccessLib\MmcAccessLib.inf
+{MmcAccessLib:  Time = 4556ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\MeChipsetLib\MeChipsetLib.inf
+{MeChipsetLib:  Time = 991ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MediaAccessLib\MediaAccessLib.inf
+{MediaAccessLib:  Time = 1160ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\HeciLib\HeciLib.inf
+{HeciLib:  Time = 2874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Crc32Lib\Crc32Lib.inf
+{Crc32Lib:  Time = 979ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Ext23Lib\Ext23Lib.inf
+{Ext23Lib:  Time = 3447ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FatLib\FatLib.inf
+{FatLib:  Time = 3196ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DebugAgentLib\DebugAgentLibNull.inf
+{DebugAgentLib:  Time = 512ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LoaderPerformanceLib\LoaderPerformanceLib.inf
+{LoaderPerformanceLib:  Time = 354ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LzmaCustomDecompressLib
+\LzmaCustomDecompressLib.inf
+{LzmaDecompressLib:  Time = 4273ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\Lz4CompressLib\Lz4CompressLib.inf
+{Lz4CompressLib:  Time = 4460ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseRngLib\BaseRngLib.inf
+{RngLib:  C = BaseRngLibConstructor Time = 2707ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\IppCryptoLib\IppCryptoLib.inf
+{CryptoLib:  Time = 13807ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\HobBuildLib\HobBuildLib.inf
+{HobBuildLib:  Time = 996ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\ResetSystemLib\ResetSystemLib.inf
+{ResetSystemLib:  Time = 1009ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\HeciMeExtLib\HeciMeExtLib.inf
+{HeciDxeMeExtLib:  Time = 884ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PartitionLib\PartitionLib.inf
+{PartitionLib:  Time = 1250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FileSystemLib\FileSystemLib.inf
+{FileSystemLib:  Time = 1191ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LitePeCoffLib\LitePeCoffLib.inf
+{LitePeCoffLib:  Time = 250ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\WatchDogTimerLib\WatchDogTimerLib.inf
+{WatchDogTimerLib:  Time = 1002ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.inf
+{PagingLib:  Time = 2425ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadSupportLib\PayloadSupportLib.inf
+{PayloadSupportLib:  Time = 1228ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ModuleEntryLib\ModuleEntryLib.inf
+{ModuleEntryLib:  Time = 450ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\DecompressLib\DecompressLib.inf
+{DecompressLib:  Time = 911ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\SecureBootLib\SecureBootLib.inf
+{SecureBootLib:  Time = 2635ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\TpmLib\TpmLib.inf
+{TpmLib:  Time = 10073ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Library\FirmwareUpdateLib\FirmwareUpdateLib.inf
+{FirmwareUpdateLib:  Time = 1200ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\PayloadPkg\Library\PayloadEntryLib\PayloadEntryLib.inf
+{PayloadEntryLib:  Time = 1172ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\LiteFvLib\LiteFvLib.inf
+{LiteFvLib:  Time = 339ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ConfigDataLib\ConfigDataLib.inf
+{ConfigDataLib:  Time = 874ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ContainerLib\ContainerLib.inf
+{ContainerLib:  Time = 829ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\StringSupportLib\StringSupportLib.inf
+{StringSupportLib:  Time = 1144ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\BootOptionLib\BootOptionLib.inf
+{BootOptionLib:  Time = 381ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\BootGuardLibCBnT\BootGuardLibCBnT.inf
+{BootGuardLib:  Time = 3496ms}
+e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\TcoTimerLib\TcoTimerLib.inf
+{TcoTimerLib:  Time = 336ms}
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          AcpiTables
+Module Arch:          IA32
+Module INF Path:      Platform\AlderlakeBoardPkg\AcpiTables\AcpiTablesN.inf
+File GUID:            7E374E25-8E01-4FEE-87F2-390C23C606CD
+Module Build Time:    53161ms
+Driver Type:          0x2 (FREE_FORM)
+UEFI Spec Version:    0x00020000
+========================================================================================================================
+>----------------------------------------------------------------------------------------------------------------------<
+PCD
+------------------------------------------------------------------------------------------------------------------------
+gPlatformAlderLakeTokenSpaceGuid
+ *M PcdAdlNSupport                       :  FIXED  (BOOLEAN) = 1
+                                                 DEC DEFAULT = 0
+<---------------------------------------------------------------------------------------------------------------------->
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          Microcode
+Module Arch:          IA32
+Module INF Path:      Silicon\AlderlakePkg\Microcode\Microcode.inf
+File GUID:            40762366-24D3-4A6E-9F43-5AC5085D34EB
+Module Build Time:    1082ms
+Driver Type:          0x2 (FREE_FORM)
+========================================================================================================================
+>======================================================================================================================<
+PCDs not used by modules or in conditional directives
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+========================================================================================================================
+>======================================================================================================================<
+Platform Configuration Database Report
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+  *M  - Module scoped PCD override
+========================================================================================================================
+<======================================================================================================================>
+
+>======================================================================================================================<
+Module Summary
+Module Name:          ResetVector
+Module Arch:          IA32
+Module INF Path:      BootloaderCorePkg\Stage1A\Ia32\Vtf0\Bin\ResetVector.inf
+File GUID:            1BA0062E-C779-4582-8566-336AE8F78F09
+Driver Type:          0x3 (SECURITY_CORE)
+========================================================================================================================
+>======================================================================================================================<
+PCDs not used by modules or in conditional directives
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+========================================================================================================================
+>======================================================================================================================<
+Platform Configuration Database Report
+  *B  - PCD override in the build option
+  *P  - Platform scoped PCD override in DSC file
+  *F  - Platform scoped PCD override in FDF file
+  *M  - Module scoped PCD override
+========================================================================================================================
+<======================================================================================================================>
+

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\1A1E4886-9517-440e-9FDE-3BE44CEE2136CpuDxe\1A1E4886-9517-440e-9FDE-3BE44CEE2136SEC2.1.pe32 E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\UefiCpuPkg\CpuDxe\CpuDxe\OUTPUT\CpuDxe.efi

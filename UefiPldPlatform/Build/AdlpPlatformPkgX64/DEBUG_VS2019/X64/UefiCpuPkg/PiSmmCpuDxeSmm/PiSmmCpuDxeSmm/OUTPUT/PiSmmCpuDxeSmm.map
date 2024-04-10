@@ -1,0 +1,1035 @@
+ PiSmmCpuDxeSmm
+
+ Timestamp is 65f952c7 (Tue Mar 19 16:54:31 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001124H .text                   CODE
+ 0001:00001124 0000d10bH .text$mn                CODE
+ 0002:00000000 00000006H .rodata                 CODE
+ 0003:00000000 00004744H .rdata                  DATA
+ 0003:00004744 000008e0H .rdata$voltmd           DATA
+ 0003:00005024 00000178H .rdata$zzzdbg           DATA
+ 0004:00000000 000004a0H .data                   DATA
+ 0004:000004a0 0000129cH .bss                    DATA
+ 0005:00000000 00000774H .pdata                  DATA
+ 0006:00000000 00000450H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       gcSmiInitGdtr              0000000000001000     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000000a       SmmStartup                 000000000000100a     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000001b       gPatchSmmCr3               000000000000101b     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000002b       gPatchSmmCr4               000000000000102b     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000050       gPatchSmmCr0               0000000000001050     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000065       gPatchSmmInitStack         0000000000001065     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000eb       gcSmmInitTemplate          00000000000010eb     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000103       gcSmmInitSize              0000000000001103     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000105       SmmRelocationSemaphoreComplete 0000000000001105     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000117       SmmRelocationSemaphoreComplete32 0000000000001117     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000011d       gPatchRebasedFlagAddr32    000000000000111d     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000127       PiSmmCpuSmmInitFixupAddress 0000000000001127     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000127       gPatchSmmRelocationOriginalAddressPtr32 0000000000001127     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000150       PageFaultIdtHandlerSmmProfile 0000000000001150     PiSmmCpuDxeSmm:SmiException.obj
+ 0001:000002a0       gcSmiHandlerTemplate       00000000000012a0     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000002c7       gPatchSmbase               00000000000012c7     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000030b       gPatchSmiStack             000000000000130b     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000312       gPatchSmiCr3               0000000000001312     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000031c       gPatch5LevelPagingNeeded   000000000000131c     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000345       gPatchXdSupported          0000000000001345     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000034b       gPatchMsrIa32MiscEnableSupported 000000000000134b     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000003d7       mPatchCetSupported         00000000000013d7     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000412       mPatchCetPl0Ssp            0000000000001412     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000433       mPatchCetInterruptSspTable 0000000000001433     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000043c       mPatchCetInterruptSsp      000000000000143c     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000531       gcSmiHandlerSize           0000000000001531     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000533       PiSmmCpuSmiEntryFixupAddress 0000000000001533     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000005a0       RendezvousFunnelProc       00000000000015a0     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:0000069d       AsmGetAddressMap           000000000000169d     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:000006d0       DisableCet                 00000000000016d0     PiSmmCpuDxeSmm:Cet.obj
+ 0001:000006e5       EnableCet                  00000000000016e5     PiSmmCpuDxeSmm:Cet.obj
+ 0001:00000700       InternalMemCopyMem         0000000000001700     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000740       InternalMemZeroMem         0000000000001740     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000760       SetJump                    0000000000001760     BaseLib:SetJump.obj
+ 0001:00000830       AsmReadCr0                 0000000000001830     BaseLib:ReadCr0.obj
+ 0001:00000840       AsmReadCr3                 0000000000001840     BaseLib:ReadCr3.obj
+ 0001:00000850       CpuPause                   0000000000001850     BaseLib:CpuPause.obj
+ 0001:00000860       AsmCpuidEx                 0000000000001860     BaseLib:CpuIdEx.obj
+ 0001:00000890       AsmCpuid                   0000000000001890     BaseLib:CpuId.obj
+ 0001:000008c0       AsmReadCr4                 00000000000018c0     BaseLib:ReadCr4.obj
+ 0001:000008d0       AsmWriteDr7                00000000000018d0     BaseLib:WriteDr7.obj
+ 0001:000008e0       AsmReadDr7                 00000000000018e0     BaseLib:ReadDr7.obj
+ 0001:000008f0       AsmReadDr6                 00000000000018f0     BaseLib:ReadDr6.obj
+ 0001:00000900       AsmWriteDr6                0000000000001900     BaseLib:WriteDr6.obj
+ 0001:00000910       AsmReadCr2                 0000000000001910     BaseLib:ReadCr2.obj
+ 0001:00000920       AsmWriteCr0                0000000000001920     BaseLib:WriteCr0.obj
+ 0001:00000930       AsmEnableCache             0000000000001930     BaseLib:EnableCache.obj
+ 0001:00000950       AsmDisableCache            0000000000001950     BaseLib:DisableCache.obj
+ 0001:00000970       AsmWriteCr4                0000000000001970     BaseLib:WriteCr4.obj
+ 0001:00000980       AsmWriteCr3                0000000000001980     BaseLib:WriteCr3.obj
+ 0001:00000990       AsmWriteCr2                0000000000001990     BaseLib:WriteCr2.obj
+ 0001:000009a0       InternalLongJump           00000000000019a0     BaseLib:LongJump.obj
+ 0001:00000a50       InternalX86ReadIdtr        0000000000001a50     BaseLib:ReadIdtr.obj
+ 0001:00000a60       InternalX86WriteIdtr       0000000000001a60     BaseLib:WriteIdtr.obj
+ 0001:00000a70       EnableInterrupts           0000000000001a70     BaseLib:EnableInterrupts.obj
+ 0001:00000a80       DisableInterrupts          0000000000001a80     BaseLib:DisableInterrupts.obj
+ 0001:00000a90       AsmLfence                  0000000000001a90     BaseLib:Lfence.obj
+ 0001:00000aa0       InternalX86DisablePaging64 0000000000001aa0     BaseLib:DisablePaging64.obj
+ 0001:00000b10       InternalSwitchStack        0000000000001b10     BaseLib:SwitchStack.obj
+ 0001:00000b20       InternalX86ReadGdtr        0000000000001b20     BaseLib:ReadGdtr.obj
+ 0001:00000b30       AsmReadEflags              0000000000001b30     BaseLib:ReadEflags.obj
+ 0001:00000b40       InitializeFloatingPointUnits 0000000000001b40     BaseUefiCpuLib:InitializeFpu.obj
+ 0001:00000b60       CpuFlushTlb                0000000000001b60     BaseCpuLib:CpuFlushTlb.obj
+ 0001:00000d81       CommonInterruptEntry       0000000000001d81     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000f50       AsmGetTemplateAddressMap   0000000000001f50     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:0000108e       AsmVectorNumFixup          000000000000208e     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:000010a0       InternalMemSetMem          00000000000020a0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000010c0       InternalMemSetMem64        00000000000020c0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000010e0       InternalMemSetMem32        00000000000020e0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001100       AsmWriteTr                 0000000000002100     BaseLib:WriteTr.obj
+ 0001:00001110       AsmReadCs                  0000000000002110     BaseLib:ReadCs.obj
+ 0001:00001120       InternalX86WriteGdtr       0000000000002120     BaseLib:WriteGdtr.obj
+ 0001:00001124       _ModuleEntryPoint          0000000000002124 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00001168       ProcessLibraryConstructorList 0000000000002168 f   PiSmmCpuDxeSmm:AutoGen.obj
+ 0001:00001788       ProcessModuleEntryPointList 0000000000002788 f   PiSmmCpuDxeSmm:AutoGen.obj
+ 0001:00001858       DumpModuleInfoByIp         0000000000002858 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:000018c8       SmmReadSaveState           00000000000028c8 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:000019a8       SmmWriteSaveState          00000000000029a8 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00001a04       SmmInitHandler             0000000000002a04 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00001c8c       SmmRelocateBases           0000000000002c8c f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00001e88       SmmReadyToLockEventNotify  0000000000002e88 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00001ea4       PiCpuSmmEntry              0000000000002ea4 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00002c14       FindSmramInfo              0000000000003c14 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00002ea0       ConfigSmmCodeAccessCheckOnCurrentProcessor 0000000000003ea0 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00002ef0       ConfigSmmCodeAccessCheck   0000000000003ef0 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00003088       AllocateAlignedCodePages   0000000000004088 f   PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0001:00003278       WaitForSemaphore           0000000000004278 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000032bc       ReleaseSemaphore           00000000000042bc f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000032fc       WaitForAllAPs              00000000000042fc f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003344       ReleaseAllAPs              0000000000004344 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003398       AllCpusInSmmWithExceptions 0000000000004398 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003440       SmmWaitForApArrival        0000000000004440 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000035dc       WaitForAllAPsNotBusy       00000000000045dc f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003644       IsPresentAp                0000000000004644 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003674       BSPHandler                 0000000000004674 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003a7c       APHandler                  0000000000004a7c f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00003ea4       Gen4GPageTable             0000000000004ea4 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:0000408c       IsTokenInUse               000000000000508c f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004180       AllocateTokenBuffer        0000000000005180 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000042c0       GetFreeToken               00000000000052c0 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000043b8       InternalSmmStartupThisAp   00000000000053b8 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000045a0       InternalSmmStartupAllAPs   00000000000055a0 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000047c4       ProcedureWrapper           00000000000057c4 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000047d8       SmmStartupThisAp           00000000000057d8 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004830       CpuSmmDebugEntry           0000000000005830 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004830       CpuSmmDebugExit            0000000000005830 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004834       SmiRendezvous              0000000000005834 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004a4c       InitializeMpSyncData       0000000000005a4c f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00004bc8       InitializeMpServiceData    0000000000005bc8 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:00005094       RegisterSmmEntry           0000000000006094 f   PiSmmCpuDxeSmm:MpService.obj
+ 0001:000050a4       GetPageTableEntry          00000000000060a4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000051f4       ConvertPageEntryAttribute  00000000000061f4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000052c8       SplitPage                  00000000000062c8 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000054b4       ConvertMemoryPageAttributes 00000000000064b4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000056f0       FlushTlbOnCurrentProcessor 00000000000066f0 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000056f8       FlushTlbForAll             00000000000066f8 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:0000576c       SmmSetMemoryAttributesEx   000000000000676c f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000057a8       SmmClearMemoryAttributes   00000000000067a8 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000057e4       PatchSmmSaveStateMap       00000000000067e4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000059a8       SetMemMapAttributes        00000000000069a8 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:00005e4c       GetGcdMemoryMap            0000000000006e4c f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:00005fa0       GetUefiMemoryMap           0000000000006fa0 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000061a4       SetUefiMemMapAttributes    00000000000071a4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000063a4       IsSmmCommBufferForbiddenAddress 00000000000073a4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000064c8       EdkiiSmmSetMemoryAttributes 00000000000074c8 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000064e0       EdkiiSmmClearMemoryAttributes 00000000000074e0 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:000064f4       EdkiiSmmGetMemoryAttributes 00000000000074f4 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:00006680       GetCpuIndex                0000000000007680 f   PiSmmCpuDxeSmm:SmmProfile.obj
+ 0001:000066e4       IsAddressValid             00000000000076e4 f   PiSmmCpuDxeSmm:SmmProfile.obj
+ 0001:00006748       InitPaging                 0000000000007748 f   PiSmmCpuDxeSmm:SmmProfile.obj
+ 0001:00006d4c       ProgramProcessorRegister   0000000000007d4c f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:0000715c       SetRegister                000000000000815c f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:0000720c       InitializeAp               000000000000820c f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:000073a4       InitializeCpuBeforeRebase  00000000000083a4 f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:000075b8       SmmRestoreCpu              00000000000085b8 f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:000078c4       InitSmmS3ResumeState       00000000000088c4 f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:00007adc       CopyRegisterTable          0000000000008adc f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:00007b74       GetAcpiCpuData             0000000000008b74 f   PiSmmCpuDxeSmm:CpuS3.obj
+ 0001:00007fa4       SmmGetProcessorInfo        0000000000008fa4 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008000       SmmSwitchBsp               0000000000009000 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008064       SmmRemoveProcessor         0000000000009064 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008064       SmmAddProcessor            0000000000009064 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008070       SmmWhoAmI                  0000000000009070 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008100       SmmRegisterExceptionHandler 0000000000009100 f   PiSmmCpuDxeSmm:CpuService.obj
+ 0001:00008168       ReadSaveStateRegisterByIndex 0000000000009168 f   PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0001:00008274       ReadSaveStateRegister      0000000000009274 f   PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0001:0000841c       WriteSaveStateRegister     000000000000941c f   PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0001:000085ac       SmmMpGetNumberOfProcessors 00000000000095ac f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:000085d0       SmmMpDispatchProcedure     00000000000095d0 f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:00008600       SmmMpBroadcastProcedure    0000000000009600 f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:00008628       SmmMpSetStartupProcedure   0000000000009628 f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:00008660       SmmMpCheckForProcedure     0000000000009660 f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:000086c8       SmmMpWaitForProcedure      00000000000096c8 f   PiSmmCpuDxeSmm:SmmMp.obj
+ 0001:00008700       IsSyncTimerTimeout         0000000000009700 f   PiSmmCpuDxeSmm:SyncTimer.obj
+ 0001:00008774       SetStaticPageTable         0000000000009774 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00008b48       SmmInitPageTable           0000000000009b48 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00008f90       GetAndUpdateAccNum         0000000000009f90 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00009014       ReclaimPages               000000000000a014 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00009568       SmiDefaultPFHandler        000000000000a568 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00009794       SmiPFHandler               000000000000a794 f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00009a0c       SetPageTableAttributes     000000000000aa0c f   PiSmmCpuDxeSmm:PageTbl.obj
+ 0001:00009d18       CopyMem                    000000000000ad18 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00009dc0       ZeroMem                    000000000000adc0 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00009e44       CompareGuid                000000000000ae44 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00009f3c       PatchInstructionX86        000000000000af3c f   BaseLib:X86PatchInstruction.obj
+ 0001:0000a0d4       InternalBaseLibIsListValid 000000000000b0d4 f   BaseLib:LinkedList.obj
+ 0001:0000a180       InsertTailList             000000000000b180 f   BaseLib:LinkedList.obj
+ 0001:0000a1dc       RemoveEntryList            000000000000b1dc f   BaseLib:LinkedList.obj
+ 0001:0000a258       InternalBaseLibBitFieldOrUint 000000000000b258 f   BaseLib:BitField.obj
+ 0001:0000a2e4       BitFieldRead32             000000000000b2e4 f   BaseLib:BitField.obj
+ 0001:0000a374       BitFieldWrite32            000000000000b374 f   BaseLib:BitField.obj
+ 0001:0000a408       BitFieldOr32               000000000000b408 f   BaseLib:BitField.obj
+ 0001:0000a49c       BitFieldAnd32              000000000000b49c f   BaseLib:BitField.obj
+ 0001:0000a538       BitFieldAndThenOr32        000000000000b538 f   BaseLib:BitField.obj
+ 0001:0000a5cc       BitFieldRead64             000000000000b5cc f   BaseLib:BitField.obj
+ 0001:0000a664       BitFieldWrite64            000000000000b664 f   BaseLib:BitField.obj
+ 0001:0000a6fc       BitFieldOr64               000000000000b6fc f   BaseLib:BitField.obj
+ 0001:0000a7f8       BitFieldAnd64              000000000000b7f8 f   BaseLib:BitField.obj
+ 0001:0000a8f8       BitFieldAndThenOr64        000000000000b8f8 f   BaseLib:BitField.obj
+ 0001:0000a990       LShiftU64                  000000000000b990 f   BaseLib:LShiftU64.obj
+ 0001:0000a9dc       RShiftU64                  000000000000b9dc f   BaseLib:RShiftU64.obj
+ 0001:0000aa28       HighBitSet64               000000000000ba28 f   BaseLib:HighBitSet64.obj
+ 0001:0000aa8c       AsmDisablePaging64         000000000000ba8c f   BaseLib:X86DisablePaging64.obj
+ 0001:0000ab2c       SwitchStack                000000000000bb2c f   BaseLib:SwitchStack.obj
+ 0001:0000ac00       InternalAssertJumpBuffer   000000000000bc00 f   BaseLib:SetJump.obj
+ 0001:0000ac5c       GetPcdProtocol             000000000000bc5c f   DxePcdLib:DxePcdLib.obj
+ 0001:0000ad0c       IoRead32                   000000000000bd0c f   BaseIoLibIntrinsic:IoLibMsc.obj
+ 0001:0000ad4c       MmioRead32                 000000000000bd4c f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000ad84       MmioWrite32                000000000000bd84 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000adcc       PlatformHookSerialPortInitialize 000000000000bdcc f   PlatformHookLib:PlatformHookLib.obj
+ 0001:0000aea0       DebugPrint                 000000000000bea0 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000aec4       DebugPrintMarker           000000000000bec4 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000af5c       DebugAssert                000000000000bf5c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000afdc       BufferInSmram              000000000000bfdc f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b020       AllocatePages              000000000000c020 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b060       InternalAllocatePool       000000000000c060 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b090       AllocateZeroPool           000000000000c090 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b0b8       InternalAllocateCopyPool   000000000000c0b8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b144       FreePool                   000000000000c144 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b1c0       EfiGetSystemConfigurationTable 000000000000c1c0 f   UefiLib:UefiLib.obj
+ 0001:0000b298       GetHobList                 000000000000c298 f   DxeHobLib:HobLib.obj
+ 0001:0000b33c       GetNextHob                 000000000000c33c f   DxeHobLib:HobLib.obj
+ 0001:0000b3a0       GetFirstGuidHob            000000000000c3a0 f   DxeHobLib:HobLib.obj
+ 0001:0000b3f0       StandardSignatureIsAuthenticAMD 000000000000c3f0 f   BaseUefiCpuLib:BaseUefiCpuLib.obj
+ 0001:0000b43c       AcpiTimerLibConstructor    000000000000c43c f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000b48c       InternalAcpiDelay          000000000000c48c f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000b504       MicroSecondDelay           000000000000c504 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000b53c       PeCoffLoaderGetPdbPointer  000000000000c53c f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:0000b694       PeCoffSearchImageBase      000000000000c694 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:0000b730       LocalApicBaseAddressMsrSupported 000000000000c730 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000b774       GetLocalApicBaseAddress    000000000000c774 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000b7bc       ReadLocalApicReg           000000000000c7bc f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000b830       WriteLocalApicReg          000000000000c830 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000b8b8       SendIpi                    000000000000c8b8 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000b9c4       GetApicMode                000000000000c9c4 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000ba24       GetInitialApicId           000000000000ca24 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000bab0       GetApicId                  000000000000cab0 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000baec       ProgramVirtualWireMode     000000000000caec f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:0000bb54       GetSpinLockProperties      000000000000cb54 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0000bbd0       AcquireSpinLock            000000000000cbd0 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0000bc94       AcquireSpinLockOrFail      000000000000cc94 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0000bd2c       ReleaseSpinLock            000000000000cd2c f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0000bdb0       InterlockedCompareExchange32 000000000000cdb0 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:0000be04       GetVariableMtrrCountWorker 000000000000ce04 f   MtrrLib:MtrrLib.obj
+ 0001:0000be4c       MtrrLibPreMtrrChange       000000000000ce4c f   MtrrLib:MtrrLib.obj
+ 0001:0000bec0       MtrrGetVariableMtrrWorker  000000000000cec0 f   MtrrLib:MtrrLib.obj
+ 0001:0000bf44       MtrrGetAllMtrrs            000000000000cf44 f   MtrrLib:MtrrLib.obj
+ 0001:0000bfbc       MtrrSetAllMtrrs            000000000000cfbc f   MtrrLib:MtrrLib.obj
+ 0001:0000c0d4       IsMtrrSupported            000000000000d0d4 f   MtrrLib:MtrrLib.obj
+ 0001:0000c128       CommonExceptionHandler     000000000000d128 f   SmmCpuExceptionHandlerLib:SmmException.obj
+ 0001:0000c130       InitializeCpuExceptionHandlers 000000000000d130 f   SmmCpuExceptionHandlerLib:SmmException.obj
+ 0001:0000c200       DumpCpuContext             000000000000d200 f   SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0001:0000c4e4       CommonExceptionHandlerWorker 000000000000d4e4 f   SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:0000c734       UpdateIdtTable             000000000000d734 f   SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0001:0000c850       InternalPrintMessage       000000000000d850 f   SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:0000c8b0       DumpModuleImageInfo        000000000000d8b0 f   SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:0000c988       SmmCpuFeaturesInitializeProcessor 000000000000d988 f   SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0001:0000cb64       SetMem                     000000000000db64 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:0000cbb4       AsciiStrLen                000000000000dbb4 f   BaseLib:String.obj
+ 0001:0000cc34       StrnLenS                   000000000000dc34 f   BaseLib:SafeString.obj
+ 0001:0000cc94       GetGuidHobDataFromSbl      000000000000dc94 f   SblParseLib:SblParseLib.obj
+ 0001:0000cd64       SerialPortReadRegister     000000000000dd64 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:0000cd98       SerialPortWriteRegister    000000000000dd98 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:0000cdd4       SerialPortInitialize       000000000000ddd4 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:0000cf98       SerialPortWrite            000000000000df98 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:0000d0e8       AsciiSPrint                000000000000e0e8 f   BasePrintLib:PrintLib.obj
+ 0001:0000d114       BasePrintLibFillBuffer     000000000000e114 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000d148       BasePrintLibValueToString  000000000000e148 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000d1bc       BasePrintLibSPrintMarker   000000000000e1bc f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000e1bc       BasePrintLibSPrint         000000000000f1bc f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000e1e0       PciExpressRead32           000000000000f1e0 f   BasePciExpressLib:PciExpressLib.obj
+ 0003:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000011000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0003:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000011028     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0003:00000040       ??_C@_0P@DDFOKOIJ@PiSmmCpuDxeSmm@ 0000000000011040     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000050       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000011050     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000078       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 0000000000011078     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000090       ??_C@_0IJ@LHGBJBKP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000011090     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000120       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000011120     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000134       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 0000000000011134     PiSmmCpuDxeSmm:AutoGen.obj
+ 0003:00000138       ??_C@_0BE@HGBGINBI@gcSmiIdtr?4Base?5?$CB?$DN?50@ 0000000000011138     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000150       ??_C@_0FK@EDNKHBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000011150     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000001b0       ??_C@_0DD@DGHHBJOP@It?5is?5invoked?5from?5the?5instruct@ 00000000000111b0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000001e8       ??_C@_0BB@DMACLPMP@?5in?5module?5?$CI?$CFa?$CJ?6@ 00000000000111e8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000200       ??_C@_0CC@MJGPFMPO@mNumberOfCpus?5?$DM?$DN?5mMaxNumberOfCp@ 0000000000011200     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000228       ??_C@_0CB@DECELCKA@sizeof?5?$CIBakBuf?$CJ?5?$DO?$DN?5gcSmmInitSiz@ 0000000000011228     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000250       ??_C@_0BG@HKEFMGAH@BspIndex?5?$CB?$DN?5?$CIUINTN?$CJ?91@ 0000000000011250     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000270       ??_C@_0ED@OIAKNJJL@mNumberOfCpus?5?$DM?$DN?5_gPcd_BinaryPa@ 0000000000011270     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000002b8       ??_C@_0CF@PCHFJDPH@PcdCpuSmmCodeAccessCheckEnable?5@ 00000000000112b8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000002e0       ??_C@_0BJ@PJPBBPCC@mAddressEncMask?5?$DN?50x?$CFlx?6@ 00000000000112e0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000300       ??_C@_0CM@OLKDHDFE@PcdControlFlowEnforcementProper@ 0000000000011300     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000330       ??_C@_0CK@BPMPFCEL@SMRAM?5TileSize?5?$DN?50x?$CF08x?5?$CI0x?$CF08x@ 0000000000011330     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000360       ??_C@_0DO@EOPPIPFA@TileSize?5?$DM?$DN?5?$CI0xfc00?5?$CL?5sizeof?5?$CIS@ 0000000000011360     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000003a0       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000113a0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000003b8       ??_C@_0CJ@LNKJNEJC@SMRAM?5SaveState?5Buffer?5?$CI0x?$CF08x?0@ 00000000000113b8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000003e8       ??_C@_0CO@MPAKLCGM@gSmmCpuPrivate?9?$DOProcessorInfo?5?$CB@ 00000000000113e8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000418       ??_C@_0CK@OMFDAMEE@gSmmCpuPrivate?9?$DOOperation?5?$CB?$DN?5?$CI?$CI@ 0000000000011418     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000448       ??_C@_0DB@EDEGGJFM@gSmmCpuPrivate?9?$DOCpuSaveStateSiz@ 0000000000011448     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000480       ??_C@_0CN@HCHNJEON@gSmmCpuPrivate?9?$DOCpuSaveState?5?$CB?$DN@ 0000000000011480     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000004b0       ??_C@_0CH@KMMNCECI@mCpuHotPlugData?4ApicId?5?$CB?$DN?5?$CI?$CIvoi@ 00000000000114b0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000004d8       ??_C@_0CH@LPHPNCEG@mCpuHotPlugData?4SmBase?5?$CB?$DN?5?$CI?$CIvoi@ 00000000000114d8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000500       ??_C@_0EB@MJDNADKJ@CPU?$FL?$CF03x?$FN?5?5APIC?5ID?$DN?$CF04x?5?5SMBASE@ 0000000000011500     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000548       ??_C@_0BH@LMGJJEGH@Stacks?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011548     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000560       ??_C@_0CB@GNGHDAOH@Stacks?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx@ 0000000000011560     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000588       ??_C@_0CB@DHLBKCNO@mSmmStackSize?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx@ 0000000000011588     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000005b0       ??_C@_0CB@IDAMGONG@PcdCpuSmmStackGuard?5?5?5?5?5?5?9?50x?$CFx@ 00000000000115b0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000005d8       ??_C@_0BJ@FANJGIOM@mRebased?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000115d8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000005f8       ??_C@_0BF@IDKOBEJP@mXdSupported?5?9?50x?$CFx?6@ 00000000000115f8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000610       ??_C@_0DB@BCHGLKKN@SMM?5CPU?5Module?5exit?5from?5SMRAM?5@ 0000000000011610     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000648       ??_C@_0DJ@CIDFFKAG@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 0000000000011648     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000688       ??_C@_0CD@IMGOAENJ@mSmmCpuSmramRanges?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000011688     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000006b0       ??_C@_0CC@OBHACHKG@CurrentSmramRange?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000116b0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:000006d8       ??_C@_0CC@BBEEKBOA@SMRR?5Base?3?50x?$CFx?0?5SMRR?5Size?3?50x?$CF@ 00000000000116d8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000700       ??_C@_0CD@GECBLADO@?$CIAlignment?5?$CG?5?$CIAlignment?5?9?51?$CJ?$CJ?5?$DN@ 0000000000011700     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000728       ??_C@_0BC@BDMGDFME@RealPages?5?$DO?5Pages@ 0000000000011728     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0003:00000740       ??_C@_0CK@DHILLKBN@?$CKmSmmMpSyncData?9?$DOCounter?5?$DM?$DN?5mNu@ 0000000000011740     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000770       ??_C@_0FF@PCIICNIO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000011770     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000007c8       ??_C@_0CF@DHLPIG@CpuIndex?5?$DN?$DN?5mSmmMpSyncData?9?$DOBsp@ 00000000000117c8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000007f0       ??_C@_0BF@DMEDGOEF@CpuIndex?5?$CB?$DN?5BspIndex@ 00000000000117f0     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000810       ??_C@_0EA@IPEBHJPJ@?$CBAcquireSpinLockOrFail?5?$CImSmmMpS@ 0000000000011810     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000850       ??_C@_0BK@CBHDHOCE@PageTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011850     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000870       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000011870     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000890       ??_C@_0EE@MELCDIOO@CpuSmm?3?5SpinLock?5Size?5?$DN?50x?$CFx?0?5P@ 0000000000011890     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000008d8       ??_C@_0BP@PNDLIFLE@SpinLockBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000118d8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000008f8       ??_C@_0BL@JBNFHDED@ProcTokens?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000118f8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000920       ??_C@_0EG@OBDNNKOH@CpuIndex?$CI?$CFd?$CJ?5?$DO?$DN?5gSmmCpuPrivate?9@ 0000000000011920     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000970       ??_C@_0EL@NAODBPIL@CpuIndex?$CI?$CFd?$CJ?5?$DN?$DN?5gSmmCpuPrivate?9@ 0000000000011970     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000009c0       ??_C@_0CG@CKGLHDHD@?$CBmSmmMpSyncData?9?$DOCpuData?$FL?$CFd?$FN?4Pr@ 00000000000119c0     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000009e8       ??_C@_0CP@DMEAAJBP@gSmmCpuPrivate?9?$DOOperation?$FL?$CFd?$FN?5?$DN@ 00000000000119e8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000a18       ??_C@_0BM@CJFEKEH@CpuIndex?5?$DM?5mMaxNumberOfCpus@ 0000000000011a18     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000a38       ??_C@_0CM@OHEBGIFO@?$CKmSmmMpSyncData?9?$DOCpuData?$FLCpuInd@ 0000000000011a38     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000a68       ??_C@_0CO@HEIPDHDE@gSmmCpuPrivate?9?$DOApWrapperFunc?5?$CB@ 0000000000011a68     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000a98       ??_C@_0BO@PLMBGODM@One?5Semaphore?5Size?5?5?5?5?$DN?50x?$CFx?6@ 0000000000011a98     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000ab8       ??_C@_0BO@OPCGPEKC@Total?5Semaphores?5Size?5?$DN?50x?$CFx?6@ 0000000000011ab8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000ad8       ??_C@_0BP@DOIPLDOH@SemaphoreBlock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011ad8     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000b00       ??_C@_0IG@PAFDAKAC@mSmmMpSyncData?9?$DOCounter?5?$CB?$DN?5?$CI?$CIvo@ 0000000000011b00     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000b88       ??_C@_0BP@PJPJJCJA@mSmmMpSyncData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011b88     PiSmmCpuDxeSmm:MpService.obj
+ 0003:00000ba8       ??_C@_0CA@KDGOIAFI@ConvertPageEntryAttribute?50x?$CFlx@ 0000000000011ba8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000bc8       ??_C@_08GNMBNMLJ@?9?$DO0x?$CFlx?6@ 0000000000011bc8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000bd8       ??_C@_0DD@HJBMMFDD@PageAttribute?5?$DN?$DN?5Page2M?5?$HM?$HM?5Page@ 0000000000011bd8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000c10       ??_C@_0GC@MHAGJMMG@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000011c10     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000c78       ??_C@_0BJ@GFKAPGLM@SplitAttribute?5?$DN?$DN?5Page4K@ 0000000000011c78     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000c98       ??_C@_0O@ODLPFGFJ@Split?5?9?50x?$CFx?6@ 0000000000011c98     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000ca8       ??_C@_0DF@DLLPJNCF@SplitAttribute?5?$DN?$DN?5Page2M?5?$HM?$HM?5Spl@ 0000000000011ca8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000ce0       ??_C@_0BA@GNLJALHO@Attributes?5?$CB?$DN?50@ 0000000000011ce0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000cf0       ??_C@_0IN@MNCNIKKN@?$CIAttributes?5?$CG?5?$HO?$CI0x0000000000002@ 0000000000011cf0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000d80       ??_C@_0CG@KGPKJGDO@?$CIBaseAddress?5?$CG?5?$CI0x00001000?5?9?51?$CJ@ 0000000000011d80     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000da8       ??_C@_0CB@MBAHOLOC@?$CILength?5?$CG?5?$CI0x00001000?5?9?51?$CJ?$CJ?5?$DN?$DN?5@ 0000000000011da8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000dd0       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011dd0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000df0       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011df0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e08       ??_C@_0BH@EEONPIJ@PatchSmmSaveStateMap?3?6@ 0000000000011e08     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e20       ??_C@_0BH@MJLEDINI@PatchGdtIdtMap?5?9?5GDT?3?6@ 0000000000011e20     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e38       ??_C@_0BH@PDLOFJKI@PatchGdtIdtMap?5?9?5IDT?3?6@ 0000000000011e38     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e50       ??_C@_0BO@HHHNKADI@MemoryAttributesTable?5?9?5NULL?6@ 0000000000011e50     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e70       ??_C@_0BI@HNOKICAB@MemoryAttributesTable?3?6@ 0000000000011e70     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000e88       ??_C@_0CG@ENIMOKHH@?5?5Version?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50@ 0000000000011e88     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000eb0       ??_C@_0CG@FLHBNMON@?5?5NumberOfEntries?5?5?5?5?5?5?5?5?5?5?5?9?50@ 0000000000011eb0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000ed8       ??_C@_0CG@HPAMFIDF@?5?5DescriptorSize?5?5?5?5?5?5?5?5?5?5?5?5?9?50@ 0000000000011ed8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f00       ??_C@_0O@BJLMFKPN@Entry?5?$CI0x?$CFx?$CJ?6@ 0000000000011f00     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f10       ??_C@_0BM@OFOMNHPM@?5?5Type?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx?6@ 0000000000011f10     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f30       ??_C@_0CA@LKNOBKLP@?5?5PhysicalStart?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000011f30     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f50       ??_C@_0CA@OBLLFPPH@?5?5VirtualStart?5?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000011f50     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f70       ??_C@_0CA@HKCNAHEO@?5?5NumberOfPages?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000011f70     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000f90       ??_C@_0CA@EEMGMJFM@?5?5Attribute?5?5?5?5?5?5?5?5?5?9?50x?$CF016lx?6@ 0000000000011f90     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000fb0       ??_C@_0CK@BJCJAKHK@SetAttribute?3?5Memory?5Entry?5?9?50x@ 0000000000011fb0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00000fe0       ??_C@_0BN@JHFPCMAM@mGcdMemSpace?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011fe0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001000       ??_C@_0CL@LAIBKGKK@mUefiMemoryAttributesTable?5?$CB?$DN?5?$CI@ 0000000000012000     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001030       ??_C@_0BC@LFBOLIDK@GetUefiMemoryMap?6@ 0000000000012030     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001048       ??_C@_0BK@BEMEMBP@MemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012048     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001068       ??_C@_0BP@FALEJBPD@mUefiMemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012068     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001088       ??_C@_0BJ@KNPCOMKG@SetUefiMemMapAttributes?6@ 0000000000012088     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:000010a8       ??_C@_0CJ@KIDNNPPK@UefiMemory?5protection?3?50x?$CFlx?5?9?5@ 00000000000120a8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:000010d8       ??_C@_0CI@ECHBJIHO@GcdMemory?5protection?3?50x?$CFlx?5?9?50@ 00000000000120d8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001100       ??_C@_0DC@EOEMNFDN@UefiMemoryAttribute?5protection?3@ 0000000000012100     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0003:00001140       ??_C@_0FG@GBNCKLCB@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012140     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:00001198       ??_C@_0BH@IJDMJELJ@SizeOfMemorySpace?5?$DO?530@ 0000000000012198     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:000011b0       ??_C@_0CP@CECLJDDG@Address?5?$DN?$DN?5?$CI?$CKPd?5?$CG?5?$CI?$CI1ull?5?$DM?$DM?552?$CJ@ 00000000000121b0     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:000011e0       ??_C@_0BD@NDFKDNHO@Pt?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000121e0     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:000011f8       ??_C@_0BM@EGDFNIGM@Patch?5page?5table?5start?5?4?4?4?6@ 00000000000121f8     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:00001218       ??_C@_0BI@GNOKOHKO@Patch?5page?5table?5done?$CB?6@ 0000000000012218     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:00001230       ??_C@_0LC@FHNLABOH@?$CIApLocation?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG@ 0000000000012230     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000012f0       ??_C@_0FB@JEHNNPKP@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000122f0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001348       ??_C@_0BO@DCJBDOGJ@RegisterTable?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012348     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001368       ??_C@_0CL@CNDHLAFD@mNumberOfCpus?5?$DN?$DN?5mAcpiCpuData?4N@ 0000000000012368     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001398       ??_C@_0BB@OIIEEAKJ@SmmRestoreCpu?$CI?$CJ?6@ 0000000000012398     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000013b0       ??_C@_0CD@GJONOKGP@No?5context?5to?5return?5to?5PEI?5Pha@ 00000000000123b0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000013d8       ??_C@_0CB@LPJLNKKL@SmmS3ResumeState?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 00000000000123d8     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001400       ??_C@_0CG@FOGBMEEL@SMM?5S3?5Return?5CS?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000012400     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001428       ??_C@_0CG@IHIAELEM@SMM?5S3?5Return?5Entry?5Point?5?5?5?5?5?5@ 0000000000012428     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001450       ??_C@_0CG@LHPLLLCF@SMM?5S3?5Return?5Context1?5?5?5?5?5?5?5?5?5@ 0000000000012450     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001478       ??_C@_0CG@OEGBOAKB@SMM?5S3?5Return?5Context2?5?5?5?5?5?5?5?5?5@ 0000000000012478     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000014a0       ??_C@_0CG@MICBGHND@SMM?5S3?5Return?5Stack?5Pointer?5?5?5?5@ 00000000000124a0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000014c8       ??_C@_0DI@LOHDKIDM@Call?5SwitchStack?$CI?$CJ?5to?5return?5to@ 00000000000124c8     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001500       ??_C@_0DP@NKLIIEIH@Call?5AsmDisablePaging64?$CI?$CJ?5to?5re@ 0000000000012500     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001540       ??_C@_0BF@ENOHFBLN@InitSmmS3ResumeState@ 0000000000012540     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001560       ??_C@_0EN@MJNFPGFM@ERROR?3?$CFa?$CI?$CJ?3?5HOB?$CIgEfiAcpiVariabl@ 0000000000012560     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000015b0       ??_C@_0BN@MILFCPBP@SMM?5S3?5SMRAM?5Structure?5?$DN?5?$CFx?6@ 00000000000125b0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000015d0       ??_C@_0BH@MMINCFBF@SMM?5S3?5Structure?5?$DN?5?$CFx?6@ 00000000000125d0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000015e8       ??_C@_0CD@POFKGJEP@RegisterTableEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 00000000000125e8     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001610       ??_C@_0BM@GLNEIDBI@mAcpiCpuData?4MtrrTable?5?$CB?$DN?50@ 0000000000012610     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001630       ??_C@_0BO@NINJHJJB@mAcpiCpuData?4GdtrProfile?5?$CB?$DN?50@ 0000000000012630     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001650       ??_C@_0BO@JJPNIBAH@mAcpiCpuData?4IdtrProfile?5?$CB?$DN?50@ 0000000000012650     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001670       ??_C@_0CK@HOCLIFBJ@mAcpiCpuData?4PreSmmInitRegister@ 0000000000012670     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000016a0       ??_C@_0CA@EELCEPE@mAcpiCpuData?4RegisterTable?5?$CB?$DN?50@ 00000000000126a0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000016c0       ??_C@_0BJ@HPGKOKII@GdtForAp?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000126c0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:000016e0       ??_C@_0CJ@CAKFMECI@CpuStatus?9?$DOValidCoreCountPerPac@ 00000000000126e0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001710       ??_C@_0BN@CHACOHIO@mAcpiCpuData?4ApLocation?5?$CB?$DN?50@ 0000000000012710     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001730       ??_C@_0CN@JNFEMAOI@mCpuFlags?4CoreSemaphoreCount?5?$CB?$DN@ 0000000000012730     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001760       ??_C@_0DA@DFIBDCON@mCpuFlags?4PackageSemaphoreCount@ 0000000000012760     PiSmmCpuDxeSmm:CpuS3.obj
+ 0003:00001790       ??_C@_0FG@HCPBHPDJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012790     PiSmmCpuDxeSmm:CpuService.obj
+ 0003:000017e8       ??_C@_0BN@EDFDHEHL@CpuSaveState?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000127e8     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:00001810       ??_C@_0FK@EGCEFLPG@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012810     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:00001870       mSmmCpuIoWidth             0000000000012870     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:000018b0       mSmmCpuIoType              00000000000128b0     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:000018f0       mSmmCpuWidthOffset         00000000000128f0     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:00001aa0       mSmmCpuRegisterRanges      0000000000012aa0     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0003:00001ae0       ??_C@_0CN@DHODDPEL@PhysicalAddressBits?5?$DN?5?$CFd?0?55LPag@ 0000000000012ae0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001b10       ??_C@_0CG@OCBBJOBD@ExtFeatureEcx?4Bits?4FiveLevelPag@ 0000000000012b10     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001b40       ??_C@_0FH@JDFNAOJE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012b40     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001b98       ??_C@_0BL@CCEGDHAI@mPhysicalAddressBits?5?$DM?$DN?552@ 0000000000012b98     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001bb8       ??_C@_0BK@DHFCNFHI@mPhysicalAddressBits?5?$DO?530@ 0000000000012bb8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001bd8       ??_C@_0CD@IHFLDBML@PageMapLevel4Entry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000012bd8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001c00       ??_C@_0CK@ODBJELOD@PageDirectoryPointerEntry?5?$CB?$DN?5?$CI?$CI@ 0000000000012c00     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001c30       ??_C@_0CD@KMCGCGEO@PageDirectoryEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000012c30     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001c58       ??_C@_0CG@FIOEOAIB@5LevelPaging?5Needed?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000012c58     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001c80       ??_C@_0CG@NFJICFLF@1GPageTable?5Support?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000012c80     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001ca8       ??_C@_0CG@OANLCMOP@PcdCpuSmmRestrictedMemoryAccess@ 0000000000012ca8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001cd0       ??_C@_0CG@HGFDOCAO@PhysicalAddressBits?5?5?5?5?5?5?5?5?5?5?5?5@ 0000000000012cd0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001cf8       ??_C@_0BK@MAFHNIIH@Pml4Entry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012cf8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001d18       ??_C@_0BK@FLCEDCFD@Pml5Entry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012d18     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001d38       ??_C@_0BJ@JAAGBKPN@FreePage?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012d38     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001d58       ??_C@_0BF@HIMPCJII@MinAcc?5?$CB?$DN?5?$CIUINT64?$CJ?91@ 0000000000012d58     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001d70       ??_C@_0DJ@NJNOIOPH@PageTable?5?$DN?5?$CFlx?0?5PTIndex?5?$DN?5?$CFx?0?5@ 0000000000012d70     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001db0       ??_C@_0DA@FBEIFLDL@New?5page?5table?5overlapped?5with?5@ 0000000000012db0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001de0       ??_C@_0BE@DILGFENO@InterruptType?5?$DN?$DN?514@ 0000000000012de0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001df8       ??_C@_0CM@PCOHIGEG@Do?5not?5support?5address?50x?$CFlx?5by@ 0000000000012df8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001e28       ??_C@_0BF@GBGHKKLO@SMM?5stack?5overflow?$CB?6@ 0000000000012e28     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001e40       ??_C@_0CE@HJDMJNJD@SMM?5exception?5at?5execution?5?$CI0x?$CF@ 0000000000012e40     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001e68       ??_C@_0CB@KMNGOMFI@SMM?5exception?5at?5access?5?$CI0x?$CFlx?$CJ@ 0000000000012e68     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001e90       ??_C@_0EC@MALNFMJO@Code?5executed?5on?5IP?$CI0x?$CFlx?$CJ?5out?5@ 0000000000012e90     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001ed8       ??_C@_0DF@HHDGCNFP@Access?5SMM?5communication?5forbid@ 0000000000012ed8     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001f10       ??_C@_0BI@LANFFGPE@SetPageTableAttributes?6@ 0000000000012f10     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001f28       ??_C@_09OCDMNMOD@Start?4?4?4?6@ 0000000000012f28     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00001f38       ??_C@_0BN@OHIDJCGI@GdtTssTables?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012f38     PiSmmCpuDxeSmm:SmmFuncsArch.obj
+ 0003:00001f60       ??_C@_0FM@JKFGJKHM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012f60     PiSmmCpuDxeSmm:SmmFuncsArch.obj
+ 0003:00001fc0       ??_C@_0BH@ECAFPLIL@Index?5?$CB?$DN?5GdtEntryCount@ 0000000000012fc0     PiSmmCpuDxeSmm:SmmFuncsArch.obj
+ 0003:00001fd8       ??_C@_0BI@OGFFDKKH@PTEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012fd8     PiSmmCpuDxeSmm:SmmProfileArch.obj
+ 0003:00001ff0       ??_C@_0FO@FOODEKIB@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000012ff0     PiSmmCpuDxeSmm:SmmProfileArch.obj
+ 0003:00002050       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000013050     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0003:000020a0       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000130a0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0003:00002108       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000013108     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0003:00002150       ??_C@_0GD@BACINENJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013150     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0003:000021b8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000131b8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0003:000021f0       ??_C@_0CC@LPMFANOI@?$CIUINTN?$CJInstructionEnd?5?$DO?5ValueSi@ 00000000000131f0     BaseLib:X86PatchInstruction.obj
+ 0003:00002220       ??_C@_0FM@BIJEELIL@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013220     BaseLib:X86PatchInstruction.obj
+ 0003:00002280       ??_C@_0BM@KADOBIDL@PatchValue?5?$DM?$DN?5?$CI?$CIUINT8?$CJ0xFF?$CJ@ 0000000000013280     BaseLib:X86PatchInstruction.obj
+ 0003:000022a0       ??_C@_0BP@FBKHBBFK@PatchValue?5?$DM?$DN?5?$CI?$CIUINT16?$CJ0xFFFF?$CJ@ 00000000000132a0     BaseLib:X86PatchInstruction.obj
+ 0003:000022c0       ??_C@_0CD@FFGLCKFJ@PatchValue?5?$DM?$DN?5?$CI?$CIUINT32?$CJ0xFFFFFF@ 00000000000132c0     BaseLib:X86PatchInstruction.obj
+ 0003:000022e8       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000132e8     BaseLib:LinkedList.obj
+ 0003:00002300       ??_C@_0FD@FFBHKELN@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013300     BaseLib:LinkedList.obj
+ 0003:00002358       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000013358     BaseLib:LinkedList.obj
+ 0003:00002380       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013380     BaseLib:LinkedList.obj
+ 0003:000023a0       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000133a0     BaseLib:LinkedList.obj
+ 0003:000023c0       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 00000000000133c0     BaseLib:LinkedList.obj
+ 0003:000023e8       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 00000000000133e8     BaseLib:LinkedList.obj
+ 0003:00002410       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000013410     BaseLib:LinkedList.obj
+ 0003:00002430       ??_C@_0EJ@KBPJPBK@?$CIOrData?5?$DO?$DO?5?$CIEndBit?5?9?5StartBit?$CJ?$CJ@ 0000000000013430     BaseLib:BitField.obj
+ 0003:00002480       ??_C@_0FB@LOPGAJOG@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013480     BaseLib:BitField.obj
+ 0003:000024d8       ??_C@_0BD@JDBPFJOM@StartBit?5?$DM?$DN?5EndBit@ 00000000000134d8     BaseLib:BitField.obj
+ 0003:000024f0       ??_C@_0M@NJLBHEFK@EndBit?5?$DM?532@ 00000000000134f0     BaseLib:BitField.obj
+ 0003:00002500       ??_C@_0M@IJCABBDH@EndBit?5?$DM?564@ 0000000000013500     BaseLib:BitField.obj
+ 0003:00002510       ??_C@_0FF@KKPPMOEN@RShiftU64?5?$CIOrData?0?5EndBit?5?9?5Sta@ 0000000000013510     BaseLib:BitField.obj
+ 0003:00002570       ??_C@_0FH@KMHOGEF@RShiftU64?5?$CIAndData?0?5EndBit?5?9?5St@ 0000000000013570     BaseLib:BitField.obj
+ 0003:000025c8       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 00000000000135c8     BaseLib:LShiftU64.obj
+ 0003:000025e0       ??_C@_0FC@HKOAIDMC@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000135e0     BaseLib:LShiftU64.obj
+ 0003:00002640       ??_C@_0FC@JPMJLNCA@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013640     BaseLib:RShiftU64.obj
+ 0003:00002698       ??_C@_0BA@BDDFCMFO@EntryPoint?5?$CB?$DN?50@ 0000000000013698     BaseLib:X86DisablePaging64.obj
+ 0003:000026b0       ??_C@_0FL@IAKDKMG@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000136b0     BaseLib:X86DisablePaging64.obj
+ 0003:00002710       ??_C@_0O@HLBMMCPF@NewStack?5?$CB?$DN?50@ 0000000000013710     BaseLib:X86DisablePaging64.obj
+ 0003:00002720       ??_C@_0BL@OOFMKHJH@EntryPoint?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013720     BaseLib:SwitchStack.obj
+ 0003:00002740       ??_C@_0FE@MMOKBIMH@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013740     BaseLib:SwitchStack.obj
+ 0003:00002798       ??_C@_0BJ@DIHHCIKP@NewStack?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013798     BaseLib:SwitchStack.obj
+ 0003:000027b8       ??_C@_0CC@MPFKDGJI@?$CI?$CIUINTN?$CJNewStack?5?$CG?5?$CI16?5?9?51?$CJ?$CJ?5?$DN?$DN@ 00000000000137b8     BaseLib:SwitchStack.obj
+ 0003:000027e0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 00000000000137e0     BaseLib:DivU64x32.obj
+ 0003:000027f0       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000137f0     BaseLib:Unaligned.obj
+ 0003:00002848       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013848     BaseLib:SetJump.obj
+ 0003:00002870       ??_C@_0FA@KGCLONHO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013870     BaseLib:SetJump.obj
+ 0003:000028c0       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN@ 00000000000138c0     BaseLib:SetJump.obj
+ 0003:000028f0       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000138f0     DxePcdLib:DxePcdLib.obj
+ 0003:00002948       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013948     DxePcdLib:DxePcdLib.obj
+ 0003:00002960       ??_C@_0FM@GDLDJIBH@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013960     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0003:000029c0       ??_C@_0BA@HCECIDGN@?$CIPort?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000139c0     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0003:000029d0       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000139d0     BaseIoLibIntrinsic:IoLib.obj
+ 0003:00002a30       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 0000000000013a30     BaseIoLibIntrinsic:IoLib.obj
+ 0003:00002a48       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013a48     BaseDebugLibSerialPort:DebugLib.obj
+ 0003:00002a60       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013a60     BaseDebugLibSerialPort:DebugLib.obj
+ 0003:00002ac0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000013ac0     BaseDebugLibSerialPort:DebugLib.obj
+ 0003:00002ad8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013ad8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00002b00       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013b00     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00002b78       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013b78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00002b90       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013b90     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00002bb0       ??_C@_0GI@DELPJFCP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013bb0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0003:00002c18       ??_C@_0CB@GMLECJKN@InternalSmmBase2?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000013c18     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0003:00002c40       ??_C@_0BG@FOOPBBEG@gSmst?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013c40     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0003:00002c60       ??_C@_0GL@CAKFDJMM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013c60     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00002cd0       ??_C@_0BN@PLBIHFL@mSmramRanges?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013cd0     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00002cf0       ??_C@_0DP@CGKEPFGH@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000013cf0     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00002d30       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013d30     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00002d50       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013d50     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00002dd0       ??_C@_0FA@CCBFNMAA@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013dd0     UefiLib:UefiLib.obj
+ 0003:00002e20       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013e20     DxeHobLib:HobLib.obj
+ 0003:00002e78       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013e78     DxeHobLib:HobLib.obj
+ 0003:00002e98       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013e98     DxeHobLib:HobLib.obj
+ 0003:00002eb8       ??_C@_0BI@EDOKPJOP@GuidHob?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013eb8     AcpiTimerLib:AcpiTimerLib.obj
+ 0003:00002ed0       ??_C@_0GC@KBKBDNKG@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013ed0     AcpiTimerLib:AcpiTimerLib.obj
+ 0003:00002f38       ??_C@_0BJ@OAAKNPEN@Pe32Data?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000013f38     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0003:00002f60       ??_C@_0GP@OFMHNBBO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013f60     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0003:00002fd0       ??_C@_0GK@FPEOAFOF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000013fd0     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:00003040       ??_C@_0BI@IFINGPEJ@?$CIMmioOffset?5?$CG?50xf?$CJ?5?$DN?$DN?50@ 0000000000014040     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:00003058       ??_C@_0P@PMDMEMJF@ApicId?5?$DM?$DN?50xff@ 0000000000014058     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:00003068       ??_C@_0BJ@MBLFAKBO@ApicBaseMsr?4Bits?4EN?5?$CB?$DN?50@ 0000000000014068     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:00003088       ??_C@_0BK@EPCKDHEP@StartupRoutine?5?$DM?50x100000@ 0000000000014088     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:000030a8       ??_C@_0BO@HDICMIOF@?$CIStartupRoutine?5?$CG?50xfff?$CJ?5?$DN?$DN?50@ 00000000000140a8     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0003:000030c8       ??_C@_0BJ@FKJAAJLB@SpinLock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000140c8     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0003:000030f0       ??_C@_0GK@HHOMLEKK@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000140f0     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0003:00003160       ??_C@_0BA@DCBACGFG@Total?5?$DM?5Timeout@ 0000000000014160     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0003:00003170       ??_C@_0DF@GPAOIIHK@LockValue?5?$DN?$DN?5?$CI?$CIUINTN?$CJ?52?$CJ?5?$HM?$HM?5Loc@ 0000000000014170     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0003:000031a8       ??_C@_0BG@GJANEBOB@Value?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000141a8     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0003:000031c0       ??_C@_0HK@FMGOCFJG@MtrrCap?4Bits?4VCNT?5?$DM?$DN?5?$CIsizeof?5?$CI?$CI@ 00000000000141c0     MtrrLib:MtrrLib.obj
+ 0003:00003240       ??_C@_0FE@FGBDDOIH@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014240     MtrrLib:MtrrLib.obj
+ 0003:000032a0       ??_C@_0FO@JGPNAKHH@VariableMtrrCount?5?$DM?$DN?5?$CIsizeof?5?$CIV@ 00000000000142a0     MtrrLib:MtrrLib.obj
+ 0003:00003300       ??_C@_01EEMJAFIK@?6@       0000000000014300     MtrrLib:MtrrLib.obj
+ 0003:00003310       mMtrrLibFixedMtrrTable     0000000000014310     MtrrLib:MtrrLib.obj
+ 0003:00003398       mDoFarReturnFlag           0000000000014398     SmmCpuExceptionHandlerLib:SmmException.obj
+ 0003:000033a0       ??_C@_0DN@OILJOCCP@?$CB?$CB?$CB?$CB?5X64?5Exception?5Type?5?9?5?$CF02x?$CI@ 00000000000143a0     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000033e0       ??_C@_0BH@GDPLHCJG@ExceptionData?5?9?5?$CF016lx@ 00000000000143e0     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000033f8       ??_C@_0CO@BBEHDOI@?5?5I?3?$CFx?5R?3?$CFx?5U?3?$CFx?5W?3?$CFx?5P?3?$CFx?5PK?3?$CF@ 00000000000143f8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003428       ??_C@_0CO@OABPHBNC@RIP?5?5?9?5?$CF016lx?0?5CS?5?5?9?5?$CF016lx?0?5RF@ 0000000000014428     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003458       ??_C@_0CL@EBCIBAPN@RAX?5?5?9?5?$CF016lx?0?5RCX?5?9?5?$CF016lx?0?5RD@ 0000000000014458     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003488       ??_C@_0CL@NEKHLEEE@RBX?5?5?9?5?$CF016lx?0?5RSP?5?9?5?$CF016lx?0?5RB@ 0000000000014488     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000034b8       ??_C@_0BN@KJEBEAEC@RSI?5?5?9?5?$CF016lx?0?5RDI?5?9?5?$CF016lx?6@ 00000000000144b8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000034d8       ??_C@_0CL@IAICEOHO@R8?5?5?5?9?5?$CF016lx?0?5R9?5?5?9?5?$CF016lx?0?5R1@ 00000000000144d8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003508       ??_C@_0CL@JAMCECPD@R11?5?5?9?5?$CF016lx?0?5R12?5?9?5?$CF016lx?0?5R1@ 0000000000014508     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003538       ??_C@_0BN@PKAAKNBO@R14?5?5?9?5?$CF016lx?0?5R15?5?9?5?$CF016lx?6@ 0000000000014538     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003558       ??_C@_0CL@DLLIMCBJ@DS?5?5?5?9?5?$CF016lx?0?5ES?5?5?9?5?$CF016lx?0?5FS@ 0000000000014558     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003588       ??_C@_0BN@EICEFBKL@GS?5?5?5?9?5?$CF016lx?0?5SS?5?5?9?5?$CF016lx?6@ 0000000000014588     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000035a8       ??_C@_0CL@DIOBDFLD@CR0?5?5?9?5?$CF016lx?0?5CR2?5?9?5?$CF016lx?0?5CR@ 00000000000145a8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000035d8       ??_C@_0BN@JAPKHAJM@CR4?5?5?9?5?$CF016lx?0?5CR8?5?9?5?$CF016lx?6@ 00000000000145d8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000035f8       ??_C@_0CL@DONNALBH@DR0?5?5?9?5?$CF016lx?0?5DR1?5?9?5?$CF016lx?0?5DR@ 00000000000145f8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003628       ??_C@_0CL@JNPELAID@DR3?5?5?9?5?$CF016lx?0?5DR6?5?9?5?$CF016lx?0?5DR@ 0000000000014628     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003658       ??_C@_0CF@MGIBIPBB@GDTR?5?9?5?$CF016lx?5?$CF016lx?0?5LDTR?5?9?5?$CF0@ 0000000000014658     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:00003680       ??_C@_0CF@DMFPLAJK@IDTR?5?9?5?$CF016lx?5?$CF016lx?0?5?5?5TR?5?9?5?$CF0@ 0000000000014680     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000036a8       ??_C@_0BH@PFOFIBPH@FXSAVE_STATE?5?9?5?$CF016lx?6@ 00000000000146a8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0003:000036c0       ??_C@_0CK@KOLJIBMC@TemplateMap?4ExceptionStubHeader@ 00000000000146c0     SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0003:000036f0       ??_C@_0HB@IPLBNDFP@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000146f0     SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0003:00003764       mErrorCodeFlag             0000000000014764     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003768       ??_C@_0BD@PANICNEP@?$CDDE?5?9?5Divide?5Error@ 0000000000014768     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003780       ??_C@_0M@BENGJJME@?$CDDB?5?9?5Debug@ 0000000000014780     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003790       ??_C@_0O@PELAMGDH@NMI?5Interrupt@ 0000000000014790     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000037a0       ??_C@_0BB@ONIBFOGK@?$CDBP?5?9?5Breakpoint@ 00000000000147a0     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000037b8       ??_C@_0P@BBLCINEF@?$CDOF?5?9?5Overflow@ 00000000000147b8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000037c8       ??_C@_0BL@FGFNPPKN@?$CDBR?5?9?5BOUND?5Range?5Exceeded@ 00000000000147c8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000037e8       ??_C@_0BF@PAJDEHLF@?$CDUD?5?9?5Invalid?5Opcode@ 00000000000147e8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003800       ??_C@_0BL@HAMCGOMD@?$CDNM?5?9?5Device?5Not?5Available@ 0000000000014800     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003820       ??_C@_0BD@POLKFCFP@?$CDDF?5?9?5Double?5Fault@ 0000000000014820     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003838       ??_C@_0BM@LFJODCLN@Coprocessor?5Segment?5Overrun@ 0000000000014838     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003858       ??_C@_0BC@NJGFAHLO@?$CDTS?5?9?5Invalid?5TSS@ 0000000000014858     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003870       ??_C@_0BK@CJDBEANG@?$CDNP?5?9?5Segment?5Not?5Present@ 0000000000014870     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003890       ??_C@_0BI@DKNGHJJN@?$CDSS?5?9?5Stack?5Fault?5Fault@ 0000000000014890     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000038a8       ??_C@_0BJ@OPPOMNHK@?$CDGP?5?9?5General?5Protection@ 00000000000148a8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000038c8       ??_C@_0BB@CJKCEJGM@?$CDPF?5?9?5Page?9Fault@ 00000000000148c8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000038e0       ??_C@_08NKCLJDKG@Reserved@ 00000000000148e0     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000038f0       ??_C@_0CD@DAPDALEP@?$CDMF?5?9?5x87?5FPU?5Floating?9Point?5Er@ 00000000000148f0     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003918       ??_C@_0BG@JJECJFKO@?$CDAC?5?9?5Alignment?5Check@ 0000000000014918     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003930       ??_C@_0BE@CIGFNHHH@?$CDMC?5?9?5Machine?9Check@ 0000000000014930     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003948       ??_C@_0BK@IKBNPED@?$CDXM?5?9?5SIMD?5floating?9point@ 0000000000014948     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003968       ??_C@_0BF@MIEADEIE@?$CDVE?5?9?5Virtualization@ 0000000000014968     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003980       ??_C@_0CB@LDMPFCKF@?$CDCP?5?9?5Control?5ProtectionReserve@ 0000000000014980     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000039a8       ??_C@_0BI@HOPEKCJH@?$CDVC?5?9?5VMM?5Communication@ 00000000000149a8     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000039c0       ??_C@_0CJ@NIJFIMND@?$CB?$CB?$CB?$CB?5Can?8t?5find?5image?5informati@ 00000000000149c0     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:000039f0       ??_C@_0CD@FDHAHDMO@?$CB?$CB?$CB?$CB?5Find?5image?5based?5on?5IP?$CI0x?$CF@ 00000000000149f0     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003a14       ??_C@_02ECNOPIAA@?$CFa@    0000000000014a14     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003a18       ??_C@_09KCCBLILG@?$CINo?5PDB?$CJ?5@ 0000000000014a18     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003a28       ??_C@_0CM@GKFIOCPE@?5?$CIImageBase?$DN?$CF016lp?0?5EntryPoint?$DN@ 0000000000014a28     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003a60       mExceptionNameStr          0000000000014a60     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003b48       mExceptionReservedStr      0000000000014b48     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0003:00003b60       ??_C@_0GI@LPNMDOHD@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014b60     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00003bc8       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014bc8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00003be0       ??_C@_0BN@IHBGHMAK@mSmrrEnabled?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014be0     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0003:00003c00       ??_C@_0IE@IMCBCHM@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014c00     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0003:00003c88       ??_C@_0DJ@PGMMOMCI@SMM?5Base?1Size?5does?5not?5meet?5ali@ 0000000000014c88     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0003:00003cc8       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000014cc8     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0003:00003d00       ??_C@_0GC@LFOFKBAK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014d00     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0003:00003d70       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014d70     BaseLib:String.obj
+ 0003:00003dc0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014dc0     BaseLib:String.obj
+ 0003:00003dd8       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 0000000000014dd8     BaseLib:String.obj
+ 0003:00003e00       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000014e00     BaseLib:String.obj
+ 0003:00003e40       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014e40     BaseLib:SafeString.obj
+ 0003:00003ea0       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014ea0     SblParseLib:SblParseLib.obj
+ 0003:00003f20       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 0000000000014f20     SblParseLib:SblParseLib.obj
+ 0003:00003f38       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 0000000000014f38     SblParseLib:SblParseLib.obj
+ 0003:00003f58       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000014f58     SblParseLib:SblParseLib.obj
+ 0003:00003f70       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000014f70     BasePrintLib:PrintLibInternal.obj
+ 0003:00003fd0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000014fd0     BasePrintLib:PrintLibInternal.obj
+ 0003:00003ff0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000014ff0     BasePrintLib:PrintLibInternal.obj
+ 0003:00004038       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000015038     BasePrintLib:PrintLibInternal.obj
+ 0003:00004060       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000015060     BasePrintLib:PrintLibInternal.obj
+ 0003:000040b0       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000150b0     BasePrintLib:PrintLibInternal.obj
+ 0003:00004140       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000015140     BasePrintLib:PrintLibInternal.obj
+ 0003:000041c8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 00000000000151c8     BasePrintLib:PrintLibInternal.obj
+ 0003:000041d8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 00000000000151d8     BasePrintLib:PrintLibInternal.obj
+ 0003:000041e8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 00000000000151e8     BasePrintLib:PrintLibInternal.obj
+ 0003:00004220       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000015220     BasePrintLib:PrintLibInternal.obj
+ 0003:00004230       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000015230     BasePrintLib:PrintLibInternal.obj
+ 0003:0000424c       ??_C@_04JIMNDDED@?$CF08X@  000000000001524c     BasePrintLib:PrintLibInternal.obj
+ 0003:00004254       ??_C@_02PCIJFNDE@?$AN?6@   0000000000015254     BasePrintLib:PrintLibInternal.obj
+ 0003:00004258       ??_C@_01LIIJDEN@?$AN@      0000000000015258     BasePrintLib:PrintLibInternal.obj
+ 0003:00004260       mWarningString             0000000000015260     BasePrintLib:PrintLibInternal.obj
+ 0003:00004300       mErrorString               0000000000015300     BasePrintLib:PrintLibInternal.obj
+ 0003:000045c0       mHexStr                    00000000000155c0     BasePrintLib:PrintLibInternal.obj
+ 0003:000045d0       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000155d0     BaseLib:DivU64x32Remainder.obj
+ 0003:00004630       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 0000000000015630     BasePciExpressLib:PciExpressLib.obj
+ 0003:00004650       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000015650     BasePciExpressLib:PciExpressLib.obj
+ 0003:000046b0       __xmm@00000000000000010000000000000000 00000000000156b0     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000046c0       __xmm@00000000000000670000000000000067 00000000000156c0     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0003:000046d0       __xmm@00000000000000e700000000000000e7 00000000000156d0     PiSmmCpuDxeSmm:MpService.obj
+ 0003:000046e0       __xmm@40000000000000004000000000000000 00000000000156e0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0003:00004744       __volatile_metadata        0000000000015744     <linker-defined>
+ 0004:000000b8       gcPsd                      00000000000170b8     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000118       gcSmiGdtr                  0000000000017118     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000122       gcSmiIdtr                  0000000000017122     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000130       gEfiMpServiceProtocolGuid  0000000000017130     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000140       gEdkiiPiSmmMemoryAttributesTableGuid 0000000000017140     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000150       gUefiSerialPortInfoGuid    0000000000017150     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000160       gEfiAcpiVariableGuid       0000000000017160     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000170       gPcdProtocolGuid           0000000000017170     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000180       _gPcd_BinaryPatch_PcdPciSerialParameters 0000000000017180     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001a0       gEfiSmmCpuProtocolGuid     00000000000171a0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001b0       gUefiAcpiBoardInfoGuid     00000000000171b0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001c0       gEfiMemoryAttributesTableGuid 00000000000171c0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001d0       gEfiSmmCpuServiceProtocolGuid 00000000000171d0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001e0       _gPcd_BinaryPatch_PcdSerialLineControl 00000000000171e0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001e4       _gPcd_BinaryPatch_PcdCpuMaxLogicalProcessorNumber 00000000000171e4     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001e8       _gPcd_BinaryPatch_PcdSerialUseMmio 00000000000171e8     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001ec       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 00000000000171ec     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000001f0       gEfiSmmReadyToLockProtocolGuid 00000000000171f0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000200       _gPcd_BinaryPatch_PcdDebugPropertyMask 0000000000017200     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000208       gEfiHobListGuid            0000000000017208     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000218       gEfiMmMpProtocolGuid       0000000000017218     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000228       gEdkiiSmmMemoryAttributeProtocolGuid 0000000000017228     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000238       _gPcd_BinaryPatch_PcdSerialFifoControl 0000000000017238     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000240       gEfiSmmBase2ProtocolGuid   0000000000017240     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000250       gEfiDxeServicesTableGuid   0000000000017250     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000260       gEfiSmmAccess2ProtocolGuid 0000000000017260     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000270       gEfiSmmConfigurationProtocolGuid 0000000000017270     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000280       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 0000000000017280     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:00000288       mSmmMemoryAttribute        0000000000017288     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002a0       mCpuHotPlugData            00000000000172a0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002c8       mNumberOfCpus              00000000000172c8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002d0       mMaxNumberOfCpus           00000000000172d0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002d8       mCetSupported              00000000000172d8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002e0       gSmmCpuPrivate             00000000000172e0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000002f0       mSmmCpuPrivateData         00000000000172f0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:00000390       mSmmCpu                    0000000000017390     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000003a0       mPageAttributeTable        00000000000173a0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0004:000003e8       mXdSupported               00000000000173e8     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0004:000003e9       mBtsSupported              00000000000173e9     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0004:000003f0       mApHltLoopCodeTemplate     00000000000173f0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:000003fb       mAcpiS3Enable              00000000000173fb     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:00000400       mSmmCpuService             0000000000017400     PiSmmCpuDxeSmm:CpuService.obj
+ 0004:00000430       mSmmMp                     0000000000017430     PiSmmCpuDxeSmm:SmmMp.obj
+ 0004:00000468       mPagePool                  0000000000017468     PiSmmCpuDxeSmm:PageTbl.obj
+ 0004:00000478       mNeedConfigureMtrrs        0000000000017478     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0004:0000047c       mSmrrPhysMaskMsr           000000000001747c     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0004:00000480       mSmrrPhysBaseMsr           0000000000017480     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0004:000004a0       _gPcd_BinaryPatch_PcdSerialRegisterBase 00000000000174a0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004a8       _gPcd_BinaryPatch_PcdSerialRegisterStride 00000000000174a8     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004ac       _gPcd_BinaryPatch_PcdSerialDetectCable 00000000000174ac     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004ad       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 00000000000174ad     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004b0       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 00000000000174b0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004b8       _gPcd_BinaryPatch_PcdSerialClockRate 00000000000174b8     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004bc       _gPcd_BinaryPatch_PcdSerialBaudRate 00000000000174bc     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000004c0       mConfigSmmCodeAccessCheckLock 00000000000174c0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000004c8       mAddressEncMask            00000000000174c8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000004d0       mSmmCodeAccessCheckEnable  00000000000174d0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000004d8       mSmmCpuHandle              00000000000174d8     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000004e0       mSmmReadyToLock            00000000000174e0     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0004:000004e8       mSmmMpSyncData             00000000000174e8     PiSmmCpuDxeSmm:MpService.obj
+ 0004:000004f0       mMachineCheckSupported     00000000000174f0     PiSmmCpuDxeSmm:MpService.obj
+ 0004:000004f8       mPFLock                    00000000000174f8     PiSmmCpuDxeSmm:MpService.obj
+ 0004:00000500       mGcdMemNumberOfDesc        0000000000017500     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0004:00000508       mGcdMemSpace               0000000000017508     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0004:00000510       mUefiMemoryAttributesTable 0000000000017510     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0004:00000518       mXdEnabled                 0000000000017518     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0004:00000519       mSmmS3Flag                 0000000000017519     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:0000051a       mRestoreSmmConfigurationInS3 000000000001751a     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:00000520       mApHltLoopCode             0000000000017520     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:00000528       mSmmS3ResumeState          0000000000017528     PiSmmCpuDxeSmm:CpuS3.obj
+ 0004:00000530       mCycle                     0000000000017530     PiSmmCpuDxeSmm:SyncTimer.obj
+ 0004:00000538       mTimeoutTicker             0000000000017538     PiSmmCpuDxeSmm:SyncTimer.obj
+ 0004:00000540       m1GPageTableSupport        0000000000017540     PiSmmCpuDxeSmm:PageTbl.obj
+ 0004:00000548       mPcd                       0000000000017548     DxePcdLib:DxePcdLib.obj
+ 0004:00000550       gST                        0000000000017550     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0004:00000558       gBS                        0000000000017558     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0004:00000560       gImageHandle               0000000000017560     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0004:00000568       gSmst                      0000000000017568     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0004:00000570       gRT                        0000000000017570     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0004:00000578       mHobList                   0000000000017578     DxeHobLib:HobLib.obj
+ 0004:00000580       mPmTimerReg                0000000000017580     AcpiTimerLib:AcpiTimerLib.obj
+ 0004:00000588       gDS                        0000000000017588     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0004:00000590       mSmmFeatureControlSupported 0000000000017590     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0004:00000591       mSmrrSupported             0000000000017591     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0004:000006a8       mSmrrEnabled               00000000000176a8     <common>
+ 0004:000006c0       mExceptionHandlerData      00000000000176c0     <common>
+ 0004:000006e0       mReservedVectorsData       00000000000176e0     <common>
+ 0004:000011e0       mExternalInterruptHandlerTable 00000000000181e0     <common>
+ 0004:000012e0       mSmramRangeCount           00000000000182e0     <common>
+ 0004:000012e8       mSmramRanges               00000000000182e8     <common>
+ 0004:000012f0       mGdtBuffer                 00000000000182f0     <common>
+ 0004:000012f8       mGdtBufferSize             00000000000182f8     <common>
+ 0004:00001300       mSmmRelocationOriginalAddress 0000000000018300     <common>
+ 0004:00001308       mRebasedFlag               0000000000018308     <common>
+ 0004:00001310       mCpuSmmRestrictedMemoryAccess 0000000000018310     <common>
+ 0004:00001311       m5LevelPagingNeeded        0000000000018311     <common>
+ 0004:00001312       mCountDown                 0000000000018312     <common>
+ 0004:00001320       gSmiHandlerIdtr            0000000000018320     <common>
+ 0004:0000132a       mSmmSaveStateRegisterLma   000000000001832a     <common>
+ 0004:00001340       mCpuFlags                  0000000000018340     <common>
+ 0004:00001358       mNumberToFinish            0000000000018358     <common>
+ 0004:00001360       mAcpiCpuData               0000000000018360     <common>
+ 0004:000013d0       mInitApsAfterSmmBaseReloc  00000000000183d0     <common>
+ 0004:000013d8       mExchangeInfo              00000000000183d8     <common>
+ 0004:000013e0       mSmmProfileCr3             00000000000183e0     <common>
+ 0004:000013e8       mUefiMemoryMapSize         00000000000183e8     <common>
+ 0004:000013f0       mUefiMemoryMap             00000000000183f0     <common>
+ 0004:000013f8       mInternalGr3               00000000000183f8     <common>
+ 0004:00001400       mUefiDescriptorSize        0000000000018400     <common>
+ 0004:00001408       mSmmMpSyncDataSize         0000000000018408     <common>
+ 0004:00001420       mSmmCpuSemaphores          0000000000018420     <common>
+ 0004:00001468       mCpuSmmSyncMode            0000000000018468     <common>
+ 0004:00001480       gSmiMtrrs                  0000000000018480     <common>
+ 0004:000016e0       mSemaphoreSize             00000000000186e0     <common>
+ 0004:000016e8       gPhyMask                   00000000000186e8     <common>
+ 0004:000016f0       mPhysicalAddressBits       00000000000186f0     <common>
+ 0004:000016f4       mSmmCr4                    00000000000186f4     <common>
+ 0004:000016f8       mRebased                   00000000000186f8     <common>
+ 0004:00001700       mSmmCpuSmramRangeCount     0000000000018700     <common>
+ 0004:00001708       mIsBsp                     0000000000018708     <common>
+ 0004:00001710       mSmmStackSize              0000000000018710     <common>
+ 0004:00001718       mSmmCpuSmramRanges         0000000000018718     <common>
+ 0004:00001720       mSmmShadowStackSize        0000000000018720     <common>
+ 0004:00001728       mSmmStackArrayEnd          0000000000018728     <common>
+ 0004:00001730       mSmmStackArrayBase         0000000000018730     <common>
+ 0004:00001738       mSmmCr0                    0000000000018738     <common>
+
+ entry point at        0001:00001124
+
+ Static symbols
+
+ 0001:00000048       gPatchSmmCr4.1             0000000000001048     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000005b       @LongMode                  000000000000105b     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:0000005b       @PatchLongModeOffset       000000000000105b     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000c5       ..@18.Unroll1              00000000000010c5     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000ca       ..@18.SpecTrap1            00000000000010ca     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000d1       ..@18.Unroll2              00000000000010d1     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000d6       ..@18.SpecTrap2            00000000000010d6     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000dd       ..@18.StuffLoop            00000000000010dd     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:000000fb       @L1                        00000000000010fb     PiSmmCpuDxeSmm:SmmInit.obj
+ 0001:00000164       PageFaultIdtHandlerSmmProfile.0 0000000000001164     PiSmmCpuDxeSmm:SmiException.obj
+ 0001:00000224       PageFaultIdtHandlerSmmProfile.1 0000000000001224     PiSmmCpuDxeSmm:SmiException.obj
+ 0001:000002a0       _SmiEntryPoint             00000000000012a0     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000002ed       _GdtDesc                   00000000000012ed     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000002f3       @ProtectedMode             00000000000012f3     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000030d       ProtFlatMode               000000000000130d     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000325       SkipEnable5LevelPaging     0000000000001325     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000358       MsrIa32MiscEnableSupported 0000000000001358     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000371       EnableNxe                  0000000000001371     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000380       @SkipXd                    0000000000001380     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000383       @XdDone                    0000000000001383     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000038a       Base                       000000000000138a     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000003a7       @LongMode                  00000000000013a7     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000003b1       SmiHandlerIdtrAbsAddr      00000000000013b1     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000044a       CetInterruptDone           000000000000144a     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000460       CetDone                    0000000000001460     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000047d       CpuSmmDebugEntryAbsAddr    000000000000147d     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000048c       SmiRendezvousAbsAddr       000000000000148c     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000049b       CpuSmmDebugExitAbsAddr     000000000000149b     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000004b7       mCetSupportedAbsAddr       00000000000014b7     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000004e0       CetDone2                   00000000000014e0     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000004ea       mXdSupportedAbsAddr        00000000000014ea     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000506       mXdSupportedAbsAddr.1      0000000000001506     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000050b       ..@25.Unroll1              000000000000150b     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000510       ..@25.SpecTrap1            0000000000001510     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000517       ..@25.Unroll2              0000000000001517     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:0000051c       ..@25.SpecTrap2            000000000000151c     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:00000523       ..@25.StuffLoop            0000000000001523     PiSmmCpuDxeSmm:SmiEntry.obj
+ 0001:000005a0       RendezvousFunnelProcStart  00000000000015a0     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:000005ae       flat32Start                00000000000015ae     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:000005d8       FLAT32_JUMP                00000000000015d8     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:000005e1       PMODE_ENTRY                00000000000015e1     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:0000061a       LONG_JUMP                  000000000000161a     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:00000622       LongModeStart              0000000000001622     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:00000639       TestLock                   0000000000001639     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:00000640       ProgramStack               0000000000001640     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:0000065f       Releaselock                000000000000165f     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:00000699       GoToSleep                  0000000000001699     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:0000069d       RendezvousFunnelProcEnd    000000000000169d     PiSmmCpuDxeSmm:MpFuncs.obj
+ 0001:0000071a       InternalMemCopyMem.0       000000000000171a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000072a       @CopyBackward              000000000000172a     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000733       @CopyBytes                 0000000000001733     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000007a3       CetDone                    00000000000017a3     BaseLib:SetJump.obj
+ 0001:00000875       AsmCpuidEx.0               0000000000001875     BaseLib:CpuIdEx.obj
+ 0001:0000087c       AsmCpuidEx.1               000000000000187c     BaseLib:CpuIdEx.obj
+ 0001:00000883       AsmCpuidEx.2               0000000000001883     BaseLib:CpuIdEx.obj
+ 0001:0000088c       AsmCpuidEx.3               000000000000188c     BaseLib:CpuIdEx.obj
+ 0001:0000089f       AsmCpuid.0                 000000000000189f     BaseLib:CpuId.obj
+ 0001:000008a4       AsmCpuid.1                 00000000000018a4     BaseLib:CpuId.obj
+ 0001:000008ab       AsmCpuid.2                 00000000000018ab     BaseLib:CpuId.obj
+ 0001:000008b4       AsmCpuid.3                 00000000000018b4     BaseLib:CpuId.obj
+ 0001:000009d0       CetDone                    00000000000019d0     BaseLib:LongJump.obj
+ 0001:00000ada       InternalX86DisablePaging64.0 0000000000001ada     BaseLib:DisablePaging64.obj
+ 0001:00000b01       mTransitionEnd             0000000000001b01     BaseLib:DisablePaging64.obj
+ 0001:00000b70       AsmIdtVectorBegin          0000000000001b70     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d50       AsmIdtVectorEnd            0000000000001d50     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d50       HookAfterStubHeaderBegin   0000000000001d50     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d51       @VectorNum                 0000000000001d51     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d5d       JmpAbsoluteAddress         0000000000001d5d     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d5f       HookAfterStubHeaderEnd     0000000000001d5f     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d7b       HookAfterStubHeaderEnd.0   0000000000001d7b     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000d9c       NoErrorCode                0000000000001d9c     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000da8       HasErrorCode               0000000000001da8     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000e76       VcDebugRegs                0000000000001e76     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000e7f       DrFinish                   0000000000001e7f     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000f24       ErrorCode                  0000000000001f24     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000f2c       DoReturn                   0000000000001f2c     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00000f4e       DoIret                     0000000000001f4e     SmmCpuExceptionHandlerLib:Xcode5ExceptionHandlerAsm.obj
+ 0001:00005c90       SortMemoryMap              0000000000006c90 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0001:00005d48       MergeMemoryMapForNotPresentEntry 0000000000006d48 f   PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0002:00000000       mFpuControlWord            0000000000010000     BaseUefiCpuLib:InitializeFpu.obj
+ 0002:00000002       mMmxControlWord            0000000000010002     BaseUefiCpuLib:InitializeFpu.obj
+ 0004:00000000       NullSeg                    0000000000017000     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000008       CodeSeg32                  0000000000017008     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000010       ProtModeCodeSeg32          0000000000017010     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000018       ProtModeSsSeg32            0000000000017018     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000020       DataSeg32                  0000000000017020     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000028       CodeSeg16                  0000000000017028     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000030       DataSeg16                  0000000000017030     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000038       CodeSeg64                  0000000000017038     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000040       TssSeg                     0000000000017040     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:00000050       TssDescriptor              0000000000017050     PiSmmCpuDxeSmm:SmiException.obj
+ 0004:000005a0       mJumpContext               00000000000175a0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0004:000006a0       mDriverEntryPointStatus    00000000000176a0     PiSmmCpuDxeSmm:AutoGen.obj
+ 0006:00000000       $unwind$MmioWrite32        000000000001a000     BaseIoLibIntrinsic:IoLib.obj
+ 0006:00000000       $unwind$LShiftU64          000000000001a000     BaseLib:LShiftU64.obj
+ 0006:00000000       $unwind$InsertTailList     000000000001a000     BaseLib:LinkedList.obj
+ 0006:00000000       $unwind$InternalBaseLibIsListValid 000000000001a000     BaseLib:LinkedList.obj
+ 0006:00000000       $unwind$RShiftU64          000000000001a000     BaseLib:RShiftU64.obj
+ 0006:00000000       $unwind$AsciiStrLen        000000000001a000     BaseLib:String.obj
+ 0006:00000000       $unwind$ZeroMem            000000000001a000     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0006:00000000       $unwind$GetFirstGuidHob    000000000001a000     DxeHobLib:HobLib.obj
+ 0006:00000000       $unwind$GetNextHob         000000000001a000     DxeHobLib:HobLib.obj
+ 0006:00000000       $unwind$InternalAllocateCopyPool 000000000001a000     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000000       $unwind$_ModuleEntryPoint  000000000001a000     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0006:00000000       $unwind$WriteLocalApicReg  000000000001a000     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000000       $unwind$DumpModuleImageInfo 000000000001a000     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0006:00000000       $unwind$MtrrGetAllMtrrs    000000000001a000     MtrrLib:MtrrLib.obj
+ 0006:00000000       $unwind$MtrrGetVariableMtrrWorker 000000000001a000     MtrrLib:MtrrLib.obj
+ 0006:00000000       $unwind$ProcessModuleEntryPointList 000000000001a000     PiSmmCpuDxeSmm:AutoGen.obj
+ 0006:00000000       $unwind$SmmWhoAmI          000000000001a000     PiSmmCpuDxeSmm:CpuService.obj
+ 0006:00000000       $unwind$IsTokenInUse       000000000001a000     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000000       $unwind$ReleaseAllAPs      000000000001a000     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000000       $unwind$WaitForAllAPs      000000000001a000     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000000       $unwind$WaitForAllAPsNotBusy 000000000001a000     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000000       $unwind$DumpModuleInfoByIp 000000000001a000     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000000       $unwind$SmmMpCheckForProcedure 000000000001a000     PiSmmCpuDxeSmm:SmmMp.obj
+ 0006:00000000       $unwind$SmmMpWaitForProcedure 000000000001a000     PiSmmCpuDxeSmm:SmmMp.obj
+ 0006:00000000       $unwind$GetGuidHobDataFromSbl 000000000001a000     SblParseLib:SblParseLib.obj
+ 0006:0000000c       $unwind$ProcessLibraryConstructorList 000000000001a00c     PiSmmCpuDxeSmm:AutoGen.obj
+ 0006:00000020       $unwind$BitFieldOr32       000000000001a020     BaseLib:BitField.obj
+ 0006:00000020       $unwind$InternalBaseLibBitFieldOrUint 000000000001a020     BaseLib:BitField.obj
+ 0006:00000020       $unwind$AcquireSpinLock    000000000001a020     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0006:00000020       $unwind$CopyRegisterTable  000000000001a020     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:00000020       $unwind$InitializeMpSyncData 000000000001a020     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000020       $unwind$InternalSmmStartupThisAp 000000000001a020     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000020       $unwind$SmmReadSaveState   000000000001a020     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000020       $unwind$SplitPage          000000000001a020     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000020       $unwind$GetAndUpdateAccNum 000000000001a020     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:00000034       $unwind$SmmInitHandler     000000000001a034     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000044       $unwind$SmmRelocateBases   000000000001a044     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000060       $unwind$HighBitSet64       000000000001a060     BaseLib:HighBitSet64.obj
+ 0006:00000060       $unwind$GetHobList         000000000001a060     DxeHobLib:HobLib.obj
+ 0006:00000060       $unwind$GetPcdProtocol     000000000001a060     DxePcdLib:DxePcdLib.obj
+ 0006:00000060       $unwind$FreePool           000000000001a060     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000060       $unwind$InternalAllocatePool 000000000001a060     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000060       $unwind$GetLocalApicBaseAddress 000000000001a060     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000060       $unwind$SmmGetProcessorInfo 000000000001a060     PiSmmCpuDxeSmm:CpuService.obj
+ 0006:00000060       $unwind$AllCpusInSmmWithExceptions 000000000001a060     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000060       $unwind$ProcedureWrapper   000000000001a060     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000060       $unwind$SmmReadyToLockEventNotify 000000000001a060     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000060       $unwind$GetCpuIndex        000000000001a060     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0006:00000068       $unwind$PiCpuSmmEntry      000000000001a068     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000080       $unwind$FindSmramInfo      000000000001a080     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000094       $unwind$MmioRead32         000000000001a094     BaseIoLibIntrinsic:IoLib.obj
+ 0006:00000094       $unwind$IoRead32           000000000001a094     BaseIoLibIntrinsic:IoLibMsc.obj
+ 0006:00000094       $unwind$RemoveEntryList    000000000001a094     BaseLib:LinkedList.obj
+ 0006:00000094       $unwind$StrnLenS           000000000001a094     BaseLib:SafeString.obj
+ 0006:00000094       $unwind$InternalAssertJumpBuffer 000000000001a094     BaseLib:SetJump.obj
+ 0006:00000094       $unwind$SetMem             000000000001a094     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0006:00000094       $unwind$PciExpressRead32   000000000001a094     BasePciExpressLib:PciExpressLib.obj
+ 0006:00000094       $unwind$PeCoffLoaderGetPdbPointer 000000000001a094     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0006:00000094       $unwind$ReleaseSpinLock    000000000001a094     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0006:00000094       $unwind$AllocatePages      000000000001a094     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000094       $unwind$AllocateZeroPool   000000000001a094     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0006:00000094       $unwind$GetApicId          000000000001a094     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000094       $unwind$GetApicMode        000000000001a094     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000094       $unwind$ProgramVirtualWireMode 000000000001a094     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000094       $unwind$ReadLocalApicReg   000000000001a094     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000094       $unwind$GetVariableMtrrCountWorker 000000000001a094     MtrrLib:MtrrLib.obj
+ 0006:00000094       $unwind$ConfigSmmCodeAccessCheck 000000000001a094     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:00000094       $unwind$ConvertPageEntryAttribute 000000000001a094     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000094       $unwind$IsSyncTimerTimeout 000000000001a094     PiSmmCpuDxeSmm:SyncTimer.obj
+ 0006:00000094       $unwind$AcpiTimerLibConstructor 000000000001a094     AcpiTimerLib:AcpiTimerLib.obj
+ 0006:00000094       $unwind$MicroSecondDelay   000000000001a094     AcpiTimerLib:AcpiTimerLib.obj
+ 0006:0000009c       $unwind$AllocateAlignedCodePages 000000000001a09c     PiSmmCpuDxeSmm:PiSmmCpuDxeSmm.obj
+ 0006:000000b0       $unwind$BitFieldAnd32      000000000001a0b0     BaseLib:BitField.obj
+ 0006:000000b0       $unwind$BitFieldAndThenOr32 000000000001a0b0     BaseLib:BitField.obj
+ 0006:000000b0       $unwind$BitFieldAndThenOr64 000000000001a0b0     BaseLib:BitField.obj
+ 0006:000000b0       $unwind$BitFieldRead32     000000000001a0b0     BaseLib:BitField.obj
+ 0006:000000b0       $unwind$BitFieldRead64     000000000001a0b0     BaseLib:BitField.obj
+ 0006:000000b0       $unwind$CopyMem            000000000001a0b0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0006:000000b0       $unwind$BasePrintLibValueToString 000000000001a0b0     BasePrintLib:PrintLibInternal.obj
+ 0006:000000b0       $unwind$InterlockedCompareExchange32 000000000001a0b0     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0006:000000b0       $unwind$SetRegister        000000000001a0b0     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:000000b0       $unwind$GetFreeToken       000000000001a0b0     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000b0       $unwind$ReleaseSemaphore   000000000001a0b0     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000b0       $unwind$SmmWaitForApArrival 000000000001a0b0     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000b0       $unwind$WaitForSemaphore   000000000001a0b0     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000b0       $unwind$SmiPFHandler       000000000001a0b0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:000000b0       $unwind$InternalAcpiDelay  000000000001a0b0     AcpiTimerLib:AcpiTimerLib.obj
+ 0006:000000c0       $unwind$BSPHandler         000000000001a0c0     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000dc       $unwind$APHandler          000000000001a0dc     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000f4       $unwind$Gen4GPageTable     000000000001a0f4     PiSmmCpuDxeSmm:MpService.obj
+ 0006:000000f4       $unwind$GetPageTableEntry  000000000001a0f4     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000000f4       $unwind$SetMemMapAttributes 000000000001a0f4     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000110       $unwind$SerialPortInitialize 000000000001a110     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0006:00000110       $unwind$BitFieldAnd64      000000000001a110     BaseLib:BitField.obj
+ 0006:00000110       $unwind$EfiGetSystemConfigurationTable 000000000001a110     UefiLib:UefiLib.obj
+ 0006:00000110       $unwind$AllocateTokenBuffer 000000000001a110     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000110       $unwind$SmiRendezvous      000000000001a110     PiSmmCpuDxeSmm:MpService.obj
+ 0006:00000128       $unwind$InternalSmmStartupAllAPs 000000000001a128     PiSmmCpuDxeSmm:MpService.obj
+ 0006:0000013c       $unwind$GetSpinLockProperties 000000000001a13c     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0006:0000013c       $unwind$GetInitialApicId   000000000001a13c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:0000013c       $unwind$LocalApicBaseAddressMsrSupported 000000000001a13c     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:0000013c       $unwind$IsMtrrSupported    000000000001a13c     MtrrLib:MtrrLib.obj
+ 0006:0000013c       $unwind$SmmStartupThisAp   000000000001a13c     PiSmmCpuDxeSmm:MpService.obj
+ 0006:0000013c       $unwind$SmmMpDispatchProcedure 000000000001a13c     PiSmmCpuDxeSmm:SmmMp.obj
+ 0006:00000144       $unwind$InitializeMpServiceData 000000000001a144     PiSmmCpuDxeSmm:MpService.obj
+ 0006:0000015c       $unwind$ConvertMemoryPageAttributes 000000000001a15c     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000174       $unwind$FlushTlbForAll     000000000001a174     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000174       $unwind$SmmSetMemoryAttributesEx 000000000001a174     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:0000017c       $unwind$SmmClearMemoryAttributes 000000000001a17c     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000184       $unwind$BitFieldOr64       000000000001a184     BaseLib:BitField.obj
+ 0006:00000184       $unwind$SendIpi            000000000001a184     BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0006:00000184       $unwind$UpdateIdtTable     000000000001a184     SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0006:00000184       $unwind$MergeMemoryMapForNotPresentEntry 000000000001a184     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000184       $unwind$PatchSmmSaveStateMap 000000000001a184     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:00000184       $unwind$ReadSaveStateRegisterByIndex 000000000001a184     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0006:00000184       $unwind$WriteSaveStateRegister 000000000001a184     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0006:0000019c       $unwind$SortMemoryMap      000000000001a19c     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000001b8       $unwind$GetGcdMemoryMap    000000000001a1b8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000001cc       $unwind$GetUefiMemoryMap   000000000001a1cc     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000001d8       $unwind$SetUefiMemMapAttributes 000000000001a1d8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000001f0       $unwind$IsSmmCommBufferForbiddenAddress 000000000001a1f0     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:000001f8       $unwind$EdkiiSmmGetMemoryAttributes 000000000001a1f8     PiSmmCpuDxeSmm:SmmCpuMemoryManagement.obj
+ 0006:0000020c       $unwind$InitPaging         000000000001a20c     PiSmmCpuDxeSmm:SmmProfile.obj
+ 0006:00000228       $unwind$ProgramProcessorRegister 000000000001a228     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:00000240       $unwind$InitializeAp       000000000001a240     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:00000258       $unwind$InitializeCpuBeforeRebase 000000000001a258     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:00000260       $unwind$SmmRestoreCpu      000000000001a260     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:00000278       $unwind$InitSmmS3ResumeState 000000000001a278     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:0000028c       $unwind$CompareGuid        000000000001a28c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0006:0000028c       $unwind$GetAcpiCpuData     000000000001a28c     PiSmmCpuDxeSmm:CpuS3.obj
+ 0006:000002a8       $unwind$ReadSaveStateRegister 000000000001a2a8     PiSmmCpuDxeSmm:SmramSaveState.obj
+ 0006:000002bc       $unwind$SmmMpBroadcastProcedure 000000000001a2bc     PiSmmCpuDxeSmm:SmmMp.obj
+ 0006:000002c4       $unwind$SetPageTableAttributes 000000000001a2c4     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:000002c4       $unwind$SetStaticPageTable 000000000001a2c4     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:000002dc       $unwind$SmmInitPageTable   000000000001a2dc     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:000002f0       $unwind$ReclaimPages       000000000001a2f0     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:00000308       $unwind$SmiDefaultPFHandler 000000000001a308     PiSmmCpuDxeSmm:PageTbl.obj
+ 0006:00000324       $unwind$PatchInstructionX86 000000000001a324     BaseLib:X86PatchInstruction.obj
+ 0006:00000338       $unwind$BitFieldWrite32    000000000001a338     BaseLib:BitField.obj
+ 0006:00000338       $unwind$BitFieldWrite64    000000000001a338     BaseLib:BitField.obj
+ 0006:0000034c       $unwind$AsmDisablePaging64 000000000001a34c     BaseLib:X86DisablePaging64.obj
+ 0006:00000364       $unwind$SwitchStack        000000000001a364     BaseLib:SwitchStack.obj
+ 0006:00000370       $unwind$PlatformHookSerialPortInitialize 000000000001a370     PlatformHookLib:PlatformHookLib.obj
+ 0006:00000378       $unwind$DebugPrint         000000000001a378     BaseDebugLibSerialPort:DebugLib.obj
+ 0006:00000380       $unwind$DebugPrintMarker   000000000001a380     BaseDebugLibSerialPort:DebugLib.obj
+ 0006:00000394       $unwind$DebugAssert        000000000001a394     BaseDebugLibSerialPort:DebugLib.obj
+ 0006:0000039c       $unwind$StandardSignatureIsAuthenticAMD 000000000001a39c     BaseUefiCpuLib:BaseUefiCpuLib.obj
+ 0006:000003a4       $unwind$AcquireSpinLockOrFail 000000000001a3a4     BaseSynchronizationLib:SynchronizationMsc.obj
+ 0006:000003b0       $unwind$MtrrLibPreMtrrChange 000000000001a3b0     MtrrLib:MtrrLib.obj
+ 0006:000003bc       $unwind$MtrrSetAllMtrrs    000000000001a3bc     MtrrLib:MtrrLib.obj
+ 0006:000003cc       $unwind$InitializeCpuExceptionHandlers 000000000001a3cc     SmmCpuExceptionHandlerLib:SmmException.obj
+ 0006:000003d8       $unwind$DumpCpuContext     000000000001a3d8     SmmCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0006:000003e8       $unwind$CommonExceptionHandlerWorker 000000000001a3e8     SmmCpuExceptionHandlerLib:PeiDxeSmmCpuException.obj
+ 0006:000003fc       $unwind$InternalPrintMessage 000000000001a3fc     SmmCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0006:00000404       $unwind$SmmCpuFeaturesInitializeProcessor 000000000001a404     SmmCpuFeaturesLib:SmmCpuFeaturesLib.obj
+ 0006:0000040c       $unwind$SerialPortWrite    000000000001a40c     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0006:00000424       $unwind$AsciiSPrint        000000000001a424     BasePrintLib:PrintLib.obj
+ 0006:0000042c       $unwind$BasePrintLibSPrintMarker 000000000001a42c     BasePrintLib:PrintLibInternal.obj
+ 0006:00000448       $unwind$BasePrintLibSPrint 000000000001a448     BasePrintLib:PrintLibInternal.obj

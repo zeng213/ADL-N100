@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage1BBoardInitLib\Stage1BBoardInitLib.c e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage1BBoardInitLib\EcSupport.c e:\code\adl_n100_code\sblplatform\SblOpen\Platform\AlderlakeBoardPkg\Library\Stage1BBoardInitLib\RtcInit.c

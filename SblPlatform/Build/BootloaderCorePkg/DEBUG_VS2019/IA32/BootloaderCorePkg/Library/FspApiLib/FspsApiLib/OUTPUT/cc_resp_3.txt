@@ -1,0 +1,1 @@
+  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspNotifyPhase.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspVariableServices.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspMisc.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\FspApiLib\FspSiliconInit.c

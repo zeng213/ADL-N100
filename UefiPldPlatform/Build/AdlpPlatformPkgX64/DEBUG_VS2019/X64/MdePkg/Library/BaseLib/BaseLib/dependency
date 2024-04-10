@@ -1,0 +1,11 @@
+
+
+!IF EXIST(e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\LongJump.nasm.trim.deps)
+!INCLUDE e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\LongJump.nasm.trim.deps
+!ENDIF
+
+!IF EXIST(e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\SetJump.nasm.trim.deps)
+!INCLUDE e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\X64\SetJump.nasm.trim.deps
+!ENDIF
+
+               

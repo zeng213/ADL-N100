@@ -1,0 +1,434 @@
+ TerminalDxe
+
+ Timestamp is 65f952bc (Tue Mar 19 16:54:20 2024)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000d4H .text                   CODE
+ 0001:000000d4 00007472H .text$mn                CODE
+ 0002:00000000 00001d14H .rdata                  DATA
+ 0002:00001d14 000003a0H .rdata$voltmd           DATA
+ 0002:000020b4 00000174H .rdata$zzzdbg           DATA
+ 0003:00000000 000004f0H .data                   DATA
+ 0003:000004f0 00000058H .bss                    DATA
+ 0004:00000000 00000468H .pdata                  DATA
+ 0005:00000000 0000031cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemCompareMem      0000000000000300     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000060       InternalMemZeroMem         0000000000000320     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000340     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000d4       _ModuleEntryPoint          0000000000000394 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f0       ProcessLibraryConstructorList 00000000000003b0 f   TerminalDxe:AutoGen.obj
+ 0001:000002a8       ProcessModuleEntryPointList 0000000000000568 f   TerminalDxe:AutoGen.obj
+ 0001:000003b4       TerminalTypeFromGuid       0000000000000674 f   TerminalDxe:Terminal.obj
+ 0001:000003fc       TerminalDriverBindingSupported 00000000000006bc f   TerminalDxe:Terminal.obj
+ 0001:00000520       TerminalFreeNotifyList     00000000000007e0 f   TerminalDxe:Terminal.obj
+ 0001:000005d0       InitializeTerminalConsoleTextMode 0000000000000890 f   TerminalDxe:Terminal.obj
+ 0001:0000068c       StopTerminalStateMachine   000000000000094c f   TerminalDxe:Terminal.obj
+ 0001:000006e8       StartTerminalStateMachine  00000000000009a8 f   TerminalDxe:Terminal.obj
+ 0001:00000844       InitializeControllerNameTable 0000000000000b04 f   TerminalDxe:Terminal.obj
+ 0001:00000950       TerminalDriverBindingStart 0000000000000c10 f   TerminalDxe:Terminal.obj
+ 0001:000013d0       TerminalDriverBindingStop  0000000000001690 f   TerminalDxe:Terminal.obj
+ 0001:000016fc       TerminalUpdateConsoleDevVariable 00000000000019bc f   TerminalDxe:Terminal.obj
+ 0001:000018a8       TerminalRemoveConsoleDevVariable 0000000000001b68 f   TerminalDxe:Terminal.obj
+ 0001:00001c6c       SetTerminalDevicePath      0000000000001f2c f   TerminalDxe:Terminal.obj
+ 0001:00001d08       TerminalConOutReset        0000000000001fc8 f   TerminalDxe:TerminalConOut.obj
+ 0001:00001d84       TerminalConOutOutputString 0000000000002044 f   TerminalDxe:TerminalConOut.obj
+ 0001:00002040       TerminalConOutTestString   0000000000002300 f   TerminalDxe:TerminalConOut.obj
+ 0001:000020fc       TerminalConOutQueryMode    00000000000023bc f   TerminalDxe:TerminalConOut.obj
+ 0001:000021a0       TerminalConOutSetMode      0000000000002460 f   TerminalDxe:TerminalConOut.obj
+ 0001:00002258       TerminalConOutSetAttribute 0000000000002518 f   TerminalDxe:TerminalConOut.obj
+ 0001:00002448       TerminalConOutClearScreen  0000000000002708 f   TerminalDxe:TerminalConOut.obj
+ 0001:000024cc       TerminalConOutSetCursorPosition 000000000000278c f   TerminalDxe:TerminalConOut.obj
+ 0001:000026e4       TerminalConOutEnableCursor 00000000000029a4 f   TerminalDxe:TerminalConOut.obj
+ 0001:000026fc       TerminalIsValidTextGraphics 00000000000029bc f   TerminalDxe:TerminalConOut.obj
+ 0001:00002764       ReadKeyStrokeWorker        0000000000002a24 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002834       TerminalConInReset         0000000000002af4 f   TerminalDxe:TerminalConIn.obj
+ 0001:000028b0       TerminalConInReadKeyStroke 0000000000002b70 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002924       IsKeyRegistered            0000000000002be4 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002984       TerminalConInWaitForKeyEx  0000000000002c44 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002984       TerminalConInWaitForKey    0000000000002c44 f   TerminalDxe:TerminalConIn.obj
+ 0001:000029a8       TerminalConInResetEx       0000000000002c68 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002a1c       TerminalConInReadKeyStrokeEx 0000000000002cdc f   TerminalDxe:TerminalConIn.obj
+ 0001:00002a8c       TerminalConInSetState      0000000000002d4c f   TerminalDxe:TerminalConIn.obj
+ 0001:00002ab0       TerminalConInRegisterKeyNotify 0000000000002d70 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002c14       TerminalConInUnregisterKeyNotify 0000000000002ed4 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002d14       TranslateRawDataToEfiKey   0000000000002fd4 f   TerminalDxe:TerminalConIn.obj
+ 0001:00002dcc       TerminalConInTimerHandler  000000000000308c f   TerminalDxe:TerminalConIn.obj
+ 0001:00002f28       KeyNotifyProcessHandler    00000000000031e8 f   TerminalDxe:TerminalConIn.obj
+ 0001:0000309c       EfiKeyFiFoInsertOneKey     000000000000335c f   TerminalDxe:TerminalConIn.obj
+ 0001:00003228       UnicodeFiFoInsertOneKey    00000000000034e8 f   TerminalDxe:TerminalConIn.obj
+ 0001:000032d8       UnicodeToEfiKeyFlushState  0000000000003598 f   TerminalDxe:TerminalConIn.obj
+ 0001:000033d8       UnicodeToEfiKey            0000000000003698 f   TerminalDxe:TerminalConIn.obj
+ 0001:00003f74       TerminalComponentNameGetDriverName 0000000000004234 f   TerminalDxe:ComponentName.obj
+ 0001:00003fa8       TerminalComponentNameGetControllerName 0000000000004268 f   TerminalDxe:ComponentName.obj
+ 0001:0000417c       VTUTF8RawDataToUnicode     000000000000443c f   TerminalDxe:Vtutf8.obj
+ 0001:00004374       StrLen                     0000000000004634 f   BaseLib:String.obj
+ 0001:00004428       AsciiStrLen                00000000000046e8 f   BaseLib:String.obj
+ 0001:000044a8       AsciiStrnCmp               0000000000004768 f   BaseLib:String.obj
+ 0001:00004590       InternalBaseLibIsListValid 0000000000004850 f   BaseLib:LinkedList.obj
+ 0001:0000463c       InsertTailList             00000000000048fc f   BaseLib:LinkedList.obj
+ 0001:00004698       GetFirstNode               0000000000004958 f   BaseLib:LinkedList.obj
+ 0001:000046d8       GetNextNode                0000000000004998 f   BaseLib:LinkedList.obj
+ 0001:00004718       IsNull                     00000000000049d8 f   BaseLib:LinkedList.obj
+ 0001:00004764       RemoveEntryList            0000000000004a24 f   BaseLib:LinkedList.obj
+ 0001:000047e0       StrnLenS                   0000000000004aa0 f   BaseLib:SafeString.obj
+ 0001:00004840       StrDecimalToUintnS         0000000000004b00 f   BaseLib:SafeString.obj
+ 0001:000049c4       CopyGuid                   0000000000004c84 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00004a9c       CompareGuid                0000000000004d5c f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00004b94       CopyMem                    0000000000004e54 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00004c3c       CompareMem                 0000000000004efc f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00004d34       ZeroMem                    0000000000004ff4 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00004db8       DebugPrint                 0000000000005078 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004ddc       DebugPrintMarker           000000000000509c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004e74       DebugAssert                0000000000005134 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00004ef4       InternalAllocatePool       00000000000051b4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004f24       AllocateZeroPool           00000000000051e4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004f4c       InternalAllocateCopyPool   000000000000520c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004fd8       FreePool                   0000000000005298 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005034       IsDevicePathValid          00000000000052f4 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000050fc       DevicePathNodeLength       00000000000053bc f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00005160       NextDevicePathNode         0000000000005420 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000051a4       IsDevicePathEnd            0000000000005464 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00005250       SetDevicePathNodeLength    0000000000005510 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000052c0       GetDevicePathSize          0000000000005580 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00005320       AppendDevicePath           00000000000055e0 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000053f8       AppendDevicePathNode       00000000000056b8 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000054f8       AppendDevicePathInstance   00000000000057b8 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000055e0       GetNextDevicePathInstance  00000000000058a0 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00005730       CompareIso639LanguageCode  00000000000059f0 f   UefiLib:UefiLib.obj
+ 0001:000057ac       IsLanguageSupported        0000000000005a6c f   UefiLib:UefiLib.obj
+ 0001:00005834       LookupUnicodeString2       0000000000005af4 f   UefiLib:UefiLib.obj
+ 0001:0000591c       AddUnicodeString2          0000000000005bdc f   UefiLib:UefiLib.obj
+ 0001:00005b00       FreeUnicodeStringTable     0000000000005dc0 f   UefiLib:UefiLib.obj
+ 0001:00005b6c       GetEfiGlobalVariable2      0000000000005e2c f   UefiLib:UefiLib.obj
+ 0001:00005c84       GetHobList                 0000000000005f44 f   DxeHobLib:HobLib.obj
+ 0001:00005d9c       GetNextHob                 000000000000605c f   DxeHobLib:HobLib.obj
+ 0001:00005df4       PlatformHookSerialPortInitialize 00000000000060b4 f   PlatformHookLib:PlatformHookLib.obj
+ 0001:00005ec8       AsciiSPrint                0000000000006188 f   BasePrintLib:PrintLib.obj
+ 0001:00005ef4       BasePrintLibFillBuffer     00000000000061b4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005f28       BasePrintLibValueToString  00000000000061e8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00005f9c       BasePrintLibSPrintMarker   000000000000625c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006f9c       BasePrintLibSPrint         000000000000725c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006fc0       SerialPortReadRegister     0000000000007280 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00006ff4       SerialPortWriteRegister    00000000000072b4 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00007030       SerialPortInitialize       00000000000072f0 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:000071f4       SerialPortWrite            00000000000074b4 f   BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0001:00007344       GetGuidHobDataFromSbl      0000000000007604 f   SblParseLib:SblParseLib.obj
+ 0001:00007410       MmioRead32                 00000000000076d0 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00007448       PciExpressRead32           0000000000007708 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00007498       GetPcdProtocol             0000000000007758 f   DxePcdLib:DxePcdLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000007820     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ@ 0000000000007848     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000040       ??_C@_0M@BIBNPCDE@TerminalDxe@ 0000000000007860     TerminalDxe:AutoGen.obj
+ 0002:00000050       ??_C@_0CE@IBFOBMLB@?6ASSERT_RETURN_ERROR?5?$CIStatus?5?$DN?5@ 0000000000007870     TerminalDxe:AutoGen.obj
+ 0002:00000078       ??_C@_0BH@BACADMEC@?$CBRETURN_ERROR?5?$CIStatus?$CJ@ 0000000000007898     TerminalDxe:AutoGen.obj
+ 0002:00000090       ??_C@_0JH@KPFCCEDF@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000078b0     TerminalDxe:AutoGen.obj
+ 0002:00000128       ??_C@_1CO@MKDEDOOI@?$AAP?$AAC?$AA?9?$AAA?$AAN?$AAS?$AAI?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5@ 0000000000007948     TerminalDxe:Terminal.obj
+ 0002:00000158       ??_C@_1CM@OAINDMOF@?$AAV?$AAT?$AA?9?$AA1?$AA0?$AA0?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAC@ 0000000000007978     TerminalDxe:Terminal.obj
+ 0002:00000188       ??_C@_1CO@ODBFKALN@?$AAV?$AAT?$AA?9?$AA1?$AA0?$AA0?$AA?$CL?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5@ 00000000000079a8     TerminalDxe:Terminal.obj
+ 0002:000001b8       ??_C@_1CO@HOAMADFA@?$AAV?$AAT?$AA?9?$AAU?$AAT?$AAF?$AA8?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5@ 00000000000079d8     TerminalDxe:Terminal.obj
+ 0002:000001e8       ??_C@_1DI@BJAMCEFE@?$AAT?$AAt?$AAy?$AA?5?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl?$AA?5?$AAS?$AAe@ 0000000000007a08     TerminalDxe:Terminal.obj
+ 0002:00000220       ??_C@_1DM@PPLMKALJ@?$AAL?$AAi?$AAn?$AAu?$AAx?$AA?5?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl?$AA?5@ 0000000000007a40     TerminalDxe:Terminal.obj
+ 0002:00000260       ??_C@_1DA@DNGKFDBM@?$AAX?$AAt?$AAe?$AAr?$AAm?$AA?5?$AAR?$AA6?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl@ 0000000000007a80     TerminalDxe:Terminal.obj
+ 0002:00000290       ??_C@_1CM@DGLFDMEM@?$AAV?$AAT?$AA?9?$AA4?$AA0?$AA0?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAC@ 0000000000007ab0     TerminalDxe:Terminal.obj
+ 0002:000002c0       ??_C@_1DI@LCCEMAAD@?$AAS?$AAC?$AAO?$AA?5?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl?$AA?5?$AAS?$AAe@ 0000000000007ae0     TerminalDxe:Terminal.obj
+ 0002:000002f8       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000007b18     TerminalDxe:Terminal.obj
+ 0002:00000310       ??_C@_0GF@MHFPGPDP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007b30     TerminalDxe:Terminal.obj
+ 0002:00000378       ??_C@_0BO@GJFIEIGN@TextModeCount?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000007b98     TerminalDxe:Terminal.obj
+ 0002:00000398       ??_C@_0CL@MDNJBMPK@Terminal?5?9?5Mode?5?$CFd?0?5Column?5?$DN?5?$CFd@ 0000000000007bb8     TerminalDxe:Terminal.obj
+ 0002:000003d0       ??_C@_0EG@NALKPNIJ@TerminalType?5?$DM?5?$CIsizeof?5?$CImTermin@ 0000000000007bf0     TerminalDxe:Terminal.obj
+ 0002:00000418       ??_C@_03LKLGDMJI@eng@      0000000000007c38     TerminalDxe:Terminal.obj
+ 0002:0000041c       ??_C@_02LFNMGJAP@en@       0000000000007c3c     TerminalDxe:Terminal.obj
+ 0002:00000420       ??_C@_0EN@BCPGLFLB@?$CIStatus?5?$DN?$DN?50?$CJ?5?$HM?$HM?5?$CIStatus?5?$DN?$DN?5?$CI?$CIR@ 0000000000007c40     TerminalDxe:Terminal.obj
+ 0002:00000470       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv@ 0000000000007c90     TerminalDxe:Terminal.obj
+ 0002:00000490       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000007cb0     TerminalDxe:Terminal.obj
+ 0002:000004b0       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv@ 0000000000007cd0     TerminalDxe:Terminal.obj
+ 0002:000004c8       ??_C@_0CH@BCIKCJLO@?$CBIsDevicePathEnd?5?$CIRemainingDevi@ 0000000000007ce8     TerminalDxe:Terminal.obj
+ 0002:000004f0       ??_C@_0FG@NFMFLCEH@TerminalDevice?9?$DOTerminalType?5?$DM?5@ 0000000000007d10     TerminalDxe:Terminal.obj
+ 0002:00000550       mSerialConsoleNames        0000000000007d70     TerminalDxe:Terminal.obj
+ 0002:000005a0       mTerminalType              0000000000007dc0     TerminalDxe:Terminal.obj
+ 0002:000005f0       ??_C@_0GL@JPKIDNJC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007e10     TerminalDxe:TerminalConOut.obj
+ 0002:0000065c       ??_C@_11LOCGONAA@@         0000000000007e7c     TerminalDxe:TerminalConOut.obj
+ 0002:00000660       ??_C@_0GK@OPMGLILE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007e80     TerminalDxe:TerminalConIn.obj
+ 0002:000006d0       ??_C@_0DM@CHNNECGH@RegsiteredData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5@ 0000000000007ef0     TerminalDxe:TerminalConIn.obj
+ 0002:00000710       ??_C@_0P@HNODLFPJ@Head?5?$DM?5128?5?$CL?51@ 0000000000007f30     TerminalDxe:TerminalConIn.obj
+ 0002:00000720       ??_C@_0P@DJNHKJNK@Tail?5?$DM?5128?5?$CL?51@ 0000000000007f40     TerminalDxe:TerminalConIn.obj
+ 0002:00000730       ??_C@_0BN@MDCEHADJ@Unexpected?5state?5in?5escape2?6@ 0000000000007f50     TerminalDxe:TerminalConIn.obj
+ 0002:00000750       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000007f70     TerminalDxe:TerminalConIn.obj
+ 0002:00000764       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000007f84     TerminalDxe:ComponentName.obj
+ 0002:00000770       ??_C@_1CO@BCLPFDOE@?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl@ 0000000000007f90     TerminalDxe:ComponentName.obj
+ 0002:000007a0       ??_C@_0GK@GMOOLEDH@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000007fc0     TerminalDxe:ComponentName.obj
+ 0002:00000810       ??_C@_0EP@EKIACOFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008030     BaseLib:String.obj
+ 0002:00000860       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008080     BaseLib:String.obj
+ 0002:00000878       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN@ 0000000000008098     BaseLib:String.obj
+ 0002:000008a0       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000080c0     BaseLib:String.obj
+ 0002:000008e0       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000008100     BaseLib:String.obj
+ 0002:00000920       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000008140     BaseLib:String.obj
+ 0002:00000958       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 0000000000008178     BaseLib:String.obj
+ 0002:00000978       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000008198     BaseLib:String.obj
+ 0002:00000998       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000081b8     BaseLib:LinkedList.obj
+ 0002:000009b0       ??_C@_0FD@FFBHKELN@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000081d0     BaseLib:LinkedList.obj
+ 0002:00000a08       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008228     BaseLib:LinkedList.obj
+ 0002:00000a30       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008250     BaseLib:LinkedList.obj
+ 0002:00000a50       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008270     BaseLib:LinkedList.obj
+ 0002:00000a70       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000008290     BaseLib:LinkedList.obj
+ 0002:00000a98       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 00000000000082b8     BaseLib:LinkedList.obj
+ 0002:00000ac0       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 00000000000082e0     BaseLib:LinkedList.obj
+ 0002:00000ae0       ??_C@_0FD@GHHGINGE@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008300     BaseLib:SafeString.obj
+ 0002:00000b40       ??_C@_0EA@PDPDJJNN@?$CFa?$CI?$CFd?$CJ?5?$CFa?3?5SAFE_STRING_CONSTRAI@ 0000000000008360     BaseLib:SafeString.obj
+ 0002:00000b80       ??_C@_0BB@ILPOOGOB@?$CIString?5?$CB?$DN?5NULL?$CJ@ 00000000000083a0     BaseLib:SafeString.obj
+ 0002:00000b98       ??_C@_0BD@NNBAKNOF@StrDecimalToUintnS@ 00000000000083b8     BaseLib:SafeString.obj
+ 0002:00000bb0       ??_C@_0P@HAABELCO@?$CIData?5?$CB?$DN?5NULL?$CJ@ 00000000000083d0     BaseLib:SafeString.obj
+ 0002:00000bc0       ??_C@_0DA@NJKHGHPM@?$CIStrnLenS?5?$CIString?0?5RSIZE_MAX?5?$CL?5@ 00000000000083e0     BaseLib:SafeString.obj
+ 0002:00000bf0       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000008410     BaseLib:DivU64x32.obj
+ 0002:00000c00       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000008420     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0002:00000c40       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008460     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000c90       ??_C@_0GD@KEIKLFBO@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000084b0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000cf8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000008518     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000d38       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000008558     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000d60       ??_C@_0GG@KGPFBOP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008580     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000dc8       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000085e8     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00000de8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008608     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000e00       ??_C@_0GD@BACINENJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008620     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000e68       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008688     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000e80       ??_C@_0GA@HBBJHLGK@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000086a0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000ee0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000008700     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000f00       ??_C@_0GM@CBJAAOLO@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008720     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000f70       ??_C@_0DP@CGKEPFGH@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 0000000000008790     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000fb0       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000087d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000fd0       ??_C@_0HC@EIFDGPFB@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000087f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001048       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008868     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001060       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008880     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001078       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008898     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001090       ??_C@_0HI@DCCKLNND@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000088b0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001108       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008928     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00001120       ??_C@_0GG@DADIGNFF@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008940     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00001188       ??_C@_0BF@MBJFHGBE@Size?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000089a8     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000011a0       mUefiDevicePathLibEndDevicePath 00000000000089c0     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000011b0       ??_C@_0FA@CCBFNMAA@e?3?2code?2adl_n100_code?2uefipldpl@ 00000000000089d0     UefiLib:UefiLib.obj
+ 0002:00001200       ??_C@_0EG@GOBFPEEP@Name?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Guid?5?$CB?$DN@ 0000000000008a20     UefiLib:UefiLib.obj
+ 0002:00001248       ??_C@_0BH@FMEOEIBC@?$CKValue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008a68     UefiLib:UefiLib.obj
+ 0002:00001260       ??_C@_0FI@IEGIMHDN@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008a80     UefiLib:UefiDriverModel.obj
+ 0002:000012c0       ??_C@_0FB@KBFNGELC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008ae0     DxeHobLib:HobLib.obj
+ 0002:00001318       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008b38     DxeHobLib:HobLib.obj
+ 0002:00001338       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000008b58     DxeHobLib:HobLib.obj
+ 0002:00001360       ??_C@_0FC@OLDIOFBJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008b80     BaseLib:Unaligned.obj
+ 0002:000013c0       ??_C@_0FO@GLOLNBHK@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000008be0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001420       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000008c40     BasePrintLib:PrintLibInternal.obj
+ 0002:00001440       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000008c60     BasePrintLib:PrintLibInternal.obj
+ 0002:00001488       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000008ca8     BasePrintLib:PrintLibInternal.obj
+ 0002:000014b0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000008cd0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001500       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000008d20     BasePrintLib:PrintLibInternal.obj
+ 0002:00001590       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000008db0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001618       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000008e38     BasePrintLib:PrintLibInternal.obj
+ 0002:00001628       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000008e48     BasePrintLib:PrintLibInternal.obj
+ 0002:00001638       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000008e58     BasePrintLib:PrintLibInternal.obj
+ 0002:00001670       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000008e90     BasePrintLib:PrintLibInternal.obj
+ 0002:00001680       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000008ea0     BasePrintLib:PrintLibInternal.obj
+ 0002:0000169c       ??_C@_04JIMNDDED@?$CF08X@  0000000000008ebc     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a4       ??_C@_02PCIJFNDE@?$AN?6@   0000000000008ec4     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a8       ??_C@_01LIIJDEN@?$AN@      0000000000008ec8     BasePrintLib:PrintLibInternal.obj
+ 0002:000016b0       mWarningString             0000000000008ed0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001750       mErrorString               0000000000008f70     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a10       mHexStr                    0000000000009230     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a20       ??_C@_0HM@INGECGBC@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009240     SblParseLib:SblParseLib.obj
+ 0002:00001aa0       ??_C@_0BF@GKGPMHBK@HandoffTable?5?$DN?50x?$CFp?6@ 00000000000092c0     SblParseLib:SblParseLib.obj
+ 0002:00001ab8       ??_C@_0BO@JGHCOEDD@?6?6ERROR?5?5the?5hob?5check?5fail?4?6@ 00000000000092d8     SblParseLib:SblParseLib.obj
+ 0002:00001ad8       ??_C@_0BI@NCGMODPG@HobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000092f8     SblParseLib:SblParseLib.obj
+ 0002:00001af0       ??_C@_0FL@HLNNCKBP@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009310     BaseLib:DivU64x32Remainder.obj
+ 0002:00001b50       ??_C@_0FJ@GBGHCPBH@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009370     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00001bb0       ??_C@_0BD@OMMAJMCK@?$CIAddress?5?$CG?53?$CJ?5?$DN?$DN?50@ 00000000000093d0     BaseIoLibIntrinsic:IoLib.obj
+ 0002:00001bc8       ??_C@_0BO@BAKALPJK@?$CI?$CIAddress?$CJ?5?$CG?5?$HO0xfffffff?$CJ?5?$DN?$DN?50@ 00000000000093e8     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001bf0       ??_C@_0GA@NDAEIBGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009410     BasePciExpressLib:PciExpressLib.obj
+ 0002:00001c50       ??_C@_0FE@EJOAIEGJ@e?3?2code?2adl_n100_code?2uefipldpl@ 0000000000009470     DxePcdLib:DxePcdLib.obj
+ 0002:00001ca8       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000094c8     DxePcdLib:DxePcdLib.obj
+ 0002:00001d14       __volatile_metadata        0000000000009534     <linker-defined>
+ 0003:00000000       gEfiGlobalVariableGuid     0000000000009a60     TerminalDxe:AutoGen.obj
+ 0003:00000010       gEdkiiLinuxTermGuid        0000000000009a70     TerminalDxe:AutoGen.obj
+ 0003:00000020       gEdkiiXtermR6Guid          0000000000009a80     TerminalDxe:AutoGen.obj
+ 0003:00000030       gUefiSerialPortInfoGuid    0000000000009a90     TerminalDxe:AutoGen.obj
+ 0003:00000040       gEfiComponentName2ProtocolGuid 0000000000009aa0     TerminalDxe:AutoGen.obj
+ 0003:00000050       gPcdProtocolGuid           0000000000009ab0     TerminalDxe:AutoGen.obj
+ 0003:00000060       _gPcd_BinaryPatch_PcdPciSerialParameters 0000000000009ac0     TerminalDxe:AutoGen.obj
+ 0003:00000080       gEdkiiSCOTermGuid          0000000000009ae0     TerminalDxe:AutoGen.obj
+ 0003:00000090       gEfiSimpleTextOutProtocolGuid 0000000000009af0     TerminalDxe:AutoGen.obj
+ 0003:000000a0       gEfiVTUTF8Guid             0000000000009b00     TerminalDxe:AutoGen.obj
+ 0003:000000b0       gEfiSerialIoProtocolGuid   0000000000009b10     TerminalDxe:AutoGen.obj
+ 0003:000000c0       gEfiVT100Guid              0000000000009b20     TerminalDxe:AutoGen.obj
+ 0003:000000d0       gEfiDevicePathProtocolGuid 0000000000009b30     TerminalDxe:AutoGen.obj
+ 0003:000000e0       _gPcd_BinaryPatch_PcdSerialLineControl 0000000000009b40     TerminalDxe:AutoGen.obj
+ 0003:000000e8       gEfiSimpleTextInputExProtocolGuid 0000000000009b48     TerminalDxe:AutoGen.obj
+ 0003:000000f8       gEfiTtyTermGuid            0000000000009b58     TerminalDxe:AutoGen.obj
+ 0003:00000108       gEfiSimpleTextInProtocolGuid 0000000000009b68     TerminalDxe:AutoGen.obj
+ 0003:00000118       _gPcd_BinaryPatch_PcdSerialUseMmio 0000000000009b78     TerminalDxe:AutoGen.obj
+ 0003:0000011c       _gPcd_BinaryPatch_PcdDebugPrintErrorLevel 0000000000009b7c     TerminalDxe:AutoGen.obj
+ 0003:00000120       gEfiVT100PlusGuid          0000000000009b80     TerminalDxe:AutoGen.obj
+ 0003:00000130       _gPcd_BinaryPatch_PcdDebugPropertyMask 0000000000009b90     TerminalDxe:AutoGen.obj
+ 0003:00000138       gEfiHobListGuid            0000000000009b98     TerminalDxe:AutoGen.obj
+ 0003:00000148       gEdkiiVT400Guid            0000000000009ba8     TerminalDxe:AutoGen.obj
+ 0003:00000158       gEfiDriverBindingProtocolGuid 0000000000009bb8     TerminalDxe:AutoGen.obj
+ 0003:00000168       gEfiComponentNameProtocolGuid 0000000000009bc8     TerminalDxe:AutoGen.obj
+ 0003:00000178       _gPcd_BinaryPatch_PcdSerialFifoControl 0000000000009bd8     TerminalDxe:AutoGen.obj
+ 0003:00000180       gEfiPcAnsiGuid             0000000000009be0     TerminalDxe:AutoGen.obj
+ 0003:00000190       _gPcd_BinaryPatch_PcdSerialExtendedTxFifoSize 0000000000009bf0     TerminalDxe:AutoGen.obj
+ 0003:000001a0       mTerminalDevTemplate       0000000000009c00     TerminalDxe:Terminal.obj
+ 0003:000002f8       mTerminalConsoleModeData   0000000000009d58     TerminalDxe:Terminal.obj
+ 0003:00000328       gTerminalDriverBinding     0000000000009d88     TerminalDxe:Terminal.obj
+ 0003:00000358       mClearScreenString         0000000000009db8     TerminalDxe:TerminalConOut.obj
+ 0003:00000368       mSetCursorPositionString   0000000000009dc8     TerminalDxe:TerminalConOut.obj
+ 0003:00000380       mCursorForwardString       0000000000009de0     TerminalDxe:TerminalConOut.obj
+ 0003:00000390       mCursorBackwardString      0000000000009df0     TerminalDxe:TerminalConOut.obj
+ 0003:000003a0       mSetModeString             0000000000009e00     TerminalDxe:TerminalConOut.obj
+ 0003:000003b0       mSetAttributeString        0000000000009e10     TerminalDxe:TerminalConOut.obj
+ 0003:000003d0       UnicodeToPcAnsiOrAscii     0000000000009e30     TerminalDxe:TerminalConOut.obj
+ 0003:000004a0       gTerminalComponentName2    0000000000009f00     TerminalDxe:ComponentName.obj
+ 0003:000004b8       gTerminalComponentName     0000000000009f18     TerminalDxe:ComponentName.obj
+ 0003:000004d0       mTerminalDriverNameTable   0000000000009f30     TerminalDxe:ComponentName.obj
+ 0003:000004f0       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000009f50     TerminalDxe:AutoGen.obj
+ 0003:000004f8       _gPcd_BinaryPatch_PcdSerialRegisterStride 0000000000009f58     TerminalDxe:AutoGen.obj
+ 0003:000004fc       _gPcd_BinaryPatch_PcdSerialDetectCable 0000000000009f5c     TerminalDxe:AutoGen.obj
+ 0003:000004fd       _gPcd_BinaryPatch_PcdSerialUseHardwareFlowControl 0000000000009f5d     TerminalDxe:AutoGen.obj
+ 0003:00000500       _gPcd_BinaryPatch_PcdUartDefaultBaudRate 0000000000009f60     TerminalDxe:AutoGen.obj
+ 0003:00000508       _gPcd_BinaryPatch_PcdDefaultTerminalType 0000000000009f68     TerminalDxe:AutoGen.obj
+ 0003:0000050c       _gPcd_BinaryPatch_PcdSerialClockRate 0000000000009f6c     TerminalDxe:AutoGen.obj
+ 0003:00000510       _gPcd_BinaryPatch_PcdSerialBaudRate 0000000000009f70     TerminalDxe:AutoGen.obj
+ 0003:00000518       gST                        0000000000009f78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000520       gBS                        0000000000009f80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000528       gImageHandle               0000000000009f88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000530       gRT                        0000000000009f90     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000538       mHobList                   0000000000009f98     DxeHobLib:HobLib.obj
+ 0003:00000540       mPcd                       0000000000009fa0     DxePcdLib:DxePcdLib.obj
+
+ entry point at        0001:000000d4
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0005:00000000       $unwind$TerminalConInReset 000000000000a440     TerminalDxe:TerminalConIn.obj
+ 0005:00000000       $unwind$TranslateRawDataToEfiKey 000000000000a440     TerminalDxe:TerminalConIn.obj
+ 0005:00000000       $unwind$MmioRead32         000000000000a440     BaseIoLibIntrinsic:IoLib.obj
+ 0005:00000000       $unwind$GetFirstNode       000000000000a440     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$GetNextNode        000000000000a440     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    000000000000a440     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           000000000000a440     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PciExpressRead32   000000000000a440     BasePciExpressLib:PciExpressLib.obj
+ 0005:00000000       $unwind$GetNextHob         000000000000a440     DxeHobLib:HobLib.obj
+ 0005:00000000       $unwind$DevicePathNodeLength 000000000000a440     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$NextDevicePathNode 000000000000a440     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$SetDevicePathNodeLength 000000000000a440     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000000a440     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000000       $unwind$AllocateZeroPool   000000000000a440     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 000000000000a448     TerminalDxe:AutoGen.obj
+ 0005:00000018       $unwind$ProcessModuleEntryPointList 000000000000a458     TerminalDxe:AutoGen.obj
+ 0005:00000024       $unwind$TerminalTypeFromGuid 000000000000a464     TerminalDxe:Terminal.obj
+ 0005:00000024       $unwind$UnicodeFiFoInsertOneKey 000000000000a464     TerminalDxe:TerminalConIn.obj
+ 0005:00000024       $unwind$TerminalConOutSetMode 000000000000a464     TerminalDxe:TerminalConOut.obj
+ 0005:00000024       $unwind$AsciiStrnCmp       000000000000a464     BaseLib:String.obj
+ 0005:00000024       $unwind$StrLen             000000000000a464     BaseLib:String.obj
+ 0005:00000024       $unwind$CompareMem         000000000000a464     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:00000024       $unwind$CopyMem            000000000000a464     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000024       $unwind$CopyGuid           000000000000a464     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000024       $unwind$BasePrintLibValueToString 000000000000a464     BasePrintLib:PrintLibInternal.obj
+ 0005:00000024       $unwind$GetHobList         000000000000a464     DxeHobLib:HobLib.obj
+ 0005:00000024       $unwind$GetDevicePathSize  000000000000a464     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:00000024       $unwind$FreeUnicodeStringTable 000000000000a464     UefiLib:UefiLib.obj
+ 0005:00000024       $unwind$IsLanguageSupported 000000000000a464     UefiLib:UefiLib.obj
+ 0005:00000034       $unwind$TerminalDriverBindingSupported 000000000000a474     TerminalDxe:Terminal.obj
+ 0005:00000044       $unwind$StopTerminalStateMachine 000000000000a484     TerminalDxe:Terminal.obj
+ 0005:00000044       $unwind$TerminalFreeNotifyList 000000000000a484     TerminalDxe:Terminal.obj
+ 0005:00000044       $unwind$IsKeyRegistered    000000000000a484     TerminalDxe:TerminalConIn.obj
+ 0005:00000044       $unwind$TerminalConInReadKeyStrokeEx 000000000000a484     TerminalDxe:TerminalConIn.obj
+ 0005:00000044       $unwind$TerminalConInResetEx 000000000000a484     TerminalDxe:TerminalConIn.obj
+ 0005:00000044       $unwind$TerminalConOutClearScreen 000000000000a484     TerminalDxe:TerminalConOut.obj
+ 0005:00000044       $unwind$TerminalConOutReset 000000000000a484     TerminalDxe:TerminalConOut.obj
+ 0005:00000044       $unwind$TerminalConOutTestString 000000000000a484     TerminalDxe:TerminalConOut.obj
+ 0005:00000044       $unwind$InsertTailList     000000000000a484     BaseLib:LinkedList.obj
+ 0005:00000044       $unwind$InternalBaseLibIsListValid 000000000000a484     BaseLib:LinkedList.obj
+ 0005:00000044       $unwind$IsNull             000000000000a484     BaseLib:LinkedList.obj
+ 0005:00000044       $unwind$AsciiStrLen        000000000000a484     BaseLib:String.obj
+ 0005:00000044       $unwind$ZeroMem            000000000000a484     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000044       $unwind$IsDevicePathEnd    000000000000a484     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000044       $unwind$CompareIso639LanguageCode 000000000000a484     UefiLib:UefiLib.obj
+ 0005:00000044       $unwind$InternalAllocateCopyPool 000000000000a484     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000044       $unwind$GetGuidHobDataFromSbl 000000000000a484     SblParseLib:SblParseLib.obj
+ 0005:00000050       $unwind$InitializeTerminalConsoleTextMode 000000000000a490     TerminalDxe:Terminal.obj
+ 0005:00000064       $unwind$StartTerminalStateMachine 000000000000a4a4     TerminalDxe:Terminal.obj
+ 0005:00000074       $unwind$InitializeControllerNameTable 000000000000a4b4     TerminalDxe:Terminal.obj
+ 0005:00000088       $unwind$TerminalDriverBindingStart 000000000000a4c8     TerminalDxe:Terminal.obj
+ 0005:000000a4       $unwind$TerminalDriverBindingStop 000000000000a4e4     TerminalDxe:Terminal.obj
+ 0005:000000bc       $unwind$TerminalUpdateConsoleDevVariable 000000000000a4fc     TerminalDxe:Terminal.obj
+ 0005:000000d0       $unwind$TerminalRemoveConsoleDevVariable 000000000000a510     TerminalDxe:Terminal.obj
+ 0005:000000e8       $unwind$SetTerminalDevicePath 000000000000a528     TerminalDxe:Terminal.obj
+ 0005:000000f8       $unwind$TerminalConOutOutputString 000000000000a538     TerminalDxe:TerminalConOut.obj
+ 0005:00000110       $unwind$TerminalConOutQueryMode 000000000000a550     TerminalDxe:TerminalConOut.obj
+ 0005:00000124       $unwind$TerminalConOutSetAttribute 000000000000a564     TerminalDxe:TerminalConOut.obj
+ 0005:00000140       $unwind$TerminalConOutSetCursorPosition 000000000000a580     TerminalDxe:TerminalConOut.obj
+ 0005:00000154       $unwind$ReadKeyStrokeWorker 000000000000a594     TerminalDxe:TerminalConIn.obj
+ 0005:00000154       $unwind$TerminalConInUnregisterKeyNotify 000000000000a594     TerminalDxe:TerminalConIn.obj
+ 0005:00000154       $unwind$IsDevicePathValid  000000000000a594     UefiDevicePathLib:DevicePathUtilities.obj
+ 0005:00000168       $unwind$TerminalConInReadKeyStroke 000000000000a5a8     TerminalDxe:TerminalConIn.obj
+ 0005:00000174       $unwind$TerminalConInWaitForKey 000000000000a5b4     TerminalDxe:TerminalConIn.obj
+ 0005:00000174       $unwind$TerminalConInWaitForKeyEx 000000000000a5b4     TerminalDxe:TerminalConIn.obj
+ 0005:00000174       $unwind$GetPcdProtocol     000000000000a5b4     DxePcdLib:DxePcdLib.obj
+ 0005:00000174       $unwind$FreePool           000000000000a5b4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000174       $unwind$InternalAllocatePool 000000000000a5b4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000017c       $unwind$TerminalConInRegisterKeyNotify 000000000000a5bc     TerminalDxe:TerminalConIn.obj
+ 0005:0000017c       $unwind$AppendDevicePath   000000000000a5bc     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:0000017c       $unwind$AppendDevicePathInstance 000000000000a5bc     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:00000194       $unwind$TerminalConInTimerHandler 000000000000a5d4     TerminalDxe:TerminalConIn.obj
+ 0005:000001a4       $unwind$KeyNotifyProcessHandler 000000000000a5e4     TerminalDxe:TerminalConIn.obj
+ 0005:000001bc       $unwind$EfiKeyFiFoInsertOneKey 000000000000a5fc     TerminalDxe:TerminalConIn.obj
+ 0005:000001d4       $unwind$UnicodeToEfiKeyFlushState 000000000000a614     TerminalDxe:TerminalConIn.obj
+ 0005:000001e8       $unwind$UnicodeToEfiKey    000000000000a628     TerminalDxe:TerminalConIn.obj
+ 0005:00000200       $unwind$TerminalComponentNameGetDriverName 000000000000a640     TerminalDxe:ComponentName.obj
+ 0005:00000208       $unwind$TerminalComponentNameGetControllerName 000000000000a648     TerminalDxe:ComponentName.obj
+ 0005:00000220       $unwind$VTUTF8RawDataToUnicode 000000000000a660     TerminalDxe:Vtutf8.obj
+ 0005:00000238       $unwind$StrDecimalToUintnS 000000000000a678     BaseLib:SafeString.obj
+ 0005:0000024c       $unwind$CompareGuid        000000000000a68c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000268       $unwind$DebugPrint         000000000000a6a8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000270       $unwind$DebugPrintMarker   000000000000a6b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000284       $unwind$DebugAssert        000000000000a6c4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000028c       $unwind$SerialPortInitialize 000000000000a6cc     BaseSerialPortLib16550:BaseSerialPortLib16550.obj
+ 0005:0000028c       $unwind$AppendDevicePathNode 000000000000a6cc     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:0000028c       $unwind$GetNextDevicePathInstance 000000000000a6cc     UefiDevicePathLib:UefiDevicePathLib.obj
+ 0005:0000028c       $unwind$LookupUnicodeString2 000000000000a6cc     UefiLib:UefiLib.obj
+ 0005:000002a4       $unwind$AddUnicodeString2  000000000000a6e4     UefiLib:UefiLib.obj
+ 0005:000002c0       $unwind$GetEfiGlobalVariable2 000000000000a700     UefiLib:UefiLib.obj
+ 0005:000002d0       $unwind$PlatformHookSerialPortInitialize 000000000000a710     PlatformHookLib:PlatformHookLib.obj
+ 0005:000002d8       $unwind$AsciiSPrint        000000000000a718     BasePrintLib:PrintLib.obj
+ 0005:000002e0       $unwind$BasePrintLibSPrintMarker 000000000000a720     BasePrintLib:PrintLibInternal.obj
+ 0005:000002fc       $unwind$BasePrintLibSPrint 000000000000a73c     BasePrintLib:PrintLibInternal.obj
+ 0005:00000304       $unwind$SerialPortWrite    000000000000a744     BaseSerialPortLib16550:BaseSerialPortLib16550.obj

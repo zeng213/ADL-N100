@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\2FA2A6DA-11D5-4dc3-999A-749648B03C56PiSmmIpl\2FA2A6DA-11D5-4dc3-999A-749648B03C56SEC1.1.dpx E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdeModulePkg\Core\PiSmmCore\PiSmmIpl\OUTPUT\PiSmmIpl.depex

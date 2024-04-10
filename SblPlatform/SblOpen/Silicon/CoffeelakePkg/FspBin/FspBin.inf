@@ -1,0 +1,23 @@
+## @file
+#  File to describe FSP repo information
+#
+#  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+
+[UserExtensions.SBL."CloneRepo"]
+  REPO    = https://github.com/intel/FSP.git
+  COMMIT  = eb25f19ef7fbe88fb207c6896a37a2035bba9bc5
+
+[UserExtensions.SBL."CopyList"]
+  CoffeeLakeFspBinPkg/Fsp.fd                 : Silicon/CoffeelakePkg/FspBin/FspDbg.bin
+  CoffeeLakeFspBinPkg/Fsp.fd                 : Silicon/CoffeelakePkg/FspBin/FspRel.bin
+  CoffeeLakeFspBinPkg/Fsp.bsf                : Silicon/CoffeelakePkg/FspBin/Fsp.bsf
+  CoffeeLakeFspBinPkg/Include/FspUpd.h       : Silicon/CoffeelakePkg/Include/FspUpd.h
+  CoffeeLakeFspBinPkg/Include/FsptUpd.h      : Silicon/CoffeelakePkg/Include/FsptUpd.h
+  CoffeeLakeFspBinPkg/Include/FspmUpd.h      : Silicon/CoffeelakePkg/Include/FspmUpd.h
+  CoffeeLakeFspBinPkg/Include/FspsUpd.h      : Silicon/CoffeelakePkg/Include/FspsUpd.h

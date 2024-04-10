@@ -1,0 +1,235 @@
+## @file
+#  Copyright (c) 2008 - 2023, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = FirmwareUpdate
+  FILE_GUID                  = E2E57F60-4C17-461e-92A2-E428DBB12D06
+  MODULE_TYPE                = PEIM
+  VERSION_STRING             = 1.0
+
+[Packages.IA32]
+  MdePkg/MdePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+  PayloadPkg/PayloadPkg.dec
+  Silicon/CommonSocPkg/CommonSocPkg.dec
+
+[Binaries.IA32]
+  PE32|FirmwareUpdate.efi
+  PEI_DEPEX|FirmwareUpdate.depex
+  DISPOSABLE|FirmwareUpdate.pdb
+
+[PatchPcd.IA32]
+  ## CONSUMES
+  gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress|0x00000000c0000000|0x30EA8
+
+  ## PRODUCES
+  gPayloadTokenSpaceGuid.PcdPayloadHobList|0x00000000|0x32080
+
+  gPlatformCommonLibTokenSpaceGuid.PcdAcpiPmTimerBase|0x1808|0x30EB0
+
+  gPayloadTokenSpaceGuid.PcdFwUpdStatusBase|0x00000000|0x32094
+
+  gPayloadTokenSpaceGuid.PcdGlobalDataAddress|0x00000000|0x32084
+
+  ## PRODUCES
+  gPlatformCommonLibTokenSpaceGuid.PcdSerialUseMmio|0x00|0x320A8
+
+  ## PRODUCES
+  gPlatformCommonLibTokenSpaceGuid.PcdSerialRegisterBase|0x0000000000000000|0x32088
+
+  ## PRODUCES
+  gPlatformCommonLibTokenSpaceGuid.PcdSerialBaudRate|0x00000000|0x320AC
+
+  ## PRODUCES
+  gPlatformCommonLibTokenSpaceGuid.PcdSerialRegisterStride|0x00000000|0x32090
+
+  gPlatformCommonLibTokenSpaceGuid.PcdEmmcMaxRwBlockNumber|0xffff|0x30EB4
+
+  gPayloadTokenSpaceGuid.PcdPayloadStackSize|0x00020000|0x30DE0
+
+  gPayloadTokenSpaceGuid.PcdPayloadHeapSize|0x04000000|0x30E24
+
+
+[Protocols.IA32]
+
+[Ppis.IA32]
+
+[Guids.IA32]
+  gLoaderMemoryMapInfoGuid
+
+  gLoaderFspInfoGuid
+
+  gLoaderSystemTableInfoGuid
+
+  gEfiPartTypeSystemPartGuid
+
+  gFirmwareUpdateImageFileGuid
+
+  gFlashMapInfoGuid
+
+  gBootLoaderVersionFileGuid
+
+  gBootLoaderVersionGuid
+
+  gEfiGraphicsInfoHobGuid
+
+  gPayloadKeyHashGuid
+
+  gDeviceTableHobGuid
+
+  gUniversalPayloadSerialPortInfoGuid
+
+  gZeroGuid
+
+  gMeBiosPayloadHobGuid
+
+  gPeiFirmwarePerformanceGuid
+
+  gEdkiiFpdtExtendedFirmwarePerformanceGuid
+
+  gCsmePerformanceInfoGuid
+
+  gEfiPartTypeUnusedGuid
+
+  gLoaderPlatformInfoGuid
+
+  gLoaderPerformanceInfoGuid
+
+  gTcgEvent2EntryHobGuid
+
+  gOsBootOptionGuid
+
+  gSblCompFWUpdateImageFileGuid
+
+  gLoaderLibraryDataGuid
+
+  gLoaderPlatformDataGuid
+
+  gBootLoaderServiceGuid
+
+  gLoaderPciRootBridgeInfoGuid
+
+  gOsConfigDataGuid
+
+
+[PcdEx.IA32]
+
+[LibraryClasses.IA32]
+## @LIB_INSTANCES
+#  BootloaderCommonPkg/Library/UsbBusLib/UsbBusLib.inf
+#  BootloaderCommonPkg/Library/XhciLib/XhciLib.inf
+#  BootloaderCommonPkg/Library/UsbInitLib/UsbInitLib.inf
+#  BootloaderCommonPkg/Library/IoMmuLib/IoMmuLib.inf
+#  BootloaderCommonPkg/Library/UsbBlockIoLib/UsbBlockIoLib.inf
+#  BootloaderCommonPkg/Library/GraphicsLib/GraphicsLib.inf
+#  BootloaderCommonPkg/Library/ConsoleOutLib/ConsoleOutLib.inf
+#  BootloaderCommonPkg/Library/DebugPortLib/DebugPortLibNull.inf
+#  BootloaderCorePkg/Library/BootloaderCoreLib/BootloaderCoreLib.inf
+#  BootloaderCorePkg/Library/DebugPrintErrorLevelLib/DebugPrintErrorLevelLib.inf
+#  BootloaderCommonPkg/Library/DebugLogBufferLib/DebugLogBufferLib.inf
+#  BootloaderCommonPkg/Library/SerialPortLib/SerialPortLib.inf
+#  BootloaderCommonPkg/Library/TimeStampLib/TimeStampLib.inf
+#  BootloaderCommonPkg/Library/HobLib/HobLib.inf
+#  PayloadPkg/Library/PayloadLib/PayloadLib.inf
+#  BootloaderCommonPkg/Library/BootloaderCommonLib/BootloaderCommonLib.inf
+#  BootloaderCommonPkg/Library/PcdLib/PcdLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  BootloaderCommonPkg/Library/AcpiTimerLib/AcpiTimerLib.inf
+#  MdePkg/Library/BaseMemoryLibSse2/BaseMemoryLibSse2.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  BootloaderCommonPkg/Library/FullMemoryAllocationLib/FullMemoryAllocationLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  BootloaderCommonPkg/Library/BootloaderDebugLib/BootloaderDebugLib.inf
+#  PayloadPkg/Library/PlatformHookLib/PlatformHookLib.inf
+#  BootloaderCommonPkg/Library/ExtraBaseLib/ExtraBaseLib.inf
+#  MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
+#  BootloaderCommonPkg/Library/LiteVariableLib/LiteVariableLib.inf
+#  MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
+#  BootloaderCommonPkg/Library/MmcTuningLib/MmcTuningLib.inf
+#  BootloaderCommonPkg/Library/AhciLib/AhciLib.inf
+#  BootloaderCommonPkg/Library/UfsBlockIoLib/UfsBlockIoLib.inf
+#  BootloaderCommonPkg/Library/SpiBlockIoLib/SpiBlockIoLib.inf
+#  BootloaderCommonPkg/Library/MemoryDeviceBlockIoLib/MemoryDeviceBlockIoLib.inf
+#  BootloaderCommonPkg/Library/NvmExpressLib/NvmExpressLib.inf
+#  BootloaderCommonPkg/Library/MmcAccessLib/MmcAccessLib.inf
+#  Silicon/AlderlakePkg/Library/MeChipsetLib/MeChipsetLib.inf
+#  BootloaderCommonPkg/Library/MediaAccessLib/MediaAccessLib.inf
+#  Silicon/CommonSocPkg/Library/HeciLib/HeciLib.inf
+#  BootloaderCommonPkg/Library/Crc32Lib/Crc32Lib.inf
+#  BootloaderCommonPkg/Library/Ext23Lib/Ext23Lib.inf
+#  BootloaderCommonPkg/Library/FatLib/FatLib.inf
+#  BootloaderCommonPkg/Library/DebugAgentLib/DebugAgentLibNull.inf
+#  BootloaderCommonPkg/Library/LoaderPerformanceLib/LoaderPerformanceLib.inf
+#  BootloaderCommonPkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
+#  BootloaderCommonPkg/Library/Lz4CompressLib/Lz4CompressLib.inf
+#  MdePkg/Library/BaseRngLib/BaseRngLib.inf
+#  BootloaderCommonPkg/Library/IppCryptoLib/IppCryptoLib.inf
+#  BootloaderCorePkg/Library/HobBuildLib/HobBuildLib.inf
+#  Platform/AlderlakeBoardPkg/Library/ResetSystemLib/ResetSystemLib.inf
+#  Silicon/AlderlakePkg/Library/HeciMeExtLib/HeciMeExtLib.inf
+#  BootloaderCommonPkg/Library/PartitionLib/PartitionLib.inf
+#  BootloaderCommonPkg/Library/FileSystemLib/FileSystemLib.inf
+#  BootloaderCommonPkg/Library/LitePeCoffLib/LitePeCoffLib.inf
+#  Silicon/CommonSocPkg/Library/WatchDogTimerLib/WatchDogTimerLib.inf
+#  BootloaderCommonPkg/Library/PagingLib/PagingLib.inf
+#  PayloadPkg/Library/PayloadSupportLib/PayloadSupportLib.inf
+#  BootloaderCommonPkg/Library/ModuleEntryLib/ModuleEntryLib.inf
+#  BootloaderCommonPkg/Library/DecompressLib/DecompressLib.inf
+#  BootloaderCommonPkg/Library/SecureBootLib/SecureBootLib.inf
+#  BootloaderCommonPkg/Library/TpmLib/TpmLib.inf
+#  Silicon/AlderlakePkg/Library/FirmwareUpdateLib/FirmwareUpdateLib.inf
+#  PayloadPkg/Library/PayloadEntryLib/PayloadEntryLib.inf
+#  BootloaderCommonPkg/Library/LiteFvLib/LiteFvLib.inf
+#  BootloaderCommonPkg/Library/ConfigDataLib/ConfigDataLib.inf
+#  BootloaderCommonPkg/Library/ContainerLib/ContainerLib.inf
+#  BootloaderCommonPkg/Library/StringSupportLib/StringSupportLib.inf
+#  BootloaderCommonPkg/Library/BootOptionLib/BootOptionLib.inf
+#  Silicon/CommonSocPkg/Library/BootGuardLibCBnT/BootGuardLibCBnT.inf
+#  Silicon/CommonSocPkg/Library/TcoTimerLib/TcoTimerLib.inf
+
+[Depex.IA32]
+#  TRUE
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[BuildOptions.IA32]
+## @AsBuilt
+##   MSFT:DEBUG_VS2019_IA32_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /MACHINE:X86 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG
+##   MSFT:DEBUG_VS2019_IA32_NASM_FLAGS = -Ox -f win32 -g
+##   MSFT:DEBUG_VS2019_IA32_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2019_IA32_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2019_IA32_CC_FLAGS = /nologo /arch:IA32 /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Z7 /Gw -Ie:\code\adl_n100_code\sblplatform\SblOpen\Silicon\AlderlakePkg\Adln\Include -DDISABLE_NEW_DEPRECATED_INTERFACES
+##   MSFT:DEBUG_VS2019_IA32_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2019_IA32_DLINK2_FLAGS = /WHOLEARCHIVE
+##   MSFT:DEBUG_VS2019_IA32_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_IA32_DTC_FLAGS = -H epapr
+##   MSFT:DEBUG_VS2019_IA32_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2019_IA32_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2019_IA32_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2019_IA32_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2019_IA32_NASMB_FLAGS = -f bin
+##   MSFT:DEBUG_VS2019_IA32_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2019_IA32_DEPS_FLAGS = /showIncludes
+##   MSFT:DEBUG_VS2019_IA32_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2019_IA32_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2019_IA32_ASM_FLAGS = /nologo /c /WX /W3 /Cx /coff /Zd /Zi
+##   MSFT:DEBUG_VS2019_IA32_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2019_IA32_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2019_IA32_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:DEBUG_VS2019_IA32_GENFW_FLAGS = 

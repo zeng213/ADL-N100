@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\9B680FCE-AD6B-4F3A-B60B-F59899003443DevicePathDxe\9B680FCE-AD6B-4F3A-B60B-F59899003443SEC1.1.dpx E:\Code\ADL_N100_Code\UefiPldPlatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\DevicePathDxe\DevicePathDxe\OUTPUT\DevicePathDxe.depex

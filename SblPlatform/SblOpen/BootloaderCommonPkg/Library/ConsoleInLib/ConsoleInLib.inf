@@ -1,0 +1,35 @@
+## @file
+#  INF for console input library
+#
+#  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = ConsoleInLib
+  FILE_GUID                      = 1F78F562-79BB-4090-9110-729E870B84F4
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = ConsoleInLib
+
+[Sources]
+  ConsoleInLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderCommonPkg/BootloaderCommonPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  SerialPortLib
+  UsbKbLib
+  DebugPortLib
+
+[Guids]
+
+[Pcd]
+  gPlatformCommonLibTokenSpaceGuid.PcdConsoleInDeviceMask
+  gPlatformCommonLibTokenSpaceGuid.PcdSourceDebugEnabled

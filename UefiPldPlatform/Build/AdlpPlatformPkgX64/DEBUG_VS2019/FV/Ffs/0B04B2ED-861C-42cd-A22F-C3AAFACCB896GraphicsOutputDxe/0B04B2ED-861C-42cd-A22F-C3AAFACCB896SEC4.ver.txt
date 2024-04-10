@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o e:\code\adl_n100_code\uefipldplatform\Build\AdlpPlatformPkgX64\DEBUG_VS2019\FV\Ffs\0B04B2ED-861C-42cd-A22F-C3AAFACCB896GraphicsOutputDxe\0B04B2ED-861C-42cd-A22F-C3AAFACCB896SEC4.ver
