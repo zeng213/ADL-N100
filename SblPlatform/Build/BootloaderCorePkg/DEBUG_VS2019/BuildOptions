@@ -1,4 +1,0 @@
-gCommandLineDefines: {'ARCH': 'IA32'}
-BuildOptionPcd: []
-Active Platform: e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\BootloaderCorePkg.dsc
-Flash Image Definition: e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\BootloaderCorePkg.fdf

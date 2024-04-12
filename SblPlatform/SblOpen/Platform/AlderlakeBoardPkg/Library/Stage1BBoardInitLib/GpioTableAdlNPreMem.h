@@ -15,16 +15,43 @@
 
 GLOBAL_REMOVE_IF_UNREFERENCED GPIO_INIT_CONFIG mGpioTablePreMemAdlNDdr5Crb[] =
 {
-  // PCH M.2 SSD
-  {GPIO_VER2_LP_GPP_D16,  {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // M2_PCH_SSD_PWREN
-  {GPIO_VER2_LP_GPP_H0,   {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutLow,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // M2_SSD_RST_N
+  // // PCH M.2 SSD
+  // {GPIO_VER2_LP_GPP_D16,  {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // M2_PCH_SSD_PWREN
+  // {GPIO_VER2_LP_GPP_H0,   {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutLow,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // M2_SSD_RST_N
+  // // X1 SLOT
+  // {GPIO_VER2_LP_GPP_A8,   {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // X1_SLOT_PWREN
+  // {GPIO_VER2_LP_GPP_F10,  {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutLow,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // X1_Slot_RESET
+  // //Type-C HDMI ALS (TCP1)
+  // {GPIO_VER2_LP_GPP_A22,  {GpioPadModeGpio,    GpioHostOwnGpio, GpioDirOut,       GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}}, // TCP1_HDMI_ALS2_PWR_EN
 
-  //X1 SLOT
-  {GPIO_VER2_LP_GPP_A8,   {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // X1_SLOT_PWREN
-  {GPIO_VER2_LP_GPP_F10,  {GpioPadModeGpio, GpioHostOwnAcpi, GpioDirOut,  GpioOutLow,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // X1_Slot_RESET
+  {GPIO_VER2_LP_GPP_A11,  {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // BT_RF_KILL_N
+  // {GPIO_VER2_LP_GPP_A15,  {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // USB_OC2  
+  // {GPIO_VER2_LP_GPP_A16,  {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // USB_OC3
+  {GPIO_VER2_LP_GPP_A19,  {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // TCP0_HPD
 
-  //Type-C HDMI ALS (TCP1)
-  {GPIO_VER2_LP_GPP_A22,  {GpioPadModeGpio, GpioHostOwnGpio, GpioDirOut,  GpioOutHigh,  GpioIntDis, GpioPlatformReset,  GpioTermNone}}, // TCP1_HDMI_ALS2_PWR_EN
+  // HDMI
+  // {GPIO_VER2_LP_GPP_A18,  {GpioPadModeGpio,   GpioHostOwnAcpi,  GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // DDI2_HDMI_HPD 
+  {GPIO_VER2_LP_GPP_H15,  {GpioPadModeGpio,   GpioHostOwnAcpi,  GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // DDI2_DDC_SCL
+  {GPIO_VER2_LP_GPP_H17,  {GpioPadModeGpio,   GpioHostOwnAcpi,  GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // DDI2_DDC_SDA 
+  {GPIO_VER2_LP_GPP_E22,  {GpioPadModeGpio,   GpioHostOwnAcpi,  GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // DDI1_DDC_SCL
+  {GPIO_VER2_LP_GPP_E23,  {GpioPadModeGpio,   GpioHostOwnAcpi,  GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // DDI1_DDC_SDA
+
+
+  {GPIO_VER2_LP_GPP_B11,  {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirDefault,   GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // PMCALERT_N  
+  {GPIO_VER2_LP_GPP_D5,   {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // PCIE_SSD_CLKREQ_N
+  {GPIO_VER2_LP_GPP_D6,   {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // SRC_CLKREQ1
+  {GPIO_VER2_LP_GPP_D7,   {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // WLAN_CLKREQ_N
+  {GPIO_VER2_LP_GPP_D8,   {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // PCIE_LAN_CLKREQ
+
+  {GPIO_VER2_LP_GPP_E1,   {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutLow,       GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // WLAN_EN_OFF
+  {GPIO_VER2_LP_GPP_E6,   {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutHigh,      GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // TP_PANEL_RST_N
+  {GPIO_VER2_LP_GPP_E16,  {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // BRD_ID1
+
+  {GPIO_VER2_LP_GPP_H0,   {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // M.2_PCH_SSD_RESET_N    
+  {GPIO_VER2_LP_GPP_H2,   {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirOut,       GpioOutLow,       GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // WLAN_RST_N
+  {GPIO_VER2_LP_GPP_H19,  {GpioPadModeNative1, GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // PCIE_LAN_CLKREQ_2 
+
+  {GPIO_VER2_LP_GPD2,     {GpioPadModeGpio,    GpioHostOwnAcpi, GpioDirIn,        GpioOutDefault,   GpioIntDis, GpioPlatformReset,  GpioTermNone}},  // SOC_WAKE_SCI_N
 };
 
 GLOBAL_REMOVE_IF_UNREFERENCED GPIO_INIT_CONFIG mGpioTablePreMemAdlNLpddr5Rvp[] =

@@ -112,7 +112,7 @@ GetBoardIdFromSmbus (
 
   SmbusInputPort0Info.InputPort0Raw = SmBusReadDataByte (SMBUS_LIB_ADDRESS(SMBUS_IO_EXPANDER_SLAVE_ADDRESS, SMBUS_IO_EXPANDER_INPUT_PORT0_CMD, 0, 0), &Status0);
   SmbusInputPort1Info.InputPort1Raw = SmBusReadDataByte (SMBUS_LIB_ADDRESS(SMBUS_IO_EXPANDER_SLAVE_ADDRESS, SMBUS_IO_EXPANDER_INPUT_PORT1_CMD, 0, 0), &Status1);
-
+  BoardId = BoardIdAdlNDdr5Crb;
   if ((Status0 == EFI_SUCCESS) && (Status1 == EFI_SUCCESS)) {
     BomId = (UINT8) ((SmbusInputPort0Info.InputPort0Fields.BomId << 2) | SmbusInputPort1Info.InputPort1Fields.BomId);
 
@@ -126,8 +126,8 @@ GetBoardIdFromSmbus (
     BoardId = SmbusInputPort1Info.InputPort1Fields.BoardId;
   }
   else {
-    DEBUG ((DEBUG_ERROR, "Failed to get Board ID from Smbus Io expander\n"));
-    return;
+    // DEBUG ((DEBUG_ERROR, "Failed to get Board ID from Smbus Io expander\n"));
+    // return;
   }
   switch (BoardId) {
     case BoardIdAdlNDdr5Crb:

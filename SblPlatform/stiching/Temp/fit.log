@@ -1,18 +1,18 @@
-WARNING  : working dir was changed from MFIT base folder to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
+WARNING  : working dir was changed from MFIT base folder to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
 INFO     : Generate layout dictionary <xpath, container wrapper>
 INFO     : Layout dictionary generated successfully
 INFO     : Layout initialization completed successfully
-INFO     : 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\new.xml' generated successfully
-WARNING  : working dir was changed from MFIT base folder to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
+INFO     : 'E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\new.xml' generated successfully
+WARNING  : working dir was changed from MFIT base folder to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp. previous messages are in a log file at MFIT base folder
 INFO     : Generate layout dictionary <xpath, container wrapper>
 INFO     : Layout dictionary generated successfully
 INFO     : Layout initialization completed successfully
-INFO     : Start decompose 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
-INFO     : Start decompose 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
+INFO     : Start decompose 'E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
+INFO     : Start decompose 'E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\MeRegionFile.bin' image.
 INFO     : Revision number of the currently loaded Intel(R) ME binary binary: 16.50.10.1351
 WARNING  : Ignoring reading key GlobalData:EnvironmentVariablesDataBucket:WorkingDir value from config xml
 WARNING  : Ignoring reading key GlobalData:EnvironmentVariablesDataBucket:DestDir value from config xml
-INFO     : 'E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\updated.xml' loaded successfully
+INFO     : 'E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\updated.xml' loaded successfully
 INFO     : Build 'Temp/Ifwi.bin' start...
 INFO     : Executing SigningContainer build
 INFO     : SigningContainer build completed successfully

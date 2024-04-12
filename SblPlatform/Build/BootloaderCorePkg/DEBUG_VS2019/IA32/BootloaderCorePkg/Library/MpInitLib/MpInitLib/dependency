@@ -1,7 +1,0 @@
-
-
-!IF EXIST(e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCorePkg\Library\MpInitLib\MpInitLib\OUTPUT\Common\MpCommon.nasm.trim.deps)
-!INCLUDE e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\IA32\BootloaderCorePkg\Library\MpInitLib\MpInitLib\OUTPUT\Common\MpCommon.nasm.trim.deps
-!ENDIF
-
-               

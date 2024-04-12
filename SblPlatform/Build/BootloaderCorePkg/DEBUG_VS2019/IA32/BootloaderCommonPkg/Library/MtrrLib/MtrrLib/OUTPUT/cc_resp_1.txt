@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MtrrLib\MtrrSync.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\MtrrLib\MtrrLib.c

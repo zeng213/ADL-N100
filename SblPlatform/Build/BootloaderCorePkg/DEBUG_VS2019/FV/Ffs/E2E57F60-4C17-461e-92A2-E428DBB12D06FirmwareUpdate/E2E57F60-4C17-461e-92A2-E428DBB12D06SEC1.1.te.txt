@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_TE -o e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Ffs\E2E57F60-4C17-461e-92A2-E428DBB12D06FirmwareUpdate\E2E57F60-4C17-461e-92A2-E428DBB12D06SEC1.1.te e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Ffs\E2E57F60-4C17-461e-92A2-E428DBB12D06FirmwareUpdate\E2E57F60-4C17-461e-92A2-E428DBB12D06Te.raw

@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\Paging32To64.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingMap.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\PagingLib\PagingLib.c

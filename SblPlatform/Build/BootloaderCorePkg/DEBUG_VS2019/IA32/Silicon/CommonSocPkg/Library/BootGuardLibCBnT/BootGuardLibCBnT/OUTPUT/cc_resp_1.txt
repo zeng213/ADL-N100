@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\BootGuardLibCBnT\BootGuardLibrary.c e:\code\adl_n100_code\sblplatform\SblOpen\Silicon\CommonSocPkg\Library\BootGuardLibCBnT\BootGuardTpmEventLogLib.c

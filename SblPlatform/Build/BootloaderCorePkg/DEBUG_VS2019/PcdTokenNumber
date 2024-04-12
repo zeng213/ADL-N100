@@ -1,4 +1,0 @@
-PcdTokenNumber: 
-('PcdPlatformBootTimeOut', 'gEfiMdePkgTokenSpaceGuid') : 1
-('PcdMeasuredBootHashMask', 'gPlatformCommonLibTokenSpaceGuid') : 2
-('PcdFspResetStatus', 'gPlatformModuleTokenSpaceGuid') : 3

@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FatLib\FatLib.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FatLib\FatLiteAccess.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\FatLib\FatLiteLib.c

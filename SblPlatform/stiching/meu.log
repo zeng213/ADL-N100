@@ -362,3 +362,107 @@ Calling signing tool to generate signature
 Verifying signature
 
 OEMKeyManifest binary written to E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp\OemExtInputFile.bin
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/11/2024 - 2:04:12 下午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Saving XML ...
+
+XML file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\meu_config.xml
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/11/2024 - 2:04:12 下午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Saving XML ...
+
+XML file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\oemkeymanifest_sample_config.xml
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/11/2024 - 2:04:12 下午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Loading XML file: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\meu_config.xml
+Loading XML file: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\oemkeymanifest_sample_config.xml
+Calling signing tool to get key modulus size
+
+Signing Tool: 
+OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
+
+Signing Tool Path: C:\Openssl\openssl.exe
+Key Path: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\BpmGen2\keys\oem_privkey_3072.pem
+
+Executing pre-build actions
+
+Building objects
+Processing attribute: OEMKeyManifest
+Executing post-build actions
+Calling signing tool to generate signature
+Verifying signature
+
+OEMKeyManifest binary written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\OemExtInputFile.bin
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/12/2024 - 10:08:00 上午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Saving XML ...
+
+XML file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\meu_config.xml
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/12/2024 - 10:08:01 上午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Saving XML ...
+
+XML file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\oemkeymanifest_sample_config.xml
+
+===============================================================================
+Intel(R) Manifest Extension Utility. Version: 16.50.10.1387
+Copyright (c) 2013 - 2023, Intel Corporation. All rights reserved.
+4/12/2024 - 10:08:01 上午
+===============================================================================
+
+Log file written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\meu.log
+
+Loading XML file: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\meu_config.xml
+Loading XML file: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\oemkeymanifest_sample_config.xml
+Calling signing tool to get key modulus size
+
+Signing Tool: 
+OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
+
+Signing Tool Path: C:\Openssl\openssl.exe
+Key Path: E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\BpmGen2\keys\oem_privkey_3072.pem
+
+Executing pre-build actions
+
+Building objects
+Processing attribute: OEMKeyManifest
+Executing post-build actions
+Calling signing tool to generate signature
+Verifying signature
+
+OEMKeyManifest binary written to E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp\OemExtInputFile.bin

@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseSynchronizationLib\SynchronizationMsc.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseSynchronizationLib\InterlockedDecrementMsc.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BaseSynchronizationLib\InterlockedIncrementMsc.c

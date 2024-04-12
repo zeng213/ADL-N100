@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o e:\code\adl_n100_code\sblplatform\Build\BootloaderCorePkg\DEBUG_VS2019\FV\Ffs\5E2D3BE9-AD72-4D1D-AAD5-6B08AF921590STAGE2\5E2D3BE9-AD72-4D1D-AAD5-6B08AF921590SEC1.raw e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Logo\Logo.bmp

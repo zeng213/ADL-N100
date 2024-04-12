@@ -47,6 +47,7 @@
 ///
 #define GPIO_VER2_LP_GPP_B1                  0x09000001
 #define GPIO_VER2_LP_GPP_B2                  0x09000002
+#define GPIO_VER2_LP_GPP_B11                 0x0900000B
 #define GPIO_VER2_LP_GPP_B14                 0x0900000E
 #define GPIO_VER2_LP_GPP_B18                 0x09000012
 #define GPIO_VER2_LP_GPP_B23                 0x09000017
@@ -60,7 +61,9 @@
 #define GPIO_VER2_LP_GPP_A13                 0x0902000D
 #define GPIO_VER2_LP_GPP_A14                 0x0902000E
 #define GPIO_VER2_LP_GPP_A15                 0x0902000F
+#define GPIO_VER2_LP_GPP_A16                 0x09020010
 #define GPIO_VER2_LP_GPP_A17                 0x09020011
+#define GPIO_VER2_LP_GPP_A18                 0x09020012
 #define GPIO_VER2_LP_GPP_A19                 0x09020013
 #define GPIO_VER2_LP_GPP_A20                 0x09020014
 #define GPIO_VER2_LP_GPP_A21                 0x09020015
@@ -83,11 +86,16 @@
 #define GPIO_VER2_LP_GPP_H3                  0x09070003
 #define GPIO_VER2_LP_GPP_H10                 0x0907000A
 #define GPIO_VER2_LP_GPP_H11                 0x0907000B
+#define GPIO_VER2_LP_GPP_H15                 0x0907000F
 #define GPIO_VER2_LP_GPP_H17                 0x09070011
 #define GPIO_VER2_LP_GPP_H19                 0x09070013
 #define GPIO_VER2_LP_GPP_H23                 0x09070017
 
 #define GPIO_VER2_LP_GPP_D1                  0x09080001
+#define GPIO_VER2_LP_GPP_D5                  0x09080005
+#define GPIO_VER2_LP_GPP_D6                  0x09080006
+#define GPIO_VER2_LP_GPP_D7                  0x09080007
+#define GPIO_VER2_LP_GPP_D8                  0x09080008
 #define GPIO_VER2_LP_GPP_D11                 0x0908000B
 #define GPIO_VER2_LP_GPP_D13                 0x0908000D
 #define GPIO_VER2_LP_GPP_D14                 0x0908000E
@@ -118,8 +126,10 @@
 #define GPIO_VER2_LP_GPP_E3                  0x090E0003
 #define GPIO_VER2_LP_GPP_E4                  0x090E0004
 #define GPIO_VER2_LP_GPP_E5                  0x090E0005
+#define GPIO_VER2_LP_GPP_E6                  0x090E0006
 #define GPIO_VER2_LP_GPP_E7                  0x090E0007
 #define GPIO_VER2_LP_GPP_E15                 0x090E000F
+#define GPIO_VER2_LP_GPP_E16                 0x090E0010
 #define GPIO_VER2_LP_GPP_E20                 0x090E0014
 #define GPIO_VER2_LP_GPP_E21                 0x090E0015
 #define GPIO_VER2_LP_GPP_E22                 0x090E0016

@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\AcpiInitLib\AcpiBgrt.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\AcpiInitLib\AcpiInitLib.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCorePkg\Library\AcpiInitLib\AcpiFpdt.c

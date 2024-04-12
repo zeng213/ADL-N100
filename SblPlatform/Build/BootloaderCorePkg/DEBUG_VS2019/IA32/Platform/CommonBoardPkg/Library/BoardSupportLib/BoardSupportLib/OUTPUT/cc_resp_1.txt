@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\BoardSupportLib\BoardSupportLib.c e:\code\adl_n100_code\sblplatform\SblOpen\Platform\CommonBoardPkg\Library\BoardSupportLib\BoardGraphicsCache.c

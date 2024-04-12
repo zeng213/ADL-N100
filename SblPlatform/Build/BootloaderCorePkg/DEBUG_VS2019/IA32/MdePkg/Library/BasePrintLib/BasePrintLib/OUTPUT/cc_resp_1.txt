@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\PrintLib.c e:\code\adl_n100_code\sblplatform\SblOpen\MdePkg\Library\BasePrintLib\PrintLibInternal.c

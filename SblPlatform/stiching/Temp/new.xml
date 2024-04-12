@@ -24,7 +24,7 @@
          <SelectedRvp value="ADL-P LP4x (ADL-P + ADP-P)" value_list="['HFPGA', 'Simics', 'SLE', 'ADL-P LP4x (ADL-P + ADP-P)', 'ADL-P DDR5 (ADL-P + ADP-P)', 'ADL-P LP5 (ADL-P + ADP-P)', 'ADL-P DDR4 (ADL-P + ADP-P)', 'ADL-N DDR4 TR3 (ADL-N + ADP-P)', 'ADL-N DDR5 TR3 (ADL-N + ADP-P)', 'ADL-N LP5 TR3 (ADL-N + ADP-P)']" label="Selected Platform" help_text="Specify platform RVP for getting Soft Straps default values." key="DescriptorPlugin:HarnessGlobalData:SelectedRvp"/>
       </HarnessGlobalData>
       <PathVars label="Path Vars">
-         <WorkingDir value="E:\Code\ADL_N100_Code\SblPlatform\stiching\Temp" label="$WorkingDir$" help_text="Path for environment variable $WorkingDir$" key="GlobalData:EnvironmentVariablesDataBucket:WorkingDir"/>
+         <WorkingDir value="E:\Code\test\my_test\ADL-N100\SblPlatform\stiching\Temp" label="$WorkingDir$" help_text="Path for environment variable $WorkingDir$" key="GlobalData:EnvironmentVariablesDataBucket:WorkingDir"/>
          <SourceDir value="." label="$SourceDir$" help_text="Path for environment variable $SourceDir$" key="GlobalData:EnvironmentVariablesDataBucket:SourceDir"/>
          <DestDir value="." label="$DestDir$" help_text="Path for environment variable $DestDir$" key="GlobalData:EnvironmentVariablesDataBucket:DestDir"/>
          <UserVar1 value="." label="$UserVar1$" help_text="Path for environment variable $UserVar1$" key="GlobalData:EnvironmentVariablesDataBucket:UserVar1"/>

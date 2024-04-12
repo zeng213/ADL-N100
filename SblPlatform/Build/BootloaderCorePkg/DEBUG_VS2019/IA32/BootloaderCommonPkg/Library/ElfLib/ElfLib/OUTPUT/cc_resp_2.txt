@@ -1,1 +1,0 @@
-  e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ElfLib\Elf32Lib.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ElfLib\Elf64Lib.c e:\code\adl_n100_code\sblplatform\SblOpen\BootloaderCommonPkg\Library\ElfLib\ElfLib.c
