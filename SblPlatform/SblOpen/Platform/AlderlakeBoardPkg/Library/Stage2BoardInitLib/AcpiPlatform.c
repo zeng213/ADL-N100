@@ -986,7 +986,7 @@ PlatformUpdateAcpiGnvs (
     }
   }
 
-  PlatformNvs->I2SC     = 0x0;
+  PlatformNvs->I2SC     = 0x2;
   PlatformNvs->I2SI     = GPIO_VER4_S_GPP_F23;
   PlatformNvs->I2SB     = 0x0;
   PlatformNvs->HdaDspPpModuleMask = 0;

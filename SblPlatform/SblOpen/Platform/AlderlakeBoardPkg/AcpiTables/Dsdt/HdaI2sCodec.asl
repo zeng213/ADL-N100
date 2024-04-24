@@ -8,13 +8,13 @@
 // HD Audio I2S codecs
 #define HDAC_I2S_DISABLED 0
 #define HDAC_I2S_ALC274   1
-#define HDAC_I2S_ALC1308  2
+#define HDAC_I2S_ALC269   2
 
 Device (HDAC)
 {
   Name (_HID, "INT00000")
   Name (_CID, "INT00000")
-  Name (_DDN, "Intel(R) Smart Sound Technology Audio Codec")
+  Name (_DDN, "Alc269 Audio Codec")
   Name (_UID, 1)
   Name (CADR, 0) // Codec I2C address
   Name (CDIS, 0) // Codec Disabled state
@@ -24,9 +24,9 @@ Device (HDAC)
       Store ("INT34C2", _HID)
       Store ("INT34C2", _CID)
       Store (0x1C, CADR)
-    } ElseIf (LEqual(I2SC, HDAC_I2S_ALC1308)) {
-      Store ("10EC1308", _HID)
-      Store ("10EC1308", _CID)
+    } ElseIf (LEqual(I2SC, HDAC_I2S_ALC269)) {
+      Store ("10EC111E", _HID)
+      Store ("10EC111E", _CID)
       Store (0x0010, CADR)
     }
   }

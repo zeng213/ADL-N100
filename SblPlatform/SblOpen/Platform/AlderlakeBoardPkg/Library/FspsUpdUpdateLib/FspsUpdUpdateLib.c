@@ -10,6 +10,7 @@
 #include <Library/BaseLib.h>
 #include <Library/DebugLib.h>
 #include <Library/BaseMemoryLib.h>
+#include <Library/BlMemoryAllocationLib.h>
 #include <Library/PciLib.h>
 #include <Library/PcdLib.h>
 #include <Library/ConfigDataLib.h>
@@ -38,6 +39,7 @@
 #include <IndustryStandard/UefiTcgPlatform.h>
 #include <Library/TpmLib.h>
 #include <Library/FusaConfigLib.h>
+#include "HdaVerbTable.h"
 
 #define CPU_PCIE_DT_HALO_MAX_ROOT_PORT     3
 #define CPU_PCIE_ULT_ULX_MAX_ROOT_PORT     3
@@ -547,6 +549,8 @@ UpdateFspConfig (
   EFI_STATUS                  Status;
   VBIOS_VBT_STRUCTURE         *VbtPtr;
   EFI_PLATFORM_FIRMWARE_BLOB  TsnCfgBlob;
+  UINT32                      *HdaVerbTablePtr;
+  UINT8                       HdaVerbTableNum;
 
   Address              = 0;
   FspsUpd              = (FSPS_UPD *) FspsUpdPtr;
@@ -616,6 +620,20 @@ UpdateFspConfig (
     DEBUG (((BiosProtected) ? DEBUG_INFO : DEBUG_WARN, "BIOS SPI region will %a protected\n", (BiosProtected) ? "be" : "NOT BE"));
   }
 
+   SiCfgData = (SILICON_CFG_DATA *)FindConfigDataByTag (CDATA_SILICON_TAG);
+  //if ((SiCfgData != NULL) && SiCfgData->PchHdaEnable == 1) {
+  if ((SiCfgData != NULL)) {
+    HdaVerbTablePtr = (UINT32 *) AllocateZeroPool (4 * sizeof (UINT32));
+    if (HdaVerbTablePtr != NULL) {
+      HdaVerbTableNum = 0;
+      HdaVerbTablePtr[HdaVerbTableNum++]   = (UINT32)(UINTN) &AdlHdaVerbTableAlc269;
+      FspsUpd->FspsConfig.PchHdaVerbTablePtr      = (UINT32)(UINTN) HdaVerbTablePtr;
+      FspsUpd->FspsConfig.PchHdaVerbTableEntryNum = HdaVerbTableNum;
+    } else {
+      DEBUG ((DEBUG_ERROR, "UpdateFspConfig Error: Could not allocate Memory for HdaVerbTable\n"));
+    }
+  }
+  
   if (PcdGetBool (PcdFramebufferInitEnabled) && (GetBootMode() != BOOT_ON_S3_RESUME)) {
     DEBUG ((DEBUG_INFO, "Frame Buffer Enabled\n"));
     FspsConfig->GraphicsConfigPtr = (UINT32)GetVbtAddress ();
